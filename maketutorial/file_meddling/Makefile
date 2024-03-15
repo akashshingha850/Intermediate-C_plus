@@ -20,3 +20,5 @@ clean :
 really_clean :
 	rm junk*
 
+print_file :
+	cat silly_file
