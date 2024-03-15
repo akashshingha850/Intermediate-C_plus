@@ -57,19 +57,19 @@ PNG brighten(PNG original, int amount)
     {
 		for (int xi = 0; xi < original.width(); xi++){
 			// Your code here
-            // Increment red component
+            // ++ red amount
             if (original(xi, yi)->red + amount <= 255)
                 original(xi, yi)->red += amount;
             else
                 original(xi, yi)->red = 255;
 
-            // Increment green component
+            // ++ green amount
             if (original(xi, yi)->green + amount <= 255)
                 original(xi, yi)->green += amount;
             else
                 original(xi, yi)->green = 255;
 
-            // Increment blue component
+            // ++ blue amount
             if (original(xi, yi)->blue + amount <= 255)
                 original(xi, yi)->blue += amount;
             else
@@ -95,12 +95,12 @@ PNG blendImages(PNG firstImage, PNG secondImage)
     {
 		for (int xi = 0; xi < min(firstImage.width(), secondImage.width()); xi++){
 			// Your code here
-            // Calculate the average RGB values of the two pixels
+            // calc avg px value
             uint8_t avgRed = (firstImage(xi, yi)->red + secondImage(xi, yi)->red) / 2;
             uint8_t avgGreen = (firstImage(xi, yi)->green + secondImage(xi, yi)->green) / 2;
             uint8_t avgBlue = (firstImage(xi, yi)->blue + secondImage(xi, yi)->blue) / 2;
 
-            // Set the corresponding pixel in firstImage to the averaged RGB values
+            // store avg px value to 1st image. 
             firstImage(xi, yi)->red = avgRed;
             firstImage(xi, yi)->green = avgGreen;
             firstImage(xi, yi)->blue = avgBlue;

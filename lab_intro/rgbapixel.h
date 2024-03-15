@@ -13,13 +13,13 @@
 class RGBAPixel
 {
 public: 
-// Declare the valraiables
+//varaiables
 uint8_t red;
 uint8_t green;
 uint8_t blue;
 uint8_t alpha;
 
-//Declare the Constructor
+//constructor
 RGBAPixel();
 RGBAPixel(uint8_t _r, uint8_t _g, uint8_t _b);
 
