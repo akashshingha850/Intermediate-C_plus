@@ -1,30 +1,27 @@
-# Define compiler
-CXX = g++
+EXE = intro
+OBJS = main.o png.o rgbapixel.o intro.o
 
-# Compiler flags
-CXXFLAGS = -std=c++11 -O2
+COMPILER = g++
+COMPILER_OPTS = -c -g -O0 -Wall -Werror
+LINKER = g++
+LINKER_OPTS = -lpng
 
-# Define any directories containing header files other than /usr/include
-INCLUDES = -I./RGB
+all : $(EXE)
 
-# Define the C++ source files
-SRCS = main.cpp intro.cpp RGB/rgbapixel.cpp
+$(EXE) : $(OBJS)
+	$(LINKER) $(OBJS) $(LINKER_OPTS) -o $(EXE)
 
-# Define the C++ header files
-HDRS = intro.h RGB/rgbapixel.h
+main.o : main.cpp RGB/png.h RGB/rgbapixel.h
+	$(COMPILER) $(COMPILER_OPTS) main.cpp
 
-# Define the executable file 
-MAIN = intro
+png.o : RGB/png.cpp RGB/png.h RGB/rgbapixel.h
+	$(COMPILER) $(COMPILER_OPTS) RGB/png.cpp
 
-# The following part of the makefile is generic; it can be used to 
-# build any executable just by changing the definitions above 
-# and by deleting dependencies in clean
+rgbapixel.o : RGB/rgbapixel.cpp RGB/rgbapixel.h
+	$(COMPILER) $(COMPILER_OPTS) RGB/rgbapixel.cpp
 
-all:    $(MAIN)
-	@echo  Simple compiler named $(MAIN) has been compiled
+intro.o : intro.cpp intro.h
+	$(COMPILER) $(COMPILER_OPTS) intro.cpp
 
-$(MAIN): $(SRCS) $(HDRS)
-	$(CXX) $(CXXFLAGS) $(INCLUDES) -o $(MAIN) $(SRCS)
-
-clean:
-	$(RM) *.o *~ $(MAIN)
+clean :
+	-rm -f *.o $(EXE) out.png art.png
