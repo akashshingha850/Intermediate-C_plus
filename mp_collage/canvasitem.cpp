@@ -35,6 +35,10 @@ RGBAPixel CanvasItem::getBlendedPixel(size_t x, size_t y){
 	// This way the color can be easily changed later
 	
 	// Your code here
+	copy.red = (copy.red * color_.red) / 255;
+    copy.green = (copy.green * color_.green) / 255;
+    copy.blue = (copy.blue * color_.blue) / 255;
+    copy.alpha = (copy.alpha * color_.alpha) / 255;
 	
 	return copy;
 }
