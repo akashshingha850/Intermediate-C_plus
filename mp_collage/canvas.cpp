@@ -25,8 +25,9 @@ void Canvas::Add(CanvasItem* item)
 {
 	// TODO instead of a single item, have a list
 	// Replace the code here
-	items = item;
-	itemcount = 1;
+	//items = item;
+	items.push_back(item); 
+	//itemcount ++;
 }
 
 // Find and remove pointer from list

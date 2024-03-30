@@ -4,6 +4,7 @@
  *   Elmeri Uotila <roope.uotila@oulu.fi>
  */
 
+#include <vector>
 #ifndef CANVAS_H
 #define CANVAS_H
 
@@ -22,8 +23,9 @@ class Canvas
 		void draw(PNG* canvas) const;
 		
 	private:
-		CanvasItem* items;
-		size_t itemcount = 0;
+		std::vector<CanvasItem*> items;
+		//CanvasItem* items;
+		//size_t itemcount = 0;
 };
 
 #endif
