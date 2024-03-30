@@ -10,6 +10,17 @@ CanvasItem::CanvasItem(size_t x, size_t y, Vector2 position, Vector2 scale, RGBA
 	resize(x, y);
 	// TODO Initialize the pixels transparent so when drawing shapes, the background is transparent
 	// Your code here
+
+for (size_t i = 0; i < width(); ++i) {
+        for (size_t j = 0; j < height(); ++j) {
+            RGBAPixel* pixel = (*this)(i, j);
+            pixel->red = 255;
+            pixel->green = 255;
+            pixel->blue = 255;
+            pixel->alpha = 0;  // For Transparency
+        }
+    }
+
 	position_ = position;
 	color_ = color;
 	scale_ = scale;
