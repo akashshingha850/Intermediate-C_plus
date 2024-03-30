@@ -103,8 +103,8 @@ void Canvas::draw(PNG* canvas) const
 				// Check canvasitem.cpp
 				RGBAPixel coli = item->getBlendedPixel(x, y);
 				
-				int x1 = pos.x() + x * sc.x();
-				int y1 = pos.y() + y * sc.y();
+				int xx1 = pos.x() + x * sc.x();
+				int yy1 = pos.y() + y * sc.y();
 				
 				// You should uncomment the below line and use in the section below
 				// Vector2 pos = item->position();
@@ -113,12 +113,28 @@ void Canvas::draw(PNG* canvas) const
 
 				for(int xs = 0; xs < std::abs((int)(sc.x() - 0.001)) + 1; xs++) {
 					for(int ys = 0; ys < std::abs((int)(sc.y() - 0.001)) + 1; ys++) {
-						int adj_x = x1 + xs;
-						int adj_y = y1 + ys;
+						// Determine the position on the canvas based on 
+						// item position, scale, pixel position and adjacent pixel selection
+						// TODO right now it just loops the pixels of the item
+						// x1, y1 should be coordinates of the canvas to draw to
+						// So we should add item position and adjacent pixel selection xs, ys
+						// Multiply x and y by item scale
+
+						// Modify the two lines below
 						
-						if(adj_x >= 0 && adj_x < (int)canvas->width() && adj_y >= 0 && adj_y < (int)canvas->height()) {
-							RGBAPixel* colc = (*canvas)(adj_x, adj_y);
-							
+						int x1 = xx1 + xs;
+						int y1 = yy1 + ys;
+						
+						// Check that it's within bounds
+						if(x1 >= 0 && x1 < (int)canvas->width() && y1 >= 0 && y1 < (int)canvas->height()) {
+							RGBAPixel* colc = (*canvas)(x1, y1);
+							// TODO Blend based on alpha.
+							// Multiply item color with alpha, canvas color with 255-alpha
+							// Add them and divide by 255
+							// In other words 255 = replace old pixel with new. 0 = don't draw.
+							// 1-254 = partly new pixel, partly old
+
+							// Modify the three lines below
 							colc->red = (coli.red * coli.alpha + colc->red * (255 - coli.alpha)) / 255;
                             colc->green = (coli.green * coli.alpha + colc->green * (255 - coli.alpha)) / 255;
                             colc->blue = (coli.blue * coli.alpha + colc->blue * (255 - coli.alpha)) / 255;
