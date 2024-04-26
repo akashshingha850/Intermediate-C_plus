@@ -4,10 +4,14 @@
  */
 
 template <class T>
-List<T>::List(): head_(nullptr), tail_(nullptr) { 
-  // @TODO: graded in MP3.1
-    ListNode* head_ = nullptr;
-    ListNode* tail_ = nullptr;
+List<T>::List() { 
+  // @TODO_bp_1: graded in MP3.1
+  /*
+  List()¶
+This should default construct the list. Keep in mind everything mentioned in the background for the Linked List class
+*/
+    ListNode* head_ = NULL;
+    ListNode* tail_ = NULL;
 }
 
 /**
@@ -17,9 +21,8 @@ List<T>::List(): head_(nullptr), tail_(nullptr) {
 template <typename T>
 typename List<T>::ListIterator List<T>::begin() const {
   // @TODO: graded in MP3.1
-  return List<T>::ListIterator(nullptr);
+  return List<T>::ListIterator(NULL);
 }
-
 
 /**
  * Returns a ListIterator one past the end of the List.
@@ -27,7 +30,7 @@ typename List<T>::ListIterator List<T>::begin() const {
 template <typename T>
 typename List<T>::ListIterator List<T>::end() const {
   // @TODO: graded in MP3.1
-  return List<T>::ListIterator(nullptr);
+  return List<T>::ListIterator(NULL);
 }
 
 
@@ -37,9 +40,18 @@ typename List<T>::ListIterator List<T>::end() const {
  */
 template <typename T>
 void List<T>::_destroy() {
-    ListNode * current = head_;
+  /// @todo_bp1 Graded in MP3.1
+  /*
+  ~List() and _destroy()¶
+Since the List class has dynamic memory associated with it, we need to define all of the Rule of Three. We have provided you with the Copy Constructor and the overloaded operator=.
+
+    You will need to implement the _destroy() helper function called by operator= (the assignment operator) and the destructor ~List()
+    The _destroy() function should free all memory allocated for ListNode objects.
+
+*/
+    ListNode* current = head_;
     while (current != nullptr) {
-        ListNode * next = current->next;
+        ListNode* next = current->next;
         delete current;
         current = next;
     }
@@ -56,20 +68,32 @@ void List<T>::_destroy() {
  */
 template <typename T>
 void List<T>::insertFront(T const & ndata) {
-  /// @todo Graded in MP3.1
+  /// @todo_bp1 Graded in MP3.1
+  /*
+  Insertion¶
+The insertFront Function¶
+
+    This function takes a data element and prepends it to the beginning of the list.
+    If the List is empty before insertFront is called, the List should have one element with the same value as the parameter.
+    You may allocate new ListNodes.
+
+Example
+For example, if insertFront is called on the List of integers 5 4 7 with the parameter 6, then the resultant List should be 6 5 4 7
+*/
   ListNode * newNode = new ListNode(ndata);
   newNode -> next = head_;
-  newNode -> prev = nullptr;
+  newNode -> prev = NULL;
   
-  if (head_ != nullptr) {
+  if (head_ != NULL) {
     head_ -> prev = newNode;
   }
-  if (tail_ == nullptr) {
+  if (tail_ == NULL) {
     tail_ = newNode;
   }
   
 
   length_++;
+
 }
 
 /**
@@ -80,23 +104,32 @@ void List<T>::insertFront(T const & ndata) {
  */
 template <typename T>
 void List<T>::insertBack(const T & ndata) {
-    ListNode * newNode = new ListNode(ndata);
+  /// @todo_bp1 Graded in MP3.1
+  /*
+  
+The insertBack Function¶
+
+    This function takes a data element and appends it to the end of the list.
+    If the List is empty before insertBack is called, the List should have one element with the same value as the parameter.
+    You may allocate new ListNodes.
+
+Example
+For example, if insertBack is called on the List of integers 5 4 7 with the parameter 6, then the resultant List should be 5 4 7 6
+*/
+    ListNode *newNode = new ListNode(ndata);
     newNode->prev = tail_;
     newNode->next = nullptr;
-    
-    if (tail_ != nullptr) {
-        tail_->next = newNode;
-    }
-    
-    tail_ = newNode;
-    
-    if (head_ == nullptr) {
+
+    if (tail_ == nullptr) {
         head_ = newNode;
+        tail_ = newNode;
+    } else {
+        tail_->next = newNode;
+        tail_ = newNode;
     }
 
     length_++;
 }
-
 
 /**
  * Helper function to split a sequence of linked memory at the node
@@ -116,23 +149,20 @@ void List<T>::insertBack(const T & ndata) {
  */
 template <typename T>
 typename List<T>::ListNode * List<T>::split(ListNode * start, int splitPoint) {
-    if (start == nullptr || splitPoint <= 0) {
-        return nullptr;
-    }
+  /// @todo Graded in MP3.1
+  ListNode * curr = start;
 
-    ListNode * current = start;
-    for (int i = 0; i < splitPoint && current != nullptr; i++) {
-        current = current->next;
-    }
+  for (int i = 0; i < splitPoint || curr != NULL; i++) {
+    curr = curr->next;
+  }
 
-    if (current != nullptr) {
-        current->prev->next = nullptr;
-        current->prev = nullptr;
-    }
+  if (curr != NULL) {
+      curr->prev->next = NULL;
+      curr->prev = NULL;
+  }
 
-    return current;
+  return NULL;
 }
-
 
 /**
   * Modifies List using the rules for a TripleRotate.
@@ -146,29 +176,7 @@ typename List<T>::ListNode * List<T>::split(ListNode * start, int splitPoint) {
   */
 template <typename T>
 void List<T>::tripleRotate() {
-    if (head_ == nullptr || head_->next == nullptr || head_->next->next == nullptr) {
-        return; // Not enough nodes to perform rotation
-    }
-
-    ListNode *current = head_;
-    while (current != nullptr && current->next != nullptr && current->next->next != nullptr) {
-        ListNode *temp1 = current;
-        ListNode *temp2 = current->next;
-        ListNode *temp3 = current->next->next;
-
-        // Perform rotation
-        temp2->prev = nullptr;
-        temp1->next = temp3->next;
-        temp2->next = temp3->next;
-        temp3->next = temp1;
-
-        // Update head pointer if needed
-        if (temp1 == head_) {
-            head_ = temp2;
-        }
-
-        current = temp1->next;
-    }
+  // @todo Graded in MP3.1
 }
 
 
@@ -193,28 +201,7 @@ void List<T>::reverse() {
  */
 template <typename T>
 void List<T>::reverse(ListNode *& startPoint, ListNode *& endPoint) {
-  if (startPoint == nullptr || endPoint == nullptr || startPoint == endPoint) {
-    // Nothing to reverse or only one node in the sequence
-    return;
-  }
-
-  ListNode *prev = nullptr;
-  ListNode *current = startPoint;
-  ListNode *next = nullptr;
-
-  while (current != nullptr && current != endPoint->next) {
-    next = current->next;
-    current->next = prev;
-    current->prev = next; // Update previous pointer for bidirectional linked list
-    prev = current;
-    current = next;
-  }
-
-  // Update startPoint and endPoint
-  endPoint->prev = startPoint->prev;
-  startPoint->prev = current;
-  startPoint = endPoint;
-  endPoint = prev;
+  /// @todo Graded in MP3.2
 }
 
 /**
@@ -225,21 +212,8 @@ void List<T>::reverse(ListNode *& startPoint, ListNode *& endPoint) {
  */
 template <typename T>
 void List<T>::reverseNth(int n) {
-    ListNode * start = head_;
-    ListNode * end = nullptr;
-
-    while (start != nullptr) {
-        int count = 1;
-        end = start;
-        while (count < n && end->next != nullptr) {
-            end = end->next;
-            count++;
-        }
-        reverse(start, end);
-        start = end->next;
-    }
+  /// @todo Graded in MP3.2
 }
-
 
 
 /**
@@ -278,52 +252,10 @@ void List<T>::mergeWith(List<T> & otherList) {
  * @return The starting node of the resulting, sorted sequence.
  */
 template <typename T>
-typename List<T>::ListNode* List<T>::merge(ListNode * first, ListNode* second) {
-    if (first == nullptr) // Handle empty first list
-        return second;
-    else if (second == nullptr) // Handle empty second list
-        return first;
-
-    ListNode* result = nullptr;
-    ListNode* current = nullptr;
-
-    // Determine the head of the merged list
-    if (first->data <= second->data) {
-        result = first;
-        first = first->next;
-    } else {
-        result = second;
-        second = second->next;
-    }
-    current = result;
-
-    // Merge the rest of the lists
-    while (first != nullptr && second != nullptr) {
-        if (first->data <= second->data) {
-            current->next = first;
-            first->prev = current;
-            first = first->next;
-        } else {
-            current->next = second;
-            second->prev = current;
-            second = second->next;
-        }
-        current = current->next;
-    }
-
-    // Attach remaining nodes
-    if (first != nullptr) {
-        current->next = first;
-        first->prev = current;
-    } else if (second != nullptr) {
-        current->next = second;
-        second->prev = current;
-    }
-
-    return result; // Return the head of the merged list
+typename List<T>::ListNode * List<T>::merge(ListNode * first, ListNode* second) {
+  /// @todo Graded in MP3.2
+  return NULL;
 }
-
-
 
 /**
  * Sorts a chain of linked memory given a start node and a size.
@@ -338,15 +270,6 @@ typename List<T>::ListNode* List<T>::merge(ListNode * first, ListNode* second) {
  */
 template <typename T>
 typename List<T>::ListNode* List<T>::mergesort(ListNode * start, int chainLength) {
-    if (chainLength <= 1 || start == nullptr || start->next == nullptr) {
-        return start;
-    }
-
-    int mid = chainLength / 2;
-    ListNode *middle = split(start, mid);
-    ListNode *left = mergesort(start, mid);
-    ListNode *right = mergesort(middle, chainLength - mid);
-
-    return merge(left, right);
+  /// @todo Graded in MP3.2
+  return NULL;
 }
-

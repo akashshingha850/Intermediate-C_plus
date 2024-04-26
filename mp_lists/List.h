@@ -6,8 +6,6 @@
 #include <iterator>
 #include <iostream>
 #include <algorithm>
-#include "operator_overloads.h"
-
 
 using namespace std;
 
@@ -205,7 +203,6 @@ class List {
     // Iterator constructor
     template <class Iter>
     List(const Iter& start, const Iter& end);
-
 
   private:
     /*
