@@ -1,0 +1,263 @@
+okay so for lab debug you only have this
+one file that you need to work with the
+sketchy do
+CPP and uh when you open it it looks
+like this you you can see there's a
+couple functions here but then uh the
+sketchy function is is the main function
+so there's the main CPP file but all it
+does is call the
+sketchy function so this is the
+essentially the the main
+program uh okay
+so if
+we TR the
+program now then uh we get segmentation
+fault um you might also get like a
+different kind of error where where it
+says
+like
+uh it some kind of like pointer error
+and and it's basically because there
+some kind of undefined Behavior going on
+and uh the error you actually get might
+might
+vary so then that doesn't really give us
+much information about uh where this
+happened or or why
+exactly uh
+so what we can do with some like uh
+basic debugging methods
+is we can put some print statements
+here
+um so like this for example so so then
+with this it's going to print the line
+that uh we're currently
+on uh
+so let's let's put a couple of those
+print statements
+there um
+oh there an extra white space
+there okay so now we can see we reached
+line 29 but we didn't reach
+this so then we can tell that there's
+something wrong here and see as we have
+segmentation fall as like it must be
+some kind of um uninitialized memory or
+like trying to access something that
+we're not supposed to access that's
+generally what it means so then then
+let's look at this what we're trying to
+do is uh call the fre from file function
+for this uh
+PNG and and well we we can notice that
+this PNG is
+actually uh this is the thing that's
+that's uninitialized in this case that
+that's why we're getting this
+problem
+um so then let's let's initialize it
+like
+that uh okay okay now we got further but
+what will notice that uh we don't
+actually have that file to open and
+that's because I forgot about
+this initial
+step so let's just uh in default
+there's uh a
+couple a couple
+images and and you can choose like which
+one you you copy as the ind. PNG for the
+program
+um you you can also just do the copying
+and reaming in the Windows Explorer or
+whatever you're
+using uh anyway now if we run this you
+can see that we we're getting further
+now but then we're running into another
+segmentation fault
+somewhere
+so let's try to see where it
+is
+um yeah we can get all the way over here
+that's
+fine
+um TR
+this
+okay we we reached line 60 so this is in
+this Loop so we made made it all the way
+here uh on the first Loop somewhere here
+it it must be crashing then uh so what
+could be uninitialized here well well
+this is fine because we're just like
+putting something in there but and what
+about this output well we'll notice that
+okay it's actually the same issue uh
+here that's just like uninitialized now
+we are calling the setup output function
+here uh so so let's see what that
+function actually does well it turns a
+pointer to an image it initializes a new
+PNG and returns a pointer to it and then
+returns it
+um but we're not actually doing anything
+with the pointer that's being
+returned uh
+so then output remains
+uninitialized so then we could simply do
+this so now we actually save the pointer
+that's being returned so that should be
+a lot better
+now okay uh now it's not crashing but
+it's trying to access some like crazy
+high
+pixels here and uh if if it like in if
+it's uh infinitely looping then you can
+press contrl C uh to put a stop to
+that
+um okay so seeing as it's like looping
+way past what it's supposed to we should
+probably look at the uh looping
+conditions here so so we start with uh
+value
+one and then we increment it but then
+then this is like the actual condition
+so so what what's going on here that
+this is this is
+not like any kind of syntax that you're
+supposed to use what actually happens
+here is that it first checks if zero is
+less than Y which it always
+is so then it returns true which
+corresponds to uh number one
+basically and then it checks if if if
+true or in other words one is less than
+height and that's also always true so
+then it's just infinitely
+looping uh so all we want to do is see
+if Y is less than
+height that should be the condition for
+Loop and the same for X
+there uh okay now we're actually not
+getting any any arrows
+here
+um
+but
+then if we go and look
+at the output of our
+program let me just
+quickly add that Source in
+here yeah there we go
+um yeah we can we can see
+that it's actually just blank so that's
+not how it's supposed to
+be
+uh out 01 uh shows the uh intended
+output for uh if you're using
+in01 as the input
+image okay so the result is wrong uh and
+then uh why could that be so so we're
+getting this
+color and then we're putting that
+color uh into this pixels uh now now I
+can
+already uh I'll just tell straight up
+that that this is like a line we're
+going to reach each so so all of this is
+fine like like you could you
+could
+put
+uh like a print statement
+here uh in this way and find out that
+okay yeah yeah we are getting here but
+then why is why why is it not
+changing the the pixel values
+um but then maybe maybe first we should
+check uh if the color we're getting
+here if we're actually getting it
+correctly so so let's see if
+um let's replace this with
+um my
+pixel
+um
+blue and that should be
+192 it should be equal to intensity
+which is 192 here
+uh now in this case yeah you need to
+cast it to like int or or or something
+uh for it to like actually display it as
+a number otherwise it tries to display
+it as like a asky
+character okay so let's see what we
+get uh well nowly we get segmentation
+fault
+here so clearly there's some kind of
+problem here we can't actually access
+this and we'll notice
+that
+uh the Freez for that is that we're
+actually trying to return an address to
+a local
+variable uh of of this function and and
+that's something we can't do
+so what we can do instead for example
+is
+um create this rgba pixel in the Heap
+and return a pointer to it uh
+so we could also simplify this a little
+bit by
+um initializing it directly like
+that and then just return the
+pointer so that should be a lot better
+okay we're getting the correct uh
+correct values
+here but we can see that the output is
+still
+blank um so what else could be the
+problem
+now so we're getting this
+pointer to a pixel in the
+PNG and then we're replacing the
+pointer but the problem with this is
+that uh now we're not actually
+changing the the data of of of the
+actual image
+uh so so in in the PNG uh the the pixels
+are
+basically lined up in in in like one big
+aray in the
+Heap and and what we need to
+do uh is is modify that data uh like
+when we do this we we get a
+pointer uh to a specific point in that
+array but if we change this pointer it
+doesn't actually change anything about
+how this uh PNG works so so we need to
+change the actual data uh of
+it so then let's just dreference both of
+these so then this way we access the
+data that this pointer is pointing to
+and then this way we
+um access the the data of of of our
+favorite
+color like
+this okay and now everything looks
+good and we can just
+verify yeah it it matches perfectly so
+no
+problem uh and we can also so make sure
+that everything's getting deleted
+correctly so yeah it looks fine uh so
+there are also like different ways you
+could do this like you don't necessarily
+have to have all of these things in the
+stack like like my pixel for example you
+you could also just return it as as a
+copy uh and in that case you would just
+like get rid of uh this line
+here um but
+anyway uh that
+is that is basically the the solution
+but if you did it a little bit
+differently then that's that's also
+fine

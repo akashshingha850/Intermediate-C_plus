@@ -1,0 +1,1317 @@
+e
+e
+e
+e
+okay so let's
+start let's start
+um today
+is a lecture on um ads and hashing so
+adts is abstract data types that um I
+will talk about at the level of
+abstraction today but El next time we'll
+talk about uh implementation of these
+data structures in or abstract data
+types in C++ uh STL but
+today um I will be talking about more
+abstractly about these data structures
+and specifically about hashing and the
+reason why we do this is because uh we
+still have homework that is related to
+this more uh theoretical uh things like
+data structures however this will not be
+topics that we cover on the exams so we
+give this St this lecture primarily for
+you to be able to uh complete your
+homework uh specifically lab hash and uh
+uh lab hash and what else
+is um and dictionary so these
+two
+okay so today slider.com is
+this and uh just please do not forget
+that there's going to be a an invited
+lecture next week already on Thursday so
+exactly in a
+week uh by uh V V Line
+in okay so let's
+start uh last time we talked about lists
+and we even talked about the
+implementation of lists using linked
+memory and I talked about how to
+implement such linked memory and you
+will go through these exercises in your
+lab um uh that lab and MP lists that we
+have in this class however I just want
+to mention today the
+abstract things about about uh lists and
+other uh abstract data types that we
+will talk about today so uh what does it
+mean an abstract data type it's just
+when you describe the functionality of
+your data so what do you want to do with
+your data so what would we want to do
+with lists specifically well
+examples of list would be grocery lists
+or to-do lists right or roster of
+student so it's a collection of data
+where you know a position so nothing
+else really is so special about lists
+and um all of the elements are index by
+their position so therefore if you were
+to implement a list say C+ using C++
+language then you would provide an
+interface for your list and the only
+functionalities that you would provide
+would be to the ability to insert and
+remove elements in your list in a
+specific position maybe you would also
+allow to Peak at specific elements of in
+in a particular position without
+removing so these are the only
+functionalities that would be enough to
+describe and use this abstract data type
+how these are implemented is not a
+concern of a client so from the client
+point of all we want to do from the
+client side is to be able to insert
+elements in certain position and remove
+elements from certain position and maybe
+look what is the element at a particular
+position and that's
+it the way you the way um you as a
+designer or software engineer would
+implement this class um is independent
+of the user the user should not know or
+doesn't even care about how this is
+implemented so that's um so as you can
+see we are talking about different
+levels of abstraction when we talking
+about data structures and that is first
+the functionality of the data then the
+interface so how particularly you're
+going to implement and call these
+functions and then actually the
+implementation so maybe a list will be
+implemented using an array or maybe a
+linked list that's implementation
+details okay so that was list and we did
+it last time so now I want to talk about
+the next abstract data type that is a
+stack okay so what is a
+stack here H Pringles is an example of a
+stack so what is so special about data
+structure or data collection that uh is
+similar to Pringles well there's only
+two functionalities or two operations
+two um principal
+operations that you can perform on the
+stack that is you can insert an element
+in the
+stack and then you can remove the top
+element from the stack so you cannot
+really remove the bottom ele element you
+cannot remove a pringle from the middle
+without removing first top and first the
+the top elements from the stack right so
+you can push on top and pop an elephant
+the top ele element so you can push an
+element on top and pop the top element
+and that's it you may want to implement
+in your interface maybe a little more
+more operations like to Peck at the top
+element or ask whether it's an empty
+stack or not but these are the two
+principal
+operations okay so um how if we were to
+implement a stack class in
+C++ then the interface of this
+class would be exactly the functionality
+of the stack that uh we would want to
+see and of course we we expect to see
+push and
+Pop um and you can uh also maybe ask
+whether you maybe you want to to ask see
+what's on top as well the top operation
+without changing the stack but push and
+pop would change the stack okay and a
+couple more maybe like ask for size and
+uh whether it's empty or
+not okay so here are examp of stats
+stats and why do I even talk about stats
+because some of the examples are um very
+important moreover they are crucial for
+programming in general so what are more
+examples of stack last time I think I
+mentioned that um Pez dispenser is a
+stack right you can put the candy on top
+and it falls on the bottom here but you
+can only pop the the top candy you
+cannot really start from the bottom just
+like with Pringles
+chips I don't know I have a problem
+today with this laptop I I hope you
+don't see it like blinking
+and there's some problem with the screen
+that I cannot diagnose some connection
+problem anyway so why I wanted to
+mention
+Stacks uh it's because there's also
+Hardware stack and it works on the same
+Principle as uh STL stats or data
+structure stats that you you heard in
+your data structures course or
+algorithms course so let's look at the
+operation of the main function and what
+really happens in Hardware stack or how
+is memory going to be arranged on the
+stack and there's no surprise that when
+we talk about memories um variables on
+the stack it is the stack data type
+abstract data type that I'm talking
+about now so let's see how it works so
+imagine that uh we are executing main
+function um so in C++ when um the
+control goes to a function that
+function together with its local
+variables and whatever parameters it has
+will be pushed on the stack and the
+pointer which is which it's a hardware
+pointer it's CPU pointer that um
+represents what's the top of the stack
+is going to be moved to the top of the
+that function space so here main is
+pushed on the stack together with all of
+its local
+variables and then main starts executing
+so that's when the control goes to main
+okay so that's great but when we execute
+main we see that the next function that
+it calls is called study hard which
+means that an entire region associated
+with all of the local variables and
+parameters whatever par that are sent to
+this function will be again pushed on
+top of the stack so this is study hard
+study hard
+function and the control is passed to
+this function and the hardware stack top
+of the stack pointer is moved to the
+corresponding position on top of the
+stack therefore again study heart
+occupies this portion of the stack and
+the pointer is moved and um and study
+heart starts uh execution and the first
+thing that it does is calls it calls
+another function which is MPS and again
+MP is with all of its local variables is
+pushed on top of the stack and the top
+top of the stack pointer is moved and
+the execution of MPS starts and plan is
+pushed on top of the
+stack and the pointer is advanced again
+to the corresponding position and all of
+the local Vari Ables of the plan that uh
+that were allocated in the stack are
+there in this region in this bucket that
+was just pushed on top of the stack so
+what happens once the execution ends so
+plan started execution and then it the
+the program sees
+the right the the the closing curly
+braces which means that plan ceases to
+exist there is ution should be passed
+back to MPS so what happens with the
+stack is that this whole region
+associated with plan is removed but it's
+not really physically removed it's just
+that the top of the stack is sent
+back two MPS which means that
+technically none of these local
+variables can ever be reached again
+because the top of the stack is not
+there anymore and execution as execution
+continues some something else can be
+pushed on the stack and in this case
+it's code right code is going to be put
+here on top of the stack because it
+starts as execution and the top of the
+stack is going to be Advanced and all of
+the local variables are going to live
+here so what this is this is exactly
+what it means that variables go out of
+scope that's when they're no longer on
+the stack so just like when code ends
+its execution the stack
+uh pointer will go back to MPS which
+means the control is going to be sent uh
+given back to the MPS function and all
+of the code uh portion of the stack is
+not going to be available anymore it
+goes out of scope right the control is
+passed back to MPS and so on then MPS
+Seas to this right the uh pointer goes
+back to study heart and all of this
+memory is no longer on the stack and it
+will be overwritten by whatever is the
+next function that's going to be pushed
+on top of the stack so this notion of
+Stack is very useful to keep in mind
+when you think about the order in which
+um local variables are on the stack in
+order in which they're going to be
+deleted in order in which um destructors
+are going to be called all of this
+matters and all of this re is the result
+of Stack
+operations just like in abstract data
+type stack so push and pop and the order
+is determined by that and the order what
+we call this order so let me go back um
+the order is last in first out right so
+whatever was on top of the stat that was
+the last element that was in that can be
+the first one to be
+out last in first out okay so we can
+only uh remove the top element which was
+the last one to go
+in okay so similarly this post fits
+notation uh that was implemented in uh
+you know calculators long time ago
+because the memories was so the memory
+was so small so um essentially when you
+see that the operation was if you see a
+number you push it on the stack if you
+see so let's let's put it this way here
+if there's another stack for the this uh
+postfix notation in a calculator when
+you see a number push it when you see
+five next number uh push it when you see
+an operation pop the last two
+numbers and do an operation on them so
+that's nine so push the result back
+nine then you see a number push it you
+see a number push it see an operation
+pop the last two numbers or elements
+perform the operation minus and push the
+result which is
+five
+five and then what's the next element
+that we see multiplication right so you
+see an operation you pop the last two
+numbers apply operation and push the
+result which will be what 45 forever 4
+45 and so on and then
+continue but um so the stats are very
+important they're fundamental data
+structures and they're still used in
+Hardware um in modern computers and
+that's why we talk about stack
+variables and
+scope okay so now the next fundamental
+data structure is uh or abstract data
+type is a q so what's the difference
+between a q and a stack well this is our
+stack right where the principle is last
+in first out so Q data abstract data
+type is a collection of element where
+you can perform slightly different two
+principal operations that is n q that
+you put an element in the
+Q and then you can in q more just a q
+okay so then the first element that you
+can d DQ was the first one that came in
+so the principle is slightly different
+it's first in first out just like Q's
+any Q in a grocery store or postal
+office right so the first in first out
+in uh contrast to last in first out for
+Stacks so how could I make Pringles into
+a
+q anybody want to say I want to have a
+box of Pringles and I want to make it a
+q instead of a stack
+how would that look
+like I cut the bottom right I just cut
+the bottom of here and then I can remove
+um my Pringle tips from both sides from
+front and from back so it's not really
+this cute that I just described but it's
+more like a double end Q double end
+q and that's exactly what Elmer will be
+talking about uh on Tuesday because
+that's one of the STL Q's
+implementations where you can you can
+grab objects not only from the first in
+first out but also from the back you can
+grab elements from both sides just like
+Pringles with the bottom cut
+out you Cann grab them from the middle
+right you cannot take a middle chip
+without rearranging everything or
+removing half of the quebe but you can
+grab the first one or the last one in
+the que okay so this will be STD STD
+double Q
+okay again we're not talking about
+implementation at this point so I'm
+talking about different level of
+abstraction I'm talking about the
+interfaces how to use them but I'm not
+talking about how one would implement it
+so if I were to write an interface to a
+queue I would have all of the the two
+principal operations in Q and DQ but
+maybe I could also ask if it's an empty
+Q or not not or peek at the front of the
+que or if it was double-ended Q I could
+maybe peek at the at the end as
+well okay so that's
+good so the last abstract data type that
+I want to talk about today is called a
+dictionary so what is a
+dictionary in in uh real life something
+similar to dictionaries would be phone
+books or a dictionary dictionary where
+you look up the meaning of a word so
+essentially a dictionary is a collection
+of keys and values where keys are not
+necessarily numbers anymore so just like
+with the phone book you look up a name
+and for that name you'll see the phone
+number and there may be multiple same
+names and they'll have different phone
+number so that is possible or um or it
+can be an address book right so you also
+look maybe you look at the at the um
+well add dress book is not really a good
+example a Rost of students you you have
+um the ID numbers and you look up their
+name or photo so key
+value uh Pairs and collection of them so
+what is um interesting about the
+terminology is again different levels of
+abstractions May mean the same thing so
+you may say oh it's dictionary when you
+talking about abstract data type but
+then how are they implemented it's an
+ordered Maps or maps at in a standard
+templated Library uh in
+C++ or if you look under the hood they
+implemented using what's called hash
+tables that we'll look at today or even
+more um precisely those are associative
+arrays right so arrays that do not have
+integer indices but have um um any kind
+of type index whether it's strain or
+whatever you want it to be so that's um
+terminology here right and this is the
+definition so let's think about the
+operations that can be allowed in this
+um if you were to write an interface
+what would be the operations that you
+allowed so here's an interface of a
+dictionary and C++ so you might want to
+insert a key a new key value so uh again
+maybe there's a new person in town with
+the phone number right you want to
+insert uh the key value the the person's
+name and their phone number into the
+book you might want to remove a specific
+um
+key together with the value of course
+all of that will be removed you may just
+want to look at that key value pair
+without removing and again um just check
+if it's an empty uh dictionary or not so
+something else that is fundamental
+is uh in C++ is that you can override
+operator square
+brackets so you can access those
+elements or values by the
+keys by saying square
+bracket and put an apple there because
+that's your key and know Apple will give
+you the value of the Apple which is
+maybe red shiny or whatever juicy or
+whatever are they or a picture of an
+apple so this is a very abstract way of
+then using square brackets which is a
+really neat thing so let's see how it's
+done I'll give you some examples so
+suppose we have the following data and I
+really hope that the screen doesn't do
+what what I see here so let's let's hope
+that the recording is nice but anyway so
+um assume that you have the following
+pairs lock a number and a name so you
+have a school and say it has five story
+school and the lockers are numbered by
+the first um number is the the floor and
+then the rest is um is the number of the
+locker and um say uh and then you you
+get the name of the student
+right so what if I want to retrieve a
+name given a Locker number
+well then I can say whatever my table
+is and put
+103 and you get the name of that student
+that has that Locker or owns that Locker
+right so that's not a big deal because
+then you might think I don't know what
+why it's happening do you see guys this
+blurring of the W of this
+screen it's kind of annoying
+but
+anyway so
+um the way to implement it is doesn't
+seem like a big deal like why are we
+even talking about this associative
+arrays or hashing if we have this Locker
+number keys and
+name uh values it's not a big deal just
+to store it all in Array and put um
+number this array from zero to whatever
+um whatever is the last floor I said
+five floors so maybe
+599 right and just put all of the
+corresponding names like J had away here
+uh into the corresponding indices of
+elements of the array not a big deal
+right then you can just ask for that
+corresponding uh element of the array
+using square brackets not a big deal
+right
+but however for this particular example
+this is only possible because we have
+really specific nice keys that is they
+are integers they are positive integers
+and moreover they're small positive
+integers right so we don't it's not a
+100 story floor or um or more right not
+100 story
+building um so this is something very
+specific what if my key values are um
+are more complex like a course number
+right so what is the course number that
+we have I I really don't know I'm going
+to just put something like this what is
+the course number like this and you want
+to look up by course number a schedule
+info for or information about the course
+or say you have a flight number right
+something like American Airlines
+7705 right and you look at the arrival
+information so so maybe the keys are not
+as necessarily nice as in this first
+example or you have a URL that's a
+string string and you want to look up
+the the page so I'll give you more
+examples of possible indices and how to
+deal then with the rang in this data in
+memory so now we'll talk a little bit
+about implementation and we talk about
+implementation here uh because your
+homework has it we are kind of
+overlapping this material a little bit
+with data structure scor where they
+would be talking about hashing is an
+implementation um however we do that
+because we still have those assignments
+okay so what is general vacabulary
+though so these are the principal
+operations you want to insert a key and
+data in the vocabulary if you got new
+key data pair you want to remove the
+pair by um using the key for searching
+or you want to just look at the uh key
+value pair using find operation and this
+very important part of implementation of
+dictionary is to have the square
+brackets for you that would look up the
+key and give you the value so now in
+this example I have my dictionary that
+is it stores
+names as keys so those are the indices
+and the data is the the age of the
+person so say if I have col here and I
+have 19 that's that my arrangement of
+the data and this is what's called an
+associative array when indices are no
+longer nice small integers they are
+anything right in this case strings but
+any other
+type okay so do you have any
+questions if not let's talk very general
+now so what is the problem then of
+hashing so if we were to implement this
+um associative arrays what does it even
+mean what does it mean to have indices
+that are not integers anymore how do we
+do that so you could pose this problem
+um mathematically or from theoretical
+point of view and you would say well
+what is my key space maybe it's a set of
+strains maybe it's a set of specific
+strains like with the URL starting with
+something or with um say flight numbers
+or names um
+maybe just general strings maybe it's a
+dice toss again dice roll so uh but you
+can say it's some kind of space K and
+then the goal is then to use a function
+to map this key space so have have some
+hash function we call it h to map this
+key space k onto a small set of integers
+because ultimately we do want to store
+all this data in some kind of small
+array so we don't really want to have
+these weird indices we want to map them
+to some small set of integers so that we
+can use array so it's kind of like
+hashing is kind of like hashing into an
+array hashing all these weird Keys uh
+set into an array somehow so that really
+we Underneath It All We Have just an
+array and um um this is a very fuzzy way
+of putting this goal kind of because
+nothing is really clear especially let's
+let's say what does it mean a small
+subset of or small set of integers that
+are positive what does it even mean
+right 100 a thousand what is small so
+that's not really clear a memory is
+pretty large now so maybe it's a million
+right and what is this space of keys
+like is that well defined we don't even
+know it could be strings as I said it
+could be anything right it's not always
+very defined so finding this hash table
+because uh hash uh function because of
+this very fuzzy description of the
+problem is a big challenge that's like a
+huge research area and it's a it's it
+can be a lot of fun and it's a very
+important problem too because here we
+are talking really about some lossless
+compression of some sort right we really
+want to have this really nice bestion
+function that will give us a nice
+distribution of all keys in the integer
+space and that's really difficult to do
+um
+okay so let's just let's draw a little
+picture of what does it all mean so a
+basic idea of
+hashing is that when you have your
+key value
+pair you want to treat that key as an
+integer so when you get the key again
+think of it as an name or whatever or a
+URL or a flight information number of a
+course number you want to Hash it into
+an integer so you want to apply H to K
+and have an i at the way like some small
+nice integer on the way out so then you
+can put find that I and put the value oh
+find that I and put the value into that
+position of the
+array and then you can say okay my table
+hash T which is a hash table essentially
+my table I equals
+value but it's better to say what is I I
+is really literally is H of K so I'm
+going to write it over it's h of K so I
+hashed my key into an integer right
+there so table h of k equals to value
+and this is exactly how the overridden
+square brackets is going to be instead
+of saying table I because we don't know
+I yet you do table h of K like look
+that's that's the override that's how
+the implementation of the overwritten
+square brackets would look
+like
+okay so we have this goal so let's
+see what kind of hash functions would be
+good and which ones would not be good
+and this is a little relevant to again
+to your homework where you have to think
+about actually hashing some um some keys
+in some good way or bad way so I have
+imagine that I have this set which is my
+data and it is key value pairs where the
+key is the name of a child and the value
+is the Hallow
+costume so name and we'll be wearing
+black cat as as her C costume for
+Halloween so that's my
+data I want to have a hash function that
+will take
+n and we'll put her in some array uh um
+in this right finds an array in this to
+put ands information into the array and
+say my array is little so it only has
+eight elements so I have that constraint
+of the size of the array so what would
+be a perfect hash function here can you
+see some kind of way of hashing these
+names so that they evenly distributed in
+my
+array nicely
+distributed oh yeah thank you for your
+comment that your screen looks nice mine
+is like doing some weird things I
+sometimes don't see it I have to write
+on it without seeing it so it's really
+strange but anyway so what would be a
+good hash function for this numbers well
+if I look at these numbers do you see
+something really special about
+them H they all start with different
+first letter and moreover they
+alphabetic look A B C D E F G H H which
+means that if I just look so if my hash
+function will
+take say
+name just first element of the name
+which is first character of the
+name that would be a c d f g for all of
+the names and maybe I divided mod
+8 right which means that a oh so what it
+does it takes the S key
+value of your first character of a and
+divides it by eight I have a table of s
+key values I think a is 49 ID by8 but I
+also have the implementation so we can
+look at the
+implementation
+there you go see I have my oh yeah let's
+just call it
+name um
+name here this is better so look I take
+name and it say it's N I take the first
+character it's cast to the S key value
+divides by 8 mod 8 the answer is one
+right so if it was
+Ben
+then then the the result would be two
+and then whatever the names if the name
+starts with C the the hash value would
+be
+three which means that all of these guys
+so n will go here
+and N will be hash to in this one so the
+I will be one and the black cat
+black cat costume will be put in here
+and Ben with the Harry Potter costume
+will be put in tat two and cor Cory spy
+will be put into three and so on and the
+last Harmony will be put into zero
+because it will be wrapped around the
+array so the B costume will go in
+here okay so this is a fabulous or
+perfect hash function
+because it even evenly distributes the
+keys across the
+array also it's one to one it's a bje
+right it's a bje so there will be no two
+names that will map to the same uh
+element in the array and there will be
+no holes in the array either we'll
+populate all of the array
+uniformly that's that's the definition
+of a perfect function hash function it's
+really really hard to find find S such
+perfect Hash Hash functions for General
+data sets Okay so we lucky now I'm going
+to show you other hash functions where
+you know it's not so nice anymore so
+let's look at the roll of five dice and
+I have the applet here so I can run it
+let's
+look so here is a perfect here's a roll
+and we can roll again and we'll get
+different values and I will tell you
+what's the hash value of each roll is so
+the the this first
+one
+h
+of 2
+1
+5 three and
+four
+um the value of this is um let's
+see four six six the hash of this um
+roll dice roll will be six so let's roll
+again oh come
+on oh it will it will erase my writing
+okay I guess
+guess so for this roll dice I'll have 10
+as a hash
+value for this dice roll I'll have a
+zero
+value for this one I'll have I have to
+do the calculation in my head 10 again
+so let me explain what I mean if I have
+a
+roll come on let's go
+back if I have a
+roll what I look at is how many padal I
+have around the rows what does do it
+mean I look only at
+the at the dice that has a dot inside so
+in this case I only have this three one
+and one and I add up only dots that are
+around the center so in this case for
+this dice roll AG of it would be
+two so I put it in here I put this three
+one
+one
+six and two right here okay so then I
+roll again I calculate so the the way
+this function works is petals you
+calculate number of petals
+around
+rows okay so if there is a a dot inside
+I calculate how many petals are around
+so for six there is zero for two there
+is zero because there's no no dot inside
+right okay so is this a good hash
+function and the answer is not so much
+because first of all we'll never get odd
+hash values so we'll never calculate a
+one so never the result of this hash
+function will be one or three or five or
+7 or 9 11 13 so all of
+this indices in the array will never be
+values of this has hash function there
+will be never values in those positions
+in the array which means that the
+resulting array will be
+sparse most of the rolls will fall under
+the I mean all of the all of the rolls
+will fall onto the even
+indices so we'll only populate half of
+the array so what's the point right
+maybe we could improve this hash
+function but we're talking about this
+particular hash function and how it is a
+bad
+choice okay so um there are many other
+reasons why this hash function is bad
+and I have them on the next slide let's
+see okay so first of all number one
+reason is that we only have effectively
+11 indices that will be ever be occupied
+with different configurations of roll of
+five dice of R their roles but the not
+the the domain or the key space is huge
+because the all of the different numbers
+in which we could have or the result of
+this five dice rolls would be six to
+the^ five right so all possible six
+values five times to to the power five
+so this is a huge domain with respect to
+the very little range of the function
+which means that this function will
+never be a one to one or onto it's it's
+not a bje and it's not onto because
+there's wasted space right we don't map
+onto the uh odd indices moreover it's
+not even uniformly distributed because
+for example for the last roll where you
+get um let's put it this way so the role
+when you have all five
+FES which index which Val which hash
+value would it be for this
+configuration again we compute the
+paddles around the rows there four in
+each dice so 4 * 5 is 20 so you have to
+put it in the last 20th element of this
+array there cannot be
+more uh elements in the array 21 will
+never be a result of this hash function
+20 is the maximum and the only
+configuration that matches it is this
+particular configuration so there will
+be only one element right here while
+imagine how many different
+configurations of five roll dice uh
+there will be for zero right so I don't
+know 22 2 2 two 4 4 4 4 four and all of
+the combinations of the even dice rolls
+for all five of them will all be right
+here so huge number number of different
+rols of five dice will be uh will be all
+crowding the zero space of the array and
+what does it even mean like we map many
+different Keys value pairs to one
+element of our hash table what does it
+even mean how do we resolve this
+Collision so this is what's called a
+collision and um if you want to use this
+hash function you'll have to have a way
+of resolving these collisions right how
+do we put all those elements in there
+and how we look them up
+later so that's a problem which I'll
+talk about in a bit and that's what
+linear CH uh linear um probing and
+separate chaining Collision detections
+me Collision detection Collision
+resolution strategies will be sorry
+okay so let's sum up what is hashing and
+what is a hash T table so hash table is
+just an array
+right just an array which has a hash
+function defined so that this hash
+function will take the
+key and give us the index in the array
+right but we have to have a collision
+resolution strategy because if our key
+space k is kind of the same as the size
+of the array so if the key space is the
+same in size as the size of the array so
+if the number of key value pairs is kind
+of equal or similar to the size of the
+array that it's not so hard to find a
+perfect hash function that will just
+evenly distribute all of the key value
+chair uh value pairs into this array
+that's not such a big problem the
+problem arises when we have the key
+space much much l larger than the size
+of the array that's when the real
+problem Rises and that's where there's a
+lot of research put into understanding
+how to do best um hash functions for
+these kind of situations that always
+work kind of uniform uh perfect hash
+functions um so let's look at this case
+when the key size when the number of
+these key value pairs are much much
+bigger than the available aable space
+for the array what do we do well we hope
+then that for
+any selection or collection of
+n key value pairs that this hash
+function will be so nice that it will
+put all of these key value pairs
+uniformly into the array so that's kind
+of the hope that whenever I select
+n key value pairs so say this is another
+selection of n key value pairs they're
+all red then the hash function will be
+nice and distribute them all nicely so
+let me show just one more so say I
+select another end sized subset of my
+keys uh and all of these key value pairs
+then again will be uniformly distributed
+in my
+array however you cannot prevent this
+following situation happen
+that I will select the subset of my key
+value pairs that all of size n that all
+fall into the same index with this hash
+function so I'll pick that red one and
+red that black uh key value pair and
+that green key value pair that all as a
+set will map to one Index right it's
+it's still possible that you'll be so
+unlucky and that's why picking such nice
+hash uh functions for General sets of
+key values is really difficult okay so
+that's the theoretical Foundation of why
+this problem is so difficult and and why
+is it important at the same time to
+solve this so let's look at uh a couple
+more motivating
+examples so say I have 40 character
+strings here they
+are first strain second strin so on I
+want to Hash them right I want to have a
+way of storing them in an
+array and I need to find a hash function
+that will map each of the 40 character
+string to an
+integer so I'm going to do the Fallen
+hash or hack or whatever I'm going to
+select
+eight characters or eight character
+positions at random somehow I don't know
+like maybe like
+this and from each strain 40 character
+strain I will create then an eight
+character
+strain based on this position so say the
+it's second position and whatever eighth
+position so it's o
+r
+h
+comma
+space
+space is that eight that's not eight I
+need one more let's do one more say this
+one so I have a uh G okay so that's my
+eight character
+string compression from a 40 character
+string
+now the second string will go to what
+little O say G I'm not really precise
+here so say uh
+d
+c r
+space l right and so on so the idea is
+that if I hatch 40 character strings
+into the eight character
+strings then is it eight maybe it's
+still seven oh it's still seven okay
+let's do one more sorry so that we
+really good at the look that we really
+precise so
+here
+what is
+um here e insert e and here is s
+before here C before R another C here
+okay this is better right okay so we
+really really select the
+proper characters from those eight
+positions that we randomly pet for this
+40 character strengths so we compress
+the 40 character into eight characters
+like that and it seems like a nice thing
+to do because look if we know how to
+Hash eight character strings which I'll
+show you later that's actually not a big
+deal so if we have small strings like of
+eight characters you just add the ask
+key values and do mod whatever the size
+of the array that you want to do and
+that's a really
+nice uh well
+distributed uh hash function for this
+kind of strings it's a really really
+nice hash function so let's assume that
+we know how to Hash small strings
+hashing large strings in the same way
+would be really difficult
+because um we would we would run into
+all sorts of problems with them um which
+I'll show you again later so we really
+want to have then a nice way of hashing
+largest strings uh but we'll use the
+hash of small strings for that okay so
+this seems like a nice thing to
+do so let's see if we can if this then
+applies if this nice hash function can
+work for any set of 40 character strings
+and the answer is not so much what if my
+40 character strings
+are
+just a bunch of URLs
+right and if I select eight positions at
+random let's say this one and this one
+and it's Wikipedia Pages sorry
+specifically wikip Wikipedia pages and
+this one and this one and say this one
+and how many do I need to have this one
+and this one
+H is my distribution as nice as in the
+with the first set of keys because this
+is the same function just different set
+of keys right okay so where does this
+stram map to T
+slash I do slash
+slash
+ENT and uh
+B okay but is that m% I'm blanking is
+that the did I say it right whatever
+that character is okay now the second
+strain MTH to T slash I the same thing
+dot SL SL W
+slash what about do you see the problem
+here right the second the second
+character in all of the strings is the
+same this character in all of the
+strings is the same this character is
+the same this character is the same this
+character is the same this only the last
+two will be different so we will really
+differentiate all of the Wikipedia URLs
+based on these two characters and it's
+just very few numbers very few keys that
+we will have for thousands of pages
+right so that's not really good there
+will be much smaller uh key space uh
+hash table range space than the key
+space which is the problem we know that
+so that's that's not
+good um okay do you have any questions
+so now let's look into how then to
+resolve these issues of um the problem
+when the same strains will most likely
+end up in the
+same IND this of of the hash
+table just like in the case of Wikipedia
+Pages or earlier we had another example
+where there will be just two the the uh
+key SPAC is two too large for the size
+of the array and too many um key value
+pairs will crowd the same indices so I
+decided that I will not be showing you
+examples because I found this really
+amazing page where all of this is
+described in great way with the
+animation so here I can narrate this
+animation but of course you can read it
+so what we're talking about is
+hashing hashing Str strings in Array
+right so we need to find a hash function
+so say strings are names here's Randy we
+want to put him in the array the array
+is small in this case let's say just
+seven elements so you could just instead
+of Designing any hash function you could
+just go one by one and
+ask but if the r as the arays get larger
+and larger it just so long to do that
+right asking every single index oh are
+you storing Randy no M okay let's go
+next right so this can take a lot of
+time each single time you want to insert
+an ele element into the hash into the
+array so therefore hash tables are used
+instead so instead of regular array use
+a hash table or this associative array
+where for a r or for a key or a name
+here you find the index using this hash
+function so you give Randy into the hash
+function and it spits out the
+index okay so if index is say 82 you
+just then put Randy in there no problem
+right okay so we already covered it but
+this is kind of the animation way of
+explaining the same thing so that's
+great how could we make a hash function
+like that for names well one of the Imp
+implementation is exactly for short
+strains you could add up the ask key
+values and divide mod the size of the
+array then that strain that that set of
+um indices produced by this hash
+function will be uniformly distributed
+if the original keys are uniformly
+distributed so you'll get a nice hash
+function for your 100 size
+array and that's that's the explanation
+how a 2 was obtained for randing you
+just add the SQL uh
+numbers so that's great for short
+strains this will work perfectly so say
+for eight size strains the the size of
+the strain set and the size of the array
+will be roughly matched and it will be
+great uh so here they show so the
+animation shows how you can put more
+strings into this array and how the same
+same thing is computer the same hash
+function will find the place for um the
+element to either be inserted or removed
+or just found simply peaked at right so
+here for St what do we do for St we
+compute the hash value we found it we
+report that we found it that's one of
+the principal operations to look at the
+array Eric we insert it and what else I
+guess that's all it says searching for
+for stand inserting Eric okay cool but
+inevitably there may be situation where
+the same
+name or the same key will result result
+in the same index so Eric uh here has
+hash value
+four just like what was it uh Randy
+Randy and Eric all mapped to four so
+they belong to the same place in the
+array what do we
+do
+and that's the lab hash problem so there
+are two principal way of doing it open
+addressing or closed addressing so open
+addressing is also what we call linear
+probing here it's explained uh I think
+let me show you on my slides that oh I
+start with separate chain but the next
+slide shows a linear probing or open
+hash that's what that animation will be
+about so open hash what we do instead of
+inserting the key in that place that was
+already occupied by something we just
+increase the hash by one so let's see
+where is the animation so you say oh
+Randy is already there so we cannot put
+Eric in there well we'll just increment
+by one and insert Eric in the next
+position and then will flag that place
+in the array as hey it's occupied now
+you can't really put it in there
+like just just remember that you have to
+probe next when you're next time okay so
+that's uh how open addressing or linear
+probing
+works now another way of resolving
+collisions would be just instead of
+keeping one value keep a link list on
+values of values associated with that
+index or with that hash value so then
+Randy Eric or whatever whoever else maps
+to for would all live in that link list
+of course then you have to manage link
+lists and maybe it's also an array under
+the hood but maybe it's um if it's a
+link list then you have to deal with
+those pointers like we talked about last
+time so here we go if Randy and Eric are
+there then I think he'll show you how
+to insert in searching yeah let's see so
+if Randy goes into
+four and then Eric goes into four then
+you have
+to you know open up the link list
+and and um rearrange the pointers like
+here to to maintain the link list
+maintain link list can be tricky because
+you have to deal with pointers however
+once we go through SD or S
+um the standard templated Library
+implementation and I'll show you later
+in this today how you don't really have
+to worry about this once you use the
+standard templat Library lists for link
+list
+implementation
+okay so that's it that's that's the key
+uh you can do analysis but we will not
+do this in this class because we're not
+really talking about data structures
+uh but these are the
+two uh different ways of dealing with
+collisions so either separate chaining
+that is instead of inert if if a bucket
+is occupied just move on to the next one
+and put it
+there that's for uh linear probing right
+and for separate chaining you just
+attach a link list of all of the key
+element pairs that
+uh that map to the same IND
+this okay so now let me show you an
+implementation
+of hashing and hash hashing function but
+also a hash table for eight character
+strings so that's what I promised you a
+little
+earlier and let's go through the
+implementation so what exactly we are
+doing
+here
+so I'm going to declare a hash table and
+it will have 100 elements so Underneath
+It All I know that there will be an
+array of 100 elements for each key right
+so now I'm going to
+insert an apple that's the key with the
+value a
+fruit The Strain C++ is the key with the
+value a programming language and hash is
+a is a um is a key and the value is a
+data structure okay so that's from the
+client point of view what I can do I can
+declare a table and then I can start
+populating and then I can look at each
+of the um by the key I can look up the
+value right so for the key Apple I hope
+to look up the value which you can see
+that I'm doing it right there right so I
+printed out the key and the hash table
+value using this overwritten square
+bracket operation because for apple
+square brackets I should get the value
+in that array with this key right so
+apple is printed out to be a fruit C++
+is printed out a programming language
+and hash is printed out a data structure
+this is all great but how is this hash
+table implemented so here's my class
+hash simple hash table privately it has
+this key value pairs it also has this
+table so it's a private uh member so you
+can really access it uh directly but
+what you can access directly is only
+public principal operations and that is
+operator square
+brackets and um and just um I can
+structure in this case so I don't really
+have any other public um operations here
+I I did not Implement insert and
+delete because it was just for uh just a
+simple implementation that I wanted to
+show but operator square brackets is
+overr so I can always Peak or look up
+the element for with the key so how do I
+even how can I look up this element with
+the key well the operator square
+brackets really is Hash calculation
+right so it will look up the table with
+that hash
+value which is Hash value of the key and
+um and it's doing something interesting
+there as well so what is it doing is
+that it's the way my table is really
+stored and implemented which is a p
+which is done privately but we can look
+and see how it's done so table is a
+vector which means that it's an
+array but each element is is a q which
+means that I'm talking about closed
+hashing right so it's a it's a chaining
+of the key value pairs for each
+index but um I'm not really concerned
+about it because lists already Implement
+all of those insert and delete
+operations if I need that so this is
+very clever way to do it using C++
+standard Library Center templated
+Library okay and um so so what else oh
+the hash table the hash function the
+hash function itself is what we talked
+about uh for eight character strings you
+you just add up
+their each of their character as key
+values and then you divide it mod the
+table size so mod 100 and then those 80
+character strings will be nicely
+distributed across that table you can
+it's gu to do that so there you go uh
+that's the
+implementation you can look up at it you
+can look it up and uh and see and play
+with it and I think I'm done for today
+so we are a little
+earlier but again this is just think of
+it as a bonus lecture because I will not
+be asking this material on the exam um
+but it's helpful for your
+homework okay any questions
+so now next week we still have really
+cool material uh Elmer will be talking
+about the standard library and um V will
+be talking about smart
+pointers and um principles of
+programming in modern C++ so that's very
+very crucial he lecture is something
+that we'll need to start with in the
+next installation of this class so we
+are all looking forward to seeing it and
+I hope you all will be there so I'll see
+you next
+Tuesday

@@ -1,0 +1,5328 @@
+﻿1
+00:00:14,080 --> 00:00:16,199
+by the way we decided that we will hold
+
+2
+00:00:16,199 --> 00:00:19,199
+live lectures even if we have very few
+
+3
+00:00:19,199 --> 00:00:21,800
+of you because those who come they you
+
+4
+00:00:21,800 --> 00:00:23,400
+guys really want to be here so we will
+
+5
+00:00:23,400 --> 00:00:25,640
+do
+
+6
+00:00:27,439 --> 00:00:31,960
+that to keep the live education
+
+7
+00:00:38,360 --> 00:00:40,879
+in person in person
+
+8
+00:00:40,879 --> 00:00:44,599
+education is this my
+
+9
+00:00:54,680 --> 00:00:57,039
+slide okay so let's
+
+10
+00:00:57,039 --> 00:01:01,039
+start let's start that to respond today
+
+11
+00:01:01,039 --> 00:01:03,239
+so
+
+12
+00:01:03,239 --> 00:01:08,560
+I I was very distracted over the
+
+13
+00:01:08,560 --> 00:01:11,040
+weekend and
+
+14
+00:01:11,040 --> 00:01:13,159
+therefore please keep an eye on
+
+15
+00:01:13,159 --> 00:01:15,360
+everything that I do here so because we
+
+16
+00:01:15,360 --> 00:01:18,320
+are doing some complex things and um I
+
+17
+00:01:18,320 --> 00:01:21,079
+mean they're simple but uh there's some
+
+18
+00:01:21,079 --> 00:01:23,360
+syntax things so just just keep an eye
+
+19
+00:01:23,360 --> 00:01:24,840
+on what I'm
+
+20
+00:01:24,840 --> 00:01:27,200
+doing um it's a good exercise for you
+
+21
+00:01:27,200 --> 00:01:31,240
+but let's start with the announcements
+
+22
+00:01:31,240 --> 00:01:33,920
+sea style array so last lecture we spent
+
+23
+00:01:33,920 --> 00:01:36,600
+about half an hour talking about the
+
+24
+00:01:36,600 --> 00:01:39,560
+Syntax for sea style arrays where we had
+
+25
+00:01:39,560 --> 00:01:42,960
+this par um asteris right and then
+
+26
+00:01:42,960 --> 00:01:46,280
+square brackets and
+
+27
+00:01:46,280 --> 00:01:48,960
+um we I have to make an announcement
+
+28
+00:01:48,960 --> 00:01:51,840
+that although we did spend half an hour
+
+29
+00:01:51,840 --> 00:01:53,920
+it seems like it's not too much of a
+
+30
+00:01:53,920 --> 00:01:57,399
+waste although they are largely
+
+31
+00:01:57,399 --> 00:02:00,000
+abandoned by industry at this point so
+
+32
+00:02:00,000 --> 00:02:03,039
+it's not a good practice to use them
+
+33
+00:02:03,039 --> 00:02:06,159
+nevertheless um it seems like our at
+
+34
+00:02:06,159 --> 00:02:07,960
+least industry collaborators say that
+
+35
+00:02:07,960 --> 00:02:10,199
+it's not too bad to spend some time
+
+36
+00:02:10,199 --> 00:02:12,440
+maybe not half an hour if you want to
+
+37
+00:02:12,440 --> 00:02:14,560
+really upgrade our course to the latest
+
+38
+00:02:14,560 --> 00:02:17,239
+kind of C++ standards but still some
+
+39
+00:02:17,239 --> 00:02:19,319
+time spending explaining that they exist
+
+40
+00:02:19,319 --> 00:02:23,440
+because you can write them it's not like
+
+41
+00:02:23,920 --> 00:02:26,360
+C++ prohibited them right they're still
+
+42
+00:02:26,360 --> 00:02:28,480
+allowed you still can write that code
+
+43
+00:02:28,480 --> 00:02:31,239
+you just uh but considered bad style and
+
+44
+00:02:31,239 --> 00:02:34,239
+why is it because it is pretty ugly
+
+45
+00:02:34,239 --> 00:02:37,720
+unreadable syntax it creates those
+
+46
+00:02:37,720 --> 00:02:39,120
+remember like you have to put
+
+47
+00:02:39,120 --> 00:02:41,760
+parentheses if you want to pick first
+
+48
+00:02:41,760 --> 00:02:44,319
+the rows or columns or whatever so the
+
+49
+00:02:44,319 --> 00:02:46,800
+the syntax was not really friendly and
+
+50
+00:02:46,800 --> 00:02:51,000
+that's why for static arrays and STD
+
+51
+00:02:51,000 --> 00:02:54,760
+arrays are usually used now um and
+
+52
+00:02:54,760 --> 00:02:56,959
+welcome to use this for static arrays
+
+53
+00:02:56,959 --> 00:03:00,000
+and STD vectors for dynamic arrays so in
+
+54
+00:03:00,000 --> 00:03:02,159
+the future iterations of the course we
+
+55
+00:03:02,159 --> 00:03:05,040
+will we would spend less time showing
+
+56
+00:03:05,040 --> 00:03:05,760
+the
+
+57
+00:03:05,760 --> 00:03:11,319
+syntax but also all of our code has
+
+58
+00:03:11,319 --> 00:03:15,200
+those arrays if you noticed so we would
+
+59
+00:03:15,200 --> 00:03:18,080
+have to uh you know roll up our sleeves
+
+60
+00:03:18,080 --> 00:03:19,440
+and actually go through all of those
+
+61
+00:03:19,440 --> 00:03:22,319
+exercises and upgrade them as
+
+62
+00:03:22,319 --> 00:03:25,239
+well which um which is going to be a fun
+
+63
+00:03:25,239 --> 00:03:27,519
+exercise and a lot of work
+
+64
+00:03:27,519 --> 00:03:30,640
+right so um but that's what's probably
+
+65
+00:03:30,640 --> 00:03:32,840
+going to happen in the next Generation
+
+66
+00:03:32,840 --> 00:03:34,400
+uh we are really grateful of course to
+
+67
+00:03:34,400 --> 00:03:37,080
+our um industry collaborators because
+
+68
+00:03:37,080 --> 00:03:38,680
+they're helping us to upgrade the course
+
+69
+00:03:38,680 --> 00:03:42,120
+to to what should really happen Okay so
+
+70
+00:03:42,120 --> 00:03:44,080
+please do not miss the invited lectal
+
+71
+00:03:44,080 --> 00:03:47,319
+I'm going to be pointing this out every
+
+72
+00:03:47,319 --> 00:03:51,640
+lecture 1804 a very big day we want to
+
+73
+00:03:51,640 --> 00:03:56,760
+have a big crowd here for whe but now
+
+74
+00:03:56,760 --> 00:03:58,519
+let's start with
+
+75
+00:03:58,519 --> 00:04:00,439
+our um
+
+76
+00:04:00,439 --> 00:04:02,120
+with our lecture so today we're going to
+
+77
+00:04:02,120 --> 00:04:05,200
+be talking about passing parameter
+
+78
+00:04:05,200 --> 00:04:08,159
+passing so let's look at the setup so I
+
+79
+00:04:08,159 --> 00:04:13,400
+have this structure struct student and
+
+80
+00:04:13,400 --> 00:04:16,320
+for those of you who know C++ who taught
+
+81
+00:04:16,320 --> 00:04:18,880
+C++ you know that struts are kind of
+
+82
+00:04:18,880 --> 00:04:20,720
+like classes but they don't allow
+
+83
+00:04:20,720 --> 00:04:23,880
+functions but C++ we'll just read it as
+
+84
+00:04:23,880 --> 00:04:25,639
+if you were to
+
+85
+00:04:25,639 --> 00:04:28,160
+write what what was that we already
+
+86
+00:04:28,160 --> 00:04:31,120
+talked about class what
+
+87
+00:04:31,120 --> 00:04:34,280
+so this is equivalent to declaring a
+
+88
+00:04:34,280 --> 00:04:38,840
+class with everything public sorry
+
+89
+00:04:38,840 --> 00:04:41,639
+public so all of the fields are just
+
+90
+00:04:41,639 --> 00:04:43,440
+public so it's a it's the same class you
+
+91
+00:04:43,440 --> 00:04:44,919
+can put functions there you can put
+
+92
+00:04:44,919 --> 00:04:48,080
+Constructors there as we will learn next
+
+93
+00:04:48,080 --> 00:04:50,360
+lecture but just everything is public
+
+94
+00:04:50,360 --> 00:04:52,800
+you cannot use we have private private
+
+95
+00:04:52,800 --> 00:04:56,520
+field so what do we have in this class
+
+96
+00:04:56,520 --> 00:04:58,680
+we have the name of the student the face
+
+97
+00:04:58,680 --> 00:05:00,680
+and the age so that's that's all good
+
+98
+00:05:00,680 --> 00:05:03,639
+the string type PNG type user defined
+
+99
+00:05:03,639 --> 00:05:07,400
+type and an integer age so now let's
+
+100
+00:05:07,400 --> 00:05:09,919
+look at the flow of our main function we
+
+101
+00:05:09,919 --> 00:05:13,240
+will declare student a then we will
+
+102
+00:05:13,240 --> 00:05:16,440
+initialize it and then we'll make we'll
+
+103
+00:05:16,440 --> 00:05:18,600
+have this assignment statement where on
+
+104
+00:05:18,600 --> 00:05:21,479
+the right hand side we call a function
+
+105
+00:05:21,479 --> 00:05:23,400
+and pass a as a
+
+106
+00:05:23,400 --> 00:05:27,319
+parameter so this function birthday will
+
+107
+00:05:27,319 --> 00:05:30,680
+get a as an input
+
+108
+00:05:30,680 --> 00:05:33,280
+so a will be effectively and I'll give
+
+109
+00:05:33,280 --> 00:05:35,000
+you the me so we'll just we'll talk
+
+110
+00:05:35,000 --> 00:05:37,240
+about the mechanisms how it's done and
+
+111
+00:05:37,240 --> 00:05:38,600
+then there are three different
+
+112
+00:05:38,600 --> 00:05:39,919
+mechanisms in
+
+113
+00:05:39,919 --> 00:05:44,000
+c+++ to pass the parameter so
+
+114
+00:05:44,000 --> 00:05:46,039
+effectively this a
+
+115
+00:05:46,039 --> 00:05:49,919
+will will be used for creating this s in
+
+116
+00:05:49,919 --> 00:05:51,520
+some way in three different ways and
+
+117
+00:05:51,520 --> 00:05:53,919
+we'll talk about it so this a will be
+
+118
+00:05:53,919 --> 00:05:56,560
+passed as s in some way then the
+
+119
+00:05:56,560 --> 00:05:59,319
+function will execute then it will
+
+120
+00:05:59,319 --> 00:06:03,199
+return or form the return uh
+
+121
+00:06:03,199 --> 00:06:06,400
+value in this case it's an integer value
+
+122
+00:06:06,400 --> 00:06:09,360
+and it will then close the stack you
+
+123
+00:06:09,360 --> 00:06:11,160
+remember all of the local variables will
+
+124
+00:06:11,160 --> 00:06:13,800
+disappear the system will take that back
+
+125
+00:06:13,800 --> 00:06:17,599
+and return this as a right hand side so
+
+126
+00:06:17,599 --> 00:06:20,080
+the return
+
+127
+00:06:20,080 --> 00:06:23,440
+value will be taken as a right hand side
+
+128
+00:06:23,440 --> 00:06:25,880
+of this
+
+129
+00:06:25,880 --> 00:06:28,560
+expression okay of this assignment
+
+130
+00:06:28,560 --> 00:06:30,280
+statement and then then we do something
+
+131
+00:06:30,280 --> 00:06:32,039
+else okay so let's look at three
+
+132
+00:06:32,039 --> 00:06:34,400
+different ways then we can pass this
+
+133
+00:06:34,400 --> 00:06:37,039
+parameter so the first one if you don't
+
+134
+00:06:37,039 --> 00:06:39,720
+have any questions the first one will be
+
+135
+00:06:39,720 --> 00:06:43,960
+parameter passing by value so this is
+
+136
+00:06:43,960 --> 00:06:47,120
+the default one in C+ plus if you pass
+
+137
+00:06:47,120 --> 00:06:49,960
+the parameter it will be passed by value
+
+138
+00:06:49,960 --> 00:06:52,560
+so all you have to do in your birthday
+
+139
+00:06:52,560 --> 00:06:54,400
+function is
+
+140
+00:06:54,400 --> 00:06:57,319
+just do nothing just say student s
+
+141
+00:06:57,319 --> 00:07:00,960
+that's what we'll be doing p in by value
+
+142
+00:07:00,960 --> 00:07:03,639
+so let's look let's draw the stats of
+
+143
+00:07:03,639 --> 00:07:07,000
+these two functions Main and birthday
+
+144
+00:07:07,000 --> 00:07:09,520
+and see what happens behind the scenes
+
+145
+00:07:09,520 --> 00:07:12,919
+on the memory level so I'm declaring
+
+146
+00:07:12,919 --> 00:07:17,080
+student a that means a is on the
+
+147
+00:07:17,080 --> 00:07:21,800
+stack right and then I initialize it so
+
+148
+00:07:21,800 --> 00:07:25,319
+all of the fields or members public
+
+149
+00:07:25,319 --> 00:07:27,720
+members in this case only all of the
+
+150
+00:07:27,720 --> 00:07:31,120
+members of this class student will be
+
+151
+00:07:31,120 --> 00:07:33,599
+initialized in some way so let's let's
+
+152
+00:07:33,599 --> 00:07:35,720
+find a name starting with
+
+153
+00:07:35,720 --> 00:07:40,240
+a I guess um if that's okay I don't is
+
+154
+00:07:40,240 --> 00:07:42,919
+there is there anybody else here with
+
+155
+00:07:42,919 --> 00:07:46,280
+name starting with a anybody I'm the
+
+156
+00:07:46,280 --> 00:07:47,360
+only
+
+157
+00:07:47,360 --> 00:07:50,360
+one okay well it's a finished name so
+
+158
+00:07:50,360 --> 00:07:53,840
+that's good so I'm happy the face it's a
+
+159
+00:07:53,840 --> 00:07:56,520
+PNG right pixel by pixel initialization
+
+160
+00:07:56,520 --> 00:07:58,440
+and age
+
+161
+00:07:58,440 --> 00:08:01,440
+huh
+
+162
+00:08:02,120 --> 00:08:03,560
+okay let's do
+
+163
+00:08:03,560 --> 00:08:09,080
+35 that's a lie but at least okay sorry
+
+164
+00:08:09,080 --> 00:08:11,800
+bad jokes here could be okay so I
+
+165
+00:08:11,800 --> 00:08:15,840
+initialized um a student named
+
+166
+00:08:15,840 --> 00:08:18,560
+Anna yeah this happens I'm all red right
+
+167
+00:08:18,560 --> 00:08:19,759
+and
+
+168
+00:08:19,759 --> 00:08:22,400
+whatever and it's all recorded makes me
+
+169
+00:08:22,400 --> 00:08:26,000
+feel bad whatever anyway so then a is
+
+170
+00:08:26,000 --> 00:08:28,919
+passed here or we have to evaluate the
+
+171
+00:08:28,919 --> 00:08:31,080
+right hand side this is the next line so
+
+172
+00:08:31,080 --> 00:08:33,360
+the right hand side has to be evaluated
+
+173
+00:08:33,360 --> 00:08:36,440
+first and for that birthday needs to be
+
+174
+00:08:36,440 --> 00:08:39,559
+called with a being passed to it so if
+
+175
+00:08:39,559 --> 00:08:43,760
+you pass it by value that means that s
+
+176
+00:08:43,760 --> 00:08:46,040
+is going to be a variable that is going
+
+177
+00:08:46,040 --> 00:08:49,600
+to be copied memberwise from a so that's
+
+178
+00:08:49,600 --> 00:08:52,839
+what the C++ will do by default it's as
+
+179
+00:08:52,839 --> 00:08:57,880
+if you declared student s like this
+
+180
+00:08:57,880 --> 00:09:01,760
+student s and initialize it with all of
+
+181
+00:09:01,760 --> 00:09:05,440
+the variables from a so s is going to be
+
+182
+00:09:05,440 --> 00:09:09,279
+a variable on the stack for function
+
+183
+00:09:09,279 --> 00:09:12,560
+birthday and all of the members are
+
+184
+00:09:12,560 --> 00:09:16,800
+going to be copied from a one by one so
+
+185
+00:09:16,800 --> 00:09:19,240
+strings know how to copy themselves it
+
+186
+00:09:19,240 --> 00:09:21,000
+could be a long string right it could be
+
+187
+00:09:21,000 --> 00:09:22,839
+the entire shap
+
+188
+00:09:22,839 --> 00:09:26,480
+sphere so it's it could be long here and
+
+189
+00:09:26,480 --> 00:09:28,720
+pngs hopefully know how to copy
+
+190
+00:09:28,720 --> 00:09:31,040
+themselves because use in this class and
+
+191
+00:09:31,040 --> 00:09:32,560
+how they copy themselves it's something
+
+192
+00:09:32,560 --> 00:09:35,040
+we'll talk about later that's what copy
+
+193
+00:09:35,040 --> 00:09:36,959
+con structures are for the next lecture
+
+194
+00:09:36,959 --> 00:09:39,040
+so we didn't talk about it but we assume
+
+195
+00:09:39,040 --> 00:09:41,399
+they know how to do that at this point
+
+196
+00:09:41,399 --> 00:09:43,800
+so the entire PNG pixel by pixel will be
+
+197
+00:09:43,800 --> 00:09:47,160
+copied and the age will be copied okay
+
+198
+00:09:47,160 --> 00:09:49,600
+so you like it so
+
+199
+00:09:49,600 --> 00:09:53,959
+far okay so we copied all of this s uh
+
+200
+00:09:53,959 --> 00:09:57,040
+variable on the stat for birthday
+
+201
+00:09:57,040 --> 00:09:59,600
+function for what reason right so let's
+
+202
+00:09:59,600 --> 00:10:01,079
+see what we're going to do with it we're
+
+203
+00:10:01,079 --> 00:10:03,720
+going to so next we're going to execute
+
+204
+00:10:03,720 --> 00:10:05,640
+this line so age is going to be
+
+205
+00:10:05,640 --> 00:10:08,000
+increased by one then we're going to
+
+206
+00:10:08,000 --> 00:10:09,399
+print out
+
+207
+00:10:09,399 --> 00:10:12,279
+birthday to standard out then we're
+
+208
+00:10:12,279 --> 00:10:15,680
+going to form the return uh value which
+
+209
+00:10:15,680 --> 00:10:18,240
+is age and that's the new age
+
+210
+00:10:18,240 --> 00:10:22,360
+36 and then the ending of the early
+
+211
+00:10:22,360 --> 00:10:25,160
+brace which means all of the local
+
+212
+00:10:25,160 --> 00:10:28,440
+variables are going out of the stack so
+
+213
+00:10:28,440 --> 00:10:31,360
+system takes them back system says oh s
+
+214
+00:10:31,360 --> 00:10:34,279
+is local great I'm going to take it back
+
+215
+00:10:34,279 --> 00:10:35,680
+and I'm going to resign it for something
+
+216
+00:10:35,680 --> 00:10:39,399
+else that's needed okay and then
+
+217
+00:10:39,399 --> 00:10:42,440
+this this is returned as the right hand
+
+218
+00:10:42,440 --> 00:10:44,440
+side value
+
+219
+00:10:44,440 --> 00:10:47,920
+36 the new age is 36 and we are printing
+
+220
+00:10:47,920 --> 00:10:50,279
+out A's age so what's going to be
+
+221
+00:10:50,279 --> 00:10:52,880
+printed out
+
+222
+00:10:56,399 --> 00:10:59,639
+here so a is still on the stat for this
+
+223
+00:10:59,639 --> 00:11:02,920
+function main we didn't touch it we were
+
+224
+00:11:02,920 --> 00:11:06,279
+working with s that went out of
+
+225
+00:11:06,279 --> 00:11:10,240
+scope 35 yeah so all of that work which
+
+226
+00:11:10,240 --> 00:11:12,880
+maybe is fine we maybe we didn't want to
+
+227
+00:11:12,880 --> 00:11:17,000
+really um affect the data of this class
+
+228
+00:11:17,000 --> 00:11:18,839
+we were doing something else maybe I
+
+229
+00:11:18,839 --> 00:11:20,680
+don't know what's the design
+
+230
+00:11:20,680 --> 00:11:23,680
+but do you like it so that's the end of
+
+231
+00:11:23,680 --> 00:11:26,200
+it right then return zero then this will
+
+232
+00:11:26,200 --> 00:11:28,040
+delete a because we will be done with
+
+233
+00:11:28,040 --> 00:11:31,440
+main but by then we're done with me so
+
+234
+00:11:31,440 --> 00:11:33,760
+that's okay so I have a question for you
+
+235
+00:11:33,760 --> 00:11:37,680
+do you like this what are the advantages
+
+236
+00:11:37,680 --> 00:11:40,160
+of or disadvantages so in this case the
+
+237
+00:11:40,160 --> 00:11:42,880
+question so pick the disadvantages don't
+
+238
+00:11:42,880 --> 00:11:45,160
+pick the advantages of parameter passing
+
+239
+00:11:45,160 --> 00:11:50,399
+by value so what was bad about
+
+240
+00:11:51,880 --> 00:11:54,160
+it hold
+
+241
+00:11:54,160 --> 00:11:57,160
+on
+
+242
+00:11:58,240 --> 00:12:01,240
+twice
+
+243
+00:12:01,560 --> 00:12:05,119
+so could it be
+
+244
+00:12:05,240 --> 00:12:08,639
+slow yeah those pngs could be still
+
+245
+00:12:08,639 --> 00:12:11,800
+copying themselves right although we're
+
+246
+00:12:11,800 --> 00:12:14,240
+already done with birthday but who knows
+
+247
+00:12:14,240 --> 00:12:16,720
+how long that copy would have taken
+
+248
+00:12:16,720 --> 00:12:18,959
+right it could be a terabyte of data I
+
+249
+00:12:18,959 --> 00:12:22,839
+don't know we passed the entire object
+
+250
+00:12:22,839 --> 00:12:25,959
+student all of its data to the function
+
+251
+00:12:25,959 --> 00:12:28,560
+just to do something very silly be done
+
+252
+00:12:28,560 --> 00:12:30,839
+with it so why all of that copy right it
+
+253
+00:12:30,839 --> 00:12:35,079
+could be slow so there's no pointers so
+
+254
+00:12:35,079 --> 00:12:36,519
+this is not a disadvantage that's
+
+255
+00:12:36,519 --> 00:12:38,199
+actually good there we don't deal with
+
+256
+00:12:38,199 --> 00:12:41,320
+pointers by when we pass by value like
+
+257
+00:12:41,320 --> 00:12:44,440
+this we don't is there something else so
+
+258
+00:12:44,440 --> 00:12:46,240
+if people said something else I want to
+
+259
+00:12:46,240 --> 00:12:49,560
+hear what that is so you can put it here
+
+260
+00:12:49,560 --> 00:12:52,320
+so what else you don't like about
+
+261
+00:12:52,320 --> 00:12:55,000
+it I mean the whole point is kind of
+
+262
+00:12:55,000 --> 00:12:56,720
+weird right why did we do all of that
+
+263
+00:12:56,720 --> 00:12:59,399
+copying but that's again kind of you
+
+264
+00:12:59,399 --> 00:13:01,480
+here could be slow but still the
+
+265
+00:13:01,480 --> 00:13:03,279
+question is why did we do all that
+
+266
+00:13:03,279 --> 00:13:04,920
+copying we could have done it in some
+
+267
+00:13:04,920 --> 00:13:08,760
+much more efficient way so let me tell
+
+268
+00:13:08,760 --> 00:13:11,800
+you how could we have done it and that's
+
+269
+00:13:11,800 --> 00:13:15,360
+our second way of passing the parameter
+
+270
+00:13:15,360 --> 00:13:19,600
+so we could have passed it by pointer so
+
+271
+00:13:19,600 --> 00:13:21,720
+for that the whole different flow needs
+
+272
+00:13:21,720 --> 00:13:24,720
+to be arranged though we initialize
+
+273
+00:13:24,720 --> 00:13:28,760
+student we declare student pointer B so
+
+274
+00:13:28,760 --> 00:13:32,519
+B is going to be a student pointer now
+
+275
+00:13:32,519 --> 00:13:34,160
+which means that all we have to
+
+276
+00:13:34,160 --> 00:13:36,160
+initialize it with is to give it some
+
+277
+00:13:36,160 --> 00:13:40,760
+kind of address right which will contain
+
+278
+00:13:40,760 --> 00:13:42,959
+a student so that's where we initialize
+
+279
+00:13:42,959 --> 00:13:45,639
+B and let's put initialize Asus B
+
+280
+00:13:45,639 --> 00:13:47,360
+because we really want to give it some
+
+281
+00:13:47,360 --> 00:13:50,199
+kind of value so let's assume that we
+
+282
+00:13:50,199 --> 00:13:54,040
+say uh somewhere new student and we
+
+283
+00:13:54,040 --> 00:13:56,000
+initialize that new student with the
+
+284
+00:13:56,000 --> 00:13:58,880
+name starting with b okay what did we do
+
+285
+00:13:58,880 --> 00:14:00,959
+last last time finish name starting with
+
+286
+00:14:00,959 --> 00:14:03,439
+b
+
+287
+00:14:04,759 --> 00:14:09,040
+b BT that's not finish name Bert okay so
+
+288
+00:14:09,040 --> 00:14:13,880
+that's Bert happy and age is saying
+
+289
+00:14:13,880 --> 00:14:18,519
+19 so he is a student and we initialize
+
+290
+00:14:18,519 --> 00:14:23,079
+the pointer and it's where the point to
+
+291
+00:14:23,079 --> 00:14:27,199
+B is that good okay so we done with line
+
+292
+00:14:27,199 --> 00:14:29,560
+two now we have a pointer B pointing to
+
+293
+00:14:29,560 --> 00:14:32,800
+some students on Heap but B itself is on
+
+294
+00:14:32,800 --> 00:14:33,680
+the
+
+295
+00:14:33,680 --> 00:14:36,920
+stack then we need to work on this
+
+296
+00:14:36,920 --> 00:14:38,759
+assignment statement so the right hand
+
+297
+00:14:38,759 --> 00:14:40,920
+side is going to be validated first
+
+298
+00:14:40,920 --> 00:14:43,720
+therefore we're going to pass b as a
+
+299
+00:14:43,720 --> 00:14:47,240
+parameter to this function but there is
+
+300
+00:14:47,240 --> 00:14:49,959
+clearly a type mismatch B is a pointer
+
+301
+00:14:49,959 --> 00:14:52,320
+he Tes soon so we really need to update
+
+302
+00:14:52,320 --> 00:14:54,560
+that the fact the signature of this
+
+303
+00:14:54,560 --> 00:14:56,880
+function to the fact that we are
+
+304
+00:14:56,880 --> 00:15:01,040
+parameter passing by point
+
+305
+00:15:01,600 --> 00:15:04,759
+okay which means that s
+
+306
+00:15:04,759 --> 00:15:09,800
+now is given the same value that as B
+
+307
+00:15:09,800 --> 00:15:12,720
+right so we are going to pass b as a
+
+308
+00:15:12,720 --> 00:15:16,720
+pointer so the Val as if we declared the
+
+309
+00:15:16,720 --> 00:15:19,959
+pointer s and assigned B's value to it
+
+310
+00:15:19,959 --> 00:15:22,320
+right okay so what does it mean where
+
+311
+00:15:22,320 --> 00:15:25,160
+does s point to Now app point this
+
+312
+00:15:25,160 --> 00:15:26,399
+parameter
+
+313
+00:15:26,399 --> 00:15:31,360
+passing it got the same value as b b's
+
+314
+00:15:31,360 --> 00:15:34,560
+value is the address of bird so s's
+
+315
+00:15:34,560 --> 00:15:38,720
+value after this is the address of bird
+
+316
+00:15:38,720 --> 00:15:42,720
+so it points to the same place is that
+
+317
+00:15:42,720 --> 00:15:45,319
+clear that's what happened after we pass
+
+318
+00:15:45,319 --> 00:15:46,160
+this
+
+319
+00:15:46,160 --> 00:15:49,279
+parameter the pointer s got the same
+
+320
+00:15:49,279 --> 00:15:52,440
+value as whatever was passed to it that
+
+321
+00:15:52,440 --> 00:15:54,160
+means it's the same address however this
+
+322
+00:15:54,160 --> 00:15:56,399
+pointer lives on the stack of birthday
+
+323
+00:15:56,399 --> 00:15:59,199
+function it's a local variable okay so
+
+324
+00:15:59,199 --> 00:16:02,639
+let's remember that then then we need to
+
+325
+00:16:02,639 --> 00:16:06,480
+advance s age but there's again a
+
+326
+00:16:06,480 --> 00:16:08,920
+problem s is not a student anymore it's
+
+327
+00:16:08,920 --> 00:16:11,240
+a it's a pointer so we need to De
+
+328
+00:16:11,240 --> 00:16:15,720
+reference S right or say s Arrow eight
+
+329
+00:16:15,720 --> 00:16:19,519
+Advanced then we celebrate birthday on
+
+330
+00:16:19,519 --> 00:16:22,279
+Terminal and then we have to form the
+
+331
+00:16:22,279 --> 00:16:24,880
+return which again we have to update put
+
+332
+00:16:24,880 --> 00:16:26,600
+all the asies and I'm putting those
+
+333
+00:16:26,600 --> 00:16:30,279
+asies on purpose just to show show that
+
+334
+00:16:30,279 --> 00:16:32,759
+there's some work that needs to be done
+
+335
+00:16:32,759 --> 00:16:34,600
+from the syntax point of view when you
+
+336
+00:16:34,600 --> 00:16:38,040
+pass by poter you need to direct those
+
+337
+00:16:38,040 --> 00:16:40,560
+pointers you need to work those pointers
+
+338
+00:16:40,560 --> 00:16:44,079
+okay fine so now I'm forming my the
+
+339
+00:16:44,079 --> 00:16:46,199
+return value which is
+
+340
+00:16:46,199 --> 00:16:52,720
+what 20 and then I am done with birthday
+
+341
+00:16:52,720 --> 00:16:55,360
+which means all of the local variables
+
+342
+00:16:55,360 --> 00:16:59,120
+go out of scope and taken by the system
+
+343
+00:16:59,120 --> 00:17:01,560
+back so s is taken
+
+344
+00:17:01,560 --> 00:17:05,000
+back not the point t s the pointer which
+
+345
+00:17:05,000 --> 00:17:07,039
+is fine right in this case it's just
+
+346
+00:17:07,039 --> 00:17:09,959
+just totally fine and 20 is given as the
+
+347
+00:17:09,959 --> 00:17:12,240
+right hand side value of this expression
+
+348
+00:17:12,240 --> 00:17:13,880
+so new age
+
+349
+00:17:13,880 --> 00:17:18,119
+is 20 good and then we're going to
+
+350
+00:17:18,119 --> 00:17:20,119
+remember that b is a pointer so we're
+
+351
+00:17:20,119 --> 00:17:24,119
+going to print B's Ag and what is
+
+352
+00:17:24,119 --> 00:17:29,000
+it 20 right I forget to to draw on the
+
+353
+00:17:29,000 --> 00:17:33,000
+picture that once we updated H here of
+
+354
+00:17:33,000 --> 00:17:36,280
+s that's what
+
+355
+00:17:36,280 --> 00:17:40,080
+happened the point T of s increased its
+
+356
+00:17:40,080 --> 00:17:42,559
+Ag and it's the same point t as B's
+
+357
+00:17:42,559 --> 00:17:46,120
+right so even when s went out of scope B
+
+358
+00:17:46,120 --> 00:17:49,039
+still has the holder on that point
+
+359
+00:17:49,039 --> 00:17:52,440
+T okay so when we print out B's age we
+
+360
+00:17:52,440 --> 00:17:53,960
+print out
+
+361
+00:17:53,960 --> 00:17:58,039
+20 okay so there's you should have a lot
+
+362
+00:17:58,039 --> 00:18:00,120
+of questions about
+
+363
+00:18:00,120 --> 00:18:04,440
+it so hopefully this will kind
+
+364
+00:18:04,440 --> 00:18:07,600
+of come
+
+365
+00:18:08,679 --> 00:18:12,159
+on so what are the disadvantages that we
+
+366
+00:18:12,159 --> 00:18:15,120
+see here
+
+367
+00:18:15,120 --> 00:18:18,159
+already there should be a lot more so
+
+368
+00:18:18,159 --> 00:18:22,120
+something else should also take some
+
+369
+00:18:22,520 --> 00:18:25,080
+votes is it fast
+
+370
+00:18:25,080 --> 00:18:28,360
+now yeah we just copied a pointer we
+
+371
+00:18:28,360 --> 00:18:30,200
+just cop copied one memory address one
+
+372
+00:18:30,200 --> 00:18:32,200
+HEX number right that's it so that's
+
+373
+00:18:32,200 --> 00:18:34,039
+fast that's not a
+
+374
+00:18:34,039 --> 00:18:38,159
+disadvantage yes one no do you pick the
+
+375
+00:18:38,159 --> 00:18:41,760
+right one whose job is to figure out and
+
+376
+00:18:41,760 --> 00:18:44,120
+I showed you the code here I copied
+
+377
+00:18:44,120 --> 00:18:46,919
+without aists but you have to imagine
+
+378
+00:18:46,919 --> 00:18:49,280
+all of these asteris which means that it
+
+379
+00:18:49,280 --> 00:18:52,240
+can be a pointer it can be an all whose
+
+380
+00:18:52,240 --> 00:18:54,799
+job is it
+
+381
+00:18:54,960 --> 00:18:56,880
+to
+
+382
+00:18:56,880 --> 00:18:59,360
+function or
+
+383
+00:18:59,360 --> 00:19:02,600
+the function as being C somebody has to
+
+384
+00:19:02,600 --> 00:19:05,200
+a that increases
+
+385
+00:19:05,200 --> 00:19:08,240
+water the complexity of the program that
+
+386
+00:19:08,240 --> 00:19:11,159
+means there is more debugging time so
+
+387
+00:19:11,159 --> 00:19:13,840
+it's and less readability you have to
+
+388
+00:19:13,840 --> 00:19:16,120
+read all of that plus all of the asteris
+
+389
+00:19:16,120 --> 00:19:18,240
+all over also makes it worse with
+
+390
+00:19:18,240 --> 00:19:21,120
+reability okay it's uglier s it so all
+
+391
+00:19:21,120 --> 00:19:23,559
+of those are yes yes yes except that oh
+
+392
+00:19:23,559 --> 00:19:26,120
+now it's fast that's great right but do
+
+393
+00:19:26,120 --> 00:19:28,159
+we really want to take the risk of the
+
+394
+00:19:28,159 --> 00:19:29,960
+program just crashing if we didn't check
+
+395
+00:19:29,960 --> 00:19:31,799
+for no
+
+396
+00:19:31,799 --> 00:19:34,200
+right okay
+
+397
+00:19:34,200 --> 00:19:37,600
+so unless you have oh I have a question
+
+398
+00:19:37,600 --> 00:19:39,799
+for
+
+399
+00:19:39,799 --> 00:19:42,679
+you I guess yeah how could we fix it and
+
+400
+00:19:42,679 --> 00:19:44,320
+I'm going to actually no I I'm not going
+
+401
+00:19:44,320 --> 00:19:46,080
+to ask you I'm going to just present you
+
+402
+00:19:46,080 --> 00:19:49,320
+with a solution that C++ provides for
+
+403
+00:19:49,320 --> 00:19:51,320
+you and that's the third type of
+
+404
+00:19:51,320 --> 00:19:55,240
+parameter passing by
+
+405
+00:19:56,280 --> 00:19:59,960
+reference okay so by refence let me just
+
+406
+00:19:59,960 --> 00:20:02,520
+make sure
+
+407
+00:20:03,840 --> 00:20:06,320
+that
+
+408
+00:20:06,320 --> 00:20:09,400
+yeah all right yes there is one more
+
+409
+00:20:09,400 --> 00:20:11,960
+thing that I wanted to point back to
+
+410
+00:20:11,960 --> 00:20:14,880
+pointers that was in something else and
+
+411
+00:20:14,880 --> 00:20:18,520
+I want to stress it here so the bad
+
+412
+00:20:18,520 --> 00:20:21,760
+thing about it is that by passing B to
+
+413
+00:20:21,760 --> 00:20:23,960
+this function we
+
+414
+00:20:23,960 --> 00:20:27,000
+changing is that good practice at all
+
+415
+00:20:27,000 --> 00:20:30,280
+did you like it then okay you pass your
+
+416
+00:20:30,280 --> 00:20:33,080
+data the holder to your data to some
+
+417
+00:20:33,080 --> 00:20:36,200
+function that change the data is it
+
+418
+00:20:36,200 --> 00:20:39,280
+really a good thing maybe may but
+
+419
+00:20:39,280 --> 00:20:41,200
+probably not you have to be careful of
+
+420
+00:20:41,200 --> 00:20:43,919
+these things because then whoever writes
+
+421
+00:20:43,919 --> 00:20:47,240
+the client code should remember or know
+
+422
+00:20:47,240 --> 00:20:49,640
+somehow what your code will do and that
+
+423
+00:20:49,640 --> 00:20:52,880
+it will change the data so maybe not a
+
+424
+00:20:52,880 --> 00:20:55,520
+good idea so that's another thing that I
+
+425
+00:20:55,520 --> 00:20:58,840
+wanted to mention so now to solve all
+
+426
+00:20:58,840 --> 00:21:00,480
+this problem with
+
+427
+00:21:00,480 --> 00:21:03,000
+complexity we're going
+
+428
+00:21:03,000 --> 00:21:05,720
+to introduce the new way of parameter
+
+429
+00:21:05,720 --> 00:21:08,840
+passing by reference so there will be no
+
+430
+00:21:08,840 --> 00:21:11,679
+pointers inside here no
+
+431
+00:21:11,679 --> 00:21:14,880
+asist okay and there will be no C coping
+
+432
+00:21:14,880 --> 00:21:18,120
+as you can see I have only one student
+
+433
+00:21:18,120 --> 00:21:21,039
+here that I'll work with so let's see
+
+434
+00:21:21,039 --> 00:21:24,159
+I'm declaring student B and I'll
+
+435
+00:21:24,159 --> 00:21:26,240
+initialize him to
+
+436
+00:21:26,240 --> 00:21:32,159
+Bert happy and uh age 19 so that's all
+
+437
+00:21:32,159 --> 00:21:36,440
+good it's on stack for Main and now I'm
+
+438
+00:21:36,440 --> 00:21:38,480
+going to evaluate this statement so the
+
+439
+00:21:38,480 --> 00:21:40,159
+right hand side needs to be evaluated
+
+440
+00:21:40,159 --> 00:21:43,640
+first I'm passing B by reference so I
+
+441
+00:21:43,640 --> 00:21:48,279
+have to put an ENT there in the
+
+442
+00:21:48,279 --> 00:21:51,440
+parameter and this ENT does not mean
+
+443
+00:21:51,440 --> 00:21:54,039
+that we are passing the address of s so
+
+444
+00:21:54,039 --> 00:21:56,960
+here is a moment where you might feel
+
+445
+00:21:56,960 --> 00:21:59,240
+strongly that is a
+
+446
+00:21:59,240 --> 00:22:03,760
+typ passing a student as if we taking in
+
+447
+00:22:03,760 --> 00:22:06,400
+an address but it's not it's a flag in
+
+448
+00:22:06,400 --> 00:22:09,919
+the St so it's very different than
+
+449
+00:22:09,919 --> 00:22:14,559
+passing an address of B so when you put
+
+450
+00:22:14,559 --> 00:22:18,600
+an m per to a variable that's its
+
+451
+00:22:18,600 --> 00:22:22,880
+address but when you put it to a type
+
+452
+00:22:22,880 --> 00:22:25,480
+that means it's by
+
+453
+00:22:25,480 --> 00:22:27,480
+reference something to learn so there
+
+454
+00:22:27,480 --> 00:22:29,440
+will be different examples I'll show you
+
+455
+00:22:29,440 --> 00:22:31,440
+when to know which one it was but in
+
+456
+00:22:31,440 --> 00:22:33,039
+this case
+
+457
+00:22:33,039 --> 00:22:34,799
+just
+
+458
+00:22:34,799 --> 00:22:38,080
+system by reference which means that the
+
+459
+00:22:38,080 --> 00:22:41,039
+system will say oh I know what you mean
+
+460
+00:22:41,039 --> 00:22:47,480
+that means s is just a local name for
+
+461
+00:22:47,480 --> 00:22:52,559
+b a local name for B under the hood yes
+
+462
+00:22:52,559 --> 00:22:53,799
+there is
+
+463
+00:22:53,799 --> 00:22:56,360
+pointers but the syntax is very nice so
+
+464
+00:22:56,360 --> 00:22:58,159
+this is where the synx is on on your
+
+465
+00:22:58,159 --> 00:23:01,640
+side in C++ when you pass by reference
+
+466
+00:23:01,640 --> 00:23:05,640
+so it's a local name for B fine so what
+
+467
+00:23:05,640 --> 00:23:07,880
+are we going to do no the referencing we
+
+468
+00:23:07,880 --> 00:23:11,840
+just say S8 is increased by one so it
+
+469
+00:23:11,840 --> 00:23:13,600
+becomes
+
+470
+00:23:13,600 --> 00:23:16,840
+20 then we celebrate the birthday then
+
+471
+00:23:16,840 --> 00:23:21,120
+we form the return statement which is 20
+
+472
+00:23:21,120 --> 00:23:23,760
+we close the parentheses which means or
+
+473
+00:23:23,760 --> 00:23:26,240
+uh braces which means that local
+
+474
+00:23:26,240 --> 00:23:30,440
+variables go out of scope s is going out
+
+475
+00:23:30,440 --> 00:23:34,279
+of scope B is fine so s is just another
+
+476
+00:23:34,279 --> 00:23:37,279
+name and then we return 20 as the right
+
+477
+00:23:37,279 --> 00:23:41,960
+hand side and then we print the age of B
+
+478
+00:23:41,960 --> 00:23:43,000
+and it's
+
+479
+00:23:43,000 --> 00:23:48,080
+20 okay so do you like
+
+480
+00:23:52,039 --> 00:23:56,159
+it what is wrong about it or what's
+
+481
+00:23:56,159 --> 00:23:58,279
+right about it so let's here I'm asking
+
+482
+00:23:58,279 --> 00:24:00,360
+you need to pick up all of the
+
+483
+00:24:00,360 --> 00:24:02,520
+advantages is it
+
+484
+00:24:02,520 --> 00:24:04,600
+fast oh
+
+485
+00:24:04,600 --> 00:24:07,960
+I okay yeah I copy it from pointers here
+
+486
+00:24:07,960 --> 00:24:10,240
+but it's actually you should think that
+
+487
+00:24:10,240 --> 00:24:12,679
+it's Nam so ignore this two little guys
+
+488
+00:24:12,679 --> 00:24:15,480
+there are no pointers it just one
+
+489
+00:24:15,480 --> 00:24:18,440
+variable on stack that we work with
+
+490
+00:24:18,440 --> 00:24:21,640
+right and there will be the %
+
+491
+00:24:21,640 --> 00:24:25,080
+here so do you like this way of doing
+
+492
+00:24:25,080 --> 00:24:29,520
+things clean synex yep is it fast yes
+
+493
+00:24:29,520 --> 00:24:31,600
+increase treatability it's easy to
+
+494
+00:24:31,600 --> 00:24:34,000
+understand what's going on now no der
+
+495
+00:24:34,000 --> 00:24:37,000
+reference of null no se faults in the
+
+496
+00:24:37,000 --> 00:24:39,760
+worst case right is there something else
+
+497
+00:24:39,760 --> 00:24:41,200
+that's bugging you
+
+498
+00:24:41,200 --> 00:24:43,880
+though how about
+
+499
+00:24:43,880 --> 00:24:46,640
+changing the
+
+500
+00:24:46,640 --> 00:24:50,320
+data variable but maybe you know that if
+
+501
+00:24:50,320 --> 00:24:51,919
+it's passing by reference you'll see
+
+502
+00:24:51,919 --> 00:24:54,120
+this function signature you'll know that
+
+503
+00:24:54,120 --> 00:24:55,880
+the data might be changed right so you
+
+504
+00:24:55,880 --> 00:24:58,440
+you you'll just you already will know
+
+505
+00:24:58,440 --> 00:25:00,399
+that okay maybe it will change so it's
+
+506
+00:25:00,399 --> 00:25:03,840
+very CLE very nice solution to use and
+
+507
+00:25:03,840 --> 00:25:07,600
+you'll see that there's a lot of ents in
+
+508
+00:25:07,600 --> 00:25:09,960
+the function signatures all over our
+
+509
+00:25:09,960 --> 00:25:12,240
+code for this reason because this is a
+
+510
+00:25:12,240 --> 00:25:15,799
+good solution for passing variables now
+
+511
+00:25:15,799 --> 00:25:19,000
+let's play with this
+
+512
+00:25:19,000 --> 00:25:22,039
+code so I have a question for you let
+
+513
+00:25:22,039 --> 00:25:23,480
+look at this
+
+514
+00:25:23,480 --> 00:25:26,600
+code and tell me what's going to be the
+
+515
+00:25:26,600 --> 00:25:29,360
+output and you can see see here that
+
+516
+00:25:29,360 --> 00:25:35,639
+this m% belongs to the type it's not an
+
+517
+00:25:35,679 --> 00:25:38,240
+address you can do it not only by
+
+518
+00:25:38,240 --> 00:25:40,760
+passing a a parameter to function you
+
+519
+00:25:40,760 --> 00:25:44,919
+can just declare another
+
+520
+00:25:45,600 --> 00:25:49,600
+name so that's what it does that's what
+
+521
+00:25:49,600 --> 00:25:51,200
+that's what I'm doing right here I'm
+
+522
+00:25:51,200 --> 00:25:54,720
+just declaring it B is just another name
+
+523
+00:25:54,720 --> 00:26:00,039
+for a because this % belongs to
+
+524
+00:26:00,039 --> 00:26:02,279
+student it's very different if I would
+
+525
+00:26:02,279 --> 00:26:04,760
+say student b equals address of a right
+
+526
+00:26:04,760 --> 00:26:08,159
+so that would be then the
+
+527
+00:26:08,159 --> 00:26:11,720
+um the
+
+528
+00:26:12,000 --> 00:26:14,960
+operation okay so let's guess the value
+
+529
+00:26:14,960 --> 00:26:17,480
+so what's going to happen here trace
+
+530
+00:26:17,480 --> 00:26:20,720
+this function
+
+531
+00:26:27,240 --> 00:26:30,240
+and
+
+532
+00:26:45,120 --> 00:26:47,000
+okay so the correct ones are just the
+
+533
+00:26:47,000 --> 00:26:50,880
+top two the other answers are not
+
+534
+00:26:50,880 --> 00:26:52,840
+correct so the correct ones are only
+
+535
+00:26:52,840 --> 00:26:54,880
+these
+
+536
+00:26:54,880 --> 00:26:57,799
+two the other ones are not correct so I
+
+537
+00:26:57,799 --> 00:27:01,399
+have this code for you let's look at it
+
+538
+00:27:01,399 --> 00:27:04,360
+and let's trace it I declare student
+
+539
+00:27:04,360 --> 00:27:07,200
+a uh on this slide I have it actually
+
+540
+00:27:07,200 --> 00:27:09,399
+here so let's trace it and with a
+
+541
+00:27:09,399 --> 00:27:13,000
+annotation and then we can so I declare
+
+542
+00:27:13,000 --> 00:27:15,559
+student a the same thing on the stack
+
+543
+00:27:15,559 --> 00:27:19,799
+there is a and a has a name it has a
+
+544
+00:27:19,799 --> 00:27:21,880
+face actually in this case there's no
+
+545
+00:27:21,880 --> 00:27:25,960
+face just age 19 okay I wanted to make
+
+546
+00:27:25,960 --> 00:27:28,840
+it simpler so that I don't initialize
+
+547
+00:27:28,840 --> 00:27:34,320
+pngs okay so a a A's age is 19 then I
+
+548
+00:27:34,320 --> 00:27:40,919
+say oh B is just another name for a okay
+
+549
+00:27:40,919 --> 00:27:45,000
+now I want to print out B's age it's 19
+
+550
+00:27:45,000 --> 00:27:47,880
+now what is this that I want to print
+
+551
+00:27:47,880 --> 00:27:53,360
+out the address of B so some hats
+
+552
+00:27:53,360 --> 00:27:56,679
+number what is this that I want to print
+
+553
+00:27:56,679 --> 00:28:00,960
+out the address Sur a which is the same
+
+554
+00:28:00,960 --> 00:28:03,000
+because A and B are just two different
+
+555
+00:28:03,000 --> 00:28:05,559
+names of the same memory location so
+
+556
+00:28:05,559 --> 00:28:08,880
+it's the same you want to run it just to
+
+557
+00:28:08,880 --> 00:28:12,240
+know yes why do you always have this
+
+558
+00:28:12,240 --> 00:28:15,720
+extra box below the
+
+559
+00:28:15,720 --> 00:28:18,360
+AG because when you
+
+560
+00:28:18,360 --> 00:28:20,799
+were
+
+561
+00:28:20,799 --> 00:28:23,799
+memory
+
+562
+00:28:26,000 --> 00:28:29,000
+extra nothing yeah yeah yeah why do I
+
+563
+00:28:29,000 --> 00:28:33,279
+put end of line here no no no no no not
+
+564
+00:28:33,279 --> 00:28:35,000
+oh sorry which
+
+565
+00:28:35,000 --> 00:28:39,039
+one oh why do I have an extra box right
+
+566
+00:28:39,039 --> 00:28:41,279
+you know what I wanted to go over it in
+
+567
+00:28:41,279 --> 00:28:43,320
+my head but then yeah I
+
+568
+00:28:43,320 --> 00:28:46,440
+don't no good reason it just
+
+569
+00:28:46,440 --> 00:28:48,080
+demonstrates that student could have
+
+570
+00:28:48,080 --> 00:28:51,440
+many more Fields but they're
+
+571
+00:28:51,440 --> 00:28:55,159
+empty and maybe 20 years ago when these
+
+572
+00:28:55,159 --> 00:28:57,760
+slides were first originated maybe they
+
+573
+00:28:57,760 --> 00:29:01,039
+work different F and I wanted to go over
+
+574
+00:29:01,039 --> 00:29:03,080
+it like there's no reason for this extra
+
+575
+00:29:03,080 --> 00:29:05,000
+box yeah thank you for bringing it up
+
+576
+00:29:05,000 --> 00:29:07,120
+yeah why did I even well here clearly I
+
+577
+00:29:07,120 --> 00:29:09,240
+want I thought there will be face and I
+
+578
+00:29:09,240 --> 00:29:10,640
+remember that there was not so I
+
+579
+00:29:10,640 --> 00:29:12,039
+prepared
+
+580
+00:29:12,039 --> 00:29:15,120
+three good point no good
+
+581
+00:29:15,120 --> 00:29:18,640
+reason okay so do you want to just run
+
+582
+00:29:18,640 --> 00:29:20,840
+and see that there's no compilation
+
+583
+00:29:20,840 --> 00:29:23,799
+error here where's
+
+584
+00:29:23,799 --> 00:29:28,399
+my okay so what if this is my file right
+
+585
+00:29:28,399 --> 00:29:33,320
+that so we just doing g++ 0
+
+586
+00:29:33,399 --> 00:29:38,039
+0 and we running it and there you go the
+
+587
+00:29:38,039 --> 00:29:39,440
+two two
+
+588
+00:29:39,440 --> 00:29:42,720
+addresses they are the same and it's 19
+
+589
+00:29:42,720 --> 00:29:45,279
+anything you want to play with this
+
+590
+00:29:45,279 --> 00:29:50,080
+this code like what if I said b equals a
+
+591
+00:29:50,080 --> 00:29:53,480
+address of a what would
+
+592
+00:29:57,039 --> 00:30:00,320
+happen tyer compilation right let's
+
+593
+00:30:00,320 --> 00:30:02,679
+check so that's when the compilation
+
+594
+00:30:02,679 --> 00:30:04,159
+would
+
+595
+00:30:04,159 --> 00:30:08,640
+happen it says okay students address is
+
+596
+00:30:08,640 --> 00:30:10,960
+assigned to student it's like a hat
+
+597
+00:30:10,960 --> 00:30:12,960
+number to all of those fields how do you
+
+598
+00:30:12,960 --> 00:30:15,320
+do that it's a t match we can do that
+
+599
+00:30:15,320 --> 00:30:17,919
+assignment okay
+
+600
+00:30:17,919 --> 00:30:21,640
+cool um okay so that's pretty good what
+
+601
+00:30:21,640 --> 00:30:24,320
+if we did
+
+602
+00:30:25,279 --> 00:30:27,760
+this we would copy all of the fields
+
+603
+00:30:27,760 --> 00:30:30,799
+remember by value to
+
+604
+00:30:30,799 --> 00:30:32,919
+B
+
+605
+00:30:32,919 --> 00:30:37,039
+so do you know what would be B's
+
+606
+00:30:37,039 --> 00:30:40,960
+age yeah let's
+
+607
+00:30:40,960 --> 00:30:43,480
+see because it's nice because it's an
+
+608
+00:30:43,480 --> 00:30:46,480
+integer so it would know how to copy but
+
+609
+00:30:46,480 --> 00:30:49,440
+in other cases it wouldn't know but the
+
+610
+00:30:49,440 --> 00:30:51,360
+addresses are different here because B
+
+611
+00:30:51,360 --> 00:30:53,799
+is now a different instance I'll top it
+
+612
+00:30:53,799 --> 00:30:57,080
+over yeah very good okay so so you can
+
+613
+00:30:57,080 --> 00:30:59,320
+think of the this is very similar to
+
+614
+00:30:59,320 --> 00:31:01,880
+what happens when you pass the parameter
+
+615
+00:31:01,880 --> 00:31:03,840
+except that actually it's different
+
+616
+00:31:03,840 --> 00:31:05,240
+under the code when you pass the
+
+617
+00:31:05,240 --> 00:31:07,039
+parameter there is no assignment
+
+618
+00:31:07,039 --> 00:31:11,519
+statement instead what's called is copy
+
+619
+00:31:11,519 --> 00:31:13,480
+Constructor so I'm jumping ahead a
+
+620
+00:31:13,480 --> 00:31:15,320
+little bit will talk about it next time
+
+621
+00:31:15,320 --> 00:31:17,279
+but when you pass that by parameter it's
+
+622
+00:31:17,279 --> 00:31:19,519
+not the same as doing the assignment
+
+623
+00:31:19,519 --> 00:31:22,519
+it's something else but it's still does
+
+624
+00:31:22,519 --> 00:31:26,720
+copying uh member Wise by value okay but
+
+625
+00:31:26,720 --> 00:31:29,080
+let's not jump ahead I'll talk about it
+
+626
+00:31:29,080 --> 00:31:33,919
+slightly different any questions no okay
+
+627
+00:31:33,919 --> 00:31:36,919
+so as you can guess now we'll be talking
+
+628
+00:31:36,919 --> 00:31:40,320
+about what happens on the other side so
+
+629
+00:31:40,320 --> 00:31:42,440
+we pass the parameter
+
+630
+00:31:42,440 --> 00:31:46,799
+here but then we need to pass the return
+
+631
+00:31:46,799 --> 00:31:49,399
+back and you can turn it turns out that
+
+632
+00:31:49,399 --> 00:31:53,360
+you can return things by a
+
+633
+00:31:53,360 --> 00:31:56,559
+value or by
+
+634
+00:31:56,559 --> 00:32:00,600
+pointer or or bu reference the same way
+
+635
+00:32:00,600 --> 00:32:02,880
+which means you just have to reflect it
+
+636
+00:32:02,880 --> 00:32:06,159
+in what's returned the return type in
+
+637
+00:32:06,159 --> 00:32:08,720
+this case it's by value integer but you
+
+638
+00:32:08,720 --> 00:32:10,679
+could put a
+
+639
+00:32:10,679 --> 00:32:13,600
+student then it would be by value you
+
+640
+00:32:13,600 --> 00:32:15,760
+could put a student pointer then it
+
+641
+00:32:15,760 --> 00:32:19,559
+would be by pointer or you could put the
+
+642
+00:32:19,559 --> 00:32:21,960
+flag and then it would be by reference
+
+643
+00:32:21,960 --> 00:32:25,240
+but then let's look how you could
+
+644
+00:32:25,240 --> 00:32:28,519
+implement it and what are good or bad
+
+645
+00:32:28,519 --> 00:32:31,720
+ways of implementing it that we will go
+
+646
+00:32:31,720 --> 00:32:34,960
+through so let's start with let's not do
+
+647
+00:32:34,960 --> 00:32:37,360
+return by value because you can imagine
+
+648
+00:32:37,360 --> 00:32:39,799
+that if I didn't have this Asis scare
+
+649
+00:32:39,799 --> 00:32:42,159
+you just make that extra copy from local
+
+650
+00:32:42,159 --> 00:32:44,919
+variable to the right hand side a lot of
+
+651
+00:32:44,919 --> 00:32:47,080
+copies would be made and we'll look at
+
+652
+00:32:47,080 --> 00:32:51,279
+it after words but now let's return by
+
+653
+00:32:51,279 --> 00:32:54,880
+pointer first by pointer so I prepared
+
+654
+00:32:54,880 --> 00:32:56,679
+some things and that's where you know
+
+655
+00:32:56,679 --> 00:32:58,799
+I'll be working through this and just
+
+656
+00:32:58,799 --> 00:33:00,480
+watch me because maybe I didn't prepare
+
+657
+00:33:00,480 --> 00:33:04,480
+enough boxes or too many so let's see
+
+658
+00:33:04,480 --> 00:33:07,279
+the time wasn't on my side over this
+
+659
+00:33:07,279 --> 00:33:10,639
+weekend to prepare okay to go through
+
+660
+00:33:10,639 --> 00:33:13,519
+this many times to make sure it's all
+
+661
+00:33:13,519 --> 00:33:17,480
+right so let's declare student a that's
+
+662
+00:33:17,480 --> 00:33:22,440
+a it's on stack it has some name say
+
+663
+00:33:22,440 --> 00:33:25,200
+Anna the age is 19 and a lot of extra
+
+664
+00:33:25,200 --> 00:33:28,360
+boxes because we don't need them
+
+665
+00:33:28,360 --> 00:33:31,679
+No Good Reason okay so no nothing really
+
+666
+00:33:31,679 --> 00:33:34,399
+here we don't use that stack we only use
+
+667
+00:33:34,399 --> 00:33:37,360
+this to um
+
+668
+00:33:37,360 --> 00:33:41,360
+address parts of memory for those member
+
+669
+00:33:41,360 --> 00:33:44,679
+variables so then age is 19 here sorry
+
+670
+00:33:44,679 --> 00:33:47,039
+upon this declaration there's no values
+
+671
+00:33:47,039 --> 00:33:48,960
+yet we initialize it right so we
+
+672
+00:33:48,960 --> 00:33:50,760
+initialize it with ag we actually don't
+
+673
+00:33:50,760 --> 00:33:53,399
+even put Anna there so clearly there's
+
+674
+00:33:53,399 --> 00:33:55,880
+garbage here instead of the name so
+
+675
+00:33:55,880 --> 00:33:58,840
+that's good we know that
+
+676
+00:33:58,840 --> 00:34:00,760
+so I went through this too fast upon
+
+677
+00:34:00,760 --> 00:34:02,799
+declaration there's garbage then upon
+
+678
+00:34:02,799 --> 00:34:06,799
+this line we updated to 19 and then I
+
+679
+00:34:06,799 --> 00:34:11,280
+say well let's declare a pointer B which
+
+680
+00:34:11,280 --> 00:34:13,560
+means that upon declaration the value is
+
+681
+00:34:13,560 --> 00:34:16,199
+garbage the value value of this address
+
+682
+00:34:16,199 --> 00:34:19,239
+is garbage it points to some garbage but
+
+683
+00:34:19,239 --> 00:34:21,800
+we will initialize it with this right
+
+684
+00:34:21,800 --> 00:34:24,760
+hand side which is a function call so
+
+685
+00:34:24,760 --> 00:34:28,918
+let's pass the parameter a by value I'm
+
+686
+00:34:28,918 --> 00:34:30,719
+doing it on purpose so I'm going to
+
+687
+00:34:30,719 --> 00:34:34,800
+create a copy of a a local copy of a
+
+688
+00:34:34,800 --> 00:34:38,679
+into s upon this function call and
+
+689
+00:34:38,679 --> 00:34:41,719
+parameter passing so all of the values
+
+690
+00:34:41,719 --> 00:34:43,560
+the garbage for
+
+691
+00:34:43,560 --> 00:34:48,320
+name and 19 is going to be copied from a
+
+692
+00:34:48,320 --> 00:34:50,599
+to
+
+693
+00:34:51,000 --> 00:34:55,239
+S fine then look what I do it's very
+
+694
+00:34:55,239 --> 00:34:58,320
+stupid so I'm there's the reason for
+
+695
+00:34:58,320 --> 00:35:01,280
+this you'll see why but it's very stupid
+
+696
+00:35:01,280 --> 00:35:03,040
+I'm going to create another local
+
+697
+00:35:03,040 --> 00:35:06,280
+variable X and I'm going to assign s to
+
+698
+00:35:06,280 --> 00:35:08,520
+it so what's going to
+
+699
+00:35:08,520 --> 00:35:11,240
+happen upon this declaration and
+
+700
+00:35:11,240 --> 00:35:13,359
+initialization at the same
+
+701
+00:35:13,359 --> 00:35:17,560
+time all of the members are going to be
+
+702
+00:35:17,560 --> 00:35:19,680
+copied one again so this garbage value
+
+703
+00:35:19,680 --> 00:35:23,400
+for name and 19 are going to be copied
+
+704
+00:35:23,400 --> 00:35:26,800
+into s lots of copying if there was a p&
+
+705
+00:35:26,800 --> 00:35:29,119
+there you can see lots of extra coping
+
+706
+00:35:29,119 --> 00:35:34,079
+then I Advance X's age to
+
+707
+00:35:34,079 --> 00:35:39,240
+20 and then I return the address of X
+
+708
+00:35:39,240 --> 00:35:41,760
+because I'm returning a pointer so it
+
+709
+00:35:41,760 --> 00:35:44,440
+expects an address so here's the address
+
+710
+00:35:44,440 --> 00:35:45,480
+this
+
+711
+00:35:45,480 --> 00:35:49,280
+address this address is returned as the
+
+712
+00:35:49,280 --> 00:35:51,800
+right hand side will be returned as the
+
+713
+00:35:51,800 --> 00:35:54,400
+right hand side but first we need to go
+
+714
+00:35:54,400 --> 00:35:58,079
+to this line and close the braces which
+
+715
+00:35:58,079 --> 00:36:00,720
+means all of the local variables go out
+
+716
+00:36:00,720 --> 00:36:04,200
+of scope the system will take back this
+
+717
+00:36:04,200 --> 00:36:07,880
+memory for S and this
+
+718
+00:36:07,880 --> 00:36:11,000
+memory but they'll return this address
+
+719
+00:36:11,000 --> 00:36:13,780
+this address as the right hand side to
+
+720
+00:36:13,780 --> 00:36:16,929
+[Music]
+
+721
+00:36:18,319 --> 00:36:20,640
+B
+
+722
+00:36:20,640 --> 00:36:23,800
+huh not a n pointer it points to that
+
+723
+00:36:23,800 --> 00:36:26,040
+address that's addresses we can we could
+
+724
+00:36:26,040 --> 00:36:28,040
+even print it out like here what's the
+
+725
+00:36:28,040 --> 00:36:30,560
+address of beat would be some he
+
+726
+00:36:30,560 --> 00:36:34,040
+number on this
+
+727
+00:36:34,560 --> 00:36:37,920
+St oh yeah the system will take over it
+
+728
+00:36:37,920 --> 00:36:40,280
+it will be some kind of undefined
+
+729
+00:36:40,280 --> 00:36:42,400
+Behavior it could be that it points
+
+730
+00:36:42,400 --> 00:36:45,400
+still to X but maybe not so then the
+
+731
+00:36:45,400 --> 00:36:47,680
+question is what happens if I print out
+
+732
+00:36:47,680 --> 00:36:49,520
+A's
+
+733
+00:36:49,520 --> 00:36:56,520
+age and B's age so this is 19 and this
+
+734
+00:36:56,520 --> 00:36:59,520
+is
+
+735
+00:37:00,880 --> 00:37:04,240
+undefined very good so let's let's make
+
+736
+00:37:04,240 --> 00:37:05,359
+sure that
+
+737
+00:37:05,359 --> 00:37:08,000
+everybody's oh yeah but will it compile
+
+738
+00:37:08,000 --> 00:37:10,000
+so please answer I I know maybe you
+
+739
+00:37:10,000 --> 00:37:12,040
+already see it very clearly but just for
+
+740
+00:37:12,040 --> 00:37:14,800
+the record let's answer this
+
+741
+00:37:14,800 --> 00:37:18,359
+quiz so would it
+
+742
+00:37:18,480 --> 00:37:20,800
+compile
+
+743
+00:37:20,800 --> 00:37:24,800
+yeah will there be runtime
+
+744
+00:37:26,520 --> 00:37:28,040
+errors
+
+745
+00:37:28,040 --> 00:37:32,200
+could we do F sanitize and see that
+
+746
+00:37:32,200 --> 00:37:35,200
+runtime error
+
+747
+00:37:35,359 --> 00:37:38,280
+possibly no yeah yeah so there will be
+
+748
+00:37:38,280 --> 00:37:40,680
+runtime
+
+749
+00:37:40,920 --> 00:37:45,520
+errors and then it prints out for AG 19
+
+750
+00:37:45,520 --> 00:37:48,920
+and here you know it may or may not
+
+751
+00:37:48,920 --> 00:37:51,760
+print 20 and I'll show you some example
+
+752
+00:37:51,760 --> 00:37:53,400
+so this is something actually that I was
+
+753
+00:37:53,400 --> 00:37:55,640
+scratching my head over
+
+754
+00:37:55,640 --> 00:37:58,599
+yesterday because
+
+755
+00:37:58,599 --> 00:38:01,720
+you know it's really strange when and
+
+756
+00:38:01,720 --> 00:38:05,079
+when it doesn't print 20 or B so let's
+
+757
+00:38:05,079 --> 00:38:06,960
+see if we can get it on this machine
+
+758
+00:38:06,960 --> 00:38:09,359
+again to do what I did last time so
+
+759
+00:38:09,359 --> 00:38:11,520
+first of all I'm going to say the
+
+760
+00:38:11,520 --> 00:38:15,920
+compile it and look this compiler is AC
+
+761
+00:38:15,920 --> 00:38:20,079
+on your side you'll say oh address on
+
+762
+00:38:20,079 --> 00:38:23,359
+lock out variable is returned it'll warn
+
+763
+00:38:23,359 --> 00:38:25,400
+you that you're doing something wrong
+
+764
+00:38:25,400 --> 00:38:27,240
+it'll warn you but it will stay still
+
+765
+00:38:27,240 --> 00:38:29,200
+cre cre an executable right so we can
+
+766
+00:38:29,200 --> 00:38:32,000
+still run a out to
+
+767
+00:38:32,000 --> 00:38:35,240
+see hey it's kind of on your side it
+
+768
+00:38:35,240 --> 00:38:37,079
+crashes with
+
+769
+00:38:37,079 --> 00:38:40,040
+SE it's easy it's not like print
+
+770
+00:38:40,040 --> 00:38:41,800
+something and you are not even aware
+
+771
+00:38:41,800 --> 00:38:44,359
+that there's a problem it's crashes so
+
+772
+00:38:44,359 --> 00:38:47,119
+you can actually you could possibly
+
+773
+00:38:47,119 --> 00:38:49,000
+first of all there's a warning here that
+
+774
+00:38:49,000 --> 00:38:50,920
+tells you where the problem is but if
+
+775
+00:38:50,920 --> 00:38:53,599
+there was no warning you could compile
+
+776
+00:38:53,599 --> 00:38:58,119
+with sanitizer so F sanitize
+
+777
+00:38:58,119 --> 00:39:00,640
+equals
+
+778
+00:39:00,839 --> 00:39:03,440
+address it's still the compilation Arrow
+
+779
+00:39:03,440 --> 00:39:07,440
+but also look at that it
+
+780
+00:39:08,560 --> 00:39:11,319
+says oh it doesn't say that
+
+781
+00:39:11,319 --> 00:39:13,000
+they
+
+782
+00:39:13,000 --> 00:39:16,680
+which doesn't say it's the stack though
+
+783
+00:39:16,680 --> 00:39:21,359
+wow unknown address okay let's still
+
+784
+00:39:21,359 --> 00:39:24,640
+probably you could find some like help
+
+785
+00:39:24,640 --> 00:39:27,760
+here with this messages and and now I'm
+
+786
+00:39:27,760 --> 00:39:30,440
+going to do something really weird I'm
+
+787
+00:39:30,440 --> 00:39:34,800
+going to put an and person there so what
+
+788
+00:39:34,800 --> 00:39:37,800
+does that do you remember the the
+
+789
+00:39:37,800 --> 00:39:40,560
+picture of
+
+790
+00:39:43,240 --> 00:39:47,480
+this H so instead
+
+791
+00:39:47,480 --> 00:39:51,480
+of creating a copy of s I just call it
+
+792
+00:39:51,480 --> 00:39:56,040
+an s i call S with an S so let's copy
+
+793
+00:39:56,040 --> 00:39:58,119
+nicer but still I'm going to be
+
+794
+00:39:58,119 --> 00:40:00,319
+returning the address of X that will go
+
+795
+00:40:00,319 --> 00:40:03,520
+out of school so very similar just one
+
+796
+00:40:03,520 --> 00:40:07,359
+step away from just plainly returning
+
+797
+00:40:07,359 --> 00:40:10,240
+the address to local variable let's see
+
+798
+00:40:10,240 --> 00:40:15,879
+if the compiler will be on your side
+
+799
+00:40:17,000 --> 00:40:19,240
+now oh now it's
+
+800
+00:40:19,240 --> 00:40:22,599
+fine green
+
+801
+00:40:22,599 --> 00:40:29,319
+lights let's run it aha sanitizer says
+
+802
+00:40:29,480 --> 00:40:33,319
+stack access that is not yours anymore
+
+803
+00:40:33,319 --> 00:40:35,720
+okay what if I didn't think that need
+
+804
+00:40:35,720 --> 00:40:38,319
+there is a need to just I would compile
+
+805
+00:40:38,319 --> 00:40:40,119
+it without thinking about memory like
+
+806
+00:40:40,119 --> 00:40:43,000
+everything is fine no compilation errors
+
+807
+00:40:43,000 --> 00:40:46,280
+and I run it
+
+808
+00:40:47,359 --> 00:40:50,079
+1920 you could be even unaware there's
+
+809
+00:40:50,079 --> 00:40:52,240
+something wrong but you should always
+
+810
+00:40:52,240 --> 00:40:55,200
+remember so the the story here and I'll
+
+811
+00:40:55,200 --> 00:40:57,480
+show you an example where even sanitizer
+
+812
+00:40:57,480 --> 00:40:59,640
+will not find anything else on some
+
+813
+00:40:59,640 --> 00:41:03,160
+other bad behavior bad practices or
+
+814
+00:41:03,160 --> 00:41:05,760
+wrong practices where there's something
+
+815
+00:41:05,760 --> 00:41:08,319
+clearly I'm doing wrong and no compiler
+
+816
+00:41:08,319 --> 00:41:11,119
+no sanitizer no output will be on your
+
+817
+00:41:11,119 --> 00:41:13,280
+side you'll just have undefined Behavior
+
+818
+00:41:13,280 --> 00:41:15,560
+at its best where just working as if
+
+819
+00:41:15,560 --> 00:41:18,880
+everything is okay so let's because it's
+
+820
+00:41:18,880 --> 00:41:19,760
+so
+
+821
+00:41:19,760 --> 00:41:25,480
+serious let oh sorry where is my
+
+822
+00:41:25,480 --> 00:41:28,319
+here let's go back
+
+823
+00:41:28,319 --> 00:41:32,880
+to this lesson and say never like really
+
+824
+00:41:32,880 --> 00:41:36,040
+really in red
+
+825
+00:41:36,359 --> 00:41:41,960
+never what never what do what
+
+826
+00:41:43,040 --> 00:41:47,759
+return local variable
+
+827
+00:41:47,880 --> 00:41:53,359
+by local variable local
+
+828
+00:41:53,359 --> 00:41:56,240
+variable by
+
+829
+00:41:56,240 --> 00:41:59,119
+pointer
+
+830
+00:41:59,119 --> 00:42:00,839
+okay or never return a pointer to a
+
+831
+00:42:00,839 --> 00:42:02,880
+local variable or an address of a local
+
+832
+00:42:02,880 --> 00:42:06,000
+variable because it go goes out of scope
+
+833
+00:42:06,000 --> 00:42:07,920
+and who knows what happens
+
+834
+00:42:07,920 --> 00:42:11,319
+there okay
+
+835
+00:42:11,319 --> 00:42:13,200
+cool
+
+836
+00:42:13,200 --> 00:42:18,200
+okay we done this right yeah we done
+
+837
+00:42:18,280 --> 00:42:21,079
+this what's an easy way to fix this code
+
+838
+00:42:21,079 --> 00:42:24,079
+then
+
+839
+00:42:26,119 --> 00:42:29,119
+it
+
+840
+00:42:31,319 --> 00:42:34,079
+huh
+
+841
+00:42:34,079 --> 00:42:37,440
+what yeah inside of the birthday
+
+842
+00:42:37,440 --> 00:42:40,440
+function yeah let's fix it let's return
+
+843
+00:42:40,440 --> 00:42:42,400
+a pointer but not to a local variable
+
+844
+00:42:42,400 --> 00:42:44,359
+anymore but to
+
+845
+00:42:44,359 --> 00:42:48,200
+what to Heap variable is that okay so
+
+846
+00:42:48,200 --> 00:42:49,960
+you would have to do do I have a slide
+
+847
+00:42:49,960 --> 00:42:53,880
+where I fix it or not oh yeah what is an
+
+848
+00:42:53,880 --> 00:42:59,680
+easy way to fix so if anybody has an
+
+849
+00:43:01,720 --> 00:43:04,240
+idea yeah there was the same bug in love
+
+850
+00:43:04,240 --> 00:43:06,920
+debug yep I've moved the local variable
+
+851
+00:43:06,920 --> 00:43:10,000
+to Global so the very well thank you I I
+
+852
+00:43:10,000 --> 00:43:11,880
+would have forgotten to mention that
+
+853
+00:43:11,880 --> 00:43:13,800
+that's what you have to do in lab debug
+
+854
+00:43:13,800 --> 00:43:14,880
+debug
+
+855
+00:43:14,880 --> 00:43:18,040
+essentially that's the way to fix it
+
+856
+00:43:18,040 --> 00:43:21,920
+instead of x
+
+857
+00:43:21,920 --> 00:43:24,559
+equals well instead
+
+858
+00:43:24,559 --> 00:43:27,200
+of even if you pass by value which is a
+
+859
+00:43:27,200 --> 00:43:29,760
+bad practice but let's create instead of
+
+860
+00:43:29,760 --> 00:43:33,240
+s on the stat let's create a pointer to
+
+861
+00:43:33,240 --> 00:43:34,640
+a
+
+862
+00:43:34,640 --> 00:43:37,240
+student um to a student on the keep so
+
+863
+00:43:37,240 --> 00:43:42,319
+new student and let's say s there okay
+
+864
+00:43:42,319 --> 00:43:46,800
+so it will do what it'll copy all to the
+
+865
+00:43:46,800 --> 00:43:50,760
+Heap variable all members of s then we
+
+866
+00:43:50,760 --> 00:43:53,760
+reference S increase the age and then we
+
+867
+00:43:53,760 --> 00:43:55,680
+return instead of the address of X what
+
+868
+00:43:55,680 --> 00:43:58,319
+do we have to return the value of x
+
+869
+00:43:58,319 --> 00:44:00,920
+because it's already a pointer what will
+
+870
+00:44:00,920 --> 00:44:03,319
+happen on the right hand side what
+
+871
+00:44:03,319 --> 00:44:05,359
+exactly happens X is still local
+
+872
+00:44:05,359 --> 00:44:08,760
+variable it'll go out of scope but it
+
+873
+00:44:08,760 --> 00:44:11,240
+will form that address that points to
+
+874
+00:44:11,240 --> 00:44:13,760
+the Heap and puts it that address as the
+
+875
+00:44:13,760 --> 00:44:15,960
+right hand side value because X still is
+
+876
+00:44:15,960 --> 00:44:18,480
+gone but the pointer value will be
+
+877
+00:44:18,480 --> 00:44:20,040
+returned so that address will be
+
+878
+00:44:20,040 --> 00:44:22,720
+returned and given to B okay so do you
+
+879
+00:44:22,720 --> 00:44:25,119
+think this will of course now you you
+
+880
+00:44:25,119 --> 00:44:26,720
+shouldn't trust anything because
+
+881
+00:44:26,720 --> 00:44:29,000
+sometimes nobody
+
+882
+00:44:29,000 --> 00:44:33,000
+uh yeah yeah yeah or or let's do like
+
+883
+00:44:33,000 --> 00:44:35,800
+the nicer way so that they senten is
+
+884
+00:44:35,800 --> 00:44:38,040
+just
+
+885
+00:44:38,040 --> 00:44:42,599
+clear otherwise Asis do lots of problems
+
+886
+00:44:42,599 --> 00:44:44,520
+so everything is fine you've done the
+
+887
+00:44:44,520 --> 00:44:47,359
+right thing the main you didn't clear
+
+888
+00:44:47,359 --> 00:44:50,400
+that any so if you actually run the
+
+889
+00:44:50,400 --> 00:44:52,720
+sanitizer what happened you called for
+
+890
+00:44:52,720 --> 00:44:55,599
+new you never deleted that he so that
+
+891
+00:44:55,599 --> 00:44:58,359
+will catch it
+
+892
+00:44:58,359 --> 00:45:00,960
+right that new is not matched with
+
+893
+00:45:00,960 --> 00:45:03,599
+delete so that's good who responsibility
+
+894
+00:45:03,599 --> 00:45:06,880
+to delete that probably main because it
+
+895
+00:45:06,880 --> 00:45:09,040
+did initialize it with some function so
+
+896
+00:45:09,040 --> 00:45:12,680
+it knows that it got some but what's the
+
+897
+00:45:12,680 --> 00:45:16,400
+best best practice in this case is not
+
+898
+00:45:16,400 --> 00:45:18,480
+the point of this course okay because
+
+899
+00:45:18,480 --> 00:45:20,839
+maybe the best practice is just to
+
+900
+00:45:20,839 --> 00:45:23,079
+attach this birthday function to a class
+
+901
+00:45:23,079 --> 00:45:25,359
+itself then it will be easier to deal
+
+902
+00:45:25,359 --> 00:45:29,440
+with what's going on uh so please let's
+
+903
+00:45:29,440 --> 00:45:31,760
+not discuss what's the best way to write
+
+904
+00:45:31,760 --> 00:45:34,440
+the birthday function we discussing
+
+905
+00:45:34,440 --> 00:45:36,760
+different ways and most of them are
+
+906
+00:45:36,760 --> 00:45:41,160
+bad but we don't really say uh how to
+
+907
+00:45:41,160 --> 00:45:43,520
+fix the code in the sense of writing the
+
+908
+00:45:43,520 --> 00:45:45,720
+best birthday function but look at least
+
+909
+00:45:45,720 --> 00:45:47,800
+we fit some bugs like
+
+910
+00:45:47,800 --> 00:45:51,000
+no mebe it's still not the best
+
+911
+00:45:51,000 --> 00:45:54,839
+structure of the code button fits the
+
+912
+00:45:55,920 --> 00:45:57,720
+Bess
+
+913
+00:45:57,720 --> 00:46:00,960
+variable by poter so yes you're right
+
+914
+00:46:00,960 --> 00:46:05,920
+that it's just like lab
+
+915
+00:46:07,760 --> 00:46:12,280
+debug okay now another way of returning
+
+916
+00:46:12,280 --> 00:46:17,319
+the last one of returning it is by
+
+917
+00:46:17,960 --> 00:46:21,440
+reference so in the case of passing
+
+918
+00:46:21,440 --> 00:46:23,200
+parameters by reference that fits
+
+919
+00:46:23,200 --> 00:46:26,559
+everything in this case of return will
+
+920
+00:46:26,559 --> 00:46:29,520
+it really be a good idea to return
+
+921
+00:46:29,520 --> 00:46:32,119
+something by reference well it depends
+
+922
+00:46:32,119 --> 00:46:33,800
+so you can already see that there's a
+
+923
+00:46:33,800 --> 00:46:36,440
+lot of bad things going on here because
+
+924
+00:46:36,440 --> 00:46:39,200
+I have so many copies here but let's see
+
+925
+00:46:39,200 --> 00:46:42,079
+let's see what's going on so I create
+
+926
+00:46:42,079 --> 00:46:44,520
+here I initialize student a everything
+
+927
+00:46:44,520 --> 00:46:50,559
+is garbage but I give age uh 19 and we
+
+928
+00:46:50,559 --> 00:46:54,280
+don't use this so just ignore them
+
+929
+00:46:54,280 --> 00:46:56,920
+student B is also initialized uh
+
+930
+00:46:56,920 --> 00:46:58,880
+declared on the stack so everything is
+
+931
+00:46:58,880 --> 00:47:02,680
+garbage initially but we want to assign
+
+932
+00:47:02,680 --> 00:47:05,359
+values to it so initially everything is
+
+933
+00:47:05,359 --> 00:47:08,280
+garbage we want to assign a value to it
+
+934
+00:47:08,280 --> 00:47:11,160
+by calling this function B so we make a
+
+935
+00:47:11,160 --> 00:47:13,160
+copy of
+
+936
+00:47:13,160 --> 00:47:16,800
+a so we pass it by value so s is a local
+
+937
+00:47:16,800 --> 00:47:19,800
+now variable on the stack and everything
+
+938
+00:47:19,800 --> 00:47:22,079
+from a is copied member wise so it's
+
+939
+00:47:22,079 --> 00:47:25,400
+garbage and 19 now I do the same stupid
+
+940
+00:47:25,400 --> 00:47:28,440
+thing for the reason of showing you how
+
+941
+00:47:28,440 --> 00:47:30,079
+the compiler will not be on your side
+
+942
+00:47:30,079 --> 00:47:32,160
+the same thing so that's why I do that
+
+943
+00:47:32,160 --> 00:47:35,520
+so X is copied from s member y so again
+
+944
+00:47:35,520 --> 00:47:36,280
+it's
+
+945
+00:47:36,280 --> 00:47:39,079
+garbage and
+
+946
+00:47:39,079 --> 00:47:43,720
+19 after this now s's age is increased
+
+947
+00:47:43,720 --> 00:47:49,280
+to 20 we return X by reference what does
+
+948
+00:47:49,280 --> 00:47:50,200
+it
+
+949
+00:47:50,200 --> 00:47:52,720
+mean which means the right hand side is
+
+950
+00:47:52,720 --> 00:47:55,160
+created and the right hand side will
+
+951
+00:47:55,160 --> 00:47:57,720
+have the same name
+
+952
+00:47:57,720 --> 00:48:00,040
+as
+
+953
+00:48:02,480 --> 00:48:06,480
+X but then first this phrases need to be
+
+954
+00:48:06,480 --> 00:48:10,079
+closed so the local memory is taken back
+
+955
+00:48:10,079 --> 00:48:12,599
+by the
+
+956
+00:48:15,520 --> 00:48:18,839
+system and then B the right hand side is
+
+957
+00:48:18,839 --> 00:48:24,240
+evaluated to that it's the name of that
+
+958
+00:48:24,240 --> 00:48:27,200
+memory now it's it's a local name of
+
+959
+00:48:27,200 --> 00:48:30,359
+that memory that memory is gone it's
+
+960
+00:48:30,359 --> 00:48:32,040
+taken by the system the system will work
+
+961
+00:48:32,040 --> 00:48:34,440
+over it and yet you're holding the name
+
+962
+00:48:34,440 --> 00:48:35,319
+of
+
+963
+00:48:35,319 --> 00:48:39,880
+it not good and you assign B to
+
+964
+00:48:39,880 --> 00:48:42,760
+that which means that b is going to get
+
+965
+00:48:42,760 --> 00:48:45,040
+copied all of those
+
+966
+00:48:45,040 --> 00:48:50,000
+things if it can so it might what crash
+
+967
+00:48:50,000 --> 00:48:53,440
+right there right then right or not or
+
+968
+00:48:53,440 --> 00:48:55,920
+copy so the question is what's going to
+
+969
+00:48:55,920 --> 00:49:01,839
+be the output of A's age and B's
+
+970
+00:49:01,839 --> 00:49:07,559
+age so here 19 here 20 or crash or when
+
+971
+00:49:07,559 --> 00:49:10,240
+does it crash let's look
+
+972
+00:49:10,240 --> 00:49:14,119
+so so let me just double check that it's
+
+973
+00:49:14,119 --> 00:49:17,799
+03 or 02 02 by reference yeah we're
+
+974
+00:49:17,799 --> 00:49:19,440
+returning by reference
+
+975
+00:49:19,440 --> 00:49:23,319
+see everything no pointers so that's
+
+976
+00:49:23,319 --> 00:49:28,720
+nice but what does it all mean
+
+977
+00:49:29,520 --> 00:49:32,799
+02 oh compiler is on your side again
+
+978
+00:49:32,799 --> 00:49:35,440
+because they made that extra copy of
+
+979
+00:49:35,440 --> 00:49:40,040
+us warning refence to local variable so
+
+980
+00:49:40,040 --> 00:49:42,480
+it warns you if you return a pointer to
+
+981
+00:49:42,480 --> 00:49:44,559
+local variable or reference because
+
+982
+00:49:44,559 --> 00:49:46,400
+Underneath It All it's also kind of a
+
+983
+00:49:46,400 --> 00:49:49,160
+pointer so it knows something is bad but
+
+984
+00:49:49,160 --> 00:49:50,880
+it's still created an
+
+985
+00:49:50,880 --> 00:49:55,119
+executable it crashes right one copy
+
+986
+00:49:55,119 --> 00:49:57,359
+right so now you know what I'm going to
+
+987
+00:49:57,359 --> 00:50:00,720
+do next right I'm going to go to my code
+
+988
+00:50:00,720 --> 00:50:05,200
+I'm going to grab it I'm going to get
+
+989
+00:50:05,200 --> 00:50:09,240
+the this trick
+
+990
+00:50:09,240 --> 00:50:14,119
+of just calling x with an
+
+991
+00:50:14,119 --> 00:50:17,920
+X which means that what what does it
+
+992
+00:50:17,920 --> 00:50:20,119
+mean instead of
+
+993
+00:50:20,119 --> 00:50:23,680
+copying I just call S with an S so upon
+
+994
+00:50:23,680 --> 00:50:26,359
+return this will be right hand side same
+
+995
+00:50:26,359 --> 00:50:28,960
+thing right but let's look if the
+
+996
+00:50:28,960 --> 00:50:31,839
+compiler will be happy with
+
+997
+00:50:31,839 --> 00:50:35,400
+that yeah no return by reference to
+
+998
+00:50:35,400 --> 00:50:37,799
+local
+
+999
+00:50:39,200 --> 00:50:42,599
+variable no crash
+
+1000
+00:50:42,599 --> 00:50:45,400
+either what about sanitizer do you think
+
+1001
+00:50:45,400 --> 00:50:47,319
+it'll report remember last time
+
+1002
+00:50:47,319 --> 00:50:49,319
+sanitizer was still on your side because
+
+1003
+00:50:49,319 --> 00:50:52,119
+there were pointers something was wrong
+
+1004
+00:50:52,119 --> 00:50:56,280
+but um so what does itan is f sanitize
+
+1005
+00:50:56,280 --> 00:50:58,640
+people
+
+1006
+00:51:00,359 --> 00:51:03,119
+address no
+
+1007
+00:51:03,119 --> 00:51:06,640
+quiet this is the
+
+1008
+00:51:06,640 --> 00:51:08,839
+best
+
+1009
+00:51:08,839 --> 00:51:11,640
+that's therefore we're going to write in
+
+1010
+00:51:11,640 --> 00:51:14,520
+big letters here never
+
+1011
+00:51:14,520 --> 00:51:18,200
+ever never
+
+1012
+00:51:18,200 --> 00:51:21,200
+what
+
+1013
+00:51:23,280 --> 00:51:26,319
+return a a local variable by reference
+
+1014
+00:51:26,319 --> 00:51:27,480
+either
+
+1015
+00:51:27,480 --> 00:51:32,599
+there variable by reference this is just
+
+1016
+00:51:32,599 --> 00:51:34,839
+bad bad
+
+1017
+00:51:34,839 --> 00:51:37,839
+stuff
+
+1018
+00:51:37,960 --> 00:51:41,319
+never how could I fix it so I think I
+
+1019
+00:51:41,319 --> 00:51:43,359
+have
+
+1020
+00:51:43,359 --> 00:51:46,520
+that oh yeah sorry I I was going to ask
+
+1021
+00:51:46,520 --> 00:51:49,440
+you but we already we were we were
+
+1022
+00:51:49,440 --> 00:51:52,359
+tracing it but but let's let's do let's
+
+1023
+00:51:52,359 --> 00:51:54,480
+let's so so please tell me what's the
+
+1024
+00:51:54,480 --> 00:51:58,119
+right answer what you what you you
+
+1025
+00:51:58,119 --> 00:51:59,960
+what if you had that as the question on
+
+1026
+00:51:59,960 --> 00:52:03,960
+the exam so what are the right
+
+1027
+00:52:04,640 --> 00:52:07,879
+answers it
+
+1028
+00:52:09,640 --> 00:52:12,240
+compiles it compiles but has runtime
+
+1029
+00:52:12,240 --> 00:52:15,240
+error
+
+1030
+00:52:17,000 --> 00:52:20,000
+yes it may not even get to that right so
+
+1031
+00:52:20,000 --> 00:52:21,720
+you shouldn't say that that's the right
+
+1032
+00:52:21,720 --> 00:52:23,520
+thing it may not even get to printing
+
+1033
+00:52:23,520 --> 00:52:27,359
+out 19 because it'll crash here copying
+
+1034
+00:52:27,359 --> 00:52:31,079
+that memory member wise with pointer it
+
+1035
+00:52:31,079 --> 00:52:32,480
+wasn't the case it was just getting
+
+1036
+00:52:32,480 --> 00:52:34,799
+memory address there's no problem
+
+1037
+00:52:34,799 --> 00:52:38,559
+copying but here it has to copy to get
+
+1038
+00:52:38,559 --> 00:52:41,319
+that me that me memory and copy it
+
+1039
+00:52:41,319 --> 00:52:45,599
+memory wise and it's not it's to take so
+
+1040
+00:52:45,599 --> 00:52:47,319
+you cannot claim that it's going to
+
+1041
+00:52:47,319 --> 00:52:48,799
+print out
+
+1042
+00:52:48,799 --> 00:52:55,040
+19 it does even if I put s m% here still
+
+1043
+00:52:55,040 --> 00:52:57,559
+yes it does for me but but I think uh
+
+1044
+00:52:57,559 --> 00:52:59,119
+last night we were figuring it out with
+
+1045
+00:52:59,119 --> 00:53:02,440
+Elmer and Elmer ran clan on this code
+
+1046
+00:53:02,440 --> 00:53:05,640
+right and that one warned you even in
+
+1047
+00:53:05,640 --> 00:53:09,640
+the case of an m% here so Clan which it
+
+1048
+00:53:09,640 --> 00:53:11,319
+which means that first of all we do that
+
+1049
+00:53:11,319 --> 00:53:15,079
+long ago but Clan is that comp it's up
+
+1050
+00:53:15,079 --> 00:53:17,799
+more especially there's like some Flags
+
+1051
+00:53:17,799 --> 00:53:19,720
+or extensions that you can use that will
+
+1052
+00:53:19,720 --> 00:53:22,960
+warn you about bad C++ practices we
+
+1053
+00:53:22,960 --> 00:53:25,799
+could not install Clank on the server
+
+1054
+00:53:25,799 --> 00:53:28,119
+for love l because it would require a
+
+1055
+00:53:28,119 --> 00:53:30,079
+major update for the server that's why
+
+1056
+00:53:30,079 --> 00:53:31,160
+we are running
+
+1057
+00:53:31,160 --> 00:53:33,119
+g++
+
+1058
+00:53:33,119 --> 00:53:37,040
+GCC okay that's reason actually even 10
+
+1059
+00:53:37,040 --> 00:53:38,920
+years ago we already were working with
+
+1060
+00:53:38,920 --> 00:53:41,280
+cl
+
+1061
+00:53:41,280 --> 00:53:43,960
+in so Clan is a better compiler if you
+
+1062
+00:53:43,960 --> 00:53:46,960
+can use clan for your homework it'll be
+
+1063
+00:53:46,960 --> 00:53:49,880
+more on your side than g++
+
+1064
+00:53:49,880 --> 00:53:54,720
+GCC okay so so we know that but uh so
+
+1065
+00:53:54,720 --> 00:53:57,440
+Clan would worry warn you even if like
+
+1066
+00:53:57,440 --> 00:53:58,680
+in that
+
+1067
+00:53:58,680 --> 00:54:02,240
+case okay we already answered this very
+
+1068
+00:54:02,240 --> 00:54:03,960
+good
+
+1069
+00:54:03,960 --> 00:54:07,400
+um now I want to tell you something so
+
+1070
+00:54:07,400 --> 00:54:09,960
+we're going to go back to this case
+
+1071
+00:54:09,960 --> 00:54:11,920
+where I'm going to
+
+1072
+00:54:11,920 --> 00:54:16,480
+pass the variable by here is by ref so
+
+1073
+00:54:16,480 --> 00:54:19,040
+one way to fix the
+
+1074
+00:54:19,040 --> 00:54:24,440
+references I is to pass that variable by
+
+1075
+00:54:24,440 --> 00:54:25,920
+reference and then return it by
+
+1076
+00:54:25,920 --> 00:54:28,119
+reference then you're not passing local
+
+1077
+00:54:28,119 --> 00:54:30,640
+then you're passing the local variable
+
+1078
+00:54:30,640 --> 00:54:34,920
+M that's fine so that's one way to to to
+
+1079
+00:54:34,920 --> 00:54:38,040
+fix it so let's go to my
+
+1080
+00:54:38,040 --> 00:54:41,160
+code here so what I could do I could
+
+1081
+00:54:41,160 --> 00:54:45,720
+just put a 9% right here right can you
+
+1082
+00:54:45,720 --> 00:54:47,480
+quickly tell me what's going to be the
+
+1083
+00:54:47,480 --> 00:54:50,079
+output
+
+1084
+00:54:53,520 --> 00:54:58,680
+then 2020 yeah because you taking a oh
+
+1085
+00:54:58,680 --> 00:55:00,559
+wait wait wait wait wait hold on that's
+
+1086
+00:55:00,559 --> 00:55:02,960
+very good good point let's see so you're
+
+1087
+00:55:02,960 --> 00:55:05,280
+taking a you're passing by reference so
+
+1088
+00:55:05,280 --> 00:55:08,000
+this is a local name of a you increment
+
+1089
+00:55:08,000 --> 00:55:12,400
+the A's age so a becomes 20 and then you
+
+1090
+00:55:12,400 --> 00:55:15,760
+copy it member wise so 2020 let's so
+
+1091
+00:55:15,760 --> 00:55:19,119
+just double check of
+
+1092
+00:55:19,520 --> 00:55:21,400
+course right
+
+1093
+00:55:21,400 --> 00:55:24,119
+2020 but that's one of the way to fix it
+
+1094
+00:55:24,119 --> 00:55:25,760
+in the sense that now you're not
+
+1095
+00:55:25,760 --> 00:55:29,760
+returning a local variable by reference
+
+1096
+00:55:29,760 --> 00:55:31,200
+it's not a local
+
+1097
+00:55:31,200 --> 00:55:34,760
+variable and U that's fine but then you
+
+1098
+00:55:34,760 --> 00:55:39,240
+changing the data of or the data of the
+
+1099
+00:55:39,240 --> 00:55:41,359
+past parameter which is fine because
+
+1100
+00:55:41,359 --> 00:55:43,400
+it's clear on the signature that you
+
+1101
+00:55:43,400 --> 00:55:46,599
+might as well so maybe that's the way to
+
+1102
+00:55:46,599 --> 00:55:48,559
+fix it if that's what you want your
+
+1103
+00:55:48,559 --> 00:55:50,839
+function to do wor
+
+1104
+00:55:50,839 --> 00:55:53,599
+thing maybe because it's a birth of a so
+
+1105
+00:55:53,599 --> 00:55:56,319
+a is changed maybe it's okay you know
+
+1106
+00:55:56,319 --> 00:55:57,480
+but maybe you want to create a
+
+1107
+00:55:57,480 --> 00:55:59,079
+completely different object like it's a
+
+1108
+00:55:59,079 --> 00:56:01,839
+new person who is like increase age and
+
+1109
+00:56:01,839 --> 00:56:03,960
+the old person St old student stays with
+
+1110
+00:56:03,960 --> 00:56:06,240
+the old age then this is not the right
+
+1111
+00:56:06,240 --> 00:56:09,039
+solution nevertheless what I want to
+
+1112
+00:56:09,039 --> 00:56:11,599
+look I want to look at this code now and
+
+1113
+00:56:11,599 --> 00:56:13,319
+it's here on your
+
+1114
+00:56:13,319 --> 00:56:17,160
+slide and I want to ask you about
+
+1115
+00:56:17,160 --> 00:56:19,559
+Constructors remember we talked about
+
+1116
+00:56:19,559 --> 00:56:21,319
+Constructors a little bit and I was
+
+1117
+00:56:21,319 --> 00:56:24,480
+telling you it's not up to you to say oh
+
+1118
+00:56:24,480 --> 00:56:26,400
+let's code Constructor the system will
+
+1119
+00:56:26,400 --> 00:56:28,319
+will call it when
+
+1120
+00:56:28,319 --> 00:56:31,839
+appropriate so here I made a little
+
+1121
+00:56:31,839 --> 00:56:35,880
+trick I put the constructors in this in
+
+1122
+00:56:35,880 --> 00:56:39,640
+the student code which means that once
+
+1123
+00:56:39,640 --> 00:56:41,559
+we wrote One
+
+1124
+00:56:41,559 --> 00:56:43,599
+Constructor you have to write all of
+
+1125
+00:56:43,599 --> 00:56:46,119
+them and the system will use your
+
+1126
+00:56:46,119 --> 00:56:48,720
+written ones right so it will not call
+
+1127
+00:56:48,720 --> 00:56:50,559
+the default constructions of its own it
+
+1128
+00:56:50,559 --> 00:56:54,119
+will use what you wrot and I wrote
+
+1129
+00:56:54,119 --> 00:56:57,280
+it so now I the whole point of my
+
+1130
+00:56:57,280 --> 00:56:58,799
+Constructor is not really assign
+
+1131
+00:56:58,799 --> 00:57:01,079
+anything but just report that a
+
+1132
+00:57:01,079 --> 00:57:03,680
+Constructor was called so here then we
+
+1133
+00:57:03,680 --> 00:57:06,319
+can trace how many times an instructure
+
+1134
+00:57:06,319 --> 00:57:08,880
+is called in this code and I want you to
+
+1135
+00:57:08,880 --> 00:57:11,760
+guess I want you to guess how many a
+
+1136
+00:57:11,760 --> 00:57:14,240
+default Constructor is called in this
+
+1137
+00:57:14,240 --> 00:57:15,400
+main
+
+1138
+00:57:15,400 --> 00:57:18,760
+function and um the next thing we'll
+
+1139
+00:57:18,760 --> 00:57:22,920
+talk about is how we have a constru so
+
+1140
+00:57:22,920 --> 00:57:25,280
+far let's just start with a default
+
+1141
+00:57:25,280 --> 00:57:27,760
+construct so try to think about it and
+
+1142
+00:57:27,760 --> 00:57:30,319
+we'll go through the code but while
+
+1143
+00:57:30,319 --> 00:57:34,599
+you're thinking about it I will get that
+
+1144
+00:57:34,599 --> 00:57:38,680
+code up to my
+
+1145
+00:57:38,680 --> 00:57:41,799
+page so
+
+1146
+00:57:41,799 --> 00:57:44,799
+Z3 so this is the code right so it'll
+
+1147
+00:57:44,799 --> 00:57:49,400
+run and oh I can do it like this so you
+
+1148
+00:57:49,400 --> 00:57:52,440
+answer and this is the
+
+1149
+00:57:52,440 --> 00:57:57,599
+code two times where are they if if you
+
+1150
+00:57:57,599 --> 00:58:01,440
+know if you know where are this two
+
+1151
+00:58:01,440 --> 00:58:05,559
+times or three times where upon which
+
+1152
+00:58:05,559 --> 00:58:09,440
+declaration you can type it
+
+1153
+00:58:12,559 --> 00:58:15,240
+there oh sorry sorry yeah now you're
+
+1154
+00:58:15,240 --> 00:58:17,079
+saying three because I didn't update my
+
+1155
+00:58:17,079 --> 00:58:19,760
+code let me update my code now it's okay
+
+1156
+00:58:19,760 --> 00:58:22,599
+now now it's better right no no no no no
+
+1157
+00:58:22,599 --> 00:58:24,400
+let's update the code to what you have
+
+1158
+00:58:24,400 --> 00:58:27,200
+in your SL there right all we're not
+
+1159
+00:58:27,200 --> 00:58:30,640
+making any others because that's what
+
+1160
+00:58:30,640 --> 00:58:33,680
+maybe but no just all everything is by
+
+1161
+00:58:33,680 --> 00:58:35,559
+reference we just changing name to the
+
+1162
+00:58:35,559 --> 00:58:38,960
+that function so the only place yes very
+
+1163
+00:58:38,960 --> 00:58:40,920
+good so
+
+1164
+00:58:40,920 --> 00:58:45,240
+upon upon declaring student a the system
+
+1165
+00:58:45,240 --> 00:58:47,480
+will actually call The Constructor
+
+1166
+00:58:47,480 --> 00:58:50,799
+default Constructor
+
+1167
+00:58:50,799 --> 00:58:53,599
+default and
+
+1168
+00:58:53,599 --> 00:58:56,640
+structure and here default Constructor
+
+1169
+00:58:56,640 --> 00:59:00,640
+is called by the system what is default
+
+1170
+00:59:00,640 --> 00:59:02,640
+Constructor it's a no parameter
+
+1171
+00:59:02,640 --> 00:59:04,480
+Constructor right you didn't pass any
+
+1172
+00:59:04,480 --> 00:59:08,079
+parameters so there's nothing to
+
+1173
+00:59:08,079 --> 00:59:11,400
+initialize and that's why the way it
+
+1174
+00:59:11,400 --> 00:59:13,839
+looks like if you were to write for the
+
+1175
+00:59:13,839 --> 00:59:16,119
+system the default Constructor it would
+
+1176
+00:59:16,119 --> 00:59:19,400
+look like there's no arguments in it so
+
+1177
+00:59:19,400 --> 00:59:22,039
+you initialize your student with but you
+
+1178
+00:59:22,039 --> 00:59:24,119
+don't get Arguments for initialization
+
+1179
+00:59:24,119 --> 00:59:27,319
+right you can put some values s for your
+
+1180
+00:59:27,319 --> 00:59:30,039
+instead of garbage you could but the
+
+1181
+00:59:30,039 --> 00:59:32,920
+system they want they want provis for
+
+1182
+00:59:32,920 --> 00:59:36,000
+you just
+
+1183
+00:59:36,000 --> 00:59:38,720
+nothing so do you want to verify that
+
+1184
+00:59:38,720 --> 00:59:40,880
+it's only two default
+
+1185
+00:59:40,880 --> 00:59:43,799
+Constructors if you want to do that you
+
+1186
+00:59:43,799 --> 00:59:46,480
+compile your
+
+1187
+00:59:46,480 --> 00:59:49,160
+code and you run
+
+1188
+00:59:49,160 --> 00:59:52,839
+it and you see that two times a default
+
+1189
+00:59:52,839 --> 00:59:58,119
+Constructor was called now hm H what if
+
+1190
+00:59:58,119 --> 01:00:01,760
+I don't pass by reference anymore so
+
+1191
+01:00:01,760 --> 01:00:04,799
+instead I create a copy and remember I
+
+1192
+01:00:04,799 --> 01:00:06,760
+said it's not an assignment statement
+
+1193
+01:00:06,760 --> 01:00:11,240
+actually that's the case the place where
+
+1194
+01:00:11,240 --> 01:00:13,799
+a Constructor will be called but not a
+
+1195
+01:00:13,799 --> 01:00:16,280
+default Constructor it will be a copy
+
+1196
+01:00:16,280 --> 01:00:17,760
+Constructor because you have passing
+
+1197
+01:00:17,760 --> 01:00:19,920
+values that you want to copy from that's
+
+1198
+01:00:19,920 --> 01:00:23,760
+why I created a copy Constructor here as
+
+1199
+01:00:23,760 --> 01:00:25,760
+well a mock copy Constructor it doesn't
+
+1200
+01:00:25,760 --> 01:00:28,280
+really copy a into this
+
+1201
+01:00:28,280 --> 01:00:31,599
+student it just says a copy Constructor
+
+1202
+01:00:31,599 --> 01:00:35,880
+is called so now let's see please answer
+
+1203
+01:00:35,880 --> 01:00:40,000
+in this code now in this code so looking
+
+1204
+01:00:40,000 --> 01:00:41,160
+at
+
+1205
+01:00:41,160 --> 01:00:44,799
+my looking at this new code how many
+
+1206
+01:00:44,799 --> 01:00:46,839
+times a default Constructor is called
+
+1207
+01:00:46,839 --> 01:00:48,520
+and how many
+
+1208
+01:00:48,520 --> 01:00:52,839
+times a copy Constructor is
+
+1209
+01:00:54,920 --> 01:00:57,920
+called
+
+1210
+01:00:58,400 --> 01:01:01,200
+let's look at your
+
+1211
+01:01:01,799 --> 01:01:05,440
+answers so what do you
+
+1212
+01:01:08,160 --> 01:01:11,160
+think
+
+1213
+01:01:11,280 --> 01:01:16,280
+yeah student s so um two
+
+1214
+01:01:16,280 --> 01:01:18,520
+times a default Constructor will be
+
+1215
+01:01:18,520 --> 01:01:22,480
+called but upon here oh sorry upon
+
+1216
+01:01:22,480 --> 01:01:24,920
+here a copy
+
+1217
+01:01:24,920 --> 01:01:27,839
+Constructor
+
+1218
+01:01:27,839 --> 01:01:31,079
+will be invoked by the system to copy a
+
+1219
+01:01:31,079 --> 01:01:32,160
+into
+
+1220
+01:01:32,160 --> 01:01:35,680
+s so not a default but a copy that Str
+
+1221
+01:01:35,680 --> 01:01:38,440
+let's do that
+
+1222
+01:01:38,720 --> 01:01:42,599
+again right so you can do play with this
+
+1223
+01:01:42,599 --> 01:01:44,520
+kind of things with in your code oh by
+
+1224
+01:01:44,520 --> 01:01:46,440
+the way see the undefined Behavior now
+
+1225
+01:01:46,440 --> 01:01:49,200
+is one instead of
+
+1226
+01:01:49,200 --> 01:01:51,400
+20 so that's
+
+1227
+01:01:51,400 --> 01:01:54,880
+interesting um so you can do we we will
+
+1228
+01:01:54,880 --> 01:01:57,480
+this is just jumping ahead kind of like
+
+1229
+01:01:57,480 --> 01:01:58,520
+okay you can put this little
+
+1230
+01:01:58,520 --> 01:02:00,200
+construction and see how many times
+
+1231
+01:02:00,200 --> 01:02:04,400
+maybe but we will learn more formally
+
+1232
+01:02:04,400 --> 01:02:06,200
+what is it to write a Constructor when
+
+1233
+01:02:06,200 --> 01:02:07,720
+do you need write Constructors which
+
+1234
+01:02:07,720 --> 01:02:10,279
+circum sens will they be called and what
+
+1235
+01:02:10,279 --> 01:02:12,079
+are other Constructors that we could
+
+1236
+01:02:12,079 --> 01:02:13,799
+write and of course we'll also talk
+
+1237
+01:02:13,799 --> 01:02:16,440
+about the structures because you need to
+
+1238
+01:02:16,440 --> 01:02:20,119
+if you creating some memory on the Heap
+
+1239
+01:02:20,119 --> 01:02:22,400
+then you'll actually need to clean it up
+
+1240
+01:02:22,400 --> 01:02:23,960
+in any of these Constructors if you use
+
+1241
+01:02:23,960 --> 01:02:25,400
+any heat memory you'll need to clean it
+
+1242
+01:02:25,400 --> 01:02:27,640
+up properly as well so that's next
+
+1243
+01:02:27,640 --> 01:02:30,240
+lecture but now we have half an hour for
+
+1244
+01:02:30,240 --> 01:02:32,920
+elmary because El Mar wants to talk
+
+1245
+01:02:32,920 --> 01:02:35,960
+about every mon every Tuesday we'll talk
+
+1246
+01:02:35,960 --> 01:02:38,119
+about the past
+
+1247
+01:02:38,119 --> 01:02:40,760
+lab I think that's really great idea
+
+1248
+01:02:40,760 --> 01:02:42,960
+what do you guys think go through your
+
+1249
+01:02:42,960 --> 01:02:45,400
+solutions kind of and also help students
+
+1250
+01:02:45,400 --> 01:02:48,559
+who are struggling to catch up it's very
+
+1251
+01:02:48,559 --> 01:02:52,440
+important by way about that so is it
+
+1252
+01:02:52,440 --> 01:02:55,200
+possible to have like blade submissions
+
+1253
+01:02:55,200 --> 01:02:57,720
+and if it's Cas then what's the point in
+
+1254
+01:02:57,720 --> 01:02:59,920
+you know G the
+
+1255
+01:02:59,920 --> 01:03:03,160
+solution uh the point is we don't to
+
+1256
+01:03:03,160 --> 01:03:07,279
+lose students so we will know that theym
+
+1257
+01:03:07,279 --> 01:03:10,000
+by okay but we don't really want to
+
+1258
+01:03:10,000 --> 01:03:13,319
+crush anybody we want to keep going MPS
+
+1259
+01:03:13,319 --> 01:03:15,920
+are hard enough and they're individual
+
+1260
+01:03:15,920 --> 01:03:17,359
+and we don't go through the solutions
+
+1261
+01:03:17,359 --> 01:03:19,680
+although for MPS will go through the
+
+1262
+01:03:19,680 --> 01:03:22,319
+Solutions in the last review session so
+
+1263
+01:03:22,319 --> 01:03:25,839
+we already decided that this um
+
+1264
+01:03:25,839 --> 01:03:28,000
+everything we want to cover at this
+
+1265
+01:03:28,000 --> 01:03:30,400
+iteration of class will run out kind of
+
+1266
+01:03:30,400 --> 01:03:33,760
+fast right here so these reviews will be
+
+1267
+01:03:33,760 --> 01:03:36,279
+for MPS and that will be preparing you
+
+1268
+01:03:36,279 --> 01:03:39,160
+for the exam yeah and another question
+
+1269
+01:03:39,160 --> 01:03:42,760
+is can we send feedback after the
+
+1270
+01:03:42,760 --> 01:03:45,400
+deadline yeah yeah anytime and you can
+
+1271
+01:03:45,400 --> 01:03:47,160
+submit as many times as you want you can
+
+1272
+01:03:47,160 --> 01:03:51,000
+res submit your Solution by okay but uh
+
+1273
+01:03:51,000 --> 01:03:53,920
+will it like appear in the system if you
+
+1274
+01:03:53,920 --> 01:03:56,520
+send feedback later that you submit it
+
+1275
+01:03:56,520 --> 01:04:00,200
+like the whole thing later or feedback
+
+1276
+01:04:00,200 --> 01:04:02,720
+we only see feedback is completely
+
+1277
+01:04:02,720 --> 01:04:05,440
+Anonymous so if you go to a feedback
+
+1278
+01:04:05,440 --> 01:04:09,200
+page we only see where is the best one
+
+1279
+01:04:09,200 --> 01:04:12,960
+lab intro here so what we see is the
+
+1280
+01:04:12,960 --> 01:04:15,359
+time it was submitted oh by the way this
+
+1281
+01:04:15,359 --> 01:04:18,880
+was cool lab intro so um this was a good
+
+1282
+01:04:18,880 --> 01:04:20,599
+lab
+
+1283
+01:04:20,599 --> 01:04:24,920
+see I think many students left favorable
+
+1284
+01:04:24,920 --> 01:04:27,760
+it's so what well
+
+1285
+01:04:27,760 --> 01:04:29,839
+organized um oh yeah there was a little
+
+1286
+01:04:29,839 --> 01:04:31,279
+bit like oh you're still covering very
+
+1287
+01:04:31,279 --> 01:04:34,039
+basic stuff but this is jumping into the
+
+1288
+01:04:34,039 --> 01:04:37,079
+mud and yes it is that's how we want it
+
+1289
+01:04:37,079 --> 01:04:40,200
+that's actually by Design because that's
+
+1290
+01:04:40,200 --> 01:04:43,359
+the experience you'll get at your job
+
+1291
+01:04:43,359 --> 01:04:47,039
+guaranteed so we preparing you for that
+
+1292
+01:04:47,039 --> 01:04:49,720
+um there's no go good way to start with
+
+1293
+01:04:49,720 --> 01:04:51,640
+large
+
+1294
+01:04:51,640 --> 01:04:55,359
+code you just start right so anyway um
+
+1295
+01:04:55,359 --> 01:04:57,920
+yes but there was one question I thought
+
+1296
+01:04:57,920 --> 01:05:00,400
+that there was one question here can you
+
+1297
+01:05:00,400 --> 01:05:02,200
+change variables using void functions
+
+1298
+01:05:02,200 --> 01:05:04,599
+and would that be a good practice yes
+
+1299
+01:05:04,599 --> 01:05:07,359
+you can you can
+
+1300
+01:05:07,359 --> 01:05:10,359
+but is it a good I think a lot of
+
+1301
+01:05:10,359 --> 01:05:13,558
+functions a lot
+
+1302
+01:05:13,839 --> 01:05:16,680
+of in the code that I had experiences
+
+1303
+01:05:16,680 --> 01:05:18,319
+that's how we would do that through void
+
+1304
+01:05:18,319 --> 01:05:22,039
+functions we wouldn't return any
+
+1305
+01:05:22,039 --> 01:05:25,680
+parameters um but you'll see that for
+
+1306
+01:05:25,680 --> 01:05:28,079
+example for assignment operator some way
+
+1307
+01:05:28,079 --> 01:05:30,240
+in some sometimes in especially in next
+
+1308
+01:05:30,240 --> 01:05:32,559
+lecture you'll see that there will be no
+
+1309
+01:05:32,559 --> 01:05:35,640
+way but you have to return a variable
+
+1310
+01:05:35,640 --> 01:05:37,359
+and that's one these best practices will
+
+1311
+01:05:37,359 --> 01:05:39,960
+help you the assignment operator you
+
+1312
+01:05:39,960 --> 01:05:41,880
+have to
+
+1313
+01:05:41,880 --> 01:05:46,039
+return have to figure out Val parameter
+
+1314
+01:05:46,039 --> 01:05:47,160
+by what
+
+1315
+01:05:47,160 --> 01:05:49,480
+parameter so yes but this is good
+
+1316
+01:05:49,480 --> 01:05:51,839
+practice void functions at least in my
+
+1317
+01:05:51,839 --> 01:05:53,799
+limited experience maybe this is a good
+
+1318
+01:05:53,799 --> 01:05:56,480
+also question on Discord
+
+1319
+01:05:56,480 --> 01:05:58,480
+like if you don't have to return like
+
+1320
+01:05:58,480 --> 01:06:00,520
+don't absolutely have to
+
+1321
+01:06:00,520 --> 01:06:03,240
+return then is it always a bad practice
+
+1322
+01:06:03,240 --> 01:06:06,640
+to just resort to void
+
+1323
+01:06:07,200 --> 01:06:09,960
+functions okay good good question for
+
+1324
+01:06:09,960 --> 01:06:13,680
+Discord and now El but please ask
+
+1325
+01:06:13,680 --> 01:06:16,480
+questions if you have um if you have
+
+1326
+01:06:16,480 --> 01:06:19,039
+them so you just want to switch
+
+1327
+01:06:19,039 --> 01:06:22,640
+right yeah I guess we do that that way
+
+1328
+01:06:22,640 --> 01:06:27,079
+yeah I still keep my room I think oh oh
+
+1329
+01:06:27,079 --> 01:06:29,599
+that was my cof I have
+
+1330
+01:06:29,599 --> 01:06:32,599
+some
+
+1331
+01:06:35,760 --> 01:06:39,839
+have oh there's
+
+1332
+01:06:52,520 --> 01:06:55,520
+let
+

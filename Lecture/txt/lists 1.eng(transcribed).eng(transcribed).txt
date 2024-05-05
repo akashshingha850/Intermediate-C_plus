@@ -1,0 +1,542 @@
+okay so for MP list uh it's first
+important to notice that there is
+this uh
+test uh Library kind of a separate
+module being used that
+offers uh these tests for you but uh in
+some
+cases you might also want to write your
+own tests to get a better understand in
+of what might be going wrong so uh the
+instructions mostly tell you to use this
+um test
+binary and then if you try to run the
+npl binary then that's going to be based
+on uh the the main CPP file that you
+have which is empty by default but you
+can you can try things there if you want
+to uh do any tests of your own
+okay uh so first uh let's look at the
+Constructor it's very simple uh so we
+should Define the head and tail as null
+and length as
+zero uh then uh for destroy that's
+already getting a
+little
+um a little more um critical like you
+you need to you need to get this right
+um other otherwise otherwise it's going
+to L A lot
+of memory and uh we also already need to
+kind of deal with these pointers here
+and be a little bit careful so in this
+case what I'm doing is I'm I'm creating
+this
+temporary um pointer to whatever is the
+next one and then I delete the like head
+itself and then I change the head to be
+the new one
+[Music]
+and in this case I'm kind of doing
+this um Loop based on the length
+variable which
+uh doing it this way it kind of ensures
+that it
+always like Loops for a certain amount
+even if there's something like weird
+going on with the
+pointers uh maybe even better would be
+to include
+both uh checks like
+um
+head not n something like
+this that that would kind of make it
+extra
+certain um but but either way should
+work
+really um let's look at insert
+front uh so so in this case
+it's I I find it helpful to
+visualize uh what exactly insert front
+and insert back
+means so insert front is like like you
+you have this
+list uh like I like to imagine it like
+yeah some items going from left to right
+and like left is a start and then we
+just like add one on the left side to
+the start and and the first one is is
+the head so then this new one is going
+to be before the
+head so it's going to be the the
+next um member of the node is going to
+be pointing at whatever the head was
+before and then the previous here is
+just going to be null
+pointer uh and then you kind of need to
+consider these two situations
+where it the list might be empty or it
+might not
+be uh if
+it's if it's not
+empty uh then the previous
+head
+uh will will exist not like there will
+be ahead there already and then you need
+to make sure that the previous of that
+is pointing to the new
+one uh if then the list was empty then
+all you need need to do
+is uh just make sure the the tail and
+the head are both now the new node and
+uh there's no next or
+previews and then whatever happens uh
+increment the
+length okay
+then I guess it's good to remember
+that if you're like in
+order uh adding numbers to list like
+from 1 to 9 for example using the insert
+front function and they kind of end up
+being there in the reverse
+order because one one is added first and
+then everything that gets added after
+that is going to like push that one uh
+to the right or like towards the end of
+the list and then the first one is going
+to be the first one in the list is going
+to be the last one you add with this so
+it might look a little bit confusing
+when you're like thinking that you're
+adding them in some order but then they
+end up in the opposite
+order uh insert back on the other hand
+is kind of more more consistent in that
+regard with like line of thinking that
+you might
+have um so it's pretty
+similar uh this time
+this time the new node that the next is
+going to point at nothing and the
+previous is going to point at the uh
+current
+tail where tail is the last node of the
+list uh and then the previous
+tail would then point at the new node or
+in the case of uh it's an empty list
+then the head and tail just both become
+the new node um so just very slight
+differences between insert front and
+back um okay and then you can at this
+point run some tests specifically
+for for
+this
+uh do like that and then if everything's
+fine it should say all tests
+passed um and you can also run this with
+valid
+[Music]
+cried like this okay yeah all blocks
+were freed all tests passed valr makes
+the execution a little slower but uh
+it's
+after after making your Destructor or or
+the destroy function
+where um the the actual Destructor is in
+the list given file and it just calls
+destroy function but in any case after
+implementing that uh it is good to test
+for memory leaks to make sure it
+works um
+okay uh so
+then then we're talking about
+iterators um let's see I
+think would be in this
+file okay uh so so I talked about these
+things on on my lecture about iterators
+so we find the pre-increment
+iterator and the post increment and you
+you can recognize this from the the post
+increment has this D int argument here
+and the pre-increment Do
+Not and the pre-increment is kind of
+more uh
+simple um so this is just going to get
+the next of the current
+position and then return
+itself so that's very straightforward
+and good the the post increment is
+actually a little less efficient because
+this has to create this uh temporary
+pointer um
+so get the current position and then
+like move the current position forward
+and then make like a new iterator out of
+this uh uh temporary pointer that we
+made
+earlier so then it's going to I kind of
+advanc the position but then what it
+returns is still the old position
+if you're um iterating or like
+incrementing the
+pointer incrementing the iterator on a
+separate line then in terms of
+functionality it doesn't matter which
+one is
+used but uh the pre-increment is more
+efficient uh if if there's no particular
+need to use the post
+increment um I'm not sure about like
+this case of like having our own
+iterator uh if it's going to work that
+way but um in some cases the compiler
+might be able to optimize post
+increments into pre- increments
+automatically so in some cases that you
+don't really need to worry about it but
+uh it's it's good to keep in mind that
+pre-increment is kind of a more
+efficient okay then for the decrement
+it's basically exactly the same but just
+uh getting the preview instead of the
+next
+um and then uh
+for
+the not equal uh so so we're checking if
+the iterator are basically pointing at
+the same thing so in other words we want
+to
+know if their position is the
+same so then we can
+just
+uh
+return this like like are the positions
+the same
+so and the user can simply compare
+iterators and then internally just going
+toare their positions
+okay the split helper function let's
+find that
+one what's this
+um yeah over
+here um okay
+okay so so what this should
+do it takes a pointer start and and
+split point and splits the chain of list
+nodes into two completely distinct
+chains um of list nodes after split
+Point many
+nodes and split happens after split
+Point number of noes making that the
+head of the new subl list which should
+be returned
+um right
+so we're that that's going to be the one
+we return uh so so we make this
+new um
+pointer we have it start at the given
+starting point and then uh
+increment uh for
+the argument given here split
+point and we can also make sure that we
+don't go over bounds
+here uh and yeah we just keep getting
+the next
+here and um then as long
+as as long as we actually find something
+that that's not n pointers so so we have
+a valid point where we can uh
+split uh that then we kind of just like
+cut the section off from the the
+previous
+part uh so we can get
+the uh current previous next
+so so
+basically let's
+say
+our um actually let
+me let me use like paint to illustrate
+this okay so we we have
+like we have like some boxes and and
+let's say we want to split here so then
+the current would start like over
+here would go here that's
+one and then here that's two and now
+we're like okay now now we want to
+split uh so then this is still pointing
+over there and this is still pointing
+back to there and basically we just want
+to cut these off so then what we need is
+reference
+to this
+one
+um color we need a reference this one as
+so that we
+can remove that and then after that we
+can just just remove the the one that's
+going backwards I guess what might be a
+little bit more efficient if you uh kind
+of you could store the pointer for the
+previous one to the split
+Point
+uh I kind of beforehand but but actually
+maybe that wouldn't even be more
+efficient because then you would need to
+do like additional
+operations uh
+for
+every
+um for like every moment that you move
+forward
+here well in any case that's not really
+a big
+deal yeah of course I this way you need
+to do this operation first so you don't
+lose this
+reference okay and then we return
+current okay so it's actually quite
+simple to do the split WID need to like
+uh cut off these two lines
+here like
+here like that's all we have to do to
+make a
+split and then the way you would use
+that is uh like
+um the list you call this function on is
+going to
+like lose a part of it but then it's
+going to return the other part part of
+it so then you need to be careful not to
+lose the references this
+lists um
+okay and then the triple protate
+function gets a little bit
+more
+um more more kind of tricky uh and with
+this uh you you need to be really really
+careful me let me kind of um try to
+illustrate this as well with with um my
+drawing skills uh
+so let me just draw like
+numbers so we have something like
+this Rob mares around
+them now something like this and then
+what the triple rotate would be
+doing is
+um you you can kind of think of it as as
+we we
+like remove
+this um actually let me just do it like
+this we kind of we kind of get rid of
+that and
+then we make some room for it over
+there like
+this and then we would do the same thing
+over here on the next
+set like
+that uh so
+then what needs to be considered here is
+that of course uh we have these
+uh next and previous pointers that we
+need to uh make sure we get them right
+uh
+so first if we're thinking like okay we
+kind of detach this so so then this is
+no longer going to be pointing at two
+and this two is not going to be pointing
+at one uh so so this is going to kind
+of go ahead and start pointing
+at uh four
+um and and this is kind of just going to
+point at
+nothing okay so so that's that's that's
+like already two operations that we
+definitely know that we need to
+do and
+then we we get this over here
+and
+then this needs
+to start pointing at that one and this
+at that
+one and then
+also the next one over here needs to
+point that one so so we can kind of
+count five different operations
+here okay let's uh let's going to start
+looking at the code now
+so
+um okay F firstly the way I do it I kind
+of initialize all these three different
+uh pointers to the
+head and in my case I'm doing like this
+for Loop that's like uh is doing like
+plus three and then I'm just comparing
+it to the
+size but you could also check by n
+pointer but
+um probably different ways to do it but
+but I find that this is convenient
+because this way uh as the
+assignment um defines it if if there's
+like for example like eight numbers in a
+list then it would do the rotation for
+the uh first set of three and the second
+set of three and then leave the last two
+alone because it's not a complete set of
+three so so this this one way to like
+avoid that
+problem um
+okay let's ignore this for now and
+because that's not going to happen on
+the first Loop so on the first
+Loop we we can kind of assign the
+positions of of this one two and three
+like this so the two is going to be the
+next of one and three is going to be the
+next of two
+uh okay and then the order in which I do
+things um first set the uh previews of
+of
+two I'm just going to
+go back
+here um
+so if we have two pointing at at that uh
+so we change that to instead point at
+whatever is uh
+before before one so we do that
+operation and
+then the next of one is going to be the
+next of
+three so then instead
+of
+that we're going to
+do
+that okay
+and
+then the
+previous of one is going
+to uh in instead of pointing at nothing
+it's now going
+to going to um go point at that one
+okay and then the next of three instead
+of pointing at this four over here uh
+it's going
+to point at one
+okay and then uh we can set the next uh
+first
+one like the first of the second set uh
+can be the uh next of one which the next
+of one
+now uh it's going to be this four over
+here
+okay and then uh
+finally maybe it doesn't maybe it's kind
+of weird that that I have this line here
+but but this is kind of included in what
+happens next in the sequence is that the
+preview of of this so so this is now
+going to be that four the previous of
+that that that
+four is going to be the next of
+three and three at this point is is
+still this three that I have
+here uh
+so so then this instead
+of
+uh instead of pointing at
+that it's going to
+start pointing at this uh that's going
+to be what's behind it and then in front
+of it is that
+one uh okay and
+then uh for the cases
+of we're at the start of the list then
+uh we can Define the new head uh to be
+uh this I2 which is uh this number two
+which is now going to be be in front in
+this case
+uh
+otherwise
+um so so I2 is going to be yeah okay so
+so in in that
+case this situation would
+be
+um like we've already done the first
+three and then we get to the second and
+then I2 would be the five here and then
+we would make sure uh that uh
+this three
+here then gets connected to five so so
+we would kind of from
+five get the previous where which we
+like uh make sure that we we get that
+right
+and then from there we make sure that uh
+that one is pointing at five so that
+these different parts are
+connected
+okay so then that's covering everything
+so so that's kind of an important step
+to remember like like you might do the
+first rotation here and you see like
+okay well everything
+is uh everything is good
+um everything is sorted
+out but then you get to the next one and
+you forget to make this link uh and then
+you end up having some
+problems so I would say uh if if it's a
+little bit difficult to wrap your head
+around this then this kind of drawing is
+helpful and then another thing that you
+can do is use GDB
+let me
+actually uh of show
+how that could work
+so do
+like uh GDB M
+list
+do
+break list
+HPP
+um 151
+okay
+run and then
+then it's going to break over here and
+then we can kind of
+uh do something like this
+like we make sure that all the data is
+like as we expect it to
+be and then we could even do
+like
+uh display
+I3 previews
+next
+data so so this way would GDB we can
+kind of confirm these pointer
+connections at at every point and then
+we
+can maybe run into a situation where
+it's like like okay well well at this
+point this should point over there but
+then you check here and it's like oh
+what it doesn't and and then you started
+thinking like okay what went wrong
+why is this not as I thought it would be
+so so I find GDB to be very helpful
+here
+okay then uh
+finally uh you can
+do do some
+tests to make sure that everything is
+good
+and and also also make sure that you
+followed all these instructions that uh
+you didn't create
+any
+um you didn't allocate any new nodes
+when when you weren't supposed to and
+that it's not leing memory
+either okay so part two is optional
+but let's go through that to some extent
+uh

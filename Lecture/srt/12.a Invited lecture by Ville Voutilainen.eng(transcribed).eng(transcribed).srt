@@ -1,0 +1,680 @@
+﻿1
+00:00:00,280 --> 00:00:01,919
+you don't
+
+2
+00:00:01,919 --> 00:00:05,480
+need ah sorry so you don't you don't
+
+3
+00:00:05,480 --> 00:00:07,480
+need to do any
+
+4
+00:00:07,480 --> 00:00:11,000
+particular op in like in uh in C you
+
+5
+00:00:11,000 --> 00:00:14,120
+need to inherit from a disposable
+
+6
+00:00:14,120 --> 00:00:17,199
+interface to be able to use the scope
+
+7
+00:00:17,199 --> 00:00:19,560
+cleanup
+
+8
+00:00:19,560 --> 00:00:21,160
+mechanism
+
+9
+00:00:21,160 --> 00:00:26,320
+so this is emphasiz by the
+
+10
+00:00:26,320 --> 00:00:31,599
+actual supposed or like a
+
+11
+00:00:31,599 --> 00:00:34,680
+the uh the uh syntax by which you
+
+12
+00:00:34,680 --> 00:00:38,040
+actually invoke a Destructor is just a
+
+13
+00:00:38,040 --> 00:00:41,000
+closing brace because that will invoke
+
+14
+00:00:41,000 --> 00:00:43,640
+the destructors of of the local
+
+15
+00:00:43,640 --> 00:00:46,920
+objects and it's it's gener and generic
+
+16
+00:00:46,920 --> 00:00:48,840
+in the sense that this works for every
+
+17
+00:00:48,840 --> 00:00:52,120
+kind of block so if you exit a function
+
+18
+00:00:52,120 --> 00:00:54,239
+you get the destructors Run for the
+
+19
+00:00:54,239 --> 00:00:56,680
+things that were created in that
+
+20
+00:00:56,680 --> 00:00:59,440
+function if you exit a loop it works the
+
+21
+00:00:59,440 --> 00:01:01,879
+same way if you have block statements in
+
+22
+00:01:01,879 --> 00:01:05,080
+the branches of U conditional statements
+
+23
+00:01:05,080 --> 00:01:06,280
+like if
+
+24
+00:01:06,280 --> 00:01:09,240
+else or if you have a block statement in
+
+25
+00:01:09,240 --> 00:01:13,240
+a in a case of a switch case you always
+
+26
+00:01:13,240 --> 00:01:16,240
+exit a block and you get the destructors
+
+27
+00:01:16,240 --> 00:01:19,360
+run you can also have BL plain block
+
+28
+00:01:19,360 --> 00:01:21,799
+statements that are not attached to any
+
+29
+00:01:21,799 --> 00:01:22,720
+Loop
+
+30
+00:01:22,720 --> 00:01:26,400
+construct or a conditional so if you
+
+31
+00:01:26,400 --> 00:01:28,680
+just write a pair of phases and code
+
+32
+00:01:28,680 --> 00:01:30,479
+between that
+
+33
+00:01:30,479 --> 00:01:32,640
+that does introduce a new
+
+34
+00:01:32,640 --> 00:01:35,560
+scope and then when you exit that scope
+
+35
+00:01:35,560 --> 00:01:37,000
+you get
+
+36
+00:01:37,000 --> 00:01:40,520
+distructor run when when you do the
+
+37
+00:01:40,520 --> 00:01:44,479
+exit so there's a some slideware
+
+38
+00:01:44,479 --> 00:01:48,680
+examples of this so in this first
+
+39
+00:01:48,680 --> 00:01:52,960
+example uh we create a unique pointer
+
+40
+00:01:52,960 --> 00:01:56,240
+there and we just fall off the end of
+
+41
+00:01:56,240 --> 00:01:57,320
+the
+
+42
+00:01:57,320 --> 00:02:00,399
+function that will destroy the unit
+
+43
+00:02:00,399 --> 00:02:04,000
+pointer and that leads into deallocating
+
+44
+00:02:04,000 --> 00:02:08,160
+the memory stored for the actual object
+
+45
+00:02:08,160 --> 00:02:09,520
+of Type
+
+46
+00:02:09,520 --> 00:02:12,599
+X which will then of course invoke the
+
+47
+00:02:12,599 --> 00:02:15,800
+destructor of that X object as
+
+48
+00:02:15,800 --> 00:02:19,440
+well so the slightly different example
+
+49
+00:02:19,440 --> 00:02:20,319
+there
+
+50
+00:02:20,319 --> 00:02:24,120
+below is that we we have an explicit
+
+51
+00:02:24,120 --> 00:02:25,280
+return
+
+52
+00:02:25,280 --> 00:02:27,959
+statement and that just works the same
+
+53
+00:02:27,959 --> 00:02:31,440
+way um of course in addition to this uh
+
+54
+00:02:31,440 --> 00:02:33,280
+you can you can exit a function by
+
+55
+00:02:33,280 --> 00:02:36,800
+throwing an exception that does exactly
+
+56
+00:02:36,800 --> 00:02:38,920
+the same thing it runs the distractors
+
+57
+00:02:38,920 --> 00:02:42,560
+of all all scope local
+
+58
+00:02:42,560 --> 00:02:45,760
+objects if we look at various ways of
+
+59
+00:02:45,760 --> 00:02:48,760
+exiting a loop it does exactly the same
+
+60
+00:02:48,760 --> 00:02:52,920
+thing so we have there that conditional
+
+61
+00:02:52,920 --> 00:02:57,959
+break if it so happens that uh the
+
+62
+00:02:57,959 --> 00:03:00,959
+uh I equals
+
+63
+00:03:00,959 --> 00:03:03,000
+the index that was passed as a
+
+64
+00:03:03,000 --> 00:03:06,040
+parameter the break will exit the loop
+
+65
+00:03:06,040 --> 00:03:09,879
+completely of course that will result in
+
+66
+00:03:09,879 --> 00:03:15,480
+the uh unique pointer named V being
+
+67
+00:03:15,480 --> 00:03:18,640
+destroyed and then continue of course
+
+68
+00:03:18,640 --> 00:03:20,760
+jumps out of that block
+
+69
+00:03:20,760 --> 00:03:24,640
+statement by jumping to its end it will
+
+70
+00:03:24,640 --> 00:03:26,280
+exit that block
+
+71
+00:03:26,280 --> 00:03:28,360
+statement and that will run the
+
+72
+00:03:28,360 --> 00:03:30,920
+destructors again
+
+73
+00:03:30,920 --> 00:03:35,480
+so all kinds of ways to to exit Loops
+
+74
+00:03:35,480 --> 00:03:38,640
+will always uniformly run the uh scope
+
+75
+00:03:38,640 --> 00:03:40,799
+local
+
+76
+00:03:40,799 --> 00:03:43,680
+distructor uh it's it's mentioned in the
+
+77
+00:03:43,680 --> 00:03:46,120
+in the slide slides bullet points that
+
+78
+00:03:46,120 --> 00:03:48,400
+you could also go to out of this
+
+79
+00:03:48,400 --> 00:03:51,519
+Loop uh whether that's recommended is of
+
+80
+00:03:51,519 --> 00:03:53,560
+course a philosophical
+
+81
+00:03:53,560 --> 00:03:57,239
+discussion but uh for the PO purposes of
+
+82
+00:03:57,239 --> 00:04:00,319
+this exam explanation that we the same
+
+83
+00:04:00,319 --> 00:04:02,239
+way if you go to out of a block
+
+84
+00:04:02,239 --> 00:04:05,439
+statement it will still run the
+
+85
+00:04:05,439 --> 00:04:07,840
+destructors for the object in in that
+
+86
+00:04:07,840 --> 00:04:10,159
+block
+
+87
+00:04:10,200 --> 00:04:13,519
+statement so yeah all forms of block
+
+88
+00:04:13,519 --> 00:04:16,079
+exit work the same way you can fall off
+
+89
+00:04:16,079 --> 00:04:18,560
+the end of of a block you can return out
+
+90
+00:04:18,560 --> 00:04:21,639
+of it you can use break or continue you
+
+91
+00:04:21,639 --> 00:04:24,240
+can throw an exception or call a
+
+92
+00:04:24,240 --> 00:04:25,880
+function that throws an
+
+93
+00:04:25,880 --> 00:04:28,440
+exception and you can go to out of it
+
+94
+00:04:28,440 --> 00:04:30,400
+and in all of these cases is the cleanup
+
+95
+00:04:30,400 --> 00:04:32,719
+world
+
+96
+00:04:33,400 --> 00:04:36,160
+one I you perhaps mentioned for
+
+97
+00:04:36,160 --> 00:04:38,680
+completeness sake that if you use a
+
+98
+00:04:38,680 --> 00:04:40,919
+legacy C function called long jump that
+
+99
+00:04:40,919 --> 00:04:44,039
+will not run your local destructors
+
+100
+00:04:44,039 --> 00:04:45,039
+because
+
+101
+00:04:45,039 --> 00:04:48,160
+it's it's not using facilities that are
+
+102
+00:04:48,160 --> 00:04:50,280
+C++
+
+103
+00:04:50,280 --> 00:04:53,360
+aware but uh if you use long jump in a
+
+104
+00:04:53,360 --> 00:04:55,000
+C+ plus program where you have
+
+105
+00:04:55,000 --> 00:04:57,440
+non-trivial cleanups in
+
+106
+00:04:57,440 --> 00:05:01,560
+scope that is undefined Behavior
+
+107
+00:05:01,560 --> 00:05:05,360
+so it is not statically determinable so
+
+108
+00:05:05,360 --> 00:05:07,360
+the compiler can't always tell you that
+
+109
+00:05:07,360 --> 00:05:09,280
+you're doing wrong
+
+110
+00:05:09,280 --> 00:05:12,840
+things but um the standard specifies it
+
+111
+00:05:12,840 --> 00:05:15,759
+as undefined Behavior which is a very
+
+112
+00:05:15,759 --> 00:05:19,440
+strong license against doing
+
+113
+00:05:20,479 --> 00:05:24,400
+that now then generally about Resource
+
+114
+00:05:24,400 --> 00:05:28,199
+Management about scope Resource
+
+115
+00:05:28,199 --> 00:05:30,720
+Management scope Resource Management
+
+116
+00:05:30,720 --> 00:05:33,960
+types are types that release a resource
+
+117
+00:05:33,960 --> 00:05:35,440
+in their
+
+118
+00:05:35,440 --> 00:05:38,280
+Destructor they are used as local
+
+119
+00:05:38,280 --> 00:05:40,160
+variables variables with automatic
+
+120
+00:05:40,160 --> 00:05:42,960
+storage duration I mean objects of
+
+121
+00:05:42,960 --> 00:05:45,280
+resource management
+
+122
+00:05:45,280 --> 00:05:48,560
+types and what that does is that it
+
+123
+00:05:48,560 --> 00:05:50,319
+binds a
+
+124
+00:05:50,319 --> 00:05:53,120
+resource with a storage duration that is
+
+125
+00:05:53,120 --> 00:05:57,039
+longer than automatic usually
+
+126
+00:05:57,039 --> 00:06:00,440
+Dynamic to a scope to a block of code
+
+127
+00:06:00,440 --> 00:06:02,880
+so when you have like a dynamic
+
+128
+00:06:02,880 --> 00:06:06,880
+allocation you bind it to a particular
+
+129
+00:06:06,880 --> 00:06:09,520
+scope and the distructor will handle it
+
+130
+00:06:09,520 --> 00:06:11,759
+so that when the scope is exited the
+
+131
+00:06:11,759 --> 00:06:13,479
+cleanup of the dynamic allocation
+
+132
+00:06:13,479 --> 00:06:16,599
+happens as if it were were a
+
+133
+00:06:16,599 --> 00:06:20,160
+uh a variable of automatic storage
+
+134
+00:06:20,160 --> 00:06:23,919
+duration so it it ties the lifetimes of
+
+135
+00:06:23,919 --> 00:06:26,919
+uh
+
+136
+00:06:28,560 --> 00:06:30,759
+of automatic
+
+137
+00:06:30,759 --> 00:06:33,639
+objects Resource Management types come
+
+138
+00:06:33,639 --> 00:06:36,840
+in all kinds of fa flavors so they may
+
+139
+00:06:36,840 --> 00:06:40,240
+or may not own a resource some do and
+
+140
+00:06:40,240 --> 00:06:42,440
+some just find an
+
+141
+00:06:42,440 --> 00:06:45,120
+existing resource to a
+
+142
+00:06:45,120 --> 00:06:48,599
+scope so not all resource management is
+
+143
+00:06:48,599 --> 00:06:49,680
+about
+
+144
+00:06:49,680 --> 00:06:53,360
+lifetimes uh just because a particular
+
+145
+00:06:53,360 --> 00:06:56,520
+resources release doesn't always mean
+
+146
+00:06:56,520 --> 00:07:00,318
+the allocating memory
+
+147
+00:07:00,520 --> 00:07:03,280
+it is relatively common that this kind
+
+148
+00:07:03,280 --> 00:07:06,759
+of resource Handles in local Scopes are
+
+149
+00:07:06,759 --> 00:07:09,080
+bound to a single scope so you can't
+
+150
+00:07:09,080 --> 00:07:13,080
+even transfer them outside of a scope
+
+151
+00:07:13,080 --> 00:07:15,720
+but sometimes you can and that's
+
+152
+00:07:15,720 --> 00:07:18,120
+actually
+
+153
+00:07:18,759 --> 00:07:22,879
+useful so the motivational bit of course
+
+154
+00:07:22,879 --> 00:07:26,720
+is that why is this important
+
+155
+00:07:26,720 --> 00:07:30,840
+well this was something that I
+
+156
+00:07:30,840 --> 00:07:35,879
+pretty much uh dogmatically adopted as a
+
+157
+00:07:35,879 --> 00:07:37,960
+programming technique and
+
+158
+00:07:37,960 --> 00:07:42,960
+Stu 20ish years ago earlier in my career
+
+159
+00:07:42,960 --> 00:07:45,840
+when you use this kind of resource
+
+160
+00:07:45,840 --> 00:07:48,759
+management rappers consistently you'll
+
+161
+00:07:48,759 --> 00:07:51,080
+never have a memory
+
+162
+00:07:51,080 --> 00:07:53,500
+Le due
+
+163
+00:07:53,500 --> 00:07:55,960
+[Music]
+
+164
+00:07:55,960 --> 00:07:59,960
+to really
+
+165
+00:08:05,190 --> 00:08:07,759
+[Music]
+
+166
+00:08:07,759 --> 00:08:09,759
+okay are you observing the chat if
+
+167
+00:08:09,759 --> 00:08:10,759
+there's
+
+168
+00:08:10,759 --> 00:08:15,800
+question U there's two questions in the
+
+169
+00:08:17,000 --> 00:08:21,560
+chat it but I'm scared
+
+170
+00:08:31,720 --> 00:08:34,720
+okay
+

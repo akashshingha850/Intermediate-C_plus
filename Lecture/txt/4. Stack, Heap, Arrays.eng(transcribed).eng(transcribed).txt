@@ -1,0 +1,1793 @@
+this computer okay we're ready to
+roll so we will start a little bit with
+uh warming up with pointers like last
+time and then we'll go into arrays so we
+want to understand how to not only store
+one element on a heap but chunks of
+elements on a heap and how to access
+that how to safely ask for memory there
+like that and how to safely uh free that
+memory okay but we'll start with warmup
+and I have announcements first so let's
+see announcements we have well you know
+what are the deadlines for the deadlines
+I hope are very clear we have another
+there is a lab due on every Monday night
+and then every two weeks there is some
+kind of MP machine problem which is
+individual
+individual
+so um very rough
+schedule uh I want to make another
+announcement so we are learning raw
+pointers in these
+lectures and they're useful they're also
+not safe as you probably noticed from
+last time how many uh run how many
+different kinds of runtime errors you
+can achieve using raw pointers if you
+don't have follow the safety rules right
+um that doesn't mean that they're not
+used in industry they're still
+used um it just you have to be very
+careful uh when dealing with them
+however the with new standards of uh C++
+distributions starting with C++ 11 there
+are safer pointers that you can use I'm
+not going to cover them in lectures but
+um we will have an invited uh principal
+software engineer from cute who will
+come here on 18th of uh April so please
+come to that lecture we really want to
+have a full room for sure to greet him
+because I think he's worried that we
+don't have very good attendance anymore
+culturally in this University so it's
+really important that you guys
+come um he is a C++ standards Committee
+Member and he's also on your Discord so
+he answers your questions if you noticed
+he's there I
+think I think they look it for the
+best you know
+why so um It's kind a win-win situation
+they help us because um this is the
+first pilot run I'm not fresh in C++
+it's very good to have people who
+actually work on C++ every day and V has
+been working with it every day for 30
+years so he really knows ins and outs of
+everything there and um so please come
+don't forget I'll be reminding every
+lecture because it's very important to
+not miss on that lecture okay so there's
+also safer ways of handling arrays than
+what I'm going to be doing today and Via
+vectors however raw pointers are
+important because that's what allows you
+to really Access Memory
+fast and there's still code in cute and
+other companies out there that uses raw
+pointers that's why we're learning them
+too okay cool so let's do a warmup uh
+we'll go through these questions it's
+just a warmup so uh I'll start with the
+first one it's easy for you guys so what
+type of what is the type of Q in this
+declaration is it integer pointer is it
+integer is it integer pointer
+pointer or something else uh these kind
+of questions also help you figure uh
+kind of have be prepared for the exam
+because that's the type of question you
+do have in the exam but there will just
+very many of them and will give you
+limited
+time to
+answer so
+okay Q what's the type of Q we we went
+through this last lecture very quickly
+but I just wanted to have it what's the
+Q it's just a syntax question so Q
+is integer not integer pointer a pointer
+here or this Asis belongs to the
+variable not to the type Okay so p is
+integer pointer but Q is just an integer
+so this is the correct answer cool the
+compiler would catch you here though so
+this would be something that compiler
+would be on your side and you would not
+you would figure it out it's not one of
+those Insidious bugs okay what's the
+output here to the standard out of this
+little
+program so this is just for you guys to
+to figure out chase the pointers we'll
+be chasing lots of pointers today so
+that's just a
+one 6
+six 6
+six any
+other options the first line is correct
+the second line is not you're printing
+out six here which is okay so what do we
+have an integer pointer an integer
+you give P the value of x's stack
+variable address that's fine so whenever
+you follow the pointer you're actually
+changing the value of x now so X will
+become six but what is p what is p
+what's its
+type pointer yes what its value some
+gibberish address an address so you'll
+have six and then you're right that
+there will be no end of line
+here so there will be no end of line
+there will be six followed by some heex
+number which is a an address okay
+cool
+fine uh okay which of the following
+statements will print the value of x we
+know that this prints the value of x
+that's
+great
+let's s so that's s for sure so you can
+pick that
+right this is an address so Mo what's
+this good do reference P so take the
+value of P which is X's address and
+print what is that address which is X so
+X and s p is x value good what about
+this one that's an interesting thing so
+what you do here you take X he takes its
+address and then follow that address
+with s which is X so the value is X good
+what is this well this is X and it's the
+same so good p is an
+address this is an address of P not of
+an
+S here this is the the value of P which
+is address of X but this is the address
+of P the address of p is different from
+address of X good so anything else that
+uh so this one is address of P follow
+that it's P's value which is X's address
+but not x what about this one follow P
+which is s take its address which is
+address of s and then print out the
+value that address X that's
+X
+okay uh I maybe one of this is what is
+this an address of P follow it P
+no is this one no that you
+can can I do that uh is this one no this
+is p so yeah I think we followed all of
+them um yeah I think that's it so this
+is address of s value address so this is
+good this is not correct right so the
+all of the above are okay and this one
+is not and bow not
+okay maybe I missed some but I'll look
+at it carefully then uh oh are you
+curious about any of those because I
+have a program for
+that would you like to really see what's
+going on
+here I think that's interesting which
+one bugs you is there something that
+bugs you there you
+go were you not sure about any of these
+you think one of them that I said is not
+an address is an address I mean is a
+value of P of X that let's put it
+there so clearly X is fine right what
+about an address of s and you follow the
+reference that address and print out the
+value that should be S right so we're
+going
+to uh g++ my zero
+program
+there and run it good right now you see
+this is X or the address and then follow
+it and this is the we printed out G
+which is the uh address the address of X
+the value of p is the address of X can
+you take address two times
+[Music]
+then because the address has to be with
+the variable so you can do that do you
+want to see what
+happens it will it will yell at
+you can do that so it expects a variable
+it cannot take the
+address okay so that's cool anything
+else you want to try here so do you see
+I could have done it many times like
+this
+now
+right kind of operation that kind of
+undoes itself right and then look since
+this is an address of P of X I could
+just put P there and then again like
+fold it
+over okay so that's cool um so let's do
+that yeah okay good warm up good let's
+go back to our
+slides if you have any questions please
+post them here what is the result of
+compelling running this code so that's
+the warm up last time again look I have
+declared pointers two of them are
+Pointers I have asked for memory for one
+of them and that's on the Heap and then
+another one got the same value so they
+both point to the same Heap variable
+that doesn't have a value yet but I
+reference one of the pointers and put
+value there and then I delete that free
+memory I free that memory the heat
+memory but I have dangling pointers
+number pointers fine I still want to see
+what's there I shouldn't be able to but
+I told you that C++ will not hold your
+hand you can still do it it just can
+lead to undefined Behavior because that
+memory is freed and you're accessing it
+so let's see what's going to be
+undefined behavior on my particular
+system so I'm going to show you that
+code I think it's in one is that the
+same code right I'm going to dreference
+it and see what's there although I freed
+that memory but then moreover I'm going
+to Der reference and put nine in there
+and then print it out
+again what do you think might happen do
+you have any like intuition what's going
+to
+happen some random numbers and then
+nines yep that's it very good let's do
+that
+d++ one okay
+there you go very good so ah what am I
+going to do about it right what am I
+going to do about it so we actually in
+lab debug please correct me because I
+can say some other I think in lab Lab
+debug we teach you how to catch these
+memories with a special tool that is
+called uh address
+sanitizer and I'm not going to go
+through that in lectures but I'm just
+going to show you that it's not that
+difficult to use it so I'm going to
+compile now the same program but with
+address sanitizer so I'm going to give a
+flag I think it's F
+sanitize equals
+address and then do that and I want to
+show you that although if you just
+compile and run the program nobody yells
+at you here if you run sanitizer that
+guy will check all of the memory and it
+will
+say did I say it
+right oh yeah yeah yeah yeah yeah sure
+okay okay that's fine yeah okay look
+what it
+says it says the
+delete here I think what's it he use
+after free you freed your memory and
+you're going to use it so there you go
+you got your slap there you go you can
+do that you can now Trace where is the
+problem and the entire lab debug is on
+this so we'll plant a bunch of the bad
+behavior kind of problems in the
+code if you remember the rules safety
+rules you'll immediately spot where you
+have to put delete or assign null to the
+pointer but if you kind of forget you
+still can use sanitizer and Trace where
+you you did something that's wrong okay
+I cre lot memory
+very good yeah yeah it's not lab we
+doing lab debug now right it's La the
+lab debug is now we have you're doing
+now you don't need that yeah we give you
+many tools and we don't talk much about
+memory yet so but soon so next Lab is
+that and you'll if you read the lab it
+explains you how to use this Tools in
+details uh but here is just just like a
+a
+teaser okay so now last one on look
+again I did something wrong what did I
+do wrong in this
+code I'm doing it in the loop
+now I am doing 20,000 loops and I'm
+asking for a string on the heat 20,000
+times and that string has a million of
+characters and what do I forget to
+do fre Theory free the memory yeah so
+what's going to happen what is the
+result of running and compiling this
+code what do we call it what's the term
+what's a good term for that memory leak
+you want to see what happens when you
+have a memory leak so we need to do g++
+Loop and here is my let me just double
+sure that yeah see I don't delete string
+right so I want to
+run
+nothing happens it just slow you think
+oh yeah because I have such you know so
+many uh iterations in the loop maybe
+that's why it's
+slow but no it's not because of that
+it's because you know you have a problem
+there so let's fix it and we know the
+rules of good behavior so I need to I
+have my somewh yeah here let me just
+open uh what is two Loop yeah
+we I know that I need to delete
+s right what else should I do it's
+better to assign s to null but in this
+particular case I know that it goes out
+of scope so I'm not going to do that but
+we will talk about scope very soon so
+let's see so
+now if I do g++ 2 Loop it
+compiles and if it if I run
+it it's not slow just a little bit so so
+that's what memory Le is you saw it it
+just it hands there you know you can run
+it may help you during execution time
+and just say hey you're out of memory
+but sometimes it will not it will just
+be slow it may even say done if you did
+it less times and you wouldn't even know
+that there is a memory leak unless you
+use the sanitizer so our friend
+sanitizer let's do that again so let me
+um let me compile it with uh
+sanitizer and run
+it oh it's
+looping but I have
+some or maybe you can just make the
+number smaller so yes yes yes but I did
+have an output at home which is weird
+maybe after a while it'll tell you but
+yeah let's do then less iterations
+that's interesting that I don't see
+anything here but you know your your
+program is hanging for sure so um
+there yeah so thank goodness right there
+are some tools where you can tell that
+there's detected memory leaks and you
+can count them
+and so fine that's warm up so we kind of
+we went over what we already talked
+about last time
+and now we are switching to the new
+lecture and we will be talking about
+arrays but let me start first talking
+about just different ways the um so
+please remember that we have a different
+um slideer for this
+now yeah
+so I want you to look at this two pieces
+of code and tell me what is difference
+functionally and now yes now you can go
+to your slides you're out you can write
+on your um print outs because that's
+what we will be working with we're done
+with the warm up so tell
+me what is the functional differences
+what are the functional differences if
+there any between these two pieces of
+code when I compile and run
+it so here's the question for you too
+you can try to yeah the user memories
+different executions and the output to
+the terminal will be different right
+that's very good both of them will
+comine compile just fine so it seems
+like when we run this program on the
+terminal one will print
+out hello with an exclamation mark and
+another one will print hello with a
+question
+mark okay so let's Trace what these
+codes do because they also so what what
+is also correct as you rightfully
+pointed out is that the use of memory is
+going to be different so behind the
+scenes they also handle memory
+differently right so what's going on
+here well let's start tracing the
+program to really see what's going hap
+what's going on with the program control
+so what is going on in terms of
+execution line by line so when the main
+function starts
+first the control is given to this line
+and that line calls to
+function fun function fun right so then
+the program control is switched to
+function fun and that's where it starts
+with this curly brace here and the first
+line is executed and that
+initializes the variable s of type
+strain on this stack so it declares it
+and initialize it in one line right so
+we have the stack here and somewhere
+there a variable with name S Type string
+is given value hello with an exclamation
+point that's
+good and
+then uh that is printed out right so on
+the stream on the cender out we'll see
+hello
+uh the next line is the end of the
+function the curly braces are closed and
+that's when something important happens
+so the system thinks aha I know exactly
+what to
+do this function ended therefore all of
+the stack variables in this scope I'm
+going to take
+back so s is released back to the use by
+the system s is gone and it's all
+determined by this curly braces so s
+goes out of scope and out of Stack
+system takes it takes that memory back
+and then it gives the control back to
+main right after that
+line and uh the main ends okay so that's
+really nice because you don't have to do
+worry about anything there is no new or
+delete inside it's all happening on the
+stack and me and memory-wise the system
+handles stack so let's look at another
+function at the second function that um
+is not too much different except that
+how it handles memory so again M main
+starts first line the function the
+programmatic control program control is
+given to function fun it starts with the
+first line the first line declares
+variable
+s of typ string pointer so it's a
+pointer
+and also initializes it to this memory
+address that is on the Heap so there is
+stack there is Heap so some memory
+address memory of size
+strain is allocated at some memory
+address no value is given so whatever is
+there we call it garbage is there but
+that memory address is given to S as the
+value 2.2 right then
+you excuse me we reference
+S and give that variable on the
+stack value hello with a question mark
+then we print
+out the point T of
+s and then we delete s so we do all the
+right things we say okay we know we ask
+for that memory and a heat with new so
+we responsible we're going to give it
+back to the system so the system can
+reuse that heat memory responsibly
+everything is fine
+right so then the system goes to this
+last line which is the curly
+braces which means that it does the same
+thing it says okay I know exactly what
+to do the fun has ended all of the local
+variables in that scope I'm going to
+take back that stack memory so what are
+those
+variables what are the variables on the
+stack in this situation address so this
+variable s that value is that address so
+yes this memory on the stack goes back
+to the system the system takes it back
+right here and then we go we exit
+function fun so fun is over function fun
+is over and we here in main does that
+make sense so do you see that there is
+much more work going on here because
+there's one variable on the heat that
+you need to manually give back to the
+system after asking for that memory
+manually as well while as the system
+handles it as is on the stack the system
+gives that memory and takes it back upon
+Declaration of the variable and upon the
+it exi in the scope of function
+yeah so can we assign the pointer as to
+no or yeah that's very good question you
+walk right into something that I wanted
+to ask do we have to do it here we know
+that's the right thing to do that's an
+extra operation though because instead
+of this memory address at that point
+you'll put another
+zero but s goes out of scope right
+immediately after that so s is gone no
+there will be no handling dangling
+pointer because it's gone system will
+take it
+so that's where problem comes because
+the good rules tell you you should do it
+but if you're a very experienced
+programmer and you know what you're
+doing you know that this is an extra
+line of code and an extra operation so
+that takes time that's your call so
+that's something that now that's that's
+out of my scope of how I know C++ you
+should ask you like okay what do they do
+are there situations where they really
+would need to save time even on
+something like this or do they always
+follow the good rules I don't know I
+know that definitely in my experience we
+had situations where we would count
+everyone everything matters
+[Music]
+how can I find the hello
+again you you can't so it's gone there
+oh hello is gone so hello is given back
+to the system right
+here but guess what if you put as s
+there again maybe there will be still
+hello maybe some garbage you don't know
+but you shouldn't so you should
+and that's why s equals null would be
+good good rule of
+behavior and and and that's why C++ is
+not a safe language because this kind of
+things may lead to many problems if you
+don't know what you're doing okay I
+think I have a couple of questions for
+you what are the advantages then of
+using heat at all like in this situation
+versus sta like do you see an advantage
+here or maybe disadvantage like just
+just speculate you can of course
+speculate here in class as
+well just raise your
+hand do you see any advantage should we
+what should we do in this situation
+what's
+better like in this particular code
+what's more
+efficient none what did do we just do it
+all in
+vain yeah so in this particular code
+this is more efficient if you have to
+compare to this is more efficient you
+there are less operations you just do it
+on stack the system takes it back over
+there you do one variable is on stack
+and another one on the keep and you have
+to do more operations to just clean it
+all up right so it's less efficient
+stack is easier to write yeah so
+um when you can use stack use stack
+that's the that's kind of the point of
+this code that if you do not have too
+much to store too much to ask then you
+stack that's
+fine however if this was I don't know
+encyclopedia of some sort maybe you
+would consider putting on the heat just
+because and maybe you wouldn't want to
+remove it out of the Heap right away
+either you would want to pass that
+pointer somewhere to reuse it then you
+need to use uh Heap so there are many
+different situations but the main idea
+is that if it's small amount of memory
+you
+stack if it's large objects then you
+will consider only then you will
+consider using the
+heat stack is easier and stack is better
+if you can get away with that yeah
+that's very good but the Heap is larger
+so you can put larger objects there yeah
+so very good very good
+answers um oh yeah that's see we yes
+that okay we answered that why didn't I
+put it it doesn't matter in the
+situation but um and yet it's bad
+behavior on my
+side okay yeah so what about the uh
+execution time is the execution of the
+stock or keep memory code the
+same it'll be a little slower for the he
+just because there are two more
+operations yeah yeah a little slower but
+again if you had it depends on the size
+though and how many times you do it so
+in this particular situation that code
+on the he is little but very little very
+little um
+okay now now we'll look
+at different kinds of objects not just
+primitive types but objects and what
+happens with them when we assign one to
+another so what happens to larger kind
+of objects across this assignment
+operation okay let's do
+that okay so I'm going to set this all
+up with this type now it's not primitive
+type it's userdefined type that is class
+space and you can see that it has only
+three member variables one is bull
+primitive type done so we're talking
+about students they have names so
+another private member is name of type
+string not quite primitive type but
+defined in centered Library so you can
+think of it as a primitive type kind of
+so it behaves really nicely was
+distributed with every distribution of
+C++ out there so pretty good and then we
+have this picture of the student which
+is PNG
+and as you can see it's not a pointer
+it's a PNG so maybe all of it is on the
+stack we don't know quite but maybe I
+mean we only see this we don't see how
+they implemented because we only see
+what's provided in ph. right so this is
+the interface of our class so we're not
+exactly sure what's going on here but it
+wouldn't be wrong to assume that it's
+all on the step that the whole image all
+pixel by pixel stuff is on the step
+so not really well set up but it's on
+purpose because let's see what happens
+to it so then I declare
+two objects A and B on the
+stack and the next line calls
+for initialization of B so I have a
+question for you does anybody have a
+name starting with b
+here what is a finish name that starts
+with B is there a finish name that
+starts with
+B ber yeah good okay baa is it Double T
+or one Bera I love it okay so that's
+student Berta right there so we're going
+to initialize B Berta she assumes she's
+happy because fins are the happiest
+people on Earth
+so and she's not done she's still a
+student okay cool so I initialized B and
+as you can see it's all on stack here
+now I'm going to say a equals to be and
+here where the rule comes by default in
+C++ assignments
+are
+assignments so that's very important
+assignments
+are
+memberwise I mean I'm writing it and it
+takes time on purpose because it's
+member Wise by value you which means
+it's going to take time so a strain is
+going to copy itself and you know this
+is not a long stren so that that's not
+bad but this member memberwise by value
+so me this member is going to be
+copied by
+value the phas PNG is going to be copied
+by value and
+booleans they also know how to copy
+themselves by value so the question is
+is how do they know how to copy
+themselves this objects because this is
+a string so hopefully STD is implemented
+the way that strings know how to copy
+themselves bullan probably too but PNG
+how do we know it's going to copy
+Faithfully the
+image hopefully right because we are not
+writing PNG we are using PNG here so we
+should assume that whoever wrote PNG
+will write perfect fin finally defined
+operation for copying okay so we have to
+assume that if you take a class it's
+well implemented okay cool but as you
+can see this may take time
+right and then if we go to the next line
+we say a set name to n now so what does
+that mean we take object
+a and we rewrite the name to
+n and then
+and probably not difficult to imagine
+that if you say B get name what
+happens what gets printed
+out or whatever like what's the value of
+that get
+name it's still Bera right it's not an
+it's Bera because B will print out
+its uh name okay any questions so far so
+good right seems fine so we can think
+now that A and B are independent copies
+of each other but we of course change
+the name these are maybe two students
+they have different names but they still
+look alike right because we didn't
+really change how they look like the P&S
+are the same okay so now let's contrast
+this Behavior with this Behavior instead
+of declaring faces face objects I'm
+going to declare face
+pointers so C is a face pointer
+I declare it that means on the stack C
+is given a place an address and an
+uninitialized pointer right so so far
+it's uninitialized pointer we better
+initialize pointers because we know it
+can lead to bad behavior D is the same
+it's on the stack with not like not good
+uh value yet but we're going to
+initialize and let's put let let me make
+sure that it's clear I should have put
+this initial both the pointer and where
+it's pointing so let's initialize
+pointer to get this
+memory and let's initialize whatever is
+the reference D is so whatever that
+memory is whatever that face is so let's
+come up with a good finish name that
+starts with
+d d David David okay cool David is he
+happy he's a fin right so happy and not
+done no cool so we initializes both the
+pointer and the um the value the the
+face it's pointing to cool now I'm going
+to look what's going to happen through
+across this assignment statement it's
+member Wise by value so what are the
+values and members of c and
+d just the other they're just pointers
+so they're just one block in the memory
+that holds an address so it's going to
+get copy it from D to C which means C is
+just going to point to the same face
+right cool so then if I say C set name
+I'm effectively de referencing C and
+removing David and putting Carlos in
+there and then if I do ref refence D and
+ask for name of D now what is
+that it's Carlos now right so do you
+like
+it
+h yeah so this is the reason why in
+Python one you just compare to arrays
+between each other and change one of the
+arrays the other ARS arrays changing in
+I know that in Java this is Java
+Behavior I don't know about python is
+that python Behavior by by default too
+yeah I think
+so it's
+like it can be a bit unclear like if
+you're dealing with pointers or not
+because it's not really like visible to
+the user but in some cases like
+especially with strings it's very common
+that s languages only St the string in
+one place yeah or or array I mean
+strength
+areic yeah so but in Java that's the
+Java Behavior so it seems like python
+behavior and
+pointers in C++ but not objects in
+C++ so that's the distinction it's very
+important to know what you're doing of
+course because clearly this is
+completely two different behaviors right
+two different functionalities and
+sometimes you'll want to make copies
+sometime it's it's sometimes you can say
+deep copy but deep copy is not in this
+case it's deep copy but sometimes
+they're are different levels like what
+if the is a pointer then you get the
+memory address copy but not the actual
+PNG but then so then the Deep copy would
+mean that you vot down the the next step
+and copy that as
+well uh anyways that's the
+picture now what's with the syntax do
+you see the difference do you see that
+syntax is slightly I just want to point
+out that
+c and an arrow is exactly the same as
+saying the reference C and take a member
+a sub member that's equivalent just
+syntax so you can use one or another
+that's why I use it
+here anyway so any questions about it
+questions firstly are the brackets
+necessary brackets where in C in C plus
+see here uh so I always have to look up
+you know what I should have looked it up
+this time now I forgot this um press
+like you have to learn what goes first
+which operation and here for clarity I
+put this maybe you don't need to but
+please double check I don't remember you
+need to in this case you need to
+right it's like round brackets and no
+other brackets no no no no other
+brackets yeah if you're talking about
+square brackets that's next slide we're
+going to be talking
+about arrays yeah okay good thank you
+and the second question is about this
+bully and done what's the point of
+this
+general just an example of like you use
+some code there will be some private
+members sometimes you don't know why
+they are there just like that just to
+have something I think here it's the
+case of a primitive type and almost
+primitive type and not primitive type at
+all so
+yeah I don't think so right is it it the
+same yeah I don't know uh so this is
+like sometimes post it on on SL on uh
+Discord I don't know I think
+it's we can do real quick run and
+see I don't think what it even compile
+let's
+see ahuh no it doesn't compile sorry
+it's it's something that's different
+langage I think but you you cannot do
+that yeah yeah yeah yeah
+so
+no but yeah oh right right right is that
+what oh yeah oh there's a bug on my
+slide right is that what you're
+saying that has been there for years for
+decades you found a bug on my slide that
+has been there for decades and nobody
+ever asked
+it okay cool uh however you know what I
+could have done something like this I
+could have defined Ty Boolean to name it
+in C++ you can redefine any type and
+name it anything which I'll be using in
+like here I think four flower right here
+see type Define I will call flower in to
+kind of pretend that I have a fancy
+class flower but they just in so
+technically you should have called it
+you know somewhere maybe that it was
+would be
+redefined okay that's why C++ code
+sometimes it's so difficult to read
+because you don't know like some fancy
+name could be just an integer that was
+redefined you know any anything can be
+renamed okay
+cool
+now okay which code is slow didn't we
+already talk about yeah no we didn't
+okay which code is faster here I we kind
+of already we kind of
+know oh no sorry the question is there
+or did I jump the question hold on yeah
+let's answer this and then there was a f
+question about faster SL uh but let's
+answer this okay where are the variables
+a b c d so I'm talking about this
+variable this variable this variable and
+this variable where are they looking at
+their
+declarations on the
+stack C and D is also on the stack right
+you you see that C and D are on the
+stack the point of variables it's where
+they point to they their point T is not
+right but C and D are on the stack
+they're not in the keep so this is not
+correct okay and this this is not
+correct so all on the stack very good I
+think I have to go to previous slide
+because I had which code is faster let's
+look at
+that yeah because here we just copying
+that hex number from one variable to
+another we this here we might be copying
+strings and even pixel by pixel pngs
+okay so Cals d
+uh one last question where is the point
+T of c and d located so where is
+this the thing is it could be either
+okay it could be either on the Heap or
+on the stack I didn't say that I like
+there is D equals new face I didn't say
+that maybe I would say d equals the
+address of
+a and then this whole thing would be
+just a on the stack okay so could be
+either so the correct answers could be
+either
+okay okay now we are going to
+erase still have some good time because
+I have something interesting in the end
+so let's talk about first static aray so
+static arrays let me make sure I don't
+forget anything I wanted to point out
+okay guess so let's see I'm going to
+make this new declaration now you see
+there's some new syntax square brackets
+so once the uh system will see this line
+it'll say okay you're asking you're
+declaring a variable with name X Type
+integer but you just don't you don't
+want just one check of memory you want
+to have size of five elements chunk and
+how do does it know that it's size five
+between the square brackets right so
+you'll say okay I know what to do the
+system will say yeah I can do it I will
+give you a whole chunk of Stack memory
+so we're talking about static arrays
+that's how you define a stat declare a
+static array so it's going to be on the
+stack so it's going to give you the
+whole chunk of five elements all of them
+type integer so these are
+s what's subsequent or successful one
+after another addresses in
+memory and they are they're all named X
+but the first element is called
+X plus zero
+steps so the first Chunk in memory the
+second one is the second or x + one step
+in memory X x + 2 steps x + 3 steps and
+x + 4
+steps so it's five elements okay
+everything is fine all of them are
+integers right so now that's what the
+system will do and it's all in stack
+okay and so now you can see that I can
+maybe set up a four Loop i = 0 I less
+than 5 the size I ++ and and I can
+initialize all of these values s i
+equals say 2 * I is that okay and then
+the values so we essentially we are D
+referencing X you can think of it as a
+pointer although you shouldn't maybe but
+or you can say that I'm just stepping
+through all of the elements in this Chun
+of memory in this array and I'm setting
+up two times those steps two * I
+values okay
+do you like
+it so what
+else I have a question for you so that's
+it so what's good about it if you were
+to set up some kind of function or there
+was some kind of scope with the um curly
+braces over there that upon seeing this
+end of the um scope for X the system
+would take it back and you wouldn't have
+to so it will just be taken back for the
+system you maybe set up a different
+array or whatever on the stack so that's
+very nice
+questions I have a question for
+you the question is can we change the
+size of static
+arrays and if you ask like which one is
+correct and that gives that describes
+the worst dis the mo the biggest
+disadvantage of using static arrays yes
+you're right so the size of the static
+array cannot be determined during
+execution so you cannot say oh I'll just
+ask the user to tell me what's the size
+or I'll ask a sensor the sensor will
+tell me something and I'll initialize
+the array based on that value no you
+can't you have to know in
+advance you you wrote that program
+you'll know the size of the array will
+be five right at compilation time you
+should know the the number so this is
+correct answer and that's the
+disadvantage okay fine so that's why uh
+Dynamic arrays are much more uh useful
+yeah so can we rewrite the values inside
+the array yeah yeah yeah yeah you just
+say s square brackets whatever put
+it okay but I'll show you what can go
+wrong of course but uh let's talk about
+then Dynamic aray so one thing to point
+out is static sounds kind of like stack
+so so it's easy to remember that those
+are arrays on stack and this is dynamic
+array which is on the Heap so you don't
+have to know the size ahead of time you
+can ask you can get that information
+during the run of the program you can
+even ask the user to input the the
+number during the execution and then the
+size the array will be set up so then in
+order to set up this array you just
+declare a pointer and we talked about it
+last time you just declare a pointer so
+just a regular pointer but the way you
+ask for memory is different so if you
+know some size or ask for size then you
+ask for memory for this pointer in a
+different way so not just new int
+because that would be just one variable
+you're asking for a chunk of memory of
+size of size
+size because there's the square brackets
+and then the system will say oh fine
+okay so you have this uh X already
+declared with some uninitialized pointer
+so then new
+will um the system will say okay I'll
+give you the size of three elements on
+the Heap memory
+each of type
+integer values so far garbage but this
+beginning this first block of this Heap
+memory will be given as the value to
+this pointer right so that memory
+address on the Heap will be given as the
+value for x through this
+assignment and then the names of this
+Heap variables of course they don't have
+names but we can do reference X to
+access them and you can say the first
+one is at zero that is zero steps away
+from the beginning or the first variable
+over there in the uh
+block the second one is s + one step and
+the third one is s plus two steps then
+you could initialize them using some
+kind of loop like this so then each SI
+is is given the value I + 3 so you put
+three four five in
+here but this is heat memory right so
+that means if you ask for it with a new
+you should release it free it using
+delete the only thing is that you have
+to also say that it's not just s that
+you're freeing but the entire block so
+you use square brackets here
+because if you don't put square brackets
+what
+happens only the first element will be
+freed and this will cause memory leak
+right so you really have to tell the
+system no the whole block that I asked
+for pleas
+freedback okay any questions so now
+we'll have a lot of yeah so first thing
+are the addresses of the all elements
+like sequential yes and also can you
+access one one of the elements without
+holding the X so just using the
+address if you know it it'll be
+different on each architecture or
+whatever yeah but sure but you usually
+don't know it
+yeah is there any
+um Pro of using C style arrays like this
+Dynamic instead of vectors array not
+vectors because vectors are slow they
+allate memory dynamically but
+array C C++ array it should be exactly
+the same
+performance right so what about
+um it yes use that whenever you can but
+uh you'll see that you can create much
+more complex data structures using ra uh
+raw uh arrays so for example
+what if you have an array of
+arrays make it
+array all of them different
+sizes so when we are talking about
+double yeah so this is a raw access to
+the memory and it's it may be useful but
+yes by no means and I think that's the
+question that you should ask to v as
+well when
+is it safe and why are these still used
+because I'll show you how many problems
+we can have with this um and that's
+something the scope of this I don't know
+really but I think it all depends on the
+projects and I just don't have that
+experience like when is one more
+important when is it crucial to have
+this kind of assess to
+memory okay I would love to have that
+discussion Discord but I think what we
+list said all also that he wants you to
+learn the bad ways because then he'll
+come and say these are the good ways and
+he'll be like feeling Victorious about
+it um well it's also not that these are
+bad but more fundamental like is that
+iover
+yeah but let me show you some examples
+of what kind of structures we can create
+with this and then you can uh see but uh
+first I wanted to really run into
+problems
+of static versus dynamic or sorry in in
+all sorts of problems okay so please
+look at this code do I have a uh yeah
+please look at this code and tell
+me what will happen what is the result
+of compiling and running this
+code okay
+I don't think I did I still print it out
+oh
+[Music]
+yeah yeah there's an error in D memory
+you only delete the first very good so
+what do you call
+that yeah time eror it's a Memory leak
+for sure right yeah it's a runtime error
+so that's good um will it crash though
+sure
+no it will not it will not be helpful uh
+the address sanitizer will be helpful
+but um if you don't do that just memory
+L now so you're already here so we
+didn't delete the right we just deleted
+the first element then I still do
+reference it which you know is no
+surprise for you that I still can go and
+access all of those but now I'm doing
+the static
+array and look at what I'm doing I'm
+treating it as if it's a d
+right I'm going
+to so what's going to happen there what
+do you think it doesn't
+compile oh no it
+compiles brush oh no it
+want because of two things yeah it's a
+runtime error so I have this code you
+would think right that something would
+be
+bad more four I think it's four four no
+it's three three three okay so let's
+see yeah oh of course I didn't set to
+null pointer because if I set this stain
+to the null pointer right here I
+wouldn't have a problem
+of if I deleted it properly and set as
+to null then this would only this was C
+this would cause a segmentation fault
+which is what we want kind of that's
+better we shouldn't you reference the
+the array or go to the array once You'
+read it uh
+here it's a stack array so you cannot
+delete it it's just going to U misbehave
+so let's see do you want to see what
+happened and here I just say even in
+this program like this shouldn't be
+allowed right you shouldn't
+be your referencing why but let's see
+what happens so we need to do
+g++ actually let's yeah let's not do
+sanitizer yet because we know there's a
+problem so is it three right
+three let me put it side by side with
+the code so what is happening
+here this is the first array
+right
+do I have different
+code two *
+I strange why is it one two
+three so it just garbage
+right because it should be uh 0 2 6
+right I'm initializing it to
+that right so I don't know why it's one
+2 three but who cares
+right okay what is interesting is
+this wait uh let me get I'm not
+following my
+my my
+um so the
+first oh and let me really make sure
+that we have the same code oh right
+right see because I I I was playing with
+it at home that's why so I'm not
+printing out this so let's see what's
+there I'm only printing out the five
+elements of the static array so let's
+Rec compile
+rerun aha so that's what happens to the
+memory after it's been freed and we are
+trying to access it the first element is
+this the second is this third four third
+that's it so that's what happens and uh
+address sanitizer would catch it so if
+we run address sanitizer it would say
+hey you didn't delete the whole thing
+and if you put it to null pointer we
+would get second so that's cool so now
+let's fix it we deleted all whole thing
+and we don't want this anymore we don't
+want a print out we already know that
+dangling pointers can cause all sorts of
+problems so now let's just concentrate
+on the static array I'm going to
+recompile I'm going to
+run so I am just showing you that the
+referencing and using square brackets is
+the same thing here so I'm going to
+print out all five elements the first
+three are fine because they're just I +
+one of the static array and here is a
+part of Stack that you're not supposed
+to touch but this will let you it just
+will let
+you how could you catch it do you think
+uh address sanitizer would help
+you it will say maybe that will warn you
+right it will so that's why I'm going to
+um
+sanitize equals address let's
+see ah see so it'll catch you and what
+do you think is the warning
+there stack buffer overflow you're
+touching the stack that you're not
+supposed to so thankfully these tools
+will be on your side uh when to to catch
+any kind of memory problems thank
+goodness right
+so there's some tools to to let you know
+that this is not allowed however
+syntactically there's no
+problem
+okay yeah but it will compile and run
+just fine yeah it what it seems like
+right but but it's
+around so now we have still half an hour
+we're going to do something crazy and
+that's when
+um
+that's where we can do crazy things with
+this
+um arrays so of course if you can have a
+single array why not have double array
+you know have a more dimensional arrays
+and then if I look at my guardian. so if
+I look at the interface of some
+class let me go back um it can tell you
+that one of the
+private variables is a double array the
+name is plot the type is flower so maybe
+some kind of class that was nicely
+implemented some flower so they want to
+plot or plant a plot of flowers right
+and it's a double array so you have no
+idea how it's implemented but you can
+guess right what exactly is going on so
+I have a question for you what do you
+think how how do you think it's
+implemented so when there's some kind of
+Constructor we didn't talk about
+Constructors yet but when
+this me memory is
+arranged in which one of these ways is
+it arranged so that's a question for you
+on the next
+slide which one of this is a uh valid
+option for
+initializing the
+memory for the
+plot
+question
+say where does it say in plot oh yeah
+sorry flower plant I forgot yeah first I
+had integers I'm like oh no I should
+just use flowers because it's yeah I I
+apologize over here it's flower plot so
+this the same thing yeah yeah yeah good
+good
+catch but you know that for me flower is
+just in because I Ty de like that okay
+any any option four
+takers well it turns out all four are
+valid it just may not be really
+necessarily
+clever but they're all valid all four
+are possible options for this for the
+implementation or for
+memory uh handling Arrangement
+Arrangement so let's start with plot
+with option one so if I said that plot
+is double pointer and then I say okay
+for plot give me a new memory address
+but just one variable of type flower
+pointer
+that's okay I'm not asking for an array
+I'm just asking for one so then I got
+that with this first
+assignment that's on the heat that new
+flower pointer is on the heat and then
+for that flower pointer I can just do
+reference it with plot through plot and
+ask for just another block which is T
+flower totally valid I don't know why
+would I ever have a pointer to a pointer
+like that why would I need it but it's
+valid and
+therefore um oh I think the question
+here is how many flowers would be there
+in this
+plot or this kind of way of initializing
+it and how would we
+access uh
+that that
+flower
+M so in that in this kind of way it
+would be just one object but we would
+access it through this kind of strange
+sentence of getting the first element in
+the first the first pointer and the
+second
+pointer or you could just call it
+asteris asteris plot as well either way
+it's fine because we know that asterisk
+dot is the same as square
+brackets okay pretty
+cool now uh
+oh yeah I think I didn't mention it I
+didn't really say what is the
+equivalence
+but so what I wanted to I did want to
+mention that
+plot um it was it would be better to go
+back to the arrays oh yeah I can show it
+right here I think in
+my yeah so so B please remember that
+square brackets accessing some element
+of the array is the same thing as de
+referencing that name but like this many
+steps away so the synta syntax is the
+same right you just say okay take that
+memory address and go this many steps
+down the array and then um you reference
+it give the value there so this syntax
+is the same I forgot to mention
+okay so do you like
+this no but nevertheless it's it's valid
+right so let's draw the picture of this
+situation essentially the plot
+here is a
+pointer to a flower
+pointer so this is plot you referenced
+once and only this is flower
+now where I can put value I put a rose
+there see and this is either plot 0
+0 or you could say asteris asteris
+plot but that's the picture and here the
+plot is on the stack but everything else
+is on the
+Heap okay you can see that it's going to
+get crazy
+right
+now second option how many flowers are
+in this second option and how to assign
+a value value to
+each and then we'll draw a picture for
+this
+scenario b or c b or c clearly it's
+seven elements you can see that so what
+happens is that I for plot pointer I ask
+for an array
+right and each element of that array is
+going to be plot
+I but all of those are going to be just
+pointers to one flower because I didn't
+ask for an array here I just asked for
+one flower right which means that there
+are seven elements and
+all but all of them have
+just
+one one flower pointer but so in order
+to access them you can do reference
+plots with I steps but then only take
+one first step you could also say
+asterisk plot
+eye okay so they the answer is
+C let's draw a picture for this
+situation
+it is a valid situation though
+so I don't remember which one we have I
+think we have just double array in U one
+of the MPS I think so all of this is
+useful for one of the MPS I just don't
+remember one of which one is them Comon
+MP okay so we will say that here
+plot asks for an array
+of size seven all of them are flower
+pointers so we'll need to initialize
+them and ask for memory for them which
+we do in a loop and each of them is not
+an array it's just a flower so just one
+point one one
+flower uh
+variable which then we could access like
+this as you can see in a loop we could
+say the I plot
+element do reference that you can say
+zero then to Der reference the first
+element and put a values whatever you
+want
+there so that's the picture do you like
+this
+yeah it's it's possible that you would
+need something like that
+right okay cool
+next okay now we have case three or
+option
+three that's just a normal regular kind
+of
+um double array
+right so this is pretty useful to what
+to hold in like matrices I know what are
+applications for these pgs could be like
+that right with pixels so okay okay so
+which one is that that's a d That's
+pretty straightforward much more
+straightforward right B is not the case
+in this because we will have oh my God
+and I swear to God I wanted to put 49
+here and it's the number of elements is
+49 in this case
+right do you see
+that and I don't know how it didn't get
+updated so the slide is mess stop but
+let's go to the answer so that we fix it
+okay so the answer let's see let me fix
+it so the possible option should have
+been 49 here
+49 and the correct answer is D and let's
+see what happens here plot is given an
+array and they they address to the
+array of size seven right through this
+first line and all of them are flower
+pointers which is fine because flower
+pointer can be either a flower itself or
+a pointer to a flower or a pointer to an
+array of flowers and in this case it's
+not just one flower like in the last
+case but it's an array of flowers so
+each of them in the loop are given
+through new an array of size seven as
+well
+which means that we have 49 flowers and
+each and single one of them can be
+accessed by first calling the row I and
+then
+the colum J so you can imagine that I
+could set up another loop for J equal 0
+J less than 7
+j++ and I then I could initialize
+plot the E column
+the J sorry the I row jth column to rows
+again and I would put R there in every
+single one of them okay so that's
+um that's useful right this is quite
+useful and um now the last
+one this is I think the weirdest
+one so now what if I say that if I
+initialize it like
+that which one is left yeah B that's the
+only one left right anyway so that's
+kind of easy but let's see what happens
+with this initialization so I have
+flot
+plot and I ask for
+just one variable I'm not asking for an
+array I just just want an address of
+flower pointer which the system will say
+okay I'll give you this is a new
+variable of type flower
+pointer it's not initialized yet but
+I'll give you the address to plot to
+hold it so the PT is created but doesn't
+have value yet so now I'm going to give
+value to the point T the reference plot
+and say oh that should be a pointer so
+far as an initialized so give me with
+new a chunk of memory of size
+seven of flowers right okay why would I
+ever do
+that I don't know I don't know but then
+um the thing is that plot zero is this
+guy or equivalently you could just say
+plot but then you would have to um keep
+here you have to put parenthesis it's
+important because otherwise by default
+the other one will be taken so
+um then you say I equals to row so
+that's
+equivalent okay H you like
+it any of them are
+useful okay so the bad thing is that you
+have to free
+memory and that's where we have a bug in
+one of the MPS because we'll create this
+array for you and you'll have to free it
+and you'll have to appropriately go
+through the loop of free because you
+could see that asking for a memory we
+had some Loop set up sometimes sometimes
+we did sometimes we didn't which means
+that freeing you also will have to do it
+through the loop of some sort maybe but
+let's start with
+this okay so for the first case where it
+was just pointer to pointer is there any
+proper way of deletion in any of
+[Music]
+this well can you please
+reconsider there's one good way for this
+one there is place there's
+one mean remember for for the option one
+we had
+plot holding a flower pointer folding a
+a flower so this is the reference plot
+so how do we delete this memory can you
+tell me the order where should we start
+what if I say delete
+PL then what
+this memory gets freed and lost so we l
+lose this
+forever and we we we have a d pointer if
+we don't assign to know so that's not
+good so first we should the reference
+plot and say oh we ask a new there was a
+new statement for the this element the
+reference plot so therefore there should
+be delete of that too so you call delete
+plot
+and then this memory is
+free then you can say oh now it's safe
+to delete plad and this one is free so
+you kind of the way in which you ask for
+memory you should go in the backward
+order you first ask for plot memory and
+then for the reference plot so then you
+have to delete first this set free this
+one first and then this one okay so a is
+actually totally
+fine
+now I gave you the Snippets of
+code how to do it for all of the other
+options which one was the most useless
+option four right where we had a flower
+so this was a pointer to the pointer to
+the array
+so to delete that you should first the
+reference plot so look at this variable
+and delete with square brackets that
+whole thing and then delete
+plot so we are done with this and this
+in both of these
+cases plot was pointing to an array so
+there will be delete array plot in both
+but then we have to be careful so do you
+want to look at the code I have the code
+for all of these
+options uh let's see I have met
+someone it's four flowers plot look at
+that so I have my
+plot option
+one I asked for that memory pointer to
+pointer then I print it out what I print
+out is the value and the values are
+should be flowers but what I how I set
+up I set up the number of elements so
+you'll see the number of elements in
+those array and then I delete it and say
+plot to null which means that hopefully
+I cleared the memory responsibly and I
+set the plot to null so I can ask for
+another kind of memory completely in
+option two and there should be no memory
+leak no
+unsafe uh grabbing of any kind of memory
+right so therefore if I did everything
+fine if I asked for new kind of memory
+Arrangement print out the number of
+elements and deleted it
+responsibly then address sanitizer will
+not see any problems and will'll let me
+do it and let me continue I assign plot
+to null and then ask for another memory
+Arrangement and this is a regular array
+two dimensional array uh it has 49
+elements so if I print out one element
+it will be 49 for option three and I
+delete it
+responsibly so I can ask for option four
+and should be fine so do you want to see
+if uh sanitizer will be okay with my
+memory with my
+program like
+this no problem right which means we did
+everything fine
+F and everything is clean and
+safe and this this code is this this is
+the code I just put it uh
+sequentially in my
+program any
+questions let me see I'll go to some if
+if anybody from the
+class has any I'm going to go to Q&A
+maybe anybody has questions because I
+don't have any questions anymore let me
+see where is my Q&A long time
+ago but think of good questions you
+should have questions right any
+questions where is
+my there no questions in
+this no there is a way to ask questions
+where well at Le uh if you
+one um go to the one here okay you can
+put your questions here
+no but I can read
+them Al there's some questions somewhere
+oh I know if I go to on slack with this
+on slider.com
+although are quite
+old9 minutes ago and the other one is 30
+minutes but we can go here let's go to
+this part any questions we can jump back
+and
+forth this is the
+where we started yeah
+iot is this all
+okay yeah
+useful yeah when we have a pointer and
+we say
+like and then we say like pointer equals
+null yeah what's the difference between
+these two
+[Music]
+operations good question what is what is
+actually going on oh there's a question
+here by the way you got a
+question the class have yeah yeah this
+is right away we can I'll go back to
+your question but yes this is correct
+classes have to implement copy
+functionality manually otherwise a
+default is provided which is member Wise
+by value so if you have any pointers you
+will not have deep
+copies okay
+uh so we can draw on some of the here
+you are asking what's the difference
+between two operators so if I have a
+pointer
+p and I said integer say pointer
+p and then I initialized it so it say it
+has some Val let me put this hexagon
+value say
+0.123 something like that so that's my
+pointer it has an address of its
+own it has its value which is an address
+and that's the Heap say Heap memory uh
+with that address right here so and
+let's say we put value three
+there at this memory address 1 three
+whatever okay that's the situation so
+now if I say delete
+P then operation is not touching the
+Heap at all it just says oh okay delete
+P that means take the value of P which
+is this memory and free it back to the
+system it doesn't really change P it
+just takes the value of p goes to that
+memory address and tries and frees
+it so now it can allocate it to
+something else so you can so the thing
+is that you can still access it
+possibly I mean you can still access it
+by the referencing because the value of
+p is still the same memory
+address but it will do it but it will
+it's not it's it's not it doesn't belong
+to P it belongs to the system now the
+system might um allocate it to something
+else and start putting values through
+those pointers there so that's dangerous
+so delete P does not change P it changes
+the the address that is found in p as
+its value uh but P equals null now this
+one operates directly on P it removes
+the value and changes it to null
+value yes it's very important right
+because we again switch these two lines
+and you get completely different
+Behavior right because then you lose
+this value you cannot free
+anymore yeah any other questions we had
+some uh Q&A
+somewhere where was
+Q&A I lost Q&A where's our Q&A the last
+SL last slide yeah let's go last slide
+was
+Q where is my Q&A question there it's
+this
+one oh I'm operating with a completely
+different yeah there last slide is
+K there yes no no questions okay but
+that was a really good question
+yeah yeah when we have like fais objects
+um the right answer was that we can do
+of
+St either of them
+so how's that decided by the compiler or
+no by the way your fa PNG is implemented
+uh well depends let me look exactly um
+depends what do
+you let's go there it's a very good
+question depends which one of which do
+you mean well there was one like
+question and the answer was like they
+can be e sub or right right right this
+one this one so this is on stack this is
+UN stack this is UN stack this is UN
+stack this PNG not clear we don't know
+because maybe p& is actually a
+pointer but this one is very not clear
+here so how would we ask for it to be on
+stack versus on Hep depends if I said D
+equals new
+face that it would be clear that this
+face is on Hep but I could say d equals
+an address of
+a and then the it would say pointer to
+here and then C equals D would assign
+the value which is the address to the
+same address that D stores which is this
+thing
+ination yeah initialization is what
+decide would figure it out
+yeah okay okay all good questions so
+good luck with your
+assignments I think we're doing good I
+think we
+keeping on that's very good I didn't say
+goodbye to those
+guys let me
+see go
+back hey
+everybody on
+Zoom uh goodbye and let me close it
+properly
+oh yeah stop
+recording

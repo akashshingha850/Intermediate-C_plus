@@ -1,0 +1,2168 @@
+﻿1
+00:00:01,640 --> 00:00:06,120
+okay so for MP list uh it's first
+
+2
+00:00:06,120 --> 00:00:09,719
+important to notice that there is
+
+3
+00:00:09,719 --> 00:00:12,120
+this uh
+
+4
+00:00:12,120 --> 00:00:14,960
+test uh Library kind of a separate
+
+5
+00:00:14,960 --> 00:00:16,800
+module being used that
+
+6
+00:00:16,800 --> 00:00:23,359
+offers uh these tests for you but uh in
+
+7
+00:00:23,359 --> 00:00:24,160
+some
+
+8
+00:00:24,160 --> 00:00:28,039
+cases you might also want to write your
+
+9
+00:00:28,039 --> 00:00:30,320
+own tests to get a better understand in
+
+10
+00:00:30,320 --> 00:00:34,559
+of what might be going wrong so uh the
+
+11
+00:00:34,559 --> 00:00:37,399
+instructions mostly tell you to use this
+
+12
+00:00:37,399 --> 00:00:40,480
+um test
+
+13
+00:00:40,480 --> 00:00:44,039
+binary and then if you try to run the
+
+14
+00:00:44,039 --> 00:00:46,360
+npl binary then that's going to be based
+
+15
+00:00:46,360 --> 00:00:50,320
+on uh the the main CPP file that you
+
+16
+00:00:50,320 --> 00:00:53,199
+have which is empty by default but you
+
+17
+00:00:53,199 --> 00:00:56,039
+can you can try things there if you want
+
+18
+00:00:56,039 --> 00:01:01,800
+to uh do any tests of your own
+
+19
+00:01:01,960 --> 00:01:05,960
+okay uh so first uh let's look at the
+
+20
+00:01:05,960 --> 00:01:08,960
+Constructor it's very simple uh so we
+
+21
+00:01:08,960 --> 00:01:11,200
+should Define the head and tail as null
+
+22
+00:01:11,200 --> 00:01:15,360
+and length as
+
+23
+00:01:15,360 --> 00:01:19,439
+zero uh then uh for destroy that's
+
+24
+00:01:19,439 --> 00:01:21,400
+already getting a
+
+25
+00:01:21,400 --> 00:01:23,280
+little
+
+26
+00:01:23,280 --> 00:01:27,240
+um a little more um critical like you
+
+27
+00:01:27,240 --> 00:01:30,920
+you need to you need to get this right
+
+28
+00:01:30,920 --> 00:01:33,280
+um other otherwise otherwise it's going
+
+29
+00:01:33,280 --> 00:01:34,560
+to L A lot
+
+30
+00:01:34,560 --> 00:01:38,880
+of memory and uh we also already need to
+
+31
+00:01:38,880 --> 00:01:41,960
+kind of deal with these pointers here
+
+32
+00:01:41,960 --> 00:01:44,439
+and be a little bit careful so in this
+
+33
+00:01:44,439 --> 00:01:46,640
+case what I'm doing is I'm I'm creating
+
+34
+00:01:46,640 --> 00:01:47,880
+this
+
+35
+00:01:47,880 --> 00:01:51,960
+temporary um pointer to whatever is the
+
+36
+00:01:51,960 --> 00:01:57,079
+next one and then I delete the like head
+
+37
+00:01:57,079 --> 00:01:59,399
+itself and then I change the head to be
+
+38
+00:01:59,399 --> 00:02:00,930
+the new one
+
+39
+00:02:00,930 --> 00:02:03,039
+[Music]
+
+40
+00:02:03,039 --> 00:02:06,399
+and in this case I'm kind of doing
+
+41
+00:02:06,399 --> 00:02:10,360
+this um Loop based on the length
+
+42
+00:02:10,360 --> 00:02:12,760
+variable which
+
+43
+00:02:12,760 --> 00:02:17,800
+uh doing it this way it kind of ensures
+
+44
+00:02:17,800 --> 00:02:19,920
+that it
+
+45
+00:02:19,920 --> 00:02:24,280
+always like Loops for a certain amount
+
+46
+00:02:24,280 --> 00:02:25,879
+even if there's something like weird
+
+47
+00:02:25,879 --> 00:02:27,440
+going on with the
+
+48
+00:02:27,440 --> 00:02:30,080
+pointers uh maybe even better would be
+
+49
+00:02:30,080 --> 00:02:32,040
+to include
+
+50
+00:02:32,040 --> 00:02:36,400
+both uh checks like
+
+51
+00:02:37,239 --> 00:02:40,080
+um
+
+52
+00:02:40,080 --> 00:02:44,720
+head not n something like
+
+53
+00:02:44,720 --> 00:02:46,879
+this that that would kind of make it
+
+54
+00:02:46,879 --> 00:02:48,680
+extra
+
+55
+00:02:48,680 --> 00:02:51,760
+certain um but but either way should
+
+56
+00:02:51,760 --> 00:02:53,360
+work
+
+57
+00:02:53,360 --> 00:02:57,200
+really um let's look at insert
+
+58
+00:02:57,200 --> 00:03:01,519
+front uh so so in this case
+
+59
+00:03:01,519 --> 00:03:04,680
+it's I I find it helpful to
+
+60
+00:03:04,680 --> 00:03:07,519
+visualize uh what exactly insert front
+
+61
+00:03:07,519 --> 00:03:09,280
+and insert back
+
+62
+00:03:09,280 --> 00:03:12,760
+means so insert front is like like you
+
+63
+00:03:12,760 --> 00:03:14,599
+you have this
+
+64
+00:03:14,599 --> 00:03:17,599
+list uh like I like to imagine it like
+
+65
+00:03:17,599 --> 00:03:20,720
+yeah some items going from left to right
+
+66
+00:03:20,720 --> 00:03:22,640
+and like left is a start and then we
+
+67
+00:03:22,640 --> 00:03:25,200
+just like add one on the left side to
+
+68
+00:03:25,200 --> 00:03:27,879
+the start and and the first one is is
+
+69
+00:03:27,879 --> 00:03:30,840
+the head so then this new one is going
+
+70
+00:03:30,840 --> 00:03:33,000
+to be before the
+
+71
+00:03:33,000 --> 00:03:36,920
+head so it's going to be the the
+
+72
+00:03:36,920 --> 00:03:41,280
+next um member of the node is going to
+
+73
+00:03:41,280 --> 00:03:45,720
+be pointing at whatever the head was
+
+74
+00:03:45,720 --> 00:03:48,280
+before and then the previous here is
+
+75
+00:03:48,280 --> 00:03:51,360
+just going to be null
+
+76
+00:03:51,519 --> 00:03:55,400
+pointer uh and then you kind of need to
+
+77
+00:03:55,400 --> 00:03:58,120
+consider these two situations
+
+78
+00:03:58,120 --> 00:04:02,120
+where it the list might be empty or it
+
+79
+00:04:02,120 --> 00:04:03,159
+might not
+
+80
+00:04:03,159 --> 00:04:05,360
+be uh if
+
+81
+00:04:05,360 --> 00:04:08,159
+it's if it's not
+
+82
+00:04:08,159 --> 00:04:11,079
+empty uh then the previous
+
+83
+00:04:11,079 --> 00:04:12,720
+head
+
+84
+00:04:12,720 --> 00:04:17,040
+uh will will exist not like there will
+
+85
+00:04:17,040 --> 00:04:19,639
+be ahead there already and then you need
+
+86
+00:04:19,639 --> 00:04:22,120
+to make sure that the previous of that
+
+87
+00:04:22,120 --> 00:04:23,720
+is pointing to the new
+
+88
+00:04:23,720 --> 00:04:29,320
+one uh if then the list was empty then
+
+89
+00:04:29,320 --> 00:04:30,800
+all you need need to do
+
+90
+00:04:30,800 --> 00:04:34,479
+is uh just make sure the the tail and
+
+91
+00:04:34,479 --> 00:04:38,080
+the head are both now the new node and
+
+92
+00:04:38,080 --> 00:04:40,320
+uh there's no next or
+
+93
+00:04:40,320 --> 00:04:43,919
+previews and then whatever happens uh
+
+94
+00:04:43,919 --> 00:04:46,560
+increment the
+
+95
+00:04:47,639 --> 00:04:50,400
+length okay
+
+96
+00:04:50,400 --> 00:04:54,840
+then I guess it's good to remember
+
+97
+00:04:54,840 --> 00:04:57,720
+that if you're like in
+
+98
+00:04:57,720 --> 00:05:01,880
+order uh adding numbers to list like
+
+99
+00:05:01,880 --> 00:05:05,039
+from 1 to 9 for example using the insert
+
+100
+00:05:05,039 --> 00:05:07,440
+front function and they kind of end up
+
+101
+00:05:07,440 --> 00:05:09,680
+being there in the reverse
+
+102
+00:05:09,680 --> 00:05:12,880
+order because one one is added first and
+
+103
+00:05:12,880 --> 00:05:14,919
+then everything that gets added after
+
+104
+00:05:14,919 --> 00:05:17,919
+that is going to like push that one uh
+
+105
+00:05:17,919 --> 00:05:21,000
+to the right or like towards the end of
+
+106
+00:05:21,000 --> 00:05:23,400
+the list and then the first one is going
+
+107
+00:05:23,400 --> 00:05:25,800
+to be the first one in the list is going
+
+108
+00:05:25,800 --> 00:05:29,800
+to be the last one you add with this so
+
+109
+00:05:29,800 --> 00:05:32,520
+it might look a little bit confusing
+
+110
+00:05:32,520 --> 00:05:34,400
+when you're like thinking that you're
+
+111
+00:05:34,400 --> 00:05:35,919
+adding them in some order but then they
+
+112
+00:05:35,919 --> 00:05:38,319
+end up in the opposite
+
+113
+00:05:38,319 --> 00:05:41,880
+order uh insert back on the other hand
+
+114
+00:05:41,880 --> 00:05:46,039
+is kind of more more consistent in that
+
+115
+00:05:46,039 --> 00:05:49,039
+regard with like line of thinking that
+
+116
+00:05:49,039 --> 00:05:50,120
+you might
+
+117
+00:05:50,120 --> 00:05:53,639
+have um so it's pretty
+
+118
+00:05:53,639 --> 00:05:58,080
+similar uh this time
+
+119
+00:05:59,880 --> 00:06:03,120
+this time the new node that the next is
+
+120
+00:06:03,120 --> 00:06:05,319
+going to point at nothing and the
+
+121
+00:06:05,319 --> 00:06:08,080
+previous is going to point at the uh
+
+122
+00:06:08,080 --> 00:06:09,319
+current
+
+123
+00:06:09,319 --> 00:06:14,120
+tail where tail is the last node of the
+
+124
+00:06:14,120 --> 00:06:17,440
+list uh and then the previous
+
+125
+00:06:17,440 --> 00:06:21,160
+tail would then point at the new node or
+
+126
+00:06:21,160 --> 00:06:23,599
+in the case of uh it's an empty list
+
+127
+00:06:23,599 --> 00:06:26,599
+then the head and tail just both become
+
+128
+00:06:26,599 --> 00:06:30,360
+the new node um so just very slight
+
+129
+00:06:30,360 --> 00:06:34,039
+differences between insert front and
+
+130
+00:06:34,039 --> 00:06:39,520
+back um okay and then you can at this
+
+131
+00:06:39,520 --> 00:06:43,199
+point run some tests specifically
+
+132
+00:06:43,199 --> 00:06:46,520
+for for
+
+133
+00:06:46,800 --> 00:06:48,319
+this
+
+134
+00:06:48,319 --> 00:06:52,080
+uh do like that and then if everything's
+
+135
+00:06:52,080 --> 00:06:56,360
+fine it should say all tests
+
+136
+00:06:56,360 --> 00:06:59,879
+passed um and you can also run this with
+
+137
+00:06:59,879 --> 00:07:00,310
+valid
+
+138
+00:07:00,310 --> 00:07:03,399
+[Music]
+
+139
+00:07:08,479 --> 00:07:11,879
+cried like this okay yeah all blocks
+
+140
+00:07:11,879 --> 00:07:15,960
+were freed all tests passed valr makes
+
+141
+00:07:15,960 --> 00:07:21,159
+the execution a little slower but uh
+
+142
+00:07:21,400 --> 00:07:24,199
+it's
+
+143
+00:07:24,199 --> 00:07:27,639
+after after making your Destructor or or
+
+144
+00:07:27,639 --> 00:07:31,199
+the destroy function
+
+145
+00:07:31,199 --> 00:07:34,280
+where um the the actual Destructor is in
+
+146
+00:07:34,280 --> 00:07:37,520
+the list given file and it just calls
+
+147
+00:07:37,520 --> 00:07:40,160
+destroy function but in any case after
+
+148
+00:07:40,160 --> 00:07:42,759
+implementing that uh it is good to test
+
+149
+00:07:42,759 --> 00:07:46,840
+for memory leaks to make sure it
+
+150
+00:07:46,879 --> 00:07:49,879
+works um
+
+151
+00:07:49,879 --> 00:07:52,840
+okay uh so
+
+152
+00:07:52,840 --> 00:07:57,239
+then then we're talking about
+
+153
+00:07:57,919 --> 00:08:01,319
+iterators um let's see I
+
+154
+00:08:01,319 --> 00:08:04,639
+think would be in this
+
+155
+00:08:04,639 --> 00:08:08,440
+file okay uh so so I talked about these
+
+156
+00:08:08,440 --> 00:08:11,440
+things on on my lecture about iterators
+
+157
+00:08:11,440 --> 00:08:15,560
+so we find the pre-increment
+
+158
+00:08:15,560 --> 00:08:18,080
+iterator and the post increment and you
+
+159
+00:08:18,080 --> 00:08:20,879
+you can recognize this from the the post
+
+160
+00:08:20,879 --> 00:08:24,759
+increment has this D int argument here
+
+161
+00:08:24,759 --> 00:08:27,080
+and the pre-increment Do
+
+162
+00:08:27,080 --> 00:08:30,639
+Not and the pre-increment is kind of
+
+163
+00:08:30,639 --> 00:08:33,879
+more uh
+
+164
+00:08:33,958 --> 00:08:39,120
+simple um so this is just going to get
+
+165
+00:08:39,120 --> 00:08:42,519
+the next of the current
+
+166
+00:08:42,519 --> 00:08:46,440
+position and then return
+
+167
+00:08:46,519 --> 00:08:49,680
+itself so that's very straightforward
+
+168
+00:08:49,680 --> 00:08:53,279
+and good the the post increment is
+
+169
+00:08:53,279 --> 00:08:55,880
+actually a little less efficient because
+
+170
+00:08:55,880 --> 00:09:00,600
+this has to create this uh temporary
+
+171
+00:09:00,600 --> 00:09:02,600
+pointer um
+
+172
+00:09:02,600 --> 00:09:06,800
+so get the current position and then
+
+173
+00:09:06,800 --> 00:09:10,640
+like move the current position forward
+
+174
+00:09:10,640 --> 00:09:14,000
+and then make like a new iterator out of
+
+175
+00:09:14,000 --> 00:09:18,399
+this uh uh temporary pointer that we
+
+176
+00:09:18,399 --> 00:09:19,959
+made
+
+177
+00:09:19,959 --> 00:09:24,680
+earlier so then it's going to I kind of
+
+178
+00:09:24,680 --> 00:09:27,600
+advanc the position but then what it
+
+179
+00:09:27,600 --> 00:09:31,360
+returns is still the old position
+
+180
+00:09:31,480 --> 00:09:35,959
+if you're um iterating or like
+
+181
+00:09:35,959 --> 00:09:37,880
+incrementing the
+
+182
+00:09:37,880 --> 00:09:41,600
+pointer incrementing the iterator on a
+
+183
+00:09:41,600 --> 00:09:45,519
+separate line then in terms of
+
+184
+00:09:45,519 --> 00:09:47,480
+functionality it doesn't matter which
+
+185
+00:09:47,480 --> 00:09:48,839
+one is
+
+186
+00:09:48,839 --> 00:09:54,120
+used but uh the pre-increment is more
+
+187
+00:09:54,120 --> 00:09:58,240
+efficient uh if if there's no particular
+
+188
+00:09:58,240 --> 00:10:01,000
+need to use the post
+
+189
+00:10:01,000 --> 00:10:04,600
+increment um I'm not sure about like
+
+190
+00:10:04,600 --> 00:10:06,880
+this case of like having our own
+
+191
+00:10:06,880 --> 00:10:09,399
+iterator uh if it's going to work that
+
+192
+00:10:09,399 --> 00:10:14,440
+way but um in some cases the compiler
+
+193
+00:10:14,440 --> 00:10:17,040
+might be able to optimize post
+
+194
+00:10:17,040 --> 00:10:20,160
+increments into pre- increments
+
+195
+00:10:20,160 --> 00:10:22,440
+automatically so in some cases that you
+
+196
+00:10:22,440 --> 00:10:25,440
+don't really need to worry about it but
+
+197
+00:10:25,440 --> 00:10:27,200
+uh it's it's good to keep in mind that
+
+198
+00:10:27,200 --> 00:10:31,320
+pre-increment is kind of a more
+
+199
+00:10:34,720 --> 00:10:38,920
+efficient okay then for the decrement
+
+200
+00:10:38,920 --> 00:10:43,480
+it's basically exactly the same but just
+
+201
+00:10:43,480 --> 00:10:47,959
+uh getting the preview instead of the
+
+202
+00:10:48,240 --> 00:10:49,920
+next
+
+203
+00:10:49,920 --> 00:10:52,279
+um and then uh
+
+204
+00:10:52,279 --> 00:10:54,320
+for
+
+205
+00:10:54,320 --> 00:10:58,560
+the not equal uh so so we're checking if
+
+206
+00:10:58,560 --> 00:11:00,480
+the iterator are basically pointing at
+
+207
+00:11:00,480 --> 00:11:03,399
+the same thing so in other words we want
+
+208
+00:11:03,399 --> 00:11:04,279
+to
+
+209
+00:11:04,279 --> 00:11:07,959
+know if their position is the
+
+210
+00:11:07,959 --> 00:11:10,600
+same so then we can
+
+211
+00:11:10,600 --> 00:11:12,480
+just
+
+212
+00:11:12,480 --> 00:11:14,680
+uh
+
+213
+00:11:14,680 --> 00:11:17,920
+return this like like are the positions
+
+214
+00:11:17,920 --> 00:11:20,240
+the same
+
+215
+00:11:20,240 --> 00:11:23,959
+so and the user can simply compare
+
+216
+00:11:23,959 --> 00:11:26,920
+iterators and then internally just going
+
+217
+00:11:26,920 --> 00:11:31,160
+toare their positions
+
+218
+00:11:38,639 --> 00:11:42,360
+okay the split helper function let's
+
+219
+00:11:42,360 --> 00:11:45,000
+find that
+
+220
+00:11:49,920 --> 00:11:53,399
+one what's this
+
+221
+00:11:53,680 --> 00:11:57,160
+um yeah over
+
+222
+00:11:57,800 --> 00:11:59,800
+here um okay
+
+223
+00:11:59,800 --> 00:12:04,040
+okay so so what this should
+
+224
+00:12:04,040 --> 00:12:07,800
+do it takes a pointer start and and
+
+225
+00:12:07,800 --> 00:12:10,120
+split point and splits the chain of list
+
+226
+00:12:10,120 --> 00:12:14,199
+nodes into two completely distinct
+
+227
+00:12:14,199 --> 00:12:17,360
+chains um of list nodes after split
+
+228
+00:12:17,360 --> 00:12:20,160
+Point many
+
+229
+00:12:20,279 --> 00:12:23,639
+nodes and split happens after split
+
+230
+00:12:23,639 --> 00:12:25,839
+Point number of noes making that the
+
+231
+00:12:25,839 --> 00:12:27,639
+head of the new subl list which should
+
+232
+00:12:27,639 --> 00:12:31,160
+be returned
+
+233
+00:12:34,279 --> 00:12:38,320
+um right
+
+234
+00:12:38,560 --> 00:12:41,480
+so we're that that's going to be the one
+
+235
+00:12:41,480 --> 00:12:45,440
+we return uh so so we make this
+
+236
+00:12:45,440 --> 00:12:48,360
+new um
+
+237
+00:12:48,360 --> 00:12:52,120
+pointer we have it start at the given
+
+238
+00:12:52,120 --> 00:12:56,279
+starting point and then uh
+
+239
+00:12:56,279 --> 00:12:59,680
+increment uh for
+
+240
+00:12:59,680 --> 00:13:03,240
+the argument given here split
+
+241
+00:13:03,240 --> 00:13:06,480
+point and we can also make sure that we
+
+242
+00:13:06,480 --> 00:13:08,680
+don't go over bounds
+
+243
+00:13:08,680 --> 00:13:12,120
+here uh and yeah we just keep getting
+
+244
+00:13:12,120 --> 00:13:14,360
+the next
+
+245
+00:13:14,360 --> 00:13:18,120
+here and um then as long
+
+246
+00:13:18,120 --> 00:13:21,279
+as as long as we actually find something
+
+247
+00:13:21,279 --> 00:13:24,120
+that that's not n pointers so so we have
+
+248
+00:13:24,120 --> 00:13:27,800
+a valid point where we can uh
+
+249
+00:13:27,800 --> 00:13:31,240
+split uh that then we kind of just like
+
+250
+00:13:31,240 --> 00:13:33,360
+cut the section off from the the
+
+251
+00:13:33,360 --> 00:13:34,320
+previous
+
+252
+00:13:34,320 --> 00:13:37,360
+part uh so we can get
+
+253
+00:13:37,360 --> 00:13:42,199
+the uh current previous next
+
+254
+00:13:42,199 --> 00:13:43,959
+so so
+
+255
+00:13:43,959 --> 00:13:45,839
+basically let's
+
+256
+00:13:45,839 --> 00:13:48,720
+say
+
+257
+00:13:48,720 --> 00:13:51,320
+our um actually let
+
+258
+00:13:51,320 --> 00:13:57,079
+me let me use like paint to illustrate
+
+259
+00:13:57,440 --> 00:14:01,639
+this okay so we we have
+
+260
+00:14:08,360 --> 00:14:11,720
+like we have like some boxes and and
+
+261
+00:14:11,720 --> 00:14:14,079
+let's say we want to split here so then
+
+262
+00:14:14,079 --> 00:14:17,279
+the current would start like over
+
+263
+00:14:17,279 --> 00:14:20,320
+here would go here that's
+
+264
+00:14:20,320 --> 00:14:23,279
+one and then here that's two and now
+
+265
+00:14:23,279 --> 00:14:26,320
+we're like okay now now we want to
+
+266
+00:14:26,320 --> 00:14:31,600
+split uh so then this is still pointing
+
+267
+00:14:31,600 --> 00:14:34,959
+over there and this is still pointing
+
+268
+00:14:34,959 --> 00:14:37,440
+back to there and basically we just want
+
+269
+00:14:37,440 --> 00:14:42,079
+to cut these off so then what we need is
+
+270
+00:14:42,079 --> 00:14:43,360
+reference
+
+271
+00:14:43,360 --> 00:14:46,199
+to this
+
+272
+00:14:46,199 --> 00:14:48,480
+one
+
+273
+00:14:48,480 --> 00:14:53,160
+um color we need a reference this one as
+
+274
+00:14:53,160 --> 00:14:55,199
+so that we
+
+275
+00:14:55,199 --> 00:14:58,720
+can remove that and then after that we
+
+276
+00:14:58,720 --> 00:15:01,720
+can just just remove the the one that's
+
+277
+00:15:01,720 --> 00:15:04,600
+going backwards I guess what might be a
+
+278
+00:15:04,600 --> 00:15:09,120
+little bit more efficient if you uh kind
+
+279
+00:15:09,120 --> 00:15:13,320
+of you could store the pointer for the
+
+280
+00:15:13,320 --> 00:15:15,639
+previous one to the split
+
+281
+00:15:15,639 --> 00:15:17,920
+Point
+
+282
+00:15:17,920 --> 00:15:21,320
+uh I kind of beforehand but but actually
+
+283
+00:15:21,320 --> 00:15:23,000
+maybe that wouldn't even be more
+
+284
+00:15:23,000 --> 00:15:26,079
+efficient because then you would need to
+
+285
+00:15:26,079 --> 00:15:27,839
+do like additional
+
+286
+00:15:27,839 --> 00:15:29,560
+operations uh
+
+287
+00:15:29,560 --> 00:15:30,639
+for
+
+288
+00:15:30,639 --> 00:15:32,560
+every
+
+289
+00:15:32,560 --> 00:15:36,360
+um for like every moment that you move
+
+290
+00:15:36,360 --> 00:15:38,800
+forward
+
+291
+00:15:39,720 --> 00:15:42,519
+here well in any case that's not really
+
+292
+00:15:42,519 --> 00:15:44,839
+a big
+
+293
+00:15:44,880 --> 00:15:47,959
+deal yeah of course I this way you need
+
+294
+00:15:47,959 --> 00:15:49,839
+to do this operation first so you don't
+
+295
+00:15:49,839 --> 00:15:51,240
+lose this
+
+296
+00:15:51,240 --> 00:15:54,440
+reference okay and then we return
+
+297
+00:15:54,440 --> 00:15:57,600
+current okay so it's actually quite
+
+298
+00:15:57,600 --> 00:16:00,560
+simple to do the split WID need to like
+
+299
+00:16:00,560 --> 00:16:03,480
+uh cut off these two lines
+
+300
+00:16:03,480 --> 00:16:05,480
+here like
+
+301
+00:16:05,480 --> 00:16:08,480
+here like that's all we have to do to
+
+302
+00:16:08,480 --> 00:16:10,839
+make a
+
+303
+00:16:14,120 --> 00:16:16,319
+split and then the way you would use
+
+304
+00:16:16,319 --> 00:16:19,880
+that is uh like
+
+305
+00:16:19,880 --> 00:16:22,959
+um the list you call this function on is
+
+306
+00:16:22,959 --> 00:16:24,880
+going to
+
+307
+00:16:24,880 --> 00:16:27,560
+like lose a part of it but then it's
+
+308
+00:16:27,560 --> 00:16:29,600
+going to return the other part part of
+
+309
+00:16:29,600 --> 00:16:31,959
+it so then you need to be careful not to
+
+310
+00:16:31,959 --> 00:16:35,518
+lose the references this
+
+311
+00:16:35,839 --> 00:16:39,240
+lists um
+
+312
+00:16:39,240 --> 00:16:42,519
+okay and then the triple protate
+
+313
+00:16:42,519 --> 00:16:44,759
+function gets a little bit
+
+314
+00:16:44,759 --> 00:16:47,360
+more
+
+315
+00:16:47,360 --> 00:16:51,279
+um more more kind of tricky uh and with
+
+316
+00:16:51,279 --> 00:16:56,160
+this uh you you need to be really really
+
+317
+00:16:56,160 --> 00:16:59,560
+careful me let me kind of um try to
+
+318
+00:16:59,560 --> 00:17:03,240
+illustrate this as well with with um my
+
+319
+00:17:03,240 --> 00:17:07,319
+drawing skills uh
+
+320
+00:17:10,119 --> 00:17:14,399
+so let me just draw like
+
+321
+00:17:22,959 --> 00:17:27,199
+numbers so we have something like
+
+322
+00:17:27,559 --> 00:17:31,600
+this Rob mares around
+
+323
+00:17:42,600 --> 00:17:46,360
+them now something like this and then
+
+324
+00:17:46,360 --> 00:17:50,440
+what the triple rotate would be
+
+325
+00:17:50,440 --> 00:17:53,799
+doing is
+
+326
+00:17:55,559 --> 00:17:59,039
+um you you can kind of think of it as as
+
+327
+00:17:59,039 --> 00:18:01,400
+we we
+
+328
+00:18:01,400 --> 00:18:04,480
+like remove
+
+329
+00:18:04,480 --> 00:18:09,320
+this um actually let me just do it like
+
+330
+00:18:09,799 --> 00:18:14,360
+this we kind of we kind of get rid of
+
+331
+00:18:14,360 --> 00:18:16,600
+that and
+
+332
+00:18:16,600 --> 00:18:21,080
+then we make some room for it over
+
+333
+00:18:21,919 --> 00:18:24,000
+there like
+
+334
+00:18:24,000 --> 00:18:26,520
+this and then we would do the same thing
+
+335
+00:18:26,520 --> 00:18:31,240
+over here on the next
+
+336
+00:18:34,320 --> 00:18:36,559
+set like
+
+337
+00:18:36,559 --> 00:18:40,120
+that uh so
+
+338
+00:18:40,240 --> 00:18:44,039
+then what needs to be considered here is
+
+339
+00:18:44,039 --> 00:18:47,600
+that of course uh we have these
+
+340
+00:18:47,600 --> 00:18:50,480
+uh next and previous pointers that we
+
+341
+00:18:50,480 --> 00:18:53,960
+need to uh make sure we get them right
+
+342
+00:18:53,960 --> 00:18:54,840
+uh
+
+343
+00:18:54,840 --> 00:18:58,440
+so first if we're thinking like okay we
+
+344
+00:18:58,440 --> 00:19:02,440
+kind of detach this so so then this is
+
+345
+00:19:02,440 --> 00:19:05,520
+no longer going to be pointing at two
+
+346
+00:19:05,520 --> 00:19:07,559
+and this two is not going to be pointing
+
+347
+00:19:07,559 --> 00:19:14,678
+at one uh so so this is going to kind
+
+348
+00:19:14,760 --> 00:19:20,200
+of go ahead and start pointing
+
+349
+00:19:20,679 --> 00:19:24,799
+at uh four
+
+350
+00:19:32,039 --> 00:19:35,880
+um and and this is kind of just going to
+
+351
+00:19:35,880 --> 00:19:37,480
+point at
+
+352
+00:19:37,480 --> 00:19:40,640
+nothing okay so so that's that's that's
+
+353
+00:19:40,640 --> 00:19:43,440
+like already two operations that we
+
+354
+00:19:43,440 --> 00:19:47,280
+definitely know that we need to
+
+355
+00:19:48,440 --> 00:19:51,679
+do and
+
+356
+00:19:55,240 --> 00:20:00,520
+then we we get this over here
+
+357
+00:20:00,679 --> 00:20:01,640
+and
+
+358
+00:20:01,640 --> 00:20:03,720
+then this needs
+
+359
+00:20:03,720 --> 00:20:08,000
+to start pointing at that one and this
+
+360
+00:20:08,000 --> 00:20:10,440
+at that
+
+361
+00:20:13,880 --> 00:20:17,240
+one and then
+
+362
+00:20:17,360 --> 00:20:20,320
+also the next one over here needs to
+
+363
+00:20:20,320 --> 00:20:22,320
+point that one so so we can kind of
+
+364
+00:20:22,320 --> 00:20:26,000
+count five different operations
+
+365
+00:20:26,000 --> 00:20:29,480
+here okay let's uh let's going to start
+
+366
+00:20:29,480 --> 00:20:32,720
+looking at the code now
+
+367
+00:20:32,720 --> 00:20:35,720
+so
+
+368
+00:20:35,880 --> 00:20:39,559
+um okay F firstly the way I do it I kind
+
+369
+00:20:39,559 --> 00:20:43,679
+of initialize all these three different
+
+370
+00:20:43,679 --> 00:20:47,159
+uh pointers to the
+
+371
+00:20:47,159 --> 00:20:50,039
+head and in my case I'm doing like this
+
+372
+00:20:50,039 --> 00:20:53,720
+for Loop that's like uh is doing like
+
+373
+00:20:53,720 --> 00:20:55,919
+plus three and then I'm just comparing
+
+374
+00:20:55,919 --> 00:20:57,240
+it to the
+
+375
+00:20:57,240 --> 00:21:00,080
+size but you could also check by n
+
+376
+00:21:00,080 --> 00:21:02,640
+pointer but
+
+377
+00:21:02,640 --> 00:21:05,000
+um probably different ways to do it but
+
+378
+00:21:05,000 --> 00:21:06,799
+but I find that this is convenient
+
+379
+00:21:06,799 --> 00:21:10,960
+because this way uh as the
+
+380
+00:21:10,960 --> 00:21:16,080
+assignment um defines it if if there's
+
+381
+00:21:16,080 --> 00:21:19,080
+like for example like eight numbers in a
+
+382
+00:21:19,080 --> 00:21:21,320
+list then it would do the rotation for
+
+383
+00:21:21,320 --> 00:21:23,880
+the uh first set of three and the second
+
+384
+00:21:23,880 --> 00:21:25,799
+set of three and then leave the last two
+
+385
+00:21:25,799 --> 00:21:27,600
+alone because it's not a complete set of
+
+386
+00:21:27,600 --> 00:21:31,000
+three so so this this one way to like
+
+387
+00:21:31,000 --> 00:21:33,120
+avoid that
+
+388
+00:21:33,120 --> 00:21:36,639
+problem um
+
+389
+00:21:36,919 --> 00:21:41,080
+okay let's ignore this for now and
+
+390
+00:21:41,080 --> 00:21:42,440
+because that's not going to happen on
+
+391
+00:21:42,440 --> 00:21:45,760
+the first Loop so on the first
+
+392
+00:21:45,760 --> 00:21:48,320
+Loop we we can kind of assign the
+
+393
+00:21:48,320 --> 00:21:51,279
+positions of of this one two and three
+
+394
+00:21:51,279 --> 00:21:54,200
+like this so the two is going to be the
+
+395
+00:21:54,200 --> 00:21:56,159
+next of one and three is going to be the
+
+396
+00:21:56,159 --> 00:21:58,799
+next of two
+
+397
+00:21:58,799 --> 00:22:04,919
+uh okay and then the order in which I do
+
+398
+00:22:04,919 --> 00:22:09,559
+things um first set the uh previews of
+
+399
+00:22:09,559 --> 00:22:10,520
+of
+
+400
+00:22:10,520 --> 00:22:13,159
+two I'm just going to
+
+401
+00:22:13,159 --> 00:22:15,880
+go back
+
+402
+00:22:15,880 --> 00:22:18,600
+here um
+
+403
+00:22:18,600 --> 00:22:25,080
+so if we have two pointing at at that uh
+
+404
+00:22:25,080 --> 00:22:28,120
+so we change that to instead point at
+
+405
+00:22:28,120 --> 00:22:30,840
+whatever is uh
+
+406
+00:22:30,840 --> 00:22:35,320
+before before one so we do that
+
+407
+00:22:35,320 --> 00:22:38,080
+operation and
+
+408
+00:22:38,080 --> 00:22:42,080
+then the next of one is going to be the
+
+409
+00:22:42,080 --> 00:22:43,240
+next of
+
+410
+00:22:43,240 --> 00:22:46,960
+three so then instead
+
+411
+00:22:46,960 --> 00:22:48,840
+of
+
+412
+00:22:48,840 --> 00:22:52,279
+that we're going to
+
+413
+00:22:52,279 --> 00:22:55,279
+do
+
+414
+00:22:55,720 --> 00:22:58,600
+that okay
+
+415
+00:22:58,600 --> 00:22:59,559
+and
+
+416
+00:22:59,559 --> 00:23:02,400
+then the
+
+417
+00:23:02,400 --> 00:23:05,240
+previous of one is going
+
+418
+00:23:05,240 --> 00:23:09,159
+to uh in instead of pointing at nothing
+
+419
+00:23:09,159 --> 00:23:11,679
+it's now going
+
+420
+00:23:12,679 --> 00:23:18,159
+to going to um go point at that one
+
+421
+00:23:18,159 --> 00:23:21,720
+okay and then the next of three instead
+
+422
+00:23:21,720 --> 00:23:24,760
+of pointing at this four over here uh
+
+423
+00:23:24,760 --> 00:23:26,679
+it's going
+
+424
+00:23:26,679 --> 00:23:30,440
+to point at one
+
+425
+00:23:36,520 --> 00:23:41,600
+okay and then uh we can set the next uh
+
+426
+00:23:41,600 --> 00:23:42,600
+first
+
+427
+00:23:42,600 --> 00:23:46,240
+one like the first of the second set uh
+
+428
+00:23:46,240 --> 00:23:51,279
+can be the uh next of one which the next
+
+429
+00:23:51,279 --> 00:23:53,320
+of one
+
+430
+00:23:53,320 --> 00:23:56,240
+now uh it's going to be this four over
+
+431
+00:23:56,240 --> 00:23:59,240
+here
+
+432
+00:24:01,360 --> 00:24:05,480
+okay and then uh
+
+433
+00:24:05,480 --> 00:24:07,880
+finally maybe it doesn't maybe it's kind
+
+434
+00:24:07,880 --> 00:24:09,880
+of weird that that I have this line here
+
+435
+00:24:09,880 --> 00:24:12,760
+but but this is kind of included in what
+
+436
+00:24:12,760 --> 00:24:16,760
+happens next in the sequence is that the
+
+437
+00:24:16,760 --> 00:24:20,720
+preview of of this so so this is now
+
+438
+00:24:20,720 --> 00:24:24,960
+going to be that four the previous of
+
+439
+00:24:24,960 --> 00:24:27,000
+that that that
+
+440
+00:24:27,000 --> 00:24:31,880
+four is going to be the next of
+
+441
+00:24:31,880 --> 00:24:34,679
+three and three at this point is is
+
+442
+00:24:34,679 --> 00:24:37,360
+still this three that I have
+
+443
+00:24:37,360 --> 00:24:39,880
+here uh
+
+444
+00:24:39,880 --> 00:24:44,399
+so so then this instead
+
+445
+00:24:44,720 --> 00:24:47,399
+of
+
+446
+00:24:47,399 --> 00:24:50,279
+uh instead of pointing at
+
+447
+00:24:50,279 --> 00:24:53,760
+that it's going to
+
+448
+00:24:53,799 --> 00:24:58,080
+start pointing at this uh that's going
+
+449
+00:24:58,080 --> 00:25:01,200
+to be what's behind it and then in front
+
+450
+00:25:01,200 --> 00:25:04,200
+of it is that
+
+451
+00:25:04,600 --> 00:25:08,159
+one uh okay and
+
+452
+00:25:08,159 --> 00:25:12,520
+then uh for the cases
+
+453
+00:25:12,679 --> 00:25:16,480
+of we're at the start of the list then
+
+454
+00:25:16,480 --> 00:25:20,240
+uh we can Define the new head uh to be
+
+455
+00:25:20,240 --> 00:25:23,399
+uh this I2 which is uh this number two
+
+456
+00:25:23,399 --> 00:25:26,200
+which is now going to be be in front in
+
+457
+00:25:26,200 --> 00:25:29,279
+this case
+
+458
+00:25:29,279 --> 00:25:31,480
+uh
+
+459
+00:25:33,679 --> 00:25:36,679
+otherwise
+
+460
+00:25:43,480 --> 00:25:47,840
+um so so I2 is going to be yeah okay so
+
+461
+00:25:47,840 --> 00:25:49,320
+so in in that
+
+462
+00:25:49,320 --> 00:25:51,840
+case this situation would
+
+463
+00:25:51,840 --> 00:25:54,360
+be
+
+464
+00:25:54,360 --> 00:25:57,279
+um like we've already done the first
+
+465
+00:25:57,279 --> 00:26:00,000
+three and then we get to the second and
+
+466
+00:26:00,000 --> 00:26:03,480
+then I2 would be the five here and then
+
+467
+00:26:03,480 --> 00:26:09,120
+we would make sure uh that uh
+
+468
+00:26:09,640 --> 00:26:12,159
+this three
+
+469
+00:26:12,159 --> 00:26:17,559
+here then gets connected to five so so
+
+470
+00:26:17,559 --> 00:26:20,520
+we would kind of from
+
+471
+00:26:20,520 --> 00:26:24,039
+five get the previous where which we
+
+472
+00:26:24,039 --> 00:26:27,240
+like uh make sure that we we get that
+
+473
+00:26:27,240 --> 00:26:29,000
+right
+
+474
+00:26:29,000 --> 00:26:32,120
+and then from there we make sure that uh
+
+475
+00:26:32,120 --> 00:26:34,600
+that one is pointing at five so that
+
+476
+00:26:34,600 --> 00:26:37,840
+these different parts are
+
+477
+00:26:38,760 --> 00:26:41,320
+connected
+
+478
+00:26:41,320 --> 00:26:45,000
+okay so then that's covering everything
+
+479
+00:26:45,000 --> 00:26:46,840
+so so that's kind of an important step
+
+480
+00:26:46,840 --> 00:26:50,960
+to remember like like you might do the
+
+481
+00:26:50,960 --> 00:26:54,159
+first rotation here and you see like
+
+482
+00:26:54,159 --> 00:26:55,679
+okay well everything
+
+483
+00:26:55,679 --> 00:26:59,320
+is uh everything is good
+
+484
+00:26:59,320 --> 00:27:01,919
+um everything is sorted
+
+485
+00:27:01,919 --> 00:27:04,760
+out but then you get to the next one and
+
+486
+00:27:04,760 --> 00:27:07,440
+you forget to make this link uh and then
+
+487
+00:27:07,440 --> 00:27:10,399
+you end up having some
+
+488
+00:27:13,240 --> 00:27:17,000
+problems so I would say uh if if it's a
+
+489
+00:27:17,000 --> 00:27:18,600
+little bit difficult to wrap your head
+
+490
+00:27:18,600 --> 00:27:23,480
+around this then this kind of drawing is
+
+491
+00:27:23,480 --> 00:27:25,919
+helpful and then another thing that you
+
+492
+00:27:25,919 --> 00:27:28,919
+can do is use GDB
+
+493
+00:27:28,919 --> 00:27:29,960
+let me
+
+494
+00:27:29,960 --> 00:27:32,480
+actually uh of show
+
+495
+00:27:32,480 --> 00:27:34,880
+how that could work
+
+496
+00:27:34,880 --> 00:27:38,240
+so do
+
+497
+00:27:38,799 --> 00:27:41,880
+like uh GDB M
+
+498
+00:27:41,880 --> 00:27:43,600
+list
+
+499
+00:27:43,600 --> 00:27:45,200
+do
+
+500
+00:27:45,200 --> 00:27:48,600
+break list
+
+501
+00:27:48,799 --> 00:27:51,320
+HPP
+
+502
+00:27:51,320 --> 00:27:54,159
+um 151
+
+503
+00:27:54,159 --> 00:27:56,559
+okay
+
+504
+00:27:56,559 --> 00:27:59,399
+run and then
+
+505
+00:27:59,399 --> 00:28:01,360
+then it's going to break over here and
+
+506
+00:28:01,360 --> 00:28:04,360
+then we can kind of
+
+507
+00:28:04,799 --> 00:28:09,039
+uh do something like this
+
+508
+00:28:10,760 --> 00:28:14,080
+like we make sure that all the data is
+
+509
+00:28:14,080 --> 00:28:16,159
+like as we expect it to
+
+510
+00:28:16,159 --> 00:28:20,039
+be and then we could even do
+
+511
+00:28:20,039 --> 00:28:23,039
+like
+
+512
+00:28:23,840 --> 00:28:26,120
+uh display
+
+513
+00:28:26,120 --> 00:28:30,120
+I3 previews
+
+514
+00:28:30,960 --> 00:28:33,799
+next
+
+515
+00:28:33,799 --> 00:28:36,799
+data so so this way would GDB we can
+
+516
+00:28:36,799 --> 00:28:38,840
+kind of confirm these pointer
+
+517
+00:28:38,840 --> 00:28:41,840
+connections at at every point and then
+
+518
+00:28:41,840 --> 00:28:42,559
+we
+
+519
+00:28:42,559 --> 00:28:45,880
+can maybe run into a situation where
+
+520
+00:28:45,880 --> 00:28:48,399
+it's like like okay well well at this
+
+521
+00:28:48,399 --> 00:28:51,159
+point this should point over there but
+
+522
+00:28:51,159 --> 00:28:53,399
+then you check here and it's like oh
+
+523
+00:28:53,399 --> 00:28:55,880
+what it doesn't and and then you started
+
+524
+00:28:55,880 --> 00:28:58,840
+thinking like okay what went wrong
+
+525
+00:28:58,840 --> 00:29:02,320
+why is this not as I thought it would be
+
+526
+00:29:02,320 --> 00:29:07,679
+so so I find GDB to be very helpful
+
+527
+00:29:07,679 --> 00:29:10,679
+here
+
+528
+00:29:13,880 --> 00:29:17,360
+okay then uh
+
+529
+00:29:18,039 --> 00:29:21,519
+finally uh you can
+
+530
+00:29:22,080 --> 00:29:24,360
+do do some
+
+531
+00:29:24,360 --> 00:29:26,679
+tests to make sure that everything is
+
+532
+00:29:26,679 --> 00:29:28,720
+good
+
+533
+00:29:28,720 --> 00:29:32,360
+and and also also make sure that you
+
+534
+00:29:32,360 --> 00:29:35,039
+followed all these instructions that uh
+
+535
+00:29:35,039 --> 00:29:36,760
+you didn't create
+
+536
+00:29:36,760 --> 00:29:38,880
+any
+
+537
+00:29:38,880 --> 00:29:42,279
+um you didn't allocate any new nodes
+
+538
+00:29:42,279 --> 00:29:45,200
+when when you weren't supposed to and
+
+539
+00:29:45,200 --> 00:29:48,640
+that it's not leing memory
+
+540
+00:29:52,279 --> 00:29:56,200
+either okay so part two is optional
+
+541
+00:29:56,200 --> 00:29:59,679
+but let's go through that to some extent
+
+542
+00:29:59,679 --> 00:30:02,000
+uh
+

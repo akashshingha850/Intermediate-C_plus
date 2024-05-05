@@ -1,0 +1,1635 @@
+yeah we have seven people
+online okay so if you have any questions
+please just
+[Laughter]
+ask eight people online
+hey
+okay so I just realized that the
+deadline for lab
+memory
+is was on the 1st which is a public
+holiday Monday so maybe that's what that
+question was about that one lab is due
+on a holiday so I send it until 2nd so
+that yeah and um if there is anything
+else like that of course we will send
+the
+deadline but let's start with our
+lecture today you guys hear well because
+of the microphone
+right okay so today is a lot of fun
+because um we are going through some
+interesting syntax
+with thingss
+hello so we are going to start talking
+about
+Constructors
+destructors and operator overload today
+so we will write the sent for those
+functions how they should look as a
+function signature in class declaration
+as well as what should go inside so
+let's look at this sphere and um oh yeah
+I need my writing tool ah and I
+exited
+okay let's see I need my writing tool
+here and I still want to go full
+screen okay so I have my class sphere
+and I have private members here the
+radius and I want to make a little more
+interesting sphere today so I don't want
+just to have a I want to have some what
+seems to be going to be a dynamic memory
+associated with this class so um the
+let's go through all of the U members
+the radius the number of attributes and
+some kind of what seems to be going to
+be an array of strains right associated
+with that um
+sphere and then I have all of the public
+functions and you can see already that
+these three they do not have return type
+and oh yes please take the uh print outs
+can you please grab students as well
+pass so we recognize a
+Constructor that by the fact that
+there's no return value and the name it
+matches the class and we have three here
+right so we'll go through what are they
+but we already know that upon
+Declaration of a sphere a Constructor is
+going to be called right you're
+comfortable with that fact we talked
+about it many times that a Constructor
+is going to be called and it's going to
+be a default no parameter Constructor
+because there's no parameters there so
+actually in
+C++ the system will provide one for you
+but it will initialize all of the
+members then with some
+garbage so this is your chance to
+initialize to explicitly write your
+default constructure in the class if you
+want by default your spheres to be
+initialized to something interesting so
+for example if you want to initialize
+the radius to 3.2 say the number of
+attributes to three and the attributes
+strs to be red
+juicy and shiny juice oh
+sorry let's write it
+juicy and shiny so you want your default
+spere to be an Apple so this instructor
+will be the place to do that right so
+then let's do it let's initialize it you
+already know you did you write a
+Constructor already
+anywhere yourself in any of the labs or
+M
+PS I think if you jumped ahead you did
+or what no we had to initialize a con
+have a constructure somewhere in the
+first lab already
+right yeah I think so yeah yeah yeah but
+maybe there was no dynamic memory
+because we didn't write the structures
+yet so let's initialize it let's let's
+guess what should go here well as a rule
+of time you just go through all of the
+members and initialize them to something
+so the radius of this default sphere
+should
+be what you want it to be always
+initialized to 3.2 right so upon this
+declaration you want that sphere to be
+an Apple so the radius should be 3.2
+number of
+attributes should be three and then
+attributes attribute zero should be
+red
+attribute uh one should be
+juicy and attributes two should be shiny
+do you like it is that is everything
+right what did I forget to
+do what did I forget to
+do did I actually explicitly ask for
+this
+memory no and that's the place to do it
+right this is the place to ask for
+dynamic memory in the Constructor so if
+you want your object to have these
+values on the stack and then an array of
+strings that is clearly hopefully maybe
+will be long and will be on on the Heap
+this is the place to ask for it in the
+Constructor so then you say adds equals
+to
+what
+new
+strain and then the size should be the
+number of
+attributes right so this is where you do
+that okay so that's the default
+Constructor is that okay is that
+clear are you happy with this everything
+is
+okay for now we wrote a default
+Constructor then upon declaration your
+memory will look like this and the
+memory associated with this object a
+will look like this 3 3.23 and the
+pointer to Dynamic array on the stack
+and this is going to be on the Heap
+theay attributes okay so let's
+continue now let's look at one more
+thing so now you you probably see that
+we just wrote this default Constructor
+similarly I could have written a
+parameter Constructor that would pass
+radius as the parameter
+right and you would also then initialize
+your sphere then based on this radius so
+maybe it would be asteroid with larger
+radius past or something different
+attributes then so you would do whatever
+is needed but let's see when then these
+Constructors are going to be called so
+when is it called when a copy
+Constructor uh is called oh oh we're
+talking about
+[Music]
+copy right right right so but first let
+me finish with this when are these
+Constructors called well the default no
+parameter Constructor is called upon
+declaration and then one parameter
+Constructor could be called with some
+other syntax say
+[Music]
+sphere
+C uh
+5.2 you know so that's like um not an
+apple but uh maybe a melon right or
+something like that so that would call
+the parameter Constructor that syntax
+but now we're going to look at the
+another Constructor which is called copy
+Constructor and we didn't talk about it
+yet before so this
+guy is also a Constructor but it passes
+a sphere as its
+parameter so when are these guys called
+well do you remember we talked about
+passing by value passing by reference
+and passing by um pointer last time and
+I said that when you pass a parameter to
+a
+function a copy is
+made so how is that copy made well it
+will be made by default by default copy
+constructure that the system will
+provide if you don't write your
+own so today we will write our own and
+see why we need to write our own what
+why what are the reasons for writing
+your own copy Constructor but
+essentially a copy Constructor will be
+invoked if you pass your object by
+value
+then in this function you also return a
+spere and what do you think when you
+return that sphere instead of this my
+right hand side do you think a copy
+Constructor will be also invoked do you
+want it to be invoked when you return by
+value does it feel like it should
+be
+well the answer is that it's up to the
+compiler it's up to this individual
+situation sometimes a copy Constructor
+will be invoked on return by value but
+sometimes it will not be so you cannot
+guarantee okay so fine that's good so
+the way the times when a copy
+Constructor is then called is when you
+pass your
+[Music]
+when a sphere e for
+example is on the Heap so we call for
+new
+sphere and then we also put B in
+parenthesis so
+again in this case you pass a b to a
+Constructor you pass a b to for to a
+Constructor and you pass a b to a
+Constructor so these are the cases this
+is the syntax when the system will
+invoke the copy
+construct okay we'll summarize all of
+these cases
+later so we talked about when a copy
+Constructor is called now let's um ask
+this question so let's look at this code
+please look at this code and tell me
+it's a very similar code to what you had
+but we'll just do this exercise how many
+times a copy constructure is called in
+this code so let's trace this function
+main
+function a is declared default
+Constructor is called B is declared
+parameter Constructor is called a
+function is called with parameter passed
+by value so then what a copy Constructor
+is called
+right then s is returned by value to the
+right hand side so maybe a copy
+Constructor is called as well so the
+answer should be
+should be two a copy Constructor is
+called twice so let's see what what I
+did I have um I have this code so that
+you really see what's going on um it's
+the first one for this
+lecture let's wait until my laptop will
+open
+emac
+okay so let's see what do we really
+expect from this code look I in my
+Constructor when I initialized things to
+um in all of the constructors I actually
+had a print out saying which Constructor
+is being called okay so that will help
+us Trace all of the calls so if I have a
+no value no parameter Constructor which
+Builds an apple of with radius 3.2 then
+it'll print a a strain default
+Constructor is called when I have a
+parameter Constructor it'll print that
+strain and if I have a copy constructure
+it will print that
+string so let's
+see
+okay so there's two right right oh oh
+and it's a little different function
+actually it's a little different
+function than in your code so let me
+match it yeah do you see that it's a
+different function so I'll match it to
+you yours I don't have these two
+lines okay so the answer should be two
+right let's
+see yeah see so default Constructor is
+called
+for for a a parameter Constructor is
+called for B and then a copy
+constructure is passed here so s is
+created as a copy but then the right
+hand side is also returned as a copy so
+in this case the return value uh uses or
+invokes copy Constructor but you cannot
+guarantee that it's always the case
+okay but this is a neat way to see which
+Constructor is being called just
+printing it
+out okay so we right it was two the two
+is the right
+answer um so now let's look what would
+have happened if you were not to write a
+con a copy constructure so what is the
+constructure that the system will
+provide by default so if you were not to
+write this what would the system do so
+if this is this is your
+object this is your
+object uh in the main function or
+whatever say a say a this is your object
+and it is uh the default say
+um
+the default Apple so this is your object
+then the default
+Constructor upon passing by uh value to
+a function for example you'll say oh I
+know how to pass an object and make a
+copy I'll just go memberwise and make
+copies of them I know how to make a copy
+of a double so I put I copy the radius
+to
+3.2 I know how to copy integers so the
+number attributes is going to be three
+and I know how to copy
+pointers if this is a pointer to some
+array or some memory I know how to copy
+it I just put the same address there in
+that value which means that it's going
+to point here just like the original
+one so that's what a default Constructor
+will do by default do you like
+it that's the Sy that's what the system
+provides for you by default if you don't
+write your
+Constructor this Constructor works just
+fine if all of the members are on on the
+stack but if you have any dynamic memory
+then the co the pointers will be copied
+and you have two different
+objects pointing to the same thing so
+that's not a good thing right that's not
+a good thing you delete this memory for
+one object then you have dangling
+pointers for another right if you free
+this memory therefore when whenever you
+have anything any uh data associated
+with your objects on the Heap you will
+have to write copy Constructor by
+yourself and the way to do that is to to
+write it so let's see what what I wanted
+to say
+here yeah so let's uh let's see how we
+would write
+it if I have the original object a here
+right I want to write my own copy
+Constructor and I want
+the result to look like an
+apple
+but and a copy of the original object
+right so I want another chunk of Heap
+memory to have the same attributes R
+juicy and shiny right so that's how I
+want the result of the copy Constructor
+to look like a new object that is
+identical to orig
+not just on stat but also on the
+Heap but it's a new object so let's
+write it do you want to help
+me you want to help me
+writing what should we
+do we you go through members again one
+by one and initialize them to
+what not to some default values now but
+to the whatever past values members
+right corresponding members so the
+radius should be equal
+to the original right the object that's
+past
+original radius right the radius of the
+original
+one and then number of
+attributes should be equal to what the
+original object has as the number of
+attributes
+right so number of attributes
+there
+right and now instead of just saying
+attributes equal original attributes I'm
+going to actually do what what do I need
+to do
+here how do I create
+this as a different
+memory um
+yes I will D reference it but first I
+need to ask for a new chunk of Heap
+memory with new right with new so I will
+say
+attributes of my of this object should
+be equal to what
+new
+strain and then how many of them should
+I ask
+for number of attributes right that I
+already just initi iiz to the original
+object number of attributes and then I
+go in the loop for
+integer I equal z i less than number of
+attributes I
+++ and then what do I do that's when I D
+reference it
+attributes I equal to the original
+one the same thing the original
+attributes
+I is that okay so that will be the
+Constructor the copy
+Constructor which will
+create this kind of object
+then
+okay any questions about
+it okay so we are done with the default
+no parameter Constructor parameter
+Constructor and a copy Constructor
+that's good and they see how many times
+we ask for new right and you know
+already that if we ask for dynamic
+memory for he we have to actually let it
+go somewhere
+right so let's talk about destructors
+destructors is when memory is freed back
+to the system and let's see when
+destructors are called so far we didn't
+talk about it at all I was telling you
+oh you know if you have a stack object
+on the stack once you see the uh curly
+braces is closing that's when the system
+takes it back right so that's what I
+said that the the then the stack
+variable goes out of scope and the
+system takes it back by using a
+Destructor so either default Destructor
+if you didn't write one but you have a
+chance again to write it yourself so how
+do we spot a
+Destructor Destructor has the same name
+as an object and this Tio right here and
+it's a it's a function as well you don't
+call the destructor Destructor is called
+when so let's look at all of the cases
+when a Destructor is called well when
+you declare an
+object on the stack when it goes out of
+scope right here the destructor will be
+called there are two pages today if
+you so when a variable goes out of
+scope the destructor will be
+called so here in the scope of this
+function s is passed by value so we know
+that a copy Constructor will be called
+right here when we pass it but then once
+the function is ends once it gives
+control back to the main a Destructor
+will be called because s will will go
+out of scope as well as T so there will
+be two destructors called right
+here because both of those local
+variables will go out of scope so that's
+cool so that's local variables that are
+on the stack if they go out of scope we
+call a
+Destructor there is another case that is
+if you declare a pointer to your object
+once you call delete on that pointer a
+distructor will be called as well
+okay so
+now let's see if you can figure out how
+many times a Destructor is called on
+this code so that's where I need those
+two extra
+lines let me open
+the
+corresponding one instructor so look
+what happens let's trace it and it's
+it's the same function as the one that I
+have there on the slides so let's Trace
+oh except that it's cutting a little
+bit let's do a little like that okay so
+let's Trace what's going
+on we declare a so it's in the scope of
+main we declare B it's in the scope of
+main so A and B called Constructors
+corresponding
+Constructors that means two destructors
+will be called here upon the end of main
+execution so that's
+cool now I'm going to pass a by value
+which means the copy Constructor is
+called here and S is a local
+variable so it goes out of scope a
+Destructor will be
+called but as is passed by value
+back that's a copy Constructor is called
+here and that right hand side will go
+out of scope together with the end of
+main so a Destructor will be
+called then a copy Constructor is called
+here so Destructor will be called and
+well let's see just just uh tell me how
+many times you think the destructor is
+called in this
+case and then we'll uh we'll run we'll
+run the code and see so count how many
+times six mhm right very
+good I think it's
+six so the easiest thing is to
+run well you can trace the code just
+like we did and there were six
+Constructor calls so there has to be say
+Destructor calls right there has to
+be right let's see what's going on let's
+look at my code and um code and and uh
+let's run it
+so oh my
+God so this uh Constructors default
+Constructor a parameter Constructor B
+copy Constructor when we pass a
+here copy Constructor when we pass it
+back to the right hand side
+here then two of them go out of scope
+right
+uh which is s and the right hand side is
+deleted system will not keep it around
+so that's deleted so two destructors are
+right there then a copy Constructor on C
+default value
+3.2 and a
+pointer for D is created so a copy
+Constructor is called for the DY for
+this Dynamic sphere it's it's on the
+Heap so two copy Constructors and then
+what goes out of scope a goes out of
+scope B goes out of scope C goes out of
+scope so three of them are deleted d
+goes out of
+scope where's the destructor for
+it do you see that there's only five
+destructors
+right where's where's the last
+one
+what if I said like uh 0.9 here so we
+clearly know that it's a difference
+sphere let's
+see parameter Constructor is called 0.9
+now instead we don't delete 0.9 do you
+see that there's no Constructor
+destructure for that
+why we didn't call explicitly delete
+that's the only time when we really
+really have to like exp explicitly free
+the memory and that's when we know
+another distructor will be called and
+then you have matching number of
+Constructors and destructors right so
+now you have six destructors and six
+Constructors and that's hopefully what
+happens then you don't have any memory
+leads you always have to match the
+number of times you call new with
+deletes the same here if you if a
+Constructor is called hopefully a
+Destructor will be called as well right
+so you don't want to lose any uh leak
+any
+memory
+okay so in this the correct answer in
+this code which is buggy because it has
+a memory actually it would be five right
+not six five because I didn't free this
+memory so the Constructor for D was not
+called okay
+okay is this overwhelming already or is
+it okay are you still with me kind
+of okay good so now let's let's uh look
+at how to write a distructor because if
+you don't write it if you don't
+explicitly write your Destructor in your
+class a default will be provided the
+system will provide it for you but it
+will not be good enough so what the
+default will do so default Destructor
+we'll say oh yeah I'll go member wise
+and delete them all like take that
+memory back so I know how to take
+doubles back I'll free that I'll free
+integer and I know how to free pointers
+I'll take this back but the system never
+touches the dynamic memory right so you
+have a memory leak if your class has any
+dynamic memory associated with with it
+or data on the Heap therefore you better
+write a better uh con Destructor right
+so you want to write a
+Destructor and um what should I do here
+what will be the destructor what is the
+lines that I have to write in the
+destructor in this custom Destructor
+what do I write
+here how do I free
+memory what is the key
+word delete right we ask for new in
+conern Str so
+delete but what do I delete I don't
+delete the radius because that's un
+stack I don't delete that I don't delete
+that I only can delete this part which
+is attributes but not just the first
+element but the entire array because we
+asked new square bracket number of
+attributes so you need to delete square
+brackets attributes then it'll delete
+the entire Heap all of the uh size that
+we asked for originally right so now if
+you trace your code the destructor
+should delete or deletes should match
+all of the news in the constructors
+deletes in destructors should match the
+new declarations or new keywords in your
+Constructors so if we go back to our
+Constructor where was it if I ask for
+new string square brackets I better
+delete oh yeah yeah I better delete
+attributes with square brackets
+right
+okay but I don't have to free these
+because these guys um the system will
+take care of the um member
+variables okay
+now let's recap so when under which
+circumstances the system will call the
+distructor so so again you never call
+distructor yourself you just know when
+it's going to be called by the system so
+the system will use that D structure
+whatever you provided or default that it
+has under which circumstances so pick
+all the ones that are oh pick all the
+ones that
+apply
+mhm
+yeah
+yeah when you return so very good so
+these are two obvious ones when this
+variable goes out of scope the constru
+destructor will be called when you
+perform delete and a poin a variable the
+destructor will be called but when you
+return a parameter by value so some
+returns statement from function is by
+value then if the copy Constructor will
+be called which you know depends on the
+situation sometimes it will be and
+sometimes it will not but if it's called
+then the destructor will be called to
+remove that object yeah very good
+okay now if a can structure for your
+class allocates dynamic memory then you
+need in structure so if a Constructor
+for your class or what else should be
+except that you you don't
+put a a DOT here so so what should be
+the complete sentence so that it is
+true so if either a Constructor for your
+class or what allocates dyamic memory
+then you need a Destructor so how do you
+know you need to write your custom
+Destructor how do you
+know well you look at your Constructor
+if that allocates dynamic memory with
+new then you need a structure but what
+else maybe the Constructor doesn't
+allocated anything with new but then
+when you
+look yeah if a copy Constructor uses new
+then you will have to have a Destructor
+but then the correct answer is not just
+looking at those to you need to
+implement your own D structure if any
+member function uses new then most
+likely for whatever design your
+Destructor will have to otherwise there
+is no mechanism to uh free that memory
+so most likely that's the case so this
+is a better
+answer of course probably could write
+bad code where you free memory through
+some other mechanisms but if a
+Constructor or any other member function
+calls uh for a dynamic memory allocates
+dynamic memory then you will need to
+implement a distructor that frees that
+memory okay
+now let's see so we now it's like
+recap Destructor typically can typically
+consists of a sequence of delete
+statements and they have to match
+what yeah matching the new calls in
+member functions or Constructor or copy
+con or whatever those whatever you ask
+for that dynamic memory
+right everything else is just silly so
+this is the right answer so this is the
+summary for destructors so destructors
+is never called but when a stack goes
+out of memory or a pointed to variable
+is deleted with delete that's when
+destructure will be called and you will
+need to write a d structure if un
+structure or any other member function
+allocates anic
+memory and then Destructor will have as
+many deletes as you had news news new uh
+keywords in your Constructors or copy
+Constructors or wherever you do that new
+calls I think in our code we don't have
+new in Constructor per se but we have in
+um we have this helper
+functions that call new helper functions
+and then Constructors copy Constructors
+just uh call those uh helper
+functions you you can look at through
+the
+code for that okay so now let's list all
+of the instances in which a spheres
+class copy Constructor is called so
+again a summary for the copy
+Constructor so when will a copy
+Constructor be
+called for
+sphere
+remember the use cases yeah when you
+pass a sphere by value when you
+sometimes when you return a sphere by
+value when you declare sphere to be a
+copy like this one
+more yeah when you declare a pointer
+variable of type sphere but yeah I
+didn't write that with the new right
+when you ask for new sphere yeah so this
+would be correct if I said exactly how I
+declare a pointer not just declare but
+it also ask for new sphere with um with
+the the copy yeah okay but this is
+correct good good
+answers okay what's the Constructor copy
+constructure function signature so let's
+look at the syntax of signatures which
+is you know can be confusing when you
+look at this at
+first okay very
+good how many of you answered that one H
+do you all agree and then why so the
+question is why and what does it all
+mean constant sphere by
+reference from the origin so we're going
+to copy an
+object from the original sphere but that
+original sphere is then should be a
+constant it should not be modified when
+we copying right and it's passed by
+reference so I think I have code for
+this yes so this oh no I don't have a
+code yet but I really wanted to stop by
+here and ask you why why do I have to
+have this and why do I have to have
+this I mean this one is probably obvious
+we do not want to modify the original
+one so when we declare
+sphere um yeah here like this when we
+declare sphere t a copy of s so we want
+a new sphere t to be a copy of s we
+really want to promise that s will not
+be changed when we duplicate it right
+create a new object that is the same as
+s but why do we pass by
+reference anybody
+knows what if we
+didn't what if we passed by
+value when we have to copy then whatever
+is a this s into this invoking the copy
+Constructor that we are
+writing so it's like what's the check
+and what's EG we're writing it it has to
+be defined but in order to even call it
+you have to in order to pass the
+parameter you have to use it but you
+didn't even write it yet you see that so
+you have to you have no other choice but
+to pass it by
+reference if you don't if you don't put
+reference here actually the compiler
+will be on your side and and will'll
+yell at you like you want a reference
+there because otherwise it's just an
+infinite Loop of recursion logical
+recursion so that's good okay so you
+have to pass by reference and you should
+promise that it's a constant okay and
+this is the two instances which we
+taught right when you pass by a
+parameter by value you invoke copy
+Constructor and in these two
+situations either for static sphere or
+dynamic sphere you can ask for copy
+Constructor to be
+called and this is the signature for the
+destructor
+okay any questions so what did we cover
+so far we covered Constructors copy
+Constructors and destructors so
+hopefully for your next MP you'll be
+able to write and in Labs you you'll be
+able to write
+them properly that is ask for the
+dynamic memory properly initialize all
+of the members properly and then delete
+needed in the destructor
+properly but ask for memory and
+initialize parameters in Constructors
+properly
+okay okay so
+now what I want to go
+through a little code like
+this yeah it's just like a little puzzle
+nothing really special this is also
+related to this what does it mean to
+pass
+by
+reference and
+um when it's constant what does it
+really mean right so you you pass this
+object and during this instance you
+promise to not change that original
+object through this new
+name but s can change still right s can
+change it just for the through this name
+you promise not to so what does it
+really mean in a like a little smaller
+code so let's look at it I have it also
+on my I can invoke it on my
+screen so what I have set up here is I
+have integer x equals to five nothing
+special and then the next line there
+will be three situations either I call Y
+to be a reference to X as a constant
+reference or non-constant reference
+right so here it's non- constant here is
+constant here is
+constant and then I try to modify either
+y or X and I want you to think about if
+you see well maybe it's difficult to see
+and I cannot do anything to increase
+this it will not do that
+yeah what will be the result of running
+these three codes so what the first one
+is obviously 10 so here nothing really
+special here oh I know where you can
+look at it better here this slide maybe
+so the first we can trace the first one
+and then you guess what will happen in
+the second and third so the first one
+says my X is on the stack it has it is
+initialized with value five my wife is
+just another name for
+X it's a reference so no pointers
+nothing under underne it's a pointer but
+it's it's another name in this scope so
+both X and Y will be gone once the main
+stops execution and then we say change y
+to
+10 so in the first program there is no
+problem changing five to 10 there's no
+constants everything is good so the
+output when you change y to 10 x should
+also B1 because it's just a different
+name for the same memory location that's
+cool so now what I do is I just put
+constant here for this reference so y
+becomes constant in second and third
+case and then I try to modify either X
+or Y and then print either X or
+Y so please
+speculate what's going to what will be
+the most reasonable behavior in these
+cases
+let's see second case second
+case so again X and Y are the same names
+for five said that Y is constant right H
+and then I say well y should change
+value to 10 what do you think that will
+lead
+to and in this case you say okay not y
+but X let's change we'll try either
+change y to 10 or X to 10 under the same
+conditions will there be the case where
+the compiler will say no you
+can't or or what let's see if anybody
+guessed the
+answer no let's run it
+then so this is my code which one do we
+want we first change y right why was
+changed Y is the constant so can we do
+it no why is constant so you can change
+it similarly in those classes when you
+when you do your copy construct you pass
+something as a constant reference you
+will not be able to change that original
+object the compiler will run it you it
+will say no no no you promised the the
+function signature promises you will not
+touch those values within that function
+so that's that's really good that's
+expected behavior and actually very nice
+right but X was not promised not to
+change so can I do that and if I do what
+will be the result so let's see if you
+guys can guess
+now what will be the can I change S can
+I change this original object that I
+didn't promise it's not going to
+change it
+wasn't you know
+what yeah
+okay
+okay it's fine you can change X and then
+the Y will change but you're not doing
+it through the name y that you promis to
+be constant you're changing it through
+the X name so you can access that memory
+through X it's just some Behavior I
+guess that can be useful in
+understanding all of this function
+signatures um because when you pass this
+original object as a constant reference
+you will not be able to modify it within
+the scope of this Constructor copy
+construct
+but the original s of course you can
+change it right it's
+fine okay let's
+go
+now one more problem so what's the time
+do we have enough time yes we'll have
+plenty of time we might even finish soon
+early a little bit so I want to talk
+about one more interesting case of what
+we could do with our op objects and what
+is again provided by default by the
+system so if you don't want the default
+Behavior you better change it as well so
+what if I say I declare two spheres A
+and
+B so they a default Constructor will be
+called both of them are initialize to
+something and then you initialize
+oh well right right doesn't matter it
+doesn't have to because we already wrote
+a nice default Constructors so they will
+be initialized over there and then I say
+b equals to
+A that is assign it's not equals B
+assign A to B this is an assignment
+operator assign A to B and the system
+will say oh fine you didn't write an
+operator uh assignment operator here so
+I'll have to use the default one and the
+default one will say I know exactly how
+to do it I just do it member wise
+memberwise assignment so just like the
+default copy constructure that is I copy
+into B if this is a I copy into B the
+the radius I copy the number of
+attributes and I copy the
+pointer that is the memory address two
+attributes so the same situation that
+you don't want to have you don't want
+separate objects b& a to um point to the
+same point in heat
+memory right so so this is bad you don't
+want
+that once they go out of scope here two
+D structures will be called and you'll
+call delete of this memory twice which
+is what it will lead to some bad
+behavior and undefined Behavior so
+you'll have a dangling pointer over
+there okay so that means that you'll all
+also once you write any member function
+that will ask for
+new either it's copy Constructor
+Constructor or any other helper
+functions and you have your destructors
+that get rid of this memory then if you
+ever want to assign this objects to each
+other you will have to rewrite this
+assignment operator as well because
+otherwise by default the system will do
+something bad and that's a lot to
+remember right that's a lot to remember
+that okay you once you write one new
+statement in any of your con structures
+you're done you'll have to have all of
+these um other functions that you will
+have to rewrite and if you forget one
+and the client will use this assignment
+and you forgot to write it there will be
+bad memory problems right so it's very
+important to remember so now it turns
+out that it's not only the assignment
+that you could overwrite for your Sphere
+for your custom uh
+types it could be any of the operators
+so any of the nice ones which ones do
+you like less
+than you would have to Define what does
+it mean for spheres to be less one to be
+less than another but maybe you would
+compare their radiuses assignment plus
+you could add two spheres together again
+I don't know what it means for apples to
+be added it's one thing for like as I
+don't know you but it's the design
+choice and it's up to the designer up to
+you guys you could rewrite the reference
+operator you could rewrite Plus+ you
+could re rewrite any of this anything so
+it turns out all of the operators you
+could rewrite if you wanted to like for
+example if you wanted to print spheres
+you could rewrite this a stream operator
+as
+well for spheres to do something
+particular so let's look at this code
+and I assert that you guys are totally
+comfortable with rewriting operations
+for operators for different types
+because of this so let me see I want to
+make sure that I write everything
+that yeah okay so why why do I think and
+let's just change the code to instead of
+c a sign a plus b let's do c out C
+out and another
+operator double less than okay so let's
+say this is my code and then I don't
+have C
+here and so I Asser that you're
+comfortable with rewriting operators for
+different types because if I were to
+declare a and b as integers integer
+a then you'd know exactly what's this
+line
+accomplishing that is a plus b as
+integers you know you just add them and
+then you print it on the terminal that's
+fine but if I were to declare a and b as
+doubles that's a different type you
+still are totally fine with seeing that
+it's going to be just double plus
+whatever add two doubles print them out
+that's
+okay or what if a and b were
+strings STD strings
+right you'd probably guess even if you
+didn't know you would guess that a plus
+b should mean what if it's two strings
+what is strain plus strain what should
+it be and it is in standard Library
+that's how it's implemented so what is a
+plus b for
+strains concatenation right and then you
+know exactly how to print them as
+well you you just print it on the screen
+on the on the screen right so which
+means that for all of this three
+different types plus is written
+specifically for that class and it's a
+different operation for each so it's not
+far than to imagine that you could also
+Define two spheres A and B and if you
+were to properly Define plus operation
+for spheres and then properly Define how
+to print them then whatever information
+you wanted would be printed about
+that sphere plus sphere object right and
+then what you would have to do you would
+have to just s explicitly write it write
+that operator plus as a function or as a
+member function in your class
+sphere you just have to explicitly write
+it and that's the function signature for
+an overloaded operator plus we'll go
+through this function
+signatures um later for plus but let's
+go back to the
+operator assignment operator or operator
+equals so we want to redefine it if you
+want to redefine it from this to
+something else then we would have to
+write it explicitly so we either we call
+it either
+redefine operator equals or override
+that's another term overwrite that
+operator and you would have to
+explicitly put it as one of the
+functions in your class
+members the name of this operator is
+operator equals okay so that's the name
+and it will have some return
+parameters return
+parameters and let's see what
+I just want to make sure
+that right sorry return value of course
+return value let's write it properly use
+the proper terms and all the parameters
+here so parameter
+list so that's just like any function
+signature that's a function signature
+for uh this operator
+equal so you return something and you
+have a parameter list and all you have
+to do is just write it so we will start
+with that but first let's let's think
+conceptually what does it have to
+accomplish so what should be the result
+of this what should this operator equal
+do within within its execution it
+shouldn't do what the default operator
+does but I have a slide of what we think
+it should
+accomplish so let's look at different
+scenarios if I write this line in my
+code then I'll have some B and some a
+objects so let's look at this first case
+where this objects are different that is
+they have different memory regions
+associated with their members and
+whatever dynamic memory that they have
+so they look different right they
+different spheres because we're talking
+about spheres but whatever U classes you
+want to talk about so they're different
+so in this case what should be the
+result of this assignment how should be
+look like after this
+assignment it should look just like a
+right just like
+a but in a separate space of memory
+right we don't want to have it in the
+same location right we we just want
+to then free all of this memory and put
+new values there
+right however we should make sure that
+it's not this situation where imagine
+that b and a are already just two
+different names of the same memory so
+they are two different names of the same
+sphere in that case what should be the
+result of this
+operation nothing you're done right so
+do nothing
+here right do nothing here otherwise
+you'll just do more work okay so here do
+nothing here what should you do
+here how do you check that this
+situation is this and not
+this so if right hand side is not equal
+in some sense to left hand side right
+which is what they're not identical
+memory they're not two different names
+for the same sphere or already only in
+that case you want to do two operations
+you want to
+clear the left hand side the get get rid
+of this
+memory and then what
+copy copy the right hand side into the
+left hand side so think of this first
+step as your
+Destructor and the Second Step as your
+copy
+Constructor so effectively it will be
+the same code and that's why I'll show
+you in the next
+slide how this operator
+equal function
+is
+implemented so it takes the right hand
+side as a
+parameter it returns a sphere by
+reference which is this so whatever B is
+do you remember what this is in C++
+maybe we didn't discuss it I think in
+one of the labs it mentions it but do
+you remember what is this this
+is
+a pointer
+to
+the to the object right to the
+object So within the object or to to
+itself to itself let's put
+itself so within this object when you
+call any of these functions this will
+refer to to to to me to the object
+that's calling but except that through a
+pointer so this is a pointer that's why
+if you want want to return
+B like in our picture before if you want
+to return
+B uh from sphere you have to Der
+reference
+this and return
+it
+okay but anyway so all your operator
+assignment or operator equal is doing is
+checking if this is not equal to the
+right hand side that is if they're not
+the same
+names uh different names to the same
+memory uh location of a of a sphere then
+clear or call the same lines as the
+destructor and then copy that is call
+the same lines as a copy
+Constructor and these are the helper
+functions that are very useful to keep
+so instead of actually writing
+Constructors or copy Constructors you
+write as two helper functions and call
+correspondingly them when needed because
+they are needed in Constructors they
+needed in destructors and they needed in
+various operators as well and in your
+Labs that's what we
+do okay but this is essentially a
+Destructor code and this is a copy
+Constructor code okay so do you like
+this and help me parse it I think like
+it can be really overwhelming I think
+when you see it for the first time so do
+you like
+this and um um I think my first question
+about is what is this first line in the
+first place what is this why not this
+and what does it even mean parse this
+for me I really really want you to parse
+this
+yeah so we can talk about it here if you
+if you answer then I'll see if you
+prepare your answer so why why not this
+and why this what is this accomplishing
+so remember we're talking about b equals
+a this line of code a is passed by
+reference as a right hand side and
+B is this
+object um you can think of this B A is
+assigned to B as the
+following equivalent synta B
+operator equals of
+a so that's what's going on underneath
+when you sign a to B this operator will
+be called as if you wrote this so this
+is a a little more understandable right
+it's like you take B object you access
+its member function operator equal and
+you're calling it with this parameter a
+so that's that's cool right then the
+right hand side is effectively a by
+reference and a constant
+reference that is we are not making a
+copy of a and we promise not to change
+the right hand side but the return value
+should be changed B right so the return
+value should be
+this and not a pointer to it not this
+but a der reference this the B itself
+the object B that we are passing we are
+passing it by reference remember passing
+by reference is dang returning by
+reference is a dangerous thing but B is
+not a local variable this is not local
+this is living somewhere globally so
+returning it by reference is perfectly
+fine because otherwise if you don't if
+you return it by you there's a copy
+Constructor and we don't want that we
+just want to return updated b b will be
+updated upon this
+call that's good right that's good so
+this is
+good this is now okay so what are we
+checking with this we checking that the
+pointer that is the memory location of B
+is not equal to the memory location of
+a right so they are not two different
+references or two different names of the
+same memory so why don't we instead
+check whether the object B itself is not
+the same as
+a because then we wouldn't have to do
+the copying why don't we do this so
+there are three reasons and we're going
+to list them all guess one why is that
+how long will it be to do that that's
+first
+question how long will
+be how how long will it take whether B
+is not equal to
+a essentially it's kind of like checking
+B is not equal to a instead of checking
+the address of B is not equal the
+address of a which is this
+so this is fact because it's just
+checking the addresses this is lawn
+because that's the member wise checking
+for equality right so it's as long as
+just to make a new copy of
+B so we don't need to do that like yeah
+maybe it would save time in what not
+make in a copy of B but to check for it
+you have to go member wise so it's as
+long so that's why we don't do this so
+number one because it will
+take a as
+long as just create a new
+copy
+create a new copy of
+B okay so that's one thing there's some
+other things that I don't
+remember oh yeah yeah then you would
+also have to overload this operation we
+didn't overload it otherwise by default
+it would only go through members and not
+the dynamic memory values so you would
+have to overwrite another other
+operation maybe you want to do that
+maybe you don't but in then just
+checking the addresses is fine perfectly
+fine so I'll go back to that picture
+that was very helpful so essentially uh
+checking that
+this is not equal to the address of
+right hand side or essentially address
+of B is not equal to address of a it's
+this picture and that's all we want to
+do we don't really want to check if B
+memberwise is not equal to a we just say
+okay in that case we'll still make a new
+copy because it just would take as long
+doesn't matter okay now there's one more
+thing one more thing we actually want
+to Nest this
+operators so so far we wrote a nice code
+for assigning A to B but how do we make
+sure that then we can assign the result
+to
+C right so that's the question and uh we
+still have some time so we answered this
+kind
+of
+uh yeah this is this comes to this
+question so do you like this function
+signature for operator equal will it
+really accomplish everything we'll want
+to do with this equality
+operation and that means can we do
+nesting or can we do something that is
+not even allowed maybe so
+so is this a good function signature
+what do you
+think
+and I'll pull my
+code because we will talk about
+this um operation equality yeah one
+wait yeah so we will talk about this one
+yeah let's let's open
+that so do you like this function
+signature that I have
+you like this function signature is that
+okay that is we return B by
+reference as a
+sphere and
+uh let's trace this code a little bit
+and then you'll tell me if you like this
+function signature or not or if it's
+causing any kind of trouble so let me
+declare a on the stack that's my default
+3.2 sphere Apple whatever sphere B will
+have different radius then I assign B to
+a which should make be what 3.2 right so
+then if you trace all the constructors D
+structors and let's not do this weird
+thing then uh I'll also print if I'm
+doing operation equality so let's see
+what
+happens here
+three yeah so just default Constructor
+parameter
+Constructor the default Constructor
+parameter Constructor operation equal
+and both of A and B go out of scope but
+we assigned a to B so now they are 3.2
+both so they go out of scope everything
+is fine but now I do this I say B assign
+A to
+B and then dots at radius one what's
+that where and why is it even
+allowed and it's all because of the
+wrong function
+signature so um let me see where can
+I what is the return of this function
+it's the object B
+right and let's write it differently
+operator equality of a then maybe it's
+kind of easier to see that we passed a
+to equality and B on B and the return
+is B by reference right so if return is
+B by reference we could change it to
+different radius is but this should be
+disallowed right how do we disallow it
+how do we prescribe not to change
+whatever is
+returned
+anymore just like we prescribe not to
+change whatever we pass in the function
+as a parameter we could prescribe that
+okay don't do this nope you're not
+allowed to work with whatever is the
+result of this operation you you're not
+allowed to change it you can pass it
+to be assigned to something else but
+without changes so let's see if now we
+can compile it nope now it says no you
+can't really assign or change that res
+result of this
+operation you cannot touch that object
+you cannot modify that object that is
+returned and that's why in our code in
+MPS and Labs you'll see constants there
+because we really want this to behave
+more like an assignment
+operator and uh so what we want is maybe
+you have
+another um sphere
+C and you want C to be assigned to B to
+assign to a so you want to have this
+nested values because essentially then
+the right hand side is going to be
+evaluated first so the return of the
+assignment of a to B will be passed as a
+parameter to C and that's fine because
+you're not modifying it but this will be
+disallowed and um this was accomplished
+with this const keyword so let's try to
+uh compile it
+again see so that's that's all good and
+now you have another uh object that was
+destructed which is C and it's 3.2
+because a was assigned to be and then
+the result was assigned to C so we can
+Nest this assignment
+operators wow a lot of synx here
+right now do you want to help me are we
+Brave to do this and write a operat
+plus you want to do that let's just we
+have exactly the right amount of time to
+write all sorts of things like you know
+try to figure it out together so I want
+an
+operator
+plus that would be a compiler or
+operator plus so I will take
+some list of parameters and I return
+some
+value you want to look maybe write some
+what we want to accomplish maybe first
+so
+this so what is what does it mean that I
+add two
+spheres well I want B to be able to call
+Operator
+plus operator Plus on a so I'll pass a
+on B and the return should be a
+completely new object right it shouldn't
+be B modified B should stay unchanged a
+should CH stay unchanged but the result
+of this
+operation should be assignable to some
+third sphere here
+right so what does it mean for function
+signature
+right let's think about it so we'll call
+this operator on B which is this in this
+scope and we'll pass constant sphere
+reference of
+a because we don't want to change it
+right we better make sure
+that b is not changed so we should say
+const there b should not be modified in
+the process and what do we return we'll
+return a
+sphere by reference or Not by reference
+something to to figure it out figure out
+but the thing is
+that it should be a third object so it
+should be some new sphere that we will
+Define here in the scope of this
+operator
+plus and the sphere T radius should be
+let's say it's when we add two spheres
+we just add the radiuses okay which
+means that it's
+this so it's radius of
+this of B plus A's
+radius right and that's T radius and
+then we return T so we can't return it
+by
+reference we can't return it by
+reference because we would be this is a
+local variable that's third object that
+we created and we created it within this
+operator so it's a local variable we
+should return it by
+value and I think that's it is there any
+problem with
+that we should probably also call it
+constate so whatever that value is
+returned we should not say dot da da do
+some weird operations on it okay so then
+I'll say t = b +
+a now let's see what
+happens let me show you this so this is
+our operator equal this is our operator
+equal operat plus so let's Rec compile
+hey I was a little nervous but there you
+go do you see that we called operator
+equal on
+3.2 because a was passed and then
+there's operator equal for assignment to
+C but it already has
+6.4 which
+is
+3.2 plus b became 3.2
+right but let's make the C maybe one
+then it's easier to
+see what
+happens okay
+6.4 oh yeah it doesn't matter see it
+doesn't matter of course yeah okay so it
+doesn't really matter because we're
+overriding C anyways this is this is
+good the only thing that this constant
+was very important because we could do
+otherwise something weird like B+ a dots
+at radius so we don't want to do that if
+we didn't
+have
+[Music]
+if we didn't have this um constant right
+here we could do something weird like
+that and we really really don't want to
+do be able to do
+that yeah okay
+0.2 and that object of course is
+temporary so it's not even oh yeah it's
+not just temporary it's copied as a
+result because we're passing back by
+value here so it's copied back to this
+line therefore it's even destructed at
+0.2 so not good thing but if we put
+constant in the function
+signature
+then it says that don't do this weird
+stuff anymore you can just pass it as a
+Val as a as an object to another
+operation but don't modify it well don't
+modify the result of that operation just
+pass it somewhere in a nested
+operation okay
+so so now both of our operations are
+nestable but
+not uh
+modifiable doesn't have modifiable
+results that was a lot for
+today any
+questions
+so in my slides I do not have constants
+here but only because I want to talk
+about it why didn't I put constants
+because it's better to do that it's not
+at the end of the world if you don't
+write them but then you can do weird
+things like this oh you could even do
+this you know if you're not careful
+without constant you could assign C to
+the result of B plus a and that's not
+good
+um or this so you don't want to you want
+to disallow something like that you just
+want to have normal mathematical
+Expressions
+oh
+okay so that's it for today we're even a
+little
+early on
+time was this too
+much I think maybe it's just the first
+shock because um after that it'll be
+fine but it will be very important in
+this in this lab memory I think you have
+to implement some of this um code and
+it's really line by line to what I wrote
+today in class
+so so that will be easy if you followed
+or if you watch
+a I hope I recorded this lecture oh okay
+I almost had a hard
+attack okay we recorded because it what
+very unfortunate thing happened last
+time Elmer's uh lab uh
+debug part was not recorded for some
+weird reason I know that something
+happened with my computer but for for
+some reason just zoom didn't save that
+portion at all just disappeared
+somewhere so it's very important that we
+recorded it it's good you can go through
+the Slater look through the code and
+write your lab
+memory okay so let's just go 10 minutes
+earlier we're
+done

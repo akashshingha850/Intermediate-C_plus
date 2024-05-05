@@ -1,0 +1,6572 @@
+﻿1
+00:00:28,960 --> 00:00:32,960
+e e
+
+2
+00:01:28,920 --> 00:01:32,880
+sh e
+
+3
+00:02:28,840 --> 00:02:31,840
+sh
+
+4
+00:02:58,840 --> 00:03:02,800
+e e
+
+5
+00:03:38,200 --> 00:03:40,760
+you have
+
+6
+00:03:42,200 --> 00:03:45,360
+your you put your slides in the same
+
+7
+00:03:45,360 --> 00:03:50,879
+direction so I can just show the yeah
+
+8
+00:04:05,159 --> 00:04:08,239
+okay I think now maybe it's time to
+
+9
+00:04:08,239 --> 00:04:13,280
+start uh so yeah today uh now now like
+
+10
+00:04:13,280 --> 00:04:17,120
+uh lecture slides uh
+
+11
+00:04:17,120 --> 00:04:19,880
+instead uh we kind of put together some
+
+12
+00:04:19,880 --> 00:04:22,960
+sample exam
+
+13
+00:04:22,960 --> 00:04:26,199
+questions uh so this is covering like
+
+14
+00:04:26,199 --> 00:04:29,199
+basically all the topics that we've had
+
+15
+00:04:29,199 --> 00:04:31,720
+during this
+
+16
+00:04:32,000 --> 00:04:36,080
+course uh this doesn't necessarily mean
+
+17
+00:04:36,080 --> 00:04:37,960
+that this is
+
+18
+00:04:37,960 --> 00:04:42,600
+like uh covers like everything like
+
+19
+00:04:42,600 --> 00:04:44,160
+obvious obviously there's going to be
+
+20
+00:04:44,160 --> 00:04:46,800
+more questions in the exam than uh we
+
+21
+00:04:46,800 --> 00:04:50,240
+have here but uh that should give you a
+
+22
+00:04:50,240 --> 00:04:53,919
+pretty good idea of
+
+23
+00:04:54,240 --> 00:05:00,720
+um what what kind of questions you might
+
+24
+00:05:00,720 --> 00:05:02,880
+expect and what what kind of things you
+
+25
+00:05:02,880 --> 00:05:05,960
+you should like know for the
+
+26
+00:05:05,960 --> 00:05:11,840
+exam are you recording this yeah
+
+27
+00:05:12,120 --> 00:05:14,520
+yes
+
+28
+00:05:14,520 --> 00:05:17,960
+um okay so I'm I'm wondering I have like
+
+29
+00:05:17,960 --> 00:05:21,520
+this m multiple choice questions here
+
+30
+00:05:21,520 --> 00:05:22,800
+like the
+
+31
+00:05:22,800 --> 00:05:25,800
+example I have I think with this amount
+
+32
+00:05:25,800 --> 00:05:26,880
+of people
+
+33
+00:05:26,880 --> 00:05:28,400
+maybe
+
+34
+00:05:28,400 --> 00:05:31,319
+uh maybe maybe maybe you can just kind
+
+35
+00:05:31,319 --> 00:05:33,759
+of
+
+36
+00:05:33,800 --> 00:05:36,319
+um maybe we can kind of just talk about
+
+37
+00:05:36,319 --> 00:05:38,919
+the uh options and I'm not going to set
+
+38
+00:05:38,919 --> 00:05:43,639
+up like a voting thing for
+
+39
+00:05:44,440 --> 00:05:47,880
+this yeah like like with all these
+
+40
+00:05:47,880 --> 00:05:51,360
+topics please ask if you have like um
+
+41
+00:05:51,360 --> 00:05:53,440
+any any
+
+42
+00:05:53,440 --> 00:05:56,000
+questions uh okay let's let's look at
+
+43
+00:05:56,000 --> 00:05:57,479
+the first
+
+44
+00:05:57,479 --> 00:06:02,479
+one uh so Psy
+
+45
+00:06:03,199 --> 00:06:06,880
+about uh kind of at this start of the
+
+46
+00:06:06,880 --> 00:06:09,440
+course classes struct and
+
+47
+00:06:09,440 --> 00:06:14,160
+Constructors uh as as a topic so uh we
+
+48
+00:06:14,160 --> 00:06:16,240
+have this kind of
+
+49
+00:06:16,240 --> 00:06:20,240
+um class with with this data member X
+
+50
+00:06:20,240 --> 00:06:22,440
+and the question is how can
+
+51
+00:06:22,440 --> 00:06:26,880
+you how can you initialize X and and
+
+52
+00:06:26,880 --> 00:06:30,080
+here's uh three different options
+
+53
+00:06:30,080 --> 00:06:31,919
+then you can also choose that that two
+
+54
+00:06:31,919 --> 00:06:34,960
+of these are correct or all of these are
+
+55
+00:06:34,960 --> 00:06:39,240
+correct so any anyone want to say uh
+
+56
+00:06:39,240 --> 00:06:42,360
+what they think is the right
+
+57
+00:06:43,639 --> 00:06:48,720
+answer that's the same Clear
+
+58
+00:06:50,960 --> 00:06:53,759
+or yeah that's that's
+
+59
+00:06:53,759 --> 00:06:57,639
+right uh yeah I'm not completely sure
+
+60
+00:06:57,639 --> 00:06:59,039
+like like we haven't talked that much
+
+61
+00:06:59,039 --> 00:07:01,800
+about like this option actually I I feel
+
+62
+00:07:01,800 --> 00:07:03,400
+like we talked more
+
+63
+00:07:03,400 --> 00:07:07,680
+about uh these but yes all of these
+
+64
+00:07:07,680 --> 00:07:10,680
+are
+
+65
+00:07:10,840 --> 00:07:14,879
+correct but it's in line 17 right yeah
+
+66
+00:07:14,879 --> 00:07:17,560
+you can do that yeah they in functions
+
+67
+00:07:17,560 --> 00:07:22,680
+like initi that like especially inherit
+
+68
+00:07:22,680 --> 00:07:26,000
+right pure virtual
+
+69
+00:07:26,000 --> 00:07:28,120
+function
+
+70
+00:07:28,120 --> 00:07:31,520
+yeah but not
+
+71
+00:07:34,039 --> 00:07:37,479
+it's any this a very very kind of basic
+
+72
+00:07:37,479 --> 00:07:39,639
+question about Constructors so I think
+
+73
+00:07:39,639 --> 00:07:41,759
+what's interesting about this setup is
+
+74
+00:07:41,759 --> 00:07:42,800
+that
+
+75
+00:07:42,800 --> 00:07:44,800
+the
+
+76
+00:07:44,800 --> 00:07:47,840
+um the exam is going to be online so in
+
+77
+00:07:47,840 --> 00:07:50,120
+the worst case you can always test it
+
+78
+00:07:50,120 --> 00:07:52,240
+right like you have your laptop you can
+
+79
+00:07:52,240 --> 00:07:54,639
+test it right but the question is how
+
+80
+00:07:54,639 --> 00:07:56,560
+many of these you'll we actually have to
+
+81
+00:07:56,560 --> 00:07:59,159
+implement the tesed because we will not
+
+82
+00:07:59,159 --> 00:08:01,240
+provide you a
+
+83
+00:08:01,240 --> 00:08:03,319
+copyable
+
+84
+00:08:03,319 --> 00:08:05,639
+test yeah yeah a lot of the time it's
+
+85
+00:08:05,639 --> 00:08:08,240
+going to be kind of like this where
+
+86
+00:08:08,240 --> 00:08:11,560
+maybe it's like a like an image yes it
+
+87
+00:08:11,560 --> 00:08:14,199
+be really hard to to test all of them in
+
+88
+00:08:14,199 --> 00:08:16,159
+the given time so hopefully you have
+
+89
+00:08:16,159 --> 00:08:18,280
+enough fluen
+
+90
+00:08:18,280 --> 00:08:23,639
+to to know but still in in some extreme
+
+91
+00:08:23,639 --> 00:08:26,680
+cases you can always test it yeah I
+
+92
+00:08:26,680 --> 00:08:28,639
+think for some of these it's definitely
+
+93
+00:08:28,639 --> 00:08:32,399
+like uh you'll you'll probably end up
+
+94
+00:08:32,399 --> 00:08:33,799
+like
+
+95
+00:08:33,799 --> 00:08:35,519
+testing and
+
+96
+00:08:35,519 --> 00:08:38,200
+especially like maybe you've already
+
+97
+00:08:38,200 --> 00:08:40,559
+answered once to every question and then
+
+98
+00:08:40,559 --> 00:08:42,479
+you're thinking yeah I have some time
+
+99
+00:08:42,479 --> 00:08:44,519
+I'll make sure that these are
+
+100
+00:08:44,519 --> 00:08:48,160
+correct maybe something like that uh
+
+101
+00:08:48,160 --> 00:08:50,519
+okay let's
+
+102
+00:08:50,519 --> 00:08:54,399
+um move to the next one I can to zoom
+
+103
+00:08:54,399 --> 00:08:59,560
+out so then this is about um like CPP
+
+104
+00:08:59,560 --> 00:09:03,320
+and and uh header files and capsulation
+
+105
+00:09:03,320 --> 00:09:05,320
+so there's some kind of problem with
+
+106
+00:09:05,320 --> 00:09:08,320
+this class what line should you change
+
+107
+00:09:08,320 --> 00:09:10,600
+to fix it and
+
+108
+00:09:10,600 --> 00:09:14,959
+somebody spot where the problem
+
+109
+00:09:27,360 --> 00:09:33,040
+is also online you can you can post in
+
+110
+00:09:55,160 --> 00:10:00,040
+chat that's a very very uh kind of
+
+111
+00:10:00,040 --> 00:10:02,040
+critical
+
+112
+00:10:02,040 --> 00:10:04,120
+problem here but it might be a little
+
+113
+00:10:04,120 --> 00:10:06,959
+bit difficult to
+
+114
+00:10:19,720 --> 00:10:23,160
+spot well let's see so so line line 14
+
+115
+00:10:23,160 --> 00:10:25,800
+is the Constructor so that that one's
+
+116
+00:10:25,800 --> 00:10:27,200
+not doing anything but it doesn't have
+
+117
+00:10:27,200 --> 00:10:31,279
+to because because is initialized here
+
+118
+00:10:31,279 --> 00:10:36,639
+15 is a avoid display we we' defined
+
+119
+00:10:36,639 --> 00:10:38,680
+that declared and Define some kind of
+
+120
+00:10:38,680 --> 00:10:41,360
+display function it seems
+
+121
+00:10:41,360 --> 00:10:43,600
+fine uh
+
+122
+00:10:43,600 --> 00:10:47,720
+16 U we've declared this calculate
+
+123
+00:10:47,720 --> 00:10:51,440
+function void calculate with an INT
+
+124
+00:10:51,440 --> 00:10:56,079
+argument yeah that's correct
+
+125
+00:10:57,120 --> 00:11:00,600
+declaration uh 18 yeah as we established
+
+126
+00:11:00,600 --> 00:11:03,440
+we can um
+
+127
+00:11:03,440 --> 00:11:05,000
+initialize
+
+128
+00:11:05,000 --> 00:11:09,000
+uh data members this way it's
+
+129
+00:11:09,000 --> 00:11:11,959
+fine but then the problem is uh on line
+
+130
+00:11:11,959 --> 00:11:17,079
+21 so so what is the problem here
+
+131
+00:11:30,519 --> 00:11:33,200
+yeah that's right so if you do something
+
+132
+00:11:33,200 --> 00:11:35,760
+like this
+
+133
+00:11:37,320 --> 00:11:39,839
+then yeah yeah then the compiler is
+
+134
+00:11:39,839 --> 00:11:41,760
+going to be confused like what what is
+
+135
+00:11:41,760 --> 00:11:44,920
+this thing without a type and like this
+
+136
+00:11:44,920 --> 00:11:47,120
+calculate function doesn't actually have
+
+137
+00:11:47,120 --> 00:11:48,120
+a
+
+138
+00:11:48,120 --> 00:11:49,639
+definition
+
+139
+00:11:49,639 --> 00:11:53,760
+uh it's it's going to be
+
+140
+00:11:56,399 --> 00:11:59,519
+confused it's a it's a strange
+
+141
+00:11:59,519 --> 00:12:03,440
+because it's so easy to it
+
+142
+00:12:06,120 --> 00:12:09,000
+the
+
+143
+00:12:09,000 --> 00:12:12,320
+yeah was trying to do yeah it's a
+
+144
+00:12:12,320 --> 00:12:14,240
+difficult problem it's like a tricky a
+
+145
+00:12:14,240 --> 00:12:18,040
+little bit of tricky question yeah think
+
+146
+00:12:18,040 --> 00:12:20,240
+uh for for the
+
+147
+00:12:20,240 --> 00:12:23,440
+sample questions it's like
+
+148
+00:12:23,440 --> 00:12:26,560
+uh I I didn't really mind if they ended
+
+149
+00:12:26,560 --> 00:12:28,760
+up being like a little bit of like trick
+
+150
+00:12:28,760 --> 00:12:30,639
+question
+
+151
+00:12:30,639 --> 00:12:34,399
+we like that's why we decided that El
+
+152
+00:12:34,399 --> 00:12:36,160
+comes up with good questions is the good
+
+153
+00:12:36,160 --> 00:12:38,199
+questions but then I'll be the we'll
+
+154
+00:12:38,199 --> 00:12:40,279
+together decide what's fair and what's
+
+155
+00:12:40,279 --> 00:12:43,199
+string maybe this would be a little too
+
+156
+00:12:43,199 --> 00:12:46,480
+I'll make it a little I would give him H
+
+157
+00:12:46,480 --> 00:12:49,079
+answers because it's so easy to fix with
+
+158
+00:12:49,079 --> 00:12:50,639
+the compiler
+
+159
+00:12:50,639 --> 00:12:53,560
+so well it's a good question but maybe
+
+160
+00:12:53,560 --> 00:12:55,560
+in the way it is B it is a little too
+
+161
+00:12:55,560 --> 00:12:58,800
+tricky but then there's a way to F it a
+
+162
+00:12:58,800 --> 00:13:02,839
+little trick still test this yeah yeah
+
+163
+00:13:02,839 --> 00:13:05,639
+the point today is to kind of uh just
+
+164
+00:13:05,639 --> 00:13:10,600
+cover the topics and and uh point us to
+
+165
+00:13:10,600 --> 00:13:14,320
+scare yeah maybe find some like gotas
+
+166
+00:13:14,320 --> 00:13:16,760
+here and
+
+167
+00:13:17,079 --> 00:13:20,000
+there okay uh let's let's look at make
+
+168
+00:13:20,000 --> 00:13:22,279
+files a little bit so although once we
+
+169
+00:13:22,279 --> 00:13:25,000
+give this problem now I made it Al to
+
+170
+00:13:25,000 --> 00:13:27,440
+Fair because we covered it like look
+
+171
+00:13:27,440 --> 00:13:28,920
+there there's going to be a test
+
+172
+00:13:28,920 --> 00:13:31,240
+question question now actually now after
+
+173
+00:13:31,240 --> 00:13:34,360
+El this problem maybe it's not so tricky
+
+174
+00:13:34,360 --> 00:13:36,000
+because we warned you like okay just
+
+175
+00:13:36,000 --> 00:13:38,440
+check the
+
+176
+00:13:41,160 --> 00:13:43,560
+types especially those who are here and
+
+177
+00:13:43,560 --> 00:13:46,440
+who listen to the question to the review
+
+178
+00:13:46,440 --> 00:13:49,120
+session but but still still you know
+
+179
+00:13:49,120 --> 00:13:51,440
+like I I see that some students will be
+
+180
+00:13:51,440 --> 00:13:53,199
+may get really mad because it's not
+
+181
+00:13:53,199 --> 00:13:55,800
+really testing it's testing attention
+
+182
+00:13:55,800 --> 00:13:58,720
+rather than the knowledge right but but
+
+183
+00:13:58,720 --> 00:14:01,160
+still well I mean I mean even then it's
+
+184
+00:14:01,160 --> 00:14:03,519
+like you can kind of like eliminate
+
+185
+00:14:03,519 --> 00:14:05,440
+these options like okay well there's no
+
+186
+00:14:05,440 --> 00:14:07,720
+no problem with any of these see there's
+
+187
+00:14:07,720 --> 00:14:11,320
+no problem yeah and there is no like
+
+188
+00:14:11,320 --> 00:14:13,160
+none of the
+
+189
+00:14:13,160 --> 00:14:18,040
+above okay let's go this is okay uh then
+
+190
+00:14:18,040 --> 00:14:20,000
+about make files there's probably not
+
+191
+00:14:20,000 --> 00:14:22,320
+going to be like many questions about
+
+192
+00:14:22,320 --> 00:14:25,440
+make files but but they should like if
+
+193
+00:14:25,440 --> 00:14:27,800
+you can answer this then then I I think
+
+194
+00:14:27,800 --> 00:14:29,759
+you'll be fine
+
+195
+00:14:29,759 --> 00:14:31,880
+uh so we have this kind of make
+
+196
+00:14:31,880 --> 00:14:34,240
+file uh there's some kind of build
+
+197
+00:14:34,240 --> 00:14:36,519
+command that's not specified but but we
+
+198
+00:14:36,519 --> 00:14:38,079
+assume that it's
+
+199
+00:14:38,079 --> 00:14:43,240
+fine uh and then we have three different
+
+200
+00:14:43,240 --> 00:14:46,519
+statements Al so let's kind of uh go
+
+201
+00:14:46,519 --> 00:14:48,360
+through this one by one
+
+202
+00:14:48,360 --> 00:14:51,320
+so if the
+
+203
+00:14:51,320 --> 00:14:54,199
+dependency Shaggy for does not exist in
+
+204
+00:14:54,199 --> 00:14:58,040
+the directory executing make will
+
+205
+00:14:58,040 --> 00:15:01,480
+fail is this
+
+206
+00:15:08,399 --> 00:15:13,800
+true it's being used uh here and and
+
+207
+00:15:13,800 --> 00:15:16,959
+there uh and
+
+208
+00:15:16,959 --> 00:15:19,880
+there there I don't know if you guys
+
+209
+00:15:19,880 --> 00:15:23,320
+remember make files but uh can you tell
+
+210
+00:15:23,320 --> 00:15:27,120
+based on this uh what will happen if if
+
+211
+00:15:27,120 --> 00:15:31,240
+if Shaggy for does not exist in the
+
+212
+00:15:48,839 --> 00:15:51,720
+directory ex executive make means just
+
+213
+00:15:51,720 --> 00:15:53,200
+running make without any
+
+214
+00:15:53,200 --> 00:15:54,959
+[Music]
+
+215
+00:15:54,959 --> 00:15:58,040
+arguments how can you repat that uh
+
+216
+00:15:58,040 --> 00:15:59,720
+executing make
+
+217
+00:15:59,720 --> 00:16:01,839
+what does it mean is just running make
+
+218
+00:16:01,839 --> 00:16:06,759
+without any arguments like just make
+
+219
+00:16:06,759 --> 00:16:10,279
+uh what what is going to basically Randy
+
+220
+00:16:10,279 --> 00:16:11,480
+make
+
+221
+00:16:11,480 --> 00:16:13,800
+all
+
+222
+00:16:13,800 --> 00:16:17,360
+okay what what will happen after Ty
+
+223
+00:16:17,360 --> 00:16:19,199
+right in a
+
+224
+00:16:19,199 --> 00:16:23,199
+terminal question
+
+225
+00:16:30,440 --> 00:16:32,680
+okay so has probably been a while since
+
+226
+00:16:32,680 --> 00:16:34,880
+you actually used okay it should not
+
+227
+00:16:34,880 --> 00:16:39,199
+fail uh oh okay yeah yeah that's that's
+
+228
+00:16:39,199 --> 00:16:42,040
+right uh yeah that that in itself is not
+
+229
+00:16:42,040 --> 00:16:44,240
+a problem so so if you if you've kind of
+
+230
+00:16:44,240 --> 00:16:46,920
+forgotten how
+
+231
+00:16:46,920 --> 00:16:49,319
+um make fils
+
+232
+00:16:49,319 --> 00:16:51,240
+work
+
+233
+00:16:51,240 --> 00:16:54,240
+uh
+
+234
+00:16:54,519 --> 00:16:58,399
+basically basically this is something on
+
+235
+00:16:58,399 --> 00:17:00,120
+the left side side is like what what's
+
+236
+00:17:00,120 --> 00:17:04,520
+being uh built and then uh on the right
+
+237
+00:17:04,520 --> 00:17:07,799
+side is is what's being required and and
+
+238
+00:17:07,799 --> 00:17:09,959
+makefile will will first check if it's
+
+239
+00:17:09,959 --> 00:17:12,919
+already in the directory and if it's not
+
+240
+00:17:12,919 --> 00:17:15,679
+then it's going to uh build it based on
+
+241
+00:17:15,679 --> 00:17:18,760
+the uh
+
+242
+00:17:19,000 --> 00:17:21,599
+requirements uh okay well if the
+
+243
+00:17:21,599 --> 00:17:24,520
+dependency carting does not exist in the
+
+244
+00:17:24,520 --> 00:17:26,919
+directory executing May quot Fail what
+
+245
+00:17:26,919 --> 00:17:28,930
+about this is this
+
+246
+00:17:28,930 --> 00:17:31,999
+[Music]
+
+247
+00:17:33,600 --> 00:17:35,640
+okay maybe actually if
+
+248
+00:17:35,640 --> 00:17:38,640
+ISS
+
+249
+00:17:39,760 --> 00:17:41,280
+[Music]
+
+250
+00:17:41,280 --> 00:17:44,880
+because I I think a
+
+251
+00:17:44,880 --> 00:17:47,880
+fails yeah yeah yeah that's correct so
+
+252
+00:17:47,880 --> 00:17:51,520
+and the reason it fails is that there's
+
+253
+00:17:51,520 --> 00:17:54,880
+no rule to build Cara in here so if it
+
+254
+00:17:54,880 --> 00:17:57,080
+doesn't exist in the directory then
+
+255
+00:17:57,080 --> 00:18:00,400
+there's nothing it can do
+
+256
+00:18:00,400 --> 00:18:03,000
+uh but in the case of Shaggy fur it can
+
+257
+00:18:03,000 --> 00:18:04,559
+see like okay well as long as we have
+
+258
+00:18:04,559 --> 00:18:07,200
+keratin we can we can make
+
+259
+00:18:07,200 --> 00:18:10,400
+it but in the case of Kera that's not
+
+260
+00:18:10,400 --> 00:18:12,600
+the
+
+261
+00:18:13,280 --> 00:18:18,240
+case yeah will also fail uh well well in
+
+262
+00:18:18,240 --> 00:18:21,799
+the case that keratin doesn't exist then
+
+263
+00:18:21,799 --> 00:18:24,720
+then in the end a will fail but by in
+
+264
+00:18:24,720 --> 00:18:26,440
+itself
+
+265
+00:18:26,440 --> 00:18:29,640
+uh this is not a problem if shager
+
+266
+00:18:29,640 --> 00:18:32,039
+doesn't exist the problem is if the
+
+267
+00:18:32,039 --> 00:18:33,679
+Keratin doesn't
+
+268
+00:18:33,679 --> 00:18:36,799
+exist uh no problem is the Llama right
+
+269
+00:18:36,799 --> 00:18:39,720
+the
+
+270
+00:18:40,919 --> 00:18:44,880
+Llama so all depends on angulate
+
+271
+00:18:44,880 --> 00:18:48,840
+assembly it depends on
+
+272
+00:18:48,919 --> 00:18:52,080
+angulate angul angul is mountain goat
+
+273
+00:18:52,080 --> 00:18:56,960
+Lama so Lama depends on Shag
+
+274
+00:19:00,440 --> 00:19:03,640
+okay yeah well like with these questions
+
+275
+00:19:03,640 --> 00:19:07,400
+you can kind of assume that everything
+
+276
+00:19:07,400 --> 00:19:12,039
+else like exists and and is okay uh but
+
+277
+00:19:12,039 --> 00:19:14,799
+then the question is if if something is
+
+278
+00:19:14,799 --> 00:19:18,080
+missing then then what
+
+279
+00:19:18,080 --> 00:19:20,600
+happens but in any case the the
+
+280
+00:19:20,600 --> 00:19:23,960
+important thing is to understand the
+
+281
+00:19:23,960 --> 00:19:27,919
+like basics of of how make files work so
+
+282
+00:19:27,919 --> 00:19:30,360
+okay so we phras it like this if all of
+
+283
+00:19:30,360 --> 00:19:36,000
+the dependencies except sh
+
+284
+00:19:36,039 --> 00:19:39,679
+exist yeah yeah sure all
+
+285
+00:19:39,679 --> 00:19:43,240
+needed right so that would clarify would
+
+286
+00:19:43,240 --> 00:19:45,640
+that clarify all the questions they say
+
+287
+00:19:45,640 --> 00:19:48,320
+if all
+
+288
+00:19:48,440 --> 00:19:51,840
+dependencies except
+
+289
+00:19:54,000 --> 00:19:59,360
+sh would make some then it would clarify
+
+290
+00:19:59,360 --> 00:20:01,640
+and then the second one if
+
+291
+00:20:01,640 --> 00:20:03,919
+all if all
+
+292
+00:20:03,919 --> 00:20:08,280
+dependencies except character exist then
+
+293
+00:20:08,280 --> 00:20:11,039
+still you can do because character
+
+294
+00:20:11,039 --> 00:20:12,679
+needs there
+
+295
+00:20:12,679 --> 00:20:15,640
+is would that
+
+296
+00:20:15,640 --> 00:20:18,120
+clarify it would not change the question
+
+297
+00:20:18,120 --> 00:20:19,720
+but maybe
+
+298
+00:20:19,720 --> 00:20:23,400
+clarify yeah yeah maybe maybe just
+
+299
+00:20:23,400 --> 00:20:25,280
+uh
+
+300
+00:20:25,280 --> 00:20:28,960
+um write more more about like like what
+
+301
+00:20:28,960 --> 00:20:31,480
+you can
+
+302
+00:20:34,320 --> 00:20:38,918
+assume but anyway that's enough
+
+303
+00:20:39,480 --> 00:20:42,000
+of so essentially just understand that
+
+304
+00:20:42,000 --> 00:20:44,480
+you need
+
+305
+00:20:48,120 --> 00:20:50,799
+toet okay let's have a question about
+
+306
+00:20:50,799 --> 00:20:53,880
+pointers so we have code like
+
+307
+00:20:53,880 --> 00:20:58,880
+this uh so so what is the result of this
+
+308
+00:20:58,880 --> 00:21:01,440
+and and now we we can with this kind of
+
+309
+00:21:01,440 --> 00:21:04,240
+questions you you can always assume that
+
+310
+00:21:04,240 --> 00:21:06,559
+it's not going to be about like oh
+
+311
+00:21:06,559 --> 00:21:07,840
+there's a library missing so I was not
+
+312
+00:21:07,840 --> 00:21:11,640
+going to try now now was like unless
+
+313
+00:21:11,640 --> 00:21:15,039
+it's like a question about libraries and
+
+314
+00:21:15,039 --> 00:21:18,400
+it like writes all the libraries uh in
+
+315
+00:21:18,400 --> 00:21:19,960
+the
+
+316
+00:21:19,960 --> 00:21:22,320
+example if it doesn't do that then you
+
+317
+00:21:22,320 --> 00:21:24,720
+can just assume that all of that is like
+
+318
+00:21:24,720 --> 00:21:27,240
+fine and that's not the problem with the
+
+319
+00:21:27,240 --> 00:21:30,360
+code um
+
+320
+00:21:30,360 --> 00:21:32,240
+okay
+
+321
+00:21:32,240 --> 00:21:34,720
+so what's going to
+
+322
+00:21:34,720 --> 00:21:38,120
+happen what is it going to send or or is
+
+323
+00:21:38,120 --> 00:21:43,559
+it going to have some kind of an error
+
+324
+00:22:04,120 --> 00:22:07,879
+I think I have code for this so I
+
+325
+00:22:13,320 --> 00:22:16,320
+can and show it in action or actually I
+
+326
+00:22:16,320 --> 00:22:18,679
+can just copy
+
+327
+00:22:18,679 --> 00:22:23,240
+this what from here
+
+328
+00:22:33,340 --> 00:22:36,159
+[Music]
+
+329
+00:22:36,159 --> 00:22:39,279
+if anyone wants to say what the what
+
+330
+00:22:39,279 --> 00:22:42,440
+they think the answer is let
+
+331
+00:22:42,440 --> 00:22:47,600
+me B please say
+
+332
+00:23:00,600 --> 00:23:03,880
+uh so you're saying that b will be
+
+333
+00:23:03,880 --> 00:23:07,320
+pointing to
+
+334
+00:23:07,320 --> 00:23:12,799
+a value of a value pointing to value of
+
+335
+00:23:12,799 --> 00:23:14,880
+a
+
+336
+00:23:14,880 --> 00:23:19,880
+or get it will get the value of a uh
+
+337
+00:23:19,880 --> 00:23:20,840
+yeah
+
+338
+00:23:20,840 --> 00:23:24,120
+okay okay but B is a pointer so so how
+
+339
+00:23:24,120 --> 00:23:28,879
+is the pointer going to get the value
+
+340
+00:23:32,000 --> 00:23:34,000
+well here
+
+341
+00:23:34,000 --> 00:23:38,000
+so so we did reference a and we try to
+
+342
+00:23:38,000 --> 00:23:42,480
+put it in this in
+
+343
+00:23:43,400 --> 00:23:46,400
+pointer
+
+344
+00:23:46,520 --> 00:23:52,400
+yeah very it's not a if you put
+
+345
+00:23:56,400 --> 00:24:00,559
+a uh I'm just from
+
+346
+00:24:00,559 --> 00:24:05,039
+the code in any case well we only need
+
+347
+00:24:05,039 --> 00:24:06,760
+like two of these
+
+348
+00:24:06,760 --> 00:24:09,760
+lines
+
+349
+00:24:16,640 --> 00:24:22,320
+um invalid conversion uh says the
+
+350
+00:24:22,320 --> 00:24:25,880
+compiler okay so compiler eror it
+
+351
+00:24:25,880 --> 00:24:29,159
+is um
+
+352
+00:24:29,159 --> 00:24:30,679
+yeah generally if there's like some kind
+
+353
+00:24:30,679 --> 00:24:33,960
+of in incompatible types then it's a
+
+354
+00:24:33,960 --> 00:24:35,600
+compiler
+
+355
+00:24:35,600 --> 00:24:41,080
+error and that's also in the case of
+
+356
+00:24:41,679 --> 00:24:45,000
+pointers yeah there should be like
+
+357
+00:24:45,000 --> 00:24:47,080
+uh this kind of question should be
+
+358
+00:24:47,080 --> 00:24:50,399
+really clear like like okay this is
+
+359
+00:24:50,399 --> 00:24:52,240
+definitely not something you can
+
+360
+00:24:52,240 --> 00:24:55,880
+do uh and and then if you're maybe
+
+361
+00:24:55,880 --> 00:24:57,720
+unsure if it's compiler or front time
+
+362
+00:24:57,720 --> 00:24:58,840
+error then
+
+363
+00:24:58,840 --> 00:25:01,760
+you could quickly write this code and
+
+364
+00:25:01,760 --> 00:25:04,120
+try it
+
+365
+00:25:05,240 --> 00:25:09,720
+out uh okay more
+
+366
+00:25:09,720 --> 00:25:12,960
+pointers uh so which of the following
+
+367
+00:25:12,960 --> 00:25:16,760
+should replace line one here so that the
+
+368
+00:25:16,760 --> 00:25:19,000
+code compiles and TRS with no warnings
+
+369
+00:25:19,000 --> 00:25:22,559
+and with five sent to standard
+
+370
+00:25:22,559 --> 00:25:26,600
+out the five is here in the in the X but
+
+371
+00:25:26,600 --> 00:25:29,960
+then for for for C out we're we're we're
+
+372
+00:25:29,960 --> 00:25:31,000
+putting
+
+373
+00:25:31,000 --> 00:25:36,240
+this uh double asterisk y
+
+374
+00:25:36,240 --> 00:25:38,720
+here so what do we need to do to make
+
+375
+00:25:38,720 --> 00:25:44,399
+that work we need to define y in some
+
+376
+00:25:48,279 --> 00:25:52,250
+way WR this code at the same
+
+377
+00:25:52,250 --> 00:25:55,240
+[Music]
+
+378
+00:25:55,240 --> 00:25:58,760
+time yeah let let me let me know
+
+379
+00:25:58,760 --> 00:26:04,399
+what we must do as I write this
+
+380
+00:26:10,880 --> 00:26:16,279
+code so we should definitely give y
+
+381
+00:26:24,240 --> 00:26:27,000
+something okay well what should we give
+
+382
+00:26:27,000 --> 00:26:30,240
+why we we have this option
+
+383
+00:26:31,039 --> 00:26:32,000
+maybe
+
+384
+00:26:32,000 --> 00:26:34,039
+D uh
+
+385
+00:26:34,039 --> 00:26:35,600
+D
+
+386
+00:26:35,600 --> 00:26:40,399
+yes yeah that that looks correct so we
+
+387
+00:26:40,399 --> 00:26:45,200
+give the address of p and p is another
+
+388
+00:26:45,200 --> 00:26:46,760
+pointer so then it's going to be a
+
+389
+00:26:46,760 --> 00:26:50,520
+pointer to a pointer which is basically
+
+390
+00:26:50,520 --> 00:26:56,120
+what what Y is so let's
+
+391
+00:26:56,120 --> 00:26:59,440
+um oh
+
+392
+00:26:59,440 --> 00:27:02,720
+my fingers are off by
+
+393
+00:27:06,720 --> 00:27:10,120
+one so like
+
+394
+00:27:10,120 --> 00:27:13,600
+that there we have
+
+395
+00:27:13,600 --> 00:27:17,240
+it so this isn't maybe like the kind of
+
+396
+00:27:17,240 --> 00:27:20,039
+code you would expect to see
+
+397
+00:27:20,039 --> 00:27:22,799
+somewhere but uh this will kind of test
+
+398
+00:27:22,799 --> 00:27:28,880
+your understanding of um pointers and uh
+
+399
+00:27:28,880 --> 00:27:31,120
+getting the address of something and and
+
+400
+00:27:31,120 --> 00:27:33,360
+the
+
+401
+00:27:34,080 --> 00:27:38,320
+referencing um okay um well we had this
+
+402
+00:27:38,320 --> 00:27:41,600
+category but it's kind of the
+
+403
+00:27:41,600 --> 00:27:45,000
+same yeah see
+
+404
+00:27:45,000 --> 00:27:48,720
+sty um yeah well well there is actually
+
+405
+00:27:48,720 --> 00:27:50,640
+yeah there there is this question
+
+406
+00:27:50,640 --> 00:27:52,320
+about
+
+407
+00:27:52,320 --> 00:27:56,799
+uh arrays I think I'll put maybe one to
+
+408
+00:27:56,799 --> 00:28:00,159
+salary question and May two
+
+409
+00:28:00,159 --> 00:28:02,880
+STL question yeah I I have four
+
+410
+00:28:02,880 --> 00:28:06,760
+different STL questions at the
+
+411
+00:28:06,760 --> 00:28:09,399
+end yeah I mean it's kind of like like
+
+412
+00:28:09,399 --> 00:28:12,960
+we were talking with pointers with v
+
+413
+00:28:12,960 --> 00:28:15,559
+like you probably need to like know them
+
+414
+00:28:15,559 --> 00:28:17,600
+to like survive in the
+
+415
+00:28:17,600 --> 00:28:20,039
+wild but we don't want to like
+
+416
+00:28:20,039 --> 00:28:23,919
+concentrate just on that we need
+
+417
+00:28:24,080 --> 00:28:28,440
+to but still it's it's important
+
+418
+00:28:28,440 --> 00:28:30,720
+because of the Legacy
+
+419
+00:28:30,720 --> 00:28:36,480
+code um okay this also maybe maybe I was
+
+420
+00:28:36,480 --> 00:28:38,760
+having a little trouble like phrasing
+
+421
+00:28:38,760 --> 00:28:41,679
+these options in a in a clear way but
+
+422
+00:28:41,679 --> 00:28:44,559
+but let's let's talk about in either way
+
+423
+00:28:44,559 --> 00:28:47,799
+so so we declare some kind of C style
+
+424
+00:28:47,799 --> 00:28:53,399
+array uh like this uh but then later we
+
+425
+00:28:53,399 --> 00:28:57,519
+want a bigger array so so what is
+
+426
+00:28:57,519 --> 00:28:59,039
+something that
+
+427
+00:28:59,039 --> 00:29:04,720
+that we can do to achieve that uh okay
+
+428
+00:29:04,720 --> 00:29:07,440
+so so is is something like this possible
+
+429
+00:29:07,440 --> 00:29:09,840
+is there some going to resize function
+
+430
+00:29:09,840 --> 00:29:15,559
+that we can use no uh okay can we just
+
+431
+00:29:15,559 --> 00:29:19,279
+like kind of append another array like
+
+432
+00:29:19,279 --> 00:29:21,399
+this
+
+433
+00:29:21,399 --> 00:29:25,919
+no uh okay can
+
+434
+00:29:25,919 --> 00:29:30,200
+we if if we replace is this um static
+
+435
+00:29:30,200 --> 00:29:32,279
+array with this Dynamic array can we
+
+436
+00:29:32,279 --> 00:29:35,159
+just freely resize
+
+437
+00:29:35,159 --> 00:29:39,840
+it no no we can't do that either
+
+438
+00:29:39,840 --> 00:29:42,600
+uh yeah yeah we're kind of end up here
+
+439
+00:29:42,600 --> 00:29:46,200
+so the data needs to be copy to a new
+
+440
+00:29:46,200 --> 00:29:50,000
+array in in either case that this
+
+441
+00:29:50,000 --> 00:29:53,799
+doesn't maybe like specify like
+
+442
+00:29:53,799 --> 00:29:57,399
+U much much details here but in any case
+
+443
+00:29:57,399 --> 00:30:01,039
+if you if you have a fixed
+
+444
+00:30:01,039 --> 00:30:04,919
+size array or or even even if you have a
+
+445
+00:30:04,919 --> 00:30:09,360
+dynamic array in either case if you then
+
+446
+00:30:09,360 --> 00:30:11,120
+want it to be bigger then you need to
+
+447
+00:30:11,120 --> 00:30:14,840
+copy it even with the case of
+
+448
+00:30:14,840 --> 00:30:18,279
+um like STD Vector it does that
+
+449
+00:30:18,279 --> 00:30:20,840
+internally but then uh kind
+
+450
+00:30:20,840 --> 00:30:24,279
+of yeah you can just keep adding things
+
+451
+00:30:24,279 --> 00:30:26,600
+to it and it's
+
+452
+00:30:26,600 --> 00:30:28,600
+fine yes
+
+453
+00:30:28,600 --> 00:30:30,240
+because of that they have like really
+
+454
+00:30:30,240 --> 00:30:33,080
+good performance growing up nicely but
+
+455
+00:30:33,080 --> 00:30:34,600
+then at some point when it needs to
+
+456
+00:30:34,600 --> 00:30:37,360
+double it'll be drop in performance
+
+457
+00:30:37,360 --> 00:30:40,679
+because it does affect that so so if
+
+458
+00:30:40,679 --> 00:30:44,440
+there was a question about Dynamic D
+
+459
+00:30:44,440 --> 00:30:47,279
+style then instead of just copying you
+
+460
+00:30:47,279 --> 00:30:49,440
+would have to first free the memory for
+
+461
+00:30:49,440 --> 00:30:51,880
+the original one and then copy yeah it
+
+462
+00:30:51,880 --> 00:30:54,039
+was a really cool
+
+463
+00:30:54,039 --> 00:30:55,639
+question
+
+464
+00:30:55,639 --> 00:30:59,639
+conceptually yeah
+
+465
+00:31:01,480 --> 00:31:06,480
+uh okay and one question about Asam
+
+466
+00:31:06,480 --> 00:31:07,840
+slash
+
+467
+00:31:07,840 --> 00:31:10,399
+backround uh so if we have a program
+
+468
+00:31:10,399 --> 00:31:12,360
+like this where where we have this kind
+
+469
+00:31:12,360 --> 00:31:15,600
+of obvious problem we we delete X and
+
+470
+00:31:15,600 --> 00:31:19,279
+then we try to dreference it and print
+
+471
+00:31:19,279 --> 00:31:23,240
+it uh what is something that ASA
+
+472
+00:31:23,240 --> 00:31:27,960
+and SLB grind can tell us about this
+
+473
+00:31:27,960 --> 00:31:29,399
+kind of
+
+474
+00:31:29,399 --> 00:31:32,080
+program uh so there's three different
+
+475
+00:31:32,080 --> 00:31:33,880
+statements and then you can say that
+
+476
+00:31:33,880 --> 00:31:38,200
+either two or all of them are
+
+477
+00:31:38,200 --> 00:31:40,240
+correct
+
+478
+00:31:40,240 --> 00:31:44,480
+um so there's a use after free type
+
+479
+00:31:44,480 --> 00:31:48,360
+error well well this is kind of clear
+
+480
+00:31:48,360 --> 00:31:50,320
+like like yeah yeah it's going to say
+
+481
+00:31:50,320 --> 00:31:52,399
+something like that but you're trying to
+
+482
+00:31:52,399 --> 00:31:55,000
+access something that that's already
+
+483
+00:31:55,000 --> 00:31:56,399
+been
+
+484
+00:31:56,399 --> 00:31:59,679
+freed uh then what about B is is it able
+
+485
+00:31:59,679 --> 00:32:03,799
+to tell which line caused the error do
+
+486
+00:32:03,799 --> 00:32:06,399
+know
+
+487
+00:32:06,399 --> 00:32:09,840
+yes uh okay is it able to tell where the
+
+488
+00:32:09,840 --> 00:32:13,399
+memory was allocated and where it was
+
+489
+00:32:13,399 --> 00:32:17,919
+freed yes that's also yes so all of the
+
+490
+00:32:17,919 --> 00:32:20,399
+above statements are
+
+491
+00:32:20,399 --> 00:32:23,360
+correct so I think this is like as long
+
+492
+00:32:23,360 --> 00:32:27,960
+as you like use D or or Val then I think
+
+493
+00:32:27,960 --> 00:32:31,519
+this should be clear that this is the
+
+494
+00:32:31,519 --> 00:32:34,760
+case also for a short test like this you
+
+495
+00:32:34,760 --> 00:32:36,080
+could
+
+496
+00:32:36,080 --> 00:32:39,080
+easily just write it yourself and test
+
+497
+00:32:39,080 --> 00:32:42,039
+it uh I guess
+
+498
+00:32:42,039 --> 00:32:44,399
+um maybe it would
+
+499
+00:32:44,399 --> 00:32:49,240
+be good just to kind of show exactly
+
+500
+00:32:49,240 --> 00:32:51,799
+what the output is
+
+501
+00:32:51,799 --> 00:32:54,519
+for case like
+
+502
+00:32:54,519 --> 00:32:58,519
+this um
+
+503
+00:33:12,399 --> 00:33:17,639
+okay so let's do I um do I have
+
+504
+00:33:19,360 --> 00:33:22,799
+the there we have
+
+505
+00:33:24,120 --> 00:33:28,320
+it okay we got a lot of information
+
+506
+00:33:28,320 --> 00:33:32,320
+uh here so so then we can see read of
+
+507
+00:33:32,320 --> 00:33:37,399
+size four so we tried to read four
+
+508
+00:33:37,399 --> 00:33:41,240
+bytes uh and we ran into a problem and
+
+509
+00:33:41,240 --> 00:33:43,320
+then it tells us okay it was
+
+510
+00:33:43,320 --> 00:33:46,000
+freed uh over
+
+511
+00:33:46,000 --> 00:33:51,120
+here you can see the the code line here
+
+512
+00:33:51,120 --> 00:33:53,159
+and then you can also see where it was
+
+513
+00:33:53,159 --> 00:33:55,360
+previously
+
+514
+00:33:55,360 --> 00:33:59,120
+allocated right there
+
+515
+00:33:59,120 --> 00:34:01,000
+uh this is something that we haven't
+
+516
+00:34:01,000 --> 00:34:04,760
+really like talked about that much these
+
+517
+00:34:04,760 --> 00:34:08,719
+shadow B and buggy address these are the
+
+518
+00:34:08,719 --> 00:34:12,599
+most kind of important things for your
+
+519
+00:34:12,599 --> 00:34:15,599
+debugging purposes I
+
+520
+00:34:15,599 --> 00:34:17,480
+think
+
+521
+00:34:17,480 --> 00:34:19,760
+um and then
+
+522
+00:34:19,760 --> 00:34:23,320
+uh I'll I'll
+
+523
+00:34:25,879 --> 00:34:29,719
+also show the
+
+524
+00:34:31,918 --> 00:34:35,560
+valr version of this so valr gives a
+
+525
+00:34:35,560 --> 00:34:38,359
+little bit less information but it still
+
+526
+00:34:38,359 --> 00:34:43,440
+says invalid read of size four says uh
+
+527
+00:34:43,440 --> 00:34:46,079
+yeah it was freed somewhere over there
+
+528
+00:34:46,079 --> 00:34:48,239
+uh and since we included the debug
+
+529
+00:34:48,239 --> 00:34:51,280
+symbols wouldn't be
+
+530
+00:34:51,280 --> 00:34:55,480
+uh Das G then it can tell us the exact
+
+531
+00:34:55,480 --> 00:34:59,280
+line numbers as well
+
+532
+00:35:10,400 --> 00:35:13,839
+okay okay now now this is maybe maybe a
+
+533
+00:35:13,839 --> 00:35:15,119
+little
+
+534
+00:35:15,119 --> 00:35:19,160
+bit a little bit tricky I I I think the
+
+535
+00:35:19,160 --> 00:35:21,119
+the const keyword is like something
+
+536
+00:35:21,119 --> 00:35:25,640
+that's uh maybe difficult to understand
+
+537
+00:35:25,640 --> 00:35:28,119
+completely
+
+538
+00:35:28,119 --> 00:35:30,359
+and con can be used in multiple
+
+539
+00:35:30,359 --> 00:35:33,400
+different ways so so then we have this
+
+540
+00:35:33,400 --> 00:35:35,960
+example uh where we have
+
+541
+00:35:35,960 --> 00:35:41,160
+const at the end of this function
+
+542
+00:35:41,200 --> 00:35:43,599
+declaration so so what does the const
+
+543
+00:35:43,599 --> 00:35:47,520
+keyword do
+
+544
+00:35:50,920 --> 00:35:53,319
+here yeah that's correct data members of
+
+545
+00:35:53,319 --> 00:35:55,800
+the class can't be
+
+546
+00:35:55,800 --> 00:35:58,800
+modified uh
+
+547
+00:35:58,800 --> 00:36:01,960
+so then if if this function is called
+
+548
+00:36:01,960 --> 00:36:04,960
+then then this function can't change the
+
+549
+00:36:04,960 --> 00:36:08,640
+values of X and Y for
+
+550
+00:36:09,880 --> 00:36:14,440
+example um the the
+
+551
+00:36:14,599 --> 00:36:17,160
+other yeah these are also like like you
+
+552
+00:36:17,160 --> 00:36:21,119
+can make the return type uh const
+
+553
+00:36:21,119 --> 00:36:24,240
+although that's not nearly as common as
+
+554
+00:36:24,240 --> 00:36:27,960
+the other options you can especially for
+
+555
+00:36:27,960 --> 00:36:30,760
+like passing by preference then you can
+
+556
+00:36:30,760 --> 00:36:33,680
+you can make it so that they can't be
+
+557
+00:36:33,680 --> 00:36:36,680
+modified yeah we'll test this because
+
+558
+00:36:36,680 --> 00:36:39,680
+it's
+
+559
+00:36:40,839 --> 00:36:47,319
+Constructor so con used quite bit an
+
+560
+00:36:47,720 --> 00:36:51,640
+operator okay
+
+561
+00:36:51,640 --> 00:36:55,440
+um well looks like you you knew the
+
+562
+00:36:55,440 --> 00:37:01,640
+answer to that one easly uh okay
+
+563
+00:37:03,920 --> 00:37:07,160
+then what is the result of executing
+
+564
+00:37:07,160 --> 00:37:09,960
+this program so so we're kind of uh
+
+565
+00:37:09,960 --> 00:37:13,760
+passing by by value by pointer and by
+
+566
+00:37:13,760 --> 00:37:16,200
+reference uh here we're doing all of
+
+567
+00:37:16,200 --> 00:37:17,000
+these
+
+568
+00:37:17,000 --> 00:37:20,880
+things we start with this x equals z and
+
+569
+00:37:20,880 --> 00:37:23,319
+then we're going to do a bunch of
+
+570
+00:37:23,319 --> 00:37:25,800
+processing for it so so what is the
+
+571
+00:37:25,800 --> 00:37:29,079
+final outcome of this what is it going
+
+572
+00:37:29,079 --> 00:37:31,760
+to print
+
+573
+00:37:32,680 --> 00:37:35,760
+here or is there some kind of problem
+
+574
+00:37:35,760 --> 00:37:39,280
+maybe it doesn't TR
+
+575
+00:38:12,920 --> 00:38:15,560
+anyone got the
+
+576
+00:38:19,920 --> 00:38:22,920
+answer
+
+577
+00:38:23,480 --> 00:38:25,800
+maybe what do you say maybe is there
+
+578
+00:38:25,800 --> 00:38:29,119
+something uncertain
+
+579
+00:38:30,040 --> 00:38:32,440
+maybe
+
+580
+00:38:34,680 --> 00:38:40,040
+D uh okay so let's see so first is is
+
+581
+00:38:40,040 --> 00:38:43,359
+the fun one so this is passing by by
+
+582
+00:38:43,359 --> 00:38:46,920
+value so it's kind of making this uh
+
+583
+00:38:46,920 --> 00:38:50,000
+copy of X here and then the function is
+
+584
+00:38:50,000 --> 00:38:53,079
+changing the value of this copy and it's
+
+585
+00:38:53,079 --> 00:38:56,520
+not returning anything so so X that
+
+586
+00:38:56,520 --> 00:38:59,440
+doesn't change
+
+587
+00:38:59,920 --> 00:39:03,480
+uh okay then with fun two it's going
+
+588
+00:39:03,480 --> 00:39:08,720
+to uh pass the address of of X
+
+589
+00:39:08,720 --> 00:39:12,720
+here uh and and that's correct is is is
+
+590
+00:39:12,720 --> 00:39:15,079
+taking the address and then this is a
+
+591
+00:39:15,079 --> 00:39:17,680
+pointer type and then here is D
+
+592
+00:39:17,680 --> 00:39:21,760
+referencing X and and adding to to its
+
+593
+00:39:21,760 --> 00:39:24,400
+value so okay at this point it's
+
+594
+00:39:24,400 --> 00:39:28,720
+two then F four so so this means passing
+
+595
+00:39:28,720 --> 00:39:29,520
+by
+
+596
+00:39:29,520 --> 00:39:34,520
+reference and when it's uh declared this
+
+597
+00:39:34,520 --> 00:39:37,200
+way you can you can simply pass the
+
+598
+00:39:37,200 --> 00:39:42,280
+argument as it is and it's it's going to
+
+599
+00:39:42,280 --> 00:39:46,079
+um it's going to get passed by by
+
+600
+00:39:46,079 --> 00:39:48,359
+reference and and then then you can just
+
+601
+00:39:48,359 --> 00:39:51,119
+change it change the value like that so
+
+602
+00:39:51,119 --> 00:39:53,880
+yeah the the answer is
+
+603
+00:39:53,880 --> 00:39:57,800
+six if you put const in that F four then
+
+604
+00:39:57,800 --> 00:39:59,160
+compile
+
+605
+00:39:59,160 --> 00:40:02,160
+it yeah yeah if if
+
+606
+00:40:02,160 --> 00:40:06,319
+you define the argument as as
+
+607
+00:40:06,319 --> 00:40:09,720
+const that's
+
+608
+00:40:12,160 --> 00:40:15,160
+right
+
+609
+00:40:18,040 --> 00:40:21,640
+okay um okay which of the following is a
+
+610
+00:40:21,640 --> 00:40:24,000
+correct function signature for the
+
+611
+00:40:24,000 --> 00:40:26,000
+overloaded addition operator for the
+
+612
+00:40:26,000 --> 00:40:28,880
+sphere class if we want the operator to
+
+613
+00:40:28,880 --> 00:40:31,119
+return the sphere whose radius is the
+
+614
+00:40:31,119 --> 00:40:34,200
+sum of the uh radi of the object and
+
+615
+00:40:34,200 --> 00:40:35,680
+this
+
+616
+00:40:35,680 --> 00:40:39,640
+parameter uh so so basically we're
+
+617
+00:40:39,640 --> 00:40:41,880
+talking about
+
+618
+00:40:41,880 --> 00:40:44,640
+like we
+
+619
+00:40:44,640 --> 00:40:48,520
+have sphere a
+
+620
+00:40:48,520 --> 00:40:51,520
+sphere
+
+621
+00:40:51,880 --> 00:40:58,440
+um B and then sphere C could be I a plus
+
+622
+00:40:58,440 --> 00:41:01,680
+b for
+
+623
+00:41:04,119 --> 00:41:08,560
+example so so what are the
+
+624
+00:41:09,520 --> 00:41:11,599
+options
+
+625
+00:41:11,599 --> 00:41:15,280
+three different options so so either we
+
+626
+00:41:15,280 --> 00:41:20,280
+take one argument no arguments or two
+
+627
+00:41:20,280 --> 00:41:22,319
+different
+
+628
+00:41:22,319 --> 00:41:25,200
+arguments which of these
+
+629
+00:41:25,200 --> 00:41:29,240
+seems like the correct way
+
+630
+00:41:30,280 --> 00:41:32,760
+a
+
+631
+00:41:32,760 --> 00:41:39,599
+a yeah yeah that's a uh so of course um
+
+632
+00:41:39,599 --> 00:41:42,280
+we're only going to need one argument
+
+633
+00:41:42,280 --> 00:41:45,160
+for this because then the other other
+
+634
+00:41:45,160 --> 00:41:47,079
+one is like the the
+
+635
+00:41:47,079 --> 00:41:49,520
+sphere uh
+
+636
+00:41:49,520 --> 00:41:52,640
+which of which the like
+
+637
+00:41:52,640 --> 00:41:55,760
+member function is like operator
+
+638
+00:41:55,760 --> 00:41:57,760
+overloads are basically just member
+
+639
+00:41:57,760 --> 00:42:00,079
+functions that are called in like a
+
+640
+00:42:00,079 --> 00:42:01,200
+certain
+
+641
+00:42:01,200 --> 00:42:05,160
+way with one of the operators so then
+
+642
+00:42:05,160 --> 00:42:07,440
+that's one of the Spears and then the
+
+643
+00:42:07,440 --> 00:42:10,160
+other is the
+
+644
+00:42:10,160 --> 00:42:14,880
+um the other one and and this case also
+
+645
+00:42:14,880 --> 00:42:18,359
+is going to return a new
+
+646
+00:42:18,359 --> 00:42:21,599
+sphere which then we can we can put here
+
+647
+00:42:21,599 --> 00:42:23,800
+like
+
+648
+00:42:23,800 --> 00:42:27,240
+this I think this this is Maybe
+
+649
+00:42:27,240 --> 00:42:29,559
+maybe maybe the opposite of tricky this
+
+650
+00:42:29,559 --> 00:42:31,880
+is kind of like okay what these are kind
+
+651
+00:42:31,880 --> 00:42:36,079
+of like clearly well this is maybe like
+
+652
+00:42:36,079 --> 00:42:38,160
+maybe you could see how how
+
+653
+00:42:38,160 --> 00:42:42,040
+this could be uh correct but this one is
+
+654
+00:42:42,040 --> 00:42:44,359
+like okay how would that even
+
+655
+00:42:44,359 --> 00:42:47,160
+work so I have a question actually when
+
+656
+00:42:47,160 --> 00:42:49,319
+I was thinking about these questions I
+
+657
+00:42:49,319 --> 00:42:51,599
+was thinking of going through the lab
+
+658
+00:42:51,599 --> 00:42:54,720
+and see if this FAL signature for plus
+
+659
+00:42:54,720 --> 00:42:57,680
+is ever used it or through all of our
+
+660
+00:42:57,680 --> 00:43:00,200
+labs and if they are are they the same
+
+661
+00:43:00,200 --> 00:43:02,839
+because you know if you remove const in
+
+662
+00:43:02,839 --> 00:43:05,000
+the end it still will work it just does
+
+663
+00:43:05,000 --> 00:43:06,960
+something weird which we show really
+
+664
+00:43:06,960 --> 00:43:10,880
+fast but um do you guys remember there
+
+665
+00:43:10,880 --> 00:43:13,880
+was a plus operator overloaded in the
+
+666
+00:43:13,880 --> 00:43:17,200
+last and if it work and what because I
+
+667
+00:43:17,200 --> 00:43:19,680
+will go before the exam and I will look
+
+668
+00:43:19,680 --> 00:43:22,839
+and then maybe ask a question about that
+
+669
+00:43:22,839 --> 00:43:24,680
+as well like what's the difference
+
+670
+00:43:24,680 --> 00:43:26,839
+between different ones because if you
+
+671
+00:43:26,839 --> 00:43:28,119
+remove move that
+
+672
+00:43:28,119 --> 00:43:30,559
+constant then you can do weird things
+
+673
+00:43:30,559 --> 00:43:33,800
+that are not necessarily bad but you can
+
+674
+00:43:33,800 --> 00:43:37,480
+assign a plus b equals to C right you
+
+675
+00:43:37,480 --> 00:43:39,800
+can do something with this
+
+676
+00:43:39,800 --> 00:43:42,599
+train but just a warning that you know I
+
+677
+00:43:42,599 --> 00:43:45,760
+might I of do that and if there was a
+
+678
+00:43:45,760 --> 00:43:49,200
+lab somewhere with overloaded assignment
+
+679
+00:43:49,200 --> 00:43:52,000
+I will then ask for for that why
+
+680
+00:43:52,000 --> 00:43:55,000
+different
+
+681
+00:43:57,319 --> 00:43:59,880
+the same for operator equal very
+
+682
+00:43:59,880 --> 00:44:02,559
+different function signatures in the lab
+
+683
+00:44:02,559 --> 00:44:05,319
+versus
+
+684
+00:44:05,319 --> 00:44:10,280
+lecture yeah and operator overloads are
+
+685
+00:44:10,280 --> 00:44:13,440
+are pretty important thing to understand
+
+686
+00:44:13,440 --> 00:44:16,960
+so uh it's definitely good to kind of
+
+687
+00:44:16,960 --> 00:44:20,400
+look into this a little bit deeper like
+
+688
+00:44:20,400 --> 00:44:21,559
+like
+
+689
+00:44:21,559 --> 00:44:24,319
+maybe maybe just to try it out like try
+
+690
+00:44:24,319 --> 00:44:26,680
+your own operator overload for some
+
+691
+00:44:26,680 --> 00:44:27,960
+something
+
+692
+00:44:27,960 --> 00:44:31,040
+or or maybe like look at the look at the
+
+693
+00:44:31,040 --> 00:44:34,800
+ones that exist in the in the
+
+694
+00:44:34,800 --> 00:44:37,680
+assignments it's a an important
+
+695
+00:44:37,680 --> 00:44:40,559
+topic uh we do have another questions
+
+696
+00:44:40,559 --> 00:44:44,240
+related to this so so we have some kind
+
+697
+00:44:44,240 --> 00:44:46,920
+of PNG class it's not necessarily
+
+698
+00:44:46,920 --> 00:44:48,599
+exactly the one that we
+
+699
+00:44:48,599 --> 00:44:52,960
+used uh in the in the assignments and
+
+700
+00:44:52,960 --> 00:44:57,440
+then we do something like this where
+
+701
+00:44:57,440 --> 00:44:59,839
+where pnga we can assume that it's
+
+702
+00:44:59,839 --> 00:45:01,400
+getting a constructed is going to have
+
+703
+00:45:01,400 --> 00:45:03,240
+some kind of data that it treats from a
+
+704
+00:45:03,240 --> 00:45:07,359
+file and then pngb we we try to just uh
+
+705
+00:45:07,359 --> 00:45:09,640
+make it equal to
+
+706
+00:45:09,640 --> 00:45:13,119
+a uh so then then what's going to happen
+
+707
+00:45:13,119 --> 00:45:16,480
+in this case so uh if no copy
+
+708
+00:45:16,480 --> 00:45:18,680
+Constructor is
+
+709
+00:45:18,680 --> 00:45:22,640
+written uh is the program going to work
+
+710
+00:45:22,640 --> 00:45:24,640
+or or or is there going to be some kind
+
+711
+00:45:24,640 --> 00:45:28,160
+of error here
+
+712
+00:45:41,319 --> 00:45:44,200
+yes that that's right so so there is uh
+
+713
+00:45:44,200 --> 00:45:46,200
+a default copy
+
+714
+00:45:46,200 --> 00:45:48,599
+Constructor uh okay well then the next
+
+715
+00:45:48,599 --> 00:45:51,160
+question is uh what what is that default
+
+716
+00:45:51,160 --> 00:45:53,760
+copy const Constructor going to do is it
+
+717
+00:45:53,760 --> 00:45:56,960
+going to copy data members by value or
+
+718
+00:45:56,960 --> 00:46:00,880
+or by reference so what is it going to
+
+719
+00:46:01,640 --> 00:46:04,400
+do yeah that's right
+
+720
+00:46:04,400 --> 00:46:07,499
+[Music]
+
+721
+00:46:07,520 --> 00:46:10,200
+um so so
+
+722
+00:46:10,200 --> 00:46:14,400
+then if if you have if you have for
+
+723
+00:46:14,400 --> 00:46:17,800
+example pointers that then it's going to
+
+724
+00:46:17,800 --> 00:46:21,480
+copy the value of the pointer not not
+
+725
+00:46:21,480 --> 00:46:25,079
+the not the like the reference value but
+
+726
+00:46:25,079 --> 00:46:27,800
+but the pointer itself
+
+727
+00:46:27,800 --> 00:46:31,680
+uh so then it's not going to
+
+728
+00:46:31,680 --> 00:46:34,680
+actually
+
+729
+00:46:34,760 --> 00:46:41,160
+um kind of make a deep copy uh so to say
+
+730
+00:46:41,160 --> 00:46:44,599
+U and if you if you write your own copy
+
+731
+00:46:44,599 --> 00:46:46,640
+Constructor that then you can do
+
+732
+00:46:46,640 --> 00:46:48,680
+anything but of course
+
+733
+00:46:48,680 --> 00:46:51,720
+uh it's not any kind of like requirement
+
+734
+00:46:51,720 --> 00:46:56,400
+that that then it must copy all the data
+
+735
+00:46:56,400 --> 00:46:58,040
+technically you could try that copy
+
+736
+00:46:58,040 --> 00:47:00,359
+Constructor that doesn't copy anything
+
+737
+00:47:00,359 --> 00:47:03,680
+at all and it's just like falling
+
+738
+00:47:03,680 --> 00:47:07,760
+around uh you can you can do
+
+739
+00:47:07,760 --> 00:47:10,400
+that but yeah if you want to do
+
+740
+00:47:10,400 --> 00:47:12,559
+something other than copy just by value
+
+741
+00:47:12,559 --> 00:47:17,040
+then then you should write your own copy
+
+742
+00:47:18,800 --> 00:47:20,520
+Constructor
+
+743
+00:47:20,520 --> 00:47:24,119
+okay uh let's talk about inheritance and
+
+744
+00:47:24,119 --> 00:47:26,520
+related things there actually three
+
+745
+00:47:26,520 --> 00:47:30,480
+questions about this because it's pretty
+
+746
+00:47:30,480 --> 00:47:31,480
+big
+
+747
+00:47:31,480 --> 00:47:35,800
+topic with many things related to
+
+748
+00:47:36,160 --> 00:47:40,040
+it okay that this this is a pretty big
+
+749
+00:47:40,040 --> 00:47:42,720
+question uh
+
+750
+00:47:42,720 --> 00:47:46,119
+or yeah yeah must keep it at this size
+
+751
+00:47:46,119 --> 00:47:48,160
+but don't be actually I will put
+
+752
+00:47:48,160 --> 00:47:49,880
+question this where there's a lot of
+
+753
+00:47:49,880 --> 00:47:51,520
+code and you need to read
+
+754
+00:47:51,520 --> 00:47:58,200
+it yeah that's totally okay
+
+755
+00:47:59,839 --> 00:48:04,280
+like I so there there's a few options
+
+756
+00:48:04,280 --> 00:48:07,480
+here either there's no bug at all
+
+757
+00:48:07,480 --> 00:48:09,599
+there's some kind of type
+
+758
+00:48:09,599 --> 00:48:11,800
+mismatch uh maybe we're trying to
+
+759
+00:48:11,800 --> 00:48:15,680
+declare an abstract type or maybe the
+
+760
+00:48:15,680 --> 00:48:18,079
+there's a memory leak or or there's
+
+761
+00:48:18,079 --> 00:48:20,160
+actually two
+
+762
+00:48:20,160 --> 00:48:23,640
+bugs uh two of these
+
+763
+00:48:23,640 --> 00:48:27,359
+bugs in the code so what is the what is
+
+764
+00:48:27,359 --> 00:48:30,520
+the answer
+
+765
+00:49:09,760 --> 00:49:11,640
+yeah well well let's see is there some
+
+766
+00:49:11,640 --> 00:49:15,599
+kind of type mismatch here so so I guess
+
+767
+00:49:15,599 --> 00:49:17,760
+for this we would look at the main
+
+768
+00:49:17,760 --> 00:49:19,799
+functions right
+
+769
+00:49:19,799 --> 00:49:23,920
+so uh okay we just have some image I
+
+770
+00:49:23,920 --> 00:49:27,640
+draw b d yeah that's fine
+
+771
+00:49:27,640 --> 00:49:31,480
+uh in in this regard then we have point
+
+772
+00:49:31,480 --> 00:49:34,799
+or two image where we create a new image
+
+773
+00:49:34,799 --> 00:49:39,720
+in the he spine drawable he has same
+
+774
+00:49:39,720 --> 00:49:43,559
+thing uh then we have this drawable
+
+775
+00:49:43,559 --> 00:49:47,200
+pointer that's pointing to this
+
+776
+00:49:47,200 --> 00:49:52,960
+image in the in the Heap so is this okay
+
+777
+00:49:59,920 --> 00:50:03,359
+uh no it's it's it's not going
+
+778
+00:50:03,359 --> 00:50:10,000
+to like slice anything in in in this
+
+779
+00:50:16,079 --> 00:50:18,160
+situation
+
+780
+00:50:18,160 --> 00:50:21,799
+yeah so there's like two two rules right
+
+781
+00:50:21,799 --> 00:50:23,400
+Constructor should not be virtual but
+
+782
+00:50:23,400 --> 00:50:26,400
+the structors should and must can and
+
+783
+00:50:26,400 --> 00:50:27,559
+must
+
+784
+00:50:27,559 --> 00:50:30,559
+yeah
+
+785
+00:50:31,680 --> 00:50:35,000
+other so the whole point of inheritance
+
+786
+00:50:35,000 --> 00:50:37,680
+is to be able to do that typ Mis match
+
+787
+00:50:37,680 --> 00:50:40,440
+kind of thing because we want to have
+
+788
+00:50:40,440 --> 00:50:42,880
+pointers to
+
+789
+00:50:42,880 --> 00:50:44,480
+base
+
+790
+00:50:44,480 --> 00:50:47,880
+differ what they actually are
+
+791
+00:50:47,880 --> 00:50:51,440
+Dy yeah
+
+792
+00:50:51,440 --> 00:50:53,680
+no but
+
+793
+00:50:53,680 --> 00:50:57,920
+delion has to be
+
+794
+00:50:57,920 --> 00:51:00,680
+good question okay so let me just before
+
+795
+00:51:00,680 --> 00:51:04,599
+I forget because I forget I think St of
+
+796
+00:51:04,599 --> 00:51:06,760
+like I think this is a good level of
+
+797
+00:51:06,760 --> 00:51:08,319
+difficulty of questions because there a
+
+798
+00:51:08,319 --> 00:51:11,440
+basic question just accept many of them
+
+799
+00:51:11,440 --> 00:51:13,440
+because we want to just make sure that
+
+800
+00:51:13,440 --> 00:51:16,400
+you like you really prepared and those
+
+801
+00:51:16,400 --> 00:51:17,880
+students who didn't spend as much time
+
+802
+00:51:17,880 --> 00:51:19,119
+it will be harder for them because
+
+803
+00:51:19,119 --> 00:51:21,559
+they're not GL but the there will be no
+
+804
+00:51:21,559 --> 00:51:24,119
+harder questions than this like the
+
+805
+00:51:24,119 --> 00:51:27,720
+level that our aim I like this
+
+806
+00:51:27,720 --> 00:51:30,200
+questions my goal will be just to make
+
+807
+00:51:30,200 --> 00:51:32,200
+sure that there's no like oh I didn't
+
+808
+00:51:32,200 --> 00:51:34,319
+understand that it will be Crystal Clear
+
+809
+00:51:34,319 --> 00:51:38,480
+that's hard but we'll you know if and
+
+810
+00:51:38,480 --> 00:51:40,640
+usually what happens if I still don't
+
+811
+00:51:40,640 --> 00:51:42,760
+formulate the question well then we'll
+
+812
+00:51:42,760 --> 00:51:44,200
+just remove that question from your
+
+813
+00:51:44,200 --> 00:51:46,799
+tempor about so complain if you don't
+
+814
+00:51:46,799 --> 00:51:49,559
+like formulation it's not clear what is
+
+815
+00:51:49,559 --> 00:51:51,839
+asked but these questions are pretty
+
+816
+00:51:51,839 --> 00:51:54,079
+clear so I think M file maybe was not
+
+817
+00:51:54,079 --> 00:51:56,280
+really clear but that's an example of
+
+818
+00:51:56,280 --> 00:51:57,880
+what
+
+819
+00:51:57,880 --> 00:52:00,480
+um that's why I have some we have two
+
+820
+00:52:00,480 --> 00:52:02,440
+weeks to to
+
+821
+00:52:02,440 --> 00:52:05,440
+the there no question but the difficulty
+
+822
+00:52:05,440 --> 00:52:07,079
+is really good I think that's the level
+
+823
+00:52:07,079 --> 00:52:09,559
+of
+
+824
+00:52:09,920 --> 00:52:13,200
+difficulty okay so the the
+
+825
+00:52:13,200 --> 00:52:18,160
+answer uh yeah answer is D the problem
+
+826
+00:52:18,160 --> 00:52:20,720
+is uh basically in
+
+827
+00:52:20,720 --> 00:52:23,599
+the in the Declaration of the destructor
+
+828
+00:52:23,599 --> 00:52:27,000
+of the drawable which should be virtual
+
+829
+00:52:27,000 --> 00:52:28,799
+so that
+
+830
+00:52:28,799 --> 00:52:31,839
+way that way it would
+
+831
+00:52:31,839 --> 00:52:35,640
+correctly use the destructor for the
+
+832
+00:52:35,640 --> 00:52:38,440
+image over
+
+833
+00:52:38,440 --> 00:52:42,799
+here question forew IET forgot to ask
+
+834
+00:52:42,799 --> 00:52:45,920
+why isn't it that if you make
+
+835
+00:52:45,920 --> 00:52:48,920
+inheritance why don't you just make C++
+
+836
+00:52:48,920 --> 00:52:51,359
+by default create those structure as
+
+837
+00:52:51,359 --> 00:52:55,119
+virtual why it's such an obvious
+
+838
+00:52:55,119 --> 00:52:58,160
+andap Happ why not just assume that
+
+839
+00:52:58,160 --> 00:53:01,440
+virtual if there's any kind
+
+840
+00:53:01,799 --> 00:53:04,319
+of but I forgot to ask we'll ask him
+
+841
+00:53:04,319 --> 00:53:07,319
+okay we should ask him on on this well
+
+842
+00:53:07,319 --> 00:53:10,280
+maybe it's just gonna talk about how the
+
+843
+00:53:10,280 --> 00:53:14,799
+structors are obsolet by like smart
+
+844
+00:53:14,799 --> 00:53:17,799
+pointers
+
+845
+00:53:18,359 --> 00:53:21,760
+that's iess doesn't matter
+
+846
+00:53:21,760 --> 00:53:25,760
+anyway uh okay another inheritance
+
+847
+00:53:25,760 --> 00:53:26,960
+question so
+
+848
+00:53:26,960 --> 00:53:28,880
+so we have these kind of classes we we
+
+849
+00:53:28,880 --> 00:53:32,480
+have holiday class and then then we have
+
+850
+00:53:32,480 --> 00:53:34,799
+wapu class that that
+
+851
+00:53:34,799 --> 00:53:37,079
+inherits uh
+
+852
+00:53:37,079 --> 00:53:40,640
+holiday uh
+
+853
+00:53:40,640 --> 00:53:42,880
+and we we would like to do this
+
+854
+00:53:42,880 --> 00:53:46,079
+assignment where where we add this
+
+855
+00:53:46,079 --> 00:53:49,440
+change in into fullness
+
+856
+00:53:49,440 --> 00:53:51,280
+Factor
+
+857
+00:53:51,280 --> 00:53:54,119
+um so so where would
+
+858
+00:53:54,119 --> 00:53:57,280
+be where would we be able to do that B
+
+859
+00:53:57,280 --> 00:54:01,520
+so can we do it in in the eat function
+
+860
+00:54:01,520 --> 00:54:06,280
+can we do it in the uh drink
+
+861
+00:54:06,280 --> 00:54:10,240
+function really nice I should
+
+862
+00:54:10,240 --> 00:54:13,799
+this I mean
+
+863
+00:54:15,119 --> 00:54:18,119
+nice
+
+864
+00:54:25,040 --> 00:54:28,359
+inheritance uh
+
+865
+00:54:28,359 --> 00:54:31,440
+so it can make the
+
+866
+00:54:31,440 --> 00:54:34,440
+assignment
+
+867
+00:54:35,760 --> 00:54:38,280
+uh
+
+868
+00:54:38,280 --> 00:54:41,839
+okay how how did you how did you end up
+
+869
+00:54:41,839 --> 00:54:44,040
+with
+
+870
+00:54:46,359 --> 00:54:47,880
+this
+
+871
+00:54:47,880 --> 00:54:51,240
+right uh okay but I think there's a
+
+872
+00:54:51,240 --> 00:54:54,118
+problem with this as
+
+873
+00:54:55,160 --> 00:54:58,319
+well yeah
+
+874
+00:55:01,839 --> 00:55:04,359
+the the problem then is that the
+
+875
+00:55:04,359 --> 00:55:07,720
+fullness factor is is only in the in the
+
+876
+00:55:07,720 --> 00:55:12,720
+wapu class so if we if we just have the
+
+877
+00:55:12,720 --> 00:55:14,079
+it
+
+878
+00:55:14,079 --> 00:55:16,400
+function uh so this is not going to be
+
+879
+00:55:16,400 --> 00:55:18,839
+aware of this right oh so the answer
+
+880
+00:55:18,839 --> 00:55:22,359
+cannot be determined
+
+881
+00:55:27,760 --> 00:55:29,839
+in the in the in the Base Class you you
+
+882
+00:55:29,839 --> 00:55:32,480
+can't make it referred to some kind of
+
+883
+00:55:32,480 --> 00:55:37,200
+variable that would be part of derived
+
+884
+00:55:42,680 --> 00:55:45,680
+class
+
+885
+00:55:46,520 --> 00:55:48,760
+Implement and it's not implemented so
+
+886
+00:55:48,760 --> 00:55:50,680
+what's going to happen because it's not
+
+887
+00:55:50,680 --> 00:55:53,680
+implemented shouldn't it be implemented
+
+888
+00:55:53,680 --> 00:55:55,799
+but it's there's no function yeah yeah I
+
+889
+00:55:55,799 --> 00:55:57,480
+guess maybe
+
+890
+00:55:57,480 --> 00:55:59,640
+but if it's not
+
+891
+00:55:59,640 --> 00:56:01,480
+like
+
+892
+00:56:01,480 --> 00:56:04,480
+abct
+
+893
+00:56:07,039 --> 00:56:09,960
+then in this case the the function
+
+894
+00:56:09,960 --> 00:56:13,799
+declarations are here and these are
+
+895
+00:56:13,799 --> 00:56:18,119
+complete Declarations of these so then
+
+896
+00:56:18,119 --> 00:56:20,280
+you can tell that
+
+897
+00:56:20,280 --> 00:56:24,280
+the uh
+
+898
+00:56:29,000 --> 00:56:33,039
+yeah yeah if if W actually uh defined e
+
+899
+00:56:33,039 --> 00:56:36,000
+function it also have to be declared
+
+900
+00:56:36,000 --> 00:56:38,520
+here
+
+901
+00:56:39,680 --> 00:56:42,160
+yeah so so then we know that there can't
+
+902
+00:56:42,160 --> 00:56:46,399
+be some kind of like hidden it
+
+903
+00:56:49,880 --> 00:56:53,240
+function yeah in this case uh neither of
+
+904
+00:56:53,240 --> 00:56:58,118
+these can actually do it
+
+905
+00:56:59,680 --> 00:57:03,799
+so e is not correct either
+
+906
+00:57:06,200 --> 00:57:09,440
+right no because yeah we we can actually
+
+907
+00:57:09,440 --> 00:57:11,480
+tell from this that it's it's not
+
+908
+00:57:11,480 --> 00:57:15,119
+possible they can't yeah they can't tell
+
+909
+00:57:15,119 --> 00:57:17,480
+that it's
+
+910
+00:57:18,119 --> 00:57:21,640
+not would it even
+
+911
+00:57:21,640 --> 00:57:23,480
+compile
+
+912
+00:57:23,480 --> 00:57:26,920
+um well well I mean it would require the
+
+913
+00:57:26,920 --> 00:57:29,400
+function definitions to be able to
+
+914
+00:57:29,400 --> 00:57:32,440
+compile so if you just copied this it
+
+915
+00:57:32,440 --> 00:57:35,559
+wouldn't compile
+
+916
+00:57:35,559 --> 00:57:39,680
+but uh but but if we had like any kind
+
+917
+00:57:39,680 --> 00:57:43,079
+of definitions for for these functions
+
+918
+00:57:43,079 --> 00:57:45,960
+then it would be
+
+919
+00:57:49,799 --> 00:57:52,079
+fine okay
+
+920
+00:57:52,079 --> 00:57:57,319
+uh well in this case I
+
+921
+00:57:59,200 --> 00:58:03,160
+um it's kind of understanding the class
+
+922
+00:58:03,160 --> 00:58:06,400
+structure and also noticing the B const
+
+923
+00:58:06,400 --> 00:58:10,160
+here uh kind kind of
+
+924
+00:58:10,160 --> 00:58:14,440
+tricky okay one more question about
+
+925
+00:58:14,440 --> 00:58:19,280
+inheritance so we have a class called
+
+926
+00:58:19,280 --> 00:58:21,240
+disaster which has
+
+927
+00:58:21,240 --> 00:58:24,880
+one uh function which is like
+
+928
+00:58:24,880 --> 00:58:27,680
+this and
+
+929
+00:58:27,680 --> 00:58:30,799
+then we have a tornado which is a public
+
+930
+00:58:30,799 --> 00:58:33,720
+disaster it inherits
+
+931
+00:58:33,720 --> 00:58:35,839
+disaster
+
+932
+00:58:35,839 --> 00:58:40,240
+publicly uh and it implements
+
+933
+00:58:40,240 --> 00:58:42,359
+destruction so which of the following
+
+934
+00:58:42,359 --> 00:58:44,799
+statements will certainly result in a
+
+935
+00:58:44,799 --> 00:58:47,319
+compiler
+
+936
+00:58:49,799 --> 00:58:54,359
+error so then can
+
+937
+00:58:54,359 --> 00:58:59,079
+we uh make this pointer to a
+
+938
+00:58:59,079 --> 00:59:02,960
+tornado or this tornado pointer uh point
+
+939
+00:59:02,960 --> 00:59:05,720
+to a new
+
+940
+00:59:11,280 --> 00:59:14,280
+disaster
+
+941
+00:59:14,880 --> 00:59:19,039
+one yeah yeah we we can do this this
+
+942
+00:59:19,039 --> 00:59:22,319
+going like the the the wrong way you you
+
+943
+00:59:22,319 --> 00:59:25,599
+you can't make it arrive class point to
+
+944
+00:59:25,599 --> 00:59:26,720
+uh
+
+945
+00:59:26,720 --> 00:59:27,720
+base
+
+946
+00:59:27,720 --> 00:59:31,559
+class at least at least not this
+
+947
+00:59:31,559 --> 00:59:34,839
+way um okay the tornado points to a
+
+948
+00:59:34,839 --> 00:59:39,039
+tornado and uh yeah tornado implements
+
+949
+00:59:39,039 --> 00:59:42,599
+the the the function so it's
+
+950
+00:59:42,599 --> 00:59:46,839
+fine uh okay then disaster is is a
+
+951
+00:59:46,839 --> 00:59:51,400
+disaster uh can we do
+
+952
+00:59:52,599 --> 00:59:57,319
+this oh it's it can it's p
+
+953
+00:59:57,319 --> 01:00:00,920
+yeah we can we can't do this
+
+954
+01:00:00,920 --> 01:00:03,640
+because it's not actually defined here
+
+955
+01:00:03,640 --> 01:00:06,920
+so it's as an abstract
+
+956
+01:00:10,960 --> 01:00:13,839
+class
+
+957
+01:00:13,839 --> 01:00:18,559
+uh yeah yeah that one is also you can
+
+958
+01:00:18,559 --> 01:00:21,839
+do so that that's kind of the the point
+
+959
+01:00:21,839 --> 01:00:25,480
+of inheritance almost to do this so it's
+
+960
+01:00:25,480 --> 01:00:27,960
+fine
+
+961
+01:00:28,520 --> 01:00:30,960
+um
+
+962
+01:00:31,799 --> 01:00:34,799
+okay
+
+963
+01:00:35,280 --> 01:00:40,520
+yeah okay then a little question about
+
+964
+01:00:40,520 --> 01:00:44,720
+GDB so we had a program crash and now
+
+965
+01:00:44,720 --> 01:00:47,520
+we're using GDB to figure it out so Al
+
+966
+01:00:47,520 --> 01:00:51,119
+so we R the program with GDB it got to
+
+967
+01:00:51,119 --> 01:00:54,280
+the point where it um
+
+968
+01:00:54,280 --> 01:00:58,440
+crashed was a segment a fault so which
+
+969
+01:00:58,440 --> 01:01:01,359
+function called the function where the
+
+970
+01:01:01,359 --> 01:01:03,640
+segmentation fault
+
+971
+01:01:03,640 --> 01:01:06,480
+occurred and and you can see this back
+
+972
+01:01:06,480 --> 01:01:09,559
+Trace command here so we have main
+
+973
+01:01:09,559 --> 01:01:11,640
+function we have stuff one stuff two
+
+974
+01:01:11,640 --> 01:01:15,039
+stuff three Stu four so which function
+
+975
+01:01:15,039 --> 01:01:18,240
+called the function where the
+
+976
+01:01:18,240 --> 01:01:22,160
+segmentation fold occurred
+
+977
+01:01:29,680 --> 01:01:31,559
+yeah that's
+
+978
+01:01:31,559 --> 01:01:34,200
+right yeah so so with the back Trace you
+
+979
+01:01:34,200 --> 01:01:37,359
+can basically see uh
+
+980
+01:01:37,359 --> 01:01:40,440
+zero is the function where we're
+
+981
+01:01:40,440 --> 01:01:43,920
+currently in and you can also see that
+
+982
+01:01:43,920 --> 01:01:45,799
+stuff three and you can see that okay
+
+983
+01:01:45,799 --> 01:01:47,440
+stuff three is where the segmentation
+
+984
+01:01:47,440 --> 01:01:50,640
+fault happened and then you can see that
+
+985
+01:01:50,640 --> 01:01:53,039
+before stuff three was stuff
+
+986
+01:01:53,039 --> 01:01:55,559
+four so then it must have been the stuff
+
+987
+01:01:55,559 --> 01:01:56,359
+four
+
+988
+01:01:56,359 --> 01:01:59,359
+called Stuff
+
+989
+01:01:59,359 --> 01:02:02,160
+three so it goes in order from like
+
+990
+01:02:02,160 --> 01:02:04,279
+bottom to top we start from Main then we
+
+991
+01:02:04,279 --> 01:02:08,599
+went to one two four and then
+
+992
+01:02:08,680 --> 01:02:12,520
+three oh another really good so I want
+
+993
+01:02:12,520 --> 01:02:16,160
+to just before I forget so uh El he is
+
+994
+01:02:16,160 --> 01:02:18,359
+going by topics so you can see on the
+
+995
+01:02:18,359 --> 01:02:20,920
+left side if you go to the document
+
+996
+01:02:20,920 --> 01:02:22,680
+there's all the topics and we were
+
+997
+01:02:22,680 --> 01:02:27,799
+thinking that there is like 14 topics
+
+998
+01:02:27,799 --> 01:02:29,920
+L let turn
+
+999
+01:02:29,920 --> 01:02:33,720
+not we will not do like lot we will not
+
+1000
+01:02:33,720 --> 01:02:36,920
+test you on data structure so just like
+
+1001
+01:02:36,920 --> 01:02:38,400
+the language
+
+1002
+01:02:38,400 --> 01:02:43,599
+itself um the in so all those 14 topics
+
+1003
+01:02:43,599 --> 01:02:46,680
+we'll try to do two to three to four
+
+1004
+01:02:46,680 --> 01:02:49,000
+exercises depending on like how
+
+1005
+01:02:49,000 --> 01:02:53,200
+important it is so expect like
+
+1006
+01:02:54,160 --> 01:02:57,200
+around a lot of work for for us to
+
+1007
+01:02:57,200 --> 01:03:01,279
+create but but
+
+1008
+01:03:05,319 --> 01:03:10,119
+that's two hours so just prepare so that
+
+1009
+01:03:10,119 --> 01:03:12,079
+you really you'll be really sharp at
+
+1010
+01:03:12,079 --> 01:03:15,039
+this I think I think it's good that's
+
+1011
+01:03:15,039 --> 01:03:17,440
+the whole
+
+1012
+01:03:18,480 --> 01:03:21,000
+point the whole point of M language is
+
+1013
+01:03:21,000 --> 01:03:24,480
+to be as sharp as the wake up in the
+
+1014
+01:03:24,480 --> 01:03:27,760
+middle of the night and nowh
+
+1015
+01:03:29,359 --> 01:03:32,640
+con and why okay and what is it du to
+
+1016
+01:03:32,640 --> 01:03:34,879
+the
+
+1017
+01:03:35,599 --> 01:03:39,640
+register let's look at look at
+
+1018
+01:03:39,640 --> 01:03:43,440
+templates um so we have some kind
+
+1019
+01:03:43,440 --> 01:03:45,920
+of uh
+
+1020
+01:03:45,920 --> 01:03:48,480
+template
+
+1021
+01:03:48,480 --> 01:03:51,599
+function uh where there's
+
+1022
+01:03:51,599 --> 01:03:53,960
+two different
+
+1023
+01:03:53,960 --> 01:03:57,279
+types that it can take
+
+1024
+01:03:57,279 --> 01:04:00,720
+uh and then it's going to add them
+
+1025
+01:04:00,720 --> 01:04:02,559
+together and
+
+1026
+01:04:02,559 --> 01:04:06,440
+return uh the the
+
+1027
+01:04:14,160 --> 01:04:18,920
+result so then uh we have some options
+
+1028
+01:04:18,920 --> 01:04:21,079
+that that we're doing so so let's see if
+
+1029
+01:04:21,079 --> 01:04:24,319
+uh if these options are are okay it's
+
+1030
+01:04:24,319 --> 01:04:29,200
+casting power right what can cast into
+
+1031
+01:04:30,799 --> 01:04:33,920
+water yeah I guess in the end it's it's
+
+1032
+01:04:33,920 --> 01:04:35,680
+kind of like that
+
+1033
+01:04:35,680 --> 01:04:38,520
+so okay we we try to call this function
+
+1034
+01:04:38,520 --> 01:04:42,240
+with in and
+
+1035
+01:04:42,520 --> 01:04:46,038
+string is this
+
+1036
+01:04:49,200 --> 01:04:53,640
+okay no think by default you can cast a
+
+1037
+01:04:53,640 --> 01:04:56,359
+Str yeah I mean I guess you
+
+1038
+01:04:56,359 --> 01:05:00,359
+could Define some kind of conversions
+
+1039
+01:05:00,359 --> 01:05:03,200
+for for that you would have to
+
+1040
+01:05:03,200 --> 01:05:04,960
+custom
+
+1041
+01:05:04,960 --> 01:05:09,680
+um okay what what int and in um
+
+1042
+01:05:09,680 --> 01:05:13,520
+sure in and double can we do this yeah
+
+1043
+01:05:13,520 --> 01:05:17,240
+we we can do that too uh so so it's
+
+1044
+01:05:17,240 --> 01:05:22,720
+really just uh yeah you can do that um
+
+1045
+01:05:22,720 --> 01:05:25,160
+maybe this doesn't really test your
+
+1046
+01:05:25,160 --> 01:05:28,640
+knowledge about templates that
+
+1047
+01:05:50,680 --> 01:05:54,960
+much but it's a return it's return oh
+
+1048
+01:05:54,960 --> 01:05:57,599
+okay
+
+1049
+01:05:57,599 --> 01:06:03,279
+cast return into F from
+
+1050
+01:06:04,960 --> 01:06:09,599
+e but I think these should be two of
+
+1051
+01:06:09,599 --> 01:06:13,079
+these not
+
+1052
+01:06:17,079 --> 01:06:20,079
+be
+
+1053
+01:06:21,119 --> 01:06:26,440
+okay result comp warning
+
+1054
+01:06:26,839 --> 01:06:28,039
+well well let's
+
+1055
+01:06:28,039 --> 01:06:31,680
+see is it by
+
+1056
+01:06:35,839 --> 01:06:39,279
+default I guess
+
+1057
+01:06:42,000 --> 01:06:46,279
+then oh so then just wait what's what
+
+1058
+01:06:46,279 --> 01:06:49,160
+really happen because you have like
+
+1059
+01:06:49,160 --> 01:06:53,680
+integer and and they are like all
+
+1060
+01:06:53,680 --> 01:06:57,279
+e like arguments arguments
+
+1061
+01:06:57,279 --> 01:07:01,839
+arep e so they don't have
+
+1062
+01:07:03,119 --> 01:07:07,559
+to1 but I think at least
+
+1063
+01:07:09,079 --> 01:07:10,190
+give
+
+1064
+01:07:10,190 --> 01:07:12,599
+[Music]
+
+1065
+01:07:12,599 --> 01:07:15,960
+yeah does it just pick the
+
+1066
+01:07:15,960 --> 01:07:19,920
+first type given as argument
+
+1067
+01:07:19,920 --> 01:07:23,880
+as how how it selects which one of the
+
+1068
+01:07:23,880 --> 01:07:27,079
+types is the e
+
+1069
+01:07:27,079 --> 01:07:30,200
+oh it just what so how the compiler will
+
+1070
+01:07:30,200 --> 01:07:33,720
+say the compiler will say e is integer
+
+1071
+01:07:33,720 --> 01:07:36,960
+so the the comp function is integer a
+
+1072
+01:07:36,960 --> 01:07:41,119
+integer B but you send four and 4.1 to
+
+1073
+01:07:41,119 --> 01:07:43,400
+it but
+
+1074
+01:07:43,400 --> 01:07:47,960
+but this Square uh brackets in double
+
+1075
+01:07:47,960 --> 01:07:51,319
+will just Define that e is integer and F
+
+1076
+01:07:51,319 --> 01:07:52,880
+is
+
+1077
+01:07:52,880 --> 01:07:57,400
+double that's the comp
+
+1078
+01:07:59,920 --> 01:08:04,279
+function so what if we do it the other
+
+1079
+01:08:07,520 --> 01:08:11,000
+way yeah which one yeah which one is
+
+1080
+01:08:11,000 --> 01:08:13,279
+which
+
+1081
+01:08:13,279 --> 01:08:16,640
+yeah so no warnings
+
+1082
+01:08:16,640 --> 01:08:19,080
+forting no that's
+
+1083
+01:08:19,080 --> 01:08:22,719
+fine so then there's no correct answer
+
+1084
+01:08:22,719 --> 01:08:26,080
+though right from the options
+
+1085
+01:08:26,080 --> 01:08:29,719
+because two of these will be
+
+1086
+01:08:30,799 --> 01:08:34,198
+okay they will not
+
+1087
+01:08:34,198 --> 01:08:40,198
+result uh no just one of these uh as as
+
+1088
+01:08:40,198 --> 01:08:41,920
+an error which is this so that's the
+
+1089
+01:08:41,920 --> 01:08:43,279
+correct
+
+1090
+01:08:43,279 --> 01:08:46,480
+answer an
+
+1091
+01:08:53,759 --> 01:08:57,439
+arrow okay
+
+1092
+01:08:57,600 --> 01:08:59,839
+yeah well we'll probably have to think
+
+1093
+01:08:59,839 --> 01:09:01,719
+about like different kinds of questions
+
+1094
+01:09:01,719 --> 01:09:05,600
+about yeah yeah temp all of them are
+
+1095
+01:09:05,600 --> 01:09:08,238
+essenti I mean templates are easy
+
+1096
+01:09:08,238 --> 01:09:10,238
+because the compiler will just one by
+
+1097
+01:09:10,238 --> 01:09:12,479
+one
+
+1098
+01:09:13,960 --> 01:09:18,439
+subtitute um okay very straightforward
+
+1099
+01:09:18,439 --> 01:09:20,040
+do I have this question is it's not
+
+1100
+01:09:20,040 --> 01:09:21,238
+really
+
+1101
+01:09:21,238 --> 01:09:25,759
+like really about
+
+1102
+01:09:26,040 --> 01:09:28,839
+list but but I don't know if this is
+
+1103
+01:09:28,839 --> 01:09:31,679
+like well we can I said I will not be
+
+1104
+01:09:31,679 --> 01:09:33,719
+asking those questions but you're not
+
+1105
+01:09:33,719 --> 01:09:35,080
+asking any kind of questions you're
+
+1106
+01:09:35,080 --> 01:09:39,560
+asking more like how to define thing a
+
+1107
+01:09:39,560 --> 01:09:41,719
+template yeah actually maybe maybe this
+
+1108
+01:09:41,719 --> 01:09:44,279
+is more about it's more
+
+1109
+01:09:44,279 --> 01:09:47,520
+template well well in any case let's
+
+1110
+01:09:47,520 --> 01:09:51,000
+let's see what this looks like
+
+1111
+01:09:51,000 --> 01:09:53,880
+um so which of the following should
+
+1112
+01:09:53,880 --> 01:09:57,320
+replace um
+
+1113
+01:09:59,320 --> 01:10:01,719
+line one for the code to compile and
+
+1114
+01:10:01,719 --> 01:10:04,960
+front with data where with
+
+1115
+01:10:04,960 --> 01:10:06,960
+[Music]
+
+1116
+01:10:06,960 --> 01:10:11,840
+um data 225 standard
+
+1117
+01:10:13,320 --> 01:10:17,480
+out so we have some kind of a
+
+1118
+01:10:17,480 --> 01:10:20,480
+new
+
+1119
+01:10:21,000 --> 01:10:28,560
+node uh new node node in in no in
+
+1120
+01:10:28,560 --> 01:10:32,199
+25 uh okay so so
+
+1121
+01:10:32,199 --> 01:10:37,559
+what's what's going on here T is
+
+1122
+01:10:40,440 --> 01:10:45,440
+not I would move this question to
+
+1123
+01:10:58,000 --> 01:11:01,159
+oh there's two it's like recursion entr
+
+1124
+01:11:01,159 --> 01:11:03,440
+it's
+
+1125
+01:11:04,320 --> 01:11:08,519
+broke make it work if I Cy
+
+1126
+01:11:19,320 --> 01:11:20,830
+this may
+
+1127
+01:11:20,830 --> 01:11:22,080
+[Music]
+
+1128
+01:11:22,080 --> 01:11:26,719
+d uh D so so so
+
+1129
+01:11:26,719 --> 01:11:29,120
+n points
+
+1130
+01:11:29,120 --> 01:11:32,840
+to data or like d reference the data
+
+1131
+01:11:32,840 --> 01:11:37,560
+from the n and then get the data of the
+
+1132
+01:11:37,560 --> 01:11:40,560
+data
+
+1133
+01:11:43,040 --> 01:11:47,519
+okay uh let's let's try it
+
+1134
+01:11:52,520 --> 01:11:55,679
+out so and yeah and is defin def itely
+
+1135
+01:11:55,679 --> 01:11:58,080
+pointing to something so so that that's
+
+1136
+01:11:58,080 --> 01:12:01,480
+clear and and then it's pointing to this
+
+1137
+01:12:01,480 --> 01:12:04,919
+node which which has
+
+1138
+01:12:08,280 --> 01:12:10,719
+data this is really cool because how
+
+1139
+01:12:10,719 --> 01:12:13,320
+would the compiler write it out because
+
+1140
+01:12:13,320 --> 01:12:17,960
+there's two t would be defined twice
+
+1141
+01:12:17,960 --> 01:12:21,400
+right no like where with the templates
+
+1142
+01:12:21,400 --> 01:12:25,040
+uh you you can you can give it any kind
+
+1143
+01:12:25,040 --> 01:12:27,159
+of
+
+1144
+01:12:27,440 --> 01:12:31,679
+like even if it's some like kind of BU
+
+1145
+01:12:31,679 --> 01:12:34,360
+built from a
+
+1146
+01:12:36,400 --> 01:12:40,000
+template because it's a
+
+1147
+01:12:40,360 --> 01:12:45,800
+nest it's t t is not integer
+
+1148
+01:12:45,800 --> 01:12:48,560
+type T is
+
+1149
+01:12:48,560 --> 01:12:53,000
+not but the node integer has to be is
+
+1150
+01:12:53,000 --> 01:12:56,360
+also templated
+
+1151
+01:12:58,360 --> 01:13:01,760
+uh no like the outer node is
+
+1152
+01:13:01,760 --> 01:13:05,159
+OU node of no integer
+
+1153
+01:13:05,159 --> 01:13:08,120
+type because it's it's nested there are
+
+1154
+01:13:08,120 --> 01:13:12,559
+nested brackets angular
+
+1155
+01:13:13,000 --> 01:13:15,520
+brackets uh there are two node types
+
+1156
+01:13:15,520 --> 01:13:18,199
+here node integer type and node of node
+
+1157
+01:13:18,199 --> 01:13:22,040
+integer type like
+
+1158
+01:13:26,040 --> 01:13:31,159
+you could you could not
+
+1159
+01:13:31,560 --> 01:13:35,440
+to you should not see it as nested it's
+
+1160
+01:13:35,440 --> 01:13:38,639
+like two node types one is a node of
+
+1161
+01:13:38,639 --> 01:13:41,920
+integer types one is another note Tye
+
+1162
+01:13:41,920 --> 01:13:43,159
+which can
+
+1163
+01:13:43,159 --> 01:13:46,679
+take another note so that's
+
+1164
+01:13:46,679 --> 01:13:51,080
+the uh one is a recursive type like you
+
+1165
+01:13:51,080 --> 01:13:53,320
+said one is a simple node of integer
+
+1166
+01:13:53,320 --> 01:13:55,920
+types so if we could write it three
+
+1167
+01:13:55,920 --> 01:13:59,280
+times three missed so the compiler would
+
+1168
+01:13:59,280 --> 01:14:02,280
+it actually have three classes of
+
+1169
+01:14:02,280 --> 01:14:05,000
+different or would
+
+1170
+01:14:05,000 --> 01:14:07,400
+it that's that's an interesting question
+
+1171
+01:14:07,400 --> 01:14:09,880
+I have to think of okay this is a this
+
+1172
+01:14:09,880 --> 01:14:13,920
+is a b question to think about
+
+1173
+01:14:13,920 --> 01:14:17,120
+it yeah I guess for this question you
+
+1174
+01:14:17,120 --> 01:14:20,320
+don't really need to you need don't need
+
+1175
+01:14:20,320 --> 01:14:22,840
+to understand it because yeah like first
+
+1176
+01:14:22,840 --> 01:14:25,679
+it's clear that you you did reference in
+
+1177
+01:14:25,679 --> 01:14:27,360
+and and then it's clear that there's
+
+1178
+01:14:27,360 --> 01:14:30,480
+like another layer and it's just the
+
+1179
+01:14:30,480 --> 01:14:33,199
+question of like is it is it going to be
+
+1180
+01:14:33,199 --> 01:14:36,120
+another D reference or not but then here
+
+1181
+01:14:36,120 --> 01:14:37,880
+we can see that as
+
+1182
+01:14:37,880 --> 01:14:41,320
+like this is not a pointer type yeah the
+
+1183
+01:14:41,320 --> 01:14:42,639
+question is much simpler than the
+
+1184
+01:14:42,639 --> 01:14:45,600
+structure of the code
+
+1185
+01:14:45,960 --> 01:14:48,360
+itself
+
+1186
+01:14:48,360 --> 01:14:50,480
+cool
+
+1187
+01:14:50,480 --> 01:14:53,679
+okay then let's talk about the standard
+
+1188
+01:14:53,679 --> 01:14:57,000
+Library um
+
+1189
+01:14:57,040 --> 01:14:59,840
+okay we have
+
+1190
+01:15:01,560 --> 01:15:04,120
+a little code like this we have this
+
+1191
+01:15:04,120 --> 01:15:09,000
+kind of vector one two 3 four in it then
+
+1192
+01:15:09,000 --> 01:15:12,560
+we'll get the address of of the uh
+
+1193
+01:15:12,560 --> 01:15:15,960
+element at index three and then we
+
+1194
+01:15:15,960 --> 01:15:19,400
+insert to the beginning of the
+
+1195
+01:15:19,400 --> 01:15:24,040
+vector then we print uh we D reference
+
+1196
+01:15:24,040 --> 01:15:26,520
+that number that we store from later uh
+
+1197
+01:15:26,520 --> 01:15:28,840
+from earlier and then we
+
+1198
+01:15:28,840 --> 01:15:32,120
+also uh print
+
+1199
+01:15:32,120 --> 01:15:35,800
+the index B from this Vector so so what
+
+1200
+01:15:35,800 --> 01:15:39,080
+is the output
+
+1201
+01:16:03,840 --> 01:16:05,040
+how is
+
+1202
+01:16:05,040 --> 01:16:09,679
+that question yeah maybe
+
+1203
+01:16:09,679 --> 01:16:15,560
+eight um okay let's look at this so um
+
+1204
+01:16:15,560 --> 01:16:17,639
+see yeah to be clear this is standard
+
+1205
+01:16:17,639 --> 01:16:18,960
+Library
+
+1206
+01:16:18,960 --> 01:16:21,960
+Vector
+
+1207
+01:16:23,280 --> 01:16:25,560
+um uh
+
+1208
+01:16:25,560 --> 01:16:29,159
+yeah so so like if if you run into this
+
+1209
+01:16:29,159 --> 01:16:30,440
+and you're like okay I don't know how
+
+1210
+01:16:30,440 --> 01:16:32,880
+Vector works then you you could start
+
+1211
+01:16:32,880 --> 01:16:35,800
+looking at the like documentation for it
+
+1212
+01:16:35,800 --> 01:16:37,120
+let's look at how
+
+1213
+01:16:37,120 --> 01:16:41,480
+this um goes so so we have 1 two 3 four
+
+1214
+01:16:41,480 --> 01:16:45,440
+then uh so index three is the last
+
+1215
+01:16:45,440 --> 01:16:48,320
+element so it's four so this is pointing
+
+1216
+01:16:48,320 --> 01:16:50,000
+at
+
+1217
+01:16:50,000 --> 01:16:56,840
+four uh then we insert at the um
+
+1218
+01:16:57,040 --> 01:16:59,600
+beginning and in the case of vector what
+
+1219
+01:16:59,600 --> 01:17:05,280
+that means is that it's going to have to
+
+1220
+01:17:05,360 --> 01:17:08,159
+like move all the
+
+1221
+01:17:08,159 --> 01:17:10,760
+elements because with Vector you you
+
+1222
+01:17:10,760 --> 01:17:14,000
+can't just like just put it in in the
+
+1223
+01:17:14,000 --> 01:17:16,080
+beginning it has to move
+
+1224
+01:17:16,080 --> 01:17:19,800
+everything so then that means that this
+
+1225
+01:17:19,800 --> 01:17:22,600
+uh address that we picked up is is not
+
+1226
+01:17:22,600 --> 01:17:26,400
+actually valid anymore
+
+1227
+01:17:26,880 --> 01:17:29,239
+so then in the end the answer is
+
+1228
+01:17:29,239 --> 01:17:31,600
+undefined so so we're probably going to
+
+1229
+01:17:31,600 --> 01:17:34,239
+get some kind of garbage here and then
+
+1230
+01:17:34,239 --> 01:17:35,360
+we're going to
+
+1231
+01:17:35,360 --> 01:17:38,799
+get uh
+
+1232
+01:17:39,600 --> 01:17:42,800
+three because then it's going to be 0 1
+
+1233
+01:17:42,800 --> 01:17:47,199
+2 3 4 and index three is going
+
+1234
+01:17:47,199 --> 01:17:50,880
+to uh be number three but then this
+
+1235
+01:17:50,880 --> 01:17:52,400
+favorite number is just going to point
+
+1236
+01:17:52,400 --> 01:17:54,120
+at some garbage because the whole thing
+
+1237
+01:17:54,120 --> 01:17:56,840
+is moved
+
+1238
+01:17:57,520 --> 01:17:59,920
+well it might still print it might it
+
+1239
+01:17:59,920 --> 01:18:01,480
+might print four but but it's it's
+
+1240
+01:18:01,480 --> 01:18:04,920
+undefined so can you run it I'm curious
+
+1241
+01:18:04,920 --> 01:18:06,440
+what it will
+
+1242
+01:18:06,440 --> 01:18:10,080
+do yeah I think with this question since
+
+1243
+01:18:10,080 --> 01:18:12,600
+I don't think we covered in our lectures
+
+1244
+01:18:12,600 --> 01:18:15,159
+how the vectors are Implement so we
+
+1245
+01:18:15,159 --> 01:18:18,960
+would have to be fair about what you
+
+1246
+01:18:18,960 --> 01:18:21,639
+know this is a whole question if you
+
+1247
+01:18:21,639 --> 01:18:26,560
+slightly modified to be a little
+
+1248
+01:18:27,159 --> 01:18:29,040
+yeah I mean maybe maybe we can give some
+
+1249
+01:18:29,040 --> 01:18:32,159
+like background yeah
+
+1250
+01:18:33,719 --> 01:18:36,400
+back
+
+1251
+01:18:36,400 --> 01:18:39,199
+because haven't played that much with
+
+1252
+01:18:39,199 --> 01:18:41,720
+the
+
+1253
+01:18:41,720 --> 01:18:43,560
+[Music]
+
+1254
+01:18:43,560 --> 01:18:46,520
+structure and you need to know how
+
+1255
+01:18:46,520 --> 01:18:48,760
+it
+
+1256
+01:18:48,760 --> 01:18:51,360
+yeah but I'm really curious to see
+
+1257
+01:18:51,360 --> 01:18:54,880
+actually because I would think that the
+
+1258
+01:18:54,880 --> 01:18:56,800
+way it's
+
+1259
+01:18:56,800 --> 01:18:59,760
+implemented certain front yeah you
+
+1260
+01:18:59,760 --> 01:19:01,800
+completely get rid of the old structure
+
+1261
+01:19:01,800 --> 01:19:04,280
+and get a new but it's essentially
+
+1262
+01:19:04,280 --> 01:19:06,840
+Vector is mostly like a dynamic
+
+1263
+01:19:06,840 --> 01:19:09,560
+ARR so the dynamic array would get rid
+
+1264
+01:19:09,560 --> 01:19:10,719
+of all of
+
+1265
+01:19:10,719 --> 01:19:13,719
+this
+
+1266
+01:19:13,840 --> 01:19:15,520
+and
+
+1267
+01:19:15,520 --> 01:19:20,480
+CH FR it's a very
+
+1268
+01:19:20,480 --> 01:19:23,000
+operation then that's why you get
+
+1269
+01:19:23,000 --> 01:19:25,639
+garbage
+
+1270
+01:19:25,639 --> 01:19:27,600
+it would be completely fair question if
+
+1271
+01:19:27,600 --> 01:19:28,840
+we instead of
+
+1272
+01:19:28,840 --> 01:19:30,480
+actually
+
+1273
+01:19:30,480 --> 01:19:34,960
+but questions about they're so bad and
+
+1274
+01:19:34,960 --> 01:19:39,800
+more but if we just say okay it is a d
+
+1275
+01:19:39,800 --> 01:19:42,920
+right underneath it all so what Happ
+
+1276
+01:19:42,920 --> 01:19:44,199
+well I
+
+1277
+01:19:44,199 --> 01:19:47,280
+mean I think I covered these topics in
+
+1278
+01:19:47,280 --> 01:19:51,480
+my lecture pretty well I I do need to
+
+1279
+01:19:51,480 --> 01:19:53,400
+upload
+
+1280
+01:19:53,400 --> 01:19:55,159
+the okay
+
+1281
+01:19:55,159 --> 01:19:57,760
+if you covered that it's just like
+
+1282
+01:19:57,760 --> 01:20:01,800
+array video yeah yeah actually it seem
+
+1283
+01:20:01,800 --> 01:20:06,159
+that I forgot to upload it uh earlier so
+
+1284
+01:20:06,159 --> 01:20:08,600
+slides okay so it is a fair question
+
+1285
+01:20:08,600 --> 01:20:10,080
+because you covered it because you said
+
+1286
+01:20:10,080 --> 01:20:11,480
+it
+
+1287
+01:20:11,480 --> 01:20:14,679
+then yeah yeah yeah I talked a lot about
+
+1288
+01:20:14,679 --> 01:20:17,000
+like vectors and and different types and
+
+1289
+01:20:17,000 --> 01:20:21,120
+and also like how how DQ is like uh a
+
+1290
+01:20:21,120 --> 01:20:24,360
+container where you can insert at the at
+
+1291
+01:20:24,360 --> 01:20:27,000
+the start then it's
+
+1292
+01:20:27,000 --> 01:20:30,360
+fair this is a good question because
+
+1293
+01:20:30,360 --> 01:20:32,960
+you're supposed to know that that's what
+
+1294
+01:20:32,960 --> 01:20:35,280
+happens but don't insert if you think
+
+1295
+01:20:35,280 --> 01:20:37,600
+youer in front and it's an efficient
+
+1296
+01:20:37,600 --> 01:20:40,760
+operation just
+
+1297
+01:20:40,840 --> 01:20:43,840
+don't yeah yeah it's like kind of for a
+
+1298
+01:20:43,840 --> 01:20:48,679
+reason that the vector has the push back
+
+1299
+01:20:48,679 --> 01:20:50,760
+function like it does have the insert
+
+1300
+01:20:50,760 --> 01:20:52,719
+function where you can put it anywhere
+
+1301
+01:20:52,719 --> 01:20:54,960
+but then it has to do all this copying
+
+1302
+01:20:54,960 --> 01:20:59,000
+so so then the push back is the one you
+
+1303
+01:20:59,000 --> 01:21:02,199
+want to use whenever
+
+1304
+01:21:02,199 --> 01:21:03,800
+it's
+
+1305
+01:21:03,800 --> 01:21:06,120
+okay so with this questions about
+
+1306
+01:21:06,120 --> 01:21:08,120
+lectures I consult you what's there and
+
+1307
+01:21:08,120 --> 01:21:10,600
+what's not because I also must get
+
+1308
+01:21:10,600 --> 01:21:13,560
+lecture yeah just to make sure
+
+1309
+01:21:13,560 --> 01:21:16,280
+that that's something it is a reasonable
+
+1310
+01:21:16,280 --> 01:21:18,639
+thing to
+
+1311
+01:21:20,920 --> 01:21:23,920
+know okay this a little bit about
+
+1312
+01:21:23,920 --> 01:21:26,560
+iterators
+
+1313
+01:21:26,610 --> 01:21:27,760
+[Music]
+
+1314
+01:21:27,760 --> 01:21:29,920
+um
+
+1315
+01:21:29,920 --> 01:21:34,159
+so what should we replace this print
+
+1316
+01:21:34,159 --> 01:21:36,400
+two uh
+
+1317
+01:21:36,400 --> 01:21:40,639
+with for this to Output two so the list
+
+1318
+01:21:40,639 --> 01:21:44,560
+is one two three four so we want to uh
+
+1319
+01:21:44,560 --> 01:21:46,960
+so we're using this iterator for this
+
+1320
+01:21:46,960 --> 01:21:48,760
+and we want to print number
+
+1321
+01:21:48,760 --> 01:21:51,760
+two and we have these kinds of
+
+1322
+01:21:51,760 --> 01:21:55,040
+options number
+
+1323
+01:21:55,040 --> 01:21:57,239
+D yeah that's
+
+1324
+01:21:57,239 --> 01:22:01,520
+correct uh so what happens here is that
+
+1325
+01:22:01,520 --> 01:22:05,360
+uh with iterators you can increment this
+
+1326
+01:22:05,360 --> 01:22:08,880
+and this is uh this the
+
+1327
+01:22:08,880 --> 01:22:10,600
+uh
+
+1328
+01:22:10,600 --> 01:22:15,639
+pre pre-increment so we increment it and
+
+1329
+01:22:15,639 --> 01:22:20,239
+then then return the incremented iter
+
+1330
+01:22:20,239 --> 01:22:23,920
+iterator and then the reference that so
+
+1331
+01:22:23,920 --> 01:22:26,000
+we start at the the beginning so then
+
+1332
+01:22:26,000 --> 01:22:28,520
+this is going to give us
+
+1333
+01:22:28,520 --> 01:22:33,320
+the the second element
+
+1334
+01:22:38,199 --> 01:22:40,920
+the it's cool that we had to implement
+
+1335
+01:22:40,920 --> 01:22:43,440
+like that you get to implement about
+
+1336
+01:22:43,440 --> 01:22:46,320
+that one should you
+
+1337
+01:22:46,320 --> 01:22:49,320
+implement
+
+1338
+01:22:49,400 --> 01:22:53,639
+the the list and iterator to be
+
+1339
+01:22:53,639 --> 01:22:56,440
+decrement
+
+1340
+01:23:01,920 --> 01:23:05,840
+yeah because
+
+1341
+01:23:06,320 --> 01:23:11,040
+I'm start it was a bit pain
+
+1342
+01:23:11,280 --> 01:23:14,560
+in was it was it a double link list in
+
+1343
+01:23:14,560 --> 01:23:16,239
+that
+
+1344
+01:23:16,239 --> 01:23:19,280
+ass yeah yeah if it is double link then
+
+1345
+01:23:19,280 --> 01:23:21,639
+then it would be expected that that it
+
+1346
+01:23:21,639 --> 01:23:22,920
+can be
+
+1347
+01:23:22,920 --> 01:23:25,480
+decremented uh
+
+1348
+01:23:25,480 --> 01:23:29,320
+I don't remember right now if it was
+
+1349
+01:23:31,320 --> 01:23:36,600
+like it's undef undefined behavior when
+
+1350
+01:23:36,600 --> 01:23:41,400
+it'ser but still can
+
+1351
+01:23:44,600 --> 01:23:48,840
+be is is NP list
+
+1352
+01:23:48,840 --> 01:23:52,719
+yes it doesn't mention that at all but
+
+1353
+01:23:52,719 --> 01:23:56,040
+when I was
+
+1354
+01:23:57,000 --> 01:23:59,159
+the glass
+
+1355
+01:23:59,159 --> 01:24:02,759
+I best
+
+1356
+01:24:06,080 --> 01:24:09,080
+for
+
+1357
+01:24:15,760 --> 01:24:19,159
+yeah yeah I
+
+1358
+01:24:20,280 --> 01:24:23,520
+don't but it's not in it's in list
+
+1359
+01:24:23,520 --> 01:24:26,320
+itself like
+
+1360
+01:24:33,850 --> 01:24:37,060
+[Music]
+
+1361
+01:24:40,679 --> 01:24:43,800
+okay yeah it should
+
+1362
+01:24:43,800 --> 01:24:47,480
+be I'm looking at my
+
+1363
+01:24:50,440 --> 01:24:52,960
+solution so the the interesting thing
+
+1364
+01:24:52,960 --> 01:24:57,520
+about it that I don't
+
+1365
+01:24:58,080 --> 01:24:59,480
+understand
+
+1366
+01:24:59,480 --> 01:25:00,600
+[Music]
+
+1367
+01:25:00,600 --> 01:25:04,080
+not well what vill didn't TR say
+
+1368
+01:25:04,080 --> 01:25:08,360
+deprecated it's just that uh ranges are
+
+1369
+01:25:08,360 --> 01:25:11,560
+going to like mostly replace
+
+1370
+01:25:11,560 --> 01:25:15,600
+them starting with what
+
+1371
+01:25:15,600 --> 01:25:18,480
+2024 well it's in
+
+1372
+01:25:18,480 --> 01:25:21,159
+C++ 20
+
+1373
+01:25:21,159 --> 01:25:24,400
+already but but C++ 20 isn't like
+
+1374
+01:25:24,400 --> 01:25:27,800
+implemented everywhere very I always
+
+1375
+01:25:27,800 --> 01:25:30,119
+give conf like it's already released but
+
+1376
+01:25:30,119 --> 01:25:32,280
+it's not
+
+1377
+01:25:32,280 --> 01:25:35,960
+like yeah I think uh not Implement
+
+1378
+01:25:35,960 --> 01:25:37,960
+everywhere which I don't understand what
+
+1379
+01:25:37,960 --> 01:25:41,400
+does it mean but
+
+1380
+01:25:41,400 --> 01:25:44,840
+eventually are going to be gone I think
+
+1381
+01:25:44,840 --> 01:25:48,760
+this is what is about C++ 20
+
+1382
+01:25:48,760 --> 01:25:52,560
+Tres so yeah we have the same kind of
+
+1383
+01:25:52,560 --> 01:25:56,280
+things uh that with iterators like begin
+
+1384
+01:25:56,280 --> 01:26:01,600
+and uh but anyway this is not really for
+
+1385
+01:26:01,600 --> 01:26:04,239
+this course
+
+1386
+01:26:04,239 --> 01:26:07,119
+now so at some point we shouldn't be
+
+1387
+01:26:07,119 --> 01:26:10,560
+teaching anymore because be well I think
+
+1388
+01:26:10,560 --> 01:26:13,639
+we'll still need to
+
+1389
+01:26:14,280 --> 01:26:17,440
+like yeah any Let's uh let's get through
+
+1390
+01:26:17,440 --> 01:26:19,320
+the rest of the
+
+1391
+01:26:19,320 --> 01:26:23,520
+questions um okay so so we have an
+
+1392
+01:26:23,520 --> 01:26:25,000
+unordered
+
+1393
+01:26:25,000 --> 01:26:27,840
+map this is actually actually an example
+
+1394
+01:26:27,840 --> 01:26:31,119
+from the lecture kind of directly uh so
+
+1395
+01:26:31,119 --> 01:26:35,480
+we have unordered map uh
+
+1396
+01:26:35,480 --> 01:26:40,040
+we put some kind of value with this
+
+1397
+01:26:40,040 --> 01:26:43,199
+key uh but then we try to like access
+
+1398
+01:26:43,199 --> 01:26:43,920
+some
+
+1399
+01:26:43,920 --> 01:26:45,960
+other
+
+1400
+01:26:45,960 --> 01:26:50,400
+um value with with another key so what's
+
+1401
+01:26:50,400 --> 01:26:54,239
+the output of this
+
+1402
+01:26:57,050 --> 01:27:00,119
+[Music]
+
+1403
+01:27:00,119 --> 01:27:04,600
+yeah that's right
+
+1404
+01:27:04,600 --> 01:27:09,719
+uh so so what happens here is um I I can
+
+1405
+01:27:09,719 --> 01:27:14,920
+actually so so if I I now go
+
+1406
+01:27:15,360 --> 01:27:20,400
+here uh unordered map or or regular map
+
+1407
+01:27:20,400 --> 01:27:23,360
+it's all the all the same in this sense
+
+1408
+01:27:23,360 --> 01:27:26,119
+so we're using this operator right and
+
+1409
+01:27:26,119 --> 01:27:28,360
+then here we can kind of see like like
+
+1410
+01:27:28,360 --> 01:27:31,199
+okay what what it does it
+
+1411
+01:27:31,199 --> 01:27:34,800
+uh insert if such key does not already
+
+1412
+01:27:34,800 --> 01:27:37,280
+exist so so that doesn't mean that you
+
+1413
+01:27:37,280 --> 01:27:41,520
+need to like assign some value for it to
+
+1414
+01:27:41,520 --> 01:27:44,480
+insert it's going to uh insert
+
+1415
+01:27:44,480 --> 01:27:47,520
+regardless and and then it also says
+
+1416
+01:27:47,520 --> 01:27:49,679
+that it gets value
+
+1417
+01:27:49,679 --> 01:27:52,600
+initialized and in the case of in that
+
+1418
+01:27:52,600 --> 01:27:57,080
+that means it's going to be zero
+
+1419
+01:27:57,280 --> 01:27:59,719
+initialized uh yeah that's an example
+
+1420
+01:27:59,719 --> 01:28:03,360
+directly from my lecture yeah so it
+
+1421
+01:28:03,360 --> 01:28:05,920
+would be fair question if it was not
+
+1422
+01:28:05,920 --> 01:28:08,280
+integer but something else what would be
+
+1423
+01:28:08,280 --> 01:28:11,040
+kind of testing what is that zero
+
+1424
+01:28:11,040 --> 01:28:15,000
+initial that value
+
+1425
+01:28:18,520 --> 01:28:20,360
+initialization
+
+1426
+01:28:20,360 --> 01:28:24,480
+dou because it just do that yeah
+
+1427
+01:28:24,480 --> 01:28:26,239
+but this this kind of tricky because
+
+1428
+01:28:26,239 --> 01:28:29,880
+like if You' used other languages and
+
+1429
+01:28:29,880 --> 01:28:31,760
+like dictionaries in other languages
+
+1430
+01:28:31,760 --> 01:28:33,320
+then you might expect this to be like
+
+1431
+01:28:33,320 --> 01:28:36,760
+some kind of exception or or maybe if
+
+1432
+01:28:36,760 --> 01:28:38,960
+you're thinking like okay what with C++
+
+1433
+01:28:38,960 --> 01:28:40,600
+if we try to access something that we
+
+1434
+01:28:40,600 --> 01:28:43,320
+shouldn't then it's like random garbage
+
+1435
+01:28:43,320 --> 01:28:45,840
+well data search point of view if
+
+1436
+01:28:45,840 --> 01:28:48,000
+there's a search on some ke it actually
+
+1437
+01:28:48,000 --> 01:28:51,159
+does insert a default value also from
+
+1438
+01:28:51,159 --> 01:28:53,719
+data structure that's how yeah yeah I
+
+1439
+01:28:53,719 --> 01:28:57,840
+guess sense it makes sense it
+
+1440
+01:28:58,880 --> 01:29:00,760
+sense
+
+1441
+01:29:00,760 --> 01:29:04,400
+okay and this would be the last question
+
+1442
+01:29:04,400 --> 01:29:07,239
+now so which of the following statements
+
+1443
+01:29:07,239 --> 01:29:09,320
+regarding standard Library data
+
+1444
+01:29:09,320 --> 01:29:11,080
+containers is
+
+1445
+01:29:11,080 --> 01:29:14,159
+false we have four statements or or none
+
+1446
+01:29:14,159 --> 01:29:17,480
+of the above are false so it's most
+
+1447
+01:29:17,480 --> 01:29:20,440
+efficient to insert elements to the end
+
+1448
+01:29:20,440 --> 01:29:23,000
+of a vector well we kind of talked about
+
+1449
+01:29:23,000 --> 01:29:25,719
+that so yeah that the specific that push
+
+1450
+01:29:25,719 --> 01:29:28,719
+back uh so then they can just keep
+
+1451
+01:29:28,719 --> 01:29:32,840
+adding things so that's
+
+1452
+01:29:32,840 --> 01:29:37,639
+fine uh inserting to and removing from a
+
+1453
+01:29:37,639 --> 01:29:43,239
+list is constant time complexity is this
+
+1454
+01:29:45,600 --> 01:29:47,679
+true
+
+1455
+01:29:47,679 --> 01:29:53,480
+yes yes yes this is also
+
+1456
+01:30:00,719 --> 01:30:02,760
+SD list is a container that supports
+
+1457
+01:30:02,760 --> 01:30:04,840
+constant time insertion and removal of
+
+1458
+01:30:04,840 --> 01:30:06,920
+elements from anywhere in the
+
+1459
+01:30:06,920 --> 01:30:10,239
+container yeah that's kind of uh B we
+
+1460
+01:30:10,239 --> 01:30:13,880
+talk talked about in my lecture as
+
+1461
+01:30:13,880 --> 01:30:18,760
+well uh yeah so Al also not is that this
+
+1462
+01:30:18,760 --> 01:30:21,119
+constant time doesn't necessarily mean
+
+1463
+01:30:21,119 --> 01:30:24,400
+that's super fast because like espe in
+
+1464
+01:30:24,400 --> 01:30:26,639
+case double link it's going to have to
+
+1465
+01:30:26,639 --> 01:30:29,400
+like attach it in in in both ways so it
+
+1466
+01:30:29,400 --> 01:30:31,600
+has to do some amount of
+
+1467
+01:30:31,600 --> 01:30:34,360
+operations uh so it's much faster to for
+
+1468
+01:30:34,360 --> 01:30:38,199
+example insert at the end of the
+
+1469
+01:30:38,400 --> 01:30:40,119
+vector
+
+1470
+01:30:40,119 --> 01:30:45,199
+okay uh conu of data is one advantage of
+
+1471
+01:30:45,199 --> 01:30:48,599
+vectors is this
+
+1472
+01:30:50,639 --> 01:30:53,600
+true this this a maybe maybe a term
+
+1473
+01:30:53,600 --> 01:30:55,400
+that's not familiar to you if you if you
+
+1474
+01:30:55,400 --> 01:30:59,839
+don't remember it from the
+
+1475
+01:31:00,400 --> 01:31:03,080
+lecture so so what that
+
+1476
+01:31:03,080 --> 01:31:06,880
+means is that the data in the container
+
+1477
+01:31:06,880 --> 01:31:11,440
+is like together in in
+
+1478
+01:31:11,440 --> 01:31:16,000
+memory the addresses you can add them by
+
+1479
+01:31:16,000 --> 01:31:18,360
+one the are
+
+1480
+01:31:18,360 --> 01:31:21,360
+allocated
+
+1481
+01:31:22,000 --> 01:31:25,920
+yeah yeah it's essentially
+
+1482
+01:31:34,920 --> 01:31:38,480
+yeah so so then is this true for vectors
+
+1483
+01:31:38,480 --> 01:31:40,800
+yes
+
+1484
+01:31:40,800 --> 01:31:45,119
+yes you can iterate through a map a
+
+1485
+01:31:45,119 --> 01:31:48,000
+standard Library map can you do
+
+1486
+01:31:48,000 --> 01:31:49,920
+that
+
+1487
+01:31:49,920 --> 01:31:55,400
+yes that's correct so actually
+
+1488
+01:31:55,400 --> 01:31:57,800
+um oh yeah actually I I kind of phrased
+
+1489
+01:31:57,800 --> 01:31:59,119
+this question wrong because now there's
+
+1490
+01:31:59,119 --> 01:32:02,520
+no correct answer no no wait no no this
+
+1491
+01:32:02,520 --> 01:32:05,760
+is false oh yeah yeah yeah no it is yeah
+
+1492
+01:32:05,760 --> 01:32:08,239
+yeah e is correct yeah yes okay for a
+
+1493
+01:32:08,239 --> 01:32:10,600
+moment I saw I like messed this up but
+
+1494
+01:32:10,600 --> 01:32:12,480
+no that's
+
+1495
+01:32:12,480 --> 01:32:16,480
+correct um
+
+1496
+01:32:16,480 --> 01:32:19,360
+okay but yeah yeah you should
+
+1497
+01:32:19,360 --> 01:32:22,320
+um but this kind of question that there
+
+1498
+01:32:22,320 --> 01:32:25,320
+like
+
+1499
+01:32:30,320 --> 01:32:32,600
+can you go to the plus
+
+1500
+01:32:32,600 --> 01:32:34,840
+operator
+
+1501
+01:32:34,840 --> 01:32:37,000
+is
+
+1502
+01:32:37,000 --> 01:32:40,000
+asking
+
+1503
+01:32:42,880 --> 01:32:46,840
+no like that we will not do that it was
+
+1504
+01:32:46,840 --> 01:32:48,480
+like the only way I could PR this
+
+1505
+01:32:48,480 --> 01:32:50,320
+question in a way where only one option
+
+1506
+01:32:50,320 --> 01:32:53,639
+is correct uh because like that's how
+
+1507
+01:32:53,639 --> 01:32:55,239
+it's going to be on love where where
+
+1508
+01:32:55,239 --> 01:33:00,480
+it's like it's always one
+
+1509
+01:33:03,639 --> 01:33:06,679
+option can you go to the plus operator
+
+1510
+01:33:06,679 --> 01:33:10,639
+uh question oh
+
+1511
+01:33:14,639 --> 01:33:19,110
+okay I that
+
+1512
+01:33:19,110 --> 01:33:22,259
+[Music]
+
+1513
+01:33:24,080 --> 01:33:27,520
+so what about this so here A and C both
+
+1514
+01:33:27,520 --> 01:33:30,280
+correct
+
+1515
+01:33:31,159 --> 01:33:35,280
+right no I don't I don't think so so so
+
+1516
+01:33:35,280 --> 01:33:40,080
+I was talking uh before how was like the
+
+1517
+01:33:40,080 --> 01:33:42,280
+um operator
+
+1518
+01:33:42,280 --> 01:33:44,360
+overloads uh you
+
+1519
+01:33:44,360 --> 01:33:49,000
+already have access to like the the left
+
+1520
+01:33:49,000 --> 01:33:52,639
+sphere by itself because that's like the
+
+1521
+01:33:52,639 --> 01:33:54,400
+objects
+
+1522
+01:33:54,400 --> 01:33:57,199
+that's calling the the
+
+1523
+01:33:57,199 --> 01:34:00,920
+function so then as argument only only
+
+1524
+01:34:00,920 --> 01:34:01,960
+one
+
+1525
+01:34:01,960 --> 01:34:05,000
+is pass and and that's like the two
+
+1526
+01:34:05,000 --> 01:34:08,199
+spheres that are being added and then
+
+1527
+01:34:08,199 --> 01:34:10,440
+return is
+
+1528
+01:34:10,440 --> 01:34:14,800
+the so like I I I think if you use two
+
+1529
+01:34:14,800 --> 01:34:18,560
+spares to with class operator uh but if
+
+1530
+01:34:18,560 --> 01:34:21,920
+you define the C1 outside the class like
+
+1531
+01:34:21,920 --> 01:34:24,239
+I think there's one mistake
+
+1532
+01:34:24,239 --> 01:34:29,239
+maybe it it's uh the C1 can be written
+
+1533
+01:34:29,239 --> 01:34:34,080
+as Spar without class uh name space as a
+
+1534
+01:34:34,080 --> 01:34:35,400
+plus
+
+1535
+01:34:35,400 --> 01:34:39,119
+operator So like um like if if you
+
+1536
+01:34:39,119 --> 01:34:41,040
+define the plus oper outside of the
+
+1537
+01:34:41,040 --> 01:34:45,840
+class it can still work oh right but it
+
+1538
+01:34:45,840 --> 01:34:47,719
+doesn't have this operat because it's
+
+1539
+01:34:47,719 --> 01:34:49,600
+not part of the sphere like you cannot
+
+1540
+01:34:49,600 --> 01:34:50,880
+have the name
+
+1541
+01:34:50,880 --> 01:34:55,040
+space yeah then then it would be uh then
+
+1542
+01:34:55,040 --> 01:34:56,760
+it would be just a separate function
+
+1543
+01:34:56,760 --> 01:34:59,560
+that adds two spheres together that then
+
+1544
+01:34:59,560 --> 01:35:01,520
+you would pass two different spheres as
+
+1545
+01:35:01,520 --> 01:35:03,840
+argument but if you do it by operator
+
+1546
+01:35:03,840 --> 01:35:06,280
+overload then there's only one argument
+
+1547
+01:35:06,280 --> 01:35:08,519
+like
+
+1548
+01:35:16,440 --> 01:35:20,440
+this uh
+
+1549
+01:35:24,360 --> 01:35:28,960
+it's a binary operator plus it's a
+
+1550
+01:35:28,960 --> 01:35:31,440
+binary with two
+
+1551
+01:35:31,440 --> 01:35:36,960
+arum not one because it's like a plus
+
+1552
+01:35:36,960 --> 01:35:42,520
+operat so you're acting on a a is what
+
+1553
+01:35:42,520 --> 01:35:44,159
+you want
+
+1554
+01:35:44,159 --> 01:35:48,080
+to you're on
+
+1555
+01:35:51,840 --> 01:35:58,639
+a A plus b is synta equivalent to a
+
+1556
+01:36:02,639 --> 01:36:06,040
+doer all right yeah I
+
+1557
+01:36:06,040 --> 01:36:09,159
+guess I I didn't think that like if
+
+1558
+01:36:09,159 --> 01:36:12,800
+there is a way to define the plus
+
+1559
+01:36:12,800 --> 01:36:16,239
+operator outside of the class but but in
+
+1560
+01:36:16,239 --> 01:36:19,280
+this case it is in the class so then
+
+1561
+01:36:19,280 --> 01:36:22,119
+then this doesn't make sense if there is
+
+1562
+01:36:22,119 --> 01:36:25,679
+a way to like Define out of the class
+
+1563
+01:36:25,679 --> 01:36:28,920
+then something like this could make
+
+1564
+01:36:28,920 --> 01:36:34,159
+sense a is the same as a
+
+1565
+01:36:34,159 --> 01:36:36,560
+operator but but I'm not sure if it is
+
+1566
+01:36:36,560 --> 01:36:38,800
+considered as overload because when
+
+1567
+01:36:38,800 --> 01:36:41,880
+overloading is I agree this operator is
+
+1568
+01:36:41,880 --> 01:36:45,719
+available because
+
+1569
+01:36:46,239 --> 01:36:51,799
+to so this is equal to this
+
+1570
+01:36:53,719 --> 01:36:58,239
+I I guess I guess you can but should
+
+1571
+01:36:58,239 --> 01:37:02,199
+you can you do it like put a and b
+
+1572
+01:37:02,199 --> 01:37:04,199
+inside of the
+
+1573
+01:37:04,199 --> 01:37:07,760
+arguments I don't don't I I send the
+
+1574
+01:37:07,760 --> 01:37:10,679
+code in the chat so it works but uh I'm
+
+1575
+01:37:10,679 --> 01:37:12,320
+not sure if it can be considered as
+
+1576
+01:37:12,320 --> 01:37:16,960
+overloading the plus operat so yeah it
+
+1577
+01:37:16,960 --> 01:37:19,360
+plus
+
+1578
+01:37:19,360 --> 01:37:25,360
+is and it is is it anymore like
+
+1579
+01:37:27,600 --> 01:37:30,239
+finding operator plus right I think it's
+
+1580
+01:37:30,239 --> 01:37:33,919
+not anym like
+
+1581
+01:37:35,360 --> 01:37:37,239
+operator yeah yeah yeah yeah yeah this
+
+1582
+01:37:37,239 --> 01:37:39,080
+is not operator plus overload it's
+
+1583
+01:37:39,080 --> 01:37:41,239
+something else it's not an overload it's
+
+1584
+01:37:41,239 --> 01:37:43,880
+something else like C is not an operator
+
+1585
+01:37:43,880 --> 01:37:46,280
+plus overload because operator plus
+
+1586
+01:37:46,280 --> 01:37:49,840
+overload takes one
+
+1587
+01:37:50,239 --> 01:37:54,520
+argument and add we I talking the
+
+1588
+01:37:54,520 --> 01:37:59,080
+different different you are oh
+
+1589
+01:37:59,080 --> 01:38:03,080
+yeah yeah did you look at
+
+1590
+01:38:04,199 --> 01:38:07,599
+this oh yeah what's that oh yeah
+
+1591
+01:38:07,599 --> 01:38:12,560
+apparently this does work which I find a
+
+1592
+01:38:12,560 --> 01:38:14,960
+little bit
+
+1593
+01:38:15,719 --> 01:38:19,000
+confusing it
+
+1594
+01:38:21,000 --> 01:38:23,960
+works so so I I get I I think the when
+
+1595
+01:38:23,960 --> 01:38:25,560
+you when the compiler sees a plus
+
+1596
+01:38:25,560 --> 01:38:28,679
+operator it looks okay is there a way to
+
+1597
+01:38:28,679 --> 01:38:31,880
+make make them plus operate is there
+
+1598
+01:38:31,880 --> 01:38:34,679
+Define plus operator for these classes
+
+1599
+01:38:34,679 --> 01:38:37,239
+so it can find that operator if you
+
+1600
+01:38:37,239 --> 01:38:39,719
+define it outside but it's not I'm not
+
+1601
+01:38:39,719 --> 01:38:42,560
+sure whether we can put it over or
+
+1602
+01:38:42,560 --> 01:38:46,480
+not does it use that operator yes yes it
+
+1603
+01:38:46,480 --> 01:38:49,320
+it's yes it's because we had defined a
+
+1604
+01:38:49,320 --> 01:38:52,000
+plus operator for these two expression
+
+1605
+01:38:52,000 --> 01:38:53,960
+like S1 plus S2 we it's
+
+1606
+01:38:53,960 --> 01:38:56,880
+defined but it's not overloading the
+
+1607
+01:38:56,880 --> 01:38:59,040
+classes on as
+
+1608
+01:38:59,040 --> 01:39:02,880
+operator it's something else oh oh right
+
+1609
+01:39:02,880 --> 01:39:05,239
+okay I think I see you see in the C you
+
+1610
+01:39:05,239 --> 01:39:08,520
+have name space like spare colon col but
+
+1611
+01:39:08,520 --> 01:39:10,639
+you cannot add it here because it's not
+
+1612
+01:39:10,639 --> 01:39:13,280
+inside the class it's doesn't belong to
+
+1613
+01:39:13,280 --> 01:39:16,480
+a class yeah it doesn't belong to that
+
+1614
+01:39:16,480 --> 01:39:18,119
+makes sense yeah it's not an operate
+
+1615
+01:39:18,119 --> 01:39:19,880
+it's not an operator
+
+1616
+01:39:19,880 --> 01:39:24,480
+overload it's it's a different
+
+1617
+01:39:24,599 --> 01:39:28,639
+yeah yeah okay so so then then in the in
+
+1618
+01:39:28,639 --> 01:39:32,239
+the end this is still the the
+
+1619
+01:39:32,239 --> 01:39:35,560
+like because this is written as being
+
+1620
+01:39:35,560 --> 01:39:39,520
+like in the sphere class so so then then
+
+1621
+01:39:39,520 --> 01:39:42,520
+it doesn't work like
+
+1622
+01:39:50,800 --> 01:39:54,560
+this but here so you you didn't have
+
+1623
+01:39:54,560 --> 01:39:55,719
+that
+
+1624
+01:39:55,719 --> 01:39:59,760
+allow also it would allow this modifying
+
+1625
+01:39:59,760 --> 01:40:01,199
+of
+
+1626
+01:40:01,199 --> 01:40:05,280
+the yeah which would modify this like a
+
+1627
+01:40:05,280 --> 01:40:09,239
+un which is just not the syntax that
+
+1628
+01:40:09,239 --> 01:40:11,599
+is maybe it does something but it just
+
+1629
+01:40:11,599 --> 01:40:15,080
+so know and
+
+1630
+01:40:15,960 --> 01:40:19,840
+that it's just from the style of math
+
+1631
+01:40:19,840 --> 01:40:22,080
+like you want to keep math consistent
+
+1632
+01:40:22,080 --> 01:40:25,320
+with what people
+
+1633
+01:40:30,159 --> 01:40:33,040
+so if you would if you would like have
+
+1634
+01:40:33,040 --> 01:40:38,840
+some access for method and you would
+
+1635
+01:40:38,840 --> 01:40:41,440
+return
+
+1636
+01:40:41,440 --> 01:40:45,920
+uh you you won return
+
+1637
+01:40:45,920 --> 01:40:48,719
+like it just don't want to modify the
+
+1638
+01:40:48,719 --> 01:40:53,599
+underline class on which is
+
+1639
+01:40:53,639 --> 01:40:57,280
+modify a after this after you add a you
+
+1640
+01:40:57,280 --> 01:41:02,639
+don't want I about
+
+1641
+01:41:04,679 --> 01:41:09,000
+different all I have this example here
+
+1642
+01:41:09,000 --> 01:41:11,760
+where it's like adding this one
+
+1643
+01:41:11,760 --> 01:41:17,199
+two so but anyway I think this is great
+

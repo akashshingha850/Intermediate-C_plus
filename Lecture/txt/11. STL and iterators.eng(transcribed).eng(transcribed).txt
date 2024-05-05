@@ -1,0 +1,1573 @@
+e
+okay it's quarter past 10 so let's
+start uh so I'm going to be holding this
+lecture today and I'll talk
+about um I'll talk about a standard
+Library some data containers and other
+things included in it and also
+iterators
+um and once again uh so this invited
+lecture is now this Thursday
+so very very soon so may make sure to be
+there it's going to
+actually kind of bring these topics
+together in a way or or I kind of forget
+you up to date with modern
+C++ B is very uh very experienced in
+this
+field um
+okay I think yeah okay yeah just
+checking that there should be audio on
+Zoom as well let me know if there's any
+problems um okay but let's get to the
+topic so talking about data container so
+so this is like kind of the the basic
+one you you would start with just an
+array and uh you
+have just in sequence this boxes with
+like some kind of data in them like
+you can have an array of numbers or you
+can have an array of like any kind of
+objects you you want and the way it's
+stored in the memory is um like that
+they're just in sequence so you
+basically have a pointer to the first
+element and then you know the size of
+one object if it's an in then it's
+probably four
+bytes so then you know that ele
+7 is at offset uh 1 C and that's
+basically how you can access the
+data uh now if we compare that to a
+dynamic array so for example STD
+Vector uh the idea is the same but the
+way vectors
+work uh is that they dynamically
+reallocate
+memory as they grow larger and when that
+happens what it has to do is uh copy the
+data from the previous array to the next
+one it it can't just like
+continue
+uh like past the current array just like
+grow it directly it needs to create a
+completely new array and usually the
+implementation is like this where it
+like doubles the size from the previous
+time uh well well I don't know maybe I
+shouldn't say usually but but this is
+like at least a common way to uh
+present the idea there could be more
+optimal
+ways uh and and when you when you do
+this like like I said it creates new
+array so another thing that leads
+to uh is
+that the
+um memory locations of these individual
+elements change so if you had like a
+pointer
+to uh see there when it was like a size
+of
+four
+uh you had a pointer to it like stor it
+somewhere
+else and then you add some more elements
+into the array you try to access the
+pointer then you'll find that you
+can't you might end up finding the C
+there but if you do then that would just
+be the old data and it's like actually
+garbage data that was just left
+there
+um Al the the term for this
+um that that the memory is like have in
+in sequence NE next to each other uh in
+this consistent way
+uh is is called
+cones uh and that term will also be
+relevant uh
+later okay so Anna already talked about
+uh lists a little bit I'll just quickly
+go over the basic idea so basically you
+have the
+head uh where there's some kind of data
+and then it points to another node which
+points to another and uh so on
+and then at the end uh you often store
+the address for the
+tail
+and uh you might be able to Traverse
+this like forward and back depending on
+how it's defined
+um so then in this case the memory
+locations always remain the same even
+when you keep adding new elements so I I
+kind of put this uh box all around the
+screen just to show that like they kind
+of like it can be anywhere and they're
+just like you just have these pointers
+telling you where the next element
+is uh so so how to iterate uh so Anna
+probably showed uh that yeah you can
+access the next pointer and and then
+just kind of go from there uh but we'll
+kind of talk about a more robust
+uh method for the
+iteration
+um so yeah this is the still like
+basic
+uh way to do this but then
+uh what it looks like with iterators is
+like this so so you
+create uh an iterator for this
+list and and
+and you initialize it with the beginning
+of the
+list and then you use the
+Plus+ operator uh the the the
+increment operator uh to kind of move it
+forward and and then you can dreference
+it to get access to the
+um oh I think that's actually U
+oh wait minute is that
+right so we D reference the iterator
+then we get access to this rgba pixel
+pointer that we then have to like yeah
+yeah okay I think this is this is right
+um yeah anyway
+so so so so then what what's happening
+there we're just like incrementing this
+iterator what what does that
+mean
+um okay well yeah I'll talk about that
+in the next slide for first I I'll just
+uh mention the auto
+keyword uh so you can see here this like
+declaration is really long this sdd list
+RGB pixel po
+iterator so then uh one way to make it
+much uh
+shorter is
+um just to use the auto keyword yeah you
+might have seen some discussion about it
+uh on
+Discord uh basically iterators is one
+good use case uh for it so just
+basically let the
+compiler uh did use what what the type
+is so especially like if it's kind of
+obvious what it is then uh it's it's
+like safe to use this Auto keyword but
+you shouldn't really get in the habit of
+like uh using it for every type you
+declare because then it gets really
+confusing and like there might be cases
+where uh the compiler would maybe pick a
+type that's a little bit different from
+what you actually intended
+um okay okay so
+now uh now let's talk about like what
+what the like operator means in the case
+federator so basically how it works is
+that it's some kind of operator overload
+that you're
+using and like in the case of list it
+could be like that where
+it's looking for the
+um next item in the in the
+list um so so basically the the way that
+an already showed how you can uh go
+through these
+lists but then for the case of array it
+could just be like that where it just
+has some kind of index and it's just
+incrementing that index and then uh
+that's all you need to access the
+elements you want
+uh so the point is that that the data
+container can Define the way to iterate
+it and create this like clean interface
+uh for the user of of that
+class uh so so then the user doesn't
+need to think okay well what this is a
+list so I need to Traverse it like this
+or or this is some other kind of
+container especially if we consider all
+the like different types of containers
+that exist
+some might make you think like okay I'm
+not really sure like what what the like
+way to uh iterate this would even
+be um so then iterators are this kind of
+General uh
+concept that the developer of of the
+class uh can Define it so then it's easy
+to uh iterate through the
+container and also
+uh also it's just like a kind
+of a
+general way that can be applied to all
+the different kinds of um containers you
+can especially see like with with the
+standard
+library that uh it's very consistent in
+the way that you can use uh these
+iterators to to access the data
+containers
+there um
+okay so if if
+you like let's say you write some kind
+of data container and you also write an
+iterator for it then it is indeed your
+uh job to write the operator overloads
+and like technically you could make
+these operator overloads do anything uh
+anything you want but of course there's
+a kind of a standard way that people
+expect it um to
+work and one thing I want to mention
+here is
+um post versus pre increment so uh when
+you see that it Plus+ there that's
+called a post increment
+um so maybe maybe you're not sure what
+what pre-increment then means well what
+that's that means the case where the
+plus plus is before uh the it now I have
+a little bit of uh
+code here to
+show Le I think I do
+I I get R of that
+code um well okay let's just um let's
+just kind of WR
+it
+um WR it
+now so let's say
+we have this template function that
+takes any any kind of container now this
+isn't really like a perfect way to uh
+Implement things but uh we just going to
+let it slide now
+um oh didn't try the
+name okay so let's just um
+do exactly we have
+here I'm struggling to type like this
+when the screen I'm looking at this over
+there
+um okay so if we try to
+if we do this so so now the the idea is
+that we
+are uh
+iterating
+uh at the same time as we're also
+accessing uh the data behind the
+iterator so then we don't need to have
+it on a separate line it's kind of a
+small optimization but it's also
+something you see uh See pretty often
+uh so let's see what
+the result looks
+like oh clearly I'm we're getting
+something here
+and this is always what happens if
+uh oh it's supposed to be
+while whenever you do live coding I
+thought I had like all this
+code
+already written
+but
+um so this is list Tesla let's get rid
+of all the other things for now so it's
+clear what's happening
+oh I didn't
+say
+um okay okay
+255
+uh wait did I did I do everything
+correctly
+now just 255 shouldn't there be more in
+the
+like I this is this is what happens when
+the when the code is not not prepared
+okay now I'm getting confused well let
+me try anyway with the
+increment okay
+well oh oh it's not list test it's
+uh H wait
+no yeah it's it's the print function oh
+oh that's why it's not looking correct
+okay
+okay
+uh okay there we go so so the list is
+supposed
+to have this
+uh r red then green and then blue and
+blue
+uh uh and that those have these kinds of
+values so then we're always printing the
+green value from here uh which only in
+the case of G it's
+255 so now as the second print we got we
+got
+255 and then the last one is some kind
+of zero none of these have zero so so
+this is basically what happens if you
+use the pre-increment that it increments
+it and then it Returns the
+uh Returns the elements that it points
+to after the
+incrementation and then we if we use to
+uh post
+increment then it's actually working as
+we wanted to so now
+it's actually going to give us this as
+it is before the increment and after
+that it's going to increment it so so
+the next time we access it it's going to
+be
+okay and also when it accesses the last
+element then it's going to increment
+after that and then here is going to see
+like okay we're at the end now so that
+way this ends up working just
+fine uh so important difference there
+between
+uh post and and
+pre-increment um okay and then something
+interesting about them is if you want to
+Define these
+overloads uh this is actually how you
+make the distinction so it's the same
+operator but for the post fix you put
+this dummy int uh
+identifier uh in the kind of arguments
+section
+and that's how the compiler sees that
+okay okay this is supposed to be postfix
+it's kind of a like hacky way uh that
+that it works
+but
+uh you know it's it's important to know
+if you need to implement these or if
+you're looking at code and it'll make it
+easier to understand and and
+generally uh how you expect the post fix
+to work is that it creates some kind of
+um
+temporary variable
+here um and then
+it creates or returns an iterator to
+this temporary
+node uh that was created before
+incrementing
+okay um so now little bit like recap in
+a way of STD vector and STD list I mean
+we didn't specifically kind of talk
+about the standard library right there
+but uh but but we'll talk about it now
+and um SD Vector is something that's
+very
+commonly uh used mainly because it's um
+it allows you to access items very
+quickly uh and usually that's what you
+want and then the benefit of the list
+for example is that you can insert and
+to move quickly and and it retains all
+the memory
+locations uh so then maybe you have some
+kind of scenario where
+uh you really need to like insert
+elements all over the place and remove
+them and you do much more like
+insertions than uh accessing the
+elements like you could see
+uh here is that like like basically the
+way
+to you can also see it here so the way
+to like access the elements in a list is
+that
+basically you just have to iterate
+through the entire list until you find
+the one you need so you you can't like
+somehow say like okay I want to access
+the fifth element in this list now now
+of course you can do that by having like
+a loop that uh increments the iterator
+five
+times
+um but but then of course you can see
+how that's much less uh efficient
+than than uh with vectors where you can
+simply just
+um access it by by index and and with
+vectors uh you also have access to this
+at
+method and the difference
+there is that that that has bounds
+checking so if you try to
+um so if you try to access
+something outside of the bounds of the
+vector then it's not going
+to segment fault or something that you
+would
+expect to regular ARR I don't actually
+remember exactly what happened so it's
+actually a good way to uh
+show I'm sorry show a little bit of CPP
+reference so if you ever need to to kind
+of uh get a better understanding of how
+these different things in the standard
+Library work uh then CPP reference is is
+one good site uh to go
+to uh so you get like a basic
+description here so it says the elements
+are stored continuously so uh you can
+access by index and not only iterators
+uh and then you can see that is talking
+about the automatic memory
+allocation and
+then for for data containers you can
+usually expect it to um tell you the
+complexity of of different uh
+operations okay but I wanted to look at
+um the ATS method so so let's see what
+this
+does um
+if PA is not within the range an
+exception of type SD out of range is
+thrown now we haven't really talked
+about exceptions and that's kind of
+another uh topic entirely and we're not
+going to get into that but
+um yeah if if if you're if you're not
+making use of the exceptions then it is
+actually faster to uh just use uh this
+operator because the the balance
+checking does cost some
+time um
+okay let's move
+forward uh but the iterators can indeed
+be also used
+for vectors but but that'll also be uh
+of course um
+slower than if you can just access
+directly with um with like an
+index okay then another
+thing uh another data
+container uh STD map so if you know
+dictionaries from other
+languages uh then this probably looks
+very very
+similar so you can kind of Define this
+key and a value and in this case I I
+make it that this key is a string and
+the value is
+in uh and
+then you can kind of just
+uh insert values with different keys and
+it'll kind of automatically create those
+elements into the
+map and then for for a map you can also
+just uh iterate through
+it uh if you need to
+uh but then there's also unordered
+map
+and
+the pretty much everything works the
+same I like on the surface but then the
+difference is that in unordered map that
+well as the name says they're they're
+not in order but what that implies is
+that it's actually faster to access
+things
+uh through the uh
+key the implementations are quite
+different
+um but then yeah you can't expect them
+to be in any kind of uh order in the
+map okay and again you can use the CPP
+reference uh for example to like find
+all these details about the
+differences um okay so then I have a
+question
+if if you don't have a key in the
+map then what happens but once again I I
+should have code for this yeah so okay
+now I have the exact code that's that's
+PRM here that's good
+um okay and I should have a
+slido uh question for this as
+well U so this the first time I I showed
+the slide at all so I'm going to wait
+for a while for everybody to
+um join so what's the output of C out uh
+oh it says my map door but I if ramed it
+to inventory but regardless if you if
+you try to
+access some kind of key in this
+map in this map of ins that doesn't
+exist what is the
+output yeah I I'll wait a little bit
+more somebody saying Kina found
+exception 100ch of people voting for
+zero a segment fault or random garbage
+going to get any votes
+okay maybe no one else is voting
+now okay there we have our answer so we
+get the output of
+zero and we can kind of find
+the uh reason for this from here maybe
+some people online uh
+looked looked at this and found the
+answer so what we can hear what what we
+can see here is that uh when
+it
+um let's see returns of
+reference or or performs insertion if
+the key doesn't exist if you use this
+operator uh at all even if if you're not
+trying to like insert some kind of value
+to it
+in any case it's going to be some kind
+of um
+insertion and then uh
+specifically uh it's going to
+be uh value initialized and and for
+um for something like in that's going to
+mean being zero initialized so it is
+actually consistently going to be
+initialized as zero
+um okay so so that can lead to some kind
+of problems if you if you like keep
+trying to access these things and then
+it just keeps adding more elements that
+you didn't necessarily want uh to be
+there I mean maybe you did
+um maybe you did want them to be there
+but if if you didn't then you do have
+access to this find function which
+actually returns an
+iterator
+uh and then the iterator is either going
+to point at the uh element that it
+found or it's going to just point at the
+kind of blank space at the
+end and then you can check like okay if
+it's if it's pointing at something
+that's not the end
+uh then we
+should have our answer here oh actually
+this is kind
+of this is kind of
+naturally
+um okay I think I think at least of the
+top of myit should be
+like should be like this well let's try
+it out actually so so let's say we have
+that key here then let's make this
+iterator inventory
+find
+key think if I remember correctly that's
+the way it
+works oh or maybe
+okay yeah there we go okay okay that's
+the way it works of course uh yeah
+that's not it's not a pointer
+anymore yeah there we go that that makes
+more
+sense uh to do so this way we already
+have access to it where we wouldn't
+really want to need
+to find it
+again um okay and then
+uh I just have this kind of uh don't do
+here because uh in one of the
+assignments uh you're going to be using
+maps and you might need to find some
+elements there and if you do it like
+this where you iterates through the
+whole thing looking for
+um looking for the
+key that's going to be really slow it's
+it's much faster to use the uh find
+function or or even like the
+uh operator uh for it but of course with
+the operator there's some like risks
+involved the
+way of course sometimes you might have a
+reason to operate through or or to
+iterate through a map but if you need to
+find one thing
+then definitely
+not I just realized
+I reference the uh value different ways
+in these now so so yeah yeah you can
+just do
+like it and then arrow and then the
+element and and then with the maps uh
+like usually with like any kind
+of uh pairs that you have in this
+standard Library you'll have the uh
+properties first and second
+so in this case the first would be the
+key and second is is then uh the
+value
+okay so then again let's consider out of
+these containers what to use so so let's
+see so with vectors we have fast
+access to all the elements we have fast
+insert and remove at the end
+of it so so we can easily like uh add
+things to the end of course if it ends
+up having
+to
+preallocate uh the vector or or I call
+the memory then um then that's going to
+be
+slower having to copy all
+those all that data is is really
+expensive um but otherwise it's it's
+fast
+okay with list we have fast insert
+anywhere and memory is allocated per
+element so so every time we add one
+element then it allocates the memory for
+just that one but with vectors it's uh
+kind of allocating more memory ahead of
+time and and then also sometimes it has
+to do the copying so so list has an
+advantage there now with maps
+with maps we can actually find that
+uh access by key
+and and in inserting is actually
+especially in case of unordered map it's
+actually constant time
+operation um at at least most of the
+time uh I think there was like in some
+cases it might not be but
+uh okay so so if we we can quickly
+access anything by key and and we can
+quickly insert anywhere then wouldn't
+that be like really
+amazing so then other things to consider
+here is uh the amount of memory
+consumption caching so so caching uh
+especially kind of uh relates
+to
+the cont good
+continuity I
+don't entirely know how to pronounce
+that but um basically if the data of the
+container is kind of all over the place
+and you try to access it like a little
+bit here and a little bit there uh then
+it's actually going to be much slower
+for the uh computer because if it's all
+like kind of bunched up together all all
+the memory of the
+container uh
+then it might just like all the memory
+be like in this C memory and then super
+fast to access but if it's all over the
+place then the system constantly needs
+to like swap the cach memory
+around
+uh also something
+to uh look into is uh the average versus
+worst case complexity so a lot of the
+time uh when you look it up
+it it tells you what the average
+complexity
+is uh and then if you see like okay what
+what this average complexity looks
+amazing but maybe you're dealing with a
+case that's more like a worst
+case and then of course uh if it's if it
+is constant complexity then what is the
+speed of that constant complexity
+so unordered map accessing by
+key or or vector accessing by index uh
+there's a big difference in in how fast
+it is even if they're both uh
+constant uh
+complexity so the kind of rule of thumb
+that you you can consider is uh that
+that simpler is better if
+it's if it suffices for you so so
+Vector is it's it's very simple actually
+if you use STD array that's even simpler
+and if you don't need it your array to
+be dynamic then of course the simplest
+option is to use an
+array
+um yeah that's kind of how you can you
+can think about it so if you can stick
+with something simple and make it
+work then that's probably a good
+idea uh
+okay then one more I I want to mention
+is
+DQ this may be something
+that you might not have heard
+about it doesn't really come up with
+like other languages like okay what what
+is this so so basically the idea is that
+you access it pretty much the same way
+as a vector like from the outside it
+looks much the
+same uh but the main difference
+uh and how it operates is that uh you
+can you can insert at either end so you
+can insert at the beginning or the end
+of the
+um
+like I don't want to say list but but I
+guess it's a kind of a r
+internally um and then to the user like
+they can just access by uh index
+and there's no copying uh of anything
+what it does kind of internally is
+create these multiple different
+arrays and and then when you access
+something then it kind of uh has to do
+two different D references so first the
+spine's like okay this is
+the uh array we're looking at and then
+this is the index of that
+array uh okay so so this sounds pretty
+amazing like like which is kind of
+getting rid of the uh downsides of of a
+vector
+right um but again there's downsides to
+this so so so it's not
+continuous the it has these multiple
+different arrays like kind of all over
+the place they could be anywhere but
+that makes the uh like memory caching
+much less
+efficient and then index access requires
+these two pointer D references so so
+it's
+not as fast there
+either and then another kind of detail
+is that if you create like a really
+small DQ even then it's going to use a
+lot of memory because it kind of uh has
+to allocate a lot of memory like by
+default um to kind of prepare for all
+the data that would be added so if you
+have
+like just like five elements then you
+probably don't want to use DQ is kind of
+a
+waste
+um okay and
+then you can find even more uh here as
+we talked about lists but then there's
+also forward list which uh doesn't let
+you go backward words but then that
+allows it to usess
+memory uh the set and multiset like map
+um um yeah with just keys and not not
+key value pairs in the stack and Q which
+are the
+um last in first out first in first out
+s talked about
+those and yeah here here you can kind of
+just find the complete list gives you
+like a basic uh description of what it
+is and and then you can click on them to
+find uh more
+details so if if you're thinking okay
+what kind of data container should I use
+for this then you know where to
+go okay then I want to
+introduce
+um it's kind of just a bunch of code
+that you don't really have to worry
+about but um a way to
+measure what is actually uh
+fastest and and what I mean by that is
+is fastest in your particular uh
+scenario so I have a
+this I have this code here where um
+I'm using this
+um I'm using this uh Chrono Library
+that's part of the standard Library as
+well so this is a good way to time
+things uh so so you can you can see here
+we we take the clock at a specific
+moment then we do something and then we
+take the clock uh at the moment after
+doing that operation and then we print
+that time
+um this Chrono Library tends to like
+create this really long line so you
+usually might want to do something to
+kind
+of make it a little easier to look at
+and like here I have this print time
+function that's kind of doing half the
+operations so I can make this like
+relatively clean
+here um
+okay we'll look at the results in a
+little
+bit because first I have another slido
+question so if we have 100,000 pairs of
+two in to store in a loop uh what is
+fastest so so should we add these s STD
+pairs I didn't really talk about that
+but STD pair is just like a type that
+contains two
+values
+um so should should we just add these
+pairs into a vector would it be faster
+to add them to a list or since it's two
+values maybe we might as well use a map
+or we talked about how DQ is actually
+like pretty fast uh
+for um for insertion
+okay vector and list are are getting VES
+so
+far and this is by the way um kind
+of just using a very very kind of KN
+solution where like of course with
+vectors if we knew ahead of time that
+we're going to be adding
+100,000 things to it then we could just
+reserve the memory ahead of
+time
+um
+but yeah I mean the point here isn't to
+find the best data container that exist
+it I just want to kind of showcase these
+um differences
+see um actually I I don't want to run
+that because
+um because I have another question after
+this okay vector and list are getting
+the most votes and then somebody is
+voting for
+DQ and the answers are here
+so uh these are the times that I've
+gotten on my machine of course could VAR
+there's some variance but it's clear
+that in a situation like
+this DQ ends up being the fastest and
+and that's specifically
+because because DQ doesn't need
+to copy the elements unlike vector and
+then list is
+actually it's just not really as as fast
+you would think because list has to do
+all these operations where it's like uh
+attaching these nodes to each other
+making sure that all the like previous
+and next
+pointers uh are correct every time just
+one thing is
+inserted while with uh DQ or or vector
+when we're inserting uh to the end then
+it just it can kind of just like slap
+the element there and and just make sure
+that the reported length of the array is
+is
+correct and then it's done so so
+actually list is slower because it has
+to do more of this operations so even
+though list insertions are constant
+time
+um it's still like longer constant time
+than than vector or or
+DQ um
+okay but next now that we have these uh
+pairs of two in
+in these containers which container is
+fastest for accessing all of them once
+so so we're going to have a
+loop that kind of just
+um goes
+through
+um go goes through the container and
+accesses all of them once
+so uh so so when it can when it's a
+container that can be accessed through
+index we're going to do this and
+otherwise we're going to use an
+iterator okay what do we get
+um two volts for
+Vector anyone have any other opinions
+I mean since we're just going through
+the entire thing accessing all of them
+once uh
+maybe maybe list wouldn't be that bad
+because uh it's just like following
+the next and it doesn't have to like
+like if you try to access an individual
+element in list it's really slow but in
+the case like this is actually not that
+bad
+um okay well maybe we're not getting any
+more about so let's look at the
+results and and we can see quite a a
+wild difference between vector and some
+of the
+others and and yeah actually list
+this the second one which might be a
+little bit surprising maybe I maybe that
+should have been the question because
+everybody knew that Vector would be
+fastest but uh
+yeah the the DQ is quite a bit slower
+for the reasons I mentioned it is having
+to access this memory all over the place
+and then it has to like uh do these 2D
+references every
+time while while with list it's just
+kind of accessing one element and then
+uh
+just following the pointer to the next
+one so so it's actually not that
+slow um
+and with with
+Vector it is
+definitely much fast faster to do it
+like this we could also like use the
+iterator to go through the vector in
+which case it would be much closer to
+the list in
+speed uh or we could use also the
+um uh at method
+okay let's uh just run this here so you
+can kind of see so the above is the um
+insert and then below is
+AIS so the numbers bar a little bit but
+uh you can see I and it's also different
+machine than I actually found this on
+but yeah I I can show you if I do
+like that instead
+okay it's actually not that much slower
+but even then it's like almost twice as
+slow or actually no no it's more than
+twice as
+slow or just
+about
+um yeah STD Chrono good good way to do
+these kinds of measurements so if you're
+ever in a situation where
+you have some large amount of operations
+with some data container you're
+wondering okay what what's the best
+thing to do here then it's probably best
+to just measure it than to like think
+hard about the theory of like which
+container has the
+like best complexity for the scenario or
+something like that because there's a
+many factors here like I said there's
+the memory
+caching there's the algorithms there's
+the
+um possible
+pre-allocation sorry I still have
+a still recovering a little bit from
+this
+cough okay uh one
+more Topic at the end before I cover the
+lab GDP
+um so streams and iterators so first of
+all what are streams so so it's actually
+whenever you f uh like see out something
+to print something then you're throwing
+stuff into the standard
+outstream and that's going to be shown
+in
+the
+terminal and then also you have the STD
+in which is kind of in Reverse
+taking uh data from the terminal to your
+program and then common cases the file
+streams so if you want to free data from
+a
+file uh then you'll have something like
+that um so I a really basic example
+here so for these streams we can create
+this uh I stream iterator that that like
+navigates through the
+stream
+um and yeah so to be clear stream is
+basically like you can consider a
+sequence of data so so there's like data
+coming in and then we have an iterator
+to navigate the data as it comes
+in
+um so then what happens here what we
+kind of bind this iterator to SDC
+in and then
+as long as it's not at the
+end
+uh it's going to print out the
+like value attached and and then go
+forward and this is specifically an INT
+iterator which is something you can do
+with these I stream iterators is that
+you can Define the type that you're kind
+of looking
+for uh
+okay so let's see the way that this
+behaves it's looking for INS so I type
+any kind of
+number and then it's just going to print
+the same number that I just wrote If I
+put like a letter for
+example then it say it's like
+okay like if it fails to find a number
+then it actually like kind of goes to
+the
+end and also the way the end is defined
+here is that this is called like a Sen
+uh we're just going to we just
+initialize this and we don't really tell
+it
+anything so then it just kind of
+represents like a kind of null value in
+a
+way it's kind of weird that it's like
+this and not like if while input
+iterator is not null or
+something um
+but that's just kind of the way it works
+okay then let's look at this a little
+bit more complex situation
+where uh we want to read from some kind
+of file so we have
+this uh text file uh I'll actually show
+you I made this text file
+that's um
+it's a it's quite a large text file that
+just has a lot of garbage in it it's
+kind of copy the same thing over and
+over it has some letters it has some
+numbers and
+then what what we want to see is if we
+can find a two from
+here so then what what we can actually
+do is we can use this find fun function
+in in the standard Library which takes
+uh the starting iterator and then the
+end so it's going to start iterating
+from the start until the end looking
+for this value that that that we give to
+it okay so let's
+see I have that code here
+okay and it found number two and then I
+made give the distance to us as
+well and the way I did that is with the
+STD distance
+function i s this kind of um oh yeah I
+actually have
+this text here
+[Music]
+um so I create the ifstream uh for the
+file create the copy to the beginning as
+well and then the Sentinel
+end uh and then the STD
+find um traverses through it until it
+finds what we want and then with the
+stdd distance we can measure the steps
+between two iterators we made this copy
+so this is still at the
+end uh wait hold on that's not
+it's not how it should be though it
+should be
+uh distance to this
+right okay maybe maybe this actually
+didn't work the way I I thought it would
+um okay okay maybe we we'll scrap that I
+actually had
+this
+U bug there all the all this time
+um but at least if you well that that
+might have been an inefficient way
+anyway um probably if you trly need to
+find where it is then
+then you could um kind of have your own
+function to Traverse through it and and
+keep track of where it is uh I'll just
+show
+that there is indeed uh number
+two in
+here um okay
+well never mind I kind of messed up this
+example it was kind of last moment that
+I was like uh creating some kind of
+example out of this
+um okay but that's uh enough of the
+actual lecture
+content um yeah
+I'll go over the lab
+GDB uh next if you
+oh actually I I do see one question in
+in slide so sorry I didn't notice it
+earlier uh so consider using vectors for
+MP college would that have been viable
+yes it it would have been
+um so it's kind of the EMP colge is
+created in a way where using either
+arrays or or vectors would be probably
+the
+easiest uh way to do it
+okay also add to
+that the also
+suggest uh using
+what the standard Library Vector yeah
+yeah yeah STD Vector yeah yeah I assume
+when somebody's asking about vectors
+they mean standard
+Library
+Vector um
+okay now let's look
+at lab
+GDP oh I think I
+still I think I still have the solutions
+here I need to like
+um get rid of the solutions so I can
+show it
+properly okay let's just go over
+here oh I did already have that in the
+desktop at least
+[Music]
+okay now it should be all good okay
+so uh I'm of course not going to go over
+like all the
+explanations uh here I'll just kind of
+uh cut to the cut to the chase here a
+little bit there uh
+the most important com commands we wrote
+down
+here
+uh and I'll also
+I show some of that myself but let's uh
+first look
+at just look at the tasks that we have
+here uh let's uh find the
+there we
+go okay so
+first
+oh I already had
+it
+make front lab GDB
+front and then what we get is this so so
+size
+zero so that's say incorrect size
+um what we need here is fix the clear
+function and fix the insert front uh
+function and we should start with
+the uh insert front function so for
+right now there's nothing there so so of
+course uh it was not able to uh put
+anything
+there uh and then what is also mentioned
+there is that you
+should or at least you can use
+the insert from function from the MP
+list as a
+basis so in in the lab 3db we have a
+singly linked list and this is a doubly
+linked list so you could kind of start
+like this if if you feel like you don't
+Tru know how to get started
+here but there's a lot of things here
+that are not actually relevant uh
+to
+us so I don't I don't think we have any
+kind of tail that we keep track
+of in this case it's going to be called
+just
+head uh we don't have any
+previews so then we kind of want to get
+rid of that anyway
+um okay so I guess here we have kind of
+the basic components that we need to
+work with so so if it's insert
+front uh
+then
+uh what that means is that let me just
+kind of um visualize this quickly so
+let's say if we already have like
+a couple boxes and and here's the head
+and and the head is pointing to
+this next one over here and then we need
+to insert at the front so then what
+needs to happen is
+that we add a new one here that's going
+to point to the current
+head and
+then we're going
+to define the head to be this new thing
+that we just added
+um okay so we have this new
+one and the new ones the new nodes next
+should be the print
+head and then the head should be
+the new
+node does that make sense
+uh the compiler is kind of helpful
+because it it can tell you here like if
+you copied it from there it's like okay
+there's no such variable but there is
+something called just length without
+underscore
+so that makes it easier okay this seems
+to work just
+fine and then we can see when we insert
+this way then of course the most latest
+number is is at the front so then we
+kind of end up having this reverse order
+here
+um okay and we can put that in there and
+it's going to be
+correct okay and then before fixing the
+clear
+function let's just try running our
+program with ALR
+and then we can
+see this
+definitely definitely lost bites and
+some indirectly lost
+bites sorry um so we can see the
+16 definitely lost bites that's what
+it's asking for so SP in
+16 that's correct
+okay then we kind of get to the uh
+GDB part
+you
+uh well actually first I should fix the
+clear
+function
+um okay actually let me kind of go back
+to
+this I back to this drawing so if we now
+have this
+situation we have these so so what we
+want to do is we want
+to delete this and then move on to the
+next one then delete that and then move
+on to the next
+one and then delete that as well
+so so we kind of want to
+um let's make this
+temp
+um we store the
+uh way to the next
+one and then as long as the next is not
+null we want
+to uh kind
+of keep moving
+forward actually hold on just go
+correctly now
+so so let's say we we want
+to
+delete head right it's always like a
+little bit tricky your crap your head
+around so
+[Music]
+um so we delete head then we already
+have access to the next
+one uh and then we would
+want then temp to
+be or that then we would want head to be
+Temp and temp to
+be head next right and then we would
+kind of
+repeat this
+right okay go correctly
+is this gonna be
+correct the live coding is always
+so hard
+um I don't think that's going to be
+quite correct
+right like I I just did this again
+like yesterday which is just like the
+last thing I did yesterday and and now
+it's already like I don't know what I'm
+doing
+anymore yeah that's not
+[Music]
+correct okay maybe I'll just not not
+worry about it and and just
+uh just move on that's not really the
+point anyway
+you also need to assign LS
+Z oh yeah
+true that's
+definitely yeah I this is more about
+learning the GDB than like the actual
+like how do
+you implement these
+exactly I
+mean sorry that I'm a little bit like
+sloppy with like going through this but
+like I say always difficult to do live
+coding stuff I should probably have like
+Solutions next to me so I don't like
+blank out on
+things
+um but hopefully you get the idea even
+if even if I kind of
+like mess this up
+um okay but but now let's look at like
+the way uh GDB
+Works um okay
+so we've run our program with uh GDB I
+think that should
+actually that doesn't have the like Dot
+and slash there but but you
+should
+um okay so now GDB is
+running and then we want to insert some
+kind of
+breako
+um so we can insert
+the uh break points by typing the the
+function yeah that should be fine and
+then if we run
+front then we find that okay okay the
+program ran up to this point and then it
+stopped and it's seeing like okay now
+we're at the break point and and now we
+can also access some uh information
+Let's uh see so it's in list
+given actually I do think I have these
+Solutions here that I
+can kind of use to help sort this
+out
+U let's just let's just put
+this um
+this
+here um okay so it's telling us that
+we're in list given
+79 yeah okay that looks just about right
+so we can see it's like printing out the
+line that we're currently in and we can
+see it matches with
+that okay okay what does it want us to
+do
+um okay so we can see that there's this
+uh
+current and then we we kind of want to
+see what the value of that is
+so then we
+can
+display for
+data we
+can display the the pointer
+itself and now that we set those
+displays
+there we can type in next and then every
+time we like going of go go to the next
+line it's going to keep displaying these
+values that we
+defined
+um okay so this looks like what it wants
+from
+us so let's put that
+there um okay and the next thing
+uh we can kind of get out of this by
+using the kill command for example and
+let's also delete break
+points so those are also some commands
+you can use if you if you're wondering
+like what what are all the commands the
+you can type
+help and then you get all of
+these and then you can also like okay
+help
+break points and then you get more
+information about break
+points so there's a lot of stuff you you
+can find by doing
+that okay let's
+um break at
+the Traverse function so here it's
+asking for something like this but now
+it's giving us RGB a
+pixel and that's basically because we're
+using like a template function
+and then when it's compiled now it's
+actually seeing it as like rgba
+pixel um but that's going to be
+fine okay and then get let's give a
+condition it says here condition one but
+but in this case the breako is number
+two so condition
+two
+um current data
+Alpha 42
+and then if we type continue the program
+is going to keep running until it runs
+into something that stops
+IT uh oh first I need to run the
+program uh oh I think I need to
+let do this
+again bre list
+reverse R reverse
+condition all right then we
+continue okay and
+we get up to here and then now that we
+are
+here back
+trace and now we can see all the
+function calls that happened uh up to
+this
+point and since this reverse function is
+recursive we can see that keeps calling
+itself here you can see the Len argument
+is like changing
+a lot here if we had this entire back
+trace of uh the entire thing then it' be
+really lengthy but we had the breakpoint
+condition so it didn't go quite that
+far
+um okay and then we want to find the
+first call to the reverse helper
+function which
+is which is
+this right because this is actually the
+uh this is not the helper function this
+is like the function for the interface
+where you just call like okay reverse
+this but this is the precursive helper
+function so just type the number of that
+so in the back phrase It's the 40
+second uh function
+call okay and
+then we have a few
+different uh functions to fix I'll just
+kind of show the answers because like I
+noticed lab coding isn't isn't going
+going that well for me
+so
+um let me just kind of see what the what
+the issue was with each of
+these
+um okay with with this one issue is
+that it doesn't increase the length in
+this
+case and then the other thing is
+um let's see said kind of just in
+different
+order this like couple different ways
+you you can like uh kind of do this
+exactly but
+uh oh right the yeah the
+[Music]
+problem right yeah yeah you need to
+actually uh put the new one in the in
+the next of the temp not not in the temp
+directly that this way it just ends up
+kind of being
+stuck um
+and that's like where with using GDP you
+can kind of notice like okay now it's
+supposed to move on the next one but
+then you see like okay this pointer
+didn't really move
+anywhere um
+okay next reverse
+function uh over here
+so that here uh the the the way um
+the way you want to kind to approach
+this since it's
+precursive um so you can see when it
+first calls
+this um well okay let let me actually
+just show this so let's put
+um make sure I don't have any break
+points and let's break at
+uh see if we can do it by line
+number
+um very like that
+um okay okay so now we get
+here and then the operation is that we
+get the next of the current but then we
+can see that the current is actually
+zero at this
+point um and and so so the reason I
+wanted to put a break point here is that
+because it's a recursive function we can
+notice that like it's just going to like
+go here like 70,000 times in this case
+so there's nothing interesting happening
+until the length increases zero then we
+get here and then we can notice when we
+get
+here as a current is all readyy zero so
+we actually went too far in this case so
+we actually just changed that to one
+okay that's
+fine and then for
+Shuffle
+uh yeah this is when I originally did
+this it was really helpful for me to
+like draw on on on paper but basically
+what the
+uh problem here is is that this
+um like one never
+really moves
+anywhere so we always get like one next
+that's the temp but one is always the
+same so it's just kind of stuck in place
+so uh then we can just update one
+at the end every
+time and I think that should be all of
+it
+um oh test answer is wrong
+s maybe I forgot
+something oh right in
+the insert back I didn't
+do that
+yet okay and now everything should be
+correct okay yeah this was a little bit
+as the labs get more complicated gets
+more difficult to show them uh in
+lectures um it might be easier for the
+next one to create separate recording or
+something I'll see how I handle it
+um if if this was still like a little
+bit unclear then be sure to ask on
+Discord or
+somewhere um for clarification on the
+assignment um but yeah hopefully
+hopefully you'll find find GDB
+useful uh I find it especially when you
+run into like segmentation FS or
+something like that it's really useful
+because it can just kind of let you
+inspect the situation at the moment of
+segmentation
+fault and then another thing is when
+you're like kind of dealing with these
+pointers and
+traversing then it's useful for kind of
+understanding what everything is
+pointing
+to at all
+times um but yeah uh
+that would be the lecture for today and
+indeed
+um this Thursday Villas lecture
+in
+uh s
+112 at uh
+2:15 a lot of it is going to be about
+like uh modern C++ practices and and uh
+espe memory
+management related
+things I'm personally personally looking
+forward to his lecture and I hope to see
+a lot of people there but uh yeah that's
+that's it for
+today's lecture so see you there

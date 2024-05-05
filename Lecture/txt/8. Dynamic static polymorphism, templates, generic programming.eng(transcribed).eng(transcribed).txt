@@ -1,0 +1,1854 @@
+yeah Mick is not working great or Mick
+is
+working is microphone working okay
+guys let us know if you don't hear I'll
+have to
+switch S
+BL okay that's the inhouse microphone
+that I switched to I guess let's switch
+to to the
+one what about the now is it
+better is it better
+now please let me know
+okay
+what about now do you hear
+better just let me know that was an
+experiment with this system here okay so
+my
+um my laptop is better okay that means I
+cannot really run around but so you guys
+you know something really exciting
+actually um happened which I already
+announced many times about b v line in
+coming here and giving an invited
+lecture but I want to tell you something
+that I learned just recently which I
+didn't know but V is considered the top
+expert of C++ in
+Finland so um please
+come okay how did he get to help our
+class I have no idea but um I was
+already quite excited about cute company
+help but now it just can't contain my
+excite okay so uh another thing that is
+going on of course as you probably
+already figured out is that as we go
+along with this class we are just
+realizing how dated the material is um
+which I already announced but the is
+today
+actually I'm going to try something new
+and you'll see a lot more of the where
+this class is going to be hopefully in a
+year with all of the help we getting of
+updating it to the new standards so here
+is some um kind of big picture C++
+learned bad reputation because it allows
+you to access memory the way we learned
+in this class so far through raw
+pointers and raw arrays so therefore
+it's Cru show that you guys learn not as
+good as the next iteration of the class
+or maybe in two years when we really
+build up all the materials but still
+crucial that you learn about new ways as
+well it's really difficult to change
+materials on the spot for anybody it's
+as you can see we have a large body of
+code that nobody can just convert
+immediately overnight or even over a
+year um maybe some of you will be
+helping us with this class in the future
+because we'll be definitely need to do a
+lot of coding converting it to the new
+standards however the way it is is still
+already pretty
+nice and uh and that's that's good news
+but to because of that I'm trying
+something new today so you'll see a lot
+new uh a lot of new kind of code and
+I'll walk you along with it uh so this
+is just a picture for later because I'll
+also talk about stack so you know we
+talked about static memory or is the St
+where our static variables are stored
+just think of the stack as P dispenser
+CU that's going to be helpful you put
+things inside you the order in which
+they go is the opposite in which you can
+take them out so that will be useful for
+us okay you can get the first candy you
+put in you have to first get the last
+one so it's called First in last out
+right you probably know it from
+somewhere from data structures class but
+it will be somewhat useful today as we
+go through
+exercises um let's look at this code um
+I just want to start with a quiz from
+last lecture that is about inheritance
+your next Lab is going to be lab
+inheritance so this will be useful
+um let's look let's walk through it
+first so let let me start walking
+through um through this code and then
+I'll ask you qu uh questions on
+slider.com so we have a class which is a
+base class just like El Murray was using
+last time and this is a ball class that
+the ball class that inherits from sphere
+right therefore when you construct a
+ball you have to first construct
+construct sphere the base class and then
+whatever is associated with the
+ball so I have a question for you just a
+quiz I want you to I want to ask you
+what's going to happen what kind of
+things are going to be invoked as we use
+the the client code to use those two
+classes so as we
+declare an variable of class
+ball what's going to happen what's going
+to be invoked as we declare a variable
+as of class sphere the base class that
+is initiated with with the ball what's
+going to be called what kind of
+Constructors are going to be called in
+which order then as we declare a pointer
+and initialize it then as we we call
+display functions on this sphere
+initiated from B and sphere pointer
+initiated from b as well a b
+address so when we call the display
+functions how are they going to behave
+right and notice that in my sphere Base
+Class I have a Constructor I have a copy
+Constructor I have a Destructor which is
+virtual which is the right way to do it
+and I have a virtual display function
+all of them are cluttered with SE outs
+essentially they don't do anything I
+just want to see the order in which
+they're going to be invoked and the SE
+out will help me see that and the ball
+has the Constructor the copy Constructor
+virtual Destructor and virtual display
+function okay so let's start it how I'm
+going to do this this is a new way so
+let's see if it's going to work I'm
+going to start by clicking on this code
+which you can do later in your slide too
+so this is really helpful because you
+can click and see this code and what is
+really cool about this compiler explor
+Explorer or God bolt. org is that you
+can compile simple code simple C++ code
+or even not just one file several files
+you can compile with various compilers
+and see what happens so you can compile
+and execute and this is an extremely
+useful tool that I think I'll be using
+um uh in this class definitely from now
+on and V was the one who used it with us
+when we exchange whatever notes we have
+about this course so it's a useful um
+useful thing so then let's start with
+the
+quiz the first question is which
+Constructors are going to be
+invoked and that is Constructors and the
+order in which they're going to be
+invoked when we call line 24 that is
+initialized or declare B declare B
+right B is on the stack so you should be
+able to look at this code and answer
+there right so that's
+how okay how many people answered let's
+see two people let's wait a little
+longer because this is what we covered
+last time right so this is a recap kind
+of what do you think is going to happen
+right definitely construct would be
+called if it was just a class but now we
+have this inheritance so two
+Constructors need to be called right are
+they going to be called and what is the
+order okay so well because I have this
+compiler tool I can actually show you
+what's going to happen right because it
+it HS there online and you see that
+construction sphere is called first then
+Constructor ball and that's what C++
+does by default by default seeing this
+code oh where's the code here um or upon
+Declaration of a variable on the stack
+of derived class by default the
+Constructor that is invoked the Bold
+Constructor will first go to the derived
+to the base class and call that
+Constructor so it is as if you were to
+write dot dot sphere so you you first
+create the
+base part of your object and then the
+derived part of the object and that's
+the default behavior of
+C++ okay fine do you notice something
+interesting that the destructor is being
+called why is it being called because my
+main function doesn't do anything else
+so you declare B it's constructed then
+it goes out of scope therefore the
+system will invoke the destructor and
+the destructor will report what's
+happening right so the destructor of the
+ball is a virtual Destructor therefore
+if it's a virtual Destructor
+therefore it first destroys the derived
+part and then the base part and why is
+it happening in that order
+because B was on the stack so think of p
+dis distance first The Constructor
+created the base part sphere and it put
+it in p on the bottom then it put the
+derived part the ball so in order to
+destroy it it can pull
+first the ball part and then the uh
+sphere part and that's how all of the
+variables are going to be put on the
+stack and that's the order in which
+they're going to be pulled off when the
+system when they go out of schope or
+that is system calls that destructors
+okay so that's why you see this
+order cool okay let's go on so the
+correct one will be Constructor for
+sphere and then Constructor for ball
+let's go to the next slide so what
+Constructors are invoked during the
+execution of line 26 and I think that's
+where I have a problem okay sorry I need
+to duplicate the slide go out of my
+because I cannot I don't have
+the exit slideshow I actually need
+to go to that yeah to that code so I'm
+going to call that code but you have oh
+right right right yeah I knew that I
+didn't try this method of you know doing
+code with you guys yet so uh just give
+me a second I need to call slideer that
+comment again and I need to start my
+presentation
+again and I need this
+to a full
+screen so I go to full screen and I go
+to my question that I wanted
+26 so this way now I can go
+no okay let me try again I don't say why
+okay so this way I can go to my code
+here so line
+26 so think about it what is going to be
+called upon on this line 26 and let me
+get to slide.com there it is okay so I
+think now we have
+both so you have slided a com and you
+see the code and tell me what's going to
+be uh
+called what's going to be printed out
+or which Constructors are going to be
+inv voked upon that
+line yeah very good so two of you said
+that it's going to be only Constructor
+of the sphere and that's correct
+although you pass ball to the copy
+Constructor so first of all what we
+remember when you declare a variable on
+the stack with this
+initialization of B through equality
+that means a copy Constructor for S is
+going to be called and the copy
+Constructor will be called for sphere
+because that's what you declared s to be
+but so that's that Constructor will have
+to take sphere in but that's okay
+because B can
+be represented as a reference by
+reference as kind of a pointer to S
+right so you can represent B with a
+pointer to the
+base uh
+class and that's what reference does
+underneath so you can pass the derived
+class as a base class in any
+function uh by by reference so that's
+okay so this copy Constructors here is
+going to be invoked and the sphere is
+going to be constructed from the sphere
+part of B essentially that's how it's
+going to be that's how it's going to
+work so let's see if that's the case yep
+only copy Constructor sphere is being
+called okay that's very good so that's
+just a reminder of uh how it's of what
+we did last time now what's going to
+happen at line 27 let's see what line 27
+is here's my
+code so now I declare a pointer and
+initialize it with the address of
+B but pointer to sphere with an address
+of a ball
+right so what's going to happen
+there anything is going to be cold at
+all
+M who is that one
+person okay two
+people okay good so we don't need this
+code we need this code so the mystery is
+what's going to happen here do you need
+to call is Constructor going to be
+called at
+all and if yes then what kind of
+Constructor let's
+see
+H right so nothing has been called right
+do you see that nothing has been called
+because all you need to do you're not
+really asking for memory so you're
+declaring a pointer of typ sphere
+pointer in order to actually for the
+system to call it constructure you need
+to say
+new if you give the address of a ball to
+a pointer then just that value of the
+pointer is filled with that address
+there is no new of anything is being
+constructed because ball already exists
+and that ball is this B on stack so the
+constructure is never being called it's
+just a new pointer to that
+b okay and that's what you see in the
+execution because it created uh Co it
+called copy Constructor on this line and
+that's the only thing that I'm printing
+just like in the last uh question but
+for this line there is no new print out
+being called uh if you want I can prove
+it to you that nothing is being called
+at line 27 by commenting this and seeing
+what's the output nothing okay so this
+is why this tool is pretty cool because
+I can work with this code and you can
+click on it just the way it was during
+the lecture and see what I was talking
+so you can recreate all of these
+exercises I think this is really cool so
+let's go to the next
+question here so what
+happens when we do line 29 and I think
+that's when we call
+display function on which of the yeah 29
+we call display on S now so what's going
+to happen
+there
+what's going to be printed out because
+display prints out what the class is for
+that
+object
+yeah let me close those so let's
+see do you remember what kind of
+Constructor we called for us
+it was a copy Constructor of sphere
+right of sphere class which means that s
+is a
+sphere so the this display function is
+going to be invoked so let's look at
+your answers yeah many people answered I
+am sphere that's correct let's see the
+proof what's going to be printed out I
+am sphere is printed out cool so now
+let's go to line 30 that's the next
+question and in your slides that's the
+next question so now when we take that
+sphere pointer that didn't call any
+Constructor no Constructor was called up
+on this line on 27 so we take that
+sphere
+pointer and call display function on
+that what's going to
+happen and my possible answers
+were I should have put compilation Arrow
+or whatever or runtime Arrow but I
+didn't put those so of course during the
+exam you can expect some similar
+questions but then I'll put maybe six
+possible answers so that
+[Music]
+um of course we need to think about
+cheating and being more difficult to
+answer okay so what's going to happen
+here I have this sphere pointer let's
+look what's happening in the memory
+because I see that you guys are
+struggling with the answer so let's look
+at it very careful at the arrangement of
+the memory at this point so let's start
+again from line 24 we declare on stack
+stack this is Heap on stack a ball a
+ball consists of two parts sphere and
+ball so B consists of two parts sphere
+and ball and sphere went first in the
+step of this function of associated with
+this main function and ball is second
+that's fine that's what happened at on
+this line now on this line a sphere s is
+declared to be typ sphere right but then
+a copy Constructor from B is being
+called let me go a little higher in the
+code there you
+go yeah this is better
+okay so we talking about line this line
+now so what happened is that this sphere
+is declared a sphere s is declared a
+sphere therefore the compiler will give
+it just enough memory on the step for
+sphere the there is no place for the
+ball part it's declared a sphere but
+initialized from ball so a ball is
+passed here but that's okay because we
+can slize a ball into sphere we just
+remove the ball part and then we
+initialize that sphere with that ball
+sphere part of the
+ball okay so your part of the ball
+that's
+cool so then we create we declare a
+pointer a pointer is a very simple small
+amount of memory on the step it's sphere
+pointer all it has to do is to store a
+value of an address right when you pass
+it that value it just puts it there so
+whatever the hats number for uh for this
+ball is for its address is whatever it
+is it's put there so essentially that
+pointer points to ball okay no
+Constructors are being called just that
+value is being put in that place on
+stack or sphere pointer that's fine
+that's cool so now we take s and trying
+to access its display function so what
+is our s it's a
+sphere therefore this display function
+of a sphere is being called and it's a
+sphere now when you try to access sphere
+pointers display function that's where
+an interesting thing happens which is
+called dynamic polymorphism that is
+initiated in C++ by using this virtual
+keyword virtual keyword tells the
+compiler that when you follow a pointer
+look exactly what the type of
+that variable is in that part of memory
+because when you follow a pointer of a
+base class maybe you'll see a ball or
+maybe you'll see a sphere so then during
+runtime see what type it is and pick
+that display
+function so that's what dynamic
+polymorphism is therefore following this
+pointer the system will see that it's a
+ball and it will invoke this display
+function because it'll see that there
+are virtual keywords associated with
+those functions and therefore it's that
+the right thing is to pick the
+corresponding display
+function it's called Dynamic
+binding in uh um during the execution of
+this program so Dynamic binding to the
+right function of the appropriate type
+okay is that clear okay very good so
+virtual is the keyword that invokes this
+Dynamic binding in
+C++ very good so let's then uh
+go uh so I am ball will be um will be
+therefore uh displayed let's let's see I
+am ball right I am sphere is for S and I
+am Ball is for B if you really want me
+to uh prove to you that sphere pointer
+displays only ball I can comment that
+and you see that it it's
+ironball uh by the way I don't know how
+to remove all of my writing at the same
+time here there oh maybe this oh yeah
+cool okay so I can scribble and then
+remove everything so that's cool so this
+is really a
+ball uh display
+function cool let's go
+further which the structures are going
+to be executed on line 31 so let's go to
+that line
+31 and we know that line 31 is what
+let's see let's see line 31 is when main
+execution is complete therefore the
+stack is going to be cleared for all of
+the variables that are
+local for main um so let's see how many
+variables did we really have to create B
+and S only right s p was a uh oh well
+it's going to go out of Stack out of
+scope as well so that's going to be
+cleared out as well but there will be no
+dist structures associated with our uh
+um inheritance classes that are going to
+be
+called okay so then the question is
+really which destructors for sphere and
+ball are going to
+be uh called at line
+31 let's see what are your
+answers okay three people maybe a little
+more let's wait for a little more there
+are five active
+people and remember again it's just
+going to be in the same order in the
+opposite order in which they went on the
+stack they're going to be pulled out of
+stack and those destructors are going to
+be called in that order so ball spere
+sphere or sphere ball sphere okay let's
+look at the answer sphere ball
+sphere and the reason is who is going to
+tell me why is that why is that the
+correct yeah yeah what was the order in
+which they went in right so for ball on
+the stack of
+main ball Constructor first put sphere
+part then ball part then we had this
+Constructor being
+called and that puts spere so in once
+all of this has to go out of scope first
+the destructor for sphere is going to be
+called then the destructor for ball and
+then the destructor for sphere okay and
+of course these two the last one so will
+be for B and this one is going to be
+associated with this s variable
+oh sorry b b okay so they went in and
+you pull them out in the opposite
+order okay now one more so we are almost
+done with conclusion of uh last lecture
+I just want to have an interesting
+question so this is an interesting
+question let me show you what I did and
+this will really demonstrate whether you
+understand what passing by reference
+really means so I have this a little
+different code remember I said a copy
+Constructor is being called here for
+sphere from B the ball and we can pass
+ball by reference to pretend to be a
+sphere you know you can slice it and
+it's kind of a sphere but there's a ball
+part somewhere there in memory but
+Underneath It All these references I
+handled kind of like pointers so what
+if during this copy I'm going to take
+that s that being passed and try to
+invoke its display
+function what I see smile so you kind of
+conceal it what is it really this s
+dynamically during Dynamic binding will
+it recognize that it's actually a ball
+or not what do you
+think so what's going to be displayed
+upon this line
+26 when you add this display line in the
+copon structure let's
+[Music]
+see you see that so you
+pass a pointer or a reference to the
+base class but during D during the
+execution the system can see that that
+memory is actually associated with the
+ball because you passed ball there and
+because your display function is virtual
+then the right display function can pet
+the one that is really associated with
+the ball so let's see let let's see
+what's going to be printed out I am ball
+okay very good so you guys are with me
+four people are with me the rest are not
+sure or don't want to participate but
+smiling so that's good I guess that's
+good so we you're with me
+right
+um okay so let's then if you don't have
+any more questions let me kind of uh
+summarize so concluding REM remarks on
+inheritance so the key intended use is
+to enable this Dynamic po polymorphism
+that I already talked about and it's
+done through using virtual functions so
+you can do something like this now when
+you have your base classes say the base
+class is animal and then you have
+derived classes all sorts of animals
+like dog horse pig cow then you can have
+containers of pointers to the base class
+like a a farm you have a farm of
+pointers they can be safe pointers even
+so far we were talking only about draw
+pointers but they can be safe unique
+shared whatever pointers right you can
+have this container array of these
+pointers to the base class but you can
+initialize each of them with the drive
+class so then your farm will have a dog
+a horse a pig a cow and a dog in this
+example but all of them are
+animals and then what you can do is you
+can treat them all
+equally through the use of this
+functions that have the same name for
+all of the derived classes like speak
+for example but they'll behave
+differently depending on what that
+derived class is like speak will be barf
+for barf sorry not barf what do dogs
+do barf no bark yeah bark so they'll
+bark or they do whatever my code has it
+so we can follow there and see what they
+actually
+do um so animals will have uni see there
+qu whatever right so all of these speak
+functions have the same name so you can
+invoke that same name function on all of
+the in instances of the base class but
+they'll behave differently depending
+what the D class is and that's really
+really nice so here you go you have this
+Farm of animals and they'll
+all uh speak
+differently but it will be a very nice
+concise code that handles it right so
+what is the problem there do you see a
+problem
+there you see any any problem
+there so this all happens during run
+time right it all happens during run
+time so
+what about time does it does it come at
+a cost does it take time to actually
+figure it out follow the point and
+figure it out what that object is yes so
+there is some kind of running time over
+cost for that which is okay which is
+okay however um there is another way of
+doing polymorphism which is static so
+everything is decided the right
+appropriate functionality of your
+objects will be decided at compile time
+which is much faster and that is done
+through templates our next topic and
+inheritance and virtual functions
+provide Dynamic polymorphism which is
+run done at
+runtime and therefore slower however
+there is another possible problem
+this although C++ is trying to Rebrand
+itself as a safe memory safe language
+Dynamic morphism can lead
+to uh memory leads or undefined Behavior
+even still even with the current
+standards and the reason is if you bind
+if you declare your uh functions as
+virtual and you must declare your
+destructors as virtual to make sure that
+all of the memory is cleared for your
+derived uh classes what if you don't
+what's going to happen what if you
+forget to declare your distruct as we
+show
+then no Dynamic time binding of D
+structure will happen to derived class
+which means that the D structure of the
+base class is going to be called on your
+objects on your animals so only the
+animal part will be destroyed if you
+don't declare your Destructor as virtual
+so there's um if you don't follow the
+rules that we uh outlined last time if
+you don't follow these um rules there
+you go here then there is a possibility
+that some undefined Behavior or memory
+leaks may still happen and guess
+what in your lab inheritance we planted
+all of this possible possible problems
+or incorrect use of inheritance which
+would lead to problems and you'll have
+to tease those and by the way I think
+lab inheritance is a very loved lab so
+it will become if you forgot some of the
+rules like why the structures need to be
+all virtual always or why con structures
+cannot be virtual or what is the Base
+Class and why can it be in instantiated
+or abstract Base Class um so if you
+forgot all all of those it's okay
+because you'll walk again through the um
+lab and you'll figure it out so uh I
+want to show
+you uh
+why um and how to uh mitigate it so
+let's see I prepared this code where
+yeah look at this so I uh declared a DOT
+dog
+pet of type animal to be a a derived
+class dog
+right which means that I created a
+pointer to dog but called it animal
+animal pointer because I want to use
+this inheritance right I want to maybe
+have many uh pets which are not
+necessarily dogs and all of them will be
+animals so and I want to have this
+virtual uh binding or dynamic binding to
+whatever functionalities of these pets
+they all have their own right but what
+if I forgot to declare this structure as
+virtual do you see I did that look what
+happens pet is initiated as an animal
+therefore animal Constructor or Base
+Class Constructor is called first and
+then derived class Constructor is called
+Next but only animal Destructor is
+called on this pad because you didn't
+instantiate um the polymorphism this
+virtual for the
+structure and therefore you can see that
+there's a memory going to be here even
+if you use uh unique pointers okay so
+unique pointers are supposed to be
+really nice because you don't have to
+manually call delete on them they just
+disappear from the stack by themselves
+but the system will still call the base
+Constructor if you didn't put viral here
+which means that these unique pointers
+are not memor leak proof or not memory
+safe right still with with the
+inheritance however it turns out that
+shared pointers would fit that so they
+are really smart look at
+that I will not talk about shared
+pointers unique pointers V will talk
+about them in his lecture I I didn't
+prepare them yet but I just wanted to
+show you now as a peak that okay of
+course if you just had the raw raw point
+look at this raw
+pointer buddy dog if you even call
+delete body if you didn't forget to
+delete of course if you forget delete
+then we have memory but if you even if
+you didn't but you forgot to put virtual
+you still have this memory leap do
+Destructor is not being called but we
+know that raw pointers are not safe so
+maybe if you use Smart pointers that it
+becomes safe but no with inheritance you
+still have to follow the rules you have
+to follow follow the rules of syntax to
+make sure everything is clean and let's
+use Sherry pointer so that's magic
+there okay so these are little last
+notes I don't want to ask this because I
+already showed how to fix
+it um oh by the way sorry let me show
+you the last magic that I didn't or not
+magic but um where is my slide
+for that I just used here um of course
+all of this is mitigated by just putting
+virtual
+here and you don't have to put virtual
+in the direct classes if you already
+mentioned that this function is virtual
+in base class but still for transparency
+it's always better to put
+virtual everywhere okay so of course
+putting virtual IND structures will fix
+this problem as well even for raw
+pointers
+okay so I hope this all makes sense
+that
+C++ is much safer nowadays but there's
+still some problems left and we have to
+be careful so always have to be careful
+uh understanding the rules of syntax
+when you handle memory and I have maybe
+I'll skip now because I really want to
+jump into um templates but maybe really
+really quickly go go through these
+definitions and pick the ones that you
+kind
+of not sure why we even talked about it
+and what it means so that I'm I I
+understand where you are on
+inheritance
+so these are all the rules that we
+outlined last time uh for correct
+inheritance
+syntax
+if all of them are good just pick all
+good oh yeah if you don't overwrite
+whatever the speed function is of the
+base class it will just apply for the so
+you don't have to override
+it um virtual method return type cannot
+be overwritten that's just a rule the
+compiler will yell at you if if you try
+to implement speak but it will return
+something else than the base class so
+it's it's just that the compiler will be
+on your
+side yeah
+virtual this is virtual is what
+instantiates the dynamic
+polymorphism uh of course together with
+inheritance but virtual methods are the
+ones that will be bound at R time
+depending on the
+type okay okay so yeah very good but
+only three people answered okay so let's
+move
+on so let's talk about templates and
+templates as I said is an example of
+static po polymorphism so um
+instances of different
+types can use the same
+function which will have different
+functionality depending on the type so
+that's the definition of static
+polymorphism and it's decided at compile
+ter it's static polymorphism it's
+decided by compiler during compile time
+and let's look at what I'm going to
+cover so I'm going to show motivation
+like why do we even want it and what
+does it improve and then a couple of
+basic
+examples and I'll talk about now
+standard templated Library so we can
+talk about it because standard templated
+Library standard template library has
+template in it which means that it is
+using templates so probably proper time
+to talk about it and all of the SD
+containers that are in
+STL uh I'll show you an example how to
+write templat class and compilation so
+what happens uh during compilation of
+templated uh files or objects classes
+and
+functions and if we have time we'll talk
+about Vari actually I don't know how to
+say it
+peric templates I never thought of it
+yeah I learned about it by reading so I
+have no idea how to pronounce it I'll
+ask my Native American husband he might
+know but sometimes he doesn't know if
+it's something that's been you know when
+you read about it for the first so this
+is a new
+thing ah we might ask V objn himself
+okay uh so let's see so this is a
+motivating
+example uh let's say let's go line by
+line because it's like very basic kind
+of example why we would need templates
+and when we would use them so imagine
+that I have two functions one is called
+swap
+integers it takes to integers and
+through the use of temporary integer it
+will swap the values of s to Y and Y to
+S similarly you have another function
+swap Char so take two chars X and Y two
+characters
+use temp character and switch X to Y and
+Y to
+X so then in your main function you may
+have a pair of integers a pair of
+characters and then you call this two
+functions swap integer and swap
+characters and then if you print out a
+becomes B B A became B and B became a
+and C and D also swap were
+swapped don't you see
+something that is
+is
+redundant isn't this technically the
+same code line by line right the same
+code the only difference
+is what if I swap integer to t t t and
+Char to T TT so the only difference in
+syntax is the type of those two
+parameters that we passed
+so let's go to the next
+slide guess what in C++ you can write
+swap us
+function that will
+just use T instead of a type as long as
+you prefix it with this
+declaration template class D which means
+that this
+function is
+templated
+and then you can call it from Main by
+just calling
+it you have a pair of integers you call
+some us on on them then you call the
+same function it's just one function
+right so how does it know what what
+happens what happens at compile time how
+does it know that it needs to call those
+kind of two different functions to swap
+integers and characters right how does
+it know which one to call and how how
+does it do it well it turns out that the
+compiler will have will do two one extra
+step so all the steps will be the same
+except for one extra step which will be
+called template instantiation that is
+it'll look at the call to a templated
+function look at the
+types that this function is called with
+so in this
+case it was called with integer integer
+so it will just swap t for integer and
+write literally write the code for this
+function or instantiate this templated
+function with
+integers instead of T then it will see
+the next call to swap us with characters
+so it'll instantiate so one
+instantiation will be with integer
+second instantiate oh here we go one
+instantiation will be for this so it
+will literally create the code that we
+just WR in the previous slide for
+integers and swap us for
+characters and then it'll compile with
+those two and does the same thing that
+it does usually compile create machine
+codes for these two in instances of the
+swap of functions and then we'll create
+an
+executable so one extra step that is
+template instantiation and all of this
+is done during compile time so
+essentially it's saves you
+time for for writing it because it
+writes it for you it also says oh that's
+the next slide so let me jump there so
+what are the
+advantages compile time efficiency so
+it's all done at compile time you don't
+have runtime overhead I I should have
+written that it's just better code it
+saves your space in your code right it
+it writes those functions for you and
+you all you have to do is just to write
+one pun
+it also allows to reuse the code right
+which is essentially this generality
+code reusability or just saving new
+space this is uh an advantage it's type
+save so it will always check that um
+that the types are correct what you
+intended so it will not put integer and
+say animal right there it will check
+that these are two different types and
+if those if that's impossible to uh
+create an instance for or compile that
+kind of code it will not do it it will
+cause compiler
+error and um yeah and it's just
+efficient so this is a really good way
+of writing code so let's see I created
+this um code for you on godbolt so let's
+see what it does okay so disadvantage of
+this of course is that it's a little
+slow when I use use this tool but it is
+what it is so here's the the templated
+swap us function and I call it Swap and
+swap on integers and characters so the
+result is B swaped right it was 51
+became 10
+5 and um it was x y and became y
+okay so very good let's see
+no questions so let's see how how in how
+many different ways we can uh use it and
+uh first though I want to mention this
+uh template and containers so something
+that we didn't talk about yet because
+when we talked about arrays I only
+showed you raw arrays right or uh C
+style arrays raow pointers and uh C
+style static aray but
+um STD the standard
+library has part in it which is called
+standard template library and it has a
+lot of containers that can be invoked by
+using SCD uh name
+space and um then you can access them so
+there's
+arrays these are static arrays so you
+have to De know the size at compile time
+you can use vectors so this is dynamic
+arrays but safer kind so this is the
+ones that you're encouraged to use
+nowadays with modern C++ so vectors are
+Dynamic array so you don't have to know
+the size in advance in compile
+time um then there's lists so for
+example um something that will Implement
+in one of our later MPS and Labs uh but
+there standard ones standard container
+is which is called list which is safer
+but essentially it's also double linked
+list that will Implement as well or if
+you want binary search trees there are
+sets so a lot of different
+containers they all in sent a template
+Library which means that you don't have
+to know the type you can use it as
+templated type let's see how to do that
+so let's look at the uses of this
+containers with
+templates you could declare all of this
+in Main but here's the thing do you
+think main function can be
+template and if no then
+why the logic of it right what would the
+compiler have to
+do main is where the control starts
+right so it looks at Main and it has to
+know at that time what are the types to
+instantiate the
+templates so it cannot instantiate
+several Main functions because you have
+to have one starting point so you can
+therefore you cannot really declare
+templated arrays in main you have to do
+it somewhere else so let's see for
+example you can have create containers
+function and then you don't have to say
+that my array is of type it will contain
+integers maybe my array will contain
+any whatever type you're dealing with in
+that situation right so that's how you
+could declare my array
+without without um committing to the
+type in some function which is templated
+uh similarly for my Vector my list and
+my tree so that's good
+or you could um pass then a container so
+for example in your main function you
+declared an
+instantiated a vector of integers but
+then you can pass this
+Vector of integers to print Vector
+function and that print function doesn't
+know doesn't need to necessarily only
+print vectors of integers it can print
+any it's a generate function it'll print
+any Vector of items whatever type you
+pass so then you it will also print a
+string uh print a string Vector as well
+or whatever you know whatever Vector you
+create you can pass it all to this
+templated
+function and then in uh the function
+signature you'll just say oh
+this Vector is of type T contains
+elements of type T so that's the
+sentence as you can see the syntax can
+get a little tricky here right and
+that's what I have the quiz now so we'll
+start guessing this syntax um in a bit
+um but you can see that it can get a
+little hairy right faring what's going
+on although
+we'll get to S
+so um let me click on this maybe there's
+something interesting in that code that
+I prepared other than what I already
+said oh yeah if you want to see that
+this print Vector function really
+works you can um you know pass first of
+all any
+number of oh sorry any number of
+integers right
+what if I
+pass what do you want to pass that is
+strange this is this is a finished
+layout let's see where's my where's
+my I'm trying to find the character
+thing thing oh yeah there is what if I
+pass a
+there h
+so what happens here can you
+guess casting right that's the right
+word casting so sometime what if you
+make a mistake and pass a different type
+so it really has to take in
+the the vector of one type and you're
+trying to pass a a character as an
+integer you'll just try to cast if it
+and it'll be happy and characters are
+easy to cast to
+integers so a is
+97 but if you will try to pass a strain
+there it'll really
+complain so high it'll just at compile
+time because it has to be all decided
+compile time so that's why it's really
+cool U because it's easy to fix this
+kind of Errors it will just say okay
+this is not an integer and I don't know
+how to convert it in inte you didn't
+provide me with the a functionality
+converted to to an integer you could you
+could write a function to do that and
+then it would be cold but we
+didn't okay so we done with this really
+cool now of course you can then create
+your own containers your own link list
+your own trees for whatever you want to
+do and then they can be templated too so
+let's look at an example of a class that
+is templated so similarly look at this
+class it's just a class with private and
+public members so PIV it's an easy pair
+so a class will have two um private
+members of type T A and B so it's going
+to be a class that contains that pair of
+elements so I have a Constructor a
+parameter Constructor to create an easy
+pair and I have a function get Mass so
+if those two pairs can be compared so if
+this less than or equal operation is
+defined it's not defined on all on all
+types for example for animals do you
+know do we know which one is less or
+bigger smaller or bigger I guess we
+could Define that functionality then it
+would be okay but for spheres maybe
+that's also something that we would have
+to think of but as soon as you def
+Define this operation on that
+type this class can be
+instantiated and the
+um all you have to do to to to use
+templates is just to announce that this
+class is going to be templated with this
+line
+here just like for functions so very
+easy syntax what's not easy is to then
+call this kind of um pass pass this uh
+instances of templated uh
+types but let's see how we're going to
+create then um or declare a very
+variable of type easy pair so this is
+the Declaration maybe I can start right
+in here this is the Declaration I
+declare integer
+pair of type easy pair integer right
+because that's my class name so the type
+is easy pair but you always have to uh
+to to explicitly say what type it's
+going to be off so it's integer and then
+you um instantiated with 42 and 100 so
+the this Constructor is going to be
+called upon this declaration right so a
+parameter Constructor
+parameter Constructor is being called
+here and then similarly you can declare
+a string pair so a parameter Constructor
+of apple and banana are going to be
+called and the type of this string pair
+is easy pair of type
+string and then you can call get
+Max
+for this so let's see how it's going to
+work for 42 and 100 it's clear which one
+is Max 100 and for strain pairs apple
+and banana strains know how to compare
+themselves so they defined also in STD
+in standard library and I think it's
+just the length that's compared in this
+if I'm not mistake I think it's the
+length let's see what if we make
+them uh eal length
+oh banan russan
+banana okay then it's banana banana is
+winning but if you make it shorter
+then oh it's not length then what is it
+do you know what what this means for
+strains I actually don't know and I
+didn't look it up so I don't remember
+off the top of my head but defined and
+whatever it is if you ever use it you
+better know of course for your class if
+you're ever going to instantiate uh your
+type you better know what those
+functions are doing
+right is it adding the character values
+maybe what about a a a a a a and then
+we'll
+start putting B here that's my
+yeah I think it's adding the values of
+characters maybe I don't know like I I I
+don't know like this is something that
+we would definitely have to either look
+up or override we can also override any
+operator so that's
+cool H let's see so I hope it's clear
+what's going on
+here now I have a couple of questions
+for you so here are the solutions I'm
+going to look at that thing but I'll
+have to ask you given this easy paay
+class what would be the function
+signature of a copy Constructor because
+I have a parameter Constructor but what
+if I want to have a copy Constructor so
+easy per againsts
+tast by reference right constant
+value and what would be the the function
+signature so I'll have a couple of
+questions but let me first start
+this and then we go to um
+slider.com
+but you just tell
+me sorry sorry I just like I clicked
+yeah here function signature of a copy
+Constructor and let me go to the code
+and you can pick the solutions there so
+if I were to write a copy Constructor
+here what how would it look like what
+would be the function
+signature
+yeah right not a big deal once you kind
+of know what's going on this is it
+that's it yeah how many people three
+people yeah all agree that's good I have
+three active fly.com users very good um
+so yeah this is this would be
+it that's the right one and I'll have
+the solution so I'll show you next but
+let's go to the next question how do you
+declare a static array of easy pairs of
+integer of integers static
+array oh my god oh my god let's see what
+if I want to use this easy par class but
+I want to in my main function I want to
+have a static aray of them say 10 or
+whatever or to how how many did I say
+here two of size
+two so this would be C style array still
+correct you just say that what type the
+name of the array square brackets number
+that's C style array or if you want to
+do uh a better more modern static arrays
+in St from STD
+then you have to say STD
+array
+um this kind of brackets and you have to
+define the type comma size and then give
+the name of the array so both of these
+are correct for static arrays just this
+one is a old
+style okay and then the next question
+is how do you ask for Heap memory for a
+pointer to an easy pair of type
+character
+so now you
+have a pointer to an easy pair but you
+want to ask for memory so you want to um
+you just declared a pointer but you want
+to initialize it with a heap easy pair
+you want to put easy pair on the
+Heap Yep this is and we are talking
+about raw pointer right here so I didn't
+put any smart pointers
+but the raw point or the way we taught
+in class so far would be you give the
+type then askis the name of the pointer
+and then you ask for new type easy prar
+and
+then you have you instantiate it with
+the two because we have the parameter
+Constructor for two values so you would
+have to remember what is our parameter
+Constructor but it asks for two values
+so that's
+okay okay
+so that's good um we
+have I have the solutions you can look
+at them but maybe I can go
+back here the solution so that you can
+see that everything is good and let's
+see if there was anything else that I
+wanted to mention
+here yeah so this is our integer par
+strand PA that we already
+discussed this
+is Ms that is called in them the cop oh
+right the copy construct structure is
+being called and this is the signature
+of the copy Constructor just like you
+said then a pointer to an easy pair is
+declared a raw pointer and then you can
+call of course uh maths on that easy
+pair as
+well and then an array and this is a c
+style array that I
+did here or a um STD array that I did
+here so just like you answer so all
+working and F figuring out what's the
+mass properly okay so now I have a
+couple of um notes on template
+compilation am I running off I'm still
+good very good so let's now look at the
+big picture uh and remember how without
+templates we always talked about the
+client code the interface of your so
+your WR you're a developer say you're
+writing your code you have interface for
+your classes and functions and you have
+the actual sources right and you put
+your
+interface where do you put your
+interface interface come on it's delay
+delayed so I can really okay so you put
+the interfaces to your classes here in h
+and you put the sources in
+CPP and then the client is kind of like
+third person that may ask for so let's
+see the client we don't want to show the
+client the sources right we don't want
+to give them the sources but you can
+give
+them H files because it doesn't contain
+your whatever smart code so you give
+them theh files and they can include it
+here right they say um found
+include yourh files
+so you give them H files then you also
+precompile your code H and CPP into an
+object right and give it to me to to the
+client to link together with main object
+right and that way they get their
+machine code to run their their code
+with your
+libraries so that's one thing now let's
+think
+of your code so you're now writing the
+new templated code so you have templates
+in your code so you have your interfaces
+in
+h of your templated classes and you have
+the code in your
+CPP and you want to get
+away with not giving cpps to the client
+let's see if it's possible so the main
+function will include INE found
+include your file
+right and what's going to
+happen can you give the objects to link
+them why
+not can you compile your H and cpps
+together without the client code if
+they're
+templated
+what does the compiler need to know in
+order to to compile types right who
+declares those types
+main you see that so the main will tell
+which types to
+instantiate what does the compiler do
+here when those types are not
+instantiated doesn't know how to intiate
+unless you intiate all possible
+combinations of types and give that uh
+machine code to the client which is
+really inefficient and it'll blo you
+like it's not the whole point of
+templates is lost them right so what you
+have to
+do well anyway in order for main to
+compile it needs to look at the it needs
+to instantiate those functions and
+classes so it needs to know the function
+signatures but it Al also needs to know
+the code in order to to instantiate it
+in order to write that code for each T
+that it's going to be
+using therefore you'll see something
+interesting so how do you even solve it
+how do you compile this whole mess
+together and the or in which you compile
+things is slightly different so you'll
+see in our code that we provide you what
+which has templates that you put pound
+include CP p in the end of your H fs and
+that way main essentially includes all
+of the code the compiler will need to
+instantiate those
+templates and that's the only way so
+somehow um something is really lost
+right it's it's
+[Music]
+um it's a little sad that templates will
+not allow you for uh core functionality
+of C Plus+ which was called what was it
+called not inheritance but another name
+that we we were talking
+about sorry I I'll I'll have to remember
+I forgot the term that we learned about
+C++
+fundamental properties that you
+differentiate
+implementation from interfaces and with
+templates that's lost H encapsulation
+encapsulation is lost thank
+you
+okay let's grief for a moment and move
+on um so I have 15 more minutes to play
+with something fun so it turns out that
+templates allow you
+for a recursive
+definition of functions and that's
+called vartic oh I don't know how to you
+know what V doesn't sound right varic
+just just let's not say it this kind of
+templates and I'll ask natives who might
+know or maybe we should ask Wikipedia
+for for the way to pronounce it but
+anyway um so these kind of templates are
+defined in the following way let's trace
+this Co code what does it do so I have
+one templated function sum but this is
+the base of recursion so what does it do
+it does nothing interest it just Returns
+what has been passed right so that's
+okay not by reference though
+but maybe that's important maybe not
+let's let's see later probably not um
+then we have another templated function
+which is called sum as well but it has
+two
+arguments two arguments one is pretty
+clear it's of type T and another one has
+this dot dot dots which means that we we
+don't know how many are going to be okay
+so we'll take any number and we'll just
+aggregate them into
+args of type arcs dot dot dot
+okay and the type name also has this
+recursive you can think you can start
+seeing that it's going to be recursion
+so this R going to be of
+whatever you know it's going to be many
+of them so let's see how it
+works later
+uh main function is going to call sum of
+1 2 3 4
+5 let's see what types are 1 2 3 4 5
+whether they match any of these
+templates so the compiler can
+instantiate it so let's see with
+different uh maybe color so one is of
+type integer so first is going to be
+integer and then the
+rest are going to be
+arcs as long as we can add first with
+whatever is sum of arcs then everything
+should be fine so let's see what happens
+here this is the recursive call to the
+same
+function so this function will pass this
+whatever is left over arcs and break it
+into the first element and the rest the
+first one should be of the same type t
+and um the rest are going to be
+processed in the same way as the first
+call to the sum until you hit one
+element that is left over in ARs and
+that will be the
+sum so then another sound will be
+called okay so let's see what should be
+I think I have a a question for you do I
+have a question for this yeah what will
+happen after it's evening this code so
+let me click on the code
+first and you can answer the question
+what will
+happen so it's the same
+code
+let's look at your answers yeah 15
+banana 15 banana is the answer so what
+it does
+is
+um just adds up so essentially it's
+recursive adding up of the first
+argument with the rest and then
+recursion is called on the rest with
+first one and the rest and the type the
+output type should match the type of the
+so the return type matches the type of
+the first argument so all of this is um
+locked up in this recursive call so that
+it ends up being that all of the
+arguments should be of the same type so
+you cannot really let's try playing with
+this code let me nuke my uh thing so
+what do you think will happen
+if I
+put
+an integer here
+right just doesn't know how to add those
+things so the compiler will really have
+to run through all of the unroll all of
+the three
+Pion and then see if if types will match
+in all of this operation which is adding
+all of these numbers together and if
+they don't then it will tell you no I
+canot do
+that um so you better add strings with
+strings and
+uh
+yeah compilation error yeah that was
+compilation
+error
+yeah let's see so what's go oh by the
+way I
+can this is compilation error too but
+let's see how you can do it so with this
+tool what's really cool is that you can
+ask for a compiler window right here and
+then you can pick any comp compiler you
+want from these List look at
+that do you remember we were talking
+about um CL right let's find any Clan
+ones they are there
+there um some of them are really and I I
+still didn't do research I didn't really
+learn this tool too well some of them
+are really the best ones that you can
+use but maybe I'll prepare if I prepare
+a lecture on this I'll let you know know
+but next year we'll know which are the
+safest compilers and we'll probably even
+have our server upgraded with one so
+that we can grade the homework
+appropriately as well but we don't have
+that done
+yet anyway so you can pick any compiler
+and it says the it's the compiler Arrow
+so what does it
+say
+why doesn't it show more I'm
+sorry
+H let me try it again but it didn't
+compile so this shows that it didn't
+compile is it it's a compiler
+right
+executor so you can see that it says
+that it's a compilation error s was not
+declared oh yeah du so it's a different
+kind of error but if you put like a one
+there that will be a type mismatch
+Arrow it says compilation failed but in
+execution you have the output okay of
+the compiler so it says it cannot find a
+way to add up operators for integer
+and STD
+Stream So type mismatch that it cannot
+resolve Okay cool so that's good now I
+have a little more
+fun I have this code and I'll just let
+you Marvel at
+it because it's so nice and figure out
+what does it do so it's a recursive call
+so we are playing a little bit with the
+recursion here um because when we start
+working with lists we'll need to talk
+about recursion a little
+bit so what does this code do recursive
+way by the way I think people who
+introduced this
+very recent update of templates with
+this um recursive templates one of them
+is a Finnish person so fins are
+really important in the latest
+development of C++ which is really
+interesting and
+cool you say t when you
+see so that's what Elmer immediately
+said when we spotted the name of the
+person who was the author of this Vari
+templates okay so what does this code
+do you have to
+guess of course I have the uter so I'll
+show you what it does
+[Music]
+later draw a pyramid that should be a
+kind of giveaway right there's some
+comments that do so essentially it's the
+first call and to draw pyramid from this
+characters and then it it makes the
+first recursive call with the one which
+is an integer and that represents the
+layer so you start with the head of the
+pyramid which is the first layer and
+then passes all of those characters to
+that recursive Co code as head and tail
+so head will be the first character and
+tail will be the rest of the characters
+on which the next recursive call is
+going to be called with incremented
+layer so incremented layer will be for
+for the head of the list the layers is
+one but for the next recursive call the
+layers incremented to two and then that
+tail is passed but it will also be split
+then into the head and tail and the tail
+will be called with three incremented
+layer and um and so on so recursion will
+be called but what does it do in the
+meantime it's going
+to print head character as many time as
+there is as it is the layer
+number and end it with end line so what
+is going to be the output draw pyramid
+in each layer is a different character
+yes that's
+correct let's let
+me show you the results there you go let
+me nuke my see aute paramid like
+that so what does it remind you this
+recursive functionality in the language
+that is just there for you to use does
+it remind you any other language that
+you used
+ever it's it's something that was really
+surprising for me to see there you go
+see even CA pyramid then can be with the
+same code but you pass it let's see you
+pass the first head the cat thing and
+then it will print kind of similar
+pyramid so anyway really really neat
+functionality probably useful I don't
+know but um let's see do I have any
+concluding
+remarks hey we have five
+minutes let's figure this out th this is
+yeah this is just um I have
+to I I didn't know how how long we will
+take this lecture so I wanted I prepar
+this maybe for next lecture to start
+with but if you really understand
+templates then it's not a big jump for
+us to go from function for just one
+type to function with two part CT and
+you now so be compiler for me and
+instantiate all of these calls
+here so let's see here's the the
+slider.com
+so try to see if this code will run and
+compile and what will be the result of
+instantiation with two types now right
+two types so just a matter of tracing
+substituent
+types and figuring it
+out
+yeah I don't know will it or will
+not it's all about casting right I think
+I already showed how characters is not a
+big deal to cast to integer
+but I think here it has to cast to
+integer or what what's what's the
+casting that will need to be done is the
+question I guess so all of these are
+pretty
+straightforward so you should figure it
+out just by plain
+substitution for T and U with whatever
+is coming in the class and then
+returning T so that's just plain
+substitution the first three and the
+fourth line is a bit of a
+mystery because you really have to cast
+some things right so there will be some
+some casting problem because there's
+also one thing that needs to be defined
+for both type T and U is how to add
+those numbers of those two types and
+that's where casting will have to be
+done and default casting is something
+that I I don't know all the default Cas
+so um
+so let's try to guess I guess but it's
+very easy for integer and double because
+it's not a big deal to cast one to
+another while for characters and
+integers or for other types that's
+something that you either need to know
+or redefine
+yourself so do I have any answers there
+ahuh three
+three I think that's correct so about
+three people did it right let's look
+look at the
+execution 3
+3.5
+3B
+okay so do we understand
+why Okay who wants to walk me through
+what's happening here and why the answer
+this is really easy right integer T
+integer U so t and u are integers so the
+return should be
+integer integer plus integer is integer
+no problem it's three this is really
+straightforward okay so who wants to
+walk me then through this this is not
+really
+straightforward so what is T Double T is
+double so return should be
+Double U is
+integer so integer 2 1.5 is
+um double what happens when you add 1.5
++
+2 if you want to return a type double
+yeah 3.5 it's straightforward yeah so no
+no problem it's going to be
+3.5 okay what about this one let me nuke
+all of the things so what about this one
+when T is
+integer needs to return integer but U is
+double what
+is cast the integer 1 +
+2.5 yeah yeah B has to be converted
+right and cast to two so it's a three
+then okay and now what happens
+[Music]
+here so T is a
+character U is an
+integer return type of character plus
+integer should be cast
+to a
+character so what does it even mean to
+add character plus
+integer do you remember we like
+characters can be added right because
+they can be converted to integers they
+kind of can be treated like integers and
+uh a whatever a
+is was it
+49 + one 40 yeah plus one should be B
+then so that's what happens underneath I
+do not know exactly how casting when
+happens here so something that may be
+worth checking I'm sure V would know uh
+but
+um but the result will be B because of
+that not really crucial for you to know
+this because in the end of the day you
+shouldn't really rely on this kind of
+default casting you should really
+operate with your types the way you
+intend it to happen so you really should
+know uh but still a fun example to forse
+and of course then if I were to try to
+pass these two to add elements like a n
+a
+strain and a not standard strain by oh I
+guess it could be cast to standard
+string but
+um it would just complain so there will
+be all compile errors when those types
+would not be able to add each uh add to
+each other if there was no Divine Way of
+adding types then you would know it at
+compile time it would it would tell you
+so all
+good nice for developers to know where
+the problem is okay exactly 45 minutes
+so very good any
+questions yeah go
+back let's run it it will not
+compile it just can't compile or before
+oh yeah yeah it was B yeah let me go
+back yeah it was B let me uh so what's
+the answer
+right the answer was
+B oh two that will be
+see I'm I'm clicking on the
+wrong yeah yeah yeah it is alphabetical
+yeah yeah you add 10 it will be whatever
+number
+is whatever letter is
+10 spaces away K I guess from a in the
+alphabet okay any more questions so this
+was fun next time we'll start on linked
+list and to be honest this is something
+that will not be in the next iteration
+of the class
+because I I'll tell you why next time
+there's a good reason link lists are
+still fundamental data structures and
+one day they may be useful moreover some
+of you may need it because maybe some of
+you will be operating on very small
+devices when there is no memory and you
+running the same situation where all of
+your dynamic memory is occupied by your
+list or by your data and then the most
+efficient made a structure for small
+dynamic memory like that for small keeps
+arless except that nobody most likely
+you as software Engineers will never
+deal with the situation maybe if you
+have a startup and you working with new
+hardware you have but most likely not
+therefore Industries all over us to
+never mention L list in our class and
+yet we have exercises for L list
+therefore we're stuck with covering
+something that may not be necessarily
+used by you
+ever
+again unless you're doing something
+completely inventive so that's why I
+think it's
+okay because we are still University and
+we want to dream that maybe you will be
+changing the world with something new
+and then you'll need something
+this
+obscure but anyway that's what's going
+to be next so I'll see
+you
+let me end
+meeting don't record
+it come
+on why I can't do that the the the mouse
+JS you see
+that
+recording

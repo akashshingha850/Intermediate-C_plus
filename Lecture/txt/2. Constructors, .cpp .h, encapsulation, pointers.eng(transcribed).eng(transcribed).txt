@@ -1,0 +1,1863 @@
+okay miss
+me
+okay
+[Music]
+see
+e
+okay you guys hear Us
+online we can
+okaying
+so do you the
+of um right so you go here you go to
+lectures and uh links to Google
+D it takes several hours so to just
+convert it for Zoom
+yeah then if I get distracted
+then ah yeah I forgot that I could have
+tried to do this maybe
+next probably microphone that would be
+better so I can walk around but now it's
+too late
+again okay so you guys pleas take these
+today they're
+2 have have 300 people in this
+class but they're recording lectures I
+guess so I have to tell you that more
+people completed the first two
+assignments than we have both here and
+on Zoom online
+now so 70 people already completed M
+five
+tutorial they're virtual
+students but they're very productive so
+no problem whatever works okay so let's
+start let's roll um I have some
+announcements for
+today let's
+see okay that's again uh first of all
+please whenever you complete your
+homework any whenever you're on any page
+uh on love La you can leave your
+feedback so to us it looks like this see
+it's
+Anonymous and um this is very positive
+feedback we got some not of posit
+positive feedback we want all of it
+because we just want to know how did it
+feel for you to go through these
+assignments because uh then we'll see
+the distribution or what's going on
+we'll we'll know what's going on really
+uh with the um with this assignment so
+for example I can give
+you um I can show you where you leave
+your feedback so whenever you press the
+button send feedback that's when it will
+be anonymous
+and then we can go uh to the beginning
+and see the
+feedback and uh for example look at
+this so somebody really really
+struggled but I don't know who um
+yeah so this is
+um you know I I think we should have all
+of this kind of feedback so if you
+struggle just do say tell it to us and
+then we'll try to find an explanation
+and help but I think to that particular
+uh comment I have to remind you I think
+something that I
+forgot to remind oh
+oh okay I hope this is not you know what
+let me since we're let me make sure that
+I'm in the right directory because I may
+be using old versions of the slides yep
+I'm using old versions of the slides I
+didn't want do that
+sorry
+guys but since you are yep I'm in
+release leure slide I need to go to
+mod oh that's
+good
+okay okay let's start
+over
+that want that in my way okay so there
+you
+go
+so that particular
+feedback I would like
+to comment in it with this slide please
+remember that this is an intermediate
+level programming course which means
+that you have to be comfortable with at
+least one another programming language
+because if you're not then it the pace
+is just too fast because we are not
+really talking about programming or how
+you would communicate with a computer
+but more about this particular way of
+doing it other than the ones that you
+have to already know somehow whether
+it's Java c c or python uh all of those
+are good and I've seen that most of you
+have another programming language in
+your experience but if you don't then it
+is a struggle and then it will be
+extremely challenging to keep up with
+the
+course so but uh please share your
+experiences with us because still it's
+very valuable for for us it's very
+important to know uh whether it's too
+difficult easy or difficult or just
+simply difficult uh updates about the
+lab uh we didn't have many students in
+the lab last time however if you do we
+will not use TS 135 uh PCS at all um the
+reason is very complicated so um we just
+can't so the way it is done with the it
+it will be impossible
+unresolvable um other instructors tried
+it may take months if it's possible at
+all so we might try to do that in with
+the next installation of the course but
+it's not even worth spending time on it
+why it's impossible it's impossible for
+us which means that you have to if you
+don't have a laptop or PC you have to
+find a way to get it somehow please do
+uh students can borrow laptops so borrow
+laptops so that you have more control of
+over it and then you can install the
+virtual machine and have this Linux
+environment to mimic EX what we do in
+lectures and to work on your assignments
+so we will not use those PCS at all we
+can't it's impossible okay um so any
+questions about that if you have any
+questions please tell me but we decided
+that maybe to mitigate this and also
+we've seen very low turnout in Labs so
+we can have some tutoring online in
+Discord and that means it will be more
+flexible hours we can have like some
+some kind of sign L up sheets for
+sometimes and if we see that you're
+there we just go share our screens
+change the problems so it's kind of
+online but live U debugging together so
+I want to ask you guys online and here
+um which way do you
+prefer hold on I'll go back where did
+jump no no no no jump too
+far there okay so which way do you
+prefer this
+one
+okay there you go see it's a very small
+number of answers but okay so we'll do
+that right we still we only have two
+hours in physical lab that's not enough
+of course you all of you might have more
+questions about debugging
+so we can do that virtually then in a
+virtual
+space and those of you who have who
+prefer physical lab we still have it but
+please bring your laptop like there
+there's no other
+way that we can
+proceed okay if you have any questions
+here please also post uh in
+Q&A this is the to-do list just a
+reminder you already know that you have
+to start with setup instructions please
+raise your hand here if You' done that
+already
+what about lab intro done
+already okay what about M file
+tutorial I see lots of hands online as
+well okay good job um so actually 70
+people 25% of our course trist have done
+Mall
+tutorial that's um that's very
+surprising for me but way to go uh I
+assume those students already know C++
+quite well and why they're not here yeah
+ask about the
+deadlines The LAB Works like deadlines
+on Sunday
+but Mach problems
+are I think I try to distribute them in
+some way so that it's reasonable uh
+there's no particular answer is it
+Monday is better
+than it's it's Weir that almost the
+deadline for one thing
+right um
+so on Discord please post your comments
+about deadlines because we um we might
+extend or Shuffle deadlines we might so
+if we have lots of
+requests like
+that which one is it MP intro or MF fall
+tutorial that is on Sunday yeah the lab
+team lab
+on Sundays yeah okay we can move them to
+Mondays it does sound reasonable sorry I
+have this us mentality where you know
+you do get most of your work done on a
+weekend and it's hard
+to we live in Finland we have to respect
+that you know on weekend you have you
+have to have balance between work and
+life right uh let's not have Sunday
+deadlines okay and if I forget remind me
+so it's going to be moved to
+Monday okay
+so uh any organizational kind of
+questions that you might
+have please let me know if you have any
+questions but otherwise the L also
+collide with many of our
+schedules I'm sure they are you know
+what I I
+think
+I this is a tough course like I I'm I'm
+warning it's it's it is what it
+is but remember you lose only certain
+amount and you still can
+recover uh quite well for your final
+grade so the the deadline you only lose
+20% at a time and nothing else so you
+can submit your Labs any other day but
+there should be some penalty so that for
+those of you who it works to have the
+schedule then you're motivated to keep
+up with it okay should love grade group
+assignment automatically for all members
+yes it will work like that so once it's
+graded the all the entire group should
+get the grade do I have to form a group
+no you don't have to if you like to be
+solo can we cry during the course
+yeah yes yes it's a Pilot Course
+remember that it's a pilot course so
+here's the deal if you pass it fast that
+means you're fluent in C++ if it takes
+time you're not fluent yet it's fine
+tring to be not fluent with the with the
+language I'm not fluent with with
+Finnish and moreover I'm so bad with
+Finnish so it takes time so cry and work
+I cry about finish I
+do okay is the am forat is also C++ code
+yes yes yes so the there will be some uh
+quiz questions today in the lecture and
+that's how you would expect one exam
+question look like so some kind of
+multiple choice question
+uh about some kind of code like like
+today in the lecture I meant it as in
+online and better than physical
+attendance okay will it be difficult to
+complete the lab test
+solo depends on how you work I think uh
+probably having a team is fine because
+then you can exchange ideas and debug
+together in parallel but if you already
+comfortable C++ I would I would go for
+solo then myself I meant so sorry I
+don't I didn't pick the first part of
+the
+question for this please put the whole
+thing how can it be the setup the sub
+system for
+Mac um right we didn't put anything for
+that we can find some links if you
+cannot figure it out if you figure it
+out anybody who has a Mac if you figure
+it out please post a link for a tutorial
+so that we can share it with other
+students I know off the top of my head
+that I know where a tutorial like that
+should exist so uh so we can find it
+just ask it on Discord and uh I'll find
+that link automatic review for groups
+doesn't
+work we'll check on that we'll check on
+that so yes thank you for letting me
+know it should
+so we'll fix the love list then does
+only one group member return the lab
+assignment or everybody just only one
+maybe your group is not fully uh
+properly formed there were some problems
+with forming groups in the past so we
+will have to look at that group and see
+what's happening so please send um post
+it on Discord as well and we'll figure
+it
+out yes you can submit multiple times so
+you submit you see the answer and um
+then you debug and get the full grade so
+submit as many times as you want just
+try it it's kind of like an online
+debugger
+okay so let's go back to our
+um code from last time I had this code
+right let me see what I uh help me put
+things or describe what's going on in
+this Co code so here I describe class
+sphere so this block of the code how
+would you call
+it it's the class fear
+what definition definition so it's class
+fear
+definition but there's member functions
+that are only declared there so we only
+see the function
+signatures um so we Define them in this
+block so here you could say it's class
+sphere
+member
+functions what definitions right
+definitions okay fine and what is this
+code yeah it's you it's it's a user of
+class sphere so we call it client it's a
+very small client code usually you have
+much bigger Force codes that might use
+your um classes that you design but this
+is an example of a client code that uses
+sphere okay very good so now I'm going
+to ask you a couple of questions so
+why why this is outside of the class
+definition
+itself the for example class rectangle
+we use the same kind of stuff Dieter so
+we could call it
+without them again
+inside so if there's another class here
+class Circle or
+Circle yeah but that's not the question
+why this description here at the
+question why did I put class uh sphere
+member fun fun definitions outside of
+the class itself why didn't I Define
+these guys inside of the class why
+didn't I Define those member functions
+inside why didn't I say what they're
+supposed to do here in curly brackets
+right there in the class
+[Music]
+itself well it would work like this too
+yeah it would work but
+originally like in the '90s
+you compile with C and H F uh at a
+different time and in+ code in the H
+because it was too big for the
+compiler um yes so that's one of the M
+it's it's one of the reasons to explain
+it but you know in
+C++ we could do it both ways and it
+would still compile so why so it would
+be a design Choice then so why we chose
+the these member functions to take
+outside of the class definition and it's
+you can put them inside but then your
+class definition will grow significantly
+you would have all of the mess because
+maybe some of this functions is very
+long maybe it takes another it's an
+entire Library what it does right like
+maybe there's too much code and you
+would Clump it all together inside of
+the class definition and it would be
+hard to read it then so so that's
+another reason right like that's also a
+a valid reason it's a design choice you
+want to take it out of of the class uh
+definition so that's good so now why do
+I have this sphere uh double
+colon right here why do I have to
+specify
+it scope resolution operator
+because they know which which class it
+belongs to because it could be also a
+circle class right before share class
+that I Define with its interface and its
+member uh function signatures and it
+could also be uh get diameter and set
+radius there so you have to really
+specify which of the classes the set
+radius is circle or sphere otherwise
+it's not clear right because it's
+outside of the class okay good now uh
+why so here is a a
+question can I say here
+in the client codee
+a um sorry a
+radius why why or why would I do this or
+why wouldn't I do this and I say
+five can I say that in the client
+code why
+not yeah it's in the private region so a
+client code cannot access private region
+right what can access private
+region what can use those
+variables only member functions that's
+why we have radias here right we can
+actually take it and change it and
+access it only from these guys Within
+These functions or member functions we
+can access private members the client
+code cannot do that it would be a
+compilation eror okay good um I think I
+don't have any questions about this
+anymore so we're good kind of we know
+what these blocks do so then the next
+you don't have this as in know your
+print out but I can say hey we don't
+have to put it outside of the class
+definition we can just take whatever is
+inside of this uh curly braces and put
+it inside of the class itself but bring
+all of the implementations within the
+cloud definition right so I don't have
+this code I just put whatever it does
+each member function and brought it
+inside and that would compile fine but
+then we wouldn't have the separation
+ation of interface from the
+implementation and also now bringing
+back to the compilation process also
+this first example first case where
+member function definitions are
+separated from the
+interface is good because then we can do
+more create more complex code structure
+and separate everything in different
+files so let's look at let me make sure
+that I put all of the things that I want
+to say here so look at this sphere. H
+file so these are called header
+files they're typically named after the
+class that is there but it can be a
+collection of classes so you can pick
+whatever name but here we would call it
+sphere. h so that's a header file and it
+contains the interface so all the
+interfaces to the class classes that are
+defined there so
+interfaces
+okay and now this is sphere. CPP it only
+has implementations so it's called
+source
+file it's store in CPP and typically by
+convention we call it sphere because
+that's the class that we store to store
+in there the implementations of that for
+that class and it can it contains all of
+the definitions of those functions or uh
+implementations of the functions and
+this is the client code right very
+simple client code so now if you want to
+compile
+it that's what the make file tutorial
+all about it tells you in much more
+detail how we compile then all of this
+files together to re to obtain the same
+executable as we would get if we were
+compiled to our first program
+CPP so that's where we have your um um
+print outs we have these two side by
+side so separated program into three
+files and just program CPP in
+one file so here you just compile a g++
+program
+CPP and you obtain your executable right
+but to compile your sphere CPP you need
+to compile it and with the flag minus C
+saying okay please don't create an
+executable please don't
+look for main function because there's
+none in my sphere CPP there's no main
+function there
+include quotes sphere. so all of this
+file the compiler treat it as if it was
+just inside of there so it can be
+compiled together it's fine it just
+cannot be created uh made in executable
+because there is no main function but it
+can create instead sphere. o which is an
+object file which is a machine Cod for
+everything for all of the steps that can
+be executed in this
+code without creating executable so
+without the start without the control
+room the main function right so this
+sphere. o is created after you run
+this on sphere CPP now you can
+separately compile main CPP and let's
+see let's look main CPP call
+sphere class and we include the
+interface for sphere class right
+there therefore compiling it g++ with it
+oh my
+god with the flag flag minus c main
+CPP will work just fine because it will
+create
+Main
+o object file which will have the
+machine code for all of the steps
+here without cre creating
+executable and then taking these two
+object files
+fear. I don't know if you guys online
+hear what we hear but it's awful here
+it's like some kind of drilling going
+on that drills inside of my
+head
+okay so then you can take this two
+executables oh sorry two objects and
+compile them
+together like
+this okay and then you'll get the same
+executable as this guy and the makefile
+tutorial will walk you through the steps
+where you can actually come compare all
+of the
+outputs to see that it's exactly the
+same thing except that it's distributed
+in several steps do you want to see how
+it's done like I have the code um for
+that so let's see I have the sphere
+directory you see let me remove my
+object
+files and executable so there main
+sphere CPP sphere. H so I run with the
+flag minus C the compiler on sphere
+CPP and look what it created it created
+the object file sphere. o right here
+right now I'm going to run the compiler
+on Main
+CPP and I list the files I have main. o
+and now I link together those two object
+files main. o or and sphere.
+O and I get a
+out I can run a out it gives me the
+diameter of the
+sphere so the problem with this is that
+I have to run these three lines moreover
+I have to remember all the dependencies
+like what depends on what what should be
+included what should go first so I don't
+want to do that that's why we create a
+script called make file and put all of
+those lines
+there and maybe maybe mate file tutorial
+seems like it's overwhelming and you
+have to learn so much in very short time
+but I have to comfort you that we will
+never ask you to write those mate files
+from
+scratch you can always borrow your
+previous mate file or our previous mate
+file and just modify it slightly because
+you added one more CPP file and you want
+to add creation of an object for that
+that's all so when you get a job as a
+programmer most likely somebody will
+give you their M file as well to start
+working from there so uh I never
+personally had to write a big mate file
+I have limited industry experience
+though uh but that that's how it is so
+we walk you through the process so that
+you understand it but don't get
+overwhelmed because because that's you
+will not have to work much with mate
+files from now on from now on you will
+have a mate file and all you'll have to
+do to compile will say will is to say
+make and it will run the script in make
+file and you have it done and then to
+remove like I had to remove my objects
+and executable but all you'll have to do
+is to run make clean and it will remove
+everything that was just created so that
+you can compile it all over again with
+make okay so it'll be it'll get easier
+uh with that okay any questions about it
+so that's your mate file tutorial now
+since we kind of know a little bit which
+way of writing this code you like the
+most so do you like it in one file or do
+you like it in three
+files and you know this is just an
+opinion so nobody will judge you for
+this you can pick either way case
+three and case one you know for the
+demonstration purposes for this
+particular code I would probably just
+write it in case one I would probably
+even bring my uh definitions of the
+functions inside of the class make it
+even shorter because it's a short amount
+of code but this case three really has a
+point and I think I started um talking
+about it last time and I'll continue
+with this but let's uh stop a little bit
+for the questions can you upload the
+slides to Google Drive that you have
+annotated ahuh I I thought I'll get
+annotated uh yes I do have annotation
+saved I could do that it takes some time
+so I may forget but there is you know
+there's um video so you can always see
+annotations there it takes me some time
+to load those annotations from siden so
+it's it's not trivial that's why I hope
+nobody would
+ask okay there are some questions on
+Zoom chat okay let's
+look avoid multiple definitions Our
+member functions tied to a class yes if
+so how do we know
+oops so the scope resolution operator
+helps us know which classes which
+function is that to which class does it
+belong so those double dots will make it
+super clear to the
+compiler
+okay so let's
+see yeah thought of curiously what does
+CPP stands for CPP yeah what does
+stand because you said it's like Source
+it's a Source One AG is better AG I knew
+it at some point good question I knew it
+at some point C++ I guess yeah probably
+right I know there will be hpps HPP
+files that's for templates so but CPP is
+pretty standard there's no other
+extensions that we use in CP for sources
+but I think it's C++ you're right
+HPB is not for
+templ in the IND use HP always for even
+even without template never use because
+it's going zero I see thank
+you uh so you can see that you you touch
+up some limitations of my knowledge here
+with some things because people who work
+in Industry on huge um projects they
+know U more things like that
+okay so
+now let's look at so I had a point with
+this the case three right so what's cool
+about case three let me make sure that I
+cover everything that I wanted to say
+about case
+three so that what's cool about it and
+here I just roughly say okay this is
+going to be your class interface in. H
+file uh by the way H at Oculus we had H
+files so I don't know maybe in some IND
+it's HPP only but in some companies but
+I've seen that H files in the past uh
+CPP is
+[Music]
+um is your source file and Main is um
+your client code let's look at what we
+can say about it so this touches up on
+in capsulation so a principal in C++
+that the client code does not have
+access to implement M
+mentation so what does it mean so there
+are two mechanisms in C++ that Implement
+encapsulation and one of them is
+separate compiling comp compilation of
+object files so the fact that you
+compile you can compile your main CPP
+file together with just H the interface
+and get your object and in order to
+create
+an I don't know what I but sorry this is
+where did it why did it go there I
+apologize I don't know what happened
+here where am I oh right
+right yeah yeah yeah it jumped me
+somewhere really far away
+yeah yeah tab maybe or something right
+okay so
+here
+the the fact that you can compile your
+main CPP separately into object file and
+in order to create executable all you
+need is object file from your code from
+your implementation code so you need
+this object file you need this H header
+file and you can create an executable
+hies
+implementation from the client so you
+can think of it as as there is this
+barbwired wall between your
+implementation your code and the client
+that's going to use it they're not going
+to see it ever so that's one mechanism
+of encapsulation that is
+separate
+compilation into
+objects so that's good that creates this
+wall between the client code
+implementations sources so uh if you
+were to design something some code and
+you want to sell it and you don't want
+to see the secrets of how you implement
+it all what you have to sell is your AG
+interfaces and your objects that's all
+that's it and the clients will be able
+to use it so that's one mechanism of
+encapsulation another mechanism of
+encapsulation is that you can hide
+private variables or representation of
+your classes of your objects from the um
+client as well so the client can see the
+private members but they cannot really
+change them they can only use so I I'm
+this is a hand they can only use in
+their code whatever is in public they
+cannot use you cannot up update change
+in any way modify private members they
+can call them from their code they can
+only see them that they're there but
+they don't know they they don't have
+access to them
+programmatically so they don't have
+access programmatically to this
+variables although they see them or
+functions but they cannot even see the
+client code so therefore if you use any
+class you should assume that you may
+never know how it's
+implemented so that also says something
+about designing your code right so
+whenever you design your class you
+should assume that clients will never
+need to know how things are implemented
+in order to use it okay so the number
+one uh then mechanism is the
+private
+members are
+not let's see what's the best way to I
+guess they cannot be modifi they cannot
+be modified canot are not
+modifiable
+by
+client
+okay so that's encapsulation that's a
+very important
+Concept in
+C++ okay so we did
+that
+um now I want to continue so I this is
+our code so this is our uhh file this is
+our CPP file this the same kind of code
+this is our main function main
+CPP I want you to look at this code and
+tell
+me what are things that we didn't touch
+on yet so are things that are different
+from C Java and python so let's just
+point at all of them so that we really
+understand the syntax okay so this is
+the question about syntax what's still
+unfamiliar what's still um is not clear
+why and and
+um so you can type your answers here I
+think it's whatever test but you guys
+can just tell me so all of those double
+columns you know or anything that you
+look and you don't know what it
+does what about that constant right here
+what does that
+do that's a new I just just planted it
+so that I know that and and line
+okay garbage
+collection we will actually start
+talking about stack today yeah very good
+so where does this ask where is it
+created and where does it go once the
+execution stopped we will talk about it
+today okay end line is just end of line
+character so if you don't put it then
+the next line will be printed right
+after so you don't you want to use that
+yeah radi Direction operator very good
+so that's double less than
+um I think I didn't talk about it last
+time so what it does this is an operator
+that takes whatever follows and inserts
+it into this
+stream into into the standard stream and
+this is a function that does it so C out
+is a function that we had in is stream
+Library so it takes the parameter and
+inserts it through this operator into
+the whatever stream it has which in this
+case is a standard out which is a
+terminal yeah so if this python be
+like see out
+brackets I
+guess I never um python is my le I never
+had experience in Python but um print F
+I guess in
+C yeah in Java what would it be
+i m
+yeah um but yeah
+this this just gets iner it's a very
+different syntax so this is very
+different from other languages it's not
+very clear right see out like it's very
+not even visible not readable to me that
+this is a print operation but it is
+yeah and there will be other things so
+other functions that we'll use to put
+things into different streams it can be
+into file you see that as well or you
+can override this so we'll learn a lot
+of TR you can override this operator and
+make it do whatever you want whatever
+other things you you want as
+well and use it for I don't know
+inserting pels into your um TG or
+something
+that okay anything else that is unusual
+and different so yeah you're right this
+is very unusual this is very unfamiliar
+this should be strange but one of the
+labs I think it's debug lab they'll will
+go with see out statements through
+debugging process so you'll get very
+comfortable with
+that um so this one is not is not a
+problem right the constant like what's
+that I didn't cover that at all yet so
+we will use constant quite a lot you can
+put constants inside of the uh arguments
+that you pass or here and usually
+constant means it's a promise and in
+this case if it's put in that place
+after the function signature it's a
+promise that this class sphere will not
+be changed will not be modified by this
+function which means that in this
+function you could not say the radius
+equals
+five so it's not the the object would
+not be modified by this operation so
+whatever whenever you call S get
+diameter this object is not modified
+because this function promises not to do
+that okay we will have constant we will
+talk about constant quite a lot so this
+is just the first time you see it and
+um um okay okay so now I have a question
+for you see what I did here in the same
+code that you just had I inserted one
+line and we already covered it so you
+probably know easily answer this this
+line as the radius private member equals
+2 from the client code so what exactly
+will happen
+here it just will not compile it will
+complain it will yell at you you
+cannot access private member I don't I
+don't remember exactly what it said like
+private variable cannot be modified or
+cannot be access something like that but
+it will be very clear what the compiler
+doesn't
+like um no it will not
+compile
+okay so let's see where's the next slide
+now I want to talk a little bit about
+Constructors so remember we talked we we
+discussed two functions only but we
+didn't discuss Constructors yet right
+but I mentioned last time that in the
+main function whenever you declare
+sphere. S A Constructor is called and a
+very good question is about garbage
+collection so so where is this variable
+going to be located that's the like once
+we're done with the syntax we'll start
+talking about the garbage collection in
+memory but for now this tells the system
+that a that a sphere needs to be created
+so the constructure is called and if you
+didn't Define in your
+CPP your Constructors then a default
+Constructor will be called a default no
+argument Constructor is provided by the
+system so this
+system
+provides
+default
+Constructor with no variables so with no
+arguments no
+arguments just like this so the default
+constructure provided by the system
+would be exactly that as if you were to
+write that nothing happens so you create
+a sphere with the um private variables
+the radius garbage or whatever that was
+whatever default value in the system so
+the it's undefined Behavior you don't
+know exactly what it's going to be
+because you didn't assign that radius
+right so that's
+cool but you might want to do something
+else you want might want to do something
+better right so if you want to rewrite a
+Constructor what would you put here if
+you that was your choice Your Design
+Choice what would you initialize the
+sphere radius
+to
+one unit zero
+[Music]
+okay yeah you know zero output one still
+because unit kind of unit you you but
+maybe zero is good you know you'll have
+reasons right it's a it's a design
+choice there's no right answer here in
+this class because we don't know what's
+going to be what's going to be used what
+the Spheres are going to be used for
+right now just because we're talking
+about synx I could say
+that I could do the same thing
+syntactically so it's the same thing if
+I just said
+this what's the now I'm creeping out why
+is it double is it a
+color oh no no no okay 1.0 there you go
+nothing else nothing happens let me just
+double check my my head went blank yeah
+yeah okay so that's good if you had
+other um private variables then for
+example color then you would do this
+color
+red however red is defined so you would
+just use comma and put all of them and
+you could list that and that would be
+equivalent syntactically equivalent to
+putting it here color equals red okay so
+this is are equivalent Constructors but
+just
+different uh ways of writing the same
+thing okay so that's cool this is a no
+argument Constructor but maybe when I
+create a
+sphere oh let me say t maybe I already
+know what the diameter is what the
+radius is going to be so uh the Syntax
+for that would be
+two so create a sphere t with a radius
+two and then so far the way we
+implemented this Constructors we don't
+have an argument Constructor so we would
+have to write it you would have to write
+it and its signature would be this it
+would take one
+argument which is the radius and how
+would you implement it then well you
+would say the radius the private uh
+variable member equals to whatever is
+passed as an argument
+now I have a
+question what if I since it's equivalent
+to write it either way what if I would
+write it like this column the
+radius equal is
+r and would not write it here it's
+equivalent is that a good design Choice
+like could you think why or why not
+would you do that
+so this is a oneline assignment so you
+lose the opportunity to check for errors
+what if uh your client will send a
+negative radius or something bad if it's
+a oneline assignment you you lose that
+opportunity but here you could put any
+kind of statements like if R is greater
+than zero only or whatever you want to
+do
+okay right so you may want to do that or
+may not not but just think about the
+choices like what one line is one line
+you cannot put any kind of other
+statements there
+okay so um did I mention everything that
+we had here I think so but let me say
+this so what
+if so another Point here what if I say
+well I do need an argument
+Constructor but I don't need a default
+like I don't need to write it I use just
+the systems one right so I don't want to
+write this code I just want to write
+this uh custom Constructor with one
+argument but use the systems default one
+no argument Constructor and that's
+impossible so the rule of C++ is that if
+you
+write one Constructor so a
+Constructor you need to write so the
+system Prov provides none then the
+system then the
+system provides
+none so it'll yell at you here they'll
+say no no no no no you cannot use this
+line
+anymore you cannot declare a sphere s
+because he didn't write a no argument
+Constructor so the system provides know
+now another one is that
+Constructors are called by the
+system by the system so it's more like
+English
+semantics
+point you cannot say oh just call a
+Constructor you wrote this functions
+just call them no the system will decide
+when it's appropriate and one case of
+such
+uh call to the Constructor is
+Declaration of the variable and there
+will be many other cas where we'll
+investigate in lectures where the
+constructors will be invoked and the
+system decides on that okay and it's
+very important to know when they're
+invoked when you write your code you
+don't call the Constructor but it will
+be invoked there so it's very important
+know
+when um for debugging
+purposes okay
+so we are done with this part of the
+topics and we are jumping to memory now
+so unless you have any questions so for
+right now you have a very simple uh idea
+of how to write a very simple function
+split it into several files compile them
+together and have a simple class there
+right so now the question is about
+memory how is that class created where
+it's created how do we clean it up right
+what how is memory manage managed and
+that's where we go into the um topic of
+pointers it's a
+very it's a very difficult topic so if
+you're new to pointers and memory
+management it can be extremely
+frustrating and um so let's let's see
+how it goes we'll try to make it as
+clear as possible
+but but it takes time to get used to
+them most side what is going I don't
+want this I want just this okay
+okay so we have new slided
+ATC memory let's see so I will use an
+analogy because we really don't need
+need to understand the hardware we don't
+the analogy will be enough and therefore
+instead of the actual memory RAM stick
+that you can buy and put into your
+computer or PC I'll use this do you know
+what that
+is Google Maps image right so that's a a
+neighborhood so just like in this map or
+in this
+neighborhood any place has its address
+so you can refer to any place any house
+there any object by its address
+similarly in
+memory each place has its address so if
+you want to put anything into that place
+there will be an address for it if you
+want to put any values into those
+addresses you'll have an address for
+that so some parts of
+memory are not for us to use so they'll
+have this wires around them like big
+fences so what can the system store
+there where it doesn't let you ever over
+write on top of it it could be the code
+itself right so if you're writing your
+code your function you probably the
+system will store you in a location
+where you can't access and write
+something on top of that right so that's
+fine so there's another region that we
+have to be aware of and it's right here
+at the coordinates 0.0 so what do you
+think that is have you heard of
+that a null or null
+pointer a zero kind of so we'll use that
+and it's a very useful thing so old way
+of writing it is null and I think our
+code is full of nulls but the newer way
+and it's implemented slightly different
+is to write a null pointer but it's
+essentially for the purposes of today's
+lecture it's the same thing so it points
+to this 0.0 location and think of it as
+there's vacuum there okay so there's
+nothing there you cannot find anything
+there okay getting interesting right now
+there is
+another big piece of memory that is
+called a
+heap and it's called nonpersistent
+memory
+non-persistent so this is a nice memory
+where the system will provide chunks of
+it for you and it will clean it after
+you so it will take care of it you don't
+have to worry about anything stored in
+there because the system will clean it
+now there's another part of the memory
+that is called a
+heap it's bigger than the stack much
+bigger so anything large that you might
+want to store will be stored on Heap
+large objects such as pngs you
+know or
+arrays he oh sorry oh I did I say stack
+here this is
+stack I hope I said
+stack stack so this is stack
+non-persistent so this is clean me
+memory that is non-persistent in the way
+if you put something there it'll not
+stay there the system will take care of
+it but Heap is persistent memory
+persistent
+memory which means that system will
+gladly give you chunks for it but it
+will persist until you clean it up it'll
+stay there and if you don't clean it up
+you can mess it up you can fill it up
+completely and I'll show you by in the
+end of today's lecture how we can
+completely fill it up and there will be
+no space anymore and that means your
+program crashes it used up the whole
+Space so you have to you a lot of time
+in this class you'll spend cleaning Heap
+memory chasing pointers that point to
+that memory and allocate some memory and
+you have to clean it up so that's a a
+lot of frustration is there so let's
+start on what is this pointer
+thing okay so I'm going to so let's
+start with variables because that's what
+you know we'll have we'll occupy memory
+spaces so this is pretty easy we
+declared a variable we talked about it
+and it h every variable has four things
+location name value and type so upon
+this declaration the system will say
+fine it's on stack so I'll give you a
+location for an
+integer say
+A40 that's the memory address of that
+location for the integer value so
+integer type so it's exactly enough for
+the integer type to put the integer
+value inside of it and with name s and
+the value upon this declaration is
+garbage right that's what we call
+garbage because we don't know it's
+whatever was there or whatever default
+value your system decides to give so in
+order to put a value in there you define
+your variable and then five is put into
+that location in
+memory with the address A40 right so
+that's cool similarly for a sphere if
+you decare your user type sphere
+s the system says it's fine it's going
+to be on stack it's nice memory you can
+create it I'll clean it once you're done
+with using
+it and uh I'll give you exactly enough
+memory say in location a A50 right here
+for the variable of type
+sphere with name s and whatever default
+values are there for radius or if
+there's more there may be more values
+for your private me Members whatever uh
+to put
+there okay so that's cool now in C++ you
+can you can have another type of
+variables and they're called pointers
+and you would do something like this if
+you say well I want to have a variable
+on
+stack of type integer pointer and the
+syst would say fine I'll give you this
+variable say at A1 for a variable with
+name Y type integer
+pointer and value should be the memory
+address of a of a integer
+variable so on this picture what could
+be the value of y what is the only
+memory address occupied with an integer
+that we have on this on this um
+picture
+huh
+what
+A1 A40 right so we want to put A40 here
+but I didn't put it yet so far it's just
+given to you with enough space to put an
+address there and in the beginning it's
+occupied by garbage we don't even know
+upon this declaration this value cannot
+be even looking like an address at
+all um but now I want to have an
+assignment I what would be an assignment
+to put that a20 right
+here right so that's the next slide but
+that would
+accomplish defining this variable of
+type poter to integer so that will be
+the next slide so our goal with no
+questions there's a chat question let's
+see A40 yeah very good A40 or was it
+a20 well next slide will
+be yes so a20 not A40 a20 right
+so let's
+see let's see so so far we're good right
+this is your integer variable X this is
+your integer pointer variable P it
+doesn't have a value yet we want to put
+a20
+there so how would I accomplish that
+what do how would I put a20 can I just
+say
+a20 what do you think
+no well first of all you cannot know
+what's that number because it depends on
+what on the execution of program each
+time it can be different it depends on
+operating system on your
+Hardware so even if you knew it in this
+particular execution on your machine you
+still don't want to deal with those hat
+numbers it's a ugly number you'll see
+what pointer is it's an ugly number it's
+a it's a lawn address it's not like
+addresses on neighborhoods actually it's
+worse right so we don't want to do that
+and it changes it's Dynamic so we don't
+want to do that that's bad okay
+good what if I just do
+this you would think that compiler could
+figure out but it will not it'll say
+it'll yell at you it'll say well on the
+right side you have an integer and you
+assign it to an integer pointer it's a
+mismatch of types so compilation error
+compilation error no so for this C++
+uses what's called an
+address
+operator and it's an m perent so what
+you have is you can use an assignment P
+equals an address of
+X so
+this n perent operator returns a
+constant value which is an address a
+constant value and in this case it will
+be a20 but you don't even have to know
+that it's a20 it's an address of app and
+after this operation a20 will be put
+into the value for p so that's really
+cool now I'm I'm going to draw it's very
+important that I don't lose the the
+story line I want to draw something I
+want to draw how it looks
+like
+okay so I want to draw what this
+assignment would accomplish so that next
+when I chase pointers I have the same
+way of drawing things so that it's easy
+to debug things so when I draw this on
+stack I have
+X of type integer so I keep integers
+with value five and I have a variable P
+upon this declaration of type pointer so
+I put a dot there and I just have to
+remember that it it's integer pointer
+type and after this assignment this
+pointer points to
+X so you kind of if you were able to
+follow the pointer you could use that as
+if it was
+X so do you feel like there should be
+some then way of following the poter
+otherwise why would I have this point in
+the first place so yes that's the next
+operator that we are going to use and
+it's called du reference du reference
+operator and it's an
+asterisk so if you say d reference
+P the result of it is kind of like the
+reverse of address except that it's not
+a constant it's a variable that is
+stored in the value of P so this de
+reference operator will look at the
+value of P go to the that address and
+Returns the variable stored there so
+essentially it's an X and then you can
+say equal to 10 and upon this line the
+system would go and write 10 in the
+value of
+x
+okay so the return of this operator is a
+variable at P's address value or at P's
+value right the value is the address so
+at P's
+value okay so is this clear is this
+good now we're going to start playing
+with this
+pointers
+um
+so so that's kind of contrived right why
+would I have a pointer to a variable on
+stack if I have X I can change X
+directly right so there's one more
+mechanism in C++ that will give you
+access to Heap memory so if you want
+your HEAP memory which is this large
+chunk that you can use for large objects
+then it turns out that you can only
+access them through point that through
+pointers and those chance of memory will
+never have a name that is really really
+interesting thing so the chance of
+memory that will be given for you on
+Heap will never have a name they'll only
+have
+pointers and how do you ask your system
+to give you that so let's start with
+just declaring
+p and then p is on stack it has
+integer uh pointer type it has location
+it has some garbage value for now but
+you want the value to be addressed on
+heat memory so you want that heat memory
+now so then you ask the system through
+this statement new integer to give you
+that so new int when the system sees new
+int it will
+create an address say B 20
+now on Heap which will never have a name
+which type will be
+integer and no value at this point
+whatever was there
+and through this assignment
+operator it will give that address to p
+as a value so your P has value
+B20 so in a picture then you would have
+your stack and you would have your HEAP
+and originally upon first declaration
+your P would be a pointer pointing to
+limbo of some sort at this point garbage
+but of type integer pointer
+and then new int would create your
+integer on the Heap with no name so
+there's no other way to refer to it but
+through this assignment so this address
+was assigned to p and that's your hold
+to that memory so now you can see that
+there's a problem right who's going to
+clean it up what if the program stops
+execution and P is clear out for the
+memory and you pointer to that memory on
+the Heap is
+still left out and you have what's
+called a memory leak so we'll go through
+that later through examples but you have
+to be very careful whenever you ask for
+memory from the system you'll have to
+use what we call delete delete p in the
+end that will delete this memory clear
+it
+out release it to F for further use
+otherwise it's locked and never be
+touched until you call delete P this is
+very important if you ask for new there
+should be the same number of news and
+deletes in your program so that you
+don't have a
+memory okay but now what I can do is I
+can say so let's not delete P let's work
+with P for a little bit so I'll remove
+that to just point out that you'll have
+to do that eventually in the end of your
+program but if I so far still want to
+work with this memory and Heap I can
+access it through p i reference it and
+assign value five in there and then the
+system will follow the pointer and put
+five in the value of that integer on the
+heat okay okay so now I I talk too much
+I want you to ask to to think about
+what's going to happen in this little
+program so for you to spec speculate and
+I have a question
+on here
+so what happens after compiling and
+running this
+code so think about it a little
+bit and I I think I want to have it so
+I'm going to open my program hold on you
+can think about it but I'll work
+here and have a second
+screen think about it you have it on
+your
+um on your print outs
+let's see if oh people already answered
+compilation error runtime error fine let
+me grab it because I have
+meain what's what's that program
+yeah so let's uh comment out that
+because we'll need that
+later I'm commenting out the code so you
+can see that this is the Syntax for
+commenting out big chance of code
+integers
+p and I reference p and I just want to
+put 37 there right so we'll run that
+let's go back to this compilation
+Arrow run time
+Arrow so compil compilation error is
+some is usually when there is wrong
+syntax so is there anything wrong with
+the sentence mismatch types or anything
+I declare
+P it's on stack it's an integer pointer
+I follow that pointer and give 37 value
+to that location in
+memory what's that location in
+memory whatever was that garbage it
+cannot be even it may not be even a
+memory address it cannot be even
+interpreted maybe yeah so
+so let's run and compile my program it
+does exactly that right let's see what
+happens so it's um g++ main I think main
+CP
+ah oh sorry I'm in the sphere I didn't
+want the G+ I want to go
+out so
+g++ okay so no compilation Arrow that's
+fine and a out
+ouch segmentation
+fault what is segmentation fault so I
+want to show this just to lighten the
+mood let's watch this little
+video that describes
+pointers uh
+oh
+started I guess we're going to need a
+couple pointers okay this code allocates
+two pointers which can point the integ
+okay well I see the two pointers but
+they don't seem to be pointing to
+anything that's right initially pointers
+don't point to anything things they
+point to are called Pointes and setting
+them up to separate step oh right right
+I knew that point are separate so how do
+you
+allocate
+[Music]
+well code oh my God sorry they're too
+equivalent I I pulled out wrong
+YouTube
+look there it goes so doing a d
+reference on X follows the arrow to
+access
+it in there hey try using it to store
+the number 13 through the other point
+why okay I'll just go over here to Y and
+get the number 13 set up and then take
+the one of G referencing and
+just oh hey
+that's say I don't think D referencing Y
+is a good idea because uh you know
+setting up the point e is a separate
+step and I don't think we ever did it
+Point yeah we we allocated the pointer y
+but we never set it to point to a point
+D just like in this code
+right iuse pointer
+assignment problem no this doesn't touch
+the point it just one pointer the same
+just the
+value so wait now Y is fixed it has a
+point so you can try the one of do
+referencing again to to the
+130 okay here it
+goes referencing works on why because
+the pointers are sharing that one point
+e they both see the 13 yeah sure okay so
+this is a very similar problem right we
+have these initial ones pointing to
+garbage and that was segmentation fault
+in our
+execution but it could be something else
+so I actually tried this little program
+here today I was running it on my um PC
+at home and it actually didn't give
+segmentation fault it actually had that
+that value the original value on that
+hardware and on that operating system
+had was interpreted as an address and it
+gave uh it just it run it it worked
+perfectly perfectly fine it just
+assigned that value to that address that
+I don't even know is which is really bad
+so writing this kind of code can lead to
+a lot of problems because you may put 37
+in some place on your system where
+you're not supposed to have access to at
+all that's a way to break your system so
+um what what this is called is Insidious
+bug a bug that is very hard to find
+because it could be a runtime error like
+segmentation
+Falls and your binky breaks apart but it
+could be that everything seems fine but
+it's not so that's kind of a
+problem okay and this was for C so
+instead of Malo we use new integer here
+for those of you who are familiar with
+see so I'll I'll I'll fix the slide and
+put the C++ version off the same
+video okay so the correct answer would
+be runtime error here here not
+compilation error run time
+error
+um well well yeah yeah or it could run
+so or other other is a good answer
+because it could that it's runtime error
+on this particular example that I
+demonstrated was SE fault but it could
+be that it just runs fine but it's a
+memory problem it's an inid is bug so it
+has a
+bug
+okay uh why when should you use Heap
+memory instead of Stack memory so uh
+anytime you want your objects
+persist so for example in your lab intro
+you'll need to use pointers to
+individual pixels and we use pointers to
+individual pixels because as you pass
+around this objects pngs from function
+to
+function that memory should stay put and
+persistent because you want to modify
+your PNG so that's why you will have to
+access it through the referencing not
+through dot to access the members of the
+uh PNG class if I'm not mistaken so
+that's that's one so whenever you you're
+dealing with big chance of memory that
+you pass around between different
+functions to work and and modify them
+that's when you need it so arrays can be
+implemented in that way large arrays can
+be implemented as um as memory chunks or
+keep memory
+chunks
+okay yeah yes you lose your head or
+Minds trying to figure out uh where you
+do reference WR right okay so now a
+little more fun so from now on we have
+15 minutes today just to have fun with
+this things so I'll be just asking you
+what's the
+output and uh
+so yeah here let's start with this first
+line what is the output and please put
+your answers for those of you who are
+online in the Q&A and then L see but you
+guys just tell me what will be the
+output
+here and I can start drawing while
+you're thinking because we will have
+this picture then of what's going on on
+stack on Heap so first we declare p p
+and Q
+then we ask for new Heap memory for p
+and assign it to P so we have this
+situation then we say Q value what is
+the value of Q the address that is saved
+there on the stack should be the same as
+the value for p which means that they
+point to the same thing the values that
+they sort the addresses are the same
+cool so that's the picture then I do
+reference
+q and
+the an the return is the variable stored
+at that location so this variable with
+no name should have the value
+eight so now if you want to print out P
+what will be the print
+out let's see if those guys
+answered
+no it was eight yes also there's a
+memory Le yeah very good so they went
+ahead so yeah the output of p is eight
+so so eight is good now I say okay so
+the next step Q I asked for new chunk of
+Heap memory for Q as well so I say Q now
+reassign so the system first will create
+a new Heap uh variable of type integer
+and we'll assign it to Q so Q will now
+point there that's cool now I do
+reference q and assign to that variable
+on the he value nine that's all okay we
+did reference after we ask for memory
+and now I say p equals to null remember
+null that address that is very special
+0.0 so I say p instead of having the
+value of this variable address I give it
+to
+null so what happens
+Ah that's a memory Le yes oops never
+mind let me see see yeah okay one answer
+yeah memory leak so this is memory
+leak we don't like it it's a Memory
+leak so that let's define memory leaks
+so this is a this memory leak
+occurs when
+all
+pointers to Heap
+memory well here you can say different
+things you can say
+they go out of scope or they're removed
+or they're reassigned so let's say are
+removed in some way
+removed right so nothing points to that
+heat memory so that's called uh memory
+leak how do you fix it so how what
+should I do first here I should fix it
+with delete statement right so if I said
+delete q p if I first ask for delete P
+so to fix it to
+F
+first first
+delete B so do this if I did that then
+there would be no memory because first I
+would ask to delete this P
+value and then I would put P to no
+that's cool so now I say let's use
+another color orange delete Q so I say
+take this memory and free it so that now
+can be relocated to other pointers or
+whatever I needed and then I say Q
+equals to null so reassign Q to null as
+well or n pointer then I did everything
+right for
+Q no so Q is good
+okay ah so there's other things if you
+try to delete a pointer that is already
+null but um deleting a null pointer is
+totally fine and that's very good
+because then putting something and
+storing null there in the pointer will
+have a Define behavior later so you can
+always check oh if it's null or not null
+and you can delete it anyway but the
+reference in a null pointer so here it's
+also nice so you should always always
+after deleting memory save null into
+those variables because after that the
+reference in that variable will be a
+problem if you D reference something
+that is a garbage then that's an ins
+serious bug but if you do reference a
+null pointer then it's a SE fault and
+it's a defined Behavior so that's very
+good okay um okay so let's practice
+these points on examples now better okay
+very good uh I'm going to go through the
+example of I have very few very little
+time so I'm going to go through this
+example okay I think you have it on your
+printouts so look at this Snippets of
+code and tell me which ones have
+bugs and which ones
+don't and you guys will have to answer
+here
+um so look at the code first and let's
+see and why don't you talk to each other
+now so you can just you know figure
+out and you'll finish with
+[Music]
+this
+I will prepare some code in the
+meantime
+what
+[Music]
+well doesn't matter
+okay let's see the
+answers so what about number one did you
+guys figure out is that okay I think
+it's just something that we something we
+just just already covered and that had a
+what a memory leak so this is memory
+leak we already
+know what about number
+two let's
+see stack keep and tell me if I'm doing
+something wrong p
+q p is new
+integer Q is
+p follow Q put 8 delete
+Q fine good remember I says always put
+null then if you delete because
+otherwise what are the values at Q's
+left so when you say delete this memory
+the Heap memory is cleared out but p and
+Q are not changed they still have the
+address to that memory that's now not
+theirs and may be used for something
+else so then if you de reference Q de
+reference P you may go to the same
+location and put the value 12
+there and that means many things can go
+wrong it could be runtime errow it could
+be that it will be just fine and you'll
+just put some values in the location
+that doesn't belong to you and belongs
+to maybe some other variable that you
+your program has and then you don't know
+why you print out that variable and it
+gives you 12 or something like that so
+um I have a snippet of code here that's
+exactly what it is look I deleted p and
+I want to De reference p and Q after
+deletion and see what's there in that
+cleared out memory
+right and that should be what if the
+system cleaned it up cleaned it up it
+puts some something there but then I'll
+follow that address that is cleared and
+we'll try to then do reference and go
+there and check and it will be nine so
+let's try running and
+um is it main that I have
+main right is that the main yeah so
+let's see I compiled it and then I run
+out so this is p this is Q after I
+delete need it I cleared out that that
+uh memory on the Heap and once I do
+reference it and put nine in there p and
+Q the reference is still
+nine
+so very bad very bad Arrow very bad bug
+and that's something that we could plant
+in our um assignments for you to say
+here is the piece of code that please
+fits and then you'll have to figure out
+why is that right um so if you think
+these examples are contrived our cute
+collaborators say that they do ask
+questions on interviews about Heap about
+stack and about pointers so this is
+important right so let's go through
+these examples and try to understand
+exactly what's going on okay so this is
+Insidious bug like really really bad
+stuff bug I don't know how to spell it
+Insidious
+bug um so in order to fit said if you
+delete something assign things to assign
+null pointers to them right away then
+it's easy to check and deleting it again
+will not hurt but it's easy to
+check that it's no you can just say if
+something is
+null that means you need to again Ask
+for new memory for it if you want to
+hold something to
+it okay now number three what about
+that
+okay so I have P
+pointer nothing so far very dangerous
+here too if you have a pointer hanging
+there what if you try to deference it
+and put something in there you don't
+know where it's going to be it's in some
+limbo some location so we know that
+that's that's what this is that problem
+actually now integer X has five it's
+also on stack now I say p is pointing to
+S so that the value of it is the address
+of that's good now I say delete X and
+delete operation only is allowed for
+pointers X is an integer so this is a
+compilation
+error you'll just say well delete nether
+pointer it it will be very easy to fix
+and then you can say um delete p and p
+equals to
+n okay so then the next number four what
+about number
+four yeah we already did it right we did
+it with the binky when Binky broke down
+but it's
+the same thing but let's draw it so we
+have
+P points to Nowhere or limbo of some
+sort X is five you reference p and put X
+in there you cannot de reference it SE
+fault or go somewhere and puts five
+where you don't want it to be so this is
+also very bad also a bu but could be
+runtime so here at least it could be
+runtime sometimes runtime
+error run it on your pcnc or on your
+laptop and see if you have runtime or if
+actually it works fine okay so this is
+exactly where we are that's good 45
+minutes now next time we'll play more
+with um we'll have a couple of
+more with uh questions about pointers
+but we'll also start on arrays
+okay you guys online are all
+good good
+I
+now
+recording you
+guys don't draw I hope everybody works
+it works out for
+everybody can I ask you about something
+so when I tried this intro uh well okay
+when I tried to uh work on this V
+so I installed it in this yeah yeah yeah
+yeah when I tried to do it on my profile
+with like
+um when I try to open command proms with
+administrator rights it didn't work and
+it only worked when I did everything
+inside my istrator profile yeah do you
+think you know what wait wait wait where

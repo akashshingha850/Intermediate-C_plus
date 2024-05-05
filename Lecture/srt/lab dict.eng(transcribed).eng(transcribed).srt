@@ -1,0 +1,1868 @@
+﻿1
+00:00:01,760 --> 00:00:05,400
+okay let's look at lab dictionary now so
+
+2
+00:00:05,400 --> 00:00:09,120
+the first task is the common words and
+
+3
+00:00:09,120 --> 00:00:12,240
+task so uh the general idea is that we
+
+4
+00:00:12,240 --> 00:00:15,719
+want to find uh words that appear
+
+5
+00:00:15,719 --> 00:00:20,279
+multiple times uh across different
+
+6
+00:00:20,279 --> 00:00:24,920
+files uh so we have a couple different
+
+7
+00:00:24,920 --> 00:00:28,279
+uh containers here that we need
+
+8
+00:00:28,279 --> 00:00:34,840
+to uh initial correctly we have the
+
+9
+00:00:35,960 --> 00:00:39,960
+uh we we have the file word maps and the
+
+10
+00:00:39,960 --> 00:00:42,840
+common and and for these we have the
+
+11
+00:00:42,840 --> 00:00:46,680
+init file word maps and init common
+
+12
+00:00:46,680 --> 00:00:50,719
+functions uh so first let's look
+
+13
+00:00:50,719 --> 00:00:56,760
+at um file word map so it's a vector of
+
+14
+00:00:56,760 --> 00:01:00,800
+maps and this Maps use string as a key
+
+15
+00:01:00,800 --> 00:01:05,720
+and unsigned integer as the value uh so
+
+16
+00:01:05,720 --> 00:01:07,439
+so this unsigned integer is how many
+
+17
+00:01:07,439 --> 00:01:09,040
+times it
+
+18
+00:01:09,040 --> 00:01:13,560
+appears and and this string is the word
+
+19
+00:01:13,560 --> 00:01:17,200
+and then uh this Vector represents the
+
+20
+00:01:17,200 --> 00:01:19,759
+index of the
+
+21
+00:01:19,759 --> 00:01:22,479
+file uh so let's
+
+22
+00:01:22,479 --> 00:01:24,600
+see we have
+
+23
+00:01:24,600 --> 00:01:28,439
+the in file word maps and a lot of code
+
+24
+00:01:28,439 --> 00:01:33,799
+is already uh provided here so it make
+
+25
+00:01:33,799 --> 00:01:37,200
+sure the size of this Vector is
+
+26
+00:01:37,200 --> 00:01:40,280
+appropriate we have a loop uh to go
+
+27
+00:01:40,280 --> 00:01:43,920
+through all the indexes indices in it
+
+28
+00:01:43,920 --> 00:01:47,280
+and then it's already reading all the
+
+29
+00:01:47,280 --> 00:01:51,280
+words of the file into a
+
+30
+00:01:51,280 --> 00:01:54,880
+vector um so I have the solutions
+
+31
+00:01:54,880 --> 00:01:57,399
+already written here to make this a
+
+32
+00:01:57,399 --> 00:02:00,200
+little smoother so basically the only
+
+33
+00:02:00,200 --> 00:02:03,600
+thing you need here is uh just Loop
+
+34
+00:02:03,600 --> 00:02:07,399
+through the words and then uh access the
+
+35
+00:02:07,399 --> 00:02:09,160
+correct
+
+36
+00:02:09,160 --> 00:02:13,000
+index uh of this Vector like this and
+
+37
+00:02:13,000 --> 00:02:16,599
+then you can just increment that word
+
+38
+00:02:16,599 --> 00:02:19,720
+and as as we know with these
+
+39
+00:02:19,720 --> 00:02:25,640
+Maps uh if the key doesn't yet exist and
+
+40
+00:02:25,640 --> 00:02:27,360
+you use this
+
+41
+00:02:27,360 --> 00:02:31,480
+operator then it creates the
+
+42
+00:02:31,480 --> 00:02:35,599
+key and
+
+43
+00:02:35,680 --> 00:02:39,360
+um and value initialize it so so
+
+44
+00:02:39,360 --> 00:02:42,040
+basically in terms of integers it will
+
+45
+00:02:42,040 --> 00:02:44,480
+initialize it as zero and then
+
+46
+00:02:44,480 --> 00:02:46,560
+immediately we increment it
+
+47
+00:02:46,560 --> 00:02:51,400
+so so this this is just fine it works no
+
+48
+00:02:51,400 --> 00:02:55,400
+problem um okay uh so then the
+
+49
+00:02:55,400 --> 00:03:01,840
+other one common uh so it's a it's a map
+
+50
+00:03:03,120 --> 00:03:08,000
+um it's a map that that shows um how
+
+51
+00:03:08,000 --> 00:03:13,239
+many documents a word appears
+
+52
+00:03:13,959 --> 00:03:16,120
+in so
+
+53
+00:03:16,120 --> 00:03:20,599
+then um we're going to do this after
+
+54
+00:03:20,599 --> 00:03:25,440
+we've already set up this file word
+
+55
+00:03:25,440 --> 00:03:30,159
+Maps so this makes it kind of uh easy to
+
+56
+00:03:30,159 --> 00:03:34,640
+do so basically uh we
+
+57
+00:03:34,640 --> 00:03:38,239
+can we can iterate through the maps in
+
+58
+00:03:38,239 --> 00:03:39,799
+in file word
+
+59
+00:03:39,799 --> 00:03:44,159
+maps and then we can iterate through
+
+60
+00:03:44,159 --> 00:03:46,000
+the
+
+61
+00:03:46,000 --> 00:03:48,760
+um a string in
+
+62
+00:03:48,760 --> 00:03:50,799
+pairs and then
+
+63
+00:03:50,799 --> 00:03:53,799
+just
+
+64
+00:03:53,959 --> 00:04:00,040
+um increment by one for each key that we
+
+65
+00:04:00,040 --> 00:04:02,480
+find so basically this way it's not
+
+66
+00:04:02,480 --> 00:04:05,400
+taking into account how many times they
+
+67
+00:04:05,400 --> 00:04:08,120
+appear it's just that for every key that
+
+68
+00:04:08,120 --> 00:04:11,400
+exist there uh we increment by one so
+
+69
+00:04:11,400 --> 00:04:13,280
+pretty
+
+70
+00:04:13,280 --> 00:04:17,680
+simple okay so
+
+71
+00:04:17,918 --> 00:04:23,040
+that um okay yeah then we still have
+
+72
+00:04:23,040 --> 00:04:27,479
+the uh get common words uh
+
+73
+00:04:27,479 --> 00:04:30,160
+function so then what we need to to do
+
+74
+00:04:30,160 --> 00:04:34,039
+here is uh we have this parameter how
+
+75
+00:04:34,039 --> 00:04:36,280
+many times it needs to
+
+76
+00:04:36,280 --> 00:04:39,199
+appear and at this point when we have
+
+77
+00:04:39,199 --> 00:04:42,479
+all this all these uh containers set up
+
+78
+00:04:42,479 --> 00:04:46,680
+it should be uh pretty
+
+79
+00:04:47,840 --> 00:04:52,960
+simple so basically from this uh common
+
+80
+00:04:52,960 --> 00:04:57,800
+dictionary this holds all the words that
+
+81
+00:04:57,800 --> 00:05:00,360
+that we have here and now now
+
+82
+00:05:00,360 --> 00:05:03,199
+technically we could immediately
+
+83
+00:05:03,199 --> 00:05:06,400
+check uh if the if the number of
+
+84
+00:05:06,400 --> 00:05:10,720
+documents it appears in uh matches the
+
+85
+00:05:10,720 --> 00:05:12,919
+total amount of
+
+86
+00:05:12,919 --> 00:05:15,199
+documents um but that's kind of
+
+87
+00:05:15,199 --> 00:05:19,319
+unnecessary in the end uh so so we can
+
+88
+00:05:19,319 --> 00:05:21,280
+kind of just
+
+89
+00:05:21,280 --> 00:05:24,840
+start or go go through all the maps of
+
+90
+00:05:24,840 --> 00:05:27,800
+the files we have and
+
+91
+00:05:27,800 --> 00:05:30,160
+then with the key
+
+92
+00:05:30,160 --> 00:05:33,560
+uh see if the value is less than the
+
+93
+00:05:33,560 --> 00:05:34,440
+given
+
+94
+00:05:34,440 --> 00:05:38,039
+n if it is less then we can say okay
+
+95
+00:05:38,039 --> 00:05:41,000
+this is no good but if it goes through
+
+96
+00:05:41,000 --> 00:05:45,400
+all of this without reaching
+
+97
+00:05:45,400 --> 00:05:49,080
+this uh then we can add
+
+98
+00:05:49,080 --> 00:05:53,120
+that here and and that way we can find
+
+99
+00:05:53,120 --> 00:05:55,639
+all the words that show up at least 10
+
+100
+00:05:55,639 --> 00:06:01,639
+times in in in all the documents
+
+101
+00:06:02,000 --> 00:06:04,080
+okay so that should take care of common
+
+102
+00:06:04,080 --> 00:06:08,280
+words task then let's look at
+
+103
+00:06:08,280 --> 00:06:10,319
+anagrams um so we're going to have to
+
+104
+00:06:10,319 --> 00:06:13,160
+start with the Constructor
+
+105
+00:06:13,160 --> 00:06:15,720
+again um so
+
+106
+00:06:15,720 --> 00:06:18,520
+let's let's see
+
+107
+00:06:18,520 --> 00:06:21,759
+so uh we start with this
+
+108
+00:06:21,759 --> 00:06:23,800
+completely
+
+109
+00:06:23,800 --> 00:06:25,680
+empty um
+
+110
+00:06:25,680 --> 00:06:29,319
+Constructor and in this case uh we need
+
+111
+00:06:29,319 --> 00:06:30,520
+power
+
+112
+00:06:30,520 --> 00:06:34,080
+a Constructor that uh just takes a file
+
+113
+00:06:34,080 --> 00:06:36,599
+name and then one
+
+114
+00:06:36,599 --> 00:06:41,919
+that um takes Vector of words so they're
+
+115
+00:06:41,919 --> 00:06:44,479
+going to look pretty uh similar but in
+
+116
+00:06:44,479 --> 00:06:47,680
+this case we have to do some uh
+
+117
+00:06:47,680 --> 00:06:51,280
+file input
+
+118
+00:06:52,319 --> 00:06:55,919
+operations um
+
+119
+00:06:55,919 --> 00:07:01,120
+okay so basically how you can do do
+
+120
+00:07:01,120 --> 00:07:02,680
+this
+
+121
+00:07:02,680 --> 00:07:08,080
+um the important thing is to uh open
+
+122
+00:07:08,080 --> 00:07:10,560
+this uh input
+
+123
+00:07:10,560 --> 00:07:13,440
+stream check if it's open and then we
+
+124
+00:07:13,440 --> 00:07:16,800
+can start iterating through um all the
+
+125
+00:07:16,800 --> 00:07:19,919
+words and with get line we
+
+126
+00:07:19,919 --> 00:07:21,440
+can
+
+127
+00:07:21,440 --> 00:07:26,360
+um put the words we find into this a
+
+128
+00:07:26,360 --> 00:07:28,680
+string word now there's also other ways
+
+129
+00:07:28,680 --> 00:07:30,680
+you can read files
+
+130
+00:07:30,680 --> 00:07:34,840
+but uh in in this case it's like
+
+131
+00:07:34,840 --> 00:07:38,599
+this uh and then what this is for is to
+
+132
+00:07:38,599 --> 00:07:39,639
+check for
+
+133
+00:07:39,639 --> 00:07:42,560
+duplicates there's also different ways
+
+134
+00:07:42,560 --> 00:07:45,840
+you you could do this uh but the way way
+
+135
+00:07:45,840 --> 00:07:50,000
+I'm doing it here is using this
+
+136
+00:07:50,000 --> 00:07:52,440
+map uh I guess this could technically
+
+137
+00:07:52,440 --> 00:07:54,360
+just be a
+
+138
+00:07:54,360 --> 00:07:57,240
+bullan uh and this could also be
+
+139
+00:07:57,240 --> 00:07:59,879
+unordered map but the difference between
+
+140
+00:07:59,879 --> 00:08:02,599
+map and unordered map is relatively
+
+141
+00:08:02,599 --> 00:08:04,840
+small in
+
+142
+00:08:04,840 --> 00:08:08,120
+like in in this scope it's not really a
+
+143
+00:08:08,120 --> 00:08:12,199
+big deal anyway uh so I'm basically
+
+144
+00:08:12,199 --> 00:08:16,199
+checking if this word hasn't been
+
+145
+00:08:16,199 --> 00:08:18,360
+encountered
+
+146
+00:08:18,360 --> 00:08:21,039
+yet and and then this is where I
+
+147
+00:08:21,039 --> 00:08:23,639
+incremented so if if if we have reached
+
+148
+00:08:23,639 --> 00:08:25,639
+this point with that word then we're not
+
+149
+00:08:25,639 --> 00:08:29,120
+going to come here again um okay but
+
+150
+00:08:29,120 --> 00:08:30,400
+then
+
+151
+00:08:30,400 --> 00:08:33,640
+for the like anagram part itself so we
+
+152
+00:08:33,640 --> 00:08:37,159
+can declare this new
+
+153
+00:08:37,159 --> 00:08:41,279
+string um where we copy
+
+154
+00:08:41,279 --> 00:08:44,680
+um the the string we have the the word
+
+155
+00:08:44,680 --> 00:08:47,839
+we have and then we can use SD sword so
+
+156
+00:08:47,839 --> 00:08:50,680
+so this is uh why the algorithm library
+
+157
+00:08:50,680 --> 00:08:52,959
+is included for this SD
+
+158
+00:08:52,959 --> 00:08:56,080
+sword uh so sword basically can take any
+
+159
+00:08:56,080 --> 00:08:56,800
+kind
+
+160
+00:08:56,800 --> 00:09:00,640
+of uh container and and put them in some
+
+161
+00:09:00,640 --> 00:09:02,240
+kind of value
+
+162
+00:09:02,240 --> 00:09:05,760
+order and and strings are basically
+
+163
+00:09:05,760 --> 00:09:09,240
+containers of characters and and
+
+164
+00:09:09,240 --> 00:09:12,160
+characters have values so uh in this
+
+165
+00:09:12,160 --> 00:09:14,920
+case we don't truly even care what kind
+
+166
+00:09:14,920 --> 00:09:18,480
+of like is it alphabetical order or or
+
+167
+00:09:18,480 --> 00:09:20,880
+what as long as it's in some kind of
+
+168
+00:09:20,880 --> 00:09:23,040
+consistent
+
+169
+00:09:23,040 --> 00:09:28,720
+order and then we can to this dictionary
+
+170
+00:09:28,720 --> 00:09:29,959
+add
+
+171
+00:09:29,959 --> 00:09:33,320
+uh based on the sorted
+
+172
+00:09:33,320 --> 00:09:36,000
+string and for that sorted string we add
+
+173
+00:09:36,000 --> 00:09:38,200
+the actual
+
+174
+00:09:38,200 --> 00:09:43,360
+word so now uh if there are two words
+
+175
+00:09:43,360 --> 00:09:45,040
+that are
+
+176
+00:09:45,040 --> 00:09:48,240
+anagrams then let's say we've already
+
+177
+00:09:48,240 --> 00:09:51,320
+added one word and we get to the next
+
+178
+00:09:51,320 --> 00:09:53,560
+word well it's a different word
+
+179
+00:09:53,560 --> 00:09:57,519
+so it's going to like make its way here
+
+180
+00:09:57,519 --> 00:09:59,680
+then it's going to sort and it's going
+
+181
+00:09:59,680 --> 00:10:01,640
+to end up with the same key as the
+
+182
+00:10:01,640 --> 00:10:03,680
+anagram from
+
+183
+00:10:03,680 --> 00:10:06,959
+before and then it's going to add to
+
+184
+00:10:06,959 --> 00:10:10,160
+that uh Vector so so there a dictionary
+
+185
+00:10:10,160 --> 00:10:13,079
+of of vectors
+
+186
+00:10:13,079 --> 00:10:17,880
+right um so then we end up with a vector
+
+187
+00:10:17,880 --> 00:10:21,680
+that has two words in it and then with
+
+188
+00:10:21,680 --> 00:10:26,640
+the sorted key we we can access these
+
+189
+00:10:26,640 --> 00:10:30,079
+anagrams so that's the idea and and then
+
+190
+00:10:30,079 --> 00:10:32,479
+this
+
+191
+00:10:33,079 --> 00:10:36,519
+um um variation of the Constructor that
+
+192
+00:10:36,519 --> 00:10:38,680
+just takes a vector of words it's
+
+193
+00:10:38,680 --> 00:10:40,639
+basically the
+
+194
+00:10:40,639 --> 00:10:44,000
+same uh you you could probably if you
+
+195
+00:10:44,000 --> 00:10:46,079
+defined a different function you could
+
+196
+00:10:46,079 --> 00:10:48,760
+get rid of some of this redundancy here
+
+197
+00:10:48,760 --> 00:10:53,240
+but uh it's it's fine in this
+
+198
+00:10:53,240 --> 00:10:57,720
+case Okay uh then we have two functions
+
+199
+00:10:57,720 --> 00:11:00,360
+to to get
+
+200
+00:11:00,360 --> 00:11:02,920
+all the anagrams of a given word and
+
+201
+00:11:02,920 --> 00:11:04,320
+then just get
+
+202
+00:11:04,320 --> 00:11:07,040
+all uh
+
+203
+00:11:07,040 --> 00:11:11,120
+anagrams um that exists in
+
+204
+00:11:11,120 --> 00:11:14,440
+the in the
+
+205
+00:11:15,000 --> 00:11:19,200
+data okay so for getting anagrams
+
+206
+00:11:19,200 --> 00:11:24,399
+it's pretty simple so once again we sort
+
+207
+00:11:24,399 --> 00:11:26,320
+the word that we're
+
+208
+00:11:26,320 --> 00:11:29,440
+given in this case we want to use the
+
+209
+00:11:29,440 --> 00:11:32,240
+find function to see if we find it
+
+210
+00:11:32,240 --> 00:11:33,519
+because we don't want
+
+211
+00:11:33,519 --> 00:11:38,800
+to uh accidentally insert something or
+
+212
+00:11:38,800 --> 00:11:40,880
+um you know we want to make sure that we
+
+213
+00:11:40,880 --> 00:11:43,560
+actually find something so so we use the
+
+214
+00:11:43,560 --> 00:11:46,720
+find function and then we check if we
+
+215
+00:11:46,720 --> 00:11:50,320
+did find something and if we did then
+
+216
+00:11:50,320 --> 00:11:51,880
+get the
+
+217
+00:11:51,880 --> 00:11:55,120
+value uh
+
+218
+00:11:55,440 --> 00:11:58,240
+of of the
+
+219
+00:11:58,240 --> 00:12:02,279
+um pair uh that the key value pair that
+
+220
+00:12:02,279 --> 00:12:06,000
+that we found so in this case it first
+
+221
+00:12:06,000 --> 00:12:09,839
+would be uh the the
+
+222
+00:12:09,839 --> 00:12:15,600
+key and then ITC is the uh string or the
+
+223
+00:12:15,600 --> 00:12:17,120
+vector of
+
+224
+00:12:17,120 --> 00:12:19,760
+strings uh which contains all the
+
+225
+00:12:19,760 --> 00:12:22,240
+anagrams yeah so it returns this Vector
+
+226
+00:12:22,240 --> 00:12:26,360
+of string and if you haven't seen this
+
+227
+00:12:26,360 --> 00:12:30,600
+Turner uh operators before so basically
+
+228
+00:12:30,600 --> 00:12:33,000
+this is the condition and if this is
+
+229
+00:12:33,000 --> 00:12:36,600
+true then return this and if it's not
+
+230
+00:12:36,600 --> 00:12:39,760
+true then return this empty
+
+231
+00:12:39,760 --> 00:12:44,079
+Vector okay and then for getting all
+
+232
+00:12:44,079 --> 00:12:47,959
+anagrams it's not really any different
+
+233
+00:12:47,959 --> 00:12:51,239
+than uh
+
+234
+00:12:51,320 --> 00:12:53,959
+just
+
+235
+00:12:53,959 --> 00:12:59,199
+uh just looping through the dictionary
+
+236
+00:12:59,199 --> 00:13:04,279
+and then seeing if there are more than
+
+237
+00:13:04,279 --> 00:13:07,079
+one strings in the
+
+238
+00:13:07,079 --> 00:13:12,800
+vector if there's only one then it's not
+
+239
+00:13:13,519 --> 00:13:16,120
+really it's not really uh there's no
+
+240
+00:13:16,120 --> 00:13:20,199
+anagrams there's just one word uh so if
+
+241
+00:13:20,199 --> 00:13:22,240
+there's at least two then there are
+
+242
+00:13:22,240 --> 00:13:25,720
+anagrams and in that case we want to uh
+
+243
+00:13:25,720 --> 00:13:28,720
+add them here and and then they will be
+
+244
+00:13:28,720 --> 00:13:30,839
+printed
+
+245
+00:13:30,839 --> 00:13:32,720
+out
+
+246
+00:13:32,720 --> 00:13:35,920
+okay that should take care of the
+
+247
+00:13:35,920 --> 00:13:38,160
+anagrams then
+
+248
+00:13:38,160 --> 00:13:41,040
+pronunciation
+
+249
+00:13:41,040 --> 00:13:43,079
+Puzzler
+
+250
+00:13:43,079 --> 00:13:47,560
+um so basically we're looking
+
+251
+00:13:47,560 --> 00:13:48,610
+for
+
+252
+00:13:48,610 --> 00:13:51,669
+[Music]
+
+253
+00:13:51,839 --> 00:13:56,720
+um let see let me get the um
+
+254
+00:13:56,720 --> 00:13:59,360
+provided code here so we're we're
+
+255
+00:13:59,360 --> 00:14:01,160
+looking
+
+256
+00:14:01,160 --> 00:14:05,399
+for a word that's pronounced the same
+
+257
+00:14:05,399 --> 00:14:12,120
+way uh if it is either as it is or with
+
+258
+00:14:12,120 --> 00:14:15,600
+its first letter removed or with its uh
+
+259
+00:14:15,600 --> 00:14:19,160
+second letter
+
+260
+00:14:19,160 --> 00:14:21,839
+removed okay so we have the card talk
+
+261
+00:14:21,839 --> 00:14:24,199
+puzzle and then we also have
+
+262
+00:14:24,199 --> 00:14:26,759
+this
+
+263
+00:14:26,759 --> 00:14:30,040
+um oh wait I think the I open the wrong
+
+264
+00:14:30,040 --> 00:14:32,399
+file
+
+265
+00:14:33,000 --> 00:14:36,560
+here I need
+
+266
+00:14:39,160 --> 00:14:42,160
+the
+
+267
+00:14:42,240 --> 00:14:45,839
+pronounce pronounce
+
+268
+00:14:45,920 --> 00:14:48,920
+dictionary
+
+269
+00:14:53,880 --> 00:14:56,040
+okay so let's see in this case we
+
+270
+00:14:56,040 --> 00:14:59,440
+already have this uh Constructor here
+
+271
+00:14:59,440 --> 00:15:02,320
+here uh but then what we need to
+
+272
+00:15:02,320 --> 00:15:04,399
+implement is this function that checks
+
+273
+00:15:04,399 --> 00:15:05,839
+if they are
+
+274
+00:15:05,839 --> 00:15:11,480
+homophones um and then with the c talk
+
+275
+00:15:11,480 --> 00:15:14,360
+puzzle this is going to like be the kind
+
+276
+00:15:14,360 --> 00:15:16,360
+of main logic that's going to Loop
+
+277
+00:15:16,360 --> 00:15:21,199
+through uh the words that we
+
+278
+00:15:22,480 --> 00:15:26,639
+have okay so for the for for checking
+
+279
+00:15:26,639 --> 00:15:27,480
+the
+
+280
+00:15:27,480 --> 00:15:29,880
+homophones uh so so we're given two
+
+281
+00:15:29,880 --> 00:15:34,160
+words and we want to see uh if they are
+
+282
+00:15:34,160 --> 00:15:35,680
+uh
+
+283
+00:15:35,680 --> 00:15:38,800
+homophones uh so first of all we need to
+
+284
+00:15:38,800 --> 00:15:41,880
+transform this to uppercase because
+
+285
+00:15:41,880 --> 00:15:45,639
+that's how
+
+286
+00:15:45,639 --> 00:15:50,240
+the like Library data that we have uh is
+
+287
+00:15:50,240 --> 00:15:53,680
+is built so so we need to do this Con
+
+288
+00:15:53,680 --> 00:15:57,000
+conversion STD transform is this kind of
+
+289
+00:15:57,000 --> 00:16:01,480
+General function that can apply any any
+
+290
+00:16:01,480 --> 00:16:03,399
+kind of logic
+
+291
+00:16:03,399 --> 00:16:08,360
+to uh some like sequence of data so
+
+292
+00:16:08,360 --> 00:16:10,959
+basically in this case the sequence is
+
+293
+00:16:10,959 --> 00:16:14,279
+uh like all these characters in in the
+
+294
+00:16:14,279 --> 00:16:17,120
+string and then we applied this two
+
+295
+00:16:17,120 --> 00:16:20,959
+upper uh function which is
+
+296
+00:16:20,959 --> 00:16:25,000
+uh which is defined in the global Nam
+
+297
+00:16:25,000 --> 00:16:27,519
+space but there's also a different to
+
+298
+00:16:27,519 --> 00:16:31,000
+oper in the in the uh STD but in this
+
+299
+00:16:31,000 --> 00:16:33,600
+case we actually want the one in the
+
+300
+00:16:33,600 --> 00:16:35,440
+global name space it's a little bit
+
+301
+00:16:35,440 --> 00:16:38,120
+confusing but that's how it
+
+302
+00:16:38,120 --> 00:16:41,480
+is uh
+
+303
+00:16:41,480 --> 00:16:44,839
+okay then
+
+304
+00:16:44,839 --> 00:16:49,079
+um we should probably also look at
+
+305
+00:16:49,079 --> 00:16:52,199
+the kind
+
+306
+00:16:52,199 --> 00:16:54,519
+of dictionary here
+
+307
+00:16:54,519 --> 00:16:57,759
+so so so what are we actually looking at
+
+308
+00:16:57,759 --> 00:16:59,399
+here so
+
+309
+00:16:59,399 --> 00:17:04,400
+for we're using these strings as as keys
+
+310
+00:17:04,400 --> 00:17:07,720
+or some kind of word and then for each
+
+311
+00:17:07,720 --> 00:17:11,880
+word there's a vector of strings which
+
+312
+00:17:11,880 --> 00:17:15,640
+uh somehow describe the pronunciation of
+
+313
+00:17:15,640 --> 00:17:16,880
+the
+
+314
+00:17:16,880 --> 00:17:20,640
+word um so that's actually all the
+
+315
+00:17:20,640 --> 00:17:26,039
+information that we TR need about it um
+
+316
+00:17:26,039 --> 00:17:28,679
+so so for Strings we're going to be able
+
+317
+00:17:28,679 --> 00:17:30,880
+to at vectors and seeing if the vectors
+
+318
+00:17:30,880 --> 00:17:33,160
+have the same
+
+319
+00:17:33,160 --> 00:17:36,720
+contents uh okay so then we can
+
+320
+00:17:36,720 --> 00:17:38,559
+see
+
+321
+00:17:38,559 --> 00:17:41,120
+if if we can
+
+322
+00:17:41,120 --> 00:17:44,200
+find both of these words from the
+
+323
+00:17:44,200 --> 00:17:47,360
+dictionary and then if we
+
+324
+00:17:47,360 --> 00:17:50,480
+can uh
+
+325
+00:17:50,480 --> 00:17:53,120
+then uh we
+
+326
+00:17:53,120 --> 00:17:57,480
+can make sure that the uh size is bigger
+
+327
+00:17:57,480 --> 00:17:59,720
+than
+
+328
+00:17:59,720 --> 00:18:02,120
+one I'm not actually sure if this check
+
+329
+00:18:02,120 --> 00:18:06,960
+is necessary but uh you would expect
+
+330
+00:18:06,960 --> 00:18:09,919
+them to be bigger than one anyway uh and
+
+331
+00:18:09,919 --> 00:18:13,159
+then we can check that first of all the
+
+332
+00:18:13,159 --> 00:18:15,480
+uh size sizes are the
+
+333
+00:18:15,480 --> 00:18:18,960
+same uh now actually you could
+
+334
+00:18:18,960 --> 00:18:23,080
+just uh do the equal operator for the
+
+335
+00:18:23,080 --> 00:18:25,880
+vectors directly but this is kind of the
+
+336
+00:18:25,880 --> 00:18:29,400
+manual uh way to do it
+
+337
+00:18:29,400 --> 00:18:32,080
+like let's say you were using something
+
+338
+00:18:32,080 --> 00:18:34,640
+else than vectors then this like a
+
+339
+00:18:34,640 --> 00:18:37,080
+general
+
+340
+00:18:37,080 --> 00:18:40,080
+solution so in this case I'm um
+
+341
+00:18:40,080 --> 00:18:42,039
+iterating through all the elements and
+
+342
+00:18:42,039 --> 00:18:45,919
+then seeing that if any of them are
+
+343
+00:18:45,919 --> 00:18:50,200
+different then return false otherwise we
+
+344
+00:18:50,200 --> 00:18:52,559
+can return true so this is basically how
+
+345
+00:18:52,559 --> 00:18:55,799
+it operates if you call the
+
+346
+00:18:55,799 --> 00:18:59,919
+um equal operator for
+
+347
+00:18:59,919 --> 00:19:02,480
+um two vectors so it's first going to
+
+348
+00:19:02,480 --> 00:19:04,360
+check the size and then check each
+
+349
+00:19:04,360 --> 00:19:06,280
+individual
+
+350
+00:19:06,280 --> 00:19:10,200
+element um okay so you can you can do
+
+351
+00:19:10,200 --> 00:19:12,679
+that either
+
+352
+00:19:14,760 --> 00:19:17,679
+way so then
+
+353
+00:19:17,679 --> 00:19:23,120
+let's look at the car talk
+
+354
+00:19:24,840 --> 00:19:27,440
+puzzle so in this case we're basically
+
+355
+00:19:27,440 --> 00:19:29,880
+looking for three words
+
+356
+00:19:29,880 --> 00:19:32,440
+uh so the original word and then the
+
+357
+00:19:32,440 --> 00:19:34,919
+word with the first letter taken out and
+
+358
+00:19:34,919 --> 00:19:37,200
+the word with the second letter taken
+
+359
+00:19:37,200 --> 00:19:41,200
+out so that's what we're looking to
+
+360
+00:19:41,200 --> 00:19:45,200
+return and we can start iterating
+
+361
+00:19:45,200 --> 00:19:47,520
+through this file the same way as we did
+
+362
+00:19:47,520 --> 00:19:49,960
+before in this case we can discard
+
+363
+00:19:49,960 --> 00:19:52,480
+everything that's less than five
+
+364
+00:19:52,480 --> 00:19:56,120
+characters and then we can make these
+
+365
+00:19:56,120 --> 00:19:59,240
+words with like letters taken out
+
+366
+00:19:59,240 --> 00:20:02,720
+uh first uh this is easy just do a
+
+367
+00:20:02,720 --> 00:20:06,280
+substring starting from uh index one so
+
+368
+00:20:06,280 --> 00:20:07,640
+that's going to take out the first
+
+369
+00:20:07,640 --> 00:20:11,200
+letter and then for the second one it's
+
+370
+00:20:11,200 --> 00:20:13,000
+a little bit more complicated but it's
+
+371
+00:20:13,000 --> 00:20:15,640
+one way to do it so you could kind of
+
+372
+00:20:15,640 --> 00:20:19,480
+just take the first character and then
+
+373
+00:20:19,480 --> 00:20:23,640
+uh take everything starting from uh the
+
+374
+00:20:23,640 --> 00:20:25,000
+index
+
+375
+00:20:25,000 --> 00:20:29,440
+2 and then we can just call the h phone
+
+376
+00:20:29,440 --> 00:20:32,559
+function for uh
+
+377
+00:20:32,559 --> 00:20:36,240
+these all these
+
+378
+00:20:36,640 --> 00:20:39,280
+variations and then if all of that
+
+379
+00:20:39,280 --> 00:20:43,280
+passes as as homophones then uh we can
+
+380
+00:20:43,280 --> 00:20:46,960
+add that to the uh Vector of of
+
+381
+00:20:46,960 --> 00:20:49,400
+homophones basically so we can make this
+
+382
+00:20:49,400 --> 00:20:50,640
+new string
+
+383
+00:20:50,640 --> 00:20:53,559
+triple which is just a container for
+
+384
+00:20:53,559 --> 00:20:55,840
+three
+
+385
+00:20:55,840 --> 00:21:00,280
+strings um okay
+
+386
+00:21:01,840 --> 00:21:07,240
+and then one last thing there's the
+
+387
+00:21:08,600 --> 00:21:12,279
+memorization so the
+
+388
+00:21:12,760 --> 00:21:17,640
+idea the idea with this is that uh
+
+389
+00:21:17,640 --> 00:21:21,919
+FIB fibon fibon number sequence is the
+
+390
+00:21:21,919 --> 00:21:24,320
+it's like always using the previous
+
+391
+00:21:24,320 --> 00:21:26,080
+values to to
+
+392
+00:21:26,080 --> 00:21:30,440
+calculate um the new one
+
+393
+00:21:30,440 --> 00:21:33,840
+so so then it's like you always need to
+
+394
+00:21:33,840 --> 00:21:36,840
+like kind of know the previous values so
+
+395
+00:21:36,840 --> 00:21:39,000
+so doing
+
+396
+00:21:39,000 --> 00:21:43,120
+this without having some like memory of
+
+397
+00:21:43,120 --> 00:21:48,000
+the uh results of of the previous
+
+398
+00:21:48,000 --> 00:21:52,400
+numbers uh would be very
+
+399
+00:21:52,600 --> 00:21:55,879
+inefficient so
+
+400
+00:21:56,000 --> 00:22:00,799
+then okay let's to first look at what
+
+401
+00:22:00,799 --> 00:22:02,840
+the
+
+402
+00:22:02,840 --> 00:22:05,799
+Fibonacci sequence function should
+
+403
+00:22:05,799 --> 00:22:08,559
+return so we can use this tary operator
+
+404
+00:22:08,559 --> 00:22:11,320
+again and make this like on line
+
+405
+00:22:11,320 --> 00:22:17,240
+statement out of this or check if
+
+406
+00:22:17,840 --> 00:22:21,880
+um if if n is less than two then we can
+
+407
+00:22:21,880 --> 00:22:23,440
+just return
+
+408
+00:22:23,440 --> 00:22:26,000
+n uh because that's that's how the
+
+409
+00:22:26,000 --> 00:22:29,559
+sequence is is defined
+
+410
+00:22:29,559 --> 00:22:31,679
+so it's going to be like one two and
+
+411
+00:22:31,679 --> 00:22:35,480
+then starting from uh three
+
+412
+00:22:35,480 --> 00:22:39,520
+uh it'll start to get more
+
+413
+00:22:39,520 --> 00:22:42,520
+interesting
+
+414
+00:22:43,120 --> 00:22:46,400
+so yeah if if we're if we're at two or
+
+415
+00:22:46,400 --> 00:22:50,480
+higher then we can just uh precursive
+
+416
+00:22:50,480 --> 00:22:54,120
+call uh call it with minus one or or
+
+417
+00:22:54,120 --> 00:22:56,360
+minus
+
+418
+00:22:56,360 --> 00:23:00,360
+two uh but then for the memo
+
+419
+00:23:00,360 --> 00:23:03,960
+FIB it's going to be a little different
+
+420
+00:23:03,960 --> 00:23:08,400
+so so for this it's like if n is like 50
+
+421
+00:23:08,400 --> 00:23:11,640
+then that's going to be a lot of
+
+422
+00:23:12,080 --> 00:23:15,320
+recursion um but in this case we can use
+
+423
+00:23:15,320 --> 00:23:18,919
+a little trick with this static map
+
+424
+00:23:18,919 --> 00:23:19,600
+which
+
+425
+00:23:19,600 --> 00:23:21,880
+is
+
+426
+00:23:21,880 --> 00:23:26,000
+uh kind of living outside of this uh
+
+427
+00:23:26,000 --> 00:23:29,559
+function scope
+
+428
+00:23:29,559 --> 00:23:32,200
+uh so so we're we're this is not getting
+
+429
+00:23:32,200 --> 00:23:35,000
+initialized every time this function is
+
+430
+00:23:35,000 --> 00:23:39,159
+called this is only getting initialized
+
+431
+00:23:39,159 --> 00:23:40,919
+once
+
+432
+00:23:40,919 --> 00:23:44,480
+and that then we just uh access
+
+433
+00:23:44,480 --> 00:23:47,120
+it uh and we can we can keep adding
+
+434
+00:23:47,120 --> 00:23:49,360
+things to it but but it doesn't get like
+
+435
+00:23:49,360 --> 00:23:53,559
+reset every time we get to this function
+
+436
+00:23:53,559 --> 00:23:57,000
+that's kind of the idea with this so
+
+437
+00:23:57,000 --> 00:24:00,240
+then what we can do is is we can with
+
+438
+00:24:00,240 --> 00:24:03,480
+this map again use defined
+
+439
+00:24:03,480 --> 00:24:06,919
+function uh so we we'll see if we can
+
+440
+00:24:06,919 --> 00:24:09,120
+find uh both of
+
+441
+00:24:09,120 --> 00:24:12,439
+these uh
+
+442
+00:24:14,159 --> 00:24:17,600
+results already in in the in the
+
+443
+00:24:17,600 --> 00:24:21,760
+dictionary if we can't find them
+
+444
+00:24:21,760 --> 00:24:25,400
+then then then we
+
+445
+00:24:25,480 --> 00:24:29,279
+can kind of do do it
+
+446
+00:24:29,279 --> 00:24:32,159
+do it manually but but then of course uh
+
+447
+00:24:32,159 --> 00:24:36,840
+we will still be calling this um memo
+
+448
+00:24:36,840 --> 00:24:38,640
+FIB function
+
+449
+00:24:38,640 --> 00:24:41,120
+recursively so then if we start by
+
+450
+00:24:41,120 --> 00:24:44,960
+calling this with uh n50 for example
+
+451
+00:24:44,960 --> 00:24:46,919
+then it's going to keep going down and
+
+452
+00:24:46,919 --> 00:24:50,600
+down and down uh recursively before it
+
+453
+00:24:50,600 --> 00:24:52,919
+like actually calculates anything but
+
+454
+00:24:52,919 --> 00:24:55,240
+then once it gets all the way like to
+
+455
+00:24:55,240 --> 00:24:56,080
+the
+
+456
+00:24:56,080 --> 00:24:59,000
+bottom it's going to start having these
+
+457
+00:24:59,000 --> 00:25:01,640
+things in the memory and and it'll never
+
+458
+00:25:01,640 --> 00:25:03,880
+have to calculate the same thing
+
+459
+00:25:03,880 --> 00:25:06,399
+multiple
+
+460
+00:25:07,399 --> 00:25:11,399
+times and yeah we we do the same thing
+
+461
+00:25:11,399 --> 00:25:14,880
+for uh both of these values and then
+
+462
+00:25:14,880 --> 00:25:19,159
+then the end result kind of uh we can
+
+463
+00:25:19,159 --> 00:25:22,799
+add the results of of a
+
+464
+00:25:22,799 --> 00:25:24,679
+given
+
+465
+00:25:24,679 --> 00:25:27,480
+um the the the result of the Fibonacci
+
+466
+00:25:27,480 --> 00:25:30,200
+sequence for a given and uh we always
+
+467
+00:25:30,200 --> 00:25:36,640
+add here and and return it as well
+

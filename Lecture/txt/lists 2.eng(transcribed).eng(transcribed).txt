@@ -1,0 +1,217 @@
+and for part two we have this uh reverse
+function uh so this is kind of
+a a helper function that takes a start
+point and an end point so it doesn't
+necessarily reverse the entire list so
+it's a similar situation as the triple
+rotate in a
+way uh especially when we consider the
+riverse
+N uh function
+um okay now the way I do it is basically
+uh first by handling the connections of
+the start point which will be like
+changed to the to be at the end and
+after that just just kind of start going
+through all the uh nodes in the middle
+and like these two lines are the
+like where things are actually changing
+so we for each Noe we change the next
+one would be the previous and the
+previous should be the next one and then
+in this case we need to kind of store
+this next as a temporary
+variable uh because we wouldn't be able
+to use this
+anymore uh by the time we get here and
+then we're just going of keep advancing
+and then we also make sure to uh connect
+the uh end points and then if we're if
+the start point is not at the head then
+the
+previous uh the next of the previous of
+the start point should point to the
+current
+one and then if we're not at the end
+then the uh next of the start point or
+previous of the next of the start point
+I should point at the start
+Point okay so
+uh it's kind of similar idea so so I
+won't go into kind of more uh details
+here um yeah these are all the things
+you have to consider for this
+one uh then for reverse
+ends at least the way I handle it so so
+there's certain only different ways you
+could do it uh so so since this function
+is taking uh references to
+pointers what I do is
+I either pass the head
+and the and the tail depending on uh
+if we're actually at the head or or the
+tail on
+like uh on on the start or end point so
+so what this matters is that if we
+actually pass the head reference to the
+Head uh as an
+argument then that head is going to
+also uh change so so then we can kind of
+um manipulate it
+here now yeah you could probably do it
+another way as well
+but uh that's the way I do
+it uh and then temp two which serves as
+the like start
+Point uh so by the end of this the
+um the the next of of temp is going to
+be the start of the next section and
+then we can kind of uh the temp which is
+used as the end point here uh we can
+make that the same as temp two but then
+uh kind of increment
+it whenever we're not at at a point
+where we want to start
+reversing that way we can go through the
+ential
+list um okay it's probably enough about
+the reverse
+um okay then for merge the idea is to
+merge two
+different uh
+lists uh in in order and we we can
+assume that the lists themselves are are
+sorted we could have a list that's like
+1 3 5 7 and then we have 2 4 6 8 so so
+they're they're in order but then when
+we want to merge them and and keep
+everything in in
+order uh then we kind of need to
+like weave these together in a
+way uh so the first step is to
+uh so since they're both sorted we know
+that the starting point for this new uh
+sorted list will
+be uh the node that's the like between
+the first nodes of these two
+uh the the smaller one so that's in
+total like the smallest number in the
+two
+lists we have the smallest then and then
+uh we can kind of make these two
+different variables that itate through
+the two different
+lists and then indicates that
+um that
+the First Data is is the smaller
+one then we can kind of uh Advance this
+one
+already and
+then uh if it's not the first then we
+keep it there and then for them to the
+the
+opposite um so now we're going to
+setting this up in a way
+where uh we already can like then
+compare whatever these are pointing at I
+I okay which one of these is
+smaller um okay and then what
+happens I check
+if uh temp one uh which
+is
+um which is related to the the first
+list if that data is smaller than than
+temp
+two uh then
+that then we can set this temp to be be
+temp one okay these names are probably
+not not very useful uh so so basically
+the idea is that uh in this case we kind
+of take the next note from the list one
+and then we advance the the pointer that
+we have for the list one and then
+otherwise
+we take the next node from list two
+and Advance the pointer for list
+two okay and then the uh we have the
+smaller
+um so we going of store this smallest as
+the starting point and then smaller at
+the
+start uh is the smallest and uh then
+the next small number is going to be the
+temp so so it's going to be the smaller
+one out of the like next node in list
+one or
+two um and then also connect the
+previews of this one to be on
+the uh one we were currently looking
+at um
+okay yeah these variable names are maybe
+a little bit confusing but hopefully you
+get the idea so we going to uh alternate
+between iterating list one and two
+depending on which one is currently
+which one currently has the smaller
+number and that way we just keep adding
+the smallest number um between those two
+lists and since we can assume that
+they're in order or those two lists on
+their own are are sorted uh then we
+always keep getting the getting the
+numbers in
+like in the correct order and adding
+them to this like new new chain here
+starting from the
+smallest okay hopefully that makes
+sense okay so then with
+the um
+merge sort uh this is kind of a
+very clever um thing where we can
+uh we we can kind
+of split these
+um lists in
+two and and then we can call the
+recursively call the mer sort function
+on on both of
+them so so then eventually this is kind
+of
+are going to go down to just like single
+numbers and
+then then that's going to be easy to
+uh like it just kind of Goes Down single
+numbers and then starts uh merging them
+back together right so
+um so
+every every time
+we we get here we we make another
+split and then we call merge sord on the
+uh first part and merge sort on the
+second
+part and
+then and then merge those together and
+and we can assume that by the time we're
+calling this uh everything's kind
+of sorted
+already uh if if that makes sense and
+and then here we see like like basically
+if we're down to like a single number so
+start next doesn't point to anything
+anymore then we can just uh return that
+and if we're calling this with single
+numbers then of course the are sorted if
+it's just a single number then
+technically it's sorted so then uh it
+ends up working
+and just
+fine okay well that's a lot of like uh
+algorithms uh like we've talked about
+before is
+maybe
+um
+maybe we we want to move like kind
+of away from algorithms and more into
+like like very core of C++ but uh
+in any case hopefully hopefully this
+challenging exercise helped you get more
+familiar with C++ as well

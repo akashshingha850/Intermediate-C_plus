@@ -1,0 +1,6540 @@
+﻿1
+00:00:08,039 --> 00:00:12,040
+yeah we have seven people
+
+2
+00:00:16,800 --> 00:00:20,240
+online okay so if you have any questions
+
+3
+00:00:20,240 --> 00:00:21,250
+please just
+
+4
+00:00:21,250 --> 00:00:24,279
+[Laughter]
+
+5
+00:00:24,279 --> 00:00:28,480
+ask eight people online
+
+6
+00:00:28,960 --> 00:00:31,960
+hey
+
+7
+00:00:34,600 --> 00:00:37,520
+okay so I just realized that the
+
+8
+00:00:37,520 --> 00:00:39,480
+deadline for lab
+
+9
+00:00:39,480 --> 00:00:41,360
+memory
+
+10
+00:00:41,360 --> 00:00:44,960
+is was on the 1st which is a public
+
+11
+00:00:44,960 --> 00:00:47,120
+holiday Monday so maybe that's what that
+
+12
+00:00:47,120 --> 00:00:49,120
+question was about that one lab is due
+
+13
+00:00:49,120 --> 00:00:53,600
+on a holiday so I send it until 2nd so
+
+14
+00:00:53,600 --> 00:00:58,079
+that yeah and um if there is anything
+
+15
+00:00:58,079 --> 00:01:00,000
+else like that of course we will send
+
+16
+00:01:00,000 --> 00:01:01,039
+the
+
+17
+00:01:01,039 --> 00:01:03,640
+deadline but let's start with our
+
+18
+00:01:03,640 --> 00:01:05,640
+lecture today you guys hear well because
+
+19
+00:01:05,640 --> 00:01:07,119
+of the microphone
+
+20
+00:01:07,119 --> 00:01:09,880
+right okay so today is a lot of fun
+
+21
+00:01:09,880 --> 00:01:12,799
+because um we are going through some
+
+22
+00:01:12,799 --> 00:01:14,960
+interesting syntax
+
+23
+00:01:14,960 --> 00:01:18,080
+with thingss
+
+24
+00:01:18,080 --> 00:01:22,040
+hello so we are going to start talking
+
+25
+00:01:22,040 --> 00:01:23,240
+about
+
+26
+00:01:23,240 --> 00:01:24,799
+Constructors
+
+27
+00:01:24,799 --> 00:01:28,400
+destructors and operator overload today
+
+28
+00:01:28,400 --> 00:01:30,640
+so we will write the sent for those
+
+29
+00:01:30,640 --> 00:01:33,040
+functions how they should look as a
+
+30
+00:01:33,040 --> 00:01:35,880
+function signature in class declaration
+
+31
+00:01:35,880 --> 00:01:38,079
+as well as what should go inside so
+
+32
+00:01:38,079 --> 00:01:40,799
+let's look at this sphere and um oh yeah
+
+33
+00:01:40,799 --> 00:01:45,240
+I need my writing tool ah and I
+
+34
+00:01:45,240 --> 00:01:47,640
+exited
+
+35
+00:01:47,640 --> 00:01:51,240
+okay let's see I need my writing tool
+
+36
+00:01:51,240 --> 00:01:55,839
+here and I still want to go full
+
+37
+00:01:56,759 --> 00:02:01,439
+screen okay so I have my class sphere
+
+38
+00:02:01,439 --> 00:02:05,439
+and I have private members here the
+
+39
+00:02:05,439 --> 00:02:08,199
+radius and I want to make a little more
+
+40
+00:02:08,199 --> 00:02:10,360
+interesting sphere today so I don't want
+
+41
+00:02:10,360 --> 00:02:14,120
+just to have a I want to have some what
+
+42
+00:02:14,120 --> 00:02:17,040
+seems to be going to be a dynamic memory
+
+43
+00:02:17,040 --> 00:02:21,560
+associated with this class so um the
+
+44
+00:02:21,560 --> 00:02:24,080
+let's go through all of the U members
+
+45
+00:02:24,080 --> 00:02:26,760
+the radius the number of attributes and
+
+46
+00:02:26,760 --> 00:02:29,280
+some kind of what seems to be going to
+
+47
+00:02:29,280 --> 00:02:31,720
+be an array of strains right associated
+
+48
+00:02:31,720 --> 00:02:34,519
+with that um
+
+49
+00:02:34,519 --> 00:02:37,120
+sphere and then I have all of the public
+
+50
+00:02:37,120 --> 00:02:39,920
+functions and you can see already that
+
+51
+00:02:39,920 --> 00:02:43,519
+these three they do not have return type
+
+52
+00:02:43,519 --> 00:02:46,440
+and oh yes please take the uh print outs
+
+53
+00:02:46,440 --> 00:02:51,840
+can you please grab students as well
+
+54
+00:02:52,360 --> 00:02:55,400
+pass so we recognize a
+
+55
+00:02:55,400 --> 00:02:57,319
+Constructor that by the fact that
+
+56
+00:02:57,319 --> 00:02:59,840
+there's no return value and the name it
+
+57
+00:02:59,840 --> 00:03:02,360
+matches the class and we have three here
+
+58
+00:03:02,360 --> 00:03:05,640
+right so we'll go through what are they
+
+59
+00:03:05,640 --> 00:03:07,840
+but we already know that upon
+
+60
+00:03:07,840 --> 00:03:11,040
+Declaration of a sphere a Constructor is
+
+61
+00:03:11,040 --> 00:03:12,640
+going to be called right you're
+
+62
+00:03:12,640 --> 00:03:14,239
+comfortable with that fact we talked
+
+63
+00:03:14,239 --> 00:03:16,159
+about it many times that a Constructor
+
+64
+00:03:16,159 --> 00:03:18,120
+is going to be called and it's going to
+
+65
+00:03:18,120 --> 00:03:20,360
+be a default no parameter Constructor
+
+66
+00:03:20,360 --> 00:03:22,599
+because there's no parameters there so
+
+67
+00:03:22,599 --> 00:03:23,640
+actually in
+
+68
+00:03:23,640 --> 00:03:26,879
+C++ the system will provide one for you
+
+69
+00:03:26,879 --> 00:03:28,799
+but it will initialize all of the
+
+70
+00:03:28,799 --> 00:03:30,480
+members then with some
+
+71
+00:03:30,480 --> 00:03:33,200
+garbage so this is your chance to
+
+72
+00:03:33,200 --> 00:03:36,799
+initialize to explicitly write your
+
+73
+00:03:36,799 --> 00:03:40,239
+default constructure in the class if you
+
+74
+00:03:40,239 --> 00:03:42,879
+want by default your spheres to be
+
+75
+00:03:42,879 --> 00:03:45,360
+initialized to something interesting so
+
+76
+00:03:45,360 --> 00:03:47,680
+for example if you want to initialize
+
+77
+00:03:47,680 --> 00:03:51,360
+the radius to 3.2 say the number of
+
+78
+00:03:51,360 --> 00:03:54,280
+attributes to three and the attributes
+
+79
+00:03:54,280 --> 00:03:58,040
+strs to be red
+
+80
+00:03:58,040 --> 00:04:01,760
+juicy and shiny juice oh
+
+81
+00:04:01,760 --> 00:04:04,799
+sorry let's write it
+
+82
+00:04:04,799 --> 00:04:08,000
+juicy and shiny so you want your default
+
+83
+00:04:08,000 --> 00:04:11,400
+spere to be an Apple so this instructor
+
+84
+00:04:11,400 --> 00:04:14,840
+will be the place to do that right so
+
+85
+00:04:14,840 --> 00:04:16,720
+then let's do it let's initialize it you
+
+86
+00:04:16,720 --> 00:04:18,600
+already know you did you write a
+
+87
+00:04:18,600 --> 00:04:20,798
+Constructor already
+
+88
+00:04:20,798 --> 00:04:24,360
+anywhere yourself in any of the labs or
+
+89
+00:04:24,360 --> 00:04:25,280
+M
+
+90
+00:04:25,280 --> 00:04:28,160
+PS I think if you jumped ahead you did
+
+91
+00:04:28,160 --> 00:04:30,520
+or what no we had to initialize a con
+
+92
+00:04:30,520 --> 00:04:31,840
+have a constructure somewhere in the
+
+93
+00:04:31,840 --> 00:04:34,320
+first lab already
+
+94
+00:04:34,320 --> 00:04:38,440
+right yeah I think so yeah yeah yeah but
+
+95
+00:04:38,440 --> 00:04:39,880
+maybe there was no dynamic memory
+
+96
+00:04:39,880 --> 00:04:41,400
+because we didn't write the structures
+
+97
+00:04:41,400 --> 00:04:43,919
+yet so let's initialize it let's let's
+
+98
+00:04:43,919 --> 00:04:47,600
+guess what should go here well as a rule
+
+99
+00:04:47,600 --> 00:04:49,960
+of time you just go through all of the
+
+100
+00:04:49,960 --> 00:04:53,240
+members and initialize them to something
+
+101
+00:04:53,240 --> 00:04:56,720
+so the radius of this default sphere
+
+102
+00:04:56,720 --> 00:04:57,840
+should
+
+103
+00:04:57,840 --> 00:05:00,960
+be what you want it to be always
+
+104
+00:05:00,960 --> 00:05:04,280
+initialized to 3.2 right so upon this
+
+105
+00:05:04,280 --> 00:05:05,840
+declaration you want that sphere to be
+
+106
+00:05:05,840 --> 00:05:08,600
+an Apple so the radius should be 3.2
+
+107
+00:05:08,600 --> 00:05:10,280
+number of
+
+108
+00:05:10,280 --> 00:05:15,080
+attributes should be three and then
+
+109
+00:05:15,080 --> 00:05:19,000
+attributes attribute zero should be
+
+110
+00:05:19,000 --> 00:05:22,000
+red
+
+111
+00:05:22,080 --> 00:05:26,240
+attribute uh one should be
+
+112
+00:05:26,240 --> 00:05:31,639
+juicy and attributes two should be shiny
+
+113
+00:05:31,639 --> 00:05:36,880
+do you like it is that is everything
+
+114
+00:05:36,880 --> 00:05:41,360
+right what did I forget to
+
+115
+00:05:43,880 --> 00:05:48,039
+do what did I forget to
+
+116
+00:05:48,039 --> 00:05:50,800
+do did I actually explicitly ask for
+
+117
+00:05:50,800 --> 00:05:52,319
+this
+
+118
+00:05:52,319 --> 00:05:55,240
+memory no and that's the place to do it
+
+119
+00:05:55,240 --> 00:05:56,960
+right this is the place to ask for
+
+120
+00:05:56,960 --> 00:06:00,199
+dynamic memory in the Constructor so if
+
+121
+00:06:00,199 --> 00:06:02,840
+you want your object to have these
+
+122
+00:06:02,840 --> 00:06:05,440
+values on the stack and then an array of
+
+123
+00:06:05,440 --> 00:06:09,160
+strings that is clearly hopefully maybe
+
+124
+00:06:09,160 --> 00:06:12,039
+will be long and will be on on the Heap
+
+125
+00:06:12,039 --> 00:06:14,160
+this is the place to ask for it in the
+
+126
+00:06:14,160 --> 00:06:17,080
+Constructor so then you say adds equals
+
+127
+00:06:17,080 --> 00:06:18,400
+to
+
+128
+00:06:18,400 --> 00:06:20,680
+what
+
+129
+00:06:20,680 --> 00:06:23,440
+new
+
+130
+00:06:23,440 --> 00:06:25,800
+strain and then the size should be the
+
+131
+00:06:25,800 --> 00:06:28,319
+number of
+
+132
+00:06:28,560 --> 00:06:32,160
+attributes right so this is where you do
+
+133
+00:06:32,160 --> 00:06:34,400
+that okay so that's the default
+
+134
+00:06:34,400 --> 00:06:37,280
+Constructor is that okay is that
+
+135
+00:06:37,280 --> 00:06:39,520
+clear are you happy with this everything
+
+136
+00:06:39,520 --> 00:06:40,400
+is
+
+137
+00:06:40,400 --> 00:06:44,120
+okay for now we wrote a default
+
+138
+00:06:44,120 --> 00:06:47,400
+Constructor then upon declaration your
+
+139
+00:06:47,400 --> 00:06:49,680
+memory will look like this and the
+
+140
+00:06:49,680 --> 00:06:52,520
+memory associated with this object a
+
+141
+00:06:52,520 --> 00:06:55,919
+will look like this 3 3.23 and the
+
+142
+00:06:55,919 --> 00:06:58,160
+pointer to Dynamic array on the stack
+
+143
+00:06:58,160 --> 00:07:00,639
+and this is going to be on the Heap
+
+144
+00:07:00,639 --> 00:07:04,199
+theay attributes okay so let's
+
+145
+00:07:04,199 --> 00:07:08,919
+continue now let's look at one more
+
+146
+00:07:08,919 --> 00:07:11,639
+thing so now you you probably see that
+
+147
+00:07:11,639 --> 00:07:15,240
+we just wrote this default Constructor
+
+148
+00:07:15,240 --> 00:07:18,039
+similarly I could have written a
+
+149
+00:07:18,039 --> 00:07:21,199
+parameter Constructor that would pass
+
+150
+00:07:21,199 --> 00:07:23,919
+radius as the parameter
+
+151
+00:07:23,919 --> 00:07:27,039
+right and you would also then initialize
+
+152
+00:07:27,039 --> 00:07:28,919
+your sphere then based on this radius so
+
+153
+00:07:28,919 --> 00:07:30,639
+maybe it would be asteroid with larger
+
+154
+00:07:30,639 --> 00:07:32,960
+radius past or something different
+
+155
+00:07:32,960 --> 00:07:35,440
+attributes then so you would do whatever
+
+156
+00:07:35,440 --> 00:07:39,400
+is needed but let's see when then these
+
+157
+00:07:39,400 --> 00:07:41,879
+Constructors are going to be called so
+
+158
+00:07:41,879 --> 00:07:44,199
+when is it called when a copy
+
+159
+00:07:44,199 --> 00:07:47,120
+Constructor uh is called oh oh we're
+
+160
+00:07:47,120 --> 00:07:48,300
+talking about
+
+161
+00:07:48,300 --> 00:07:50,080
+[Music]
+
+162
+00:07:50,080 --> 00:07:52,879
+copy right right right so but first let
+
+163
+00:07:52,879 --> 00:07:55,199
+me finish with this when are these
+
+164
+00:07:55,199 --> 00:07:57,879
+Constructors called well the default no
+
+165
+00:07:57,879 --> 00:07:59,800
+parameter Constructor is called upon
+
+166
+00:07:59,800 --> 00:08:02,039
+declaration and then one parameter
+
+167
+00:08:02,039 --> 00:08:04,280
+Constructor could be called with some
+
+168
+00:08:04,280 --> 00:08:07,550
+other syntax say
+
+169
+00:08:07,550 --> 00:08:08,759
+[Music]
+
+170
+00:08:08,759 --> 00:08:11,479
+sphere
+
+171
+00:08:11,479 --> 00:08:13,400
+C uh
+
+172
+00:08:13,400 --> 00:08:16,400
+5.2 you know so that's like um not an
+
+173
+00:08:16,400 --> 00:08:20,440
+apple but uh maybe a melon right or
+
+174
+00:08:20,440 --> 00:08:23,280
+something like that so that would call
+
+175
+00:08:23,280 --> 00:08:26,159
+the parameter Constructor that syntax
+
+176
+00:08:26,159 --> 00:08:28,680
+but now we're going to look at the
+
+177
+00:08:28,680 --> 00:08:31,280
+another Constructor which is called copy
+
+178
+00:08:31,280 --> 00:08:33,320
+Constructor and we didn't talk about it
+
+179
+00:08:33,320 --> 00:08:37,240
+yet before so this
+
+180
+00:08:37,240 --> 00:08:40,719
+guy is also a Constructor but it passes
+
+181
+00:08:40,719 --> 00:08:42,360
+a sphere as its
+
+182
+00:08:42,360 --> 00:08:45,880
+parameter so when are these guys called
+
+183
+00:08:45,880 --> 00:08:47,959
+well do you remember we talked about
+
+184
+00:08:47,959 --> 00:08:49,839
+passing by value passing by reference
+
+185
+00:08:49,839 --> 00:08:53,160
+and passing by um pointer last time and
+
+186
+00:08:53,160 --> 00:08:56,000
+I said that when you pass a parameter to
+
+187
+00:08:56,000 --> 00:08:57,839
+a
+
+188
+00:08:57,839 --> 00:09:00,640
+function a copy is
+
+189
+00:09:00,640 --> 00:09:04,800
+made so how is that copy made well it
+
+190
+00:09:04,800 --> 00:09:07,519
+will be made by default by default copy
+
+191
+00:09:07,519 --> 00:09:08,880
+constructure that the system will
+
+192
+00:09:08,880 --> 00:09:11,160
+provide if you don't write your
+
+193
+00:09:11,160 --> 00:09:14,120
+own so today we will write our own and
+
+194
+00:09:14,120 --> 00:09:16,640
+see why we need to write our own what
+
+195
+00:09:16,640 --> 00:09:18,399
+why what are the reasons for writing
+
+196
+00:09:18,399 --> 00:09:20,440
+your own copy Constructor but
+
+197
+00:09:20,440 --> 00:09:22,720
+essentially a copy Constructor will be
+
+198
+00:09:22,720 --> 00:09:28,360
+invoked if you pass your object by
+
+199
+00:09:28,360 --> 00:09:31,120
+value
+
+200
+00:09:31,120 --> 00:09:35,640
+then in this function you also return a
+
+201
+00:09:35,640 --> 00:09:38,440
+spere and what do you think when you
+
+202
+00:09:38,440 --> 00:09:41,720
+return that sphere instead of this my
+
+203
+00:09:41,720 --> 00:09:44,240
+right hand side do you think a copy
+
+204
+00:09:44,240 --> 00:09:46,920
+Constructor will be also invoked do you
+
+205
+00:09:46,920 --> 00:09:51,040
+want it to be invoked when you return by
+
+206
+00:09:54,440 --> 00:09:58,320
+value does it feel like it should
+
+207
+00:09:58,320 --> 00:10:01,320
+be
+
+208
+00:10:02,720 --> 00:10:05,240
+well the answer is that it's up to the
+
+209
+00:10:05,240 --> 00:10:07,360
+compiler it's up to this individual
+
+210
+00:10:07,360 --> 00:10:10,240
+situation sometimes a copy Constructor
+
+211
+00:10:10,240 --> 00:10:15,079
+will be invoked on return by value but
+
+212
+00:10:15,079 --> 00:10:17,440
+sometimes it will not be so you cannot
+
+213
+00:10:17,440 --> 00:10:23,079
+guarantee okay so fine that's good so
+
+214
+00:10:23,079 --> 00:10:25,440
+the way the times when a copy
+
+215
+00:10:25,440 --> 00:10:27,959
+Constructor is then called is when you
+
+216
+00:10:27,959 --> 00:10:31,319
+pass your
+
+217
+00:10:47,660 --> 00:10:50,780
+[Music]
+
+218
+00:11:30,560 --> 00:11:34,560
+when a sphere e for
+
+219
+00:11:34,560 --> 00:11:37,959
+example is on the Heap so we call for
+
+220
+00:11:37,959 --> 00:11:40,040
+new
+
+221
+00:11:40,040 --> 00:11:42,600
+sphere and then we also put B in
+
+222
+00:11:42,600 --> 00:11:44,920
+parenthesis so
+
+223
+00:11:44,920 --> 00:11:48,240
+again in this case you pass a b to a
+
+224
+00:11:48,240 --> 00:11:50,839
+Constructor you pass a b to for to a
+
+225
+00:11:50,839 --> 00:11:52,480
+Constructor and you pass a b to a
+
+226
+00:11:52,480 --> 00:11:55,200
+Constructor so these are the cases this
+
+227
+00:11:55,200 --> 00:11:58,160
+is the syntax when the system will
+
+228
+00:11:58,160 --> 00:12:01,480
+invoke the copy
+
+229
+00:12:01,480 --> 00:12:04,480
+construct okay we'll summarize all of
+
+230
+00:12:04,480 --> 00:12:05,800
+these cases
+
+231
+00:12:05,800 --> 00:12:09,120
+later so we talked about when a copy
+
+232
+00:12:09,120 --> 00:12:13,120
+Constructor is called now let's um ask
+
+233
+00:12:13,120 --> 00:12:15,920
+this question so let's look at this code
+
+234
+00:12:15,920 --> 00:12:19,279
+please look at this code and tell me
+
+235
+00:12:19,279 --> 00:12:21,639
+it's a very similar code to what you had
+
+236
+00:12:21,639 --> 00:12:23,560
+but we'll just do this exercise how many
+
+237
+00:12:23,560 --> 00:12:26,440
+times a copy constructure is called in
+
+238
+00:12:26,440 --> 00:12:31,320
+this code so let's trace this function
+
+239
+00:12:31,320 --> 00:12:33,720
+main
+
+240
+00:12:34,279 --> 00:12:37,199
+function a is declared default
+
+241
+00:12:37,199 --> 00:12:39,440
+Constructor is called B is declared
+
+242
+00:12:39,440 --> 00:12:41,399
+parameter Constructor is called a
+
+243
+00:12:41,399 --> 00:12:44,199
+function is called with parameter passed
+
+244
+00:12:44,199 --> 00:12:47,800
+by value so then what a copy Constructor
+
+245
+00:12:47,800 --> 00:12:49,600
+is called
+
+246
+00:12:49,600 --> 00:12:53,279
+right then s is returned by value to the
+
+247
+00:12:53,279 --> 00:12:55,160
+right hand side so maybe a copy
+
+248
+00:12:55,160 --> 00:12:57,440
+Constructor is called as well so the
+
+249
+00:12:57,440 --> 00:13:00,199
+answer should be
+
+250
+00:13:00,199 --> 00:13:02,839
+should be two a copy Constructor is
+
+251
+00:13:02,839 --> 00:13:05,000
+called twice so let's see what what I
+
+252
+00:13:05,000 --> 00:13:07,800
+did I have um I have this code so that
+
+253
+00:13:07,800 --> 00:13:11,680
+you really see what's going on um it's
+
+254
+00:13:11,680 --> 00:13:14,880
+the first one for this
+
+255
+00:13:14,880 --> 00:13:18,040
+lecture let's wait until my laptop will
+
+256
+00:13:18,040 --> 00:13:20,480
+open
+
+257
+00:13:22,360 --> 00:13:25,279
+emac
+
+258
+00:13:25,279 --> 00:13:28,839
+okay so let's see what do we really
+
+259
+00:13:28,839 --> 00:13:32,360
+expect from this code look I in my
+
+260
+00:13:32,360 --> 00:13:36,920
+Constructor when I initialized things to
+
+261
+00:13:36,920 --> 00:13:40,160
+um in all of the constructors I actually
+
+262
+00:13:40,160 --> 00:13:43,800
+had a print out saying which Constructor
+
+263
+00:13:43,800 --> 00:13:47,000
+is being called okay so that will help
+
+264
+00:13:47,000 --> 00:13:50,000
+us Trace all of the calls so if I have a
+
+265
+00:13:50,000 --> 00:13:54,560
+no value no parameter Constructor which
+
+266
+00:13:54,560 --> 00:13:58,240
+Builds an apple of with radius 3.2 then
+
+267
+00:13:58,240 --> 00:14:01,160
+it'll print a a strain default
+
+268
+00:14:01,160 --> 00:14:02,880
+Constructor is called when I have a
+
+269
+00:14:02,880 --> 00:14:04,839
+parameter Constructor it'll print that
+
+270
+00:14:04,839 --> 00:14:07,759
+strain and if I have a copy constructure
+
+271
+00:14:07,759 --> 00:14:09,480
+it will print that
+
+272
+00:14:09,480 --> 00:14:12,880
+string so let's
+
+273
+00:14:12,880 --> 00:14:14,839
+see
+
+274
+00:14:14,839 --> 00:14:18,199
+okay so there's two right right oh oh
+
+275
+00:14:18,199 --> 00:14:19,480
+and it's a little different function
+
+276
+00:14:19,480 --> 00:14:20,920
+actually it's a little different
+
+277
+00:14:20,920 --> 00:14:23,720
+function than in your code so let me
+
+278
+00:14:23,720 --> 00:14:26,320
+match it yeah do you see that it's a
+
+279
+00:14:26,320 --> 00:14:28,959
+different function so I'll match it to
+
+280
+00:14:28,959 --> 00:14:32,000
+you yours I don't have these two
+
+281
+00:14:32,000 --> 00:14:35,320
+lines okay so the answer should be two
+
+282
+00:14:35,320 --> 00:14:37,800
+right let's
+
+283
+00:14:43,040 --> 00:14:47,160
+see yeah see so default Constructor is
+
+284
+00:14:47,160 --> 00:14:48,320
+called
+
+285
+00:14:48,320 --> 00:14:52,240
+for for a a parameter Constructor is
+
+286
+00:14:52,240 --> 00:14:54,639
+called for B and then a copy
+
+287
+00:14:54,639 --> 00:14:57,399
+constructure is passed here so s is
+
+288
+00:14:57,399 --> 00:14:59,720
+created as a copy but then the right
+
+289
+00:14:59,720 --> 00:15:03,079
+hand side is also returned as a copy so
+
+290
+00:15:03,079 --> 00:15:07,120
+in this case the return value uh uses or
+
+291
+00:15:07,120 --> 00:15:08,759
+invokes copy Constructor but you cannot
+
+292
+00:15:08,759 --> 00:15:11,639
+guarantee that it's always the case
+
+293
+00:15:11,639 --> 00:15:14,639
+okay but this is a neat way to see which
+
+294
+00:15:14,639 --> 00:15:16,759
+Constructor is being called just
+
+295
+00:15:16,759 --> 00:15:19,120
+printing it
+
+296
+00:15:19,120 --> 00:15:22,680
+out okay so we right it was two the two
+
+297
+00:15:22,680 --> 00:15:25,599
+is the right
+
+298
+00:15:25,839 --> 00:15:28,839
+answer um so now let's look what would
+
+299
+00:15:28,839 --> 00:15:31,639
+have happened if you were not to write a
+
+300
+00:15:31,639 --> 00:15:34,519
+con a copy constructure so what is the
+
+301
+00:15:34,519 --> 00:15:36,040
+constructure that the system will
+
+302
+00:15:36,040 --> 00:15:38,880
+provide by default so if you were not to
+
+303
+00:15:38,880 --> 00:15:42,680
+write this what would the system do so
+
+304
+00:15:42,680 --> 00:15:45,319
+if this is this is your
+
+305
+00:15:45,319 --> 00:15:47,920
+object this is your
+
+306
+00:15:47,920 --> 00:15:50,880
+object uh in the main function or
+
+307
+00:15:50,880 --> 00:15:53,880
+whatever say a say a this is your object
+
+308
+00:15:53,880 --> 00:15:58,040
+and it is uh the default say
+
+309
+00:15:58,040 --> 00:15:59,800
+um
+
+310
+00:15:59,800 --> 00:16:02,560
+the default Apple so this is your object
+
+311
+00:16:02,560 --> 00:16:05,519
+then the default
+
+312
+00:16:05,519 --> 00:16:08,800
+Constructor upon passing by uh value to
+
+313
+00:16:08,800 --> 00:16:11,120
+a function for example you'll say oh I
+
+314
+00:16:11,120 --> 00:16:14,160
+know how to pass an object and make a
+
+315
+00:16:14,160 --> 00:16:17,040
+copy I'll just go memberwise and make
+
+316
+00:16:17,040 --> 00:16:20,319
+copies of them I know how to make a copy
+
+317
+00:16:20,319 --> 00:16:24,000
+of a double so I put I copy the radius
+
+318
+00:16:24,000 --> 00:16:24,880
+to
+
+319
+00:16:24,880 --> 00:16:28,600
+3.2 I know how to copy integers so the
+
+320
+00:16:28,600 --> 00:16:30,920
+number attributes is going to be three
+
+321
+00:16:30,920 --> 00:16:33,440
+and I know how to copy
+
+322
+00:16:33,440 --> 00:16:37,040
+pointers if this is a pointer to some
+
+323
+00:16:37,040 --> 00:16:39,720
+array or some memory I know how to copy
+
+324
+00:16:39,720 --> 00:16:41,519
+it I just put the same address there in
+
+325
+00:16:41,519 --> 00:16:43,440
+that value which means that it's going
+
+326
+00:16:43,440 --> 00:16:48,399
+to point here just like the original
+
+327
+00:16:48,399 --> 00:16:51,839
+one so that's what a default Constructor
+
+328
+00:16:51,839 --> 00:16:54,040
+will do by default do you like
+
+329
+00:16:54,040 --> 00:16:57,040
+it that's the Sy that's what the system
+
+330
+00:16:57,040 --> 00:16:58,519
+provides for you by default if you don't
+
+331
+00:16:58,519 --> 00:16:59,880
+write your
+
+332
+00:16:59,880 --> 00:17:02,600
+Constructor this Constructor works just
+
+333
+00:17:02,600 --> 00:17:06,240
+fine if all of the members are on on the
+
+334
+00:17:06,240 --> 00:17:09,760
+stack but if you have any dynamic memory
+
+335
+00:17:09,760 --> 00:17:11,760
+then the co the pointers will be copied
+
+336
+00:17:11,760 --> 00:17:13,679
+and you have two different
+
+337
+00:17:13,679 --> 00:17:16,480
+objects pointing to the same thing so
+
+338
+00:17:16,480 --> 00:17:19,760
+that's not a good thing right that's not
+
+339
+00:17:19,760 --> 00:17:22,039
+a good thing you delete this memory for
+
+340
+00:17:22,039 --> 00:17:24,000
+one object then you have dangling
+
+341
+00:17:24,000 --> 00:17:26,400
+pointers for another right if you free
+
+342
+00:17:26,400 --> 00:17:29,320
+this memory therefore when whenever you
+
+343
+00:17:29,320 --> 00:17:32,559
+have anything any uh data associated
+
+344
+00:17:32,559 --> 00:17:34,960
+with your objects on the Heap you will
+
+345
+00:17:34,960 --> 00:17:37,799
+have to write copy Constructor by
+
+346
+00:17:37,799 --> 00:17:41,919
+yourself and the way to do that is to to
+
+347
+00:17:41,919 --> 00:17:44,039
+write it so let's see what what I wanted
+
+348
+00:17:44,039 --> 00:17:46,480
+to say
+
+349
+00:17:46,679 --> 00:17:49,880
+here yeah so let's uh let's see how we
+
+350
+00:17:49,880 --> 00:17:51,760
+would write
+
+351
+00:17:51,760 --> 00:17:56,559
+it if I have the original object a here
+
+352
+00:17:56,559 --> 00:18:01,799
+right I want to write my own copy
+
+353
+00:18:01,799 --> 00:18:04,039
+Constructor and I want
+
+354
+00:18:04,039 --> 00:18:08,760
+the result to look like an
+
+355
+00:18:08,760 --> 00:18:10,520
+apple
+
+356
+00:18:10,520 --> 00:18:14,039
+but and a copy of the original object
+
+357
+00:18:14,039 --> 00:18:16,520
+right so I want another chunk of Heap
+
+358
+00:18:16,520 --> 00:18:18,919
+memory to have the same attributes R
+
+359
+00:18:18,919 --> 00:18:21,840
+juicy and shiny right so that's how I
+
+360
+00:18:21,840 --> 00:18:24,320
+want the result of the copy Constructor
+
+361
+00:18:24,320 --> 00:18:27,840
+to look like a new object that is
+
+362
+00:18:27,840 --> 00:18:29,600
+identical to orig
+
+363
+00:18:29,600 --> 00:18:32,480
+not just on stat but also on the
+
+364
+00:18:32,480 --> 00:18:35,480
+Heap but it's a new object so let's
+
+365
+00:18:35,480 --> 00:18:38,799
+write it do you want to help
+
+366
+00:18:40,880 --> 00:18:43,120
+me you want to help me
+
+367
+00:18:43,120 --> 00:18:46,600
+writing what should we
+
+368
+00:18:47,360 --> 00:18:50,400
+do we you go through members again one
+
+369
+00:18:50,400 --> 00:18:53,640
+by one and initialize them to
+
+370
+00:18:53,640 --> 00:18:56,840
+what not to some default values now but
+
+371
+00:18:56,840 --> 00:19:01,280
+to the whatever past values members
+
+372
+00:19:01,280 --> 00:19:05,200
+right corresponding members so the
+
+373
+00:19:05,200 --> 00:19:09,360
+radius should be equal
+
+374
+00:19:10,640 --> 00:19:13,840
+to the original right the object that's
+
+375
+00:19:13,840 --> 00:19:16,360
+past
+
+376
+00:19:17,280 --> 00:19:20,320
+original radius right the radius of the
+
+377
+00:19:20,320 --> 00:19:21,679
+original
+
+378
+00:19:21,679 --> 00:19:25,919
+one and then number of
+
+379
+00:19:26,120 --> 00:19:29,280
+attributes should be equal to what the
+
+380
+00:19:29,280 --> 00:19:31,679
+original object has as the number of
+
+381
+00:19:31,679 --> 00:19:33,120
+attributes
+
+382
+00:19:33,120 --> 00:19:36,480
+right so number of attributes
+
+383
+00:19:36,480 --> 00:19:38,159
+there
+
+384
+00:19:38,159 --> 00:19:40,880
+right and now instead of just saying
+
+385
+00:19:40,880 --> 00:19:43,080
+attributes equal original attributes I'm
+
+386
+00:19:43,080 --> 00:19:45,520
+going to actually do what what do I need
+
+387
+00:19:45,520 --> 00:19:46,640
+to do
+
+388
+00:19:46,640 --> 00:19:50,120
+here how do I create
+
+389
+00:19:50,120 --> 00:19:54,320
+this as a different
+
+390
+00:19:57,400 --> 00:19:59,320
+memory um
+
+391
+00:19:59,320 --> 00:20:01,360
+yes I will D reference it but first I
+
+392
+00:20:01,360 --> 00:20:04,760
+need to ask for a new chunk of Heap
+
+393
+00:20:04,760 --> 00:20:08,840
+memory with new right with new so I will
+
+394
+00:20:08,840 --> 00:20:10,280
+say
+
+395
+00:20:10,280 --> 00:20:13,440
+attributes of my of this object should
+
+396
+00:20:13,440 --> 00:20:16,520
+be equal to what
+
+397
+00:20:16,520 --> 00:20:19,520
+new
+
+398
+00:20:19,679 --> 00:20:21,919
+strain and then how many of them should
+
+399
+00:20:21,919 --> 00:20:23,280
+I ask
+
+400
+00:20:23,280 --> 00:20:26,960
+for number of attributes right that I
+
+401
+00:20:26,960 --> 00:20:30,600
+already just initi iiz to the original
+
+402
+00:20:30,600 --> 00:20:32,960
+object number of attributes and then I
+
+403
+00:20:32,960 --> 00:20:35,840
+go in the loop for
+
+404
+00:20:35,840 --> 00:20:42,039
+integer I equal z i less than number of
+
+405
+00:20:42,200 --> 00:20:44,600
+attributes I
+
+406
+00:20:44,600 --> 00:20:47,480
+++ and then what do I do that's when I D
+
+407
+00:20:47,480 --> 00:20:49,880
+reference it
+
+408
+00:20:49,880 --> 00:20:55,720
+attributes I equal to the original
+
+409
+00:20:57,640 --> 00:21:01,039
+one the same thing the original
+
+410
+00:21:01,039 --> 00:21:03,679
+attributes
+
+411
+00:21:04,039 --> 00:21:07,919
+I is that okay so that will be the
+
+412
+00:21:07,919 --> 00:21:09,840
+Constructor the copy
+
+413
+00:21:09,840 --> 00:21:12,000
+Constructor which will
+
+414
+00:21:12,000 --> 00:21:15,640
+create this kind of object
+
+415
+00:21:15,640 --> 00:21:17,919
+then
+
+416
+00:21:17,919 --> 00:21:21,919
+okay any questions about
+
+417
+00:21:24,960 --> 00:21:28,760
+it okay so we are done with the default
+
+418
+00:21:28,760 --> 00:21:30,679
+no parameter Constructor parameter
+
+419
+00:21:30,679 --> 00:21:33,240
+Constructor and a copy Constructor
+
+420
+00:21:33,240 --> 00:21:35,159
+that's good and they see how many times
+
+421
+00:21:35,159 --> 00:21:37,080
+we ask for new right and you know
+
+422
+00:21:37,080 --> 00:21:38,919
+already that if we ask for dynamic
+
+423
+00:21:38,919 --> 00:21:41,360
+memory for he we have to actually let it
+
+424
+00:21:41,360 --> 00:21:43,400
+go somewhere
+
+425
+00:21:43,400 --> 00:21:46,640
+right so let's talk about destructors
+
+426
+00:21:46,640 --> 00:21:50,840
+destructors is when memory is freed back
+
+427
+00:21:50,840 --> 00:21:54,240
+to the system and let's see when
+
+428
+00:21:54,240 --> 00:21:56,679
+destructors are called so far we didn't
+
+429
+00:21:56,679 --> 00:21:58,679
+talk about it at all I was telling you
+
+430
+00:21:58,679 --> 00:22:03,480
+oh you know if you have a stack object
+
+431
+00:22:03,480 --> 00:22:06,919
+on the stack once you see the uh curly
+
+432
+00:22:06,919 --> 00:22:09,200
+braces is closing that's when the system
+
+433
+00:22:09,200 --> 00:22:11,320
+takes it back right so that's what I
+
+434
+00:22:11,320 --> 00:22:14,240
+said that the the then the stack
+
+435
+00:22:14,240 --> 00:22:16,480
+variable goes out of scope and the
+
+436
+00:22:16,480 --> 00:22:19,840
+system takes it back by using a
+
+437
+00:22:19,840 --> 00:22:22,640
+Destructor so either default Destructor
+
+438
+00:22:22,640 --> 00:22:24,760
+if you didn't write one but you have a
+
+439
+00:22:24,760 --> 00:22:27,960
+chance again to write it yourself so how
+
+440
+00:22:27,960 --> 00:22:29,840
+do we spot a
+
+441
+00:22:29,840 --> 00:22:32,240
+Destructor Destructor has the same name
+
+442
+00:22:32,240 --> 00:22:35,159
+as an object and this Tio right here and
+
+443
+00:22:35,159 --> 00:22:38,120
+it's a it's a function as well you don't
+
+444
+00:22:38,120 --> 00:22:41,559
+call the destructor Destructor is called
+
+445
+00:22:41,559 --> 00:22:43,640
+when so let's look at all of the cases
+
+446
+00:22:43,640 --> 00:22:46,240
+when a Destructor is called well when
+
+447
+00:22:46,240 --> 00:22:48,120
+you declare an
+
+448
+00:22:48,120 --> 00:22:51,880
+object on the stack when it goes out of
+
+449
+00:22:51,880 --> 00:22:54,039
+scope right here the destructor will be
+
+450
+00:22:54,039 --> 00:22:57,520
+called there are two pages today if
+
+451
+00:22:57,520 --> 00:23:02,640
+you so when a variable goes out of
+
+452
+00:23:02,640 --> 00:23:06,000
+scope the destructor will be
+
+453
+00:23:06,000 --> 00:23:09,480
+called so here in the scope of this
+
+454
+00:23:09,480 --> 00:23:14,320
+function s is passed by value so we know
+
+455
+00:23:14,320 --> 00:23:17,480
+that a copy Constructor will be called
+
+456
+00:23:17,480 --> 00:23:21,360
+right here when we pass it but then once
+
+457
+00:23:21,360 --> 00:23:24,640
+the function is ends once it gives
+
+458
+00:23:24,640 --> 00:23:27,200
+control back to the main a Destructor
+
+459
+00:23:27,200 --> 00:23:28,840
+will be called because s will will go
+
+460
+00:23:28,840 --> 00:23:31,760
+out of scope as well as T so there will
+
+461
+00:23:31,760 --> 00:23:35,480
+be two destructors called right
+
+462
+00:23:35,480 --> 00:23:37,840
+here because both of those local
+
+463
+00:23:37,840 --> 00:23:40,600
+variables will go out of scope so that's
+
+464
+00:23:40,600 --> 00:23:42,480
+cool so that's local variables that are
+
+465
+00:23:42,480 --> 00:23:44,360
+on the stack if they go out of scope we
+
+466
+00:23:44,360 --> 00:23:45,200
+call a
+
+467
+00:23:45,200 --> 00:23:49,279
+Destructor there is another case that is
+
+468
+00:23:49,279 --> 00:23:53,520
+if you declare a pointer to your object
+
+469
+00:23:53,520 --> 00:23:57,000
+once you call delete on that pointer a
+
+470
+00:23:57,000 --> 00:24:00,440
+distructor will be called as well
+
+471
+00:24:00,760 --> 00:24:03,080
+okay so
+
+472
+00:24:03,080 --> 00:24:08,159
+now let's see if you can figure out how
+
+473
+00:24:08,159 --> 00:24:11,440
+many times a Destructor is called on
+
+474
+00:24:11,440 --> 00:24:14,320
+this code so that's where I need those
+
+475
+00:24:14,320 --> 00:24:16,440
+two extra
+
+476
+00:24:16,440 --> 00:24:18,960
+lines let me open
+
+477
+00:24:18,960 --> 00:24:21,960
+the
+
+478
+00:24:22,440 --> 00:24:26,039
+corresponding one instructor so look
+
+479
+00:24:26,039 --> 00:24:28,520
+what happens let's trace it and it's
+
+480
+00:24:28,520 --> 00:24:31,559
+it's the same function as the one that I
+
+481
+00:24:31,559 --> 00:24:34,480
+have there on the slides so let's Trace
+
+482
+00:24:34,480 --> 00:24:37,960
+oh except that it's cutting a little
+
+483
+00:24:37,960 --> 00:24:42,679
+bit let's do a little like that okay so
+
+484
+00:24:42,679 --> 00:24:44,360
+let's Trace what's going
+
+485
+00:24:44,360 --> 00:24:48,120
+on we declare a so it's in the scope of
+
+486
+00:24:48,120 --> 00:24:51,559
+main we declare B it's in the scope of
+
+487
+00:24:51,559 --> 00:24:54,799
+main so A and B called Constructors
+
+488
+00:24:54,799 --> 00:24:56,240
+corresponding
+
+489
+00:24:56,240 --> 00:24:58,600
+Constructors that means two destructors
+
+490
+00:24:58,600 --> 00:25:03,559
+will be called here upon the end of main
+
+491
+00:25:03,559 --> 00:25:06,240
+execution so that's
+
+492
+00:25:06,240 --> 00:25:10,080
+cool now I'm going to pass a by value
+
+493
+00:25:10,080 --> 00:25:11,440
+which means the copy Constructor is
+
+494
+00:25:11,440 --> 00:25:14,279
+called here and S is a local
+
+495
+00:25:14,279 --> 00:25:16,799
+variable so it goes out of scope a
+
+496
+00:25:16,799 --> 00:25:18,440
+Destructor will be
+
+497
+00:25:18,440 --> 00:25:22,520
+called but as is passed by value
+
+498
+00:25:22,520 --> 00:25:25,240
+back that's a copy Constructor is called
+
+499
+00:25:25,240 --> 00:25:27,240
+here and that right hand side will go
+
+500
+00:25:27,240 --> 00:25:28,799
+out of scope together with the end of
+
+501
+00:25:28,799 --> 00:25:32,200
+main so a Destructor will be
+
+502
+00:25:32,200 --> 00:25:35,159
+called then a copy Constructor is called
+
+503
+00:25:35,159 --> 00:25:38,200
+here so Destructor will be called and
+
+504
+00:25:38,200 --> 00:25:40,559
+well let's see just just uh tell me how
+
+505
+00:25:40,559 --> 00:25:42,760
+many times you think the destructor is
+
+506
+00:25:42,760 --> 00:25:46,120
+called in this
+
+507
+00:25:46,120 --> 00:25:50,919
+case and then we'll uh we'll run we'll
+
+508
+00:25:50,919 --> 00:25:55,279
+run the code and see so count how many
+
+509
+00:25:55,279 --> 00:26:00,080
+times six mhm right very
+
+510
+00:26:00,080 --> 00:26:03,600
+good I think it's
+
+511
+00:26:05,120 --> 00:26:09,880
+six so the easiest thing is to
+
+512
+00:26:09,880 --> 00:26:12,320
+run well you can trace the code just
+
+513
+00:26:12,320 --> 00:26:13,919
+like we did and there were six
+
+514
+00:26:13,919 --> 00:26:16,760
+Constructor calls so there has to be say
+
+515
+00:26:16,760 --> 00:26:21,240
+Destructor calls right there has to
+
+516
+00:26:21,720 --> 00:26:24,840
+be right let's see what's going on let's
+
+517
+00:26:24,840 --> 00:26:29,919
+look at my code and um code and and uh
+
+518
+00:26:29,919 --> 00:26:33,399
+let's run it
+
+519
+00:26:34,679 --> 00:26:38,120
+so oh my
+
+520
+00:26:38,480 --> 00:26:41,559
+God so this uh Constructors default
+
+521
+00:26:41,559 --> 00:26:45,440
+Constructor a parameter Constructor B
+
+522
+00:26:45,440 --> 00:26:49,840
+copy Constructor when we pass a
+
+523
+00:26:49,840 --> 00:26:52,520
+here copy Constructor when we pass it
+
+524
+00:26:52,520 --> 00:26:54,640
+back to the right hand side
+
+525
+00:26:54,640 --> 00:26:57,480
+here then two of them go out of scope
+
+526
+00:26:57,480 --> 00:26:59,880
+right
+
+527
+00:26:59,880 --> 00:27:02,559
+uh which is s and the right hand side is
+
+528
+00:27:02,559 --> 00:27:05,080
+deleted system will not keep it around
+
+529
+00:27:05,080 --> 00:27:07,799
+so that's deleted so two destructors are
+
+530
+00:27:07,799 --> 00:27:11,840
+right there then a copy Constructor on C
+
+531
+00:27:11,840 --> 00:27:13,440
+default value
+
+532
+00:27:13,440 --> 00:27:16,880
+3.2 and a
+
+533
+00:27:16,880 --> 00:27:19,600
+pointer for D is created so a copy
+
+534
+00:27:19,600 --> 00:27:22,399
+Constructor is called for the DY for
+
+535
+00:27:22,399 --> 00:27:24,919
+this Dynamic sphere it's it's on the
+
+536
+00:27:24,919 --> 00:27:28,880
+Heap so two copy Constructors and then
+
+537
+00:27:28,880 --> 00:27:31,480
+what goes out of scope a goes out of
+
+538
+00:27:31,480 --> 00:27:34,320
+scope B goes out of scope C goes out of
+
+539
+00:27:34,320 --> 00:27:38,960
+scope so three of them are deleted d
+
+540
+00:27:38,960 --> 00:27:40,880
+goes out of
+
+541
+00:27:40,880 --> 00:27:44,120
+scope where's the destructor for
+
+542
+00:27:44,120 --> 00:27:46,640
+it do you see that there's only five
+
+543
+00:27:46,640 --> 00:27:48,440
+destructors
+
+544
+00:27:48,440 --> 00:27:52,720
+right where's where's the last
+
+545
+00:27:57,240 --> 00:28:00,240
+one
+
+546
+00:28:01,399 --> 00:28:05,200
+what if I said like uh 0.9 here so we
+
+547
+00:28:05,200 --> 00:28:06,720
+clearly know that it's a difference
+
+548
+00:28:06,720 --> 00:28:09,519
+sphere let's
+
+549
+00:28:11,120 --> 00:28:14,320
+see parameter Constructor is called 0.9
+
+550
+00:28:14,320 --> 00:28:17,120
+now instead we don't delete 0.9 do you
+
+551
+00:28:17,120 --> 00:28:18,760
+see that there's no Constructor
+
+552
+00:28:18,760 --> 00:28:22,640
+destructure for that
+
+553
+00:28:24,120 --> 00:28:26,799
+why we didn't call explicitly delete
+
+554
+00:28:26,799 --> 00:28:28,279
+that's the only time when we really
+
+555
+00:28:28,279 --> 00:28:32,559
+really have to like exp explicitly free
+
+556
+00:28:32,559 --> 00:28:35,559
+the memory and that's when we know
+
+557
+00:28:35,559 --> 00:28:37,360
+another distructor will be called and
+
+558
+00:28:37,360 --> 00:28:39,159
+then you have matching number of
+
+559
+00:28:39,159 --> 00:28:41,880
+Constructors and destructors right so
+
+560
+00:28:41,880 --> 00:28:46,159
+now you have six destructors and six
+
+561
+00:28:48,000 --> 00:28:50,039
+Constructors and that's hopefully what
+
+562
+00:28:50,039 --> 00:28:52,799
+happens then you don't have any memory
+
+563
+00:28:52,799 --> 00:28:55,720
+leads you always have to match the
+
+564
+00:28:55,720 --> 00:28:58,679
+number of times you call new with
+
+565
+00:28:58,679 --> 00:29:01,200
+deletes the same here if you if a
+
+566
+00:29:01,200 --> 00:29:03,120
+Constructor is called hopefully a
+
+567
+00:29:03,120 --> 00:29:05,120
+Destructor will be called as well right
+
+568
+00:29:05,120 --> 00:29:07,720
+so you don't want to lose any uh leak
+
+569
+00:29:07,720 --> 00:29:09,760
+any
+
+570
+00:29:09,760 --> 00:29:11,559
+memory
+
+571
+00:29:11,559 --> 00:29:15,240
+okay so in this the correct answer in
+
+572
+00:29:15,240 --> 00:29:17,559
+this code which is buggy because it has
+
+573
+00:29:17,559 --> 00:29:19,919
+a memory actually it would be five right
+
+574
+00:29:19,919 --> 00:29:22,799
+not six five because I didn't free this
+
+575
+00:29:22,799 --> 00:29:26,360
+memory so the Constructor for D was not
+
+576
+00:29:26,360 --> 00:29:29,320
+called okay
+
+577
+00:29:29,320 --> 00:29:33,519
+okay is this overwhelming already or is
+
+578
+00:29:33,519 --> 00:29:37,480
+it okay are you still with me kind
+
+579
+00:29:37,480 --> 00:29:42,000
+of okay good so now let's let's uh look
+
+580
+00:29:42,000 --> 00:29:45,080
+at how to write a distructor because if
+
+581
+00:29:45,080 --> 00:29:47,120
+you don't write it if you don't
+
+582
+00:29:47,120 --> 00:29:48,919
+explicitly write your Destructor in your
+
+583
+00:29:48,919 --> 00:29:51,360
+class a default will be provided the
+
+584
+00:29:51,360 --> 00:29:53,240
+system will provide it for you but it
+
+585
+00:29:53,240 --> 00:29:54,880
+will not be good enough so what the
+
+586
+00:29:54,880 --> 00:29:58,440
+default will do so default Destructor
+
+587
+00:29:58,440 --> 00:30:01,480
+we'll say oh yeah I'll go member wise
+
+588
+00:30:01,480 --> 00:30:03,760
+and delete them all like take that
+
+589
+00:30:03,760 --> 00:30:06,120
+memory back so I know how to take
+
+590
+00:30:06,120 --> 00:30:08,440
+doubles back I'll free that I'll free
+
+591
+00:30:08,440 --> 00:30:11,919
+integer and I know how to free pointers
+
+592
+00:30:11,919 --> 00:30:16,240
+I'll take this back but the system never
+
+593
+00:30:16,240 --> 00:30:18,159
+touches the dynamic memory right so you
+
+594
+00:30:18,159 --> 00:30:21,919
+have a memory leak if your class has any
+
+595
+00:30:21,919 --> 00:30:24,640
+dynamic memory associated with with it
+
+596
+00:30:24,640 --> 00:30:28,200
+or data on the Heap therefore you better
+
+597
+00:30:28,200 --> 00:30:31,519
+write a better uh con Destructor right
+
+598
+00:30:31,519 --> 00:30:33,039
+so you want to write a
+
+599
+00:30:33,039 --> 00:30:36,880
+Destructor and um what should I do here
+
+600
+00:30:36,880 --> 00:30:38,840
+what will be the destructor what is the
+
+601
+00:30:38,840 --> 00:30:40,880
+lines that I have to write in the
+
+602
+00:30:40,880 --> 00:30:43,960
+destructor in this custom Destructor
+
+603
+00:30:43,960 --> 00:30:46,799
+what do I write
+
+604
+00:30:47,200 --> 00:30:50,039
+here how do I free
+
+605
+00:30:50,039 --> 00:30:54,120
+memory what is the key
+
+606
+00:30:54,120 --> 00:30:57,720
+word delete right we ask for new in
+
+607
+00:30:57,720 --> 00:30:59,320
+conern Str so
+
+608
+00:30:59,320 --> 00:31:01,840
+delete but what do I delete I don't
+
+609
+00:31:01,840 --> 00:31:04,399
+delete the radius because that's un
+
+610
+00:31:04,399 --> 00:31:06,919
+stack I don't delete that I don't delete
+
+611
+00:31:06,919 --> 00:31:13,159
+that I only can delete this part which
+
+612
+00:31:13,799 --> 00:31:16,919
+is attributes but not just the first
+
+613
+00:31:16,919 --> 00:31:19,399
+element but the entire array because we
+
+614
+00:31:19,399 --> 00:31:21,519
+asked new square bracket number of
+
+615
+00:31:21,519 --> 00:31:23,360
+attributes so you need to delete square
+
+616
+00:31:23,360 --> 00:31:25,279
+brackets attributes then it'll delete
+
+617
+00:31:25,279 --> 00:31:28,840
+the entire Heap all of the uh size that
+
+618
+00:31:28,840 --> 00:31:31,880
+we asked for originally right so now if
+
+619
+00:31:31,880 --> 00:31:34,440
+you trace your code the destructor
+
+620
+00:31:34,440 --> 00:31:37,639
+should delete or deletes should match
+
+621
+00:31:37,639 --> 00:31:39,639
+all of the news in the constructors
+
+622
+00:31:39,639 --> 00:31:42,320
+deletes in destructors should match the
+
+623
+00:31:42,320 --> 00:31:45,440
+new declarations or new keywords in your
+
+624
+00:31:45,440 --> 00:31:50,120
+Constructors so if we go back to our
+
+625
+00:31:50,120 --> 00:31:52,720
+Constructor where was it if I ask for
+
+626
+00:31:52,720 --> 00:31:56,000
+new string square brackets I better
+
+627
+00:31:56,000 --> 00:31:58,760
+delete oh yeah yeah I better delete
+
+628
+00:31:58,760 --> 00:32:01,600
+attributes with square brackets
+
+629
+00:32:01,600 --> 00:32:03,799
+right
+
+630
+00:32:03,799 --> 00:32:06,679
+okay but I don't have to free these
+
+631
+00:32:06,679 --> 00:32:09,679
+because these guys um the system will
+
+632
+00:32:09,679 --> 00:32:15,639
+take care of the um member
+
+633
+00:32:16,159 --> 00:32:20,320
+variables okay
+
+634
+00:32:23,519 --> 00:32:29,080
+now let's recap so when under which
+
+635
+00:32:29,080 --> 00:32:32,320
+circumstances the system will call the
+
+636
+00:32:32,320 --> 00:32:34,840
+distructor so so again you never call
+
+637
+00:32:34,840 --> 00:32:36,639
+distructor yourself you just know when
+
+638
+00:32:36,639 --> 00:32:38,919
+it's going to be called by the system so
+
+639
+00:32:38,919 --> 00:32:41,440
+the system will use that D structure
+
+640
+00:32:41,440 --> 00:32:44,039
+whatever you provided or default that it
+
+641
+00:32:44,039 --> 00:32:46,760
+has under which circumstances so pick
+
+642
+00:32:46,760 --> 00:32:49,519
+all the ones that are oh pick all the
+
+643
+00:32:49,519 --> 00:32:51,960
+ones that
+
+644
+00:32:56,840 --> 00:32:59,840
+apply
+
+645
+00:33:01,320 --> 00:33:04,080
+mhm
+
+646
+00:33:05,639 --> 00:33:07,159
+yeah
+
+647
+00:33:07,159 --> 00:33:10,840
+yeah when you return so very good so
+
+648
+00:33:10,840 --> 00:33:13,120
+these are two obvious ones when this
+
+649
+00:33:13,120 --> 00:33:15,720
+variable goes out of scope the constru
+
+650
+00:33:15,720 --> 00:33:17,960
+destructor will be called when you
+
+651
+00:33:17,960 --> 00:33:20,720
+perform delete and a poin a variable the
+
+652
+00:33:20,720 --> 00:33:23,440
+destructor will be called but when you
+
+653
+00:33:23,440 --> 00:33:27,440
+return a parameter by value so some
+
+654
+00:33:27,440 --> 00:33:29,440
+returns statement from function is by
+
+655
+00:33:29,440 --> 00:33:32,200
+value then if the copy Constructor will
+
+656
+00:33:32,200 --> 00:33:34,360
+be called which you know depends on the
+
+657
+00:33:34,360 --> 00:33:36,159
+situation sometimes it will be and
+
+658
+00:33:36,159 --> 00:33:38,000
+sometimes it will not but if it's called
+
+659
+00:33:38,000 --> 00:33:39,320
+then the destructor will be called to
+
+660
+00:33:39,320 --> 00:33:43,760
+remove that object yeah very good
+
+661
+00:33:43,760 --> 00:33:48,760
+okay now if a can structure for your
+
+662
+00:33:49,000 --> 00:33:51,679
+class allocates dynamic memory then you
+
+663
+00:33:51,679 --> 00:33:54,159
+need in structure so if a Constructor
+
+664
+00:33:54,159 --> 00:33:57,799
+for your class or what else should be
+
+665
+00:33:57,799 --> 00:33:59,799
+except that you you don't
+
+666
+00:33:59,799 --> 00:34:03,399
+put a a DOT here so so what should be
+
+667
+00:34:03,399 --> 00:34:07,479
+the complete sentence so that it is
+
+668
+00:34:07,800 --> 00:34:10,839
+true so if either a Constructor for your
+
+669
+00:34:10,839 --> 00:34:13,839
+class or what allocates dyamic memory
+
+670
+00:34:13,839 --> 00:34:16,239
+then you need a Destructor so how do you
+
+671
+00:34:16,239 --> 00:34:17,639
+know you need to write your custom
+
+672
+00:34:17,639 --> 00:34:20,119
+Destructor how do you
+
+673
+00:34:20,119 --> 00:34:22,879
+know well you look at your Constructor
+
+674
+00:34:22,879 --> 00:34:25,560
+if that allocates dynamic memory with
+
+675
+00:34:25,560 --> 00:34:28,000
+new then you need a structure but what
+
+676
+00:34:28,000 --> 00:34:30,320
+else maybe the Constructor doesn't
+
+677
+00:34:30,320 --> 00:34:32,639
+allocated anything with new but then
+
+678
+00:34:32,639 --> 00:34:33,760
+when you
+
+679
+00:34:33,760 --> 00:34:38,359
+look yeah if a copy Constructor uses new
+
+680
+00:34:38,359 --> 00:34:40,440
+then you will have to have a Destructor
+
+681
+00:34:40,440 --> 00:34:42,839
+but then the correct answer is not just
+
+682
+00:34:42,839 --> 00:34:45,320
+looking at those to you need to
+
+683
+00:34:45,320 --> 00:34:48,399
+implement your own D structure if any
+
+684
+00:34:48,399 --> 00:34:52,760
+member function uses new then most
+
+685
+00:34:52,760 --> 00:34:54,960
+likely for whatever design your
+
+686
+00:34:54,960 --> 00:34:56,719
+Destructor will have to otherwise there
+
+687
+00:34:56,719 --> 00:34:59,960
+is no mechanism to uh free that memory
+
+688
+00:34:59,960 --> 00:35:02,480
+so most likely that's the case so this
+
+689
+00:35:02,480 --> 00:35:03,640
+is a better
+
+690
+00:35:03,640 --> 00:35:06,720
+answer of course probably could write
+
+691
+00:35:06,720 --> 00:35:09,960
+bad code where you free memory through
+
+692
+00:35:09,960 --> 00:35:13,160
+some other mechanisms but if a
+
+693
+00:35:13,160 --> 00:35:16,560
+Constructor or any other member function
+
+694
+00:35:16,560 --> 00:35:19,880
+calls uh for a dynamic memory allocates
+
+695
+00:35:19,880 --> 00:35:22,440
+dynamic memory then you will need to
+
+696
+00:35:22,440 --> 00:35:26,240
+implement a distructor that frees that
+
+697
+00:35:26,240 --> 00:35:29,160
+memory okay
+
+698
+00:35:29,160 --> 00:35:32,880
+now let's see so we now it's like
+
+699
+00:35:32,880 --> 00:35:36,520
+recap Destructor typically can typically
+
+700
+00:35:36,520 --> 00:35:39,400
+consists of a sequence of delete
+
+701
+00:35:39,400 --> 00:35:43,839
+statements and they have to match
+
+702
+00:35:46,040 --> 00:35:49,480
+what yeah matching the new calls in
+
+703
+00:35:49,480 --> 00:35:51,560
+member functions or Constructor or copy
+
+704
+00:35:51,560 --> 00:35:54,760
+con or whatever those whatever you ask
+
+705
+00:35:54,760 --> 00:35:59,079
+for that dynamic memory
+
+706
+00:35:59,079 --> 00:36:01,119
+right everything else is just silly so
+
+707
+00:36:01,119 --> 00:36:04,119
+this is the right answer so this is the
+
+708
+00:36:04,119 --> 00:36:06,319
+summary for destructors so destructors
+
+709
+00:36:06,319 --> 00:36:08,480
+is never called but when a stack goes
+
+710
+00:36:08,480 --> 00:36:10,760
+out of memory or a pointed to variable
+
+711
+00:36:10,760 --> 00:36:13,680
+is deleted with delete that's when
+
+712
+00:36:13,680 --> 00:36:16,079
+destructure will be called and you will
+
+713
+00:36:16,079 --> 00:36:19,160
+need to write a d structure if un
+
+714
+00:36:19,160 --> 00:36:20,920
+structure or any other member function
+
+715
+00:36:20,920 --> 00:36:22,920
+allocates anic
+
+716
+00:36:22,920 --> 00:36:25,920
+memory and then Destructor will have as
+
+717
+00:36:25,920 --> 00:36:30,839
+many deletes as you had news news new uh
+
+718
+00:36:30,839 --> 00:36:33,440
+keywords in your Constructors or copy
+
+719
+00:36:33,440 --> 00:36:37,040
+Constructors or wherever you do that new
+
+720
+00:36:37,040 --> 00:36:41,520
+calls I think in our code we don't have
+
+721
+00:36:41,520 --> 00:36:44,560
+new in Constructor per se but we have in
+
+722
+00:36:44,560 --> 00:36:46,280
+um we have this helper
+
+723
+00:36:46,280 --> 00:36:49,720
+functions that call new helper functions
+
+724
+00:36:49,720 --> 00:36:51,480
+and then Constructors copy Constructors
+
+725
+00:36:51,480 --> 00:36:56,040
+just uh call those uh helper
+
+726
+00:36:56,040 --> 00:36:58,760
+functions you you can look at through
+
+727
+00:36:58,760 --> 00:36:59,680
+the
+
+728
+00:36:59,680 --> 00:37:03,800
+code for that okay so now let's list all
+
+729
+00:37:03,800 --> 00:37:06,240
+of the instances in which a spheres
+
+730
+00:37:06,240 --> 00:37:08,440
+class copy Constructor is called so
+
+731
+00:37:08,440 --> 00:37:10,560
+again a summary for the copy
+
+732
+00:37:10,560 --> 00:37:12,839
+Constructor so when will a copy
+
+733
+00:37:12,839 --> 00:37:15,640
+Constructor be
+
+734
+00:37:15,640 --> 00:37:19,040
+called for
+
+735
+00:37:26,560 --> 00:37:29,560
+sphere
+
+736
+00:37:29,599 --> 00:37:31,359
+remember the use cases yeah when you
+
+737
+00:37:31,359 --> 00:37:34,160
+pass a sphere by value when you
+
+738
+00:37:34,160 --> 00:37:35,440
+sometimes when you return a sphere by
+
+739
+00:37:35,440 --> 00:37:37,760
+value when you declare sphere to be a
+
+740
+00:37:37,760 --> 00:37:41,280
+copy like this one
+
+741
+00:37:41,280 --> 00:37:43,640
+more yeah when you declare a pointer
+
+742
+00:37:43,640 --> 00:37:45,359
+variable of type sphere but yeah I
+
+743
+00:37:45,359 --> 00:37:46,880
+didn't write that with the new right
+
+744
+00:37:46,880 --> 00:37:50,040
+when you ask for new sphere yeah so this
+
+745
+00:37:50,040 --> 00:37:52,720
+would be correct if I said exactly how I
+
+746
+00:37:52,720 --> 00:37:54,480
+declare a pointer not just declare but
+
+747
+00:37:54,480 --> 00:37:57,400
+it also ask for new sphere with um with
+
+748
+00:37:57,400 --> 00:37:59,800
+the the copy yeah okay but this is
+
+749
+00:37:59,800 --> 00:38:02,680
+correct good good
+
+750
+00:38:02,680 --> 00:38:06,319
+answers okay what's the Constructor copy
+
+751
+00:38:06,319 --> 00:38:09,319
+constructure function signature so let's
+
+752
+00:38:09,319 --> 00:38:11,800
+look at the syntax of signatures which
+
+753
+00:38:11,800 --> 00:38:14,359
+is you know can be confusing when you
+
+754
+00:38:14,359 --> 00:38:17,240
+look at this at
+
+755
+00:38:19,400 --> 00:38:23,359
+first okay very
+
+756
+00:38:23,800 --> 00:38:29,359
+good how many of you answered that one H
+
+757
+00:38:29,359 --> 00:38:33,480
+do you all agree and then why so the
+
+758
+00:38:33,480 --> 00:38:35,119
+question is why and what does it all
+
+759
+00:38:35,119 --> 00:38:38,280
+mean constant sphere by
+
+760
+00:38:38,280 --> 00:38:40,800
+reference from the origin so we're going
+
+761
+00:38:40,800 --> 00:38:43,240
+to copy an
+
+762
+00:38:43,240 --> 00:38:46,720
+object from the original sphere but that
+
+763
+00:38:46,720 --> 00:38:48,280
+original sphere is then should be a
+
+764
+00:38:48,280 --> 00:38:50,319
+constant it should not be modified when
+
+765
+00:38:50,319 --> 00:38:54,640
+we copying right and it's passed by
+
+766
+00:38:54,640 --> 00:38:57,880
+reference so I think I have code for
+
+767
+00:38:57,880 --> 00:39:00,240
+this yes so this oh no I don't have a
+
+768
+00:39:00,240 --> 00:39:02,640
+code yet but I really wanted to stop by
+
+769
+00:39:02,640 --> 00:39:05,520
+here and ask you why why do I have to
+
+770
+00:39:05,520 --> 00:39:09,319
+have this and why do I have to have
+
+771
+00:39:09,319 --> 00:39:12,319
+this I mean this one is probably obvious
+
+772
+00:39:12,319 --> 00:39:15,480
+we do not want to modify the original
+
+773
+00:39:15,480 --> 00:39:18,560
+one so when we declare
+
+774
+00:39:18,560 --> 00:39:21,560
+sphere um yeah here like this when we
+
+775
+00:39:21,560 --> 00:39:26,240
+declare sphere t a copy of s so we want
+
+776
+00:39:26,240 --> 00:39:28,640
+a new sphere t to be a copy of s we
+
+777
+00:39:28,640 --> 00:39:30,800
+really want to promise that s will not
+
+778
+00:39:30,800 --> 00:39:34,119
+be changed when we duplicate it right
+
+779
+00:39:34,119 --> 00:39:36,400
+create a new object that is the same as
+
+780
+00:39:36,400 --> 00:39:39,280
+s but why do we pass by
+
+781
+00:39:39,280 --> 00:39:42,720
+reference anybody
+
+782
+00:39:43,560 --> 00:39:46,400
+knows what if we
+
+783
+00:39:46,400 --> 00:39:50,440
+didn't what if we passed by
+
+784
+00:39:54,160 --> 00:39:57,200
+value when we have to copy then whatever
+
+785
+00:39:57,200 --> 00:40:00,880
+is a this s into this invoking the copy
+
+786
+00:40:00,880 --> 00:40:03,200
+Constructor that we are
+
+787
+00:40:03,200 --> 00:40:05,200
+writing so it's like what's the check
+
+788
+00:40:05,200 --> 00:40:07,319
+and what's EG we're writing it it has to
+
+789
+00:40:07,319 --> 00:40:09,359
+be defined but in order to even call it
+
+790
+00:40:09,359 --> 00:40:12,359
+you have to in order to pass the
+
+791
+00:40:12,359 --> 00:40:14,880
+parameter you have to use it but you
+
+792
+00:40:14,880 --> 00:40:17,720
+didn't even write it yet you see that so
+
+793
+00:40:17,720 --> 00:40:19,800
+you have to you have no other choice but
+
+794
+00:40:19,800 --> 00:40:22,680
+to pass it by
+
+795
+00:40:23,160 --> 00:40:25,280
+reference if you don't if you don't put
+
+796
+00:40:25,280 --> 00:40:26,720
+reference here actually the compiler
+
+797
+00:40:26,720 --> 00:40:28,000
+will be on your side and and will'll
+
+798
+00:40:28,000 --> 00:40:30,040
+yell at you like you want a reference
+
+799
+00:40:30,040 --> 00:40:31,920
+there because otherwise it's just an
+
+800
+00:40:31,920 --> 00:40:35,480
+infinite Loop of recursion logical
+
+801
+00:40:35,480 --> 00:40:38,040
+recursion so that's good okay so you
+
+802
+00:40:38,040 --> 00:40:40,880
+have to pass by reference and you should
+
+803
+00:40:40,880 --> 00:40:43,640
+promise that it's a constant okay and
+
+804
+00:40:43,640 --> 00:40:45,119
+this is the two instances which we
+
+805
+00:40:45,119 --> 00:40:47,040
+taught right when you pass by a
+
+806
+00:40:47,040 --> 00:40:49,160
+parameter by value you invoke copy
+
+807
+00:40:49,160 --> 00:40:53,040
+Constructor and in these two
+
+808
+00:40:53,040 --> 00:40:55,680
+situations either for static sphere or
+
+809
+00:40:55,680 --> 00:40:57,839
+dynamic sphere you can ask for copy
+
+810
+00:40:57,839 --> 00:40:59,640
+Constructor to be
+
+811
+00:40:59,640 --> 00:41:03,599
+called and this is the signature for the
+
+812
+00:41:03,599 --> 00:41:05,119
+destructor
+
+813
+00:41:05,119 --> 00:41:08,280
+okay any questions so what did we cover
+
+814
+00:41:08,280 --> 00:41:10,680
+so far we covered Constructors copy
+
+815
+00:41:10,680 --> 00:41:12,720
+Constructors and destructors so
+
+816
+00:41:12,720 --> 00:41:15,480
+hopefully for your next MP you'll be
+
+817
+00:41:15,480 --> 00:41:17,760
+able to write and in Labs you you'll be
+
+818
+00:41:17,760 --> 00:41:19,160
+able to write
+
+819
+00:41:19,160 --> 00:41:22,200
+them properly that is ask for the
+
+820
+00:41:22,200 --> 00:41:25,160
+dynamic memory properly initialize all
+
+821
+00:41:25,160 --> 00:41:27,319
+of the members properly and then delete
+
+822
+00:41:27,319 --> 00:41:29,960
+needed in the destructor
+
+823
+00:41:29,960 --> 00:41:32,359
+properly but ask for memory and
+
+824
+00:41:32,359 --> 00:41:35,200
+initialize parameters in Constructors
+
+825
+00:41:35,200 --> 00:41:37,040
+properly
+
+826
+00:41:37,040 --> 00:41:40,560
+okay okay so
+
+827
+00:41:40,560 --> 00:41:44,240
+now what I want to go
+
+828
+00:41:44,240 --> 00:41:47,720
+through a little code like
+
+829
+00:41:47,720 --> 00:41:50,800
+this yeah it's just like a little puzzle
+
+830
+00:41:50,800 --> 00:41:54,040
+nothing really special this is also
+
+831
+00:41:54,040 --> 00:41:56,880
+related to this what does it mean to
+
+832
+00:41:56,880 --> 00:41:58,720
+pass
+
+833
+00:41:58,720 --> 00:42:00,200
+by
+
+834
+00:42:00,200 --> 00:42:02,319
+reference and
+
+835
+00:42:02,319 --> 00:42:04,960
+um when it's constant what does it
+
+836
+00:42:04,960 --> 00:42:10,000
+really mean right so you you pass this
+
+837
+00:42:10,000 --> 00:42:12,680
+object and during this instance you
+
+838
+00:42:12,680 --> 00:42:14,800
+promise to not change that original
+
+839
+00:42:14,800 --> 00:42:16,760
+object through this new
+
+840
+00:42:16,760 --> 00:42:21,280
+name but s can change still right s can
+
+841
+00:42:21,280 --> 00:42:24,559
+change it just for the through this name
+
+842
+00:42:24,559 --> 00:42:26,319
+you promise not to so what does it
+
+843
+00:42:26,319 --> 00:42:29,000
+really mean in a like a little smaller
+
+844
+00:42:29,000 --> 00:42:31,480
+code so let's look at it I have it also
+
+845
+00:42:31,480 --> 00:42:36,119
+on my I can invoke it on my
+
+846
+00:42:37,319 --> 00:42:41,920
+screen so what I have set up here is I
+
+847
+00:42:41,920 --> 00:42:44,520
+have integer x equals to five nothing
+
+848
+00:42:44,520 --> 00:42:47,400
+special and then the next line there
+
+849
+00:42:47,400 --> 00:42:51,359
+will be three situations either I call Y
+
+850
+00:42:51,359 --> 00:42:54,440
+to be a reference to X as a constant
+
+851
+00:42:54,440 --> 00:42:56,359
+reference or non-constant reference
+
+852
+00:42:56,359 --> 00:42:59,000
+right so here it's non- constant here is
+
+853
+00:42:59,000 --> 00:43:00,400
+constant here is
+
+854
+00:43:00,400 --> 00:43:03,720
+constant and then I try to modify either
+
+855
+00:43:03,720 --> 00:43:09,000
+y or X and I want you to think about if
+
+856
+00:43:09,000 --> 00:43:13,359
+you see well maybe it's difficult to see
+
+857
+00:43:13,359 --> 00:43:15,559
+and I cannot do anything to increase
+
+858
+00:43:15,559 --> 00:43:18,760
+this it will not do that
+
+859
+00:43:18,760 --> 00:43:22,599
+yeah what will be the result of running
+
+860
+00:43:22,599 --> 00:43:26,800
+these three codes so what the first one
+
+861
+00:43:26,800 --> 00:43:29,119
+is obviously 10 so here nothing really
+
+862
+00:43:29,119 --> 00:43:31,839
+special here oh I know where you can
+
+863
+00:43:31,839 --> 00:43:35,839
+look at it better here this slide maybe
+
+864
+00:43:35,839 --> 00:43:37,800
+so the first we can trace the first one
+
+865
+00:43:37,800 --> 00:43:39,680
+and then you guess what will happen in
+
+866
+00:43:39,680 --> 00:43:42,200
+the second and third so the first one
+
+867
+00:43:42,200 --> 00:43:46,280
+says my X is on the stack it has it is
+
+868
+00:43:46,280 --> 00:43:49,839
+initialized with value five my wife is
+
+869
+00:43:49,839 --> 00:43:52,960
+just another name for
+
+870
+00:43:52,960 --> 00:43:56,640
+X it's a reference so no pointers
+
+871
+00:43:56,640 --> 00:43:58,319
+nothing under underne it's a pointer but
+
+872
+00:43:58,319 --> 00:44:02,280
+it's it's another name in this scope so
+
+873
+00:44:02,280 --> 00:44:05,280
+both X and Y will be gone once the main
+
+874
+00:44:05,280 --> 00:44:08,160
+stops execution and then we say change y
+
+875
+00:44:08,160 --> 00:44:09,480
+to
+
+876
+00:44:09,480 --> 00:44:12,200
+10 so in the first program there is no
+
+877
+00:44:12,200 --> 00:44:14,400
+problem changing five to 10 there's no
+
+878
+00:44:14,400 --> 00:44:17,480
+constants everything is good so the
+
+879
+00:44:17,480 --> 00:44:21,319
+output when you change y to 10 x should
+
+880
+00:44:21,319 --> 00:44:24,119
+also B1 because it's just a different
+
+881
+00:44:24,119 --> 00:44:27,440
+name for the same memory location that's
+
+882
+00:44:27,440 --> 00:44:30,720
+cool so now what I do is I just put
+
+883
+00:44:30,720 --> 00:44:33,280
+constant here for this reference so y
+
+884
+00:44:33,280 --> 00:44:36,640
+becomes constant in second and third
+
+885
+00:44:36,640 --> 00:44:40,240
+case and then I try to modify either X
+
+886
+00:44:40,240 --> 00:44:44,960
+or Y and then print either X or
+
+887
+00:44:44,960 --> 00:44:48,240
+Y so please
+
+888
+00:44:48,240 --> 00:44:50,680
+speculate what's going to what will be
+
+889
+00:44:50,680 --> 00:44:56,040
+the most reasonable behavior in these
+
+890
+00:44:56,040 --> 00:44:59,040
+cases
+
+891
+00:45:17,480 --> 00:45:20,760
+let's see second case second
+
+892
+00:45:20,760 --> 00:45:26,040
+case so again X and Y are the same names
+
+893
+00:45:26,040 --> 00:45:31,119
+for five said that Y is constant right H
+
+894
+00:45:31,119 --> 00:45:33,520
+and then I say well y should change
+
+895
+00:45:33,520 --> 00:45:37,240
+value to 10 what do you think that will
+
+896
+00:45:37,240 --> 00:45:39,558
+lead
+
+897
+00:45:43,680 --> 00:45:46,880
+to and in this case you say okay not y
+
+898
+00:45:46,880 --> 00:45:49,040
+but X let's change we'll try either
+
+899
+00:45:49,040 --> 00:45:53,240
+change y to 10 or X to 10 under the same
+
+900
+00:45:53,240 --> 00:45:55,920
+conditions will there be the case where
+
+901
+00:45:55,920 --> 00:45:58,160
+the compiler will say no you
+
+902
+00:45:58,160 --> 00:46:02,000
+can't or or what let's see if anybody
+
+903
+00:46:02,000 --> 00:46:04,000
+guessed the
+
+904
+00:46:04,000 --> 00:46:09,079
+answer no let's run it
+
+905
+00:46:09,680 --> 00:46:13,359
+then so this is my code which one do we
+
+906
+00:46:13,359 --> 00:46:16,119
+want we first change y right why was
+
+907
+00:46:16,119 --> 00:46:20,640
+changed Y is the constant so can we do
+
+908
+00:46:24,280 --> 00:46:27,720
+it no why is constant so you can change
+
+909
+00:46:27,720 --> 00:46:30,319
+it similarly in those classes when you
+
+910
+00:46:30,319 --> 00:46:32,720
+when you do your copy construct you pass
+
+911
+00:46:32,720 --> 00:46:35,079
+something as a constant reference you
+
+912
+00:46:35,079 --> 00:46:38,480
+will not be able to change that original
+
+913
+00:46:38,480 --> 00:46:40,880
+object the compiler will run it you it
+
+914
+00:46:40,880 --> 00:46:43,640
+will say no no no you promised the the
+
+915
+00:46:43,640 --> 00:46:45,880
+function signature promises you will not
+
+916
+00:46:45,880 --> 00:46:47,920
+touch those values within that function
+
+917
+00:46:47,920 --> 00:46:49,559
+so that's that's really good that's
+
+918
+00:46:49,559 --> 00:46:51,839
+expected behavior and actually very nice
+
+919
+00:46:51,839 --> 00:46:55,200
+right but X was not promised not to
+
+920
+00:46:55,200 --> 00:46:59,280
+change so can I do that and if I do what
+
+921
+00:46:59,280 --> 00:47:01,880
+will be the result so let's see if you
+
+922
+00:47:01,880 --> 00:47:05,119
+guys can guess
+
+923
+00:47:05,400 --> 00:47:08,240
+now what will be the can I change S can
+
+924
+00:47:08,240 --> 00:47:10,200
+I change this original object that I
+
+925
+00:47:10,200 --> 00:47:12,400
+didn't promise it's not going to
+
+926
+00:47:12,400 --> 00:47:14,200
+change it
+
+927
+00:47:14,200 --> 00:47:16,880
+wasn't you know
+
+928
+00:47:16,880 --> 00:47:20,480
+what yeah
+
+929
+00:47:21,920 --> 00:47:23,760
+okay
+
+930
+00:47:23,760 --> 00:47:27,480
+okay it's fine you can change X and then
+
+931
+00:47:27,480 --> 00:47:29,280
+the Y will change but you're not doing
+
+932
+00:47:29,280 --> 00:47:31,520
+it through the name y that you promis to
+
+933
+00:47:31,520 --> 00:47:33,559
+be constant you're changing it through
+
+934
+00:47:33,559 --> 00:47:37,079
+the X name so you can access that memory
+
+935
+00:47:37,079 --> 00:47:40,480
+through X it's just some Behavior I
+
+936
+00:47:40,480 --> 00:47:42,520
+guess that can be useful in
+
+937
+00:47:42,520 --> 00:47:45,599
+understanding all of this function
+
+938
+00:47:45,599 --> 00:47:48,800
+signatures um because when you pass this
+
+939
+00:47:48,800 --> 00:47:52,440
+original object as a constant reference
+
+940
+00:47:52,440 --> 00:47:54,760
+you will not be able to modify it within
+
+941
+00:47:54,760 --> 00:47:56,520
+the scope of this Constructor copy
+
+942
+00:47:56,520 --> 00:47:57,520
+construct
+
+943
+00:47:57,520 --> 00:47:59,040
+but the original s of course you can
+
+944
+00:47:59,040 --> 00:48:01,680
+change it right it's
+
+945
+00:48:01,680 --> 00:48:06,720
+fine okay let's
+
+946
+00:48:09,200 --> 00:48:11,680
+go
+
+947
+00:48:11,680 --> 00:48:14,559
+now one more problem so what's the time
+
+948
+00:48:14,559 --> 00:48:16,640
+do we have enough time yes we'll have
+
+949
+00:48:16,640 --> 00:48:19,000
+plenty of time we might even finish soon
+
+950
+00:48:19,000 --> 00:48:22,319
+early a little bit so I want to talk
+
+951
+00:48:22,319 --> 00:48:25,520
+about one more interesting case of what
+
+952
+00:48:25,520 --> 00:48:28,119
+we could do with our op objects and what
+
+953
+00:48:28,119 --> 00:48:31,000
+is again provided by default by the
+
+954
+00:48:31,000 --> 00:48:34,000
+system so if you don't want the default
+
+955
+00:48:34,000 --> 00:48:37,119
+Behavior you better change it as well so
+
+956
+00:48:37,119 --> 00:48:40,599
+what if I say I declare two spheres A
+
+957
+00:48:40,599 --> 00:48:41,680
+and
+
+958
+00:48:41,680 --> 00:48:44,920
+B so they a default Constructor will be
+
+959
+00:48:44,920 --> 00:48:47,200
+called both of them are initialize to
+
+960
+00:48:47,200 --> 00:48:51,400
+something and then you initialize
+
+961
+00:48:51,400 --> 00:48:54,640
+oh well right right doesn't matter it
+
+962
+00:48:54,640 --> 00:48:56,400
+doesn't have to because we already wrote
+
+963
+00:48:56,400 --> 00:48:59,680
+a nice default Constructors so they will
+
+964
+00:48:59,680 --> 00:49:01,880
+be initialized over there and then I say
+
+965
+00:49:01,880 --> 00:49:04,160
+b equals to
+
+966
+00:49:04,160 --> 00:49:07,799
+A that is assign it's not equals B
+
+967
+00:49:07,799 --> 00:49:10,280
+assign A to B this is an assignment
+
+968
+00:49:10,280 --> 00:49:14,200
+operator assign A to B and the system
+
+969
+00:49:14,200 --> 00:49:15,920
+will say oh fine you didn't write an
+
+970
+00:49:15,920 --> 00:49:20,839
+operator uh assignment operator here so
+
+971
+00:49:20,839 --> 00:49:22,640
+I'll have to use the default one and the
+
+972
+00:49:22,640 --> 00:49:25,119
+default one will say I know exactly how
+
+973
+00:49:25,119 --> 00:49:27,520
+to do it I just do it member wise
+
+974
+00:49:27,520 --> 00:49:30,000
+memberwise assignment so just like the
+
+975
+00:49:30,000 --> 00:49:35,280
+default copy constructure that is I copy
+
+976
+00:49:35,280 --> 00:49:40,000
+into B if this is a I copy into B the
+
+977
+00:49:40,000 --> 00:49:42,160
+the radius I copy the number of
+
+978
+00:49:42,160 --> 00:49:44,799
+attributes and I copy the
+
+979
+00:49:44,799 --> 00:49:48,480
+pointer that is the memory address two
+
+980
+00:49:48,480 --> 00:49:51,119
+attributes so the same situation that
+
+981
+00:49:51,119 --> 00:49:53,599
+you don't want to have you don't want
+
+982
+00:49:53,599 --> 00:49:57,760
+separate objects b& a to um point to the
+
+983
+00:49:57,760 --> 00:50:01,000
+same point in heat
+
+984
+00:50:01,440 --> 00:50:05,119
+memory right so so this is bad you don't
+
+985
+00:50:05,119 --> 00:50:07,440
+want
+
+986
+00:50:07,799 --> 00:50:10,880
+that once they go out of scope here two
+
+987
+00:50:10,880 --> 00:50:12,559
+D structures will be called and you'll
+
+988
+00:50:12,559 --> 00:50:15,040
+call delete of this memory twice which
+
+989
+00:50:15,040 --> 00:50:18,839
+is what it will lead to some bad
+
+990
+00:50:18,839 --> 00:50:21,440
+behavior and undefined Behavior so
+
+991
+00:50:21,440 --> 00:50:23,119
+you'll have a dangling pointer over
+
+992
+00:50:23,119 --> 00:50:26,760
+there okay so that means that you'll all
+
+993
+00:50:26,760 --> 00:50:29,880
+also once you write any member function
+
+994
+00:50:29,880 --> 00:50:31,640
+that will ask for
+
+995
+00:50:31,640 --> 00:50:34,119
+new either it's copy Constructor
+
+996
+00:50:34,119 --> 00:50:35,839
+Constructor or any other helper
+
+997
+00:50:35,839 --> 00:50:38,040
+functions and you have your destructors
+
+998
+00:50:38,040 --> 00:50:40,559
+that get rid of this memory then if you
+
+999
+00:50:40,559 --> 00:50:43,160
+ever want to assign this objects to each
+
+1000
+00:50:43,160 --> 00:50:45,359
+other you will have to rewrite this
+
+1001
+00:50:45,359 --> 00:50:47,680
+assignment operator as well because
+
+1002
+00:50:47,680 --> 00:50:49,559
+otherwise by default the system will do
+
+1003
+00:50:49,559 --> 00:50:51,440
+something bad and that's a lot to
+
+1004
+00:50:51,440 --> 00:50:53,200
+remember right that's a lot to remember
+
+1005
+00:50:53,200 --> 00:50:55,520
+that okay you once you write one new
+
+1006
+00:50:55,520 --> 00:50:57,520
+statement in any of your con structures
+
+1007
+00:50:57,520 --> 00:50:59,559
+you're done you'll have to have all of
+
+1008
+00:50:59,559 --> 00:51:02,799
+these um other functions that you will
+
+1009
+00:51:02,799 --> 00:51:05,040
+have to rewrite and if you forget one
+
+1010
+00:51:05,040 --> 00:51:07,680
+and the client will use this assignment
+
+1011
+00:51:07,680 --> 00:51:09,559
+and you forgot to write it there will be
+
+1012
+00:51:09,559 --> 00:51:12,000
+bad memory problems right so it's very
+
+1013
+00:51:12,000 --> 00:51:14,520
+important to remember so now it turns
+
+1014
+00:51:14,520 --> 00:51:16,200
+out that it's not only the assignment
+
+1015
+00:51:16,200 --> 00:51:18,200
+that you could overwrite for your Sphere
+
+1016
+00:51:18,200 --> 00:51:21,040
+for your custom uh
+
+1017
+00:51:21,040 --> 00:51:24,480
+types it could be any of the operators
+
+1018
+00:51:24,480 --> 00:51:26,319
+so any of the nice ones which ones do
+
+1019
+00:51:26,319 --> 00:51:27,799
+you like less
+
+1020
+00:51:27,799 --> 00:51:30,119
+than you would have to Define what does
+
+1021
+00:51:30,119 --> 00:51:32,839
+it mean for spheres to be less one to be
+
+1022
+00:51:32,839 --> 00:51:34,359
+less than another but maybe you would
+
+1023
+00:51:34,359 --> 00:51:38,040
+compare their radiuses assignment plus
+
+1024
+00:51:38,040 --> 00:51:40,599
+you could add two spheres together again
+
+1025
+00:51:40,599 --> 00:51:42,960
+I don't know what it means for apples to
+
+1026
+00:51:42,960 --> 00:51:45,240
+be added it's one thing for like as I
+
+1027
+00:51:45,240 --> 00:51:47,000
+don't know you but it's the design
+
+1028
+00:51:47,000 --> 00:51:49,440
+choice and it's up to the designer up to
+
+1029
+00:51:49,440 --> 00:51:52,200
+you guys you could rewrite the reference
+
+1030
+00:51:52,200 --> 00:51:54,720
+operator you could rewrite Plus+ you
+
+1031
+00:51:54,720 --> 00:52:00,240
+could re rewrite any of this anything so
+
+1032
+00:52:00,240 --> 00:52:02,160
+it turns out all of the operators you
+
+1033
+00:52:02,160 --> 00:52:04,240
+could rewrite if you wanted to like for
+
+1034
+00:52:04,240 --> 00:52:07,400
+example if you wanted to print spheres
+
+1035
+00:52:07,400 --> 00:52:10,640
+you could rewrite this a stream operator
+
+1036
+00:52:10,640 --> 00:52:11,599
+as
+
+1037
+00:52:11,599 --> 00:52:14,040
+well for spheres to do something
+
+1038
+00:52:14,040 --> 00:52:17,200
+particular so let's look at this code
+
+1039
+00:52:17,200 --> 00:52:20,280
+and I assert that you guys are totally
+
+1040
+00:52:20,280 --> 00:52:23,400
+comfortable with rewriting operations
+
+1041
+00:52:23,400 --> 00:52:26,040
+for operators for different types
+
+1042
+00:52:26,040 --> 00:52:29,040
+because of this so let me see I want to
+
+1043
+00:52:29,040 --> 00:52:33,279
+make sure that I write everything
+
+1044
+00:52:35,359 --> 00:52:40,079
+that yeah okay so why why do I think and
+
+1045
+00:52:40,079 --> 00:52:41,960
+let's just change the code to instead of
+
+1046
+00:52:41,960 --> 00:52:49,599
+c a sign a plus b let's do c out C
+
+1047
+00:52:49,720 --> 00:52:53,079
+out and another
+
+1048
+00:52:53,079 --> 00:52:56,799
+operator double less than okay so let's
+
+1049
+00:52:56,799 --> 00:52:58,880
+say this is my code and then I don't
+
+1050
+00:52:58,880 --> 00:53:00,040
+have C
+
+1051
+00:53:00,040 --> 00:53:02,440
+here and so I Asser that you're
+
+1052
+00:53:02,440 --> 00:53:05,119
+comfortable with rewriting operators for
+
+1053
+00:53:05,119 --> 00:53:08,040
+different types because if I were to
+
+1054
+00:53:08,040 --> 00:53:11,920
+declare a and b as integers integer
+
+1055
+00:53:11,920 --> 00:53:15,400
+a then you'd know exactly what's this
+
+1056
+00:53:15,400 --> 00:53:16,640
+line
+
+1057
+00:53:16,640 --> 00:53:19,119
+accomplishing that is a plus b as
+
+1058
+00:53:19,119 --> 00:53:21,440
+integers you know you just add them and
+
+1059
+00:53:21,440 --> 00:53:23,559
+then you print it on the terminal that's
+
+1060
+00:53:23,559 --> 00:53:28,200
+fine but if I were to declare a and b as
+
+1061
+00:53:28,200 --> 00:53:31,000
+doubles that's a different type you
+
+1062
+00:53:31,000 --> 00:53:32,839
+still are totally fine with seeing that
+
+1063
+00:53:32,839 --> 00:53:35,160
+it's going to be just double plus
+
+1064
+00:53:35,160 --> 00:53:37,880
+whatever add two doubles print them out
+
+1065
+00:53:37,880 --> 00:53:39,319
+that's
+
+1066
+00:53:39,319 --> 00:53:45,200
+okay or what if a and b were
+
+1067
+00:53:45,200 --> 00:53:49,400
+strings STD strings
+
+1068
+00:53:49,400 --> 00:53:51,880
+right you'd probably guess even if you
+
+1069
+00:53:51,880 --> 00:53:54,280
+didn't know you would guess that a plus
+
+1070
+00:53:54,280 --> 00:53:57,280
+b should mean what if it's two strings
+
+1071
+00:53:57,280 --> 00:53:59,839
+what is strain plus strain what should
+
+1072
+00:53:59,839 --> 00:54:02,920
+it be and it is in standard Library
+
+1073
+00:54:02,920 --> 00:54:04,359
+that's how it's implemented so what is a
+
+1074
+00:54:04,359 --> 00:54:06,960
+plus b for
+
+1075
+00:54:07,880 --> 00:54:11,599
+strains concatenation right and then you
+
+1076
+00:54:11,599 --> 00:54:14,160
+know exactly how to print them as
+
+1077
+00:54:14,160 --> 00:54:17,040
+well you you just print it on the screen
+
+1078
+00:54:17,040 --> 00:54:20,200
+on the on the screen right so which
+
+1079
+00:54:20,200 --> 00:54:22,400
+means that for all of this three
+
+1080
+00:54:22,400 --> 00:54:24,799
+different types plus is written
+
+1081
+00:54:24,799 --> 00:54:26,599
+specifically for that class and it's a
+
+1082
+00:54:26,599 --> 00:54:28,960
+different operation for each so it's not
+
+1083
+00:54:28,960 --> 00:54:32,440
+far than to imagine that you could also
+
+1084
+00:54:32,440 --> 00:54:36,319
+Define two spheres A and B and if you
+
+1085
+00:54:36,319 --> 00:54:39,599
+were to properly Define plus operation
+
+1086
+00:54:39,599 --> 00:54:43,119
+for spheres and then properly Define how
+
+1087
+00:54:43,119 --> 00:54:46,079
+to print them then whatever information
+
+1088
+00:54:46,079 --> 00:54:49,000
+you wanted would be printed about
+
+1089
+00:54:49,000 --> 00:54:53,680
+that sphere plus sphere object right and
+
+1090
+00:54:53,680 --> 00:54:55,200
+then what you would have to do you would
+
+1091
+00:54:55,200 --> 00:54:58,760
+have to just s explicitly write it write
+
+1092
+00:54:58,760 --> 00:55:02,599
+that operator plus as a function or as a
+
+1093
+00:55:02,599 --> 00:55:04,720
+member function in your class
+
+1094
+00:55:04,720 --> 00:55:07,200
+sphere you just have to explicitly write
+
+1095
+00:55:07,200 --> 00:55:09,520
+it and that's the function signature for
+
+1096
+00:55:09,520 --> 00:55:12,920
+an overloaded operator plus we'll go
+
+1097
+00:55:12,920 --> 00:55:15,200
+through this function
+
+1098
+00:55:15,200 --> 00:55:19,359
+signatures um later for plus but let's
+
+1099
+00:55:19,359 --> 00:55:21,680
+go back to the
+
+1100
+00:55:21,680 --> 00:55:24,960
+operator assignment operator or operator
+
+1101
+00:55:24,960 --> 00:55:27,799
+equals so we want to redefine it if you
+
+1102
+00:55:27,799 --> 00:55:29,680
+want to redefine it from this to
+
+1103
+00:55:29,680 --> 00:55:32,440
+something else then we would have to
+
+1104
+00:55:32,440 --> 00:55:35,359
+write it explicitly so we either we call
+
+1105
+00:55:35,359 --> 00:55:36,480
+it either
+
+1106
+00:55:36,480 --> 00:55:41,960
+redefine operator equals or override
+
+1107
+00:55:41,960 --> 00:55:44,799
+that's another term overwrite that
+
+1108
+00:55:44,799 --> 00:55:46,640
+operator and you would have to
+
+1109
+00:55:46,640 --> 00:55:48,720
+explicitly put it as one of the
+
+1110
+00:55:48,720 --> 00:55:51,960
+functions in your class
+
+1111
+00:55:51,960 --> 00:55:55,880
+members the name of this operator is
+
+1112
+00:55:55,880 --> 00:55:59,960
+operator equals okay so that's the name
+
+1113
+00:55:59,960 --> 00:56:03,200
+and it will have some return
+
+1114
+00:56:03,200 --> 00:56:07,439
+parameters return
+
+1115
+00:56:09,720 --> 00:56:13,039
+parameters and let's see what
+
+1116
+00:56:13,039 --> 00:56:17,240
+I just want to make sure
+
+1117
+00:56:20,960 --> 00:56:24,359
+that right sorry return value of course
+
+1118
+00:56:24,359 --> 00:56:27,720
+return value let's write it properly use
+
+1119
+00:56:27,720 --> 00:56:30,640
+the proper terms and all the parameters
+
+1120
+00:56:30,640 --> 00:56:32,480
+here so parameter
+
+1121
+00:56:32,480 --> 00:56:36,280
+list so that's just like any function
+
+1122
+00:56:36,280 --> 00:56:39,400
+signature that's a function signature
+
+1123
+00:56:39,400 --> 00:56:42,039
+for uh this operator
+
+1124
+00:56:42,039 --> 00:56:45,359
+equal so you return something and you
+
+1125
+00:56:45,359 --> 00:56:47,160
+have a parameter list and all you have
+
+1126
+00:56:47,160 --> 00:56:49,880
+to do is just write it so we will start
+
+1127
+00:56:49,880 --> 00:56:52,119
+with that but first let's let's think
+
+1128
+00:56:52,119 --> 00:56:54,280
+conceptually what does it have to
+
+1129
+00:56:54,280 --> 00:56:57,839
+accomplish so what should be the result
+
+1130
+00:56:57,839 --> 00:56:59,920
+of this what should this operator equal
+
+1131
+00:56:59,920 --> 00:57:03,559
+do within within its execution it
+
+1132
+00:57:03,559 --> 00:57:05,920
+shouldn't do what the default operator
+
+1133
+00:57:05,920 --> 00:57:09,599
+does but I have a slide of what we think
+
+1134
+00:57:09,599 --> 00:57:10,680
+it should
+
+1135
+00:57:10,680 --> 00:57:14,440
+accomplish so let's look at different
+
+1136
+00:57:14,440 --> 00:57:18,960
+scenarios if I write this line in my
+
+1137
+00:57:18,960 --> 00:57:23,119
+code then I'll have some B and some a
+
+1138
+00:57:23,119 --> 00:57:25,839
+objects so let's look at this first case
+
+1139
+00:57:25,839 --> 00:57:28,920
+where this objects are different that is
+
+1140
+00:57:28,920 --> 00:57:32,079
+they have different memory regions
+
+1141
+00:57:32,079 --> 00:57:34,520
+associated with their members and
+
+1142
+00:57:34,520 --> 00:57:36,799
+whatever dynamic memory that they have
+
+1143
+00:57:36,799 --> 00:57:38,880
+so they look different right they
+
+1144
+00:57:38,880 --> 00:57:41,440
+different spheres because we're talking
+
+1145
+00:57:41,440 --> 00:57:43,839
+about spheres but whatever U classes you
+
+1146
+00:57:43,839 --> 00:57:46,680
+want to talk about so they're different
+
+1147
+00:57:46,680 --> 00:57:48,640
+so in this case what should be the
+
+1148
+00:57:48,640 --> 00:57:50,799
+result of this assignment how should be
+
+1149
+00:57:50,799 --> 00:57:54,559
+look like after this
+
+1150
+00:57:54,559 --> 00:57:57,039
+assignment it should look just like a
+
+1151
+00:57:57,039 --> 00:57:59,880
+right just like
+
+1152
+00:58:00,960 --> 00:58:04,680
+a but in a separate space of memory
+
+1153
+00:58:04,680 --> 00:58:06,920
+right we don't want to have it in the
+
+1154
+00:58:06,920 --> 00:58:09,520
+same location right we we just want
+
+1155
+00:58:09,520 --> 00:58:13,520
+to then free all of this memory and put
+
+1156
+00:58:13,520 --> 00:58:15,880
+new values there
+
+1157
+00:58:15,880 --> 00:58:19,760
+right however we should make sure that
+
+1158
+00:58:19,760 --> 00:58:23,200
+it's not this situation where imagine
+
+1159
+00:58:23,200 --> 00:58:24,920
+that b and a are already just two
+
+1160
+00:58:24,920 --> 00:58:27,799
+different names of the same memory so
+
+1161
+00:58:27,799 --> 00:58:29,760
+they are two different names of the same
+
+1162
+00:58:29,760 --> 00:58:32,359
+sphere in that case what should be the
+
+1163
+00:58:32,359 --> 00:58:35,000
+result of this
+
+1164
+00:58:36,079 --> 00:58:39,440
+operation nothing you're done right so
+
+1165
+00:58:39,440 --> 00:58:41,319
+do nothing
+
+1166
+00:58:41,319 --> 00:58:44,359
+here right do nothing here otherwise
+
+1167
+00:58:44,359 --> 00:58:50,038
+you'll just do more work okay so here do
+
+1168
+00:58:50,680 --> 00:58:55,119
+nothing here what should you do
+
+1169
+00:58:55,119 --> 00:58:57,400
+here how do you check that this
+
+1170
+00:58:57,400 --> 00:59:01,200
+situation is this and not
+
+1171
+00:59:01,240 --> 00:59:06,559
+this so if right hand side is not equal
+
+1172
+00:59:06,559 --> 00:59:09,880
+in some sense to left hand side right
+
+1173
+00:59:09,880 --> 00:59:11,920
+which is what they're not identical
+
+1174
+00:59:11,920 --> 00:59:13,680
+memory they're not two different names
+
+1175
+00:59:13,680 --> 00:59:16,680
+for the same sphere or already only in
+
+1176
+00:59:16,680 --> 00:59:19,920
+that case you want to do two operations
+
+1177
+00:59:19,920 --> 00:59:22,480
+you want to
+
+1178
+00:59:22,480 --> 00:59:26,440
+clear the left hand side the get get rid
+
+1179
+00:59:26,440 --> 00:59:27,799
+of this
+
+1180
+00:59:27,799 --> 00:59:30,319
+memory and then what
+
+1181
+00:59:30,319 --> 00:59:34,240
+copy copy the right hand side into the
+
+1182
+00:59:34,240 --> 00:59:36,440
+left hand side so think of this first
+
+1183
+00:59:36,440 --> 00:59:38,880
+step as your
+
+1184
+00:59:38,880 --> 00:59:41,359
+Destructor and the Second Step as your
+
+1185
+00:59:41,359 --> 00:59:42,240
+copy
+
+1186
+00:59:42,240 --> 00:59:44,520
+Constructor so effectively it will be
+
+1187
+00:59:44,520 --> 00:59:48,160
+the same code and that's why I'll show
+
+1188
+00:59:48,160 --> 00:59:51,200
+you in the next
+
+1189
+00:59:51,200 --> 00:59:54,559
+slide how this operator
+
+1190
+00:59:54,559 --> 00:59:56,680
+equal function
+
+1191
+00:59:56,680 --> 00:59:58,000
+is
+
+1192
+00:59:58,000 --> 01:00:01,119
+implemented so it takes the right hand
+
+1193
+01:00:01,119 --> 01:00:02,760
+side as a
+
+1194
+01:00:02,760 --> 01:00:08,520
+parameter it returns a sphere by
+
+1195
+01:00:08,520 --> 01:00:12,720
+reference which is this so whatever B is
+
+1196
+01:00:12,720 --> 01:00:15,599
+do you remember what this is in C++
+
+1197
+01:00:15,599 --> 01:00:17,559
+maybe we didn't discuss it I think in
+
+1198
+01:00:17,559 --> 01:00:19,839
+one of the labs it mentions it but do
+
+1199
+01:00:19,839 --> 01:00:22,240
+you remember what is this this
+
+1200
+01:00:22,240 --> 01:00:23,799
+is
+
+1201
+01:00:23,799 --> 01:00:28,038
+a pointer
+
+1202
+01:00:28,160 --> 01:00:30,359
+to
+
+1203
+01:00:30,359 --> 01:00:35,440
+the to the object right to the
+
+1204
+01:00:35,440 --> 01:00:39,319
+object So within the object or to to
+
+1205
+01:00:39,319 --> 01:00:42,880
+itself to itself let's put
+
+1206
+01:00:42,880 --> 01:00:45,720
+itself so within this object when you
+
+1207
+01:00:45,720 --> 01:00:48,240
+call any of these functions this will
+
+1208
+01:00:48,240 --> 01:00:51,480
+refer to to to to me to the object
+
+1209
+01:00:51,480 --> 01:00:53,520
+that's calling but except that through a
+
+1210
+01:00:53,520 --> 01:00:55,599
+pointer so this is a pointer that's why
+
+1211
+01:00:55,599 --> 01:00:58,960
+if you want want to return
+
+1212
+01:00:59,000 --> 01:01:02,079
+B like in our picture before if you want
+
+1213
+01:01:02,079 --> 01:01:04,400
+to return
+
+1214
+01:01:04,400 --> 01:01:08,039
+B uh from sphere you have to Der
+
+1215
+01:01:08,039 --> 01:01:09,680
+reference
+
+1216
+01:01:09,680 --> 01:01:12,400
+this and return
+
+1217
+01:01:12,400 --> 01:01:14,720
+it
+
+1218
+01:01:14,720 --> 01:01:18,039
+okay but anyway so all your operator
+
+1219
+01:01:18,039 --> 01:01:21,200
+assignment or operator equal is doing is
+
+1220
+01:01:21,200 --> 01:01:23,839
+checking if this is not equal to the
+
+1221
+01:01:23,839 --> 01:01:26,119
+right hand side that is if they're not
+
+1222
+01:01:26,119 --> 01:01:26,960
+the same
+
+1223
+01:01:26,960 --> 01:01:29,640
+names uh different names to the same
+
+1224
+01:01:29,640 --> 01:01:34,200
+memory uh location of a of a sphere then
+
+1225
+01:01:34,200 --> 01:01:37,520
+clear or call the same lines as the
+
+1226
+01:01:37,520 --> 01:01:40,240
+destructor and then copy that is call
+
+1227
+01:01:40,240 --> 01:01:42,079
+the same lines as a copy
+
+1228
+01:01:42,079 --> 01:01:44,160
+Constructor and these are the helper
+
+1229
+01:01:44,160 --> 01:01:46,920
+functions that are very useful to keep
+
+1230
+01:01:46,920 --> 01:01:48,359
+so instead of actually writing
+
+1231
+01:01:48,359 --> 01:01:50,559
+Constructors or copy Constructors you
+
+1232
+01:01:50,559 --> 01:01:52,760
+write as two helper functions and call
+
+1233
+01:01:52,760 --> 01:01:55,200
+correspondingly them when needed because
+
+1234
+01:01:55,200 --> 01:01:57,000
+they are needed in Constructors they
+
+1235
+01:01:57,000 --> 01:01:59,799
+needed in destructors and they needed in
+
+1236
+01:01:59,799 --> 01:02:03,039
+various operators as well and in your
+
+1237
+01:02:03,039 --> 01:02:04,760
+Labs that's what we
+
+1238
+01:02:04,760 --> 01:02:07,480
+do okay but this is essentially a
+
+1239
+01:02:07,480 --> 01:02:10,520
+Destructor code and this is a copy
+
+1240
+01:02:10,520 --> 01:02:15,400
+Constructor code okay so do you like
+
+1241
+01:02:15,400 --> 01:02:17,839
+this and help me parse it I think like
+
+1242
+01:02:17,839 --> 01:02:19,640
+it can be really overwhelming I think
+
+1243
+01:02:19,640 --> 01:02:22,119
+when you see it for the first time so do
+
+1244
+01:02:22,119 --> 01:02:24,440
+you like
+
+1245
+01:02:24,440 --> 01:02:27,799
+this and um um I think my first question
+
+1246
+01:02:27,799 --> 01:02:30,960
+about is what is this first line in the
+
+1247
+01:02:30,960 --> 01:02:33,799
+first place what is this why not this
+
+1248
+01:02:33,799 --> 01:02:35,400
+and what does it even mean parse this
+
+1249
+01:02:35,400 --> 01:02:39,799
+for me I really really want you to parse
+
+1250
+01:02:54,839 --> 01:02:57,839
+this
+
+1251
+01:03:00,079 --> 01:03:02,760
+yeah so we can talk about it here if you
+
+1252
+01:03:02,760 --> 01:03:04,680
+if you answer then I'll see if you
+
+1253
+01:03:04,680 --> 01:03:08,440
+prepare your answer so why why not this
+
+1254
+01:03:08,440 --> 01:03:12,240
+and why this what is this accomplishing
+
+1255
+01:03:12,240 --> 01:03:14,400
+so remember we're talking about b equals
+
+1256
+01:03:14,400 --> 01:03:20,279
+a this line of code a is passed by
+
+1257
+01:03:20,279 --> 01:03:24,559
+reference as a right hand side and
+
+1258
+01:03:24,559 --> 01:03:27,000
+B is this
+
+1259
+01:03:27,000 --> 01:03:33,000
+object um you can think of this B A is
+
+1260
+01:03:33,000 --> 01:03:34,960
+assigned to B as the
+
+1261
+01:03:34,960 --> 01:03:40,559
+following equivalent synta B
+
+1262
+01:03:40,559 --> 01:03:44,599
+operator equals of
+
+1263
+01:03:46,480 --> 01:03:49,400
+a so that's what's going on underneath
+
+1264
+01:03:49,400 --> 01:03:52,200
+when you sign a to B this operator will
+
+1265
+01:03:52,200 --> 01:03:55,359
+be called as if you wrote this so this
+
+1266
+01:03:55,359 --> 01:03:58,079
+is a a little more understandable right
+
+1267
+01:03:58,079 --> 01:04:02,359
+it's like you take B object you access
+
+1268
+01:04:02,359 --> 01:04:05,599
+its member function operator equal and
+
+1269
+01:04:05,599 --> 01:04:08,799
+you're calling it with this parameter a
+
+1270
+01:04:08,799 --> 01:04:10,960
+so that's that's cool right then the
+
+1271
+01:04:10,960 --> 01:04:13,160
+right hand side is effectively a by
+
+1272
+01:04:13,160 --> 01:04:15,760
+reference and a constant
+
+1273
+01:04:15,760 --> 01:04:18,160
+reference that is we are not making a
+
+1274
+01:04:18,160 --> 01:04:21,720
+copy of a and we promise not to change
+
+1275
+01:04:21,720 --> 01:04:25,279
+the right hand side but the return value
+
+1276
+01:04:25,279 --> 01:04:28,440
+should be changed B right so the return
+
+1277
+01:04:28,440 --> 01:04:30,240
+value should be
+
+1278
+01:04:30,240 --> 01:04:33,279
+this and not a pointer to it not this
+
+1279
+01:04:33,279 --> 01:04:35,599
+but a der reference this the B itself
+
+1280
+01:04:35,599 --> 01:04:38,520
+the object B that we are passing we are
+
+1281
+01:04:38,520 --> 01:04:40,520
+passing it by reference remember passing
+
+1282
+01:04:40,520 --> 01:04:42,920
+by reference is dang returning by
+
+1283
+01:04:42,920 --> 01:04:45,760
+reference is a dangerous thing but B is
+
+1284
+01:04:45,760 --> 01:04:48,720
+not a local variable this is not local
+
+1285
+01:04:48,720 --> 01:04:51,240
+this is living somewhere globally so
+
+1286
+01:04:51,240 --> 01:04:53,119
+returning it by reference is perfectly
+
+1287
+01:04:53,119 --> 01:04:54,960
+fine because otherwise if you don't if
+
+1288
+01:04:54,960 --> 01:04:56,920
+you return it by you there's a copy
+
+1289
+01:04:56,920 --> 01:04:58,960
+Constructor and we don't want that we
+
+1290
+01:04:58,960 --> 01:05:02,559
+just want to return updated b b will be
+
+1291
+01:05:02,559 --> 01:05:06,000
+updated upon this
+
+1292
+01:05:06,960 --> 01:05:10,160
+call that's good right that's good so
+
+1293
+01:05:10,160 --> 01:05:11,559
+this is
+
+1294
+01:05:11,559 --> 01:05:16,440
+good this is now okay so what are we
+
+1295
+01:05:16,440 --> 01:05:21,119
+checking with this we checking that the
+
+1296
+01:05:21,119 --> 01:05:24,920
+pointer that is the memory location of B
+
+1297
+01:05:24,920 --> 01:05:29,720
+is not equal to the memory location of
+
+1298
+01:05:29,720 --> 01:05:32,640
+a right so they are not two different
+
+1299
+01:05:32,640 --> 01:05:34,400
+references or two different names of the
+
+1300
+01:05:34,400 --> 01:05:38,520
+same memory so why don't we instead
+
+1301
+01:05:38,520 --> 01:05:42,400
+check whether the object B itself is not
+
+1302
+01:05:42,400 --> 01:05:45,160
+the same as
+
+1303
+01:05:47,200 --> 01:05:49,440
+a because then we wouldn't have to do
+
+1304
+01:05:49,440 --> 01:05:52,119
+the copying why don't we do this so
+
+1305
+01:05:52,119 --> 01:05:53,480
+there are three reasons and we're going
+
+1306
+01:05:53,480 --> 01:05:57,880
+to list them all guess one why is that
+
+1307
+01:05:57,880 --> 01:06:00,480
+how long will it be to do that that's
+
+1308
+01:06:00,480 --> 01:06:02,839
+first
+
+1309
+01:06:03,119 --> 01:06:06,079
+question how long will
+
+1310
+01:06:06,079 --> 01:06:10,119
+be how how long will it take whether B
+
+1311
+01:06:10,119 --> 01:06:13,200
+is not equal to
+
+1312
+01:06:13,680 --> 01:06:16,160
+a essentially it's kind of like checking
+
+1313
+01:06:16,160 --> 01:06:19,880
+B is not equal to a instead of checking
+
+1314
+01:06:19,880 --> 01:06:22,200
+the address of B is not equal the
+
+1315
+01:06:22,200 --> 01:06:26,319
+address of a which is this
+
+1316
+01:06:26,319 --> 01:06:27,720
+so this is fact because it's just
+
+1317
+01:06:27,720 --> 01:06:29,960
+checking the addresses this is lawn
+
+1318
+01:06:29,960 --> 01:06:32,480
+because that's the member wise checking
+
+1319
+01:06:32,480 --> 01:06:35,440
+for equality right so it's as long as
+
+1320
+01:06:35,440 --> 01:06:37,400
+just to make a new copy of
+
+1321
+01:06:37,400 --> 01:06:40,680
+B so we don't need to do that like yeah
+
+1322
+01:06:40,680 --> 01:06:42,920
+maybe it would save time in what not
+
+1323
+01:06:42,920 --> 01:06:44,799
+make in a copy of B but to check for it
+
+1324
+01:06:44,799 --> 01:06:46,559
+you have to go member wise so it's as
+
+1325
+01:06:46,559 --> 01:06:49,680
+long so that's why we don't do this so
+
+1326
+01:06:49,680 --> 01:06:54,319
+number one because it will
+
+1327
+01:06:54,319 --> 01:06:56,799
+take a as
+
+1328
+01:06:56,799 --> 01:07:00,520
+long as just create a new
+
+1329
+01:07:00,520 --> 01:07:02,240
+copy
+
+1330
+01:07:02,240 --> 01:07:06,480
+create a new copy of
+
+1331
+01:07:06,480 --> 01:07:10,920
+B okay so that's one thing there's some
+
+1332
+01:07:10,920 --> 01:07:12,640
+other things that I don't
+
+1333
+01:07:12,640 --> 01:07:14,920
+remember oh yeah yeah then you would
+
+1334
+01:07:14,920 --> 01:07:17,160
+also have to overload this operation we
+
+1335
+01:07:17,160 --> 01:07:19,520
+didn't overload it otherwise by default
+
+1336
+01:07:19,520 --> 01:07:21,319
+it would only go through members and not
+
+1337
+01:07:21,319 --> 01:07:24,520
+the dynamic memory values so you would
+
+1338
+01:07:24,520 --> 01:07:26,319
+have to overwrite another other
+
+1339
+01:07:26,319 --> 01:07:28,319
+operation maybe you want to do that
+
+1340
+01:07:28,319 --> 01:07:30,319
+maybe you don't but in then just
+
+1341
+01:07:30,319 --> 01:07:33,799
+checking the addresses is fine perfectly
+
+1342
+01:07:33,799 --> 01:07:35,680
+fine so I'll go back to that picture
+
+1343
+01:07:35,680 --> 01:07:38,920
+that was very helpful so essentially uh
+
+1344
+01:07:38,920 --> 01:07:41,000
+checking that
+
+1345
+01:07:41,000 --> 01:07:44,440
+this is not equal to the address of
+
+1346
+01:07:44,440 --> 01:07:47,119
+right hand side or essentially address
+
+1347
+01:07:47,119 --> 01:07:52,599
+of B is not equal to address of a it's
+
+1348
+01:07:52,599 --> 01:07:55,039
+this picture and that's all we want to
+
+1349
+01:07:55,039 --> 01:07:57,520
+do we don't really want to check if B
+
+1350
+01:07:57,520 --> 01:08:01,599
+memberwise is not equal to a we just say
+
+1351
+01:08:01,599 --> 01:08:03,559
+okay in that case we'll still make a new
+
+1352
+01:08:03,559 --> 01:08:06,799
+copy because it just would take as long
+
+1353
+01:08:06,799 --> 01:08:10,880
+doesn't matter okay now there's one more
+
+1354
+01:08:10,880 --> 01:08:15,920
+thing one more thing we actually want
+
+1355
+01:08:15,920 --> 01:08:20,000
+to Nest this
+
+1356
+01:08:20,000 --> 01:08:24,560
+operators so so far we wrote a nice code
+
+1357
+01:08:24,560 --> 01:08:28,880
+for assigning A to B but how do we make
+
+1358
+01:08:28,880 --> 01:08:31,439
+sure that then we can assign the result
+
+1359
+01:08:31,439 --> 01:08:33,640
+to
+
+1360
+01:08:33,640 --> 01:08:38,040
+C right so that's the question and uh we
+
+1361
+01:08:38,040 --> 01:08:42,719
+still have some time so we answered this
+
+1362
+01:08:42,719 --> 01:08:44,880
+kind
+
+1363
+01:08:47,679 --> 01:08:50,679
+of
+
+1364
+01:08:51,198 --> 01:08:54,319
+uh yeah this is this comes to this
+
+1365
+01:08:54,319 --> 01:08:57,600
+question so do you like this function
+
+1366
+01:08:57,600 --> 01:09:00,439
+signature for operator equal will it
+
+1367
+01:09:00,439 --> 01:09:02,158
+really accomplish everything we'll want
+
+1368
+01:09:02,158 --> 01:09:04,600
+to do with this equality
+
+1369
+01:09:04,600 --> 01:09:07,198
+operation and that means can we do
+
+1370
+01:09:07,198 --> 01:09:09,839
+nesting or can we do something that is
+
+1371
+01:09:09,839 --> 01:09:14,318
+not even allowed maybe so
+
+1372
+01:09:14,719 --> 01:09:18,960
+so is this a good function signature
+
+1373
+01:09:18,960 --> 01:09:21,319
+what do you
+
+1374
+01:09:24,439 --> 01:09:27,439
+think
+
+1375
+01:09:28,000 --> 01:09:30,399
+and I'll pull my
+
+1376
+01:09:30,399 --> 01:09:34,600
+code because we will talk about
+
+1377
+01:09:34,600 --> 01:09:42,080
+this um operation equality yeah one
+
+1378
+01:09:45,080 --> 01:09:47,920
+wait yeah so we will talk about this one
+
+1379
+01:09:47,920 --> 01:09:50,040
+yeah let's let's open
+
+1380
+01:09:50,040 --> 01:09:53,319
+that so do you like this function
+
+1381
+01:09:53,319 --> 01:09:57,440
+signature that I have
+
+1382
+01:10:00,120 --> 01:10:03,360
+you like this function signature is that
+
+1383
+01:10:03,360 --> 01:10:06,719
+okay that is we return B by
+
+1384
+01:10:06,719 --> 01:10:09,960
+reference as a
+
+1385
+01:10:09,960 --> 01:10:11,960
+sphere and
+
+1386
+01:10:11,960 --> 01:10:15,320
+uh let's trace this code a little bit
+
+1387
+01:10:15,320 --> 01:10:16,880
+and then you'll tell me if you like this
+
+1388
+01:10:16,880 --> 01:10:18,560
+function signature or not or if it's
+
+1389
+01:10:18,560 --> 01:10:21,880
+causing any kind of trouble so let me
+
+1390
+01:10:21,880 --> 01:10:25,480
+declare a on the stack that's my default
+
+1391
+01:10:25,480 --> 01:10:29,440
+3.2 sphere Apple whatever sphere B will
+
+1392
+01:10:29,440 --> 01:10:33,159
+have different radius then I assign B to
+
+1393
+01:10:33,159 --> 01:10:38,239
+a which should make be what 3.2 right so
+
+1394
+01:10:38,239 --> 01:10:40,120
+then if you trace all the constructors D
+
+1395
+01:10:40,120 --> 01:10:42,199
+structors and let's not do this weird
+
+1396
+01:10:42,199 --> 01:10:46,360
+thing then uh I'll also print if I'm
+
+1397
+01:10:46,360 --> 01:10:48,760
+doing operation equality so let's see
+
+1398
+01:10:48,760 --> 01:10:49,520
+what
+
+1399
+01:10:49,520 --> 01:10:52,840
+happens here
+
+1400
+01:10:54,320 --> 01:10:57,040
+three yeah so just default Constructor
+
+1401
+01:10:57,040 --> 01:10:59,560
+parameter
+
+1402
+01:11:01,000 --> 01:11:03,280
+Constructor the default Constructor
+
+1403
+01:11:03,280 --> 01:11:06,159
+parameter Constructor operation equal
+
+1404
+01:11:06,159 --> 01:11:08,640
+and both of A and B go out of scope but
+
+1405
+01:11:08,640 --> 01:11:11,920
+we assigned a to B so now they are 3.2
+
+1406
+01:11:11,920 --> 01:11:13,920
+both so they go out of scope everything
+
+1407
+01:11:13,920 --> 01:11:18,840
+is fine but now I do this I say B assign
+
+1408
+01:11:18,840 --> 01:11:20,400
+A to
+
+1409
+01:11:20,400 --> 01:11:24,840
+B and then dots at radius one what's
+
+1410
+01:11:24,840 --> 01:11:28,679
+that where and why is it even
+
+1411
+01:11:33,120 --> 01:11:35,520
+allowed and it's all because of the
+
+1412
+01:11:35,520 --> 01:11:39,080
+wrong function
+
+1413
+01:11:49,320 --> 01:11:54,239
+signature so um let me see where can
+
+1414
+01:11:54,239 --> 01:11:58,000
+I what is the return of this function
+
+1415
+01:11:58,000 --> 01:12:01,199
+it's the object B
+
+1416
+01:12:01,199 --> 01:12:04,920
+right and let's write it differently
+
+1417
+01:12:04,920 --> 01:12:09,120
+operator equality of a then maybe it's
+
+1418
+01:12:09,120 --> 01:12:12,440
+kind of easier to see that we passed a
+
+1419
+01:12:12,440 --> 01:12:17,440
+to equality and B on B and the return
+
+1420
+01:12:17,440 --> 01:12:22,679
+is B by reference right so if return is
+
+1421
+01:12:22,679 --> 01:12:24,679
+B by reference we could change it to
+
+1422
+01:12:24,679 --> 01:12:27,239
+different radius is but this should be
+
+1423
+01:12:27,239 --> 01:12:29,880
+disallowed right how do we disallow it
+
+1424
+01:12:29,880 --> 01:12:33,120
+how do we prescribe not to change
+
+1425
+01:12:33,120 --> 01:12:34,800
+whatever is
+
+1426
+01:12:34,800 --> 01:12:37,600
+returned
+
+1427
+01:12:37,600 --> 01:12:40,360
+anymore just like we prescribe not to
+
+1428
+01:12:40,360 --> 01:12:44,320
+change whatever we pass in the function
+
+1429
+01:12:44,320 --> 01:12:46,679
+as a parameter we could prescribe that
+
+1430
+01:12:46,679 --> 01:12:48,880
+okay don't do this nope you're not
+
+1431
+01:12:48,880 --> 01:12:51,480
+allowed to work with whatever is the
+
+1432
+01:12:51,480 --> 01:12:54,000
+result of this operation you you're not
+
+1433
+01:12:54,000 --> 01:12:57,719
+allowed to change it you can pass it
+
+1434
+01:12:57,719 --> 01:13:00,719
+to be assigned to something else but
+
+1435
+01:13:00,719 --> 01:13:03,360
+without changes so let's see if now we
+
+1436
+01:13:03,360 --> 01:13:07,040
+can compile it nope now it says no you
+
+1437
+01:13:07,040 --> 01:13:11,239
+can't really assign or change that res
+
+1438
+01:13:11,239 --> 01:13:12,920
+result of this
+
+1439
+01:13:12,920 --> 01:13:15,280
+operation you cannot touch that object
+
+1440
+01:13:15,280 --> 01:13:18,000
+you cannot modify that object that is
+
+1441
+01:13:18,000 --> 01:13:20,880
+returned and that's why in our code in
+
+1442
+01:13:20,880 --> 01:13:23,120
+MPS and Labs you'll see constants there
+
+1443
+01:13:23,120 --> 01:13:25,719
+because we really want this to behave
+
+1444
+01:13:25,719 --> 01:13:27,239
+more like an assignment
+
+1445
+01:13:27,239 --> 01:13:30,440
+operator and uh so what we want is maybe
+
+1446
+01:13:30,440 --> 01:13:31,960
+you have
+
+1447
+01:13:31,960 --> 01:13:34,719
+another um sphere
+
+1448
+01:13:34,719 --> 01:13:40,320
+C and you want C to be assigned to B to
+
+1449
+01:13:40,320 --> 01:13:43,080
+assign to a so you want to have this
+
+1450
+01:13:43,080 --> 01:13:46,239
+nested values because essentially then
+
+1451
+01:13:46,239 --> 01:13:47,320
+the right hand side is going to be
+
+1452
+01:13:47,320 --> 01:13:50,800
+evaluated first so the return of the
+
+1453
+01:13:50,800 --> 01:13:55,199
+assignment of a to B will be passed as a
+
+1454
+01:13:55,199 --> 01:13:57,239
+parameter to C and that's fine because
+
+1455
+01:13:57,239 --> 01:14:02,360
+you're not modifying it but this will be
+
+1456
+01:14:02,360 --> 01:14:05,440
+disallowed and um this was accomplished
+
+1457
+01:14:05,440 --> 01:14:08,960
+with this const keyword so let's try to
+
+1458
+01:14:08,960 --> 01:14:10,920
+uh compile it
+
+1459
+01:14:10,920 --> 01:14:15,120
+again see so that's that's all good and
+
+1460
+01:14:15,120 --> 01:14:18,280
+now you have another uh object that was
+
+1461
+01:14:18,280 --> 01:14:22,280
+destructed which is C and it's 3.2
+
+1462
+01:14:22,280 --> 01:14:26,280
+because a was assigned to be and then
+
+1463
+01:14:26,280 --> 01:14:28,480
+the result was assigned to C so we can
+
+1464
+01:14:28,480 --> 01:14:30,960
+Nest this assignment
+
+1465
+01:14:30,960 --> 01:14:34,080
+operators wow a lot of synx here
+
+1466
+01:14:34,080 --> 01:14:37,080
+right now do you want to help me are we
+
+1467
+01:14:37,080 --> 01:14:41,719
+Brave to do this and write a operat
+
+1468
+01:14:41,719 --> 01:14:45,080
+plus you want to do that let's just we
+
+1469
+01:14:45,080 --> 01:14:48,360
+have exactly the right amount of time to
+
+1470
+01:14:48,360 --> 01:14:52,400
+write all sorts of things like you know
+
+1471
+01:14:52,400 --> 01:14:56,000
+try to figure it out together so I want
+
+1472
+01:14:56,000 --> 01:14:56,960
+an
+
+1473
+01:14:56,960 --> 01:14:59,480
+operator
+
+1474
+01:14:59,480 --> 01:15:02,159
+plus that would be a compiler or
+
+1475
+01:15:02,159 --> 01:15:06,159
+operator plus so I will take
+
+1476
+01:15:06,159 --> 01:15:10,400
+some list of parameters and I return
+
+1477
+01:15:10,400 --> 01:15:12,400
+some
+
+1478
+01:15:12,400 --> 01:15:16,280
+value you want to look maybe write some
+
+1479
+01:15:16,280 --> 01:15:18,159
+what we want to accomplish maybe first
+
+1480
+01:15:18,159 --> 01:15:20,440
+so
+
+1481
+01:15:22,600 --> 01:15:26,199
+this so what is what does it mean that I
+
+1482
+01:15:26,199 --> 01:15:27,679
+add two
+
+1483
+01:15:27,679 --> 01:15:32,159
+spheres well I want B to be able to call
+
+1484
+01:15:32,159 --> 01:15:34,480
+Operator
+
+1485
+01:15:34,480 --> 01:15:39,199
+plus operator Plus on a so I'll pass a
+
+1486
+01:15:39,199 --> 01:15:41,560
+on B and the return should be a
+
+1487
+01:15:41,560 --> 01:15:43,679
+completely new object right it shouldn't
+
+1488
+01:15:43,679 --> 01:15:47,679
+be B modified B should stay unchanged a
+
+1489
+01:15:47,679 --> 01:15:50,560
+should CH stay unchanged but the result
+
+1490
+01:15:50,560 --> 01:15:51,639
+of this
+
+1491
+01:15:51,639 --> 01:15:54,480
+operation should be assignable to some
+
+1492
+01:15:54,480 --> 01:15:56,040
+third sphere here
+
+1493
+01:15:56,040 --> 01:16:00,000
+right so what does it mean for function
+
+1494
+01:16:00,000 --> 01:16:01,600
+signature
+
+1495
+01:16:01,600 --> 01:16:04,239
+right let's think about it so we'll call
+
+1496
+01:16:04,239 --> 01:16:08,360
+this operator on B which is this in this
+
+1497
+01:16:08,360 --> 01:16:12,760
+scope and we'll pass constant sphere
+
+1498
+01:16:12,760 --> 01:16:15,040
+reference of
+
+1499
+01:16:15,040 --> 01:16:17,560
+a because we don't want to change it
+
+1500
+01:16:17,560 --> 01:16:20,560
+right we better make sure
+
+1501
+01:16:20,560 --> 01:16:23,719
+that b is not changed so we should say
+
+1502
+01:16:23,719 --> 01:16:26,480
+const there b should not be modified in
+
+1503
+01:16:26,480 --> 01:16:30,239
+the process and what do we return we'll
+
+1504
+01:16:30,239 --> 01:16:32,599
+return a
+
+1505
+01:16:32,639 --> 01:16:35,760
+sphere by reference or Not by reference
+
+1506
+01:16:35,760 --> 01:16:38,520
+something to to figure it out figure out
+
+1507
+01:16:38,520 --> 01:16:41,159
+but the thing is
+
+1508
+01:16:41,159 --> 01:16:43,800
+that it should be a third object so it
+
+1509
+01:16:43,800 --> 01:16:45,800
+should be some new sphere that we will
+
+1510
+01:16:45,800 --> 01:16:48,159
+Define here in the scope of this
+
+1511
+01:16:48,159 --> 01:16:49,719
+operator
+
+1512
+01:16:49,719 --> 01:16:55,199
+plus and the sphere T radius should be
+
+1513
+01:16:55,199 --> 01:16:57,880
+let's say it's when we add two spheres
+
+1514
+01:16:57,880 --> 01:17:00,320
+we just add the radiuses okay which
+
+1515
+01:17:00,320 --> 01:17:03,120
+means that it's
+
+1516
+01:17:03,120 --> 01:17:06,199
+this so it's radius of
+
+1517
+01:17:06,199 --> 01:17:10,840
+this of B plus A's
+
+1518
+01:17:10,840 --> 01:17:14,159
+radius right and that's T radius and
+
+1519
+01:17:14,159 --> 01:17:17,760
+then we return T so we can't return it
+
+1520
+01:17:17,760 --> 01:17:18,920
+by
+
+1521
+01:17:18,920 --> 01:17:21,000
+reference we can't return it by
+
+1522
+01:17:21,000 --> 01:17:23,280
+reference because we would be this is a
+
+1523
+01:17:23,280 --> 01:17:25,920
+local variable that's third object that
+
+1524
+01:17:25,920 --> 01:17:28,480
+we created and we created it within this
+
+1525
+01:17:28,480 --> 01:17:30,120
+operator so it's a local variable we
+
+1526
+01:17:30,120 --> 01:17:33,199
+should return it by
+
+1527
+01:17:33,320 --> 01:17:37,760
+value and I think that's it is there any
+
+1528
+01:17:37,760 --> 01:17:40,440
+problem with
+
+1529
+01:17:42,600 --> 01:17:45,040
+that we should probably also call it
+
+1530
+01:17:45,040 --> 01:17:47,480
+constate so whatever that value is
+
+1531
+01:17:47,480 --> 01:17:50,159
+returned we should not say dot da da do
+
+1532
+01:17:50,159 --> 01:17:54,920
+some weird operations on it okay so then
+
+1533
+01:17:54,920 --> 01:17:59,480
+I'll say t = b +
+
+1534
+01:17:59,480 --> 01:18:03,199
+a now let's see what
+
+1535
+01:18:04,560 --> 01:18:07,719
+happens let me show you this so this is
+
+1536
+01:18:07,719 --> 01:18:11,239
+our operator equal this is our operator
+
+1537
+01:18:11,239 --> 01:18:16,600
+equal operat plus so let's Rec compile
+
+1538
+01:18:16,600 --> 01:18:19,639
+hey I was a little nervous but there you
+
+1539
+01:18:19,639 --> 01:18:23,840
+go do you see that we called operator
+
+1540
+01:18:23,840 --> 01:18:27,159
+equal on
+
+1541
+01:18:27,159 --> 01:18:30,600
+3.2 because a was passed and then
+
+1542
+01:18:30,600 --> 01:18:33,520
+there's operator equal for assignment to
+
+1543
+01:18:33,520 --> 01:18:36,320
+C but it already has
+
+1544
+01:18:36,320 --> 01:18:39,559
+6.4 which
+
+1545
+01:18:39,960 --> 01:18:41,719
+is
+
+1546
+01:18:41,719 --> 01:18:44,960
+3.2 plus b became 3.2
+
+1547
+01:18:44,960 --> 01:18:48,880
+right but let's make the C maybe one
+
+1548
+01:18:48,880 --> 01:18:50,400
+then it's easier to
+
+1549
+01:18:50,400 --> 01:18:53,639
+see what
+
+1550
+01:18:53,639 --> 01:18:56,840
+happens okay
+
+1551
+01:19:00,239 --> 01:19:02,600
+6.4 oh yeah it doesn't matter see it
+
+1552
+01:19:02,600 --> 01:19:05,280
+doesn't matter of course yeah okay so it
+
+1553
+01:19:05,280 --> 01:19:06,440
+doesn't really matter because we're
+
+1554
+01:19:06,440 --> 01:19:09,800
+overriding C anyways this is this is
+
+1555
+01:19:09,800 --> 01:19:12,600
+good the only thing that this constant
+
+1556
+01:19:12,600 --> 01:19:14,199
+was very important because we could do
+
+1557
+01:19:14,199 --> 01:19:18,679
+otherwise something weird like B+ a dots
+
+1558
+01:19:18,679 --> 01:19:21,360
+at radius so we don't want to do that if
+
+1559
+01:19:21,360 --> 01:19:23,760
+we didn't
+
+1560
+01:19:23,760 --> 01:19:25,030
+have
+
+1561
+01:19:25,030 --> 01:19:26,639
+[Music]
+
+1562
+01:19:26,639 --> 01:19:30,360
+if we didn't have this um constant right
+
+1563
+01:19:30,360 --> 01:19:32,239
+here we could do something weird like
+
+1564
+01:19:32,239 --> 01:19:33,920
+that and we really really don't want to
+
+1565
+01:19:33,920 --> 01:19:35,800
+do be able to do
+
+1566
+01:19:35,800 --> 01:19:39,400
+that yeah okay
+
+1567
+01:19:39,400 --> 01:19:41,880
+0.2 and that object of course is
+
+1568
+01:19:41,880 --> 01:19:45,040
+temporary so it's not even oh yeah it's
+
+1569
+01:19:45,040 --> 01:19:48,320
+not just temporary it's copied as a
+
+1570
+01:19:48,320 --> 01:19:51,120
+result because we're passing back by
+
+1571
+01:19:51,120 --> 01:19:54,280
+value here so it's copied back to this
+
+1572
+01:19:54,280 --> 01:19:56,679
+line therefore it's even destructed at
+
+1573
+01:19:56,679 --> 01:20:01,040
+0.2 so not good thing but if we put
+
+1574
+01:20:01,040 --> 01:20:03,800
+constant in the function
+
+1575
+01:20:03,800 --> 01:20:06,800
+signature
+
+1576
+01:20:07,480 --> 01:20:11,239
+then it says that don't do this weird
+
+1577
+01:20:11,239 --> 01:20:15,320
+stuff anymore you can just pass it as a
+
+1578
+01:20:15,320 --> 01:20:17,800
+Val as a as an object to another
+
+1579
+01:20:17,800 --> 01:20:20,840
+operation but don't modify it well don't
+
+1580
+01:20:20,840 --> 01:20:23,080
+modify the result of that operation just
+
+1581
+01:20:23,080 --> 01:20:26,719
+pass it somewhere in a nested
+
+1582
+01:20:27,159 --> 01:20:31,120
+operation okay
+
+1583
+01:20:31,239 --> 01:20:34,560
+so so now both of our operations are
+
+1584
+01:20:34,560 --> 01:20:38,000
+nestable but
+
+1585
+01:20:38,000 --> 01:20:40,400
+not uh
+
+1586
+01:20:40,400 --> 01:20:44,480
+modifiable doesn't have modifiable
+
+1587
+01:20:44,920 --> 01:20:48,840
+results that was a lot for
+
+1588
+01:20:50,320 --> 01:20:53,599
+today any
+
+1589
+01:20:53,639 --> 01:20:56,639
+questions
+
+1590
+01:20:56,800 --> 01:21:00,880
+so in my slides I do not have constants
+
+1591
+01:21:00,880 --> 01:21:04,560
+here but only because I want to talk
+
+1592
+01:21:04,560 --> 01:21:07,159
+about it why didn't I put constants
+
+1593
+01:21:07,159 --> 01:21:10,719
+because it's better to do that it's not
+
+1594
+01:21:10,719 --> 01:21:12,239
+at the end of the world if you don't
+
+1595
+01:21:12,239 --> 01:21:14,480
+write them but then you can do weird
+
+1596
+01:21:14,480 --> 01:21:16,480
+things like this oh you could even do
+
+1597
+01:21:16,480 --> 01:21:18,800
+this you know if you're not careful
+
+1598
+01:21:18,800 --> 01:21:20,960
+without constant you could assign C to
+
+1599
+01:21:20,960 --> 01:21:24,280
+the result of B plus a and that's not
+
+1600
+01:21:24,280 --> 01:21:26,639
+good
+
+1601
+01:21:26,880 --> 01:21:29,120
+um or this so you don't want to you want
+
+1602
+01:21:29,120 --> 01:21:31,000
+to disallow something like that you just
+
+1603
+01:21:31,000 --> 01:21:34,960
+want to have normal mathematical
+
+1604
+01:21:35,480 --> 01:21:37,360
+Expressions
+
+1605
+01:21:37,360 --> 01:21:39,360
+oh
+
+1606
+01:21:39,360 --> 01:21:43,520
+okay so that's it for today we're even a
+
+1607
+01:21:43,520 --> 01:21:45,000
+little
+
+1608
+01:21:45,000 --> 01:21:47,080
+early on
+
+1609
+01:21:47,080 --> 01:21:50,440
+time was this too
+
+1610
+01:21:50,440 --> 01:21:53,159
+much I think maybe it's just the first
+
+1611
+01:21:53,159 --> 01:21:56,560
+shock because um after that it'll be
+
+1612
+01:21:56,560 --> 01:21:58,960
+fine but it will be very important in
+
+1613
+01:21:58,960 --> 01:22:01,360
+this in this lab memory I think you have
+
+1614
+01:22:01,360 --> 01:22:04,960
+to implement some of this um code and
+
+1615
+01:22:04,960 --> 01:22:07,040
+it's really line by line to what I wrote
+
+1616
+01:22:07,040 --> 01:22:09,960
+today in class
+
+1617
+01:22:09,960 --> 01:22:12,840
+so so that will be easy if you followed
+
+1618
+01:22:12,840 --> 01:22:14,560
+or if you watch
+
+1619
+01:22:14,560 --> 01:22:19,920
+a I hope I recorded this lecture oh okay
+
+1620
+01:22:19,920 --> 01:22:21,719
+I almost had a hard
+
+1621
+01:22:21,719 --> 01:22:25,360
+attack okay we recorded because it what
+
+1622
+01:22:25,360 --> 01:22:27,280
+very unfortunate thing happened last
+
+1623
+01:22:27,280 --> 01:22:31,120
+time Elmer's uh lab uh
+
+1624
+01:22:31,120 --> 01:22:33,960
+debug part was not recorded for some
+
+1625
+01:22:33,960 --> 01:22:36,080
+weird reason I know that something
+
+1626
+01:22:36,080 --> 01:22:38,159
+happened with my computer but for for
+
+1627
+01:22:38,159 --> 01:22:39,920
+some reason just zoom didn't save that
+
+1628
+01:22:39,920 --> 01:22:42,159
+portion at all just disappeared
+
+1629
+01:22:42,159 --> 01:22:44,440
+somewhere so it's very important that we
+
+1630
+01:22:44,440 --> 01:22:46,159
+recorded it it's good you can go through
+
+1631
+01:22:46,159 --> 01:22:47,960
+the Slater look through the code and
+
+1632
+01:22:47,960 --> 01:22:50,040
+write your lab
+
+1633
+01:22:50,040 --> 01:22:55,400
+memory okay so let's just go 10 minutes
+
+1634
+01:22:55,400 --> 01:22:58,638
+earlier we're
+
+1635
+01:23:00,360 --> 01:23:03,360
+done
+

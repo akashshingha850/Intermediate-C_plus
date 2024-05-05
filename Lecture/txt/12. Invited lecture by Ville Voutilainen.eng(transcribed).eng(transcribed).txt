@@ -1,0 +1,2285 @@
+yeah sorry about that we had some
+glitches in The
+[Music]
+Matrix all you need
+uh okay you're not muted anymore yeah
+should be fine
+yeah that's
+better all right yes where was I so why
+is this important so you categor
+categorically no longer have memory
+Leakes caused by forgetting to
+reallocate
+Something in any logical branch of your
+code
+dude you oh yeah see
+no I'm not
+muted
+well all kinds of fiddling
+here but yeah so you won't have memory
+leags because you forget to deallocate
+you don't leak file handles because you
+forget to close a file this tends to
+still happen surprisingly often for Java
+programmers where they kind of over rely
+on a garbage collector to to General
+cleanup which it can't
+do and you just won't have Deadlocks
+caused by forgetting to unlock a lock or
+a newex that kind of problems are just
+categorically
+gone but I do need to emphasize that
+that applies to the types of pro pro
+problems that would be
+caused by forgetting to do
+cleanup this kind of resource management
+rappers won't magically make your
+programs bug free you can still
+have memory management problems and even
+Deadlocks um if you
+have suitable kinds of circularities in
+your code
+but uh certain kinds of bugs are just
+categorically no longer there which of
+course in an engineering setting saves
+you time to do something more
+useful so if we look at some
+examples that appear in the standard
+Library uh I did notice that there's a
+whole bunch of exercises in this course
+where you allocate uh Legacy arrays C
+style arrays
+dynamically I don't recall when I have
+done that the last time because the
+vector does it just fine it uh wraps a
+dynamically allocated
+array and automates it its cleanup uh
+and it of course also automates the
+clean up of the array
+elements so just in case they would
+actually be Resource Management handles
+or wrappers those resources would be
+cleaned up automatically
+recursively so when when you destroy a
+vector it of course gets rid of the
+actual
+array but before that it will destroy
+every element in case they have
+non-trivial
+cleanup so it will call the distructor
+of every element and then get rid of the
+actual Ray
+Vector also very conveniently uh
+reallocates the array when
+necessary uh so in case you need to grow
+a vector you can you can do that
+automatically without without managing
+it yourself at all the old array is
+automatically cleaned up the new new
+array gets populated with the old
+elements and then later on when you
+finally destroy the vector it will just
+uh destroy the whatever array it
+currently
+has it's it's occasionally very
+convenient that you can you can handle
+vectors like they are by value types you
+can copy them you can move
+them it's uh much less regular regular
+to do that with a sear array you can't
+even really copy them except if you wrap
+them into a stru type
+so moving right
+along unique pointer is a unique
+ownership smart pointer that owns and
+destroys a dynamically allocated
+object it doesn't actually allocate that
+object but they it can wrap a pointer
+and there's a very par uh Factory
+function that gives you a unique point
+pointing to a dynamically allocated
+object that's the make unique
+there
+so make uh unique pointer when it goes
+out of
+scope it uh destroys the actual object
+pointed to to and then deallocates the
+memory so when we do that uh uh
+invocation of make unique there we get a
+unique pointer back that will own the
+actual D
+object and this works as a as a
+polymorphic pointer type as well because
+in this example our base class has a
+virtual
+Destructor so when we create an actual
+unique pointer to
+D we can convert that to a unique
+pointer of
+B and the destruction will do the right
+thing because it will just uh
+invoke the virtual Destructor on a
+pointer of of type pointer to B so it
+will clean up the D object correctly and
+do the uh releasing of the memory
+correctly as
+well I'm not going to teach you move
+semantics in this lecture it's one of
+the
+major uh parts of C++ 11 I'm just going
+to briefly mention that unique point is
+a move only type so you can't have two
+copies of it at least easily created
+that point to the same object that would
+be something that would defeat the
+purpose because you wouldn't know where
+where to do the
+cleanup that's why it has unique
+ownership and uh if you want to pass it
+by value like to the function f here you
+actually need to um invoke that uh St
+move don't want to highlight but yeah
+the call call of f needs to have that St
+move
+invocation what that will actually do is
+that uh it's going to pass the pass the
+unit pointer by value to F and in the
+scope of G the unique pointer that
+remains there and until the scope exit
+is going to be empty it's not going to
+point to anything that ownership is
+transferred by the move operation to the
+block scope of
+f where it's it's it's the uh the
+ownership passes to the parameter of
+function
+f which in practice means that when you
+return out of f or Escape out of it in
+any way then that uh object will be
+destroyed we have a different
+standardized smart pointer called share
+pointer this one is a reference counted
+smart pointer so for this particular
+smart pointer you can have multiple
+copies those copies don't copy the
+actual object pointed to it's uh
+multiple copies point to the same object
+that's dynamically allocated
+and then when you get rid of the last
+copy that at that point the reference
+count drops to zero and the actual
+cleanup
+happens there's some Curious properties
+that uh SHP pointer has
+because all that funny class hierarchy
+that we have
+there um so we have a base class it
+doesn't even have a virtual Destructor
+we inherit from that type to create our
+derive type
+B we can create a sharp pointer to
+D and uh actually assign it
+to to a share pointer of B by the way
+there's a bug in that slide that should
+be public inheritance the conversion
+doesn't actually work my bad I'll fix it
+when the slides get actually published
+but let's just just imagine that says
+class D colum public
+B so when that conversion is valid the
+conversion between those shared pointers
+is valid and then when you clean up a
+shared pointer of B that will actually
+destroy the D object
+correctly even though B doesn't have a
+virtual
+display that happens because when you
+create the uh share pointer of type
+D it will actually generate the cleanup
+code at that
+point and then it typ raises it which
+means that the
+uh sharp pointer doesn't really even
+know what kind of an object is it's
+pointing
+to so basically it has an internal block
+that has virtual
+Destructor and that that internal blocks
+virtual Destructor is called even if you
+assign it to a share pointer of B
+that's just going to check that the
+conversion is valid and then it's going
+to use the same uh cleanup block that's
+in the shade pointer
+of and then by
+extension it also means that you can
+create a share pointer of
+[Music]
+p and initialize a share pointer of void
+with it and that still cleans up the uh
+uh a typed object correctly and
+properly uh which is something that raw
+pointers can't do you can't do clean up
+through a void star but with a smart
+pointer like share pointer you you
+actually
+can so yeah share pointers can be copied
+and move moved copying simply incence
+the reference
+C which is splendidly useful in in
+certain
+scenarios in practice you may run into
+into problems where you don't really
+know know in your code what is the uh uh
+supposed single and don't be owning
+scope for for some
+object uh it comes up in multi threaded
+programming par amount so you you can't
+really tell which scope owns the object
+but you can have multiple share pointers
+pointing to the object and when the last
+one goes away then cleanup
+happens this is complemented by having a
+weak pointer that breaks ownership cycle
+so if you would have
+um cyclical ownership where shed
+pointers end up pointing to each other
+the reference counts would never get to
+zero and cleanup would never happen so
+with weak weak pointer you can break
+that kind of Cycles
+so this this
+particular composition example was
+strongly motivated by exercis is that
+create Dynamic arrays of dynamically
+allocated
+objects and at least in those slides
+they never showed how to clean that up
+because you would need to Loop over the
+array destroy the element uh free its
+memory
+allocation and then finally clean up the
+uh allocation for the array
+itself this happens completely
+automatically if you have a vector of
+unique poters so these um res Resource
+Management types
+compos so you you could have a vector of
+unique poter to be and then in whatever
+processing Loop
+create um Dynamic objects of type D
+push the SM pointers into the vector
+when when the vector is eventually
+cleaned up when it goes out of scope and
+then automatically
+destroyed every object behind those
+allocations is destroyed the memory
+allocated for every of element object is
+released and then the array inside the
+vector is the
+allocated so and you don't you don't
+need to
+write more complicated cleanup code just
+because you have a more complicated
+nested type it's just basically in
+invisible in your source code uh of of
+course it has complexity effects but uh
+for in the sense of programming it's no
+more complicated to have such a uh
+composition than just have a like a
+vector of plane in as as far as cleanup
+goes it's it's equally
+simple question is it the so um do we
+need unique pointers with vors in order
+to
+dealate or normal pointers are
+normal
+uh well
+yes you do if you want the whole cleanup
+to be
+automatic if you use R vectors of row
+pointers the cleanup of the vector
+doesn't destroy the objects pointed to
+by those
+pointers it would only get rid of the
+allocation in the vector for the
+pointers
+themselves of course that can sometimes
+be what you want but in case you
+actually have a container of dynamically
+allocated objects then in most most
+reasonable cases you want all of that to
+clean up so that's where you want to
+use a vector of unique poers if you have
+a vector of pointers that are not
+owning so that the uh actual objects not
+the pointers are managed elsewhere then
+you can use raw pointers
+I hope that answers the
+question all right
+so as I probably mentioned at some point
+this is not just about memory um it's
+more General than that so we have
+non-memory resources that work the same
+way you have these uh scoped handles to
+them you bind them to Local Scopes and
+uh do the cleanup on scope
+exit so for
+fstream it represents a file stream and
+uh does the closing of the file
+automatically in the destructor of f
+Stream So if I write that code using
+something like the C function f open and
+forget a corresponding F close I have
+now leaked a file descriptor and the
+file
+handle and uh in in in applications that
+run a long time the operating system
+will eventually fail your subsequent
+file
+operations because you have too many
+file Handles open in your process so it
+will start dysfunctioning over
+time but with with an with an fstream
+that uh cleanup is
+automatic we do that opening of the
+file and then right to it with the with
+the uh SoCal AR
+operator and then just exit the function
+and the the file is automatically
+closed we have H similar facilities for
+uh for locking and synchronization uh
+these are still lowlevel
+facilities for concurrency there's
+there's a whole bunch of higher level
+facilities for doing tradit programming
+but we're not going to go into those
+here
+so if you have a
+class that has an internal mutex that
+you need to do for thread
+synchronization uh in in member
+functions you can just uh wrap a Lo lock
+guard around the mutex
+that will lock lock the uh mutex in the
+Constructor of the loog guard and when
+the loog guard gets cleaned up and
+destroyed that will unlock the
+mutex there's
+a more flexible facility that does the
+same thing but it has uh additional
+Powers um a unique lock is not bound to
+a single scope so you can actually move
+it from one scope to another by passing
+it by value and moving
+it but it's it's useful to remember if
+you get into multi-threaded programming
+that while a resource wrapper like that
+can move from one scope to another
+mutexes can't mutexes and atomics tend
+to be immovable
+because of the way the actual locking
+happens they rely on the ad address of
+the object so there's certain limits
+what you can do with uh with types like
+this if if you have that kind of a class
+it's not going to be copyable because a
+new text can't be
+copied nor moved it's
+just an object that
+uh it's intrinsic property for the
+synchronization purposes is its address
+in memory
+I mean you can you can still copy object
+of objects of Type X but you need to
+write a custom copy Constructor to be
+able to do that so that it doesn't
+actually try to copy the source objects
+mutex but we'll just create a new m
+mutex j thread is a interesting
+Beast um it took a couple of years
+couple of quite quite a couple of years
+to come to agreement on uh on whether to
+standardize it at
+all
+so when you have
+um a thread
+handle and some code that
+operates uh on something else after that
+if if we imagine there's there's a whole
+lot of code after that fed
+initialization
+in function
+f you might end up exiting the function
+uh without ever joining the thread it
+requires that you join it so
+that the work doesn't get detached so
+you have to join a thread otherwise the
+program will
+terminate in case of a normal STD thread
+stdj thread does that joining
+automatically so
+if you're not sure whether you're
+returning in a similar way from all of
+your conditional
+branches excuse me and if you're not
+sure whether your code is throwing
+exception it might be a good idea to use
+use a joining
+thread because otherwise you would get
+termination if you escape that function
+in some way without joining the thread
+so St J thread does that in
+automatically which means that it will
+wait for the completion of the uh of the
+thread
+code which in turn means the U
+completion of that commented Su code
+here but it's it's a very F handy
+facility in the sense that you
+can you can program with threads in a
+exception safe
+manner or even as as I tend to call it
+safe manner because it you don't need to
+ensure that you invoke The Joint in all
+of your control
+path there is
+a very much generalized uh resource
+wrapper that
+is right now still in a technical
+specification which was a separate
+specification there were various uh
+specification
+problems with this type and it's the
+associated types called scope scope exit
+and scope clean if I remember
+correctly so those facilities were
+pushed into a separate technical
+specification and in implementations
+they have that experimental name space
+and the
+experimental prefix for the header
+use but nevertheless what this unique
+resource does is
+that I can just create it so that it
+wraps a reference to an
+INT and what and then I can register or
+clean up fun function for it uh that's
+the uh line that starts with the uh
+square
+brackets so what this cleanup ends up
+doing is that uh whatever you do to the
+uh
+value of I here set it to 42 set it to
+whatever
+values when the unique resource is
+destroyed it will reset it back to
+zero so this particular example has
+nothing to do with memory uh allocations
+or anything like that it has nothing to
+do with what you would usually call a
+resource it just returns program state
+to a particular State on cleanup which
+is very
+handy because if if you have complicated
+decision logic in that
+function uh it becomes unmanageable to
+figure out where in all places you would
+need to set the state back to what it
+was before you called the function but
+with a with a scope resource like this
+you can just do it so that it
+restores the original state in a
+Destructor which means you can't miss
+it question the
+resource what
+type because this this point too high or
+how that
+work
+start uh
+so the
+initialization of of the actual resource
+which is the first argument given to
+make unique resource checked is using
+that funny STD colon colon ref helper
+function which creates a reference
+wrapper of in that's why in the function
+body there the Lambda body I need to use
+uh the uh do get function because that's
+not an INT it's a reference wrapper of
+int another question maybe a bit serious
+but like why does get
+it would be read only if you have well
+let's
+see for a reference wrapper probably not
+because it's not deep
+const it's just a g function that
+Returns the U the underlying
+reference it maybe has an unfortunate
+name but there there is no set
+counterpart to it yeah all it does is
+that it Returns the
+reference you then assign the reference
+itself yeah you don't it's not it's not
+this is not resetting the reference
+inside the the reference rapper it's
+getting the actual reference and then
+assigning through that which means that
+we assign to the uh INT in The Wider
+scope this example would be far simpler
+and very Inc I hadn't tested this but I
+did so that's why it has those
+complexities I could have explicitly
+tried to create a uh unique resource
+that reps a reference to an in but I
+don't I don't think it supports that it
+probably requires a value
+type so a reference wrapper is a fake
+value type it turns a reference into a
+value type that's uh copyable it's even
+assignable even though you can't assign
+uh the core language references but you
+can actually assign a reference
+rapper but yeah we we
+really
+damage well deps what well yeah I mean
+it it could it can be a dangling
+reference that danger is always present
+in a language like this and until we fix
+it with some memory safety facilities in
+a couple of years hopefully that that
+remains to be seen how fast we can do it
+and how
+successful but yeah the point here is of
+course that you could turn pretty much
+anything into a resource with whatever
+kind of
+cleanup here we are just setting a
+particular value to an
+in and well ins are not common commonly
+thought of as a resources because they
+are just tags of bites that work work in
+arithmetic we have different kinds of
+U examples in the field
+that are that work in a similar vein
+so we have the uh CPN evaluated uh guard
+type of uh of GCC which is the uh new
+compiler there's a warning Sentinel in
+it I have an example of a q scope
+property update group not because I work
+at C but because it's it's just an
+intriguing example and then there's a
+rather important example of a
+transaction type in a database wrapping
+Library
+so this first thing uh the CP
+unevaluated this is this is really
+similar to the uh scope resource uh or
+the unique resource example because all
+all this type does is that it's fiddling
+with uh with
+INS What the compiler needs to do when
+compiling C+ code is that there are
+various situations where it runs into a
+context where the actual function calls
+are not evaluated the functions are not
+called you just do overload resolution
+and then look at types and look at the
+validity of things so it it happens to
+have
+these Global variables uh they
+are slightly scoped but not really
+and then in order to put it into that un
+evaluated Conex mode you need to
+increment these uh these configuration
+variables that tell the compiler what
+mode it it's
+in you can do that recursively uh when
+you happen to go into a nested context
+where you're still going to be
+unevaluated but it's it's looking at it
+a different function it doesn't
+necessarily know the calling Contex
+context so that's why it's done with a
+counter and then you have this
+automatically destroying uh or
+automatically cleaning up uh wrapper
+type where you just use
+a object of CP unevaluated type in your
+function and the automatic cleanup will
+undo its uh
+increment and then if you have this
+nested context where you have done this
+multiple times when you pop out of it it
+will uh restore the compiler back into
+the mode where it evaluates actual code
+meaning it generates function
+calls so this is another example of a
+resource wrapper that doesn't own
+anything those are ins they are not own
+owned by the type that it just uh
+increments and decrements a counter that
+this is massively useful because it it
+uh just turns certain kinds of logic
+errors off if you forget to decrement
+those counters when you're supposed to
+then your compiler is going to be in the
+unevaluated context when it's not
+supposed to be and it will misunderstand
+your program
+compilers in particular have very very
+hairy rats nness of of complicated
+conditions that are nested and
+recursive and all kinds of fun so it's
+very useful to have these sort of helper
+types there's a similar type that's used
+just for turning individual warnings of
+in the compiler there are certain
+cases where you need to compile code and
+regardless of what the user asked
+disable certain warnings because you
+know from the language context that
+those warnings would be false
+positive
+so there are these warning flags that
+compiler implements or uses and they
+are
+Global
+so what
+thisel does
+is
+that the
+echo it shouldn't be Me Maybe okay so
+what this warning senel does is that it
+wraps a reference to the actual flag
+which is
+a just a global in it's no no prettier
+than that that's how the compil was
+compiler was written in the prehistoric
+ages and hasn't been refactored
+since so the rapper wraps that Global in
+by using a reference so when you
+construct the warning Sentinel it uh it
+STS the reference to the
+flag and then um sets the warning flag
+off and then when you destroy the
+warning Sentinel it restores that
+warning flag to its original value so
+again this doesn't own an actual
+resource it's just manipulating ins but
+still very handy if you have complex
+complex logic and it's difficult to
+track where where your exiting block
+Scopes and uh returning from
+functions you can just rely on the
+destructor of the Sentinel to do the
+right thing it keeps
+your flag value balanced for a part
+particular scope so that you don't have
+unintended modification
+all this uh scope property update
+group is a fun example because all it
+does in its Constructor is that it calls
+that big in property update group
+function and in the destructor it calls
+an in property update group
+function so what those function do is
+that they basically um chunk property
+updates together so that they happen
+happen as a
+group and various notifications then
+notifications then behave
+differently but uh as far as the wrapper
+goes this is very simple in the sense
+that it just Begins the
+operation and ends the operation and
+since it's done in the destructure you
+can or get to do the uh end operation
+which you need to do otherwise you would
+kind
+of keep the a group operation uh ongoing
+forever because this is a this is a
+facility specific to cute properties and
+their their updates
+um I'm not sure whether there's really
+appetite for trying to standardize
+something like a C
+property there's been all kinds of
+discussions about that in in various uh
+audiences but for our purposes we uh
+created a new property type in order to
+make it easier to write uh write certain
+kinds of C++ code without without using
+our pre-processing facili facilities and
+all that so these are just really
+yeah these are very specific functions
+for very specific property
+types but the uh real gist of this
+particular example is that it it calls a
+particular operation that is then
+completed or closed in the distructor I
+mean the distructor closes the operation
+that's performed by The
+Constructor with which brings us to this
+example with it which is
+uh of massive
+significance so there is a database
+rapper Library called SQL PP meaning SQL
+C++ it has a transaction type that is a
+automatically cleaning up resource owner
+of
+sort meaning that when you create this
+transaction object it will open a
+transaction into the
+database all modifications that
+subsequently happen while this
+transaction is open will be bound to
+that
+transaction and then you can say that
+everything went fine and correctly and
+then you commit the transaction where
+all the modifications that you
+performed are actually done on the
+database so the database changes to
+reflect your U pending modification
+operations however if any sub operation
+fails and you decide to throw an
+exception out of your code or otherwise
+return from your block scope where you
+have this transaction
+object in those cases it will roll back
+the transaction which means that it will
+end up not modifying the database at
+all so if you think about real life
+examples like I will transfer €100 to
+you if there's some sort of problem in
+your receiving end that your account
+balance could not be updated to be in
+increased by
+€100 then it would be a rather good idea
+if uh if my account balance is not
+decreased either so that that money just
+didn't go into an abys and vanish into
+th air banks actually don't work quite
+that simply because they have account
+balance reservations and things like
+that but this sort of transactional
+operations are very important in all
+kinds of e-commerce and that sort of
+things and
+for ensuring data Integrity in general
+in various data
+source
+so mapping that into
+resource wrappers in C++ is fairly
+straightforward
+and it's kind of a natural onetoone
+mapping uh resource handling types are
+very much like transactions in that uh
+it's usually expected that they undo
+everything they did if at all
+possible if if if an error occurs if if
+you if you return from your block scope
+without going into the success
+completion
+which uh leads us to the second
+part which is the
+Ri so as I mentioned earlier it stands
+for resource acquisition is
+initialization it is a particular
+pattern where you use a resource
+management object that owns a
+resource and the tie in of those so to
+speak in is that the resource management
+object doesn't exist if acquiring the
+resource
+fail so it ties into z++
+exceptions
+because what what that means that whole
+resource acquisition is
+initialization is that uh a minute yeah
+so what we have is that we have the
+resource wrapper and its Constructor
+acquir the result for example allocates
+memory for an object and constructs an
+object and if that fails The Constructor
+throws an
+exception and the uh Resource Management
+rapper never
+existed and
+uh almost equally if not more
+importantly the code following that
+construction doesn't run
+then of course in the uh corresponding
+Destructor you release the resource
+so when we initialize an object we
+acquire the resource when we destroy an
+object we are We Are release the
+resource so it's bound to the uh
+Resource Management objects
+Lifetime and the particular resource
+that we are talking about doesn't exist
+outside of the uh of the rappers bytime
+they are bound
+together so yeah failing to acquire a
+resource is a failure to
+initialize the uh resource object uh
+never exists the rapper that reps it
+never
+exist and uh well the follow subsequent
+code is never run and the cleanup is
+never performed because there's no need
+for
+it so what we can do with
+this is that we can actually rely on
+that uh so-called
+invariant that a r type has a valid
+resource in
+it so when we do that make unique
+there and bind it to a con unique
+pointer we know that after that
+operation the unique pointer of
+B will have an OP object inside it
+otherwise make unique would have thrown
+an
+exception so we can just D reference
+that pointer in those subsequent two
+stuff and more stuff calls we don't need
+to check whether that pointer is non
+more we know it because otherwise we
+would never get to that
+code so this makes it relatively
+straightforward to uh program with this
+types uh meaning programming the happy
+pads the error handling pads are above
+outside and
+elsewhere so their complexity is uh is
+not going to vanish but uh it can be
+separated out which is useful so if we
+look at
+this yeah yeah that's that's the idea it
+doesn't have to be but
+I mean I could I could just use a unique
+pointer of D for the
+PTR I just like like reillustrated that
+polymorphism
+there but yeah so if that make unique
+fail it will throw an
+exception so if the make unique fails it
+throws and then we never have the PTR
+object
+we never encounter the the do stuff and
+more stuff code we never go there F will
+throw that exception because we don't
+catch it here f is basically transparent
+to the uh exceptions thrown by
+operations in it and it will just end up
+uh emitting the same exception that uh
+make unique W if it
+fails and then indeed in this particular
+case we do know that the pointer isn't
+null so we can just D reference it uh
+with without any
+hesitation in code where we wouldn't see
+that initialization we would need to
+verify whether the pointer actually
+points to anything it could be
+zero in this particular case it can't we
+know that by
+construction because we are using a
+const unique pointer here
+here I could have all sorts of
+intermediate code between that
+initialization and the US is in do in
+the ca of do stuff and more stuff but
+that doesn't matter because I know that
+a const unique pointer can be
+reset it will always point to the same
+object that was given to it when it was
+constructed that's what makes a const
+unique pointer an actual art a pure R AI
+type because you can't zero it and then
+we can rely on that by
+Just For example not doing checks that
+we would otherwise be compelled to
+do so it it makes the uh code that
+doesn't need to worry about error
+handling more
+straightforward and it makes it more
+straightforward to rely on an object
+being there
+so f is of course all these codes are
+the success
+Parts but they are very very
+straightforward very TST very clean you
+will have the error handling code
+elsewhere but the happy path is very
+straightforward and actually works
+correctly in the sense that you get
+correct cleanup you get the right kind
+of Errors reported they are just handled
+elsewhere
+sorry fun
+exception yes so if if the construction
+and or allocation of of the D object in
+the call did make unique D fails that
+throws and that exception then escapes
+out of the function
+f what in the construct we allocate two
+two resources first one Su second one
+Sal we have to hand
+it
+no so just repeating in case the online
+people didn't hear if you have two
+resources uh and the uh initialization
+of the first one succeeds and the second
+one fails what you need to do is bind
+your allocation allocated objects into a
+rappers so the first one succeeds it
+will give you a valid unique pointer the
+second one will fail that second unique
+pointer never exists but when we escape
+that scope we call the destructor of the
+first
+one an excellent question by so if we
+look in look back at the first section
+where we went through all kinds of
+examples of of resource management
+types that clean do various kinds of
+cleanup
+uh Vector fstream unit pointer and share
+pointer as such aren't really pure ra
+types because they can be empty so they
+don't always exist in a state where a
+resource is
+owned uh the standard Library tends to
+allow this kind of
+flexibility so even though they are
+standard Library types we don't
+follow R religiously in in the design of
+the standard Library types
+so as exemplified in the in the example
+that uses a con unique
+pointer but there's a super flow
+underscore there but yeah a unique
+pointer that is Con initialized by make
+unique that's say to R object that kind
+of an object always has the resource
+underneath
+it but a const unique pointer still
+isn't a pure RI type because you could
+create it as empty and then it wouldn't
+own any kind of
+resour but uh if you can use exceptions
+in your code it's worth considering to
+make your own types toly R when possible
+so that you can you can rely on them
+actually having an object in
+them that concludes the
+presentation is there any kind of
+problem with the incor slicing of
+pointers and how would
+hand so
+um yes there's a slicing problem if you
+have the base class and the derived
+class and the D structure isn't
+virtual if you create a unique pointer
+to the base type and initialize it with
+an object of well a pointer of the
+derived type it will not do the cleanup
+correctly same same thing happens if if
+you create
+a unique pointer of the
+of the derived
+type and then initialize a unique
+pointer of the base type it's still
+doesn't clean up correctly because the
+uh unique pointer will uh will just know
+how to destroy through the pointer to
+base so if that operation isn't virtual
+it's not going to work
+correctly yeah you you can uh shed
+pointer has that magical superpower that
+they it records the actual concrete
+type for the uh for the actual cleanup
+block so you can you can use it so that
+even even if your cleanup isn't virtual
+when you create an object of the most
+derived
+type it will record a cleanup of that
+type inside the share
+pointer and it will hide that behind the
+polymorphic interface isn't it better to
+shirt poter
+uh well there is a common piece of
+advice that you shouldn't over you Shar
+pointers because they they introduce
+longer lifetimes than you might
+like and they also incur the uh
+reference counting overhead if you have
+a simple ownership relationship where
+you can say that this piece of code this
+COPE in my code owns that particular
+object
+then unique pointer is the closest
+expression of that
+intent because it it
+then unless you do an explicit move
+operation it doesn't just transfer out
+of that
+scope but share poters by Nature are
+copyable and you can just uh so you can
+both copy and move
+them and
+it's not exactly POS able to determine
+by just looking at code that is that is
+using shared
+pointers where the actual ownerships are
+because it's shared they are very often
+used that you don't even want to care
+how many shared owners you
+have so that you can you can write call
+back code and uh threadit code where you
+have multiple share pointers to the same
+object in different threads at different
+times and then when the final one goes
+away it will just clean up
+automatically but if you if you have
+straightforward single a single threaded
+code I wouldn't say that it's worth the
+trouble the conceptual complexity of a
+Shar shared ownership type to use it
+just to get better better handling of of
+polymorph types in some cases that might
+be fine I mean if if if you know that
+you're not going to pass those shed
+points elsewhere you can
+do let's just say interesting hacks with
+it so that it will clean up properly
+even even if the hierarchy is not
+polymorphic and some sometimes you
+actually want to create
+objects and pass out like return a bag
+of share
+pointers just for cleanup purposes so
+that's that's why that uh case of a
+share pointer void is valid so you
+create your object with the proper
+object
+type and create a SharePoint of that
+type and then you convert it to a share
+pointer of void and pass like return it
+or create a container of those things
+whatever bag of those things and return
+it for the user that user then can't
+unless you know certain things like be
+able you could you could try doing doing
+static cost of course but you you can't
+reliably get to the object so that kind
+of return bag of shed point of void is
+there just so that you can clean it up
+when it's no longer
+necessary yeah I mean you can you can
+use that
+in all kinds of
+situations again prop probably in in
+concurrent or multi-threaded uh
+operations where you just have that one
+thing that owns the back of your object
+it doesn't care about operating with
+them in any other way so it
+doesn't need to care about the actual
+concrete
+pipes but then when it cleans those
+things up it just destroys the shed
+pointers a void and that will end up
+calling the right kind of
+distructor for the actual concrete
+pipe do it also called
+chain so the destructor chain happens as
+it always does in C++ so that when you
+destroy an object it subobjects are
+destroyed so base base sub objects and
+members are
+destroyed
+so it doesn't need to I mean when you
+call an object's Destructor that will
+destroy the the members and bases so it
+goes upwards from that
+point and that's that's what share
+pointer actually does if we uh let's
+see where did I put that
+down right
+so when we have that second PTR or well
+whichever destroying that share pointer
+will invoke the distructor of
+D that's just what it
+does and then of course D will destroy
+its uh its sub objects so we then sub
+destroying the
+base so that that just happens like it
+usually happens in z
+here's a comment
+from
+ah yes
+share really difficultas
+life well yeah I mean that's that's kind
+of we could use a sound a sound bite
+saying that shared ownership is nobody's
+ownership so you can't really tell by
+statically looking at your code with
+either an anal analysis tool or just as
+a human reader where the actual
+destruction will happen you know where
+the reference count decrements happen
+but it's uh basically impossible to tell
+where the actual distruction happens so
+that can indeed uh turn various code
+bases into difficult reason about
+mess but in somea in some cases that can
+also remove leaks from your code and
+make it make
+it make it perform or behave
+correctly I did a uh search and
+replace refactoring on a corporate code
+base 20 years ago where we just did a
+search and replace of raw pointers to
+share pointers because we had so many
+memory leaks and uh use is after after
+the allocations meaning that we had
+leaks and crashes
+there and since we didn't actually write
+that code it came from a subcontractor
+we didn't hope to understand it well
+enough to find out where all the
+problems are so we just decided to apply
+a big hammer and turned all those raw
+pointers into sh pointers the memory
+leaks were gone there were no longer us
+after free crashes and the application
+performed according or behaved according
+to its
+specification we we did we did it in a
+server application and in its clients as
+well uh the uh maintainers of the client
+side didn't really believe in that being
+a workable
+solution but we pointed out how many
+server side bugs we were able to just Lo
+has resolved after that operation and
+convinced them to do the same thing on
+their on their client side and they
+happily reported not needing to care
+about the like a thousand bugs instantly
+after
+that but yeah it it has shed shed
+ownership has
+cost it has that determinism cost it has
+a complexity cost
+and it has overhead I mean if you can
+express a single unique ownership then
+you should always try to do that because
+it's just simpler in all sorts of
+ways but sometimes you can get out of
+all kinds of problematic situations by
+using using a ownership my
+pointer only know when
+the Z oh yeah sure but the thing is
+that if you look at a complex piece of
+code where you have multiple share
+pointers pointing to the same
+object it is going to be excruciatingly
+difficult to reason about where exactly
+the distruction
+happen uh I would think that's actually
+a variation of the holding room
+because you need you need to prove that
+certain things happen and in certain
+order and at the just the right times in
+order to be able to tell that so yes of
+course you can you can take a particular
+Pro program and say that I can I can
+reason about this for that particular
+example case but in general it's not
+even provable because it depends on the
+uh runtime characteristics of your pro
+program so that's why it's just
+categorically U Sor to use unique
+ownership models when you
+can or if you can afford it just have a
+wrapper that copies the result like
+vector
+does so if you if you have a vector of
+strings you can take a copy of it it
+will create a new Vector of new strings
+that have the same data those things
+don't have any
+relationship so there's there's at least
+three different things that these these
+things can model you have unique
+ownership shared ownership
+and uh what should I call it it's it's
+like a independent
+ownersh yeah it's a typical picture uh
+since we talking about the moving of
+ownership in uni uh is it
+correct to assume that uh in terms of
+move semantic and all that we don't uh
+certainly valide the manual uh rule of
+fire kind of things and so like how does
+unique
+pointer uh handle the no dependency of a
+move Constructor move assignment
+operator uh talking about the user
+defined data type well I mean if if you
+have a unique pointer member in your
+user defined types type then you're
+going
+to not going to get an automatic copy
+operation for the
+type you can still of course manually
+get to the underlying data and copy it
+if if that's valid for the actual actual
+resource
+type but uh since uni pointer is a move
+only type it makes uh types wrapping it
+move on the types as well
+so yeah I mean that's that's a decent
+point because when you have that kind of
+a type if you have a vector of unique
+pointers you can't copy those vectors
+their element types are not
+copyable so that is a
+limitation like a found fundamental and
+foundational limitation of unique
+ownership that it leads to types that
+aren't copiable
+because they can't
+be otherwise there wouldn't be unique
+ownership but you could have vectors of
+strings that are of course since they
+are deep copy types those you can copy
+to your heart's
+content but um we we actually have
+proposals and at the committee of uh of
+creating a polymorphic type that copies
+the underlying Target
+object so uh those types are actually
+called indirect and
+polymorphic so in the future you can
+create a stood Vector of uh stood
+polymorphic of
+T and that has deep copy semantics it
+doesn't have unique ownership so you're
+you're not similarly
+limited right now the thing is that if
+you if you actually want to create a
+dynamically sized array of dynamically
+allocated polymorphic
+objects that takes you to a unique
+ownership model but in the future it
+won't so we are going to sort of lift
+that
+restriction you can of course lift it
+today with with a custom solution if you
+have to but yeah the uh move only
+coupling just for the purposes of
+getting getting Dynamic lifetimes uh
+this is a problem that we are going to
+fix
+that's a very
+question something that I
+didn't but
+so user Define types having Point inside
+of them
+Child Problem
+sure only okay so if you if you if you
+want that in IND Direction and
+polymorphism then you're going to use a
+type today that you would write as a
+custom type that that beave behaves like
+the uh forthcoming STD
+polymorphic but once the STD polymorphic
+is there you can you can just use that
+when is it uh they they should chei in I
+think plus plus
+26 yeah 23 is out of the door
+so we keep fiddling with these things
+there's always all kinds of additions in
+the pipeline but if you're writing a
+competely then you
+still well I mean that depends on if
+you're
+clean so if if if
+you're if if you want that kind of deep
+copying smart pointer I would really
+recommend trying to find a third party
+library that provides it before the
+standard Library
+does it's always a good idea to look at
+existing libraries to provide you with h
+this kind of
+functionality because types like that uh
+when we are talking about generic types
+basically templates that provide this
+functionality those are tricky to write
+if if you can rely on somebody else
+having done it for you and having
+actually test it that it works in the
+normal scenarios and then some in some
+in some weird scenarios that you didn't
+even think about that's quite often
+better than using that type yourself to
+write what really is a kind of sort of
+basic utility type
+I mean I I have an industry industry
+background so there's always somebody a
+customer or a manager or whoever and
+that says that you should really ship
+those funny toys that I would like to
+have and if I tell them that I'm
+fiddling with generic template code in
+C++ they are going to give me a blank
+stare and ask where the toys are and
+they are not going to understand why I'm
+fiddling with the utility libraries
+that's why my general recommendation is
+to try to find a library that already
+provides that kind of a
+type but but yeah I
+mean getting back to the original
+question of yours if you're modeling
+deep copy semantics
+uh you could reuse unique pointer it
+doesn't hurt anything it gives you at
+least automatic cleanup then you would
+need to write the copy operations and
+move operation
+so that they work with the unique
+pointer so it's still probably even for
+a deep copying smart pointer it's
+probably a better building block than
+raw pointers are because then you would
+need to handle
+destruction manually and that's just
+terrible we don't do we don't do manual
+destruction in C++ that's old
+school and I when I stopped doing it
+I've
+nobody had even planned the C++ 11 C++
+03 was just about to be
+standardized uh there were third party
+libraries that provided smart pointers
+like this this so there was a scope
+pointer and share pointer in
+boost and that was already enough that
+we just said okay we are going to stop
+using raw pointers because they
+are tedious and terrible
+and the very common source of
+bugs so I would say it would require
+really exceptional
+circumstances where you would write a
+custom wrapper that would use a r
+pointer because even even if you don't
+want the unique unique ownership in in a
+custom like custom type like that you
+would you would still want the automatic
+clean up
+semantics
+yes you even learn
+them
+well so the question was whether raw
+pointer should even be
+learned there are all kinds of
+situations where you run into them
+um not all uses of Rob pointers are even
+about Dynamic uh objects of any
+kind in some scenarios you just use a
+pointer like an optional object that if
+it points to something great uh you can
+zero it so that it doesn't point to
+anything uh in some cases you just have
+a pointer point to different objects of
+the same uh of the same type at
+different
+times there's massive amounts of
+existing code that doesn't use M
+pointers even where it
+could so in order to sur survive in the
+wild you probably need to learn them
+whether you actually need to learn how
+to do dynamic memory management with
+them is a interesting
+question uh you can you can get
+relatively far without ever bothering
+about that I
+mean it's it's often side it as a
+possible use case that you have some
+sort of C interface where you need to
+pass Pro
+pointers but if if that's an API that
+takes a pointer to an array you can get
+that pointer from a St Vector for
+instance so most of your code can still
+use containers and smart pointers and uh
+interface with with code like that you
+can get the pointer from a smart pointer
+it has a function named get that does
+exactly
+that so there
+are parts of the API that make it
+interoperable with that kind of
+techniques us for is in
+registers reg actual
+address yeah I mean you can you can of
+course create a smart pointer from a
+sorry a raw pointer from a literal
+value where the literal value is some
+Hardware uh address in your memory
+space then again you don't have to use a
+raw pointer for that you could just as
+well have a have a non-owning smart
+pointer and do do the similar thing to
+that
+so that's another thing that's missing
+from the big
+picture but we are going to
+fix it hopefully soon that we actually
+actually need
+a resource wrapper that expresses the
+lack of
+ownership and
+then that makes it even even rarer to
+actually need a need a raw
+pointer the problem with raw pointers in
+general is that
+uh the API of that sort of a type is too
+wide you can't tell what your
+really supposed to do with it if you
+have a
+pointer it can point to I mean any kind
+of pointer but especially for raw
+pointers it can point to a singal object
+it can point to an array you can't tell
+by looking at the type if it does point
+to an to an array you can Traverse the
+array if it doesn't point to an array
+you can't Traverse it it's actually
+undefined Behavior to increment the
+pointer value if it's pointing to a
+single
+object so you you can you can you can
+you can't even do the pointer
+arithmetic then there's the other
+problem that if you have a plane raw
+pointer you can't tell whether it points
+to something owned or
+not and despite there being all kinds of
+guidelines how you should always for for
+example there are multiple guidelines so
+the newer ones like the uh core
+guidelines tell you that draw pointers
+are always used for expressing the lack
+of
+ownership well that's nice if all the
+code that you have to work with obeys
+that
+guideline there are exactly opposite
+Legacy guidelines that say that if you
+pass ownership you use a pointer and if
+you don't pass ownership you actually
+use a reference
+which also doesn't work because you
+can't always pass a reference
+so what smart pointers bring into the
+picture is that the type actually talks
+about the intended ownership it says on
+the team that okay fine this is a unique
+point it presumably destroys the
+object and then you can have a different
+kind of nonp pointer class type that
+says that I am an indirection
+excuse me I point to something but I
+don't own it my destruction will not
+destroy that object and that's
+useful well so because there's an
+additional thing that comes out of that
+not knowing what a r pointer points to
+and whether you own
+it typewise you can always pass it to a
+delete
+expression so uh it's going to compile
+and do whatever incorrect things at run
+time if you delete something that you
+didn't actually own and that it didn't
+actually point to a single object
+because for race you need to use the
+double bracket version of
+delete that's the beauty of smart
+pointers is that they are not pointed
+you can't delete a unique
+pointer the compiler will just tell you
+that this is not an actual pointer the
+delete delete operate expression doesn't
+apply so it turns off things like that
+as well when when you're using these
+kinds of
+types all over the place in your code
+you're going to not notice a significant
+decrease in the occurrences of the words
+new and delete in your source code I
+mean delete will
+it's not going to be
+anywhere and uh you're you're going to
+adopt a principle style and guideline
+where you start considering occurrences
+of delete
+Aug so that when you find it in in any
+code you're going to start asking
+questions what's going on here you
+shouldn't do
+this that's sadly not quite the case for
+new
+because new has a placement form
+so that means that it can take an
+existing address that points to a memory
+location which means that it doesn't
+allocate memory it just says that over
+there construct these
+objects with a dynamic storage
+duration we had high hopes that a
+library function called construct that
+would just supersede that
+functionality but there are dark corners
+of the language where we realize we
+can't do that full replacement because
+there are copy elision scenarios where
+construct at doesn't work it fails to
+elide copies whereas a placement new
+will happily Elite those
+copies so we might we might need to
+entertain some sort of a magic function
+that looks like a function but isn't so
+that it could avoid that problem or
+maybe we just need to live with certain
+forms of new being with us
+forever but uh those are probably going
+to be not so common
+scenarios so it's perfectly reasonable
+to get into a situation where you have
+large amounts of C++ code where you see
+neither the word new nor nor the word
+delete yes sir
+C C++ two
+yeah which
+one uh so I mean there's there is a a
+bunch of languages that
+are designed with the goal of replacing
+C++ in mind Google has one of those
+there is that cpp2 front end which uh
+provides a language that has
+a has a new syntax but is is compatible
+with the old one because it just compar
+the new uh new language into the old one
+it performs a compile fr the trans
+transformation I don't have time to pay
+attention to the progress of those
+projects and uh I have on my to-do list
+various U getting familiar with other
+more important languages I mean I
+already need to get familiar familiar
+with cotlin because I need to program in
+it probably inevitably with rust for all
+kinds of reasons and those are actually
+specified languages not standardized but
+specified languages that have reached
+something that be can be called the 1. Z
+release all of these uh C++ replacement
+langes are not not in that stage yet so
+I don't have enough Hobbies time and
+energy to play with uh programming
+languages that are that
+immature and I I could maybe find time
+for that to to look at them as
+Curiosities that uh I I have in the stre
+projects to do so playtime is
+unfortunately a thing that I that that I
+have but in general I do do recommend if
+you have the time to play with all kinds
+of different programming languag is uh
+C++ is not a religion I mean at least to
+me it isn't so I migrated from other
+languages to C++ if the time comes that
+I need to migrate away from it I will do
+that but uh I'm I'm just saying that I
+can't really give you accurate and
+precise program reports on on cpp2 or
+carbon for example because I plane don't
+know the
+status I got the impression that the
+carbon folks have had some sort of
+additional pressure to take a more
+serious look at the memory safety of
+that
+language because that's that's kind of
+the
+uh big buzz word of today we have
+systems level programming languages
+meaning programming languages that don't
+require a garbage collector or don't
+require a um very complex runtime
+environment that nevertheless end up
+being
+memorizing so you avoid more problems
+than mentioned here I mean smart
+pointers help you with uh accidental
+omissions that lead to bad correctness
+problems the memory safe programming
+language covers much more than that so
+in an actual actually memory safe
+programming language you can't do out of
+bounds
+accesses you can do use after free mean
+which means trying to access an object
+through your pointer after that object
+has been
+destroyed so it
+seems very plausible and likely that a
+whole lot of programmers are going to
+move towards that kind of programming
+languages I mean I I am kind of drawing
+analogies between the situation that I
+had 20 well 30 years
+ago when I started programming in c and
+then moved to C++ I came to the
+realization that C++ is much nicer
+because it tells me that when I'm trying
+to initialize a
+pointer of a particular type with
+another it tells me that those types are
+completely unrelated and that
+initialization is not
+valid and see that's a warning warning
+it's not an error and uh back then the
+recommendation was that you don't need
+that kind of type safety in a
+programming language you can just run a
+additional checking
+tool that will then tell you that this
+is probably
+Incorrect and in all practical cases
+where I ran into it I said this is
+always incorrect it's the same thing
+with with memory safety programmers are
+going to
+expect since we have practical examples
+like
+rust that uh when the uh memory safety
+problems are statically
+determinable and the programming
+language can tell you that you have a
+memory safety
+bug the expectation is going to be that
+the compiler rejects your program rather
+than have it happily compile your
+program then you run it and get whatever
+disasterous
+result that is why we are going to be
+talking more and more about how to
+introduce memorization facilities into
+C++ those discussions are ongoing in the
+committee sorry sorry what what that
+will lead to I can't tell yet uh there
+is a
+safety profile approach proposed by B
+himself that kind of suggests
+standardizing certain different
+different safety levels that are then uh
+both statically checkable by the
+compiler and then additionally doing the
+bounce checking at run time because you
+can statically prove all the bounce
+checking errors that actually runs into
+the holding problem
+but uh there's a there's a variety of
+suggested safety profiles like that and
+uh we're going to be working towards
+those
+because not just because of the
+so-called perhaps less technical reasons
+about memory safety being a Hot Topic it
+just makes sense at least in in my
+opinion because it's it's a scalability
+thing your language finds a bug in your
+program so of course it should reject
+that program if it can and that's more
+and more going to be the ex uh
+expectation going forward yes
+ma'am
+same what is the industry landscape
+where think that memory safety will
+never
+be something
+like so I mean if you want to be hyper
+performant you're not going to be
+enabled the uh run times runtime bounce
+checking for for being completely
+actually memory safe you need to do
+runtime bounch checking because that's
+not statically provable to be
+correct so if you want to go as fast as
+possible in some scenarios people are
+not going to be performing those those
+runtime checks and they are going to try
+to divide their Pro problems so that
+they are smaller and uh can be more
+easily reasoned so that they can have
+local proves that they are not doing out
+of bounds accesses and then you have all
+the
+usual sanitizers debuggers whatever uh
+that can in a limited fashion of course
+subject to your testing coverage tell
+tell you that you probably have a
+program that is sufficiently correct
+that you don't you don't need to care
+about the the thetical possibilities of
+it not being I mean this this goes to
+practical things um there is um software
+that's safety critical and then there's
+software that isn't memory safety is
+useful for both because it prevents bugs
+from
+occurring but when you're in a context
+where it it isn't safety critical and it
+already gives generates revenue for
+uh generates revenue for you then you
+don't need to care about whether it
+crashes next week once or twice if the
+overall result is that the application
+is profitable so there's much more
+complex uh things to consider there so
+there are certainly scenarios where you
+wouldn't want to do bounce checking
+because you can you can for
+example prod well you can you can ch at
+money money faster if you don't have
+that overhead so high high frequency and
+high speed trading are examples of this
+the more more um stock transactions you
+can run the more money you can
+make yes
+sir
+over uh
+I yes and yes so the there's various
+existing
+abis where passing a raw pointer is done
+via a
+register but if you wrap this wrap that
+pointer into a unique pointer you no
+longer get pass by
+register and uh well shed pointers of
+course have uh all kinds of overheads I
+mean there's a size overhead for storing
+the reference count and uh all the
+runtime cost of updating manipulating
+that reference count so that's certainly
+a around time
+overhead um I think there are some abis
+where that whole raw pointer versus
+unique pointer business is not a
+problem uh there's no size overhead in
+in unique pointer it's exactly the same
+size as your Ro pointer because that's
+all it is it's a stru that wraps a wraps
+a raw pointer it has the same alignment
+the same size so but yeah there are even
+for Unique pointers there are practical
+situations where you might need to
+consider whether you can use
+it and that goes into those hyper
+performance use cases where you might
+just end up in a situation where that
+kind of thing like how to pass a pointer
+argument is going to be a significant
+performance
+difference and presumably you
+would need to pass those things in line
+so that they are not passed at all
+but I I can't I can't tell what are what
+different kinds of interesting things
+C++ programmers enter up doing so for
+some people it can be a cumulative
+significant difference how how to pass a
+pointer versus a smart pointer I mean of
+course it adds up if you have for
+whatever reason you need to call that
+function that's not in lined 10 billion
+times there is going to be a
+difference okay so uh before you
+mentioned that you had a task when you
+decided to replace all the uh goall
+pointers with the unique pointers and to
+me oh shared from and uh to me that
+sounds like a simple yet potentially
+large task and this is exactly where I
+would say AI shines at right now so I
+was wondering my question is uh do you
+use AI somehow in your word or what is
+the role of AI
+so I personally don't use TOS like
+GitHub
+co-pilot and I specifically don't use
+anything that's chat GPT
+based because I have informal training
+on how AI
+works I have read a couple of list books
+when I was younger R them a couple of
+years ago they talk about symbolic
+processing expert systems and artificial
+intelligence and chat GP
+isn't an artificial
+intellig and especially there
+are practical examples how you can just
+Hoodwink it to spout whatever nonsense
+that you that you want you can give it
+any bird and ask it uh can you tell me
+things about this natural bird of
+Finland and it will it will tell you
+that what whatever vulture is the n
+national bird of Finland and it's going
+to come up with whatever backing story
+for that as if as if it is a fact so
+considering that I mean fine that's
+that's of course an attempt to fool it
+but it's kind of
+a simple attempt that it you would think
+that it it SE is through but it doesn't
+so for for a toy example like that where
+it doesn't
+matter it's fine if doesn't if it
+doesn't get the answer right but for
+something that needs to be so precise
+and hopefully bug free and U other other
+properties like this expression of your
+intent like
+programming I wouldn't want to delegate
+it delegate it to such a expert system
+that has that sort of noise
+levels I have no idea what data has been
+used to train it I have no idea whether
+it understands my code at the at the raw
+language level
+and I especially have no idea whether it
+understands the problem domain that I'm
+working
+in I mean fine we can we can
+probably have that kind of co-pilots
+Etc that will do a more intelligent job
+than that search and replace was because
+that was just purely texture that I did
+yet it
+worked but uh near near future AIS will
+probably be able to understand more of
+that context and say that hey in this
+particular case that sear and replace
+might not be a good idea so yes that
+kind of pre factorings may be helpful
+when done with an AI but uh I wonder how
+much time it will save because you will
+need to verify everything the AI did
+noways yes yeah you're pretty much
+always going to need to very by
+everything the AI do because it because
+it's it's it's it's not you you can't
+know that it did just the things that
+you
+intended so you run the risk of there
+being completely unknown bugs that you
+kind of
+introduced even though well you didn't
+use the tool to introduce them I don't I
+don't know
+if it works with Pro coding but uh you
+can ask the AI to site s what sure but
+that's the thing if you're if you're
+going to modify a gigabyte of code with
+it then you're still probably going to
+want to review
+it this is this is going to be an an
+increasing problem going
+forward there's always been this kind of
+uh question of if you use a code
+generator does it do exactly what it
+advertises or do you need
+to go and look at ev Everything it did
+and verify that it's generating what you
+thought it would be
+generating but those tend to be at least
+to some extent or to a very large extent
+determinist and AI can theoretically do
+anything
+and then there's of course I'm I'm not
+just a
+second
+no so I'm I'm not the one that's going
+to give you these uh worst case
+scenarios but uh there are of course
+when when there's an arbitrary
+transformation that is going to do
+whatever and you don't really know what
+it's going to be doing that opens up all
+kinds of interesting
+possibilities for exploits
+Etc uh in addition to my last question
+so you mentioned also that you learning
+rust or trying to use it in your word
+well I mean I'm my progress of learning
+rust is excruciating this foe because I
+for example have had to learn Lang
+language is like Swift and golin on the
+way so yeah but this is the kind of task
+in which AI could also
+help to teach me a new programming
+language well they you can ask for a
+solution
+and study this kind of solution yeah
+that's terrible I'm very old school at
+learning programming languages I need to
+understand the nuts and bolts how they
+work I mean how the language facilities
+work um I
+mean I used to think that I'm not a
+language lawyer in the very sense of the
+word I was told after I'd been in the
+committee that I must be because I've
+been there for multiple years and then I
+realized things like uh I was looking at
+uh
+how virtual functions work in a language
+like Java and
+C namely whether you can have priv with
+virtual functions in
+C I ended up finding that information by
+reading the ecma spec of C which is
+probably not what most people do when
+they are trying to figure out how how
+programming language
+works well I mean I tried to look at
+various tutorials and articles and
+didn't find an exact precise answer to
+my question so I had to go and read the
+specification
+instead because luckily I can nowadays
+read
+those but yeah I don't
+uh it's it's hard to figure out how how
+an AI could teach you a programming
+language um it might be useful if you
+feeded the information of what languages
+you know before learning the new one and
+then kind of try to focus it on that
+that I'm interested in how this and this
+thing is different
+but uh I don't I don't believe AIS are
+very good at explaining examples and
+Transformations as in as how you do it
+in Rust I mean sure they they produce
+impressive comments that explain it to
+an
+extent but I I I'm going to end up in a
+situation where for me personally that
+extent is too limited it's not enough
+for it to say that yeah well this this
+is different because so and
+so it's like you people looking at this
+slideshow of mine which is uh not
+completely free of detail but mostly so
+if you want to learn these techniques
+you're going to need to practice it with
+exercises this is not going to be enough
+for you to either learn or remember this
+I think I would run into a similar
+problem with with an AI based attempt to
+learn a programming
+language thank
+you I mean it's say your mileage May VAR
+situation it might be helpful for many
+people it uh it's probably useful if you
+really need to get out of a tight spot I
+mean if you run into a problem that
+here's this completely new programming
+language we need to ship something
+written in it and you have 15
+minutes sure I would use an AI in that
+case I would use whatever to help me I
+need to write a hello word and the fate
+of the world somehow depends on me so I
+would
+probably also try to use an AI in that
+case but luckily I have I haven't run
+into that situation
+yet a generic good generic teacher if
+you want an expert op it's not do
+it just
+what so the so the problem with how good
+a teacher can an AI
+be is that we don't understand cognitive
+Sciences to a sufficient extent so we
+don't we don't understand how how human
+brain works at U at that kind of levels
+if we would then we could create a
+computer program that is an efficient
+teacher and then you could you could do
+something else with
+your
+yeah yeah well that's that's the reason
+why I said that CH CET GPT in particular
+isn't an AI it's it it has a new and
+improved language model and then it
+crunches data better than the previous
+ones did but it it's not going to invent
+anything for you like ever
+so it might pass certain classical
+intelligence
+tests but whether it's truly intelligent
+we are still very far from that
+point and uh I don't I don't think we
+know what it takes to get to that point
+so that's
+why due to those traditional definitions
+I I am kind of allergic to what all
+sorts of things are called AI nowadays
+when they are very far
+from they can they can be useful tools
+they can provide and produce impressive
+results but whether they can really be
+called the artificial intelligence is
+stretching the term
+I'm so glad that industry represent same
+things as professors but you know maybe
+professors like you know academics what
+do they know
+but so very simar stand the reason why I
+know little bit of a little bit of about
+these things is that those list books I
+read were uh printed by the uh Helsinki
+University of
+Technology U that they had some teachers
+who were using thisis for symbolic
+computations and uh AI research uh this
+was I think early
+80s last century last Millennium you
+know many of you were born back then but
+uh so they actually had some theoretical
+background on that in the book
+explaining
+what what this is about and why that
+kind of symbolic computation languages
+are a good fit for that kind of problem
+spaces or at least they are claim
+claimed to
+be that uh who knows because we haven't
+actually seen real AI done with symbolic
+computation
+either but it's it's kind of more or
+less a fact that mere number crunching
+can produce intell
+Al so we think for now but maybe it's
+just a matter of uh kind of uh adding
+more and more transistors into it until
+you get Behavior sufficiently complex
+that inventions arise out of
+it that is
+certainly I suppose remotely
+PL there is questions there but I just
+want to war that we way
+over
+okay yeah that wasn't a surprise but we
+are like 15
+minutes
+fine we
+started hour yeah some delay but this is
+this is of course it's been an
+interesting discussion considering that
+it was really about language Technic
+alties and then we went all
+philosophical about various subjects I
+don't I don't
+mind but yeah I mean I I do need to kind
+of give you a retroactive caveat inro
+that I'm really not an AI Specialist or
+an
+expert in those
+fields you have two questions that I can
+access I think they're on your because
+maybe students send them directly to in
+the chat well this is going to be fun
+oh
+yeah I can see them if I stop sharing oh
+or
+maybe nah
+there's no there's just commentary not
+not
+questions oh this one is a good one I
+mean a large part of the purpose of any
+programming language is to communicate
+the meaning of the codee between
+different
+programmers verifying AI code is
+understandable for others is not an easy
+task this was a comment by our friend
+Yar
+ronkan the
+clean do you mean how is it implemented
+yeah
+so um for online people the question
+was in the case of exception how does
+the cleanup actually happen how are the
+disruptors
+called
+so what ends up happening is that
+uh the compiler will generate
+uh code that
+manipulates a Handler table that tells
+you where to jump that the where you
+actually catch the exception but in
+addition to that it's going to generate
+cleanup records that basically tell you
+um what cleanups need to be performed at
+different parts of the program when an
+exception is
+through uh I don't know the details of
+how this is done on Microsoft platforms
+but in on the ium ABI meaning meaning
+Linux and uh I would expect Mac as well
+because they they use uh clang as a well
+I mean Mac doesn't use elf binaries any
+anyway on any platform that uses elf elf
+binaries with the itanium Abbi it's done
+so that uh you basically have debug
+information that tracks the
+cleanups and when you throw the
+exception the uh program is actually
+going to add run time interpret that
+debug information to be able to find the
+right kind of uh cleanups to
+perform this is dreadfully
+slow and the original rational for doing
+it that way is that the uh part that we
+ostensibly want to optimize is the
+success part and that the error path can
+be
+slow but the uh slowness and overhead of
+all that stuff by relying on debug
+information and having to at one time
+interpret it is a significant
+contributor for certain audiences not
+being able to use exceptions with
+C++ the uh there's problems with how
+deterministic the uh handling is and
+just how absolutely slow it is even even
+if it doesn't
+fluctuate it is massively colos is
+slower than the success path is and
+there are various ways that it could be
+made more efficient but there are ABI
+compatibility aspects to consider that
+you could you could have a new form of
+exceptional handling but it
+wouldn't work with all binaries and it
+wouldn't always work with uh cross
+language applications where you mix
+multiple
+languages that can actually handle uh
+each other's
+exception so it's
+a that's a tricky
+problem but yeah I mean it's basically
+conceptually it's so that
+uh how I mean how a normal Frame Works
+is that you just gather the cleanups in
+particular
+order and then if if you jump out of it
+with a return or break you just have the
+the list of cleanups and then then you
+run them but if there are cleanups in a
+calling scope then it's not so simple
+and uh the compiler wouldn't know how to
+run those cleanups that in a in a manner
+that
+straightforward because you can you can
+compile different translation units at
+different times so it doesn't have the
+visibility that's why it needs a runtime
+it is in fact a runtime mechanism that's
+purely runtime the compiler has no idea
+what uh what a caller of a caller of a
+caller needs to clean up so it does need
+a runtime mechanism for that
+yes and there there is such a runtime
+mechanism and it's terribly slow at
+least on Linux which I use on a daily
+basis but it's it's a trade
+of there are there are certain certain
+other approaches like the whole
+programming language IM is where raising
+an error is uh lightning fast it's
+instantaneous un common list that you
+raise an error and jump to its Handler
+because
+that's done with a Handler bind that
+basically tells the uh site of the
+exception Throne directly where the
+Handler is so it's bound at compile time
+almost not quite but very close to being
+static Al
+bound we we don't have that ability in
+C++ it's always always a runtime
+operation could be uh behind an
+arbitrarily
+many an arbitrary amount of layers in
+between think it's easy toate a
+simple exception
+SL uh
+I mean sure if you
+have uh it doesn't require that you you
+just need to have a library that links
+to a library that links to a
+library then you have an application
+that us uses that yeah uses that whole
+change and then you throw from the
+bottom most Library so I make for
+myself yeah so so the thing is that
+whenever you have static
+linking the uh separate compilation
+problems can maybe be alleviated because
+we have link time
+optimizations and what the equivalent of
+what Microsoft calls link time code
+generation it is basically link time
+optimization same
+difference but Dynamic loaders don't do
+that at least not yet I wonder whether
+they ever plan to but they don't do that
+yet so when you do the runtime linking
+of shared
+libraries into a program image that then
+runs that doesn't perform link time
+optimizations it would be kind of neat
+if it did but I'm unaware of a lto
+optimizing Dynamic
+loader but nevertheless the
+uh the uh exception throwing mechanism
+on certain platforms is so heavy weight
+that you can't even optimize it it's
+it's actively hostile to
+optimization for for many
+reasons I'm losing parts of the audience
+they are
+escaping yeah
+sorry
+maybe have to eat to
+yeah but I think I think we'll be
+calling it today thank you all

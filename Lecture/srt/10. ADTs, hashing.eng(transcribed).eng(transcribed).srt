@@ -1,0 +1,5268 @@
+﻿1
+00:00:28,960 --> 00:00:31,960
+e
+
+2
+00:00:58,920 --> 00:01:01,920
+e
+
+3
+00:01:28,920 --> 00:01:31,920
+e
+
+4
+00:01:58,840 --> 00:02:01,840
+e
+
+5
+00:02:04,079 --> 00:02:07,000
+okay so let's
+
+6
+00:02:07,000 --> 00:02:09,679
+start let's start
+
+7
+00:02:09,679 --> 00:02:12,160
+um today
+
+8
+00:02:12,160 --> 00:02:18,000
+is a lecture on um ads and hashing so
+
+9
+00:02:18,000 --> 00:02:21,760
+adts is abstract data types that um I
+
+10
+00:02:21,760 --> 00:02:23,840
+will talk about at the level of
+
+11
+00:02:23,840 --> 00:02:28,120
+abstraction today but El next time we'll
+
+12
+00:02:28,120 --> 00:02:30,480
+talk about uh implementation of these
+
+13
+00:02:30,480 --> 00:02:33,280
+data structures in or abstract data
+
+14
+00:02:33,280 --> 00:02:37,680
+types in C++ uh STL but
+
+15
+00:02:37,680 --> 00:02:40,680
+today um I will be talking about more
+
+16
+00:02:40,680 --> 00:02:43,239
+abstractly about these data structures
+
+17
+00:02:43,239 --> 00:02:46,239
+and specifically about hashing and the
+
+18
+00:02:46,239 --> 00:02:49,560
+reason why we do this is because uh we
+
+19
+00:02:49,560 --> 00:02:51,680
+still have homework that is related to
+
+20
+00:02:51,680 --> 00:02:54,920
+this more uh theoretical uh things like
+
+21
+00:02:54,920 --> 00:02:58,319
+data structures however this will not be
+
+22
+00:02:58,319 --> 00:03:01,280
+topics that we cover on the exams so we
+
+23
+00:03:01,280 --> 00:03:04,280
+give this St this lecture primarily for
+
+24
+00:03:04,280 --> 00:03:06,920
+you to be able to uh complete your
+
+25
+00:03:06,920 --> 00:03:11,560
+homework uh specifically lab hash and uh
+
+26
+00:03:11,560 --> 00:03:14,319
+uh lab hash and what else
+
+27
+00:03:14,319 --> 00:03:18,400
+is um and dictionary so these
+
+28
+00:03:18,400 --> 00:03:20,799
+two
+
+29
+00:03:20,799 --> 00:03:24,440
+okay so today slider.com is
+
+30
+00:03:24,440 --> 00:03:28,280
+this and uh just please do not forget
+
+31
+00:03:28,280 --> 00:03:30,319
+that there's going to be a an invited
+
+32
+00:03:30,319 --> 00:03:32,879
+lecture next week already on Thursday so
+
+33
+00:03:32,879 --> 00:03:34,040
+exactly in a
+
+34
+00:03:34,040 --> 00:03:39,360
+week uh by uh V V Line
+
+35
+00:03:39,360 --> 00:03:42,239
+in okay so let's
+
+36
+00:03:42,239 --> 00:03:45,439
+start uh last time we talked about lists
+
+37
+00:03:45,439 --> 00:03:46,640
+and we even talked about the
+
+38
+00:03:46,640 --> 00:03:49,560
+implementation of lists using linked
+
+39
+00:03:49,560 --> 00:03:51,720
+memory and I talked about how to
+
+40
+00:03:51,720 --> 00:03:53,840
+implement such linked memory and you
+
+41
+00:03:53,840 --> 00:03:55,840
+will go through these exercises in your
+
+42
+00:03:55,840 --> 00:04:01,159
+lab um uh that lab and MP lists that we
+
+43
+00:04:01,159 --> 00:04:04,000
+have in this class however I just want
+
+44
+00:04:04,000 --> 00:04:07,519
+to mention today the
+
+45
+00:04:07,519 --> 00:04:11,920
+abstract things about about uh lists and
+
+46
+00:04:11,920 --> 00:04:13,879
+other uh abstract data types that we
+
+47
+00:04:13,879 --> 00:04:16,959
+will talk about today so uh what does it
+
+48
+00:04:16,959 --> 00:04:20,320
+mean an abstract data type it's just
+
+49
+00:04:20,320 --> 00:04:23,120
+when you describe the functionality of
+
+50
+00:04:23,120 --> 00:04:25,280
+your data so what do you want to do with
+
+51
+00:04:25,280 --> 00:04:27,199
+your data so what would we want to do
+
+52
+00:04:27,199 --> 00:04:30,400
+with lists specifically well
+
+53
+00:04:30,400 --> 00:04:32,440
+examples of list would be grocery lists
+
+54
+00:04:32,440 --> 00:04:35,000
+or to-do lists right or roster of
+
+55
+00:04:35,000 --> 00:04:38,039
+student so it's a collection of data
+
+56
+00:04:38,039 --> 00:04:40,160
+where you know a position so nothing
+
+57
+00:04:40,160 --> 00:04:43,919
+else really is so special about lists
+
+58
+00:04:43,919 --> 00:04:46,160
+and um all of the elements are index by
+
+59
+00:04:46,160 --> 00:04:49,600
+their position so therefore if you were
+
+60
+00:04:49,600 --> 00:04:52,800
+to implement a list say C+ using C++
+
+61
+00:04:52,800 --> 00:04:54,720
+language then you would provide an
+
+62
+00:04:54,720 --> 00:04:57,840
+interface for your list and the only
+
+63
+00:04:57,840 --> 00:04:59,759
+functionalities that you would provide
+
+64
+00:04:59,759 --> 00:05:02,759
+would be to the ability to insert and
+
+65
+00:05:02,759 --> 00:05:05,240
+remove elements in your list in a
+
+66
+00:05:05,240 --> 00:05:07,960
+specific position maybe you would also
+
+67
+00:05:07,960 --> 00:05:11,560
+allow to Peak at specific elements of in
+
+68
+00:05:11,560 --> 00:05:14,160
+in a particular position without
+
+69
+00:05:14,160 --> 00:05:16,000
+removing so these are the only
+
+70
+00:05:16,000 --> 00:05:19,000
+functionalities that would be enough to
+
+71
+00:05:19,000 --> 00:05:23,080
+describe and use this abstract data type
+
+72
+00:05:23,080 --> 00:05:26,240
+how these are implemented is not a
+
+73
+00:05:26,240 --> 00:05:29,280
+concern of a client so from the client
+
+74
+00:05:29,280 --> 00:05:31,880
+point of all we want to do from the
+
+75
+00:05:31,880 --> 00:05:34,400
+client side is to be able to insert
+
+76
+00:05:34,400 --> 00:05:36,880
+elements in certain position and remove
+
+77
+00:05:36,880 --> 00:05:39,120
+elements from certain position and maybe
+
+78
+00:05:39,120 --> 00:05:41,199
+look what is the element at a particular
+
+79
+00:05:41,199 --> 00:05:42,919
+position and that's
+
+80
+00:05:42,919 --> 00:05:47,720
+it the way you the way um you as a
+
+81
+00:05:47,720 --> 00:05:49,319
+designer or software engineer would
+
+82
+00:05:49,319 --> 00:05:52,880
+implement this class um is independent
+
+83
+00:05:52,880 --> 00:05:55,440
+of the user the user should not know or
+
+84
+00:05:55,440 --> 00:05:58,319
+doesn't even care about how this is
+
+85
+00:05:58,319 --> 00:06:02,120
+implemented so that's um so as you can
+
+86
+00:06:02,120 --> 00:06:03,520
+see we are talking about different
+
+87
+00:06:03,520 --> 00:06:06,000
+levels of abstraction when we talking
+
+88
+00:06:06,000 --> 00:06:08,599
+about data structures and that is first
+
+89
+00:06:08,599 --> 00:06:10,880
+the functionality of the data then the
+
+90
+00:06:10,880 --> 00:06:12,440
+interface so how particularly you're
+
+91
+00:06:12,440 --> 00:06:13,560
+going to implement and call these
+
+92
+00:06:13,560 --> 00:06:15,440
+functions and then actually the
+
+93
+00:06:15,440 --> 00:06:18,360
+implementation so maybe a list will be
+
+94
+00:06:18,360 --> 00:06:20,280
+implemented using an array or maybe a
+
+95
+00:06:20,280 --> 00:06:23,800
+linked list that's implementation
+
+96
+00:06:23,800 --> 00:06:26,479
+details okay so that was list and we did
+
+97
+00:06:26,479 --> 00:06:29,759
+it last time so now I want to talk about
+
+98
+00:06:29,759 --> 00:06:32,520
+the next abstract data type that is a
+
+99
+00:06:32,520 --> 00:06:36,000
+stack okay so what is a
+
+100
+00:06:36,000 --> 00:06:40,599
+stack here H Pringles is an example of a
+
+101
+00:06:40,599 --> 00:06:43,440
+stack so what is so special about data
+
+102
+00:06:43,440 --> 00:06:46,400
+structure or data collection that uh is
+
+103
+00:06:46,400 --> 00:06:49,319
+similar to Pringles well there's only
+
+104
+00:06:49,319 --> 00:06:52,360
+two functionalities or two operations
+
+105
+00:06:52,360 --> 00:06:55,400
+two um principal
+
+106
+00:06:55,400 --> 00:06:58,199
+operations that you can perform on the
+
+107
+00:06:58,199 --> 00:07:01,599
+stack that is you can insert an element
+
+108
+00:07:01,599 --> 00:07:02,919
+in the
+
+109
+00:07:02,919 --> 00:07:05,759
+stack and then you can remove the top
+
+110
+00:07:05,759 --> 00:07:07,840
+element from the stack so you cannot
+
+111
+00:07:07,840 --> 00:07:10,160
+really remove the bottom ele element you
+
+112
+00:07:10,160 --> 00:07:13,199
+cannot remove a pringle from the middle
+
+113
+00:07:13,199 --> 00:07:16,520
+without removing first top and first the
+
+114
+00:07:16,520 --> 00:07:19,039
+the top elements from the stack right so
+
+115
+00:07:19,039 --> 00:07:22,759
+you can push on top and pop an elephant
+
+116
+00:07:22,759 --> 00:07:25,479
+the top ele element so you can push an
+
+117
+00:07:25,479 --> 00:07:27,680
+element on top and pop the top element
+
+118
+00:07:27,680 --> 00:07:31,080
+and that's it you may want to implement
+
+119
+00:07:31,080 --> 00:07:33,560
+in your interface maybe a little more
+
+120
+00:07:33,560 --> 00:07:35,919
+more operations like to Peck at the top
+
+121
+00:07:35,919 --> 00:07:37,879
+element or ask whether it's an empty
+
+122
+00:07:37,879 --> 00:07:40,160
+stack or not but these are the two
+
+123
+00:07:40,160 --> 00:07:41,840
+principal
+
+124
+00:07:41,840 --> 00:07:46,240
+operations okay so um how if we were to
+
+125
+00:07:46,240 --> 00:07:49,759
+implement a stack class in
+
+126
+00:07:49,759 --> 00:07:52,919
+C++ then the interface of this
+
+127
+00:07:52,919 --> 00:07:55,560
+class would be exactly the functionality
+
+128
+00:07:55,560 --> 00:07:58,440
+of the stack that uh we would want to
+
+129
+00:07:58,440 --> 00:08:02,159
+see and of course we we expect to see
+
+130
+00:08:02,159 --> 00:08:04,560
+push and
+
+131
+00:08:04,560 --> 00:08:08,960
+Pop um and you can uh also maybe ask
+
+132
+00:08:08,960 --> 00:08:12,199
+whether you maybe you want to to ask see
+
+133
+00:08:12,199 --> 00:08:14,919
+what's on top as well the top operation
+
+134
+00:08:14,919 --> 00:08:17,400
+without changing the stack but push and
+
+135
+00:08:17,400 --> 00:08:21,039
+pop would change the stack okay and a
+
+136
+00:08:21,039 --> 00:08:24,440
+couple more maybe like ask for size and
+
+137
+00:08:24,440 --> 00:08:27,080
+uh whether it's empty or
+
+138
+00:08:27,080 --> 00:08:30,479
+not okay so here are examp of stats
+
+139
+00:08:30,479 --> 00:08:32,880
+stats and why do I even talk about stats
+
+140
+00:08:32,880 --> 00:08:35,760
+because some of the examples are um very
+
+141
+00:08:35,760 --> 00:08:38,599
+important moreover they are crucial for
+
+142
+00:08:38,599 --> 00:08:42,279
+programming in general so what are more
+
+143
+00:08:42,279 --> 00:08:44,120
+examples of stack last time I think I
+
+144
+00:08:44,120 --> 00:08:47,600
+mentioned that um Pez dispenser is a
+
+145
+00:08:47,600 --> 00:08:50,160
+stack right you can put the candy on top
+
+146
+00:08:50,160 --> 00:08:52,519
+and it falls on the bottom here but you
+
+147
+00:08:52,519 --> 00:08:56,360
+can only pop the the top candy you
+
+148
+00:08:56,360 --> 00:08:58,640
+cannot really start from the bottom just
+
+149
+00:08:58,640 --> 00:09:00,720
+like with Pringles
+
+150
+00:09:00,720 --> 00:09:02,959
+chips I don't know I have a problem
+
+151
+00:09:02,959 --> 00:09:05,200
+today with this laptop I I hope you
+
+152
+00:09:05,200 --> 00:09:07,640
+don't see it like blinking
+
+153
+00:09:07,640 --> 00:09:10,120
+and there's some problem with the screen
+
+154
+00:09:10,120 --> 00:09:13,000
+that I cannot diagnose some connection
+
+155
+00:09:13,000 --> 00:09:16,079
+problem anyway so why I wanted to
+
+156
+00:09:16,079 --> 00:09:17,560
+mention
+
+157
+00:09:17,560 --> 00:09:20,440
+Stacks uh it's because there's also
+
+158
+00:09:20,440 --> 00:09:23,160
+Hardware stack and it works on the same
+
+159
+00:09:23,160 --> 00:09:28,040
+Principle as uh STL stats or data
+
+160
+00:09:28,040 --> 00:09:29,800
+structure stats that you you heard in
+
+161
+00:09:29,800 --> 00:09:31,800
+your data structures course or
+
+162
+00:09:31,800 --> 00:09:35,480
+algorithms course so let's look at the
+
+163
+00:09:35,480 --> 00:09:38,440
+operation of the main function and what
+
+164
+00:09:38,440 --> 00:09:41,279
+really happens in Hardware stack or how
+
+165
+00:09:41,279 --> 00:09:43,360
+is memory going to be arranged on the
+
+166
+00:09:43,360 --> 00:09:46,160
+stack and there's no surprise that when
+
+167
+00:09:46,160 --> 00:09:49,120
+we talk about memories um variables on
+
+168
+00:09:49,120 --> 00:09:52,959
+the stack it is the stack data type
+
+169
+00:09:52,959 --> 00:09:54,440
+abstract data type that I'm talking
+
+170
+00:09:54,440 --> 00:09:57,240
+about now so let's see how it works so
+
+171
+00:09:57,240 --> 00:10:01,040
+imagine that uh we are executing main
+
+172
+00:10:01,040 --> 00:10:05,279
+function um so in C++ when um the
+
+173
+00:10:05,279 --> 00:10:08,560
+control goes to a function that
+
+174
+00:10:08,560 --> 00:10:11,320
+function together with its local
+
+175
+00:10:11,320 --> 00:10:14,839
+variables and whatever parameters it has
+
+176
+00:10:14,839 --> 00:10:18,320
+will be pushed on the stack and the
+
+177
+00:10:18,320 --> 00:10:21,240
+pointer which is which it's a hardware
+
+178
+00:10:21,240 --> 00:10:24,720
+pointer it's CPU pointer that um
+
+179
+00:10:24,720 --> 00:10:26,480
+represents what's the top of the stack
+
+180
+00:10:26,480 --> 00:10:29,360
+is going to be moved to the top of the
+
+181
+00:10:29,360 --> 00:10:33,360
+that function space so here main is
+
+182
+00:10:33,360 --> 00:10:36,320
+pushed on the stack together with all of
+
+183
+00:10:36,320 --> 00:10:37,880
+its local
+
+184
+00:10:37,880 --> 00:10:40,600
+variables and then main starts executing
+
+185
+00:10:40,600 --> 00:10:43,480
+so that's when the control goes to main
+
+186
+00:10:43,480 --> 00:10:45,920
+okay so that's great but when we execute
+
+187
+00:10:45,920 --> 00:10:48,920
+main we see that the next function that
+
+188
+00:10:48,920 --> 00:10:52,360
+it calls is called study hard which
+
+189
+00:10:52,360 --> 00:10:55,880
+means that an entire region associated
+
+190
+00:10:55,880 --> 00:10:58,040
+with all of the local variables and
+
+191
+00:10:58,040 --> 00:11:00,560
+parameters whatever par that are sent to
+
+192
+00:11:00,560 --> 00:11:03,519
+this function will be again pushed on
+
+193
+00:11:03,519 --> 00:11:06,959
+top of the stack so this is study hard
+
+194
+00:11:06,959 --> 00:11:08,720
+study hard
+
+195
+00:11:08,720 --> 00:11:12,440
+function and the control is passed to
+
+196
+00:11:12,440 --> 00:11:16,120
+this function and the hardware stack top
+
+197
+00:11:16,120 --> 00:11:18,560
+of the stack pointer is moved to the
+
+198
+00:11:18,560 --> 00:11:21,240
+corresponding position on top of the
+
+199
+00:11:21,240 --> 00:11:24,760
+stack therefore again study heart
+
+200
+00:11:24,760 --> 00:11:26,519
+occupies this portion of the stack and
+
+201
+00:11:26,519 --> 00:11:29,920
+the pointer is moved and um and study
+
+202
+00:11:29,920 --> 00:11:32,920
+heart starts uh execution and the first
+
+203
+00:11:32,920 --> 00:11:34,959
+thing that it does is calls it calls
+
+204
+00:11:34,959 --> 00:11:38,000
+another function which is MPS and again
+
+205
+00:11:38,000 --> 00:11:40,519
+MP is with all of its local variables is
+
+206
+00:11:40,519 --> 00:11:42,959
+pushed on top of the stack and the top
+
+207
+00:11:42,959 --> 00:11:45,920
+top of the stack pointer is moved and
+
+208
+00:11:45,920 --> 00:11:51,360
+the execution of MPS starts and plan is
+
+209
+00:11:51,360 --> 00:11:53,839
+pushed on top of the
+
+210
+00:11:53,839 --> 00:11:56,680
+stack and the pointer is advanced again
+
+211
+00:11:56,680 --> 00:11:58,519
+to the corresponding position and all of
+
+212
+00:11:58,519 --> 00:12:01,800
+the local Vari Ables of the plan that uh
+
+213
+00:12:01,800 --> 00:12:03,920
+that were allocated in the stack are
+
+214
+00:12:03,920 --> 00:12:06,959
+there in this region in this bucket that
+
+215
+00:12:06,959 --> 00:12:10,120
+was just pushed on top of the stack so
+
+216
+00:12:10,120 --> 00:12:13,120
+what happens once the execution ends so
+
+217
+00:12:13,120 --> 00:12:17,199
+plan started execution and then it the
+
+218
+00:12:17,199 --> 00:12:20,440
+the program sees
+
+219
+00:12:20,440 --> 00:12:24,519
+the right the the the closing curly
+
+220
+00:12:24,519 --> 00:12:28,279
+braces which means that plan ceases to
+
+221
+00:12:28,279 --> 00:12:30,399
+exist there is ution should be passed
+
+222
+00:12:30,399 --> 00:12:34,000
+back to MPS so what happens with the
+
+223
+00:12:34,000 --> 00:12:37,199
+stack is that this whole region
+
+224
+00:12:37,199 --> 00:12:39,839
+associated with plan is removed but it's
+
+225
+00:12:39,839 --> 00:12:41,519
+not really physically removed it's just
+
+226
+00:12:41,519 --> 00:12:45,279
+that the top of the stack is sent
+
+227
+00:12:45,279 --> 00:12:48,959
+back two MPS which means that
+
+228
+00:12:48,959 --> 00:12:50,760
+technically none of these local
+
+229
+00:12:50,760 --> 00:12:53,199
+variables can ever be reached again
+
+230
+00:12:53,199 --> 00:12:55,240
+because the top of the stack is not
+
+231
+00:12:55,240 --> 00:12:58,480
+there anymore and execution as execution
+
+232
+00:12:58,480 --> 00:13:00,040
+continues some something else can be
+
+233
+00:13:00,040 --> 00:13:01,680
+pushed on the stack and in this case
+
+234
+00:13:01,680 --> 00:13:04,680
+it's code right code is going to be put
+
+235
+00:13:04,680 --> 00:13:06,560
+here on top of the stack because it
+
+236
+00:13:06,560 --> 00:13:09,040
+starts as execution and the top of the
+
+237
+00:13:09,040 --> 00:13:10,519
+stack is going to be Advanced and all of
+
+238
+00:13:10,519 --> 00:13:12,880
+the local variables are going to live
+
+239
+00:13:12,880 --> 00:13:15,959
+here so what this is this is exactly
+
+240
+00:13:15,959 --> 00:13:19,680
+what it means that variables go out of
+
+241
+00:13:19,680 --> 00:13:23,519
+scope that's when they're no longer on
+
+242
+00:13:23,519 --> 00:13:26,720
+the stack so just like when code ends
+
+243
+00:13:26,720 --> 00:13:29,639
+its execution the stack
+
+244
+00:13:29,639 --> 00:13:32,920
+uh pointer will go back to MPS which
+
+245
+00:13:32,920 --> 00:13:35,240
+means the control is going to be sent uh
+
+246
+00:13:35,240 --> 00:13:38,600
+given back to the MPS function and all
+
+247
+00:13:38,600 --> 00:13:42,279
+of the code uh portion of the stack is
+
+248
+00:13:42,279 --> 00:13:44,440
+not going to be available anymore it
+
+249
+00:13:44,440 --> 00:13:47,519
+goes out of scope right the control is
+
+250
+00:13:47,519 --> 00:13:50,759
+passed back to MPS and so on then MPS
+
+251
+00:13:50,759 --> 00:13:53,800
+Seas to this right the uh pointer goes
+
+252
+00:13:53,800 --> 00:13:56,600
+back to study heart and all of this
+
+253
+00:13:56,600 --> 00:13:59,519
+memory is no longer on the stack and it
+
+254
+00:13:59,519 --> 00:14:01,560
+will be overwritten by whatever is the
+
+255
+00:14:01,560 --> 00:14:03,240
+next function that's going to be pushed
+
+256
+00:14:03,240 --> 00:14:05,639
+on top of the stack so this notion of
+
+257
+00:14:05,639 --> 00:14:07,800
+Stack is very useful to keep in mind
+
+258
+00:14:07,800 --> 00:14:11,160
+when you think about the order in which
+
+259
+00:14:11,160 --> 00:14:14,079
+um local variables are on the stack in
+
+260
+00:14:14,079 --> 00:14:15,240
+order in which they're going to be
+
+261
+00:14:15,240 --> 00:14:18,279
+deleted in order in which um destructors
+
+262
+00:14:18,279 --> 00:14:20,199
+are going to be called all of this
+
+263
+00:14:20,199 --> 00:14:23,320
+matters and all of this re is the result
+
+264
+00:14:23,320 --> 00:14:24,839
+of Stack
+
+265
+00:14:24,839 --> 00:14:28,000
+operations just like in abstract data
+
+266
+00:14:28,000 --> 00:14:31,279
+type stack so push and pop and the order
+
+267
+00:14:31,279 --> 00:14:33,560
+is determined by that and the order what
+
+268
+00:14:33,560 --> 00:14:37,720
+we call this order so let me go back um
+
+269
+00:14:37,720 --> 00:14:41,880
+the order is last in first out right so
+
+270
+00:14:41,880 --> 00:14:44,120
+whatever was on top of the stat that was
+
+271
+00:14:44,120 --> 00:14:47,399
+the last element that was in that can be
+
+272
+00:14:47,399 --> 00:14:50,720
+the first one to be
+
+273
+00:14:50,759 --> 00:14:56,040
+out last in first out okay so we can
+
+274
+00:14:56,040 --> 00:14:59,560
+only uh remove the top element which was
+
+275
+00:14:59,560 --> 00:15:01,360
+the last one to go
+
+276
+00:15:01,360 --> 00:15:04,800
+in okay so similarly this post fits
+
+277
+00:15:04,800 --> 00:15:07,560
+notation uh that was implemented in uh
+
+278
+00:15:07,560 --> 00:15:10,600
+you know calculators long time ago
+
+279
+00:15:10,600 --> 00:15:12,440
+because the memories was so the memory
+
+280
+00:15:12,440 --> 00:15:17,160
+was so small so um essentially when you
+
+281
+00:15:17,160 --> 00:15:20,519
+see that the operation was if you see a
+
+282
+00:15:20,519 --> 00:15:24,759
+number you push it on the stack if you
+
+283
+00:15:24,759 --> 00:15:27,440
+see so let's let's put it this way here
+
+284
+00:15:27,440 --> 00:15:29,920
+if there's another stack for the this uh
+
+285
+00:15:29,920 --> 00:15:32,440
+postfix notation in a calculator when
+
+286
+00:15:32,440 --> 00:15:35,560
+you see a number push it when you see
+
+287
+00:15:35,560 --> 00:15:39,680
+five next number uh push it when you see
+
+288
+00:15:39,680 --> 00:15:42,800
+an operation pop the last two
+
+289
+00:15:42,800 --> 00:15:46,399
+numbers and do an operation on them so
+
+290
+00:15:46,399 --> 00:15:49,360
+that's nine so push the result back
+
+291
+00:15:49,360 --> 00:15:52,959
+nine then you see a number push it you
+
+292
+00:15:52,959 --> 00:15:56,800
+see a number push it see an operation
+
+293
+00:15:56,800 --> 00:16:01,959
+pop the last two numbers or elements
+
+294
+00:16:01,959 --> 00:16:05,639
+perform the operation minus and push the
+
+295
+00:16:05,639 --> 00:16:08,519
+result which is
+
+296
+00:16:10,519 --> 00:16:13,199
+five
+
+297
+00:16:13,199 --> 00:16:16,240
+five and then what's the next element
+
+298
+00:16:16,240 --> 00:16:19,519
+that we see multiplication right so you
+
+299
+00:16:19,519 --> 00:16:22,560
+see an operation you pop the last two
+
+300
+00:16:22,560 --> 00:16:25,920
+numbers apply operation and push the
+
+301
+00:16:25,920 --> 00:16:29,040
+result which will be what 45 forever 4
+
+302
+00:16:29,040 --> 00:16:33,000
+45 and so on and then
+
+303
+00:16:33,000 --> 00:16:38,279
+continue but um so the stats are very
+
+304
+00:16:38,279 --> 00:16:39,680
+important they're fundamental data
+
+305
+00:16:39,680 --> 00:16:41,839
+structures and they're still used in
+
+306
+00:16:41,839 --> 00:16:45,199
+Hardware um in modern computers and
+
+307
+00:16:45,199 --> 00:16:47,560
+that's why we talk about stack
+
+308
+00:16:47,560 --> 00:16:49,440
+variables and
+
+309
+00:16:49,440 --> 00:16:53,319
+scope okay so now the next fundamental
+
+310
+00:16:53,319 --> 00:16:56,600
+data structure is uh or abstract data
+
+311
+00:16:56,600 --> 00:16:59,319
+type is a q so what's the difference
+
+312
+00:16:59,319 --> 00:17:03,319
+between a q and a stack well this is our
+
+313
+00:17:03,319 --> 00:17:06,119
+stack right where the principle is last
+
+314
+00:17:06,119 --> 00:17:10,720
+in first out so Q data abstract data
+
+315
+00:17:10,720 --> 00:17:13,160
+type is a collection of element where
+
+316
+00:17:13,160 --> 00:17:15,959
+you can perform slightly different two
+
+317
+00:17:15,959 --> 00:17:19,359
+principal operations that is n q that
+
+318
+00:17:19,359 --> 00:17:21,480
+you put an element in the
+
+319
+00:17:21,480 --> 00:17:25,799
+Q and then you can in q more just a q
+
+320
+00:17:25,799 --> 00:17:28,119
+okay so then the first element that you
+
+321
+00:17:28,119 --> 00:17:31,960
+can d DQ was the first one that came in
+
+322
+00:17:31,960 --> 00:17:34,080
+so the principle is slightly different
+
+323
+00:17:34,080 --> 00:17:36,600
+it's first in first out just like Q's
+
+324
+00:17:36,600 --> 00:17:39,320
+any Q in a grocery store or postal
+
+325
+00:17:39,320 --> 00:17:42,679
+office right so the first in first out
+
+326
+00:17:42,679 --> 00:17:46,400
+in uh contrast to last in first out for
+
+327
+00:17:46,400 --> 00:17:49,240
+Stacks so how could I make Pringles into
+
+328
+00:17:49,240 --> 00:17:50,080
+a
+
+329
+00:17:50,080 --> 00:17:54,559
+q anybody want to say I want to have a
+
+330
+00:17:54,559 --> 00:17:57,440
+box of Pringles and I want to make it a
+
+331
+00:17:57,440 --> 00:17:59,600
+q instead of a stack
+
+332
+00:17:59,600 --> 00:18:02,520
+how would that look
+
+333
+00:18:03,840 --> 00:18:06,600
+like I cut the bottom right I just cut
+
+334
+00:18:06,600 --> 00:18:10,039
+the bottom of here and then I can remove
+
+335
+00:18:10,039 --> 00:18:13,520
+um my Pringle tips from both sides from
+
+336
+00:18:13,520 --> 00:18:15,440
+front and from back so it's not really
+
+337
+00:18:15,440 --> 00:18:17,679
+this cute that I just described but it's
+
+338
+00:18:17,679 --> 00:18:21,679
+more like a double end Q double end
+
+339
+00:18:21,679 --> 00:18:25,039
+q and that's exactly what Elmer will be
+
+340
+00:18:25,039 --> 00:18:28,880
+talking about uh on Tuesday because
+
+341
+00:18:28,880 --> 00:18:31,200
+that's one of the STL Q's
+
+342
+00:18:31,200 --> 00:18:33,679
+implementations where you can you can
+
+343
+00:18:33,679 --> 00:18:36,320
+grab objects not only from the first in
+
+344
+00:18:36,320 --> 00:18:38,520
+first out but also from the back you can
+
+345
+00:18:38,520 --> 00:18:41,080
+grab elements from both sides just like
+
+346
+00:18:41,080 --> 00:18:43,280
+Pringles with the bottom cut
+
+347
+00:18:43,280 --> 00:18:46,240
+out you Cann grab them from the middle
+
+348
+00:18:46,240 --> 00:18:47,840
+right you cannot take a middle chip
+
+349
+00:18:47,840 --> 00:18:50,480
+without rearranging everything or
+
+350
+00:18:50,480 --> 00:18:53,559
+removing half of the quebe but you can
+
+351
+00:18:53,559 --> 00:18:56,159
+grab the first one or the last one in
+
+352
+00:18:56,159 --> 00:19:01,520
+the que okay so this will be STD STD
+
+353
+00:19:01,520 --> 00:19:03,640
+double Q
+
+354
+00:19:03,640 --> 00:19:05,880
+okay again we're not talking about
+
+355
+00:19:05,880 --> 00:19:07,840
+implementation at this point so I'm
+
+356
+00:19:07,840 --> 00:19:09,159
+talking about different level of
+
+357
+00:19:09,159 --> 00:19:10,559
+abstraction I'm talking about the
+
+358
+00:19:10,559 --> 00:19:13,200
+interfaces how to use them but I'm not
+
+359
+00:19:13,200 --> 00:19:16,640
+talking about how one would implement it
+
+360
+00:19:16,640 --> 00:19:19,120
+so if I were to write an interface to a
+
+361
+00:19:19,120 --> 00:19:21,799
+queue I would have all of the the two
+
+362
+00:19:21,799 --> 00:19:25,200
+principal operations in Q and DQ but
+
+363
+00:19:25,200 --> 00:19:28,280
+maybe I could also ask if it's an empty
+
+364
+00:19:28,280 --> 00:19:30,799
+Q or not not or peek at the front of the
+
+365
+00:19:30,799 --> 00:19:33,520
+que or if it was double-ended Q I could
+
+366
+00:19:33,520 --> 00:19:36,240
+maybe peek at the at the end as
+
+367
+00:19:36,240 --> 00:19:40,320
+well okay so that's
+
+368
+00:19:40,320 --> 00:19:43,200
+good so the last abstract data type that
+
+369
+00:19:43,200 --> 00:19:46,280
+I want to talk about today is called a
+
+370
+00:19:46,280 --> 00:19:49,559
+dictionary so what is a
+
+371
+00:19:49,559 --> 00:19:53,159
+dictionary in in uh real life something
+
+372
+00:19:53,159 --> 00:19:56,440
+similar to dictionaries would be phone
+
+373
+00:19:56,440 --> 00:19:59,880
+books or a dictionary dictionary where
+
+374
+00:19:59,880 --> 00:20:04,000
+you look up the meaning of a word so
+
+375
+00:20:04,000 --> 00:20:06,799
+essentially a dictionary is a collection
+
+376
+00:20:06,799 --> 00:20:11,280
+of keys and values where keys are not
+
+377
+00:20:11,280 --> 00:20:14,120
+necessarily numbers anymore so just like
+
+378
+00:20:14,120 --> 00:20:16,559
+with the phone book you look up a name
+
+379
+00:20:16,559 --> 00:20:18,559
+and for that name you'll see the phone
+
+380
+00:20:18,559 --> 00:20:21,360
+number and there may be multiple same
+
+381
+00:20:21,360 --> 00:20:22,799
+names and they'll have different phone
+
+382
+00:20:22,799 --> 00:20:27,440
+number so that is possible or um or it
+
+383
+00:20:27,440 --> 00:20:29,880
+can be an address book right so you also
+
+384
+00:20:29,880 --> 00:20:33,880
+look maybe you look at the at the um
+
+385
+00:20:33,880 --> 00:20:35,640
+well add dress book is not really a good
+
+386
+00:20:35,640 --> 00:20:38,960
+example a Rost of students you you have
+
+387
+00:20:38,960 --> 00:20:42,159
+um the ID numbers and you look up their
+
+388
+00:20:42,159 --> 00:20:44,960
+name or photo so key
+
+389
+00:20:44,960 --> 00:20:49,440
+value uh Pairs and collection of them so
+
+390
+00:20:49,440 --> 00:20:52,919
+what is um interesting about the
+
+391
+00:20:52,919 --> 00:20:56,159
+terminology is again different levels of
+
+392
+00:20:56,159 --> 00:20:58,799
+abstractions May mean the same thing so
+
+393
+00:20:58,799 --> 00:21:01,280
+you may say oh it's dictionary when you
+
+394
+00:21:01,280 --> 00:21:03,919
+talking about abstract data type but
+
+395
+00:21:03,919 --> 00:21:06,440
+then how are they implemented it's an
+
+396
+00:21:06,440 --> 00:21:09,640
+ordered Maps or maps at in a standard
+
+397
+00:21:09,640 --> 00:21:12,440
+templated Library uh in
+
+398
+00:21:12,440 --> 00:21:15,240
+C++ or if you look under the hood they
+
+399
+00:21:15,240 --> 00:21:16,799
+implemented using what's called hash
+
+400
+00:21:16,799 --> 00:21:20,159
+tables that we'll look at today or even
+
+401
+00:21:20,159 --> 00:21:23,919
+more um precisely those are associative
+
+402
+00:21:23,919 --> 00:21:26,120
+arrays right so arrays that do not have
+
+403
+00:21:26,120 --> 00:21:29,480
+integer indices but have um um any kind
+
+404
+00:21:29,480 --> 00:21:32,600
+of type index whether it's strain or
+
+405
+00:21:32,600 --> 00:21:36,240
+whatever you want it to be so that's um
+
+406
+00:21:36,240 --> 00:21:38,679
+terminology here right and this is the
+
+407
+00:21:38,679 --> 00:21:41,279
+definition so let's think about the
+
+408
+00:21:41,279 --> 00:21:44,919
+operations that can be allowed in this
+
+409
+00:21:44,919 --> 00:21:47,440
+um if you were to write an interface
+
+410
+00:21:47,440 --> 00:21:48,840
+what would be the operations that you
+
+411
+00:21:48,840 --> 00:21:51,080
+allowed so here's an interface of a
+
+412
+00:21:51,080 --> 00:21:54,120
+dictionary and C++ so you might want to
+
+413
+00:21:54,120 --> 00:21:59,080
+insert a key a new key value so uh again
+
+414
+00:21:59,080 --> 00:22:01,080
+maybe there's a new person in town with
+
+415
+00:22:01,080 --> 00:22:02,760
+the phone number right you want to
+
+416
+00:22:02,760 --> 00:22:06,039
+insert uh the key value the the person's
+
+417
+00:22:06,039 --> 00:22:08,039
+name and their phone number into the
+
+418
+00:22:08,039 --> 00:22:11,880
+book you might want to remove a specific
+
+419
+00:22:11,880 --> 00:22:13,039
+um
+
+420
+00:22:13,039 --> 00:22:15,240
+key together with the value of course
+
+421
+00:22:15,240 --> 00:22:17,600
+all of that will be removed you may just
+
+422
+00:22:17,600 --> 00:22:20,200
+want to look at that key value pair
+
+423
+00:22:20,200 --> 00:22:23,640
+without removing and again um just check
+
+424
+00:22:23,640 --> 00:22:26,600
+if it's an empty uh dictionary or not so
+
+425
+00:22:26,600 --> 00:22:29,440
+something else that is fundamental
+
+426
+00:22:29,440 --> 00:22:32,799
+is uh in C++ is that you can override
+
+427
+00:22:32,799 --> 00:22:35,000
+operator square
+
+428
+00:22:35,000 --> 00:22:39,120
+brackets so you can access those
+
+429
+00:22:39,120 --> 00:22:42,840
+elements or values by the
+
+430
+00:22:42,840 --> 00:22:46,120
+keys by saying square
+
+431
+00:22:46,120 --> 00:22:48,919
+bracket and put an apple there because
+
+432
+00:22:48,919 --> 00:22:51,760
+that's your key and know Apple will give
+
+433
+00:22:51,760 --> 00:22:53,279
+you the value of the Apple which is
+
+434
+00:22:53,279 --> 00:22:56,000
+maybe red shiny or whatever juicy or
+
+435
+00:22:56,000 --> 00:22:57,520
+whatever are they or a picture of an
+
+436
+00:22:57,520 --> 00:23:01,679
+apple so this is a very abstract way of
+
+437
+00:23:01,679 --> 00:23:05,039
+then using square brackets which is a
+
+438
+00:23:05,039 --> 00:23:07,039
+really neat thing so let's see how it's
+
+439
+00:23:07,039 --> 00:23:10,360
+done I'll give you some examples so
+
+440
+00:23:10,360 --> 00:23:14,960
+suppose we have the following data and I
+
+441
+00:23:14,960 --> 00:23:17,600
+really hope that the screen doesn't do
+
+442
+00:23:17,600 --> 00:23:20,360
+what what I see here so let's let's hope
+
+443
+00:23:20,360 --> 00:23:23,679
+that the recording is nice but anyway so
+
+444
+00:23:23,679 --> 00:23:26,000
+um assume that you have the following
+
+445
+00:23:26,000 --> 00:23:28,279
+pairs lock a number and a name so you
+
+446
+00:23:28,279 --> 00:23:31,279
+have a school and say it has five story
+
+447
+00:23:31,279 --> 00:23:35,400
+school and the lockers are numbered by
+
+448
+00:23:35,400 --> 00:23:41,440
+the first um number is the the floor and
+
+449
+00:23:41,440 --> 00:23:45,200
+then the rest is um is the number of the
+
+450
+00:23:45,200 --> 00:23:49,559
+locker and um say uh and then you you
+
+451
+00:23:49,559 --> 00:23:52,240
+get the name of the student
+
+452
+00:23:52,240 --> 00:23:56,279
+right so what if I want to retrieve a
+
+453
+00:23:56,279 --> 00:23:59,200
+name given a Locker number
+
+454
+00:23:59,200 --> 00:24:03,080
+well then I can say whatever my table
+
+455
+00:24:03,080 --> 00:24:06,840
+is and put
+
+456
+00:24:07,760 --> 00:24:11,960
+103 and you get the name of that student
+
+457
+00:24:11,960 --> 00:24:15,080
+that has that Locker or owns that Locker
+
+458
+00:24:15,080 --> 00:24:17,080
+right so that's not a big deal because
+
+459
+00:24:17,080 --> 00:24:19,039
+then you might think I don't know what
+
+460
+00:24:19,039 --> 00:24:20,919
+why it's happening do you see guys this
+
+461
+00:24:20,919 --> 00:24:24,799
+blurring of the W of this
+
+462
+00:24:26,600 --> 00:24:30,360
+screen it's kind of annoying
+
+463
+00:24:30,360 --> 00:24:31,399
+but
+
+464
+00:24:31,399 --> 00:24:35,080
+anyway so
+
+465
+00:24:35,159 --> 00:24:38,000
+um the way to implement it is doesn't
+
+466
+00:24:38,000 --> 00:24:39,799
+seem like a big deal like why are we
+
+467
+00:24:39,799 --> 00:24:41,799
+even talking about this associative
+
+468
+00:24:41,799 --> 00:24:45,600
+arrays or hashing if we have this Locker
+
+469
+00:24:45,600 --> 00:24:47,760
+number keys and
+
+470
+00:24:47,760 --> 00:24:51,080
+name uh values it's not a big deal just
+
+471
+00:24:51,080 --> 00:24:55,559
+to store it all in Array and put um
+
+472
+00:24:55,559 --> 00:24:59,679
+number this array from zero to whatever
+
+473
+00:24:59,679 --> 00:25:02,880
+um whatever is the last floor I said
+
+474
+00:25:02,880 --> 00:25:04,880
+five floors so maybe
+
+475
+00:25:04,880 --> 00:25:07,919
+599 right and just put all of the
+
+476
+00:25:07,919 --> 00:25:12,840
+corresponding names like J had away here
+
+477
+00:25:12,840 --> 00:25:15,679
+uh into the corresponding indices of
+
+478
+00:25:15,679 --> 00:25:19,320
+elements of the array not a big deal
+
+479
+00:25:19,320 --> 00:25:23,360
+right then you can just ask for that
+
+480
+00:25:23,360 --> 00:25:25,960
+corresponding uh element of the array
+
+481
+00:25:25,960 --> 00:25:28,080
+using square brackets not a big deal
+
+482
+00:25:28,080 --> 00:25:29,120
+right
+
+483
+00:25:29,120 --> 00:25:31,360
+but however for this particular example
+
+484
+00:25:31,360 --> 00:25:33,399
+this is only possible because we have
+
+485
+00:25:33,399 --> 00:25:37,720
+really specific nice keys that is they
+
+486
+00:25:37,720 --> 00:25:41,200
+are integers they are positive integers
+
+487
+00:25:41,200 --> 00:25:43,520
+and moreover they're small positive
+
+488
+00:25:43,520 --> 00:25:46,320
+integers right so we don't it's not a
+
+489
+00:25:46,320 --> 00:25:51,720
+100 story floor or um or more right not
+
+490
+00:25:51,720 --> 00:25:53,600
+100 story
+
+491
+00:25:53,600 --> 00:25:56,960
+building um so this is something very
+
+492
+00:25:56,960 --> 00:26:00,679
+specific what if my key values are um
+
+493
+00:26:00,679 --> 00:26:03,320
+are more complex like a course number
+
+494
+00:26:03,320 --> 00:26:04,960
+right so what is the course number that
+
+495
+00:26:04,960 --> 00:26:07,000
+we have I I really don't know I'm going
+
+496
+00:26:07,000 --> 00:26:09,240
+to just put something like this what is
+
+497
+00:26:09,240 --> 00:26:12,039
+the course number like this and you want
+
+498
+00:26:12,039 --> 00:26:15,080
+to look up by course number a schedule
+
+499
+00:26:15,080 --> 00:26:17,880
+info for or information about the course
+
+500
+00:26:17,880 --> 00:26:19,640
+or say you have a flight number right
+
+501
+00:26:19,640 --> 00:26:22,399
+something like American Airlines
+
+502
+00:26:22,399 --> 00:26:25,600
+7705 right and you look at the arrival
+
+503
+00:26:25,600 --> 00:26:28,679
+information so so maybe the keys are not
+
+504
+00:26:28,679 --> 00:26:30,880
+as necessarily nice as in this first
+
+505
+00:26:30,880 --> 00:26:33,039
+example or you have a URL that's a
+
+506
+00:26:33,039 --> 00:26:35,240
+string string and you want to look up
+
+507
+00:26:35,240 --> 00:26:38,120
+the the page so I'll give you more
+
+508
+00:26:38,120 --> 00:26:41,320
+examples of possible indices and how to
+
+509
+00:26:41,320 --> 00:26:43,799
+deal then with the rang in this data in
+
+510
+00:26:43,799 --> 00:26:45,720
+memory so now we'll talk a little bit
+
+511
+00:26:45,720 --> 00:26:48,240
+about implementation and we talk about
+
+512
+00:26:48,240 --> 00:26:51,120
+implementation here uh because your
+
+513
+00:26:51,120 --> 00:26:53,720
+homework has it we are kind of
+
+514
+00:26:53,720 --> 00:26:55,640
+overlapping this material a little bit
+
+515
+00:26:55,640 --> 00:26:57,399
+with data structure scor where they
+
+516
+00:26:57,399 --> 00:26:59,600
+would be talking about hashing is an
+
+517
+00:26:59,600 --> 00:27:02,480
+implementation um however we do that
+
+518
+00:27:02,480 --> 00:27:04,679
+because we still have those assignments
+
+519
+00:27:04,679 --> 00:27:06,440
+okay so what is general vacabulary
+
+520
+00:27:06,440 --> 00:27:08,360
+though so these are the principal
+
+521
+00:27:08,360 --> 00:27:12,279
+operations you want to insert a key and
+
+522
+00:27:12,279 --> 00:27:15,360
+data in the vocabulary if you got new
+
+523
+00:27:15,360 --> 00:27:18,200
+key data pair you want to remove the
+
+524
+00:27:18,200 --> 00:27:22,600
+pair by um using the key for searching
+
+525
+00:27:22,600 --> 00:27:26,039
+or you want to just look at the uh key
+
+526
+00:27:26,039 --> 00:27:29,000
+value pair using find operation and this
+
+527
+00:27:29,000 --> 00:27:31,919
+very important part of implementation of
+
+528
+00:27:31,919 --> 00:27:34,440
+dictionary is to have the square
+
+529
+00:27:34,440 --> 00:27:38,279
+brackets for you that would look up the
+
+530
+00:27:38,279 --> 00:27:41,519
+key and give you the value so now in
+
+531
+00:27:41,519 --> 00:27:43,799
+this example I have my dictionary that
+
+532
+00:27:43,799 --> 00:27:46,760
+is it stores
+
+533
+00:27:46,760 --> 00:27:50,320
+names as keys so those are the indices
+
+534
+00:27:50,320 --> 00:27:53,159
+and the data is the the age of the
+
+535
+00:27:53,159 --> 00:27:56,399
+person so say if I have col here and I
+
+536
+00:27:56,399 --> 00:28:00,159
+have 19 that's that my arrangement of
+
+537
+00:28:00,159 --> 00:28:03,760
+the data and this is what's called an
+
+538
+00:28:03,760 --> 00:28:07,399
+associative array when indices are no
+
+539
+00:28:07,399 --> 00:28:11,120
+longer nice small integers they are
+
+540
+00:28:11,120 --> 00:28:14,679
+anything right in this case strings but
+
+541
+00:28:14,679 --> 00:28:16,320
+any other
+
+542
+00:28:16,320 --> 00:28:19,640
+type okay so do you have any
+
+543
+00:28:19,640 --> 00:28:23,200
+questions if not let's talk very general
+
+544
+00:28:23,200 --> 00:28:25,600
+now so what is the problem then of
+
+545
+00:28:25,600 --> 00:28:28,720
+hashing so if we were to implement this
+
+546
+00:28:28,720 --> 00:28:31,559
+um associative arrays what does it even
+
+547
+00:28:31,559 --> 00:28:34,320
+mean what does it mean to have indices
+
+548
+00:28:34,320 --> 00:28:37,039
+that are not integers anymore how do we
+
+549
+00:28:37,039 --> 00:28:40,720
+do that so you could pose this problem
+
+550
+00:28:40,720 --> 00:28:43,360
+um mathematically or from theoretical
+
+551
+00:28:43,360 --> 00:28:45,840
+point of view and you would say well
+
+552
+00:28:45,840 --> 00:28:49,080
+what is my key space maybe it's a set of
+
+553
+00:28:49,080 --> 00:28:50,880
+strains maybe it's a set of specific
+
+554
+00:28:50,880 --> 00:28:52,960
+strains like with the URL starting with
+
+555
+00:28:52,960 --> 00:28:56,240
+something or with um say flight numbers
+
+556
+00:28:56,240 --> 00:28:58,559
+or names um
+
+557
+00:28:58,559 --> 00:29:00,600
+maybe just general strings maybe it's a
+
+558
+00:29:00,600 --> 00:29:04,240
+dice toss again dice roll so uh but you
+
+559
+00:29:04,240 --> 00:29:08,120
+can say it's some kind of space K and
+
+560
+00:29:08,120 --> 00:29:12,080
+then the goal is then to use a function
+
+561
+00:29:12,080 --> 00:29:15,279
+to map this key space so have have some
+
+562
+00:29:15,279 --> 00:29:19,039
+hash function we call it h to map this
+
+563
+00:29:19,039 --> 00:29:24,559
+key space k onto a small set of integers
+
+564
+00:29:24,559 --> 00:29:26,880
+because ultimately we do want to store
+
+565
+00:29:26,880 --> 00:29:28,760
+all this data in some kind of small
+
+566
+00:29:28,760 --> 00:29:31,000
+array so we don't really want to have
+
+567
+00:29:31,000 --> 00:29:32,840
+these weird indices we want to map them
+
+568
+00:29:32,840 --> 00:29:35,960
+to some small set of integers so that we
+
+569
+00:29:35,960 --> 00:29:38,399
+can use array so it's kind of like
+
+570
+00:29:38,399 --> 00:29:40,840
+hashing is kind of like hashing into an
+
+571
+00:29:40,840 --> 00:29:44,279
+array hashing all these weird Keys uh
+
+572
+00:29:44,279 --> 00:29:47,480
+set into an array somehow so that really
+
+573
+00:29:47,480 --> 00:29:49,960
+we Underneath It All We Have just an
+
+574
+00:29:49,960 --> 00:29:54,600
+array and um um this is a very fuzzy way
+
+575
+00:29:54,600 --> 00:29:58,279
+of putting this goal kind of because
+
+576
+00:29:58,279 --> 00:30:01,240
+nothing is really clear especially let's
+
+577
+00:30:01,240 --> 00:30:04,279
+let's say what does it mean a small
+
+578
+00:30:04,279 --> 00:30:06,679
+subset of or small set of integers that
+
+579
+00:30:06,679 --> 00:30:09,760
+are positive what does it even mean
+
+580
+00:30:09,760 --> 00:30:12,679
+right 100 a thousand what is small so
+
+581
+00:30:12,679 --> 00:30:14,960
+that's not really clear a memory is
+
+582
+00:30:14,960 --> 00:30:17,240
+pretty large now so maybe it's a million
+
+583
+00:30:17,240 --> 00:30:20,919
+right and what is this space of keys
+
+584
+00:30:20,919 --> 00:30:23,000
+like is that well defined we don't even
+
+585
+00:30:23,000 --> 00:30:24,640
+know it could be strings as I said it
+
+586
+00:30:24,640 --> 00:30:26,840
+could be anything right it's not always
+
+587
+00:30:26,840 --> 00:30:30,080
+very defined so finding this hash table
+
+588
+00:30:30,080 --> 00:30:32,919
+because uh hash uh function because of
+
+589
+00:30:32,919 --> 00:30:35,200
+this very fuzzy description of the
+
+590
+00:30:35,200 --> 00:30:37,200
+problem is a big challenge that's like a
+
+591
+00:30:37,200 --> 00:30:40,880
+huge research area and it's a it's it
+
+592
+00:30:40,880 --> 00:30:42,600
+can be a lot of fun and it's a very
+
+593
+00:30:42,600 --> 00:30:44,320
+important problem too because here we
+
+594
+00:30:44,320 --> 00:30:47,159
+are talking really about some lossless
+
+595
+00:30:47,159 --> 00:30:49,679
+compression of some sort right we really
+
+596
+00:30:49,679 --> 00:30:53,600
+want to have this really nice bestion
+
+597
+00:30:53,600 --> 00:30:56,519
+function that will give us a nice
+
+598
+00:30:56,519 --> 00:30:59,440
+distribution of all keys in the integer
+
+599
+00:30:59,440 --> 00:31:02,600
+space and that's really difficult to do
+
+600
+00:31:02,600 --> 00:31:04,159
+um
+
+601
+00:31:04,159 --> 00:31:07,960
+okay so let's just let's draw a little
+
+602
+00:31:07,960 --> 00:31:10,240
+picture of what does it all mean so a
+
+603
+00:31:10,240 --> 00:31:11,919
+basic idea of
+
+604
+00:31:11,919 --> 00:31:15,679
+hashing is that when you have your
+
+605
+00:31:15,679 --> 00:31:20,159
+key value
+
+606
+00:31:20,519 --> 00:31:24,000
+pair you want to treat that key as an
+
+607
+00:31:24,000 --> 00:31:27,200
+integer so when you get the key again
+
+608
+00:31:27,200 --> 00:31:30,000
+think of it as an name or whatever or a
+
+609
+00:31:30,000 --> 00:31:32,679
+URL or a flight information number of a
+
+610
+00:31:32,679 --> 00:31:35,399
+course number you want to Hash it into
+
+611
+00:31:35,399 --> 00:31:39,279
+an integer so you want to apply H to K
+
+612
+00:31:39,279 --> 00:31:42,120
+and have an i at the way like some small
+
+613
+00:31:42,120 --> 00:31:45,000
+nice integer on the way out so then you
+
+614
+00:31:45,000 --> 00:31:49,120
+can put find that I and put the value oh
+
+615
+00:31:49,120 --> 00:31:52,760
+find that I and put the value into that
+
+616
+00:31:52,760 --> 00:31:53,960
+position of the
+
+617
+00:31:53,960 --> 00:31:58,919
+array and then you can say okay my table
+
+618
+00:31:58,919 --> 00:32:01,519
+hash T which is a hash table essentially
+
+619
+00:32:01,519 --> 00:32:06,120
+my table I equals
+
+620
+00:32:06,120 --> 00:32:10,200
+value but it's better to say what is I I
+
+621
+00:32:10,200 --> 00:32:13,600
+is really literally is H of K so I'm
+
+622
+00:32:13,600 --> 00:32:18,440
+going to write it over it's h of K so I
+
+623
+00:32:18,440 --> 00:32:21,919
+hashed my key into an integer right
+
+624
+00:32:21,919 --> 00:32:25,360
+there so table h of k equals to value
+
+625
+00:32:25,360 --> 00:32:27,919
+and this is exactly how the overridden
+
+626
+00:32:27,919 --> 00:32:29,399
+square brackets is going to be instead
+
+627
+00:32:29,399 --> 00:32:31,240
+of saying table I because we don't know
+
+628
+00:32:31,240 --> 00:32:34,399
+I yet you do table h of K like look
+
+629
+00:32:34,399 --> 00:32:36,360
+that's that's the override that's how
+
+630
+00:32:36,360 --> 00:32:38,639
+the implementation of the overwritten
+
+631
+00:32:38,639 --> 00:32:40,720
+square brackets would look
+
+632
+00:32:40,720 --> 00:32:42,440
+like
+
+633
+00:32:42,440 --> 00:32:48,320
+okay so we have this goal so let's
+
+634
+00:32:48,320 --> 00:32:51,559
+see what kind of hash functions would be
+
+635
+00:32:51,559 --> 00:32:55,039
+good and which ones would not be good
+
+636
+00:32:55,039 --> 00:32:57,279
+and this is a little relevant to again
+
+637
+00:32:57,279 --> 00:32:59,720
+to your homework where you have to think
+
+638
+00:32:59,720 --> 00:33:04,679
+about actually hashing some um some keys
+
+639
+00:33:04,679 --> 00:33:10,200
+in some good way or bad way so I have
+
+640
+00:33:10,200 --> 00:33:13,039
+imagine that I have this set which is my
+
+641
+00:33:13,039 --> 00:33:17,480
+data and it is key value pairs where the
+
+642
+00:33:17,480 --> 00:33:21,080
+key is the name of a child and the value
+
+643
+00:33:21,080 --> 00:33:22,880
+is the Hallow
+
+644
+00:33:22,880 --> 00:33:26,679
+costume so name and we'll be wearing
+
+645
+00:33:26,679 --> 00:33:29,840
+black cat as as her C costume for
+
+646
+00:33:29,840 --> 00:33:31,919
+Halloween so that's my
+
+647
+00:33:31,919 --> 00:33:35,000
+data I want to have a hash function that
+
+648
+00:33:35,000 --> 00:33:36,600
+will take
+
+649
+00:33:36,600 --> 00:33:43,600
+n and we'll put her in some array uh um
+
+650
+00:33:43,600 --> 00:33:47,120
+in this right finds an array in this to
+
+651
+00:33:47,120 --> 00:33:49,880
+put ands information into the array and
+
+652
+00:33:49,880 --> 00:33:52,519
+say my array is little so it only has
+
+653
+00:33:52,519 --> 00:33:54,880
+eight elements so I have that constraint
+
+654
+00:33:54,880 --> 00:33:57,559
+of the size of the array so what would
+
+655
+00:33:57,559 --> 00:34:00,559
+be a perfect hash function here can you
+
+656
+00:34:00,559 --> 00:34:03,279
+see some kind of way of hashing these
+
+657
+00:34:03,279 --> 00:34:06,120
+names so that they evenly distributed in
+
+658
+00:34:06,120 --> 00:34:07,040
+my
+
+659
+00:34:07,040 --> 00:34:10,639
+array nicely
+
+660
+00:34:11,359 --> 00:34:13,239
+distributed oh yeah thank you for your
+
+661
+00:34:13,239 --> 00:34:15,119
+comment that your screen looks nice mine
+
+662
+00:34:15,119 --> 00:34:17,440
+is like doing some weird things I
+
+663
+00:34:17,440 --> 00:34:19,320
+sometimes don't see it I have to write
+
+664
+00:34:19,320 --> 00:34:21,800
+on it without seeing it so it's really
+
+665
+00:34:21,800 --> 00:34:25,480
+strange but anyway so what would be a
+
+666
+00:34:25,480 --> 00:34:29,040
+good hash function for this numbers well
+
+667
+00:34:29,040 --> 00:34:30,800
+if I look at these numbers do you see
+
+668
+00:34:30,800 --> 00:34:33,719
+something really special about
+
+669
+00:34:33,719 --> 00:34:37,560
+them H they all start with different
+
+670
+00:34:37,560 --> 00:34:39,599
+first letter and moreover they
+
+671
+00:34:39,599 --> 00:34:43,320
+alphabetic look A B C D E F G H H which
+
+672
+00:34:43,320 --> 00:34:46,119
+means that if I just look so if my hash
+
+673
+00:34:46,119 --> 00:34:48,280
+function will
+
+674
+00:34:48,280 --> 00:34:51,119
+take say
+
+675
+00:34:51,119 --> 00:34:53,879
+name just first element of the name
+
+676
+00:34:53,879 --> 00:34:55,918
+which is first character of the
+
+677
+00:34:55,918 --> 00:34:59,320
+name that would be a c d f g for all of
+
+678
+00:34:59,320 --> 00:35:04,119
+the names and maybe I divided mod
+
+679
+00:35:04,119 --> 00:35:09,680
+8 right which means that a oh so what it
+
+680
+00:35:09,680 --> 00:35:12,920
+does it takes the S key
+
+681
+00:35:12,920 --> 00:35:16,240
+value of your first character of a and
+
+682
+00:35:16,240 --> 00:35:19,760
+divides it by eight I have a table of s
+
+683
+00:35:19,760 --> 00:35:23,640
+key values I think a is 49 ID by8 but I
+
+684
+00:35:23,640 --> 00:35:25,280
+also have the implementation so we can
+
+685
+00:35:25,280 --> 00:35:26,640
+look at the
+
+686
+00:35:26,640 --> 00:35:29,640
+implementation
+
+687
+00:35:30,200 --> 00:35:33,200
+there you go see I have my oh yeah let's
+
+688
+00:35:33,200 --> 00:35:34,560
+just call it
+
+689
+00:35:34,560 --> 00:35:38,000
+name um
+
+690
+00:35:38,160 --> 00:35:41,520
+name here this is better so look I take
+
+691
+00:35:41,520 --> 00:35:44,680
+name and it say it's N I take the first
+
+692
+00:35:44,680 --> 00:35:48,599
+character it's cast to the S key value
+
+693
+00:35:48,599 --> 00:35:52,520
+divides by 8 mod 8 the answer is one
+
+694
+00:35:52,520 --> 00:35:55,680
+right so if it was
+
+695
+00:35:56,640 --> 00:35:59,119
+Ben
+
+696
+00:35:59,119 --> 00:36:02,400
+then then the the result would be two
+
+697
+00:36:02,400 --> 00:36:05,440
+and then whatever the names if the name
+
+698
+00:36:05,440 --> 00:36:09,040
+starts with C the the hash value would
+
+699
+00:36:09,040 --> 00:36:09,800
+be
+
+700
+00:36:09,800 --> 00:36:14,359
+three which means that all of these guys
+
+701
+00:36:14,359 --> 00:36:18,440
+so n will go here
+
+702
+00:36:19,040 --> 00:36:23,640
+and N will be hash to in this one so the
+
+703
+00:36:23,640 --> 00:36:28,119
+I will be one and the black cat
+
+704
+00:36:28,119 --> 00:36:30,599
+black cat costume will be put in here
+
+705
+00:36:30,599 --> 00:36:33,400
+and Ben with the Harry Potter costume
+
+706
+00:36:33,400 --> 00:36:36,880
+will be put in tat two and cor Cory spy
+
+707
+00:36:36,880 --> 00:36:39,359
+will be put into three and so on and the
+
+708
+00:36:39,359 --> 00:36:42,720
+last Harmony will be put into zero
+
+709
+00:36:42,720 --> 00:36:44,960
+because it will be wrapped around the
+
+710
+00:36:44,960 --> 00:36:48,599
+array so the B costume will go in
+
+711
+00:36:48,599 --> 00:36:53,640
+here okay so this is a fabulous or
+
+712
+00:36:53,640 --> 00:36:55,960
+perfect hash function
+
+713
+00:36:55,960 --> 00:36:59,160
+because it even evenly distributes the
+
+714
+00:36:59,160 --> 00:37:01,079
+keys across the
+
+715
+00:37:01,079 --> 00:37:06,400
+array also it's one to one it's a bje
+
+716
+00:37:06,400 --> 00:37:10,240
+right it's a bje so there will be no two
+
+717
+00:37:10,240 --> 00:37:13,359
+names that will map to the same uh
+
+718
+00:37:13,359 --> 00:37:15,839
+element in the array and there will be
+
+719
+00:37:15,839 --> 00:37:17,880
+no holes in the array either we'll
+
+720
+00:37:17,880 --> 00:37:21,280
+populate all of the array
+
+721
+00:37:21,280 --> 00:37:23,520
+uniformly that's that's the definition
+
+722
+00:37:23,520 --> 00:37:25,720
+of a perfect function hash function it's
+
+723
+00:37:25,720 --> 00:37:28,720
+really really hard to find find S such
+
+724
+00:37:28,720 --> 00:37:32,319
+perfect Hash Hash functions for General
+
+725
+00:37:32,319 --> 00:37:37,119
+data sets Okay so we lucky now I'm going
+
+726
+00:37:37,119 --> 00:37:40,240
+to show you other hash functions where
+
+727
+00:37:40,240 --> 00:37:42,720
+you know it's not so nice anymore so
+
+728
+00:37:42,720 --> 00:37:45,040
+let's look at the roll of five dice and
+
+729
+00:37:45,040 --> 00:37:48,560
+I have the applet here so I can run it
+
+730
+00:37:48,560 --> 00:37:49,640
+let's
+
+731
+00:37:49,640 --> 00:37:54,400
+look so here is a perfect here's a roll
+
+732
+00:37:54,400 --> 00:37:56,200
+and we can roll again and we'll get
+
+733
+00:37:56,200 --> 00:37:58,960
+different values and I will tell you
+
+734
+00:37:58,960 --> 00:38:02,839
+what's the hash value of each roll is so
+
+735
+00:38:02,839 --> 00:38:04,880
+the the this first
+
+736
+00:38:04,880 --> 00:38:06,480
+one
+
+737
+00:38:06,480 --> 00:38:08,160
+h
+
+738
+00:38:08,160 --> 00:38:10,839
+of 2
+
+739
+00:38:10,839 --> 00:38:12,760
+1
+
+740
+00:38:12,760 --> 00:38:16,359
+5 three and
+
+741
+00:38:16,359 --> 00:38:18,000
+four
+
+742
+00:38:18,000 --> 00:38:24,280
+um the value of this is um let's
+
+743
+00:38:24,280 --> 00:38:29,880
+see four six six the hash of this um
+
+744
+00:38:29,880 --> 00:38:36,280
+roll dice roll will be six so let's roll
+
+745
+00:38:37,280 --> 00:38:39,280
+again oh come
+
+746
+00:38:39,280 --> 00:38:42,839
+on oh it will it will erase my writing
+
+747
+00:38:42,839 --> 00:38:45,960
+okay I guess
+
+748
+00:38:46,160 --> 00:38:52,119
+guess so for this roll dice I'll have 10
+
+749
+00:38:52,119 --> 00:38:54,560
+as a hash
+
+750
+00:38:54,560 --> 00:38:59,880
+value for this dice roll I'll have a
+
+751
+00:38:59,880 --> 00:39:01,839
+zero
+
+752
+00:39:01,839 --> 00:39:05,079
+value for this one I'll have I have to
+
+753
+00:39:05,079 --> 00:39:08,040
+do the calculation in my head 10 again
+
+754
+00:39:08,040 --> 00:39:11,680
+so let me explain what I mean if I have
+
+755
+00:39:11,680 --> 00:39:13,359
+a
+
+756
+00:39:13,359 --> 00:39:17,200
+roll come on let's go
+
+757
+00:39:17,200 --> 00:39:19,839
+back if I have a
+
+758
+00:39:19,839 --> 00:39:24,760
+roll what I look at is how many padal I
+
+759
+00:39:24,760 --> 00:39:27,640
+have around the rows what does do it
+
+760
+00:39:27,640 --> 00:39:31,960
+mean I look only at
+
+761
+00:39:31,960 --> 00:39:37,119
+the at the dice that has a dot inside so
+
+762
+00:39:37,119 --> 00:39:39,160
+in this case I only have this three one
+
+763
+00:39:39,160 --> 00:39:42,319
+and one and I add up only dots that are
+
+764
+00:39:42,319 --> 00:39:45,839
+around the center so in this case for
+
+765
+00:39:45,839 --> 00:39:52,160
+this dice roll AG of it would be
+
+766
+00:39:52,680 --> 00:39:57,880
+two so I put it in here I put this three
+
+767
+00:39:57,880 --> 00:39:59,720
+one
+
+768
+00:39:59,720 --> 00:40:01,440
+one
+
+769
+00:40:01,440 --> 00:40:06,119
+six and two right here okay so then I
+
+770
+00:40:06,119 --> 00:40:09,839
+roll again I calculate so the the way
+
+771
+00:40:09,839 --> 00:40:12,359
+this function works is petals you
+
+772
+00:40:12,359 --> 00:40:15,520
+calculate number of petals
+
+773
+00:40:15,520 --> 00:40:17,240
+around
+
+774
+00:40:17,240 --> 00:40:21,920
+rows okay so if there is a a dot inside
+
+775
+00:40:21,920 --> 00:40:24,520
+I calculate how many petals are around
+
+776
+00:40:24,520 --> 00:40:26,319
+so for six there is zero for two there
+
+777
+00:40:26,319 --> 00:40:29,079
+is zero because there's no no dot inside
+
+778
+00:40:29,079 --> 00:40:36,000
+right okay so is this a good hash
+
+779
+00:40:36,280 --> 00:40:40,040
+function and the answer is not so much
+
+780
+00:40:40,040 --> 00:40:44,880
+because first of all we'll never get odd
+
+781
+00:40:44,880 --> 00:40:48,200
+hash values so we'll never calculate a
+
+782
+00:40:48,200 --> 00:40:50,440
+one so never the result of this hash
+
+783
+00:40:50,440 --> 00:40:54,400
+function will be one or three or five or
+
+784
+00:40:54,400 --> 00:40:59,359
+7 or 9 11 13 so all of
+
+785
+00:40:59,359 --> 00:41:04,240
+this indices in the array will never be
+
+786
+00:41:04,240 --> 00:41:06,119
+values of this has hash function there
+
+787
+00:41:06,119 --> 00:41:09,560
+will be never values in those positions
+
+788
+00:41:09,560 --> 00:41:11,520
+in the array which means that the
+
+789
+00:41:11,520 --> 00:41:13,599
+resulting array will be
+
+790
+00:41:13,599 --> 00:41:18,079
+sparse most of the rolls will fall under
+
+791
+00:41:18,079 --> 00:41:20,319
+the I mean all of the all of the rolls
+
+792
+00:41:20,319 --> 00:41:24,079
+will fall onto the even
+
+793
+00:41:24,079 --> 00:41:27,359
+indices so we'll only populate half of
+
+794
+00:41:27,359 --> 00:41:30,040
+the array so what's the point right
+
+795
+00:41:30,040 --> 00:41:31,440
+maybe we could improve this hash
+
+796
+00:41:31,440 --> 00:41:32,880
+function but we're talking about this
+
+797
+00:41:32,880 --> 00:41:35,480
+particular hash function and how it is a
+
+798
+00:41:35,480 --> 00:41:36,560
+bad
+
+799
+00:41:36,560 --> 00:41:39,920
+choice okay so um there are many other
+
+800
+00:41:39,920 --> 00:41:42,520
+reasons why this hash function is bad
+
+801
+00:41:42,520 --> 00:41:47,280
+and I have them on the next slide let's
+
+802
+00:41:47,280 --> 00:41:50,160
+see okay so first of all number one
+
+803
+00:41:50,160 --> 00:41:53,119
+reason is that we only have effectively
+
+804
+00:41:53,119 --> 00:41:56,560
+11 indices that will be ever be occupied
+
+805
+00:41:56,560 --> 00:42:00,040
+with different configurations of roll of
+
+806
+00:42:00,040 --> 00:42:04,599
+five dice of R their roles but the not
+
+807
+00:42:04,599 --> 00:42:08,119
+the the domain or the key space is huge
+
+808
+00:42:08,119 --> 00:42:10,520
+because the all of the different numbers
+
+809
+00:42:10,520 --> 00:42:13,400
+in which we could have or the result of
+
+810
+00:42:13,400 --> 00:42:16,640
+this five dice rolls would be six to
+
+811
+00:42:16,640 --> 00:42:20,440
+the^ five right so all possible six
+
+812
+00:42:20,440 --> 00:42:24,240
+values five times to to the power five
+
+813
+00:42:24,240 --> 00:42:27,319
+so this is a huge domain with respect to
+
+814
+00:42:27,319 --> 00:42:30,559
+the very little range of the function
+
+815
+00:42:30,559 --> 00:42:32,000
+which means that this function will
+
+816
+00:42:32,000 --> 00:42:35,680
+never be a one to one or onto it's it's
+
+817
+00:42:35,680 --> 00:42:38,200
+not a bje and it's not onto because
+
+818
+00:42:38,200 --> 00:42:40,800
+there's wasted space right we don't map
+
+819
+00:42:40,800 --> 00:42:45,200
+onto the uh odd indices moreover it's
+
+820
+00:42:45,200 --> 00:42:48,800
+not even uniformly distributed because
+
+821
+00:42:48,800 --> 00:42:51,800
+for example for the last roll where you
+
+822
+00:42:51,800 --> 00:42:55,760
+get um let's put it this way so the role
+
+823
+00:42:55,760 --> 00:42:59,000
+when you have all five
+
+824
+00:42:59,000 --> 00:43:03,720
+FES which index which Val which hash
+
+825
+00:43:03,720 --> 00:43:06,200
+value would it be for this
+
+826
+00:43:06,200 --> 00:43:08,319
+configuration again we compute the
+
+827
+00:43:08,319 --> 00:43:11,160
+paddles around the rows there four in
+
+828
+00:43:11,160 --> 00:43:14,760
+each dice so 4 * 5 is 20 so you have to
+
+829
+00:43:14,760 --> 00:43:18,000
+put it in the last 20th element of this
+
+830
+00:43:18,000 --> 00:43:21,119
+array there cannot be
+
+831
+00:43:21,119 --> 00:43:24,920
+more uh elements in the array 21 will
+
+832
+00:43:24,920 --> 00:43:27,119
+never be a result of this hash function
+
+833
+00:43:27,119 --> 00:43:29,520
+20 is the maximum and the only
+
+834
+00:43:29,520 --> 00:43:31,400
+configuration that matches it is this
+
+835
+00:43:31,400 --> 00:43:32,880
+particular configuration so there will
+
+836
+00:43:32,880 --> 00:43:35,960
+be only one element right here while
+
+837
+00:43:35,960 --> 00:43:37,480
+imagine how many different
+
+838
+00:43:37,480 --> 00:43:41,440
+configurations of five roll dice uh
+
+839
+00:43:41,440 --> 00:43:45,240
+there will be for zero right so I don't
+
+840
+00:43:45,240 --> 00:43:49,000
+know 22 2 2 two 4 4 4 4 four and all of
+
+841
+00:43:49,000 --> 00:43:52,200
+the combinations of the even dice rolls
+
+842
+00:43:52,200 --> 00:43:55,240
+for all five of them will all be right
+
+843
+00:43:55,240 --> 00:43:59,599
+here so huge number number of different
+
+844
+00:43:59,599 --> 00:44:03,480
+rols of five dice will be uh will be all
+
+845
+00:44:03,480 --> 00:44:06,680
+crowding the zero space of the array and
+
+846
+00:44:06,680 --> 00:44:10,359
+what does it even mean like we map many
+
+847
+00:44:10,359 --> 00:44:13,839
+different Keys value pairs to one
+
+848
+00:44:13,839 --> 00:44:16,079
+element of our hash table what does it
+
+849
+00:44:16,079 --> 00:44:17,760
+even mean how do we resolve this
+
+850
+00:44:17,760 --> 00:44:19,760
+Collision so this is what's called a
+
+851
+00:44:19,760 --> 00:44:22,559
+collision and um if you want to use this
+
+852
+00:44:22,559 --> 00:44:25,359
+hash function you'll have to have a way
+
+853
+00:44:25,359 --> 00:44:27,559
+of resolving these collisions right how
+
+854
+00:44:27,559 --> 00:44:29,119
+do we put all those elements in there
+
+855
+00:44:29,119 --> 00:44:30,839
+and how we look them up
+
+856
+00:44:30,839 --> 00:44:33,960
+later so that's a problem which I'll
+
+857
+00:44:33,960 --> 00:44:37,240
+talk about in a bit and that's what
+
+858
+00:44:37,240 --> 00:44:41,079
+linear CH uh linear um probing and
+
+859
+00:44:41,079 --> 00:44:43,640
+separate chaining Collision detections
+
+860
+00:44:43,640 --> 00:44:46,000
+me Collision detection Collision
+
+861
+00:44:46,000 --> 00:44:50,440
+resolution strategies will be sorry
+
+862
+00:44:50,440 --> 00:44:54,680
+okay so let's sum up what is hashing and
+
+863
+00:44:54,680 --> 00:44:58,400
+what is a hash T table so hash table is
+
+864
+00:44:58,400 --> 00:45:00,680
+just an array
+
+865
+00:45:00,680 --> 00:45:04,079
+right just an array which has a hash
+
+866
+00:45:04,079 --> 00:45:06,480
+function defined so that this hash
+
+867
+00:45:06,480 --> 00:45:09,880
+function will take the
+
+868
+00:45:09,880 --> 00:45:14,280
+key and give us the index in the array
+
+869
+00:45:14,280 --> 00:45:17,359
+right but we have to have a collision
+
+870
+00:45:17,359 --> 00:45:21,480
+resolution strategy because if our key
+
+871
+00:45:21,480 --> 00:45:26,240
+space k is kind of the same as the size
+
+872
+00:45:26,240 --> 00:45:28,960
+of the array so if the key space is the
+
+873
+00:45:28,960 --> 00:45:31,880
+same in size as the size of the array so
+
+874
+00:45:31,880 --> 00:45:34,720
+if the number of key value pairs is kind
+
+875
+00:45:34,720 --> 00:45:37,359
+of equal or similar to the size of the
+
+876
+00:45:37,359 --> 00:45:39,760
+array that it's not so hard to find a
+
+877
+00:45:39,760 --> 00:45:42,359
+perfect hash function that will just
+
+878
+00:45:42,359 --> 00:45:45,160
+evenly distribute all of the key value
+
+879
+00:45:45,160 --> 00:45:48,720
+chair uh value pairs into this array
+
+880
+00:45:48,720 --> 00:45:51,559
+that's not such a big problem the
+
+881
+00:45:51,559 --> 00:45:54,680
+problem arises when we have the key
+
+882
+00:45:54,680 --> 00:45:58,640
+space much much l larger than the size
+
+883
+00:45:58,640 --> 00:46:00,400
+of the array that's when the real
+
+884
+00:46:00,400 --> 00:46:03,200
+problem Rises and that's where there's a
+
+885
+00:46:03,200 --> 00:46:05,880
+lot of research put into understanding
+
+886
+00:46:05,880 --> 00:46:09,920
+how to do best um hash functions for
+
+887
+00:46:09,920 --> 00:46:12,119
+these kind of situations that always
+
+888
+00:46:12,119 --> 00:46:15,839
+work kind of uniform uh perfect hash
+
+889
+00:46:15,839 --> 00:46:18,599
+functions um so let's look at this case
+
+890
+00:46:18,599 --> 00:46:20,960
+when the key size when the number of
+
+891
+00:46:20,960 --> 00:46:25,160
+these key value pairs are much much
+
+892
+00:46:25,160 --> 00:46:27,520
+bigger than the available aable space
+
+893
+00:46:27,520 --> 00:46:31,280
+for the array what do we do well we hope
+
+894
+00:46:31,280 --> 00:46:33,640
+then that for
+
+895
+00:46:33,640 --> 00:46:39,280
+any selection or collection of
+
+896
+00:46:39,280 --> 00:46:43,359
+n key value pairs that this hash
+
+897
+00:46:43,359 --> 00:46:45,640
+function will be so nice that it will
+
+898
+00:46:45,640 --> 00:46:48,559
+put all of these key value pairs
+
+899
+00:46:48,559 --> 00:46:51,119
+uniformly into the array so that's kind
+
+900
+00:46:51,119 --> 00:46:54,559
+of the hope that whenever I select
+
+901
+00:46:54,559 --> 00:46:58,480
+n key value pairs so say this is another
+
+902
+00:46:58,480 --> 00:47:01,160
+selection of n key value pairs they're
+
+903
+00:47:01,160 --> 00:47:03,400
+all red then the hash function will be
+
+904
+00:47:03,400 --> 00:47:05,880
+nice and distribute them all nicely so
+
+905
+00:47:05,880 --> 00:47:08,319
+let me show just one more so say I
+
+906
+00:47:08,319 --> 00:47:13,079
+select another end sized subset of my
+
+907
+00:47:13,079 --> 00:47:16,119
+keys uh and all of these key value pairs
+
+908
+00:47:16,119 --> 00:47:18,160
+then again will be uniformly distributed
+
+909
+00:47:18,160 --> 00:47:19,079
+in my
+
+910
+00:47:19,079 --> 00:47:23,040
+array however you cannot prevent this
+
+911
+00:47:23,040 --> 00:47:25,839
+following situation happen
+
+912
+00:47:25,839 --> 00:47:29,480
+that I will select the subset of my key
+
+913
+00:47:29,480 --> 00:47:33,000
+value pairs that all of size n that all
+
+914
+00:47:33,000 --> 00:47:36,200
+fall into the same index with this hash
+
+915
+00:47:36,200 --> 00:47:39,520
+function so I'll pick that red one and
+
+916
+00:47:39,520 --> 00:47:43,040
+red that black uh key value pair and
+
+917
+00:47:43,040 --> 00:47:46,119
+that green key value pair that all as a
+
+918
+00:47:46,119 --> 00:47:49,000
+set will map to one Index right it's
+
+919
+00:47:49,000 --> 00:47:51,599
+it's still possible that you'll be so
+
+920
+00:47:51,599 --> 00:47:55,720
+unlucky and that's why picking such nice
+
+921
+00:47:55,720 --> 00:47:59,680
+hash uh functions for General sets of
+
+922
+00:47:59,680 --> 00:48:02,720
+key values is really difficult okay so
+
+923
+00:48:02,720 --> 00:48:05,280
+that's the theoretical Foundation of why
+
+924
+00:48:05,280 --> 00:48:07,480
+this problem is so difficult and and why
+
+925
+00:48:07,480 --> 00:48:09,280
+is it important at the same time to
+
+926
+00:48:09,280 --> 00:48:11,599
+solve this so let's look at uh a couple
+
+927
+00:48:11,599 --> 00:48:13,760
+more motivating
+
+928
+00:48:13,760 --> 00:48:20,240
+examples so say I have 40 character
+
+929
+00:48:21,880 --> 00:48:24,160
+strings here they
+
+930
+00:48:24,160 --> 00:48:27,480
+are first strain second strin so on I
+
+931
+00:48:27,480 --> 00:48:29,480
+want to Hash them right I want to have a
+
+932
+00:48:29,480 --> 00:48:33,359
+way of storing them in an
+
+933
+00:48:33,359 --> 00:48:36,319
+array and I need to find a hash function
+
+934
+00:48:36,319 --> 00:48:39,119
+that will map each of the 40 character
+
+935
+00:48:39,119 --> 00:48:41,520
+string to an
+
+936
+00:48:41,520 --> 00:48:43,960
+integer so I'm going to do the Fallen
+
+937
+00:48:43,960 --> 00:48:47,319
+hash or hack or whatever I'm going to
+
+938
+00:48:47,319 --> 00:48:49,319
+select
+
+939
+00:48:49,319 --> 00:48:54,280
+eight characters or eight character
+
+940
+00:48:54,280 --> 00:48:57,440
+positions at random somehow I don't know
+
+941
+00:48:57,440 --> 00:48:59,680
+like maybe like
+
+942
+00:48:59,680 --> 00:49:04,000
+this and from each strain 40 character
+
+943
+00:49:04,000 --> 00:49:06,920
+strain I will create then an eight
+
+944
+00:49:06,920 --> 00:49:08,319
+character
+
+945
+00:49:08,319 --> 00:49:11,040
+strain based on this position so say the
+
+946
+00:49:11,040 --> 00:49:14,240
+it's second position and whatever eighth
+
+947
+00:49:14,240 --> 00:49:17,480
+position so it's o
+
+948
+00:49:17,480 --> 00:49:19,920
+r
+
+949
+00:49:19,920 --> 00:49:21,480
+h
+
+950
+00:49:21,480 --> 00:49:23,200
+comma
+
+951
+00:49:23,200 --> 00:49:24,880
+space
+
+952
+00:49:24,880 --> 00:49:27,520
+space is that eight that's not eight I
+
+953
+00:49:27,520 --> 00:49:32,240
+need one more let's do one more say this
+
+954
+00:49:32,240 --> 00:49:37,119
+one so I have a uh G okay so that's my
+
+955
+00:49:37,119 --> 00:49:38,599
+eight character
+
+956
+00:49:38,599 --> 00:49:42,200
+string compression from a 40 character
+
+957
+00:49:42,200 --> 00:49:43,760
+string
+
+958
+00:49:43,760 --> 00:49:47,000
+now the second string will go to what
+
+959
+00:49:47,000 --> 00:49:50,559
+little O say G I'm not really precise
+
+960
+00:49:50,559 --> 00:49:53,280
+here so say uh
+
+961
+00:49:53,280 --> 00:49:54,880
+d
+
+962
+00:49:54,880 --> 00:49:57,960
+c r
+
+963
+00:49:57,960 --> 00:50:03,240
+space l right and so on so the idea is
+
+964
+00:50:03,240 --> 00:50:05,920
+that if I hatch 40 character strings
+
+965
+00:50:05,920 --> 00:50:09,680
+into the eight character
+
+966
+00:50:11,160 --> 00:50:14,040
+strings then is it eight maybe it's
+
+967
+00:50:14,040 --> 00:50:16,720
+still seven oh it's still seven okay
+
+968
+00:50:16,720 --> 00:50:19,839
+let's do one more sorry so that we
+
+969
+00:50:19,839 --> 00:50:22,799
+really good at the look that we really
+
+970
+00:50:22,799 --> 00:50:25,520
+precise so
+
+971
+00:50:25,640 --> 00:50:28,200
+here
+
+972
+00:50:28,200 --> 00:50:29,920
+what is
+
+973
+00:50:29,920 --> 00:50:36,640
+um here e insert e and here is s
+
+974
+00:50:36,640 --> 00:50:40,760
+before here C before R another C here
+
+975
+00:50:40,760 --> 00:50:43,480
+okay this is better right okay so we
+
+976
+00:50:43,480 --> 00:50:46,680
+really really select the
+
+977
+00:50:46,680 --> 00:50:49,440
+proper characters from those eight
+
+978
+00:50:49,440 --> 00:50:52,640
+positions that we randomly pet for this
+
+979
+00:50:52,640 --> 00:50:55,760
+40 character strengths so we compress
+
+980
+00:50:55,760 --> 00:50:57,880
+the 40 character into eight characters
+
+981
+00:50:57,880 --> 00:51:02,359
+like that and it seems like a nice thing
+
+982
+00:51:02,359 --> 00:51:06,079
+to do because look if we know how to
+
+983
+00:51:06,079 --> 00:51:07,880
+Hash eight character strings which I'll
+
+984
+00:51:07,880 --> 00:51:09,680
+show you later that's actually not a big
+
+985
+00:51:09,680 --> 00:51:12,119
+deal so if we have small strings like of
+
+986
+00:51:12,119 --> 00:51:15,400
+eight characters you just add the ask
+
+987
+00:51:15,400 --> 00:51:18,880
+key values and do mod whatever the size
+
+988
+00:51:18,880 --> 00:51:20,559
+of the array that you want to do and
+
+989
+00:51:20,559 --> 00:51:22,119
+that's a really
+
+990
+00:51:22,119 --> 00:51:24,319
+nice uh well
+
+991
+00:51:24,319 --> 00:51:27,440
+distributed uh hash function for this
+
+992
+00:51:27,440 --> 00:51:29,880
+kind of strings it's a really really
+
+993
+00:51:29,880 --> 00:51:32,160
+nice hash function so let's assume that
+
+994
+00:51:32,160 --> 00:51:35,119
+we know how to Hash small strings
+
+995
+00:51:35,119 --> 00:51:36,920
+hashing large strings in the same way
+
+996
+00:51:36,920 --> 00:51:39,480
+would be really difficult
+
+997
+00:51:39,480 --> 00:51:41,960
+because um we would we would run into
+
+998
+00:51:41,960 --> 00:51:45,440
+all sorts of problems with them um which
+
+999
+00:51:45,440 --> 00:51:47,760
+I'll show you again later so we really
+
+1000
+00:51:47,760 --> 00:51:50,720
+want to have then a nice way of hashing
+
+1001
+00:51:50,720 --> 00:51:53,599
+largest strings uh but we'll use the
+
+1002
+00:51:53,599 --> 00:51:57,920
+hash of small strings for that okay so
+
+1003
+00:51:57,920 --> 00:52:02,000
+this seems like a nice thing to
+
+1004
+00:52:02,000 --> 00:52:06,880
+do so let's see if we can if this then
+
+1005
+00:52:06,880 --> 00:52:09,720
+applies if this nice hash function can
+
+1006
+00:52:09,720 --> 00:52:14,760
+work for any set of 40 character strings
+
+1007
+00:52:14,760 --> 00:52:17,599
+and the answer is not so much what if my
+
+1008
+00:52:17,599 --> 00:52:19,480
+40 character strings
+
+1009
+00:52:19,480 --> 00:52:21,079
+are
+
+1010
+00:52:21,079 --> 00:52:24,760
+just a bunch of URLs
+
+1011
+00:52:24,760 --> 00:52:28,119
+right and if I select eight positions at
+
+1012
+00:52:28,119 --> 00:52:32,839
+random let's say this one and this one
+
+1013
+00:52:32,839 --> 00:52:34,599
+and it's Wikipedia Pages sorry
+
+1014
+00:52:34,599 --> 00:52:37,440
+specifically wikip Wikipedia pages and
+
+1015
+00:52:37,440 --> 00:52:41,839
+this one and this one and say this one
+
+1016
+00:52:41,839 --> 00:52:45,079
+and how many do I need to have this one
+
+1017
+00:52:45,079 --> 00:52:47,760
+and this one
+
+1018
+00:52:47,760 --> 00:52:50,960
+H is my distribution as nice as in the
+
+1019
+00:52:50,960 --> 00:52:55,000
+with the first set of keys because this
+
+1020
+00:52:55,000 --> 00:52:57,040
+is the same function just different set
+
+1021
+00:52:57,040 --> 00:53:00,640
+of keys right okay so where does this
+
+1022
+00:53:00,640 --> 00:53:04,280
+stram map to T
+
+1023
+00:53:04,280 --> 00:53:08,520
+slash I do slash
+
+1024
+00:53:08,520 --> 00:53:11,520
+slash
+
+1025
+00:53:12,839 --> 00:53:17,040
+ENT and uh
+
+1026
+00:53:17,799 --> 00:53:21,640
+B okay but is that m% I'm blanking is
+
+1027
+00:53:21,640 --> 00:53:23,480
+that the did I say it right whatever
+
+1028
+00:53:23,480 --> 00:53:25,760
+that character is okay now the second
+
+1029
+00:53:25,760 --> 00:53:32,079
+strain MTH to T slash I the same thing
+
+1030
+00:53:32,079 --> 00:53:37,040
+dot SL SL W
+
+1031
+00:53:37,040 --> 00:53:40,280
+slash what about do you see the problem
+
+1032
+00:53:40,280 --> 00:53:43,040
+here right the second the second
+
+1033
+00:53:43,040 --> 00:53:44,720
+character in all of the strings is the
+
+1034
+00:53:44,720 --> 00:53:46,960
+same this character in all of the
+
+1035
+00:53:46,960 --> 00:53:49,119
+strings is the same this character is
+
+1036
+00:53:49,119 --> 00:53:50,799
+the same this character is the same this
+
+1037
+00:53:50,799 --> 00:53:53,119
+character is the same this only the last
+
+1038
+00:53:53,119 --> 00:53:56,559
+two will be different so we will really
+
+1039
+00:53:56,559 --> 00:53:59,200
+differentiate all of the Wikipedia URLs
+
+1040
+00:53:59,200 --> 00:54:01,920
+based on these two characters and it's
+
+1041
+00:54:01,920 --> 00:54:06,200
+just very few numbers very few keys that
+
+1042
+00:54:06,200 --> 00:54:09,720
+we will have for thousands of pages
+
+1043
+00:54:09,720 --> 00:54:12,240
+right so that's not really good there
+
+1044
+00:54:12,240 --> 00:54:17,079
+will be much smaller uh key space uh
+
+1045
+00:54:17,079 --> 00:54:19,880
+hash table range space than the key
+
+1046
+00:54:19,880 --> 00:54:23,040
+space which is the problem we know that
+
+1047
+00:54:23,040 --> 00:54:25,200
+so that's that's not
+
+1048
+00:54:25,200 --> 00:54:28,319
+good um okay do you have any questions
+
+1049
+00:54:28,319 --> 00:54:31,520
+so now let's look into how then to
+
+1050
+00:54:31,520 --> 00:54:37,160
+resolve these issues of um the problem
+
+1051
+00:54:37,160 --> 00:54:40,599
+when the same strains will most likely
+
+1052
+00:54:40,599 --> 00:54:42,799
+end up in the
+
+1053
+00:54:42,799 --> 00:54:47,119
+same IND this of of the hash
+
+1054
+00:54:47,119 --> 00:54:49,839
+table just like in the case of Wikipedia
+
+1055
+00:54:49,839 --> 00:54:52,319
+Pages or earlier we had another example
+
+1056
+00:54:52,319 --> 00:54:55,440
+where there will be just two the the uh
+
+1057
+00:54:55,440 --> 00:54:57,400
+key SPAC is two too large for the size
+
+1058
+00:54:57,400 --> 00:55:01,520
+of the array and too many um key value
+
+1059
+00:55:01,520 --> 00:55:05,079
+pairs will crowd the same indices so I
+
+1060
+00:55:05,079 --> 00:55:07,640
+decided that I will not be showing you
+
+1061
+00:55:07,640 --> 00:55:10,480
+examples because I found this really
+
+1062
+00:55:10,480 --> 00:55:13,760
+amazing page where all of this is
+
+1063
+00:55:13,760 --> 00:55:16,720
+described in great way with the
+
+1064
+00:55:16,720 --> 00:55:19,280
+animation so here I can narrate this
+
+1065
+00:55:19,280 --> 00:55:21,480
+animation but of course you can read it
+
+1066
+00:55:21,480 --> 00:55:24,720
+so what we're talking about is
+
+1067
+00:55:24,720 --> 00:55:27,559
+hashing hashing Str strings in Array
+
+1068
+00:55:27,559 --> 00:55:29,640
+right so we need to find a hash function
+
+1069
+00:55:29,640 --> 00:55:33,319
+so say strings are names here's Randy we
+
+1070
+00:55:33,319 --> 00:55:35,319
+want to put him in the array the array
+
+1071
+00:55:35,319 --> 00:55:37,280
+is small in this case let's say just
+
+1072
+00:55:37,280 --> 00:55:40,559
+seven elements so you could just instead
+
+1073
+00:55:40,559 --> 00:55:42,640
+of Designing any hash function you could
+
+1074
+00:55:42,640 --> 00:55:45,280
+just go one by one and
+
+1075
+00:55:45,280 --> 00:55:48,359
+ask but if the r as the arays get larger
+
+1076
+00:55:48,359 --> 00:55:52,039
+and larger it just so long to do that
+
+1077
+00:55:52,039 --> 00:55:54,760
+right asking every single index oh are
+
+1078
+00:55:54,760 --> 00:55:57,839
+you storing Randy no M okay let's go
+
+1079
+00:55:57,839 --> 00:55:59,880
+next right so this can take a lot of
+
+1080
+00:55:59,880 --> 00:56:02,799
+time each single time you want to insert
+
+1081
+00:56:02,799 --> 00:56:06,240
+an ele element into the hash into the
+
+1082
+00:56:06,240 --> 00:56:09,880
+array so therefore hash tables are used
+
+1083
+00:56:09,880 --> 00:56:12,520
+instead so instead of regular array use
+
+1084
+00:56:12,520 --> 00:56:15,480
+a hash table or this associative array
+
+1085
+00:56:15,480 --> 00:56:20,119
+where for a r or for a key or a name
+
+1086
+00:56:20,119 --> 00:56:22,760
+here you find the index using this hash
+
+1087
+00:56:22,760 --> 00:56:25,880
+function so you give Randy into the hash
+
+1088
+00:56:25,880 --> 00:56:30,480
+function and it spits out the
+
+1089
+00:56:30,480 --> 00:56:34,319
+index okay so if index is say 82 you
+
+1090
+00:56:34,319 --> 00:56:36,920
+just then put Randy in there no problem
+
+1091
+00:56:36,920 --> 00:56:39,640
+right okay so we already covered it but
+
+1092
+00:56:39,640 --> 00:56:42,559
+this is kind of the animation way of
+
+1093
+00:56:42,559 --> 00:56:45,680
+explaining the same thing so that's
+
+1094
+00:56:45,680 --> 00:56:50,039
+great how could we make a hash function
+
+1095
+00:56:50,039 --> 00:56:54,440
+like that for names well one of the Imp
+
+1096
+00:56:54,440 --> 00:56:56,440
+implementation is exactly for short
+
+1097
+00:56:56,440 --> 00:57:00,559
+strains you could add up the ask key
+
+1098
+00:57:00,559 --> 00:57:04,000
+values and divide mod the size of the
+
+1099
+00:57:04,000 --> 00:57:08,319
+array then that strain that that set of
+
+1100
+00:57:08,319 --> 00:57:11,200
+um indices produced by this hash
+
+1101
+00:57:11,200 --> 00:57:13,960
+function will be uniformly distributed
+
+1102
+00:57:13,960 --> 00:57:15,960
+if the original keys are uniformly
+
+1103
+00:57:15,960 --> 00:57:19,240
+distributed so you'll get a nice hash
+
+1104
+00:57:19,240 --> 00:57:22,319
+function for your 100 size
+
+1105
+00:57:22,319 --> 00:57:25,680
+array and that's that's the explanation
+
+1106
+00:57:25,680 --> 00:57:28,480
+how a 2 was obtained for randing you
+
+1107
+00:57:28,480 --> 00:57:31,119
+just add the SQL uh
+
+1108
+00:57:31,119 --> 00:57:33,720
+numbers so that's great for short
+
+1109
+00:57:33,720 --> 00:57:37,200
+strains this will work perfectly so say
+
+1110
+00:57:37,200 --> 00:57:40,000
+for eight size strains the the size of
+
+1111
+00:57:40,000 --> 00:57:43,440
+the strain set and the size of the array
+
+1112
+00:57:43,440 --> 00:57:46,280
+will be roughly matched and it will be
+
+1113
+00:57:46,280 --> 00:57:50,680
+great uh so here they show so the
+
+1114
+00:57:50,680 --> 00:57:52,839
+animation shows how you can put more
+
+1115
+00:57:52,839 --> 00:57:56,200
+strings into this array and how the same
+
+1116
+00:57:56,200 --> 00:57:58,160
+same thing is computer the same hash
+
+1117
+00:57:58,160 --> 00:58:03,119
+function will find the place for um the
+
+1118
+00:58:03,119 --> 00:58:06,000
+element to either be inserted or removed
+
+1119
+00:58:06,000 --> 00:58:09,839
+or just found simply peaked at right so
+
+1120
+00:58:09,839 --> 00:58:12,280
+here for St what do we do for St we
+
+1121
+00:58:12,280 --> 00:58:14,960
+compute the hash value we found it we
+
+1122
+00:58:14,960 --> 00:58:16,799
+report that we found it that's one of
+
+1123
+00:58:16,799 --> 00:58:19,559
+the principal operations to look at the
+
+1124
+00:58:19,559 --> 00:58:23,839
+array Eric we insert it and what else I
+
+1125
+00:58:23,839 --> 00:58:26,119
+guess that's all it says searching for
+
+1126
+00:58:26,119 --> 00:58:30,960
+for stand inserting Eric okay cool but
+
+1127
+00:58:30,960 --> 00:58:33,520
+inevitably there may be situation where
+
+1128
+00:58:33,520 --> 00:58:34,880
+the same
+
+1129
+00:58:34,880 --> 00:58:38,200
+name or the same key will result result
+
+1130
+00:58:38,200 --> 00:58:42,160
+in the same index so Eric uh here has
+
+1131
+00:58:42,160 --> 00:58:43,680
+hash value
+
+1132
+00:58:43,680 --> 00:58:48,039
+four just like what was it uh Randy
+
+1133
+00:58:48,039 --> 00:58:50,520
+Randy and Eric all mapped to four so
+
+1134
+00:58:50,520 --> 00:58:53,280
+they belong to the same place in the
+
+1135
+00:58:53,280 --> 00:58:55,039
+array what do we
+
+1136
+00:58:55,039 --> 00:58:57,119
+do
+
+1137
+00:58:57,119 --> 00:59:00,839
+and that's the lab hash problem so there
+
+1138
+00:59:00,839 --> 00:59:04,680
+are two principal way of doing it open
+
+1139
+00:59:04,680 --> 00:59:08,760
+addressing or closed addressing so open
+
+1140
+00:59:08,760 --> 00:59:11,599
+addressing is also what we call linear
+
+1141
+00:59:11,599 --> 00:59:14,839
+probing here it's explained uh I think
+
+1142
+00:59:14,839 --> 00:59:19,000
+let me show you on my slides that oh I
+
+1143
+00:59:19,000 --> 00:59:21,079
+start with separate chain but the next
+
+1144
+00:59:21,079 --> 00:59:23,599
+slide shows a linear probing or open
+
+1145
+00:59:23,599 --> 00:59:25,280
+hash that's what that animation will be
+
+1146
+00:59:25,280 --> 00:59:29,799
+about so open hash what we do instead of
+
+1147
+00:59:29,799 --> 00:59:32,839
+inserting the key in that place that was
+
+1148
+00:59:32,839 --> 00:59:35,720
+already occupied by something we just
+
+1149
+00:59:35,720 --> 00:59:39,319
+increase the hash by one so let's see
+
+1150
+00:59:39,319 --> 00:59:41,400
+where is the animation so you say oh
+
+1151
+00:59:41,400 --> 00:59:43,400
+Randy is already there so we cannot put
+
+1152
+00:59:43,400 --> 00:59:46,160
+Eric in there well we'll just increment
+
+1153
+00:59:46,160 --> 00:59:49,000
+by one and insert Eric in the next
+
+1154
+00:59:49,000 --> 00:59:52,160
+position and then will flag that place
+
+1155
+00:59:52,160 --> 00:59:54,520
+in the array as hey it's occupied now
+
+1156
+00:59:54,520 --> 00:59:56,680
+you can't really put it in there
+
+1157
+00:59:56,680 --> 00:59:59,920
+like just just remember that you have to
+
+1158
+00:59:59,920 --> 01:00:04,000
+probe next when you're next time okay so
+
+1159
+01:00:04,000 --> 01:00:07,599
+that's uh how open addressing or linear
+
+1160
+01:00:07,599 --> 01:00:09,760
+probing
+
+1161
+01:00:09,760 --> 01:00:13,559
+works now another way of resolving
+
+1162
+01:00:13,559 --> 01:00:16,640
+collisions would be just instead of
+
+1163
+01:00:16,640 --> 01:00:20,359
+keeping one value keep a link list on
+
+1164
+01:00:20,359 --> 01:00:23,240
+values of values associated with that
+
+1165
+01:00:23,240 --> 01:00:26,000
+index or with that hash value so then
+
+1166
+01:00:26,000 --> 01:00:28,760
+Randy Eric or whatever whoever else maps
+
+1167
+01:00:28,760 --> 01:00:32,520
+to for would all live in that link list
+
+1168
+01:00:32,520 --> 01:00:35,440
+of course then you have to manage link
+
+1169
+01:00:35,440 --> 01:00:38,160
+lists and maybe it's also an array under
+
+1170
+01:00:38,160 --> 01:00:41,559
+the hood but maybe it's um if it's a
+
+1171
+01:00:41,559 --> 01:00:43,079
+link list then you have to deal with
+
+1172
+01:00:43,079 --> 01:00:45,960
+those pointers like we talked about last
+
+1173
+01:00:45,960 --> 01:00:50,119
+time so here we go if Randy and Eric are
+
+1174
+01:00:50,119 --> 01:00:53,359
+there then I think he'll show you how
+
+1175
+01:00:53,359 --> 01:00:57,480
+to insert in searching yeah let's see so
+
+1176
+01:00:57,480 --> 01:00:59,559
+if Randy goes into
+
+1177
+01:00:59,559 --> 01:01:03,559
+four and then Eric goes into four then
+
+1178
+01:01:03,559 --> 01:01:05,720
+you have
+
+1179
+01:01:05,720 --> 01:01:11,400
+to you know open up the link list
+
+1180
+01:01:11,400 --> 01:01:15,920
+and and um rearrange the pointers like
+
+1181
+01:01:15,920 --> 01:01:19,039
+here to to maintain the link list
+
+1182
+01:01:19,039 --> 01:01:22,079
+maintain link list can be tricky because
+
+1183
+01:01:22,079 --> 01:01:24,839
+you have to deal with pointers however
+
+1184
+01:01:24,839 --> 01:01:28,920
+once we go through SD or S
+
+1185
+01:01:28,920 --> 01:01:31,880
+um the standard templated Library
+
+1186
+01:01:31,880 --> 01:01:33,720
+implementation and I'll show you later
+
+1187
+01:01:33,720 --> 01:01:36,720
+in this today how you don't really have
+
+1188
+01:01:36,720 --> 01:01:39,079
+to worry about this once you use the
+
+1189
+01:01:39,079 --> 01:01:41,880
+standard templat Library lists for link
+
+1190
+01:01:41,880 --> 01:01:43,240
+list
+
+1191
+01:01:43,240 --> 01:01:45,160
+implementation
+
+1192
+01:01:45,160 --> 01:01:49,359
+okay so that's it that's that's the key
+
+1193
+01:01:49,359 --> 01:01:51,240
+uh you can do analysis but we will not
+
+1194
+01:01:51,240 --> 01:01:53,799
+do this in this class because we're not
+
+1195
+01:01:53,799 --> 01:01:56,440
+really talking about data structures
+
+1196
+01:01:56,440 --> 01:01:58,200
+uh but these are the
+
+1197
+01:01:58,200 --> 01:02:02,079
+two uh different ways of dealing with
+
+1198
+01:02:02,079 --> 01:02:05,480
+collisions so either separate chaining
+
+1199
+01:02:05,480 --> 01:02:10,200
+that is instead of inert if if a bucket
+
+1200
+01:02:10,200 --> 01:02:12,279
+is occupied just move on to the next one
+
+1201
+01:02:12,279 --> 01:02:13,680
+and put it
+
+1202
+01:02:13,680 --> 01:02:17,599
+there that's for uh linear probing right
+
+1203
+01:02:17,599 --> 01:02:19,799
+and for separate chaining you just
+
+1204
+01:02:19,799 --> 01:02:23,079
+attach a link list of all of the key
+
+1205
+01:02:23,079 --> 01:02:26,359
+element pairs that
+
+1206
+01:02:26,359 --> 01:02:30,200
+uh that map to the same IND
+
+1207
+01:02:30,200 --> 01:02:36,079
+this okay so now let me show you an
+
+1208
+01:02:36,079 --> 01:02:37,640
+implementation
+
+1209
+01:02:37,640 --> 01:02:42,079
+of hashing and hash hashing function but
+
+1210
+01:02:42,079 --> 01:02:44,680
+also a hash table for eight character
+
+1211
+01:02:44,680 --> 01:02:46,599
+strings so that's what I promised you a
+
+1212
+01:02:46,599 --> 01:02:47,880
+little
+
+1213
+01:02:47,880 --> 01:02:50,400
+earlier and let's go through the
+
+1214
+01:02:50,400 --> 01:02:53,079
+implementation so what exactly we are
+
+1215
+01:02:53,079 --> 01:02:54,839
+doing
+
+1216
+01:02:54,839 --> 01:02:57,720
+here
+
+1217
+01:02:57,720 --> 01:03:01,200
+so I'm going to declare a hash table and
+
+1218
+01:03:01,200 --> 01:03:03,440
+it will have 100 elements so Underneath
+
+1219
+01:03:03,440 --> 01:03:05,200
+It All I know that there will be an
+
+1220
+01:03:05,200 --> 01:03:10,240
+array of 100 elements for each key right
+
+1221
+01:03:10,240 --> 01:03:12,279
+so now I'm going to
+
+1222
+01:03:12,279 --> 01:03:16,520
+insert an apple that's the key with the
+
+1223
+01:03:16,520 --> 01:03:18,279
+value a
+
+1224
+01:03:18,279 --> 01:03:22,680
+fruit The Strain C++ is the key with the
+
+1225
+01:03:22,680 --> 01:03:26,039
+value a programming language and hash is
+
+1226
+01:03:26,039 --> 01:03:32,520
+a is a um is a key and the value is a
+
+1227
+01:03:32,520 --> 01:03:35,119
+data structure okay so that's from the
+
+1228
+01:03:35,119 --> 01:03:37,200
+client point of view what I can do I can
+
+1229
+01:03:37,200 --> 01:03:39,799
+declare a table and then I can start
+
+1230
+01:03:39,799 --> 01:03:44,279
+populating and then I can look at each
+
+1231
+01:03:44,279 --> 01:03:47,480
+of the um by the key I can look up the
+
+1232
+01:03:47,480 --> 01:03:51,599
+value right so for the key Apple I hope
+
+1233
+01:03:51,599 --> 01:03:53,839
+to look up the value which you can see
+
+1234
+01:03:53,839 --> 01:03:56,200
+that I'm doing it right there right so I
+
+1235
+01:03:56,200 --> 01:04:00,079
+printed out the key and the hash table
+
+1236
+01:04:00,079 --> 01:04:02,720
+value using this overwritten square
+
+1237
+01:04:02,720 --> 01:04:06,359
+bracket operation because for apple
+
+1238
+01:04:06,359 --> 01:04:08,680
+square brackets I should get the value
+
+1239
+01:04:08,680 --> 01:04:12,279
+in that array with this key right so
+
+1240
+01:04:12,279 --> 01:04:15,319
+apple is printed out to be a fruit C++
+
+1241
+01:04:15,319 --> 01:04:17,440
+is printed out a programming language
+
+1242
+01:04:17,440 --> 01:04:21,039
+and hash is printed out a data structure
+
+1243
+01:04:21,039 --> 01:04:24,319
+this is all great but how is this hash
+
+1244
+01:04:24,319 --> 01:04:27,520
+table implemented so here's my class
+
+1245
+01:04:27,520 --> 01:04:31,400
+hash simple hash table privately it has
+
+1246
+01:04:31,400 --> 01:04:34,440
+this key value pairs it also has this
+
+1247
+01:04:34,440 --> 01:04:37,319
+table so it's a private uh member so you
+
+1248
+01:04:37,319 --> 01:04:41,240
+can really access it uh directly but
+
+1249
+01:04:41,240 --> 01:04:43,520
+what you can access directly is only
+
+1250
+01:04:43,520 --> 01:04:47,160
+public principal operations and that is
+
+1251
+01:04:47,160 --> 01:04:49,680
+operator square
+
+1252
+01:04:49,680 --> 01:04:53,839
+brackets and um and just um I can
+
+1253
+01:04:53,839 --> 01:04:55,920
+structure in this case so I don't really
+
+1254
+01:04:55,920 --> 01:05:00,480
+have any other public um operations here
+
+1255
+01:05:00,480 --> 01:05:03,760
+I I did not Implement insert and
+
+1256
+01:05:03,760 --> 01:05:07,000
+delete because it was just for uh just a
+
+1257
+01:05:07,000 --> 01:05:08,839
+simple implementation that I wanted to
+
+1258
+01:05:08,839 --> 01:05:11,680
+show but operator square brackets is
+
+1259
+01:05:11,680 --> 01:05:14,480
+overr so I can always Peak or look up
+
+1260
+01:05:14,480 --> 01:05:17,760
+the element for with the key so how do I
+
+1261
+01:05:17,760 --> 01:05:20,319
+even how can I look up this element with
+
+1262
+01:05:20,319 --> 01:05:21,839
+the key well the operator square
+
+1263
+01:05:21,839 --> 01:05:24,839
+brackets really is Hash calculation
+
+1264
+01:05:24,839 --> 01:05:28,319
+right so it will look up the table with
+
+1265
+01:05:28,319 --> 01:05:29,839
+that hash
+
+1266
+01:05:29,839 --> 01:05:34,200
+value which is Hash value of the key and
+
+1267
+01:05:34,200 --> 01:05:37,079
+um and it's doing something interesting
+
+1268
+01:05:37,079 --> 01:05:39,640
+there as well so what is it doing is
+
+1269
+01:05:39,640 --> 01:05:42,720
+that it's the way my table is really
+
+1270
+01:05:42,720 --> 01:05:45,760
+stored and implemented which is a p
+
+1271
+01:05:45,760 --> 01:05:47,799
+which is done privately but we can look
+
+1272
+01:05:47,799 --> 01:05:50,319
+and see how it's done so table is a
+
+1273
+01:05:50,319 --> 01:05:52,359
+vector which means that it's an
+
+1274
+01:05:52,359 --> 01:05:57,480
+array but each element is is a q which
+
+1275
+01:05:57,480 --> 01:05:59,160
+means that I'm talking about closed
+
+1276
+01:05:59,160 --> 01:06:02,960
+hashing right so it's a it's a chaining
+
+1277
+01:06:02,960 --> 01:06:06,240
+of the key value pairs for each
+
+1278
+01:06:06,240 --> 01:06:09,960
+index but um I'm not really concerned
+
+1279
+01:06:09,960 --> 01:06:12,240
+about it because lists already Implement
+
+1280
+01:06:12,240 --> 01:06:13,760
+all of those insert and delete
+
+1281
+01:06:13,760 --> 01:06:16,359
+operations if I need that so this is
+
+1282
+01:06:16,359 --> 01:06:19,000
+very clever way to do it using C++
+
+1283
+01:06:19,000 --> 01:06:22,160
+standard Library Center templated
+
+1284
+01:06:22,160 --> 01:06:26,359
+Library okay and um so so what else oh
+
+1285
+01:06:26,359 --> 01:06:28,440
+the hash table the hash function the
+
+1286
+01:06:28,440 --> 01:06:30,839
+hash function itself is what we talked
+
+1287
+01:06:30,839 --> 01:06:35,200
+about uh for eight character strings you
+
+1288
+01:06:35,200 --> 01:06:38,039
+you just add up
+
+1289
+01:06:38,039 --> 01:06:42,559
+their each of their character as key
+
+1290
+01:06:42,559 --> 01:06:45,799
+values and then you divide it mod the
+
+1291
+01:06:45,799 --> 01:06:49,680
+table size so mod 100 and then those 80
+
+1292
+01:06:49,680 --> 01:06:51,160
+character strings will be nicely
+
+1293
+01:06:51,160 --> 01:06:55,039
+distributed across that table you can
+
+1294
+01:06:55,039 --> 01:06:59,160
+it's gu to do that so there you go uh
+
+1295
+01:06:59,160 --> 01:07:00,599
+that's the
+
+1296
+01:07:00,599 --> 01:07:03,839
+implementation you can look up at it you
+
+1297
+01:07:03,839 --> 01:07:07,279
+can look it up and uh and see and play
+
+1298
+01:07:07,279 --> 01:07:10,279
+with it and I think I'm done for today
+
+1299
+01:07:10,279 --> 01:07:11,559
+so we are a little
+
+1300
+01:07:11,559 --> 01:07:14,480
+earlier but again this is just think of
+
+1301
+01:07:14,480 --> 01:07:16,880
+it as a bonus lecture because I will not
+
+1302
+01:07:16,880 --> 01:07:20,440
+be asking this material on the exam um
+
+1303
+01:07:20,440 --> 01:07:23,359
+but it's helpful for your
+
+1304
+01:07:23,359 --> 01:07:27,520
+homework okay any questions
+
+1305
+01:07:28,720 --> 01:07:32,319
+so now next week we still have really
+
+1306
+01:07:32,319 --> 01:07:35,680
+cool material uh Elmer will be talking
+
+1307
+01:07:35,680 --> 01:07:38,920
+about the standard library and um V will
+
+1308
+01:07:38,920 --> 01:07:41,559
+be talking about smart
+
+1309
+01:07:41,559 --> 01:07:45,240
+pointers and um principles of
+
+1310
+01:07:45,240 --> 01:07:48,039
+programming in modern C++ so that's very
+
+1311
+01:07:48,039 --> 01:07:50,160
+very crucial he lecture is something
+
+1312
+01:07:50,160 --> 01:07:52,440
+that we'll need to start with in the
+
+1313
+01:07:52,440 --> 01:07:54,839
+next installation of this class so we
+
+1314
+01:07:54,839 --> 01:07:57,079
+are all looking forward to seeing it and
+
+1315
+01:07:57,079 --> 01:08:00,279
+I hope you all will be there so I'll see
+
+1316
+01:08:00,279 --> 01:08:03,160
+you next
+
+1317
+01:08:19,238 --> 01:08:22,238
+Tuesday
+

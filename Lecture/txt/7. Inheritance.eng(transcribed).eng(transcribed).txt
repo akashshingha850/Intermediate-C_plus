@@ -1,0 +1,1108 @@
+e
+been people online to hear me
+well Yes sounds
+[Music]
+good okay now we are just
+about ready to start it says 14 past 10
+well now it's 15 bu okay perfect yeah uh
+okay so today's topic is about uh
+inheritance and if you're not yet
+familiar with what inheritance means
+then we're going to get to that
+um of course uh first obligatory mention
+of the visiting lecture that's coming
+up um I guess maybe I don't have any
+other announcements unless Anna has
+something to
+say no no just today is the deadline for
+uh lab memory but yeah true we moved the
+deadline because of the uh
+holiday uh so you still have until the
+end of today to complete that yeah
+that's it yeah that's
+good
+um okay yeah let's get get to the topic
+so so we've kind of talked about some
+topics of of objectoriented programming
+there's
+encapsulation uh
+polymorphism uh so then what is inher
+um so it means this hierar hierarchical
+relationship between classes where you
+have more General classes and then
+classes that inherit those more General
+classes and and get like that they're
+more specific they add like some things
+to a class that is more
+General uh and here is like a basic
+example uh and we'll kind of use this
+example throughout this lecture um so we
+have sphere class here and then we have
+ball class and then you can see that uh
+little text after declaring the ball
+class uh so yeah these are the the
+sphere is the base class here the more
+General class
+and then ball is the derived class which
+is more specific so maybe if you look at
+these you you think like okay well they
+seem just about as like complex but uh
+the idea is that everything that's in
+the base class is also in the D derived
+class so that's how it gets kind of more
+complicated the lower you go in the
+hierarchy uh
+and then if you're
+thinking why does it say public there so
+so that means the that that refers to
+the inheritance
+type uh so how do we inherit this sphere
+class and in this case we're inheriting
+it publicly so that means that we're
+going to keep all the
+public uh
+methods and properties as
+public but of course things that were
+declared as private are still going to
+remain private so the idea is that the
+more restrictive access type applies for
+the D derived class and most of the
+cases I think you're going to just use
+public
+inheritance uh but that is something you
+can do where you you kind
+of add some additional restrictions to
+the class access when you go down in the
+hierarchy uh and another important note
+is that private members of the base
+class are not accessible by the druged
+class so you can see that there's the
+sphere class has
+radius so then in the ball class
+we can just
+like use radius just like that not that
+easily so then instead if we want to
+manipulate it we need to
+use uh for example the set radius
+function and yeah yeah you might
+initially think that oh this is really
+restrictive um but you know
+maybe maybe if um
+the idea is that when you change the
+radius then it pre-calculates the
+volume maybe for that reason you would
+want to control this through the set
+radius function and then you kind of
+Define this flow in the sphere class and
+then the uh derived
+classes uh just take that as it is and
+it kind of retains the flow of the L how
+to use the class so in the end you'll
+find that it really makes sense that you
+can't access the private
+members um but if you want to you can
+also use the protected keyword which is
+the third access type so is public
+private and protected so protected are
+accessible by D derived
+class uh but there's still in accessible
+outside the class
+so uh so for for example
+if
+uh well in in in any situation if you
+specifically create a sphere even if you
+create the sphere inside the ball class
+in some function you you won't be able
+to uh access the surface area
+but but it's kind of like you can
+imagine that if it says protected there
+then it's kind of like it was uh private
+in the in the derived class so you can
+access it within the class but not from
+the
+outside and this should become clearer
+over time as you kind of guess in
+practice with them might seem confusing
+at
+first uh okay well let's look at some uh
+like practical
+uh
+examples now
+so here we have so so we're using kind
+of the uh definitions for for sphere and
+ball uh from before and then we'll have
+this like simple main function and then
+a couple other like kind of we get more
+more on the um things on the right side
+here later but first uh let's look at
+like how this program is going to work
+I'll also show like actually running the
+code in a bit but uh let's first like
+kind of go through what's going on here
+so so okay so we the
+ball the ball B uh calls the function
+get
+volume and get volume uh which remember
+we defined the function in the steere
+class so so yeah the ball can access the
+function
+that's defined in in the sphere class
+that's okay that's exactly how
+inheritance is supposed to
+work and then we have this print volume
+function uh and we have the sphere and
+the print volume takes spere as argument
+so no problem we pass that there uh and
+you'll remember from previous lectures
+that that means that is going to create
+a
+copy uh so then it calls the Constructor
+makes a new sphere
+uh but in any case this is normal
+behavior but then what if we try to pass
+a ball as argument to this function that
+that's supposed to take a
+sphere uh okay so here is a question for
+you so can we create a sphere out of a
+ball with default Constructor so can we
+do that which I just showed
+here and uh if you yeah I didn't have
+any slido slides before but yeah if you
+type in the address slo.com and put in
+the number then you can enter and vote
+or of course use the QR code there's
+going to be a couple other questions
+later in the lecture so if you join now
+then you'll easily be able
+to uh attend the
+following
+HS and also the the Q&A I don't have
+separate Q&A slides but you can always
+access that from slido and and I'll be
+able to see them uh the the questions
+you put there
+um okay so we're getting a very even uh
+split
+here okay the majority is voting
+no uh and the the answer
+is that is actually
+possible uh and what happens in that
+case is that it kind of just slices away
+uh the
+extra properties of the derived class
+and retains only those that belong into
+the sphere
+class uh and
+this for for this that there is like a
+default
+Constructor uh that can be used of
+course you can also Define one yourself
+where you could maybe change somehow the
+way it works uh but you can do this even
+by
+default okay well the next question then
+is can we uh
+create a ball out of a sphere did did I
+get the questions correct yeah yeah so
+previously can we create a sphere out of
+ball but now can we create a ball out of
+a sphere so if you look on the right
+side uh imagine that we actually like
+properly defined those as well uh
+but yeah another question for slido can
+we create a ball out of a sphere with
+default
+Constructors maybe the fact that we
+could do the do it the other way gave
+you some confidence that we can also do
+it this way
+but even then the majority
+is voting
+no okay and the answer is that you can't
+do that and uh for this case you need to
+Define your
+own uh
+Constructor kind of like as you can see
+uh down at the bottom so you can have a
+Constructor for for ball that takes a
+reference to a sphere and
+then you can Define it to work in in
+whatever way you
+want the what you would
+expect how it works is that it basically
+would use like default
+Constructor
+um initialization for for whatever is uh
+not defined by the sphere or
+so in this case um a sphere has
+everything that the ball has except a
+name it doesn't have a name so then we
+just need to come up with a name uh from
+from
+somewhere and
+uh
+I'll I'll show a
+little example I should
+have basically the same
+thing
+here so just to kind of show that this
+works so I have defined like the those
+things here just have some like basic
+things over here uh
+so so if we do this s equals
+B
+and
+yeah we can see that this is fine no
+problem and
+then b equals
+s and now we get some kind of error like
+like what what what is this that we
+can't do
+this
+um but then
+I'll I'll show right
+away uh how you can make it work so
+let's just do
+this find these things in the in the
+same file so you can see everything at
+once
+this and then when when
+we when we construct
+uh a ball yeah you can actually see here
+also uh so it it says like spere
+constructed two times and then when it
+says pom pom constructed that was like
+when it constructed the ball and it it
+printed the name of it uh so the reason
+you can see that it Go constructed two
+times is that when you uh initialize a
+drive class then it uh by default like
+uses the Constructor of the base class
+to like
+initialize kind of on that level first
+and then initialize the things that are
+unique to the derived
+class uh so now we could do something
+like
+uh something like
+this
+okay I'm now now it's fine so so now
+what what this does is uh so construct
+the
+sphere uh con constructive properties of
+the like sphere and then also just give
+it some kind of name so that's kind of
+one way we
+can make this work uh okay but more
+examples uh coming up but let's proceed
+for now with the
+slides
+um so then we have another kind of
+situation so if we're using
+pointers we have this kind of uh
+situation where we have a display
+function defined in both the sphere and
+the
+ball uh in in the the case of the ball
+we can print both the name and and the
+volume because it has both of those and
+in the case of sphere we can only print
+the volume there's nothing else really
+uh to be
+printed uh so then if we have a
+situation like this where we create this
+new spere and we create a new ball and
+then those are in the Heap and we have
+pointers to them and then we this
+sphere pointer to
+point um at the ball and then we try to
+display so what do you think will happen
+in this
+case uh well I don't have slide over of
+this I'll just uh kind
+of move on here so what happens in this
+case is
+that it's like okay well well I'm I'm a
+sphere pointer so so what I do is point
+at the sphere function so uh so I I'll
+use that function it doesn't realize
+that uh it's actually a bow now well
+later we're
+GNA get into how to fix this but
+um for for now it's like this it's not
+it works you can do this but it's
+probably doesn't work exactly how you
+would want it to work and of course if
+we're doing this then we're also just
+kind of ditching the spere that we
+created and and leaking memory which is
+not good and then we have this kind of
+situation where the S pointer only sees
+this like limited scope of the SP and
+then the B pointer sees the whole
+thing
+um okay and then
+if we try to do it the other way we'll
+actually find that that that also
+creates an error we we can't
+actually
+uh assign a sphere pointer to a ball
+because that that creates this kind of
+confusing situation where uh now
+B is pointing at this sphere but it
+thinks that it's a ball so so it thinks
+that there should be a name
+somewhere and and it thinks that this is
+the right function to
+call tries to get the name of it and
+then what happens well we don't TR know
+what happens because it's uh undefined
+Behavior well uh also if you try to just
+directly do b equals s that's an error
+but if you specifically
+cast s to
+be a ball pointer then then we get this
+situation so so this is natur really
+something that that you should
+be doing not not not like this
+anyway okay and then we get
+to how we can fix the situation so um so
+I'll introduce this
+virtual functions or or I guess the
+virtual keyword uh
+so here we're putting this virtual
+keyword in front of
+the display function
+declaration and you only really need to
+put it in the base class because then it
+kind of automatically
+retains uh that property uh in in all
+the derived classes
+but a lot of the time you'll see that
+the virtual keyword is used throughout
+so then it makes it a little clearer
+that uh that is what's going
+on so so what it
+does is that it enables this Dynamic
+function
+binding
+so the correct function to call is is
+determined a front time or or it might
+be optimized in the in the
+compiler uh it depends how how the
+program is
+fr
+um yeah if we do this and then we create
+this s and we have this spere pointer
+and then we make it point to a ball
+instead then it's actually smart and it
+realizes like okay well I see a ball
+here so I'm going to use this uh ball
+display
+function so then everything's fine and
+this is a very common scenario that
+you'll also see that uh well not really
+for like individual pointers but it's
+very common to have these bigger arrays
+of
+um pointers to the base class and then
+we can put all the different DED objects
+to the same array and
+then call the functions by the same name
+for all of them but then it'll always
+know which function to call based on
+what object it actually is
+underneath uh okay and then once again
+if
+we try to have the ball pointer point at
+the sphere then we get an error
+error um so changing making it virtual
+doesn't change that
+um we can still cast it and then what
+will happen then is basically as we
+would expect it also works the other way
+uh so it realizes
+that okay like like sure I'm a ball
+pointer but this does look like a sphere
+so
+so then I'll use that
+function but but even then this is kind
+of a weird to do this way uh you
+probably wouldn't do it this
+way
+um
+okay but then a little little bit of
+like theory about the virtual functions
+so so a derived class can override
+virtual methods but it isn't required so
+if it is um already defined in the base
+class it doesn't need to be overwritten
+but but then you can and then when it's
+marked as virtual
+then dynamically the program will
+determine uh the right function to
+call uh okay so if the virtual methods
+are not
+implemented
+um in the class then that makes it an
+abstract base class and no objects of
+that type can be
+declared and we'll also see an example
+of that uh
+soon yeah that is also an option uh so
+so
+Constructors uh so would anyone be able
+to
+tells can
+Constructors be virtual should they be
+virtual any
+ideas you can also Post in chat if
+you're on
+Zoom I'll let you think about this
+for a little
+while
+okay well the answer is that they cannot
+be virtual and and that isn't really
+like if if you think about it's not
+really
+something you would
+want because each of the each of the
+classes The Base Class the derived
+classes uh they they kind of need to
+know how to construct themselves and
+they can always utilize the uh
+Constructors from the base class
+so that's kind of how it goes but what
+about the structors
+then can they be virtual should they be
+virtual okay any anyone want to give me
+like yes
+no
+okay uh well the answer is that
+they can be virtual and they should be
+virtual and I'll explain uh what the
+idea there is
+so so the idea is
+that
+uh like we saw
+here uh
+before like in this
+case uh so we have The Spar pointer we
+make it point to a
+ball uh so so what if
+now uh allall had some kind of property
+that that the memory needed cleaning
+something that was in the Heap and and
+we
+call uh Delete
+s and then it finds the destructor for
+the spear class but then the destructor
+for the spear class is completely un
+unaware the properties of the ball
+class so it doesn't know that there's
+something there that needs to be cleaned
+up from the
+memory and then we end up having a
+memory leak but
+then when the destructor is
+virtual uh
+then also in this case it will notice
+that okay this is actually a ball so
+we'll call the destructor of the ball
+and and be able to clean up all the
+memory related to the
+ball so it's a little bit uh kind of
+maybe tricky to wrap your head around it
+but Constructors can't be virtual while
+destructors can and should be virtual
+but it's important important to remember
+that that's the way it
+works uh okay and then virtual method
+return type cannot be overwritten so if
+you
+have uh for
+example the get volume function then you
+you can't have the the ball class say
+that okay what the get volume I'm going
+to change it to PR return it as a string
+instead yeah you can't do
+that it needs to be the same type all
+the
+way
+um okay I I'll show I'll show some
+uh
+example examples here before
+we move on
+uh okay so here here we should
+have yeah yeah I specifically made this
+so that uh there's some
+um there's some memory that need needs
+to be cleaned up here and let's do
+something like
+um
+well let's just make a new one so let's
+do like
+um
+so we have a sphere
+pointer and then we can do this this is
+fine and this should
+uh yeah I have it set to uh set the name
+to default ball so but that should be
+fine in
+itself and
+then let's say we
+[Music]
+do
+let be
+display and then then you
+should uh Delete SP before it goes out
+of
+scope so we'll see what this looks like
+here
+okay so so we're seeing that the program
+works just fine and we'll see that okay
+it's constructing the
+sphere it's also just got kind of go
+over this uh entire uh process while
+we're at it so so first uh yeah we make
+a sphere uh it's getting constructed
+then we uh initialize this ball and then
+first we see the sphere constructed so
+it it kind of constru structs the The
+Base Class part of it then it
+uh in in in this case in this case the
+way it works is that we're creating ball
+out of
+steer uh and
+then okay this isn't actually really the
+uh this isn't really the best way to do
+this because instead we can use this
+uh Constructor
+delegation yeah I didn't really actually
+explain this I probably should have had
+uh separate slides for this but yeah
+basically when we do
+this uh we're we're not like kind
+of creating a new sphere here or
+anything like that but what we're doing
+doing is that we're just calling the uh
+sphere
+Constructor inside the ball and so so
+it's going to construct the sphere parts
+of this class based on uh this sphere
+that that is given in this
+case
+and now actually I do have some slides
+related to this but but anyway that's
+the
+idea
+um again then in this case
+actually actually we're run into a
+problem here so so we can't actually do
+both of these things so we need to
+initialize the name some other
+way uh we we
+could we could initialize it here
+U but then we might also end up having
+multiple Constructors that want to use
+the same uh default name like we have
+here for
+example
+um so let me just change this to
+also No actually that's not necessary
+because that happens automatically but
+we'll also get to that in a bit uh
+okay so what we can do is we can
+actually okay in this case it's a little
+bit confusing because it's a pointer but
+okay if it wasn't a pointer then we
+could Define
+the
+um default values like this so then you
+don't get prund redundency in the um
+instructors okay well now now I'm kind
+of getting all all over the place
+but okay okay let's see what the
+situation is um right now
+um we're actually getting into
+some problem okay I I didn't like too
+much editing and now now I'm
+confused but uh okay let's just say
+that I already talked about what the
+problem is with the um why why you need
+virtual destructors and then I realized
+that there's some other things to
+explain in the slides that I I should
+have explained before getting into some
+of the
+code
+uh okay so this is something that I
+showed
+before so if we have a ball
+Constructor then we can do this where in
+the
+initialization
+uh initializer line while
+we call the spear
+Constructor that's something you can do
+to initialize the properties belong to
+the sphere but you don't actually have
+to do that because that happens by
+default
+all
+uh so
+then the default B Constructor could
+look something like this where uh well
+you can actually just get rid of of the
+sphere part and then just give it some
+question mark As
+name
+um and then also in this case we're
+we're not calling the uh default
+Constructor but instead we're calling
+the Constructor that takes the radius as
+an
+argument so so you can call any Base
+Class Constructor uh from a derived
+class Constructor like this and it's
+fine but but you you need to do this
+like in the
+um in in the initializer line because
+like if you want to do it in the in the
+like actual
+uh code part of the Constructor
+then
+uh that then what what you would
+basically have to do is like create a
+completely new sphere and then copy the
+properties over or something like that
+and that's really inefficient so
+Constructors uh as you know you can't
+just like explicitly call them it's they
+only get called during initialization so
+that's why they have to be specifically
+here and not
+here
+um
+okay yeah and I talked
+about wordful destructors I feel like
+some of my slides are a little bit out
+of order but I guess we get some prap
+so yeah we already discussed about that
+so it's fine let's move
+on uh
+so okay okay maybe maybe I can make this
+example or now okay I actually already
+defined it as as
+virtual uh okay so I should have
+everything set up here okay okay this is
+going to be fine
+so have a sphere
+pointer we'll make a new
+ball and then
+we delete
+it oh oh wait it's lower
+case yeah that's fine everything
+works
+use spell grind and you see no no leaks
+are possible so it's fine and
+then and you can also see
+uh here is uh this means that it's it
+destroyed
+the ball based on its
+own
+distructor
+okay and now when we don't have the
+virtual keyword then we notice that okay
+we've run into this
+problem okay that's the
+idea uh all right then let me explain
+abstract base classes I mentioned that
+before so if you have something like
+this where uh you have a virtual
+function and
+then that then you write that it equals
+zero this probably looks a little bit
+weird how why is this function equaling
+zero well that's just kind of
+syntax uh
+to specify that that we're not defining
+this function
+here so then you'll see this class in
+some of the assignments this drawable
+class uh and it's pretty much like this
+the the destructor doesn't do anything
+the uh draw function it doesn't do
+anything that this class doesn't really
+have anything in
+it what is what is even the point and
+well the point is that the since it's
+abstracted it doesn't have the draw
+function
+defined which kind
+of uh directly means that we
+can't uh create any objects like this so
+let's
+say say if get volume
+here uh make it
+zero
+just uh comment that
+out and then we try
+to uh try to compile here then then we
+get an
+error
+um and it's just it's just getting
+confused like like we can't do
+this
+um
+but then uh what what the point of this
+is is um well actually actually I'll
+show here this is the best way to kind
+of kind of show what the point is is
+that if we have like I mentioned before
+this kind of array of these different
+derived classes then we could call the
+same function for all of these and then
+it's finding the correct function to
+call in each these cases so the idea is
+that
+uh then we Define that all classes that
+derive from
+drawable should have this draw
+function and and the fact that we Define
+it this way means that we we can we can
+call the same function on all of these
+objects so we can create these Loops
+that just go through all of them and
+call the function uh and we can get this
+like really
+clean code and we don't have to WR like
+everything in a separate line like okay
+what's called
+the draw Square function and draw Circle
+function and draw triangle function uh
+so that's kind of the idea why why you
+want to do this so you just you just
+Define that the DED
+classes should Define
+this
+and yeah you can just kind of see one
+example of the rectangles raw function
+there but but we're not going to
+get like in depth on how that works
+that's relevant uh okay
+so then if we try
+to uh create a new drawable like that uh
+like I showed we get an error you can't
+do that uh then we have this rectangle
+that deres
+from drawable and defines its own draw
+function like there then everything's
+fine like no problem we we can create
+that rectangle and call it STW
+function uh but
+then what we can do is is we can create
+these drawable pointer
+and then we can put any kind of drawable
+on it and then by using the virtual
+functions it'll always make sure to use
+the correct
+function
+uh
+okay so so kind of as as I recap
+the what inheritance provides is this
+Dynamic polymorphism
+so the type dependent function can be
+selected at at frun time or or it might
+be optimized by the compiler but uh yeah
+the point is
+that despite like kind of calling the
+the the same function it can determine
+that okay actually actually call this
+function instead and later we're also
+going to see something about
+templates which is the case of
+polymorphism
+um where type dependent functions are
+chosen at compile time so it it's a
+similar
+concept but uh yeah we'll have more more
+on that
+later uh
+okay okay any any questions about
+inheritance at this point I feel like
+maybe at some point I I kind of
+uh lost the flow of the whole thing a
+little bit so hopefully it wasn't too
+confusing but uh let me know if like
+something is really unclear and I'll go
+back and
+explain
+but that
+should cover
+the uh inheritance part I I do also have
+the
+uh no hold on so the deadline for lab
+memory is is today so I I I shouldn't
+actually show the solutions to that now
+yeah yeah El I actually have a couple of
+questions about the
+um maybe we can look at your code and
+see like um I think it's interesting to
+discuss how thatly the constructors and
+destructors are called for uh base
+classes and inherited classes like when
+you create a ball there um maybe we can
+go over a little in more detail why than
+the ball part and the sphere part are
+created and when and when you delete
+when you delete a ball or a sphere how
+does it know to call
+um both parts to be deleted right um so
+what's the mechanism for that if you if
+you can go like you have a nice example
+in your functions but we can go like
+through the construction of balls
+inherited classes and destruction of
+inherited
+classes but even when there is no
+virtual cold right um how does the
+destructor know to delete this Fe part
+for
+example uh okay so so if we go back to
+this like kind
+of uh basic example so so in this case
+um we don't have the
+destructors uh defined but yeah in this
+case you can see like when we create
+first a sphere and then a ball then we
+see that sphere constructed sphere
+constructed then pom pom uh constructed
+so it's like that and
+now uh
+let's go to
+over here let's get rid of the virtual
+and then let's see
+um okay let's let's put this
+back
+okay yeah yeah here we have uh it just
+says Spar
+destroyed uh let's
+say
+yeah let's also do the same thing
+here be like
+um no actually I think I already defined
+this like down here right yeah okay yeah
+it says uh name destroyed and then
+deletes the name okay okay let's also
+try
+let's also try yeah that's adding some
+kind of new thing here yeah uh let's
+give this some kind of string too in the
+in the Heap and then let's see how it
+how it turns out uh so what could this
+sphere have it's
+like
+uh let's
+say not a name material okay material
+that's good yeah surface yeah material
+sphere has some kind of material to it
+so let's
+[Music]
+um let's uh for for example
+here this SP let's put that back
+there
+um there
+um new
+string rubber yeah I think that should
+be fine
+uh let's
+also do
+this
+well okay it's it's a little bit
+redundant but but let's just put the
+same line here as
+well
+okay
+then
+yeah very
+good then we also
+have uh okay I'll change the
+names this one can be
+two
+um and then we'll delete both of them
+okay what happens now
+[Music]
+oh this one all right I forgot about
+that okay so we
+see of expect that sphere constructed
+then
+spere uh and then default ball so it's
+doing it with the default name
+and then we have spere destroyed and
+spere destroyed so in both of these
+cases uh it's destroying the sphere uh
+because
+they're um sphere pointers and it's not
+virtual now now let's um if we have
+a just an actual ball pointer poing to a
+ball
+okay now now we're getting all kinds of
+messages this is getting like a little
+bit confusing
+already let's get rid of the other
+things first and
+uh and we can more clearly see what
+happens here spear constructed default
+ball constructed default ball destroyed
+spear
+destroyed yeah
+so so then default ball is the name of
+it and this is what it looks like when
+it's calling the destructor for uh the
+ball
+class
+uh so then what is doing is it's first
+it constructs the base class then it
+constructs the derived class then it
+destroys the derived class and then
+destroys the base class it's kind of in
+uh reverse order like
+that uh yeah and this is compile time
+binding because we didn't declare any
+virtual right
+functions yeah yeah so so this this of
+course Works uh works for the
+pole now if we
+do if we do
+this we have the sphere pointer pointing
+to a ball
+then we delete
+that so it's constructing it the same
+way but now it's only destroying the
+sphere okay now we know how to fix
+that let's make it
+virtual
+um I guess I should also make this like
+um
+delete
+material okay and now we see that this
+also works just fine it calls the
+destructor for both the uh Drive class
+and and then also the the base class so
+uh so it's like even though we're
+specifically pointing it to like like
+okay call
+like like this this is virtual so so you
+shouldn't call this you should you
+should call this the structor instead
+but even then it it also goes through
+the Base Class
+Destructor yeah this is a good example I
+think to show how virtual changes the
+behavior yeah I guess we can see
+see if we have any problems here and we
+don't no leaks are
+possible yeah everything's
+fine so I think another thing to not uh
+to notice or to note for students that
+um they can see how many errors can be
+created compile erors or uh runtime
+Errors By just forgetting the virtual or
+forgetting to set up something to as a
+abstract based class right um so then
+the next Lab on inheritance is exactly
+us planting all of these arrows in the
+lab and they'll have to chase um yeah
+where the the problems were
+planted yeah definitely if if if at this
+this point it feels
+like
+confusing uh then
+when you when you work on lab
+inheritance then you'll get plenty of
+practice on like each of the different
+parts and like kind of see how how all
+of these uh play out and and have to
+like find all these bugs so hopefully
+hopefully based on this lecture you'll
+already have an idea like
+uh like like okay if this derived class
+isn't working as intended then maybe I
+should see
+if if the base class is using the
+virtual keyword for
+example uh making sure that all the
+constructors and destructors in both the
+like base and derived classes are uh as
+they should
+be that they aren't licking memory in
+any of
+those so yeah inheritance does make
+uh code like a little bit complicated in
+that way that if you have a problem with
+some like object in your code then maybe
+the problem is actually in the base
+class and not in the in the derived
+class but you can kind of trace it back
+like like you can you can see like okay
+the base class is like this uh you can
+check like okay uses virtual so so then
+we
+go down to the next one and then we see
+like okay looks like everything's fine
+here and then you could go down even
+even
+more uh in this case we only show showed
+like having a base class and then one
+derived class but then the derived class
+could also have
+more derived classes from
+that you can kind of Nest it as much as
+you want uh so yeah you can just kind of
+Trace
+that
+okay remember there's also the QA is
+open on slid so you can also put
+questions here we
+have we have some time here since uh I
+can't really reveal
+the uh lab memory Solutions yet oh right
+so you were going to um cover that so I
+have um if if there are no questions we
+can just uh finish early uh but we do
+want to cover the solutions for lab uh
+GDB right is that the previous lab uh no
+no slab memory oh lab memory yeah lab
+memory yeah so we want to probably we
+can do it on Thursday because templates
+are not going to be full one and a half
+hours as well so we can do that if
+you're already
+prepared we can let everybody gobe I'll
+make a separate recording uh
+maybe maybe even include lab debug
+because we lost that recording but that
+sounds good yeah yep
+yeah
+uh okay well well I think if if there's
+no questions at this point then
+uh we can we can end early and you can
+go have lunch or
+something before before there's like
+huge
+lines yeah yeah we can do that
+okay
+so
+yeah so we'll see everybody on on
+Thursday
+then see on Thursday for the next
+lecture
+okay hey El you can stay online if you
+want we can chat a little more
+plan a little bit what's
+next yeah thank
+you
+[Music]
+okay foreign fore foreign spee
+spee

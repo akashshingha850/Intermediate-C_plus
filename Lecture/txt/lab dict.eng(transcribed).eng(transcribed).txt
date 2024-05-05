@@ -1,0 +1,467 @@
+okay let's look at lab dictionary now so
+the first task is the common words and
+task so uh the general idea is that we
+want to find uh words that appear
+multiple times uh across different
+files uh so we have a couple different
+uh containers here that we need
+to uh initial correctly we have the
+uh we we have the file word maps and the
+common and and for these we have the
+init file word maps and init common
+functions uh so first let's look
+at um file word map so it's a vector of
+maps and this Maps use string as a key
+and unsigned integer as the value uh so
+so this unsigned integer is how many
+times it
+appears and and this string is the word
+and then uh this Vector represents the
+index of the
+file uh so let's
+see we have
+the in file word maps and a lot of code
+is already uh provided here so it make
+sure the size of this Vector is
+appropriate we have a loop uh to go
+through all the indexes indices in it
+and then it's already reading all the
+words of the file into a
+vector um so I have the solutions
+already written here to make this a
+little smoother so basically the only
+thing you need here is uh just Loop
+through the words and then uh access the
+correct
+index uh of this Vector like this and
+then you can just increment that word
+and as as we know with these
+Maps uh if the key doesn't yet exist and
+you use this
+operator then it creates the
+key and
+um and value initialize it so so
+basically in terms of integers it will
+initialize it as zero and then
+immediately we increment it
+so so this this is just fine it works no
+problem um okay uh so then the
+other one common uh so it's a it's a map
+um it's a map that that shows um how
+many documents a word appears
+in so
+then um we're going to do this after
+we've already set up this file word
+Maps so this makes it kind of uh easy to
+do so basically uh we
+can we can iterate through the maps in
+in file word
+maps and then we can iterate through
+the
+um a string in
+pairs and then
+just
+um increment by one for each key that we
+find so basically this way it's not
+taking into account how many times they
+appear it's just that for every key that
+exist there uh we increment by one so
+pretty
+simple okay so
+that um okay yeah then we still have
+the uh get common words uh
+function so then what we need to to do
+here is uh we have this parameter how
+many times it needs to
+appear and at this point when we have
+all this all these uh containers set up
+it should be uh pretty
+simple so basically from this uh common
+dictionary this holds all the words that
+that we have here and now now
+technically we could immediately
+check uh if the if the number of
+documents it appears in uh matches the
+total amount of
+documents um but that's kind of
+unnecessary in the end uh so so we can
+kind of just
+start or go go through all the maps of
+the files we have and
+then with the key
+uh see if the value is less than the
+given
+n if it is less then we can say okay
+this is no good but if it goes through
+all of this without reaching
+this uh then we can add
+that here and and that way we can find
+all the words that show up at least 10
+times in in in all the documents
+okay so that should take care of common
+words task then let's look at
+anagrams um so we're going to have to
+start with the Constructor
+again um so
+let's let's see
+so uh we start with this
+completely
+empty um
+Constructor and in this case uh we need
+power
+a Constructor that uh just takes a file
+name and then one
+that um takes Vector of words so they're
+going to look pretty uh similar but in
+this case we have to do some uh
+file input
+operations um
+okay so basically how you can do do
+this
+um the important thing is to uh open
+this uh input
+stream check if it's open and then we
+can start iterating through um all the
+words and with get line we
+can
+um put the words we find into this a
+string word now there's also other ways
+you can read files
+but uh in in this case it's like
+this uh and then what this is for is to
+check for
+duplicates there's also different ways
+you you could do this uh but the way way
+I'm doing it here is using this
+map uh I guess this could technically
+just be a
+bullan uh and this could also be
+unordered map but the difference between
+map and unordered map is relatively
+small in
+like in in this scope it's not really a
+big deal anyway uh so I'm basically
+checking if this word hasn't been
+encountered
+yet and and then this is where I
+incremented so if if if we have reached
+this point with that word then we're not
+going to come here again um okay but
+then
+for the like anagram part itself so we
+can declare this new
+string um where we copy
+um the the string we have the the word
+we have and then we can use SD sword so
+so this is uh why the algorithm library
+is included for this SD
+sword uh so sword basically can take any
+kind
+of uh container and and put them in some
+kind of value
+order and and strings are basically
+containers of characters and and
+characters have values so uh in this
+case we don't truly even care what kind
+of like is it alphabetical order or or
+what as long as it's in some kind of
+consistent
+order and then we can to this dictionary
+add
+uh based on the sorted
+string and for that sorted string we add
+the actual
+word so now uh if there are two words
+that are
+anagrams then let's say we've already
+added one word and we get to the next
+word well it's a different word
+so it's going to like make its way here
+then it's going to sort and it's going
+to end up with the same key as the
+anagram from
+before and then it's going to add to
+that uh Vector so so there a dictionary
+of of vectors
+right um so then we end up with a vector
+that has two words in it and then with
+the sorted key we we can access these
+anagrams so that's the idea and and then
+this
+um um variation of the Constructor that
+just takes a vector of words it's
+basically the
+same uh you you could probably if you
+defined a different function you could
+get rid of some of this redundancy here
+but uh it's it's fine in this
+case Okay uh then we have two functions
+to to get
+all the anagrams of a given word and
+then just get
+all uh
+anagrams um that exists in
+the in the
+data okay so for getting anagrams
+it's pretty simple so once again we sort
+the word that we're
+given in this case we want to use the
+find function to see if we find it
+because we don't want
+to uh accidentally insert something or
+um you know we want to make sure that we
+actually find something so so we use the
+find function and then we check if we
+did find something and if we did then
+get the
+value uh
+of of the
+um pair uh that the key value pair that
+that we found so in this case it first
+would be uh the the
+key and then ITC is the uh string or the
+vector of
+strings uh which contains all the
+anagrams yeah so it returns this Vector
+of string and if you haven't seen this
+Turner uh operators before so basically
+this is the condition and if this is
+true then return this and if it's not
+true then return this empty
+Vector okay and then for getting all
+anagrams it's not really any different
+than uh
+just
+uh just looping through the dictionary
+and then seeing if there are more than
+one strings in the
+vector if there's only one then it's not
+really it's not really uh there's no
+anagrams there's just one word uh so if
+there's at least two then there are
+anagrams and in that case we want to uh
+add them here and and then they will be
+printed
+out
+okay that should take care of the
+anagrams then
+pronunciation
+Puzzler
+um so basically we're looking
+for
+[Music]
+um let see let me get the um
+provided code here so we're we're
+looking
+for a word that's pronounced the same
+way uh if it is either as it is or with
+its first letter removed or with its uh
+second letter
+removed okay so we have the card talk
+puzzle and then we also have
+this
+um oh wait I think the I open the wrong
+file
+here I need
+the
+pronounce pronounce
+dictionary
+okay so let's see in this case we
+already have this uh Constructor here
+here uh but then what we need to
+implement is this function that checks
+if they are
+homophones um and then with the c talk
+puzzle this is going to like be the kind
+of main logic that's going to Loop
+through uh the words that we
+have okay so for the for for checking
+the
+homophones uh so so we're given two
+words and we want to see uh if they are
+uh
+homophones uh so first of all we need to
+transform this to uppercase because
+that's how
+the like Library data that we have uh is
+is built so so we need to do this Con
+conversion STD transform is this kind of
+General function that can apply any any
+kind of logic
+to uh some like sequence of data so
+basically in this case the sequence is
+uh like all these characters in in the
+string and then we applied this two
+upper uh function which is
+uh which is defined in the global Nam
+space but there's also a different to
+oper in the in the uh STD but in this
+case we actually want the one in the
+global name space it's a little bit
+confusing but that's how it
+is uh
+okay then
+um we should probably also look at
+the kind
+of dictionary here
+so so so what are we actually looking at
+here so
+for we're using these strings as as keys
+or some kind of word and then for each
+word there's a vector of strings which
+uh somehow describe the pronunciation of
+the
+word um so that's actually all the
+information that we TR need about it um
+so so for Strings we're going to be able
+to at vectors and seeing if the vectors
+have the same
+contents uh okay so then we can
+see
+if if we can
+find both of these words from the
+dictionary and then if we
+can uh
+then uh we
+can make sure that the uh size is bigger
+than
+one I'm not actually sure if this check
+is necessary but uh you would expect
+them to be bigger than one anyway uh and
+then we can check that first of all the
+uh size sizes are the
+same uh now actually you could
+just uh do the equal operator for the
+vectors directly but this is kind of the
+manual uh way to do it
+like let's say you were using something
+else than vectors then this like a
+general
+solution so in this case I'm um
+iterating through all the elements and
+then seeing that if any of them are
+different then return false otherwise we
+can return true so this is basically how
+it operates if you call the
+um equal operator for
+um two vectors so it's first going to
+check the size and then check each
+individual
+element um okay so you can you can do
+that either
+way so then
+let's look at the car talk
+puzzle so in this case we're basically
+looking for three words
+uh so the original word and then the
+word with the first letter taken out and
+the word with the second letter taken
+out so that's what we're looking to
+return and we can start iterating
+through this file the same way as we did
+before in this case we can discard
+everything that's less than five
+characters and then we can make these
+words with like letters taken out
+uh first uh this is easy just do a
+substring starting from uh index one so
+that's going to take out the first
+letter and then for the second one it's
+a little bit more complicated but it's
+one way to do it so you could kind of
+just take the first character and then
+uh take everything starting from uh the
+index
+2 and then we can just call the h phone
+function for uh
+these all these
+variations and then if all of that
+passes as as homophones then uh we can
+add that to the uh Vector of of
+homophones basically so we can make this
+new string
+triple which is just a container for
+three
+strings um okay
+and then one last thing there's the
+memorization so the
+idea the idea with this is that uh
+FIB fibon fibon number sequence is the
+it's like always using the previous
+values to to
+calculate um the new one
+so so then it's like you always need to
+like kind of know the previous values so
+so doing
+this without having some like memory of
+the uh results of of the previous
+numbers uh would be very
+inefficient so
+then okay let's to first look at what
+the
+Fibonacci sequence function should
+return so we can use this tary operator
+again and make this like on line
+statement out of this or check if
+um if if n is less than two then we can
+just return
+n uh because that's that's how the
+sequence is is defined
+so it's going to be like one two and
+then starting from uh three
+uh it'll start to get more
+interesting
+so yeah if if we're if we're at two or
+higher then we can just uh precursive
+call uh call it with minus one or or
+minus
+two uh but then for the memo
+FIB it's going to be a little different
+so so for this it's like if n is like 50
+then that's going to be a lot of
+recursion um but in this case we can use
+a little trick with this static map
+which
+is
+uh kind of living outside of this uh
+function scope
+uh so so we're we're this is not getting
+initialized every time this function is
+called this is only getting initialized
+once
+and that then we just uh access
+it uh and we can we can keep adding
+things to it but but it doesn't get like
+reset every time we get to this function
+that's kind of the idea with this so
+then what we can do is is we can with
+this map again use defined
+function uh so we we'll see if we can
+find uh both of
+these uh
+results already in in the in the
+dictionary if we can't find them
+then then then we
+can kind of do do it
+do it manually but but then of course uh
+we will still be calling this um memo
+FIB function
+recursively so then if we start by
+calling this with uh n50 for example
+then it's going to keep going down and
+down and down uh recursively before it
+like actually calculates anything but
+then once it gets all the way like to
+the
+bottom it's going to start having these
+things in the memory and and it'll never
+have to calculate the same thing
+multiple
+times and yeah we we do the same thing
+for uh both of these values and then
+then the end result kind of uh we can
+add the results of of a
+given
+um the the the result of the Fibonacci
+sequence for a given and uh we always
+add here and and return it as well

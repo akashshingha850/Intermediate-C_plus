@@ -1,0 +1,2101 @@
+okay so we started recording everything
+is fine I
+hope
+chat no okay good so if there's any
+problem you guys if you see in the chat
+there's a problem just let me know okay
+so now we're going to start our slides
+oh why is that not working it just
+worked
+right
+somehow what happened
+there
+I didn't do anything in work last time
+so I didn't do anything special last
+time check table and store this to
+sleep that
+hey all right it's
+not same level
+with2 that's
+4.11 I'm sure the number have being
+higher without the occasional presses in
+the f
+1.1.9
+which was distributed on the delivery
+start dat as well as small
+non-waterproof batch from the
+first
+I I'm trying to who is talking this guy
+let's
+mute no size fits the majority of
+respondents which is lifting the number
+increased by 4.
+8% hello somebody who's talking please
+mute yourself I know that I can ask to M
+oh see this guy I cannot
+mute I cannot mute him there is no
+option well I think that guy is not
+connected to voice anyway oh that he is
+connecting so somebody else is talking
+okay I think they muted okay is it time
+to start no not yet so let me hide this
+thing it's too big I don't have much
+space here just have extra windows and
+let's start
+with oh
+that's that's in the
+way so we'll start with
+this and we're going to do slider.com
+okay you remember to record I'm
+recording already okay thank you that's
+very
+important and how many people do you
+have online 20 and well hey it's not
+full room so we're
+good oh yeah I need annotation as
+well I need
+annotation and now I need to present
+with speaker notes because
+otherwise it gohost
+okay I think it's there
+there you
+go where can I get the zoom
+link I sent M
+email it's the same one as I usually use
+it's my personal can you find it
+somewhere
+else in some
+chats this is a very
+small
+[Music]
+okay okay
+okay so I gave you this handouts this is
+for the actual lecture so we'll start
+with just introduction to the course
+then we'll use this and I realized that
+my version is so bad last night it felt
+like I just don't see
+because but now in bright I
+see but the idea is that you'll pill out
+whatever you can okay so we will have to
+understand everything that slide and
+it's first lecture that's our goal if
+you don't see something and don't
+understand what you're discussing just
+ask and let me see
+here okay so let's start we'll start
+with some introductions so my name is
+Anna laala I've seen many familiar faces
+so many of you have taken course with me
+before probably was virtual reality
+course of some sort but this is
+something new and yet old so I'm going
+to be teaching this term the course and
+um why I'm going to teach it so let's
+see my background I got PhD in 2008 from
+un of Illinois at champ and uh my PG
+topics were in robotics motion training
+and lat VR but I also taught for two
+years this c+1 over there um and I had a
+great mentor who developed this course
+and helped me start there and um it was
+a great it was a very good very popular
+later on I also was a research stist at
+Oculus VR so I had a chance to actually
+write code in C++ so I would say
+throughout my academic
+years industry experience it was more
+than a decade that I used C++ on daily
+basis um since then then I
+have um but nevertheless this is some
+picture from my PD years I worked on um
+uniform distributions of quan that was
+useful for uh VR as well writing had
+tracking code for virtual reality at
+Oculus it was very useful in C++ so I
+will not be doing it alone we will have
+here El Ando helping they our teaching
+assistants and uh I want you guys to
+introduce yourself as well as usual the
+same thing so what like why are you here
+why do you want to
+C++ uh yeah hey and uh yeah I'm I'm
+working at the University teacher here I
+I was teaching the mobile Computing
+course last year and I've been working
+on this C++ course as well developing
+the like Auto graders for the exercises
+uh you're going to be working on as well
+as like developing like a new exercise
+entirely and yeah I've always like liked
+C++ I it was actually the first
+programming language I started with
+so yeah I'm looking forward
+to working here on this course yeah so
+these guys are uh going to be more help
+for you with debugging your homework
+because I'll be probably more
+concentrated on preparing the lectures
+each lecture is kind of a nice story and
+it's very important to remember where to
+turn otherwise it will the story will
+break so that takes some time and I
+really encourage you to come to lectures
+because they are fun they they are these
+nice stories um but then there is a lot
+of work that you guys will have to do in
+teams for your lab assignments and
+individually for your machine problems
+and uh we'll have a lot of support for
+you with debugging and El Ando that's
+their main job to help
+you the t
+is uh also going to be on board as our
+TA
+[Music]
+so yeah hello everyone my name is I'm
+Bachelor student here and I will be
+helping you mainly during the lab
+any questions you might have about
+General
+I I am part of CA because I helped with
+debugging the exercise last fall and
+otherwise I just and I just asked me to
+be here so now yes so so these guys are
+experienced
+Tas and um they have been helping me
+with other courses for many years now El
+how many years has it been
+five since
+2019 and like two already two years yeah
+so so they know what they're doing uh
+but this is all new to all of us in some
+way in some sense so let's see how it
+goes this is supposed to be a pilot
+course and I'll explain uh later in more
+details why
+now something exciting is
+happening um this course seem to be
+important not only because hey we
+decided to teach it actually we didn't
+decide to teach it we kind of were
+pushed in some way because there's a big
+need in loc in our community here for
+you guys to learn sequence plus so these
+companies were all over us for the last
+year um kind of encouraging us to start
+as course so we talking about fute
+mainly but also C no and El so we are in
+communication with them and even more
+excitingly five members of cute will be
+helping you guys on this score they're
+already there with deing your homeworks
+as well not only us but also those
+person and moreover one person from
+cute right did I say it right v l he is
+largest Ser programmer um but he's also
+a member of the C++ senate committee um
+so he knows C++ in and out and you know
+he goes to those meetings and decides
+what should be the next um release of
+C++ so he'll be there so that's really
+exciting he also will come as an invited
+lecturer for one of our lectures in
+April sometime I already put it as an
+enlighted lecture by him so please mark
+the date and come because I think I'm
+sure that will be very interesting so
+here's full disclosure I think I already
+mentioned that I cannot say that I'm an
+expert on c i don't practice C++ every
+day
+anymore which means so what is the
+implication for this course I may just
+not know really and that's why it's so
+important for us to have those guys
+because if there's any question that you
+can have that we can figure out we have
+to have a list of questions for those
+guys because I want to learn those
+things too and most importantly we are
+starting this course with core C++
+Notions that are very important so all
+of this material is important and um
+secret some of it is going to be
+pointers that need some stats that's
+something that is on interviews at HUD
+as well so we we'll start with pointers
+already next Thursday it's important
+it's core uh core C++ so we'll teach
+that but some later things in C++ some
+later editions is something that we
+don't have in this course yet so in the
+future installments we run this course
+and see how it goes maybe the last
+lectures would have to be changed
+somewhere else according to the industry
+needs
+model that's the dis for that and
+actually very exciting things um so
+everybody is excited these guys from
+those companies they want you to join
+them and work there essentially there's
+so much code that they have in C++ that
+needs to be maintained and they just
+don't have qualified people to maintain
+it so you could be
+them okay um so okay now U many of you
+know the drill so you see the white
+slide that all the slides are white so
+when you see slider.com slide that's
+where you take your phones you put that
+number ins slide and you go
+to um
+you see that you can ask me
+questions or I can ask you questions
+well now I want to learn a little bit
+about you let's do what done Exercise
+with slide.com so if you there you put
+the number let me go back so that you
+know the number I don't know why it
+doesn't show the number here it should
+be it should always show the number
+right I hope it works
+sometimes like it was not
+loading yeah it was us up so do you see
+which country you're from is that
+something that you can answer is it
+answerable no no no no okay let me see
+what's going on I'll have to exit the
+slideshow and see what's going
+on
+yeah it should be fine
+right ah there you go somehow it didn't
+load properly
+right okay
+so so now what's very exciting about it
+is that you guys they
+online ah they asked me to be close to
+the microphone okay I'll be
+I'll try not to walk then
+sorry do you know which microphone we're
+using this one okay
+oh I don't know I I believe I didn't
+connect this one would this be the
+connection is the camera could be the
+microphone difficult yep I'll just try
+to be here sorry sorry okay is this
+better so you guys can now answer too
+the guys who are online can also do the
+same thing and they can
+[Music]
+um they can answer and we see where you
+from Russia Finland Finland Finland
+India Finland Sri Lanka Vietnam Libya
+Egypt Iraq Iran Algeria all over the
+world what is BD
+Bangladesh yes okay
+cool okay so that's kind of how we do it
+so now I want to learn about you not
+only where you from but where you from
+in terms of you know professionally so
+what programming languages are you
+already comfortable with BB python C and
+Java good I imagine that you will have
+Java Python
+and and C
+mhm and not so much C++ do you see
+that and mainly python because I know
+that python is taught really well here
+at University of Olo and Java too but we
+are missing as you can see we are
+missing C++ and it turns out there was
+no C++ course here at University of Alla
+for years now for some reason for some
+unknown
+reason so it's really good to start it
+okay let's do it now how would you rate
+your understanding of basic C++ Concepts
+and already I see that probably one yeah
+okay so two some
+twos some fours that's good so those who
+are at four level or three level you can
+actually contribute a lot to this course
+by going ahead and then helping
+everybody debug in this course just like
+you know just like the rest of us on the
+staff I I hope to see a lot of Comm uh
+communication going on on Discord okay
+so what do you like in ter in terms of
+software engineering so what do you what
+are you passionate about mostly in terms
+of
+programming embedded systems
+cool
+web fast programs cool that's C right
+then C++ can do that too full St testing
+game development okay VR yeah we do VR
+and game so so as you can see this is
+something that's already been taught
+here at University of Olo robotics cool
+best so numerical methods or something
+like that or financial say
+um applications that's something that
+needs then understanding how to make
+your programs fast and that's what C++
+is more about rather than Python and
+Java that's why we need to do that to
+learn it okay so now pick all the
+programming languages Technologies you
+already know so actually I wanted to
+change I forgot which land is it and I
+think I kind of know that okay so you're
+coming from Python and c and Java in
+that distribution good
+good good to
+know now what about the rest that's just
+for fun like do you like any of those
+and how much do you know
+including python C and
+Java but what about the other things
+that you might have experienced
+with and I know that you know game
+development because we teach it you know
+python because we teach it you know
+mobile de web development and mobile
+Computing because we teach a
+train okay look at that c now is number
+one and it used to be python hey what's
+going on there
+now see
+maybe
+H okay that's interesting so what's good
+what's good about c.com is that I can go
+back and look at all of the questions
+and all of the answers so if there are
+any questions that are left unanswered
+in Q&A and you probably see that there's
+a Q&A there on slider.com you can always
+put your question there and you'll get
+to
+it like uh here see this is Q&A and I
+think students just added something they
+didn't have a chance to uh didn't have
+time to answer but this is Q&A slide and
+I have them this Q&A slides every two
+slides so that if you have any questions
+I make sure that we answer them but here
+of course you are welcome
+just ient for mon that's the way we do
+it so what's the communication I know
+that already on love L that's the main
+um way for us to communicate what's the
+materials right all the materials of the
+course are there all of the homework oh
+yeah all of the homework all of the
+materials uh links to lectures all of
+that stuff is there policies it Discord
+is for us talk right so that's
+um somebody please mute yourself because
+I hear
+feedback um okay so it Discord you're
+there hopefully we don't see as many
+people signed up to Discord as on Lovely
+so please do that now it's very
+important please do not send us
+individual DMS or emails we will not be
+able to process it so I said 230
+students here now it's
+270 I don't know today is still a day
+where students register and there's no
+way for me to put a cap on it so we
+wanted to have 40 students in this
+course and two weeks ago there was one
+student registered so that's when I made
+a mistake of sending an mass
+email and then we have almost
+300 so let's see how it goes um actually
+no DMS no uh direct messages it's it uh
+wide Discord policy so I I think I was
+answering DMS until I learned from the
+administrators that it's actually no
+really frowned upon like that's the
+policy no DMs if you absolutely have to
+do something it's something personal
+then it's the email because that's the
+policy for for Discord but please other
+than that if you have a question about
+homework just ask everybody because I'm
+sure there will be somebody else or
+maybe 10 students or maybe even 50 who
+have the same
+question now course resources so let's
+list what's
+there this point sign up info oh it's
+not actually on the no no no no no it's
+not on Lovely because we don't want to
+have Bots there so I sent you it's it's
+here it's on on this slides right so if
+you have yeah on slides you'll have this
+link that's it there you go that's your
+sign up inform schedule homework exam
+materials grading lecture slides YouTube
+channel Zoom link I also sent you in
+mass email so if you don't have a zoom
+link I guess everybody on Zoom has a
+zoom link but if you don't have a zoom
+link then put on Discord question we'll
+put it
+there um I think I did maybe now
+computer lab is going to be
+ts35 so the first lab is going to be
+today right after the SE 12 there's only
+20 stations there how many people do you
+have you might actually fit because if
+you make a te then you'll be fine Prett
+good surprisingly how how did it work
+out have 270 students we have only 4ish
+here so no problem no stress I was
+really stressed about the situation but
+seems like maybe it'll sort of resolve
+itself
+somehow hello world I have not been
+accepted to the course Pepe uh that's
+okay so please
+send that's a personal question so send
+an email I'll get you on Pepe okay
+that's an email question see that's
+personal because that's personal
+information everything else about the
+course no personal uh
+emails okay course at a glance let's
+look at the course schedule so that's
+your main page maybe where I really want
+you to be familiar with so we'll go
+there okay how do you like
+it course and deadlines at a glance do
+you see this thing is in the way I don't
+know how to minimize it it's going to be
+in the way and I want to exit this so
+that I have control of my windows and
+this thing is in the way okay so let's
+look at our course here if you go to C++
+programming this course schedule at a at
+a glance link is your uh very important
+link so a goto link that's the schedule
+of our lectures schedule of our labs and
+also schedule and deadlines for our
+homework work so you will have to get
+started with setting up your laptop so
+start with that wherever you are in the
+lab if you have a laptop if you're
+planning to work on machines in the lab
+go through that process
+there um but I think it's preferable
+that you'll be working on your laptops
+even my little tablet here can run the
+virtual machine so that's what we will
+guide you through doing and um you can
+complete your exercises even on very
+small kind of laptop tablet
+whatever um however we still have the
+machines there so you're welcome to work
+there as well uh look how many Labs we
+have seven right and we have four MPS I
+would say on average for me completing
+this exercises was 1.5 hours or two
+hours yeah some of them I compl in one
+hour when I was repeating and even
+second time and the reason is just
+because they're long you have to go
+through it and read it and understand
+what it is that is asking and there are
+puzzles there so that means if you don't
+know how to resolve the puzzle it may it
+longer one I think setting up your
+laptop to 5 hours one of the tablets for
+no reason that I don't remember but it
+took me five hours something didn't work
+I don't all of that is which means that
+don't leave it until the last
+and think of this course as a boot point
+this is serious stuff this is how univ
+of Illinois like you will spend time
+learning this language you cannot learn
+a language you cannot use language you
+canot communicate in language if you
+don't practice it every day so that's
+kind of a goal you'll be practicing
+every day if you leave it until the last
+hours before the deadline you may not be
+able to complete it sorry I left my
+station here so you will not be able to
+complete it right just because you know
+your your system will decide to update
+and it takes hours
+right um so so those things like just
+start now just do it okay and I've
+noticed that some of you have there's
+one student who completed everything
+already and we want to talk to you
+whoever that is like really really you
+can help us help
+us okay so that's really cool so which
+means that you know you can like you can
+if you just do it it's not unheard of to
+spend 20 hours a week on the
+course how it is and you know what since
+it's a pilot we'll run it the way it was
+at the University of Illinois why not
+that's that course was a legend we want
+to repeat the same experience because it
+was also known that if you go through
+this you get a job if if you go through
+it successfully you get a job so full
+stop okay um some MPS take longer on
+average because that's individual
+assignment and it it is kind of
+scheduled to take two weeks versus one
+week um you should do this individually
+you should do this in a group
+of you know what is it three people can
+I
+look I forgot what I said oh no groups
+yet okay I think it's three
+people I wasn't sure I was
+yeah I think it's three whatever it says
+here actually Let's see we have forming
+groups didn't say it there okay let's
+let's figure it out because you'll be
+forming groups right now and I know that
+it's this information is right
+here three people so okay very helpful
+because then you can interact and solve
+those problems so three people per
+group
+okay let's go back to our slides let's
+see what else I wanted to say here so
+course schedule is is is
+tough now how do you complete your
+homework your own laptop as I said is
+preferable there's PCS in ts1 35 which
+is fine but they just not many of them
+and however if you have to use them the
+good news is that after 400 p.m. and on
+weekends they yours for you so you just
+do it um but the first option is
+preferable because um because of the
+size of the class okay let's go through
+the questions I have not been accepted
+to the course in Pepe many other people
+have this problem also I noticed that
+because we have 270 on Lovel
+and 230 on pepy so I think there's 30
+people that are missing somewhere I
+wanted I even have a slide about it like
+where are you people why are you not on
+pey okay that means I'll get 30 idual
+emails and that's fine because I'll get
+you in then that's important hello
+world we do we need to register both in
+love less and tudo I don't know what
+tudo is instructors don't have tudo I
+have no idea maybe who are more close to
+you guys in terms of like they I think
+by T they mean py then yeah once you're
+in py you'll get your tudo schedule
+right it's for
+schedules what is recommended group size
+three you can do it alone by the way
+you're welcome to do all of the labs
+alone or two people that's fine but you
+can have up to three and the system will
+not let you have more so that's um is it
+possible no it's not possible because
+it's set up to three we don't want four
+people four people groups are known to
+be
+less less use less they don't work out
+as well as three or two two are not as
+well three is a really good size for
+groups in terms of who does what work
+okay is it possible to do lab
+assignments alone yes yes yes yes okay
+so that's how the Q&A works so very
+useful do you guys have any questions so
+far just raise your hand do you get
+feedback even if you get full marks and
+levels maybe the solution is not
+perfect
+um that's where I think I really expect
+you to go to ask these questions on this
+Discord and we'll discuss your solution
+whether it's perfect or not whether it's
+elegant or not whether it's good writing
+style or not coding style or not so
+that's that's a perfect question and
+please ask these kind of questions on um
+on
+Discord I cannot guarantee that we'll
+answer all of them depending on the size
+but we'll try that that's what we really
+want to do guide you through this yeah
+so how do we ask this kind of question I
+mean we are not uh we shouldn't reveal
+our code yeah be careful of
+course
+um first of all after the deadline you
+could so this is a if it's a coding
+style question then after afterwards
+it's fine um although some students may
+be still submitting later so I'll talk
+about late submission policy we do have
+late submission policy but I think it's
+fair game to to do that you be able to
+like link answer to the submission on so
+us can that's true that's another that's
+an elegant
+solution you can say hey can you look up
+at my yeah that's a that's a better
+solution I'm not sure cute guys will
+have access to that yeah I guess we're
+gonna talk
+with yeah we can add them Grant
+MTA
+l so yeah yeah little for m
+is there many no there's no restriction
+how many times you can try to submit on
+love La so love La is essentially a web
+compiler so you submit your solution you
+submit your files it'll compile it spit
+out whatever it is if it doesn't compile
+it will tell you
+why and if it doesn't run if there's
+memory it will tell you that as well so
+you'll have feedback and you can
+continue submitting
+it um as long as many as many times as
+you want do we get feedback even if we
+get oh yeah yes I answered that okay
+cool grading so let's look at the
+distribution for individual assignments
+there are four of them 40 points Labs 37
+points because one of them is a little
+longer seven points every other lab is
+Five
+Points exam will be 30 points so it'll
+take a big chunk of your grade because
+well it's important then will be
+something unpredictable unknown
+something that's harder to find on web
+uh MPS and Labs you may find some
+similar solution somewhere and I'll have
+the the slide about academic
+Integrity um but you know just or you
+may ask your friend you know we we just
+really want to make sure that exam will
+correct for that that will be just you
+having an enormous amount of work to do
+in two
+hours that is really hard to find
+Solutions any anywhere or ask CH GPT you
+know those kind of things so exam will
+correct for any kind of problems like
+that we'll really want to make sure you
+you know what you're talking about there
+so total points you can see that they
+add up more to to more than 100 which
+means that there's extra credit right so
+if you miss one assignment you may still
+compensate later and you pass if it's
+more than 65 points so you need to do
+all of the homework if you want to pass
+right uh at least
+and that's that's a good thing and this
+is the grade distribution so you get a
+five if you are really fluent in C++
+which is more than
+95 but remember there's extra credit
+right okay there's chat
+question oh yeah please ask on on um
+these kind of questions now on
+slider.com
+okay so now late submission policy so if
+you submit after the deadline you get
+80% % for assignment no
+exceptions oh if you have an official
+document yeah yes sure but but it's a
+small
+enough it's a small enough
+um what's the right
+word penalty penalty yeah that's small
+enough penalty so no problem right um
+take your time with it but we just don't
+we don't encourage it
+because if
+you if you start being late with your
+submissions then what you'll be late
+right okay and so so this means that
+roughly you lose one or two points per
+late submission and there are many
+submissions are seven labs and four and
+P so you can lose a lot of points if you
+do it late so what's the point
+right don't do it late it's very
+important to keep deadlines so some St
+people are much more productive if
+there's a deadline so that's why we have
+very straight deadlines but the penalty
+is not so
+bad now a little bit about the history
+of the course so it's modeled after the
+C++ course at U as I said and I taught
+it personally for two years there were
+700 more than 700 students there so we
+are prepared this course is the
+infrastructure is ready to take a lot of
+students it's just that we didn't want
+to do it in the pilot run here so we
+don't have physical space so the
+physical space is the bottleneck but hey
+maybe it's not
+so we'll see and um yeah as I said be
+prepared to work really hard and um
+maybe spend 20 hours of work of work a
+week but in the end of the day
+hopefully you know you you Le a job if
+you do really well and that's our goal
+our goal is to connect you with the
+local industry needs so what the scores
+is
+like for some of you it may feel like
+you're a surfer and there's big wave and
+there may be weeks where the wave is
+just you feel like that's it and that's
+when you go on Discord and ask us
+questions okay there may be sharks there
+not just friendly Dolphins maybe really
+really bad stuff you know maybe it will
+feel
+overwhelming and you have to work hard
+and keep going right so that's that's
+the goal that's kind of the idea that's
+the metaphor here that's the what the
+course is
+like guys can you please mute
+again because I I hear myself if you're
+stuck Discord just Discord please ask we
+really want to
+help and uh don't wait until the last
+minute I think I went through this again
+because there may be so many problems
+that unpredictable things that will take
+time and you lose your points academic
+Integrity don't
+plagiarize don't just don't uh it's
+disservice right it's disservice like if
+I ask Google translate I don't learn the
+language so if you ask chat GPT maybe I
+try to run all of the assignments chat
+GPT uh I think you really need to know
+C++ in order to use the answers so so I
+think it may slow you down significantly
+on some assignments and introduce bugs
+that you'll be like you know it's longer
+to solve them then just write it
+yourself so so just don't do it it's a
+disservice to yourself right it is it
+just robbing you off uh from this
+experience of understanding things there
+are really nice puzzles there that if
+you do it you'll have a good feeling
+about yourself so just do it that way
+however we will run the plagerism check
+in the end so if you find
+you similar code with your friends on
+individual assignments you know we'll
+will follow whatever the GU guidelines
+for that so just don't do it it's not
+worth it
+and also the exams are tough so if you
+don't do the work yourself um then it
+will be really really hard to do it
+quickly on the
+exam oh I forgot to mention that you can
+complete any work from anywhere not only
+from home from airplane anywhere I've
+had students who are flying back home
+and were submitting uh exams on from
+airplane as long as you have a good
+connection and you have your laptop it
+just works you can do it from anywhere
+so we really excited actually about uh
+lovely and US putting our courses there
+because you can be anywhere that's cool
+so this is the numbers again uh oh okay
+so there's
+274 students and Lovel and only 240
+students and Peppe I already hear you
+that you guys could not get on Pepe I'll
+help you with that but there's some
+students who are registered in love not
+with University email so here's the
+trick if you didn't use your University
+email please raise your hand if you
+didn't use your University email anybody
+here so if it's not all P the fee on uh
+love L you do not get a credit for the
+course because I we just for for all we
+know we don't know who you are we don't
+know how to locate you in our system
+some students are here from om and
+you're welcome you just cannot get a
+grade if you're not registered through
+University email and if you're not on
+Pepe so there are some students who want
+to take this course just because just
+because it is a needed course right and
+you're welcome I'm just saying that if
+you want a grade you have to be enrolled
+on Pepe with University email and I've
+seen I think at least 10 people not with
+University email you don't get a grade
+if you don't do if you don't change
+it
+okay can I ask yes
+so so if I have enrolled with the
+University email but I have not been
+able to find this course so on yeah so
+I'm just wondering like how it happens
+you send me an email and I'll enoll you
+on but there four cases when I did that
+for students in the past and still their
+program managers complain that they
+didn't go through them like maybe
+depending where you are maybe you have
+to make sure that they'll let you sign
+up on
+pep and that's only for getting credit
+again you're welcome to just go through
+assignments and do it yourself but if
+you need credit for it then you I may
+help you get an Pepe but it may not be
+enough your program might
+complain okay does that make
+sense uh yes I will check so it's just
+good to know that this class should be
+in pep so it should be
+yeah okay okay but send me an email
+then okay so those are the only
+individual emails about uh getting
+on are the exercise sessions so that we
+can only ask help for exercises or is
+there like extra info that we need in
+order to complete the exercises I think
+we'll see how it goes what what do you
+think guys will there be extra
+information or will it be just ask
+questions
+probably just questions just questions
+yeah unless it seems like there like a
+big problem that everyone is if
+everybody has the same problem then we
+will then Tas during the El Maran during
+the lab sessions they'll explain things
+but then we'll make sure that we repeat
+the same explanation say on Discord
+right so if there was if there will be
+the same question over and over then
+we'll just posted on Discord that
+discussion okay what is the email to
+send to the Pepe query uh on
+laal so like everybody has first name
+last name first name. last name
+at what is the course go I don't know
+sorry
+okay um but again please send me the
+email about that and we'll I'll find
+that number I just don't know it off the
+top of my head and pep is way too slow
+for me to load it now if you have the
+answer to that question please post it
+by the way if you if you can find the
+number on Pepe for other students okay
+or post it on Discord that
+you now to-do list for today so go to
+the lab and now the exercises so you
+should start on this three exercises
+today laptop set up instructions right
+away lab GDB and make file tutorial
+because the deadlines for these two
+assignments is in one week so you
+probably feel like okay let's get to
+work let's get to work I think I'm done
+with all of the infrastructure questions
+we'll get to work okay everybody on
+board we'll get to work inro that's in
+one
+week oh did I say l GB ha yeah it's
+l yeah sorry well it's on yeah okay good
+correction okay I see more
+questions are
+questions will this year's lectures yes
+I'm recording the lectur so all lectures
+I'll be recorded this is the number on
+py so I hope it's useful you can see it
+take a screenshot because I'm going to
+switch to our work so let's start
+on keep annotations okay let's start on
+our
+next
+lecture and I'm going to start slideshow
+with presenter view
+because otherwise it'll kick me out from
+this mode okay cool let's put this here
+let's put this here out of the way we're
+going to start talking about Hello World
+classes and a little bit about
+encapsulation if you notice why slider
+it's it's doing it again right is it
+doing it
+again there is no
+number how did I just try again right
+try again yep maybe I should start with
+slide though yeah exit slideshow maybe I
+should re before it wasn't like this ah
+yeah okay sorry slider is changing it's
+a very useful thing to have because I
+can have feedback like this
+but they constantly update and I have to
+get used to like the new
+things and it's
+slow okay so we are switching to another
+presentation and it's another slide.
+come because of that here so if you have
+any questions put it there now we'll
+have to do this so let's follow your
+print out and you know some people
+really learn well if they write so
+you're welcome to do that please raise
+your hand if
+you um please your hand if you learn by
+writing
+[Music]
+always upload slides on Google Drive and
+work on your computer write over those
+slides online and many of you I see have
+tablets do that but if you appreciate
+this just give me feedback if you
+appreciate this slide print outs then
+we'll keep going with
+those
+okay or Nina raised hand
+you
+uh I don't know what it means
+okay so this is our first
+slide we can do anything without
+variables so many of you probably know
+about variables in C++ already but let's
+just go through it let's see what we
+have
+to do what what what is the deal with
+variables in C++ so every variable will
+have a
+name a
+type
+value and location in memory okay so
+here's one variable I'm going to declare
+and this is going to be my declaration
+so I'm going to declare a variable in
+C++ so it's going to be
+declaration I'm going to say
+buan is here and let's see if it has all
+four so what's the name is here type
+bullan what's the
+location it's implicit
+yeah some address right some address but
+you don't know it it's implicit the
+system will give it will provide that
+location for that variable and what's
+the
+value the system will most likely just
+recycle whatever was at that location
+because you didn't provide any value you
+just declared a variable so we call it
+garbage so let's draw garbage bin here
+we call it a garbage because it's
+recycled stuff cool now this there's a
+so we covered this there's another
+variable
+declaration so these are going to be
+declarations my favorite int has name my
+favorite int type
+integer location implicitly provided by
+the system value garbage okay so I could
+actually
+Define can you mute please because I
+hear myself again I could actually have
+definition definitions
+here and I could actually Define or
+prescribe the value that I want to be
+stored in that location for is sphere
+and I say true and I put
+semicolon because in C++ it will not
+understand that it's the end of the
+statement unless you put semicolon so
+that's a delimeter of
+statements and um and then I put that
+value true
+in that location okay and in C++ there
+will be a way to
+control which location for the variable
+will be assigned by the system or
+sometimes you can just allow the system
+to pick yourself for itself so you can
+combine declaration and definition in
+one line like this so for this um type
+character CH rating name rating you can
+give value e
+to be in that implicit location and
+W uh half
+37.0 value okay so these are both
+declarations and definitions so what's
+interesting about it is that these are
+primitive types right and you can Google
+C++ has lots of primitive types but
+they're not very interesting right
+they're primitive so what's really good
+about C++ is that it allows you to
+Define your own types and the user
+defined types are called classes you
+probably heard the word class from java
+but this is slightly different here
+because in C++ classes or user defined
+types are meant to be treated exactly as
+if they were primitive types so the
+syntax is going to be the same so here
+is a
+declaration of a variable with the name
+my favorite sphere type sphere and that
+is a user defined type a class class
+sphere which you know will spend some
+lectures defining in many different ways
+including today how we would Define this
+class sphere but so far we declare a
+variable of that type right and what its
+location again just like with primitive
+types it's whatever system will choose
+and the value is garbage so far because
+we didn't Define it right so to
+summarize let's write down what a class
+is so
+definition a
+class is a group
+of so here's what what is that do you
+know primitive types
+yeah or a group of we call it variables
+variables yeah
+variables very good a group of variables
+so you can think of dat data associated
+with
+that user type and
+functionalities the functions
+functions because let's think about what
+this instance of a sphere should be it
+should be something we want to do with
+spheres right and something that it
+stores so um the the way we'll decide
+design the class will be defining this
+group of variables and functions of what
+can be done and what these spheres are
+and let's look at the next slide to
+start doing exactly
+that the C++ variables doesn't have any
+default values yeah yeah some sometimes
+it'll have the it depends on the
+compiler so you should never let the
+rely on default
+values that's good practice to have full
+control of what is initialized if you
+leave it up to the system it could be
+some default vales or it could be really
+truly
+garbage depending on the
+compiler uh what if we compare variables
+to Define value yeah yeah I think I
+answered the question
+right okay so now let's start designing
+the class and on your printouts I
+realize that the cop here didn't see
+those colors but you can draw on top
+that we have this oh that one shows it
+okay sometimes projectors don't show
+Colors either so let's look at this
+possible spheres and see what kind of
+variables do we want to have associated
+with this class and what kind of
+functionalities so what would you want
+the Spheres be or how would you want
+them to be different right so what could
+be the data associated with the sphere
+or representing the sphere what would be
+the variables
+representing radius yeah very good so
+let's see so data or variables
+variables could be radius very
+good but then this purple sphere or
+magenta sphere and this green sphere
+they are like twins right they're not
+different if that's your design so this
+is a design Choice as a software
+engineer you'll always have these
+choices what do I want to uh the sphere
+class or user defined class to represent
+and um you want maybe you want the
+Spheres to be twins but maybe not and
+then you would pick another variable say
+color
+right and then based on color these
+little guys here they're all tuplets
+right eight identical spheres because
+they have the same radius and the same
+color and if you want them to be
+different you would maybe introduce
+something else
+right like U what
+Center coordinate
+the center right so
+location then then it would make all of
+and if that's what you want that's what
+you do now functionalities what would
+you want the Spheres to
+do I don't know we don't know yet right
+we don't have any code in mind but I
+want to write my first class and I have
+my
+uh
+um yes I have my Ubuntu here so I can
+actually go to lectures and I want to
+start writing let me remove my program
+CPP and remove okay maybe out okay so I
+want to start writing my first program
+so I'm going to say program
+CPP and we are going to write this
+class and I think you have it
+on but I'm going to start with the
+keyword class so this keyword says that
+it's going to be the definition of the
+user type with the name whatever follows
+after the keyword class
+sphere and then I put curly brackets
+here and put semicolon right there for
+the compiler to know that that's the end
+of my user find user type
+definition hey that's it I wrote my
+first program I wrote my first
+class now I can show you how to compile
+this little program so we call the G the
+C++ compiler we will use
+g++ there may be better compilers out
+there but that's what we use for now
+maybe in the future itations will change
+depending on how it goes but all you do
+is you compile this program CPP
+and what the compiler will do it will
+first check the syntax if everything is
+correct and second it will create an
+executable to run the code so first
+check the syntax then create this
+machine code into the
+executable and then so that you can run
+it and in fact make pile tutorial walks
+you through the process very well it's a
+very well written tutorial about how to
+compile many files together and how then
+these uh build-in blocks for machine
+code are linked together but this is
+just one file so there's no linking much
+so let's see what they what it does H it
+bared so
+so and this means that something went
+wrong either with syntax or with the
+building so in this
+case and kind of guess what's going
+wrong so I don't know if you can
+look hey guys please mute yourself um
+the sentence says something complaining
+about main so do you know what went
+wrong I have a question here maybe some
+of you already know why doesn't it
+compile huh
+you can
+answer you can answer on
+slider need the main function that's
+true okay so it will never if you don't
+have a main function so main function is
+this magical control station that's
+where everything starts it's really nice
+to know that you know you can always
+untangle
+starting with the main function I wish I
+could mute you know my
+whole you should be able to but it's
+mute do you see that like it's somewhere
+in Zoom where I should mute participants
+and if I mute myself yeah oh
+participants yeah like open the
+participants and
+then
+no no please guys
+ask please ask on
+slidec sorry they're like it's so mean
+to make fun of them you know they online
+really sorry that's how it goes you guys
+you don't have physical self to to stand
+by yourself okay so need the main right
+so the main function is the control and
+you can untangle the whole logic of your
+program just looking at what main does
+and then going inside see what they do
+so there's no main program program it
+will not uh compile it it actually in
+terms of syntax it's it's okay it just
+doesn't want to build an executable
+because there's no main function there's
+nothing to build so let's fix it I'm
+going to do the bare minimum and that
+will be your next slide already so I'm
+going to say okay you need a main
+function let's write a main function so
+I'm going to say int main it's a
+function so
+um so it will have it may have some
+parameters but in this case it's a bare
+minimum and I don't put a semicolon here
+don't ask me why I forget I always
+prepare and I forget and this time I
+even forgot to prepare like I don't know
+why there's no semicolon here but it's
+important for the syntax to have
+semicolon your classes anyway if it
+doesn't compile try a semicolon
+sometimes and it will one of this deals
+but I'm sure there is a more
+sophisticated explanation that we
+should uh we should send it to
+V okay
+so is it good now any questions any
+surprises
+here yeah question related to my
+previous question that I asked that so
+you said that the compiler defines the
+uh default values for the very
+right so if we use some kind of
+comparison operation that will not
+return an error right it will just maybe
+return some garbage because yeah and
+different garbage
+depending no error always need oh no no
+no right right it will be runtime error
+versus compile error yeah if if if
+you're relying oh the if you're relying
+on some default behavior of the system
+sometimes it can be Insidious bugs
+errors those are really really hard to
+find and that's why the good practice is
+to never rely on
+this
+stuff one question about that so I
+remember there was something related to
+this like when you define main they
+always use this
+void void that's C right so here in C++
+it has to be integer so that's the
+convention it has to be integer so you
+have to return some integer and this is
+also controlled for you so you can say I
+I return zero and then I'll know that if
+the return value is zero then the
+function executed to that line so you
+can put something like control blocks
+and depending on what's returned you'll
+know where it's sto and didn't work but
+that's the convention so you might want
+to put void here you might and then some
+compilers will complain I mean the
+compiler will have to figure out what
+did you mean and some of them will
+figure it out and some of them will not
+I know C++ it will not it will just not
+compile it'll say Hey you have to return
+an integer value for me but you can uh
+try it on different compil and see how
+it works okay are we are we what's the
+time
+11 oh so we still have half an hour yes
+okay good okay so so far so good
+right so the logic it's very important
+for me to follow what what is the story
+so we're building this little program
+from bare minimum our main function is
+now very boring and the class is boring
+does nothing but I hope it'll compile
+now what do you think
+yay all clean no complaining and what is
+going to happen do you see what happened
+in my directory I'm listing all of the
+files so this is my program CPP and new
+green file an executable has been
+created and by default an executable is
+called called a out sometimes it's a as
+utable but and you can change that so
+main file tutorial will will help you
+with that so you can I can say that okay
+I want it to be called program as aable
+you know like that and then I list the
+program the files and I have programable
+so you can direct the compiler to do
+many things to name files and in fact
+you can write a make file script that
+will direct the compiler to do things in
+different steps and that's what m file
+tutorial is about how to write those m
+files that will follow the steps of
+compilation of different files into the
+Final Exit or into several exit if you
+want so that's cool but by default so
+let's go back to our slide and fill out
+this
+things um I'll come back so let's let's
+not forget to come back back to this
+questions but let me just finish this
+for for this little simple program
+CPP I compile it with this
+command I compile a chat synx I created
+as a uable a out by default sometimes a
+as eable and to run you have to put dot
+slash so to running aable from the Comm
+from the terminal you put a uh dot slash
+a out the name of your utable and then
+the output was did we run it we didn't
+run it yet so do slash out what do you
+think will be the
+output nothing nothing it does nothing
+it's a very Bor boring program Okay cool
+so let's go back to the
+questions yeah we I answered this
+one we can use signed main instead uh
+yeah uh what's the difference we can use
+signed main instead of original yeah I
+think so signed
+integer versus I've never uh tried it so
+that's this is an example of a question
+that if you really want to know I think
+most of our uh Labs will have integer
+maybe you can use sign maybe not I could
+try to run it like if you had your
+laptop you could take that program and
+see if it compiles I don't know that's
+the question that is a little bit
+nuanced and I don't I don't know sorry
+but this is the example of a question
+that we should keep and maybe like keep
+a list for like if if uh our cute guys
+would want to answer those or
+not please repeat that question I just
+deleted the one that was there sorry
+sorry didn't mean to I remember it was
+like what's the best way to learn C++
+this feels difficult this seems
+difficult
+no
+no I don't know
+I'm sorry this a yes it's a language you
+know Finnish language is difficult d++
+is not like I have to tell
+you if you speak Finnish then you can do
+it if you don't speak finish I you still
+can do it because finish is hard C++ it
+just practice okay you'll write this
+program many times you'll be able to
+write a simple hello world problem but
+then what is really cool about our
+assignments is that we'll never ask you
+to write anything from scratch instead
+we'll give you a bunch of code and
+you'll look at it and it's a
+well-written code and you'll have to
+just figure some bugs that we planted
+okay so the first uh lab it's like only
+maybe a couple of lines that you really
+will have to
+write and those lines can we figure out
+from this uh contest here you know and
+ask us so like don't be worried it's
+it's a language it's a language so it's
+new and I get it it's hard but we're
+going to write more so now we're going
+to write more in our main
+function we're going to create a Holo
+World okay so I'm going to start writing
+it and you guys tell me what's
+surprising about
+it okay now if you freaked out before
+now probably it's time to freak out
+what's okay this is um yeah different
+keybord okay so I want to say hello
+world good
+and and S CD blah blah and line
+character two lines that I'm going to
+add which like look probably very
+foreign so I'm going to say hash let me
+figure out which one is Hash here hash
+or pound include angle bracket I
+stream and go
+bracket okay oh thank you yeah stream
+yep that one work okay so any surprises
+pound include what does that
+mean well I want to print something
+right so
+just uh proper C++ has very little
+functionality so over time a lot of
+developers put together the code that
+was useful for their projects for many
+many projects and they put it into
+libraries and that's the point of the
+C++ standards committee they meet very
+so often and they release new updates to
+this libraries every four years or so
+and uh printing is useful so we'll
+probably use that pound include I stream
+in every assignment because we will
+print stuff and that's a bunch of
+functions so I stream is input out
+Stream So related to printing why do I
+use this angle
+brackets that says that it's standard
+Library so I could use quotes and that
+would be my own stuff to include in my
+my own local directory but if it's
+standard library then the compiler will
+know that it's from angle brackets so
+that means that whenever the compiler
+sees some unusual things like this C out
+or end line it look in included stuff in
+this case in our stream and we'll try to
+find what is this function C out which
+is standard
+output so to read this line you take
+this strain hello world and redirect it
+with this operator which is double less
+than redirected
+to standard out and then you also put
+the end of line character and also send
+it to standard out standard out is the
+line on the ter terminal right so that's
+the center output so there you
+go that's the sent so what's with this
+STD double column so there's a thing
+that is a very very bad yeah so is C++
+sensitive to SPAC system upad so or did
+you no like it's not it's not it's not
+you only put that for cl yeah
+yeah um so I could put like this I don't
+care I could put like this I don't oh it
+doesn't let you because it's a you Ed
+but example
+thisd yeah put here don't put uh a space
+between this because it's an operator
+yeah but over there it doesn't matter
+yep so don't put it between semicolon so
+some of them are so say this is the
+resolution scope operator so it's
+important to not put then um it'll look
+directly to the left directly to the
+right uh but let me talk about this
+SD double colon thing so I could say
+using name
+space
+STD and I would say hey compiler look at
+that in standard library look at the Nam
+space so standard library has many Nam
+spaces many regions associated with
+different functionalities so take this
+STD and bring all of the functions for
+use as if I were to write them myself
+that's pretty bad because then the is a
+potential for collisions right what if I
+what if somebody else will write C out
+for I don't know for some other purposes
+like this is standard this is standard
+output what if I want to use it for some
+something else right so there's a a a
+possibility for collisions and that's
+why this is a bad practice to bring all
+of the STD there but if you work then
+you could simplify your syntax like this
+because then see out and n End of Line
+character would be in your scope
+immediately from standard Library so
+double column is scope resolution
+operator and if you need to look at some
+user defined Scopes you use it but you
+can also using name spaces you can bring
+all of those in your
+local uh
+environment local scope is this clear so
+uh let me clean up clean up this things
+it just looks bad but okay so let me try
+to compile let's
+see you have this code by the
+way uh in the in
+your oh yeah this is where it's really
+hard to read
+right so but you have your hello world
+here yes no typos so I can run it and we
+hope to see Hello World right so it does
+what we expected it prints hello world
+two standard
+output okay so we're done with this
+right we wrote all of this except that
+please don't use like there's entire
+threads on Reddit and core core and
+stuff like that where um or stack
+Overflow where people argue why you
+should never use name spaces however if
+you know what you're doing it's fine
+it just be careful because then you
+sometimes there could be even things
+where a wrong function is called because
+of usern name spaces because of the
+collisions and you'll never find out so
+so it's better to do STD do semi colum
+colum any
+questions okay well I think this see out
+is
+really creepy because after that I think
+it'll be easier so if if you if you're
+fine with this it'll it'll get easier
+now more logical so finish is difficult
+I still can do not do it so will this be
+hard yes I told you it's a boot camp it
+is going to be really really hard but
+you'll love
+it could you also use using names space
+stdc out yes so that's a better practice
+bring only what you need to
+survive if you know that line uh from
+Space Balls Okay so
+um see out and then you would also have
+to include STD Colin colon and line and
+then you're fine you can use those so so
+you just Brint only the functions that
+you want I understand that stream has
+all functions as CNC out yes but why
+would they put them inside STD and make
+us use the resolution scope I don't know
+oh ask V he knows he's part of the guys
+who did it so we can ask them so does
+STD see out mean that you call a
+function called C out from Center
+Library class yes yes yes yes yes
+yes yes that's a function and then
+there's operators that you know just
+like bra all sorts of uh brackets that
+you could use you could redefine uh
+those operators and to do whatever you
+want in C++ which is really really
+cool okay and we'll show you how to do
+that now I'm going to build even more do
+you remember that useless class that we
+did in my program well it's there it
+compiles so it's a type it acts just
+like a type so maybe I can declare a
+variable of that type right with the
+value with the name a type sphere some
+location and garbage value right so
+let's see should it compile
+now let me write a little more according
+to to what we have on your um notes here
+we'll also write this we'll put
+public so we'll Define regions in the
+class that will do different things so
+each class
+in um in C++ can have three regions and
+let's talk just about two now public and
+private so if you don't do it everything
+will be private so if you don't write it
+by default it will be private
+which means that so if everything is
+private that means that only functions
+or members of the class can use anything
+that's private to that class so no
+other
+things can access it so for example this
+a sphere and therefore main function
+cannot have access to private variables
+or
+functions therefore it's very important
+to have control and explicitly design
+your class so that you have public
+functionalities and private
+functionalities private functionalities
+are only visible inside of the class to
+the members themselves but then public
+functionalities can be used by what we
+called a client code that is this main
+function is in this
+case so is this clear let's see is this
+surprising let's see what I wanted to uh
+to say here on my slide
+yeah so we declared uh
+sphere a of type sphere and we defined
+two regions we didn't put anything there
+yet and that's the goal of the next
+slide and we are on the next
+page so now it's the design
+question what do you want this sphere to
+be so what will be the representation
+that is variable variables associated
+with this class
+and what should be the functionality do
+you remember we had radius as
+representations and color and location
+right so let's keep radius as
+representation and this is the Syntax
+for that and we put it in
+private and I have a question for you
+why do you think radius should be
+private so this means that from main
+function we can never access radius we
+can never change it is that a good
+choice let's think about it so what if I
+I still want to change radius somehow
+maybe right I want to have control but I
+want to completely control what the
+client will be able to do with my sphere
+so maybe if they change radius I will
+ask like oh what if it's negative then I
+will not let them do that right so I
+don't want the client code here directly
+access this radi because they may change
+it to something that I don't want so I
+want instead to provide maybe the
+functionality see how I wrot it
+here maybe I want to provide the
+functionality
+instead for doing that oh
+yeah
+so maybe
+instead one of my
+functionalities should be being able to
+change the sphere
+in some way including radius right and
+then it's control behavior and that
+should go in
+public something that clients can do but
+my sphere representation or data will be
+something that I protect with private
+region so that nobody can access it and
+change it in unwanted manner right so
+what other functionalities do we want
+with spheres what would you want to know
+about the sphere
+Maybe
+do you want to know the radius or
+something else right maybe you want to
+know like volume or something so like
+get information about it get
+information about the sphere and here we
+have this um sample function get
+diameter for
+example so maybe we want to change this
+sphere and that will be the function set
+radius we might want just to create cre
+here as well so there's many more things
+that you might want to do create
+sphere many things that you might might
+want maybe you want to add spheres maybe
+you want to divide them in some way
+maybe what color them draw them print
+them you know many things that you might
+want to do but this is just for
+Simplicity let's start with this so I'm
+going to go to my code and please now
+see maybe I'll make some mistakes so
+here's functionality for
+creating and this is called a
+Constructor so this is going to create
+sphere so why do you know and compiler
+knows that it's a Constructor well it's
+a
+function with no return type you see it
+doesn't return anything and the name of
+the function is the same as the class so
+that's how the compiler will know that
+it's the Constructor that's something
+that will build the object um
+okay the object of this type now the
+second one was void set radius because
+it doesn't have to return anything we're
+just going to change the radius
+radius and we want to give a parameter
+or Double R
+right and um the last one was we want to
+get the diameter so we want to return
+type double and we want to get a
+diameter
+okay so what do we want to do with this
+functions maybe we want to print out get
+diameter
+instead so how do we do that we created
+an object of type sphere a in order to
+access its functionalities you put a dot
+so it's kind of like scope resolution
+operating for types but for objects of
+that type in order to access the
+functions you need to put dot for types
+themselves like spere you need to put
+scope resolution double column to access
+uh the members but for the objects of
+that type you put a dot to access the
+members so I can say get diameter and
+that way I will print
+out the diameter of the
+sphere does this look good so we created
+functionalities creating a
+sphere change sphere change it and get
+information get
+information about
+it so I'm going to compile
+[Music]
+it doesn't like it I have a question for
+you I'm going to this is
+the moment for you to answer why does
+that H why did that
+happen why doesn't it compile yeah we
+didn't Define the function for we
+actually didn't give the code to run
+those functions right we only declared
+them right we only declared the
+functionalities we didn't give the
+provide the code to build that is it
+unable yeah that's why it's complain yep
+I honestly did not no it only has
+functions declarations not
+implementation do you see that we
+prescribed to set radius of this value
+but we didn't tell how there's no code
+right H okay good good good good so we
+have to write the code right but um
+let's do it but I think I want to say
+something about this line
+though do so so what what does it do
+when I
+declare a variable of T sphere what is
+this here what is the value of it then
+we know that it's garbage right but
+what's the location how does the
+compiler know what to even do do you
+have does anybody
+know or can take
+guess
+so we actually have control some control
+of what's going to happen upon
+Declaration of that sphere and this is
+the line when you declare this sphere
+here this is where a
+Constructor is called so this function
+that we just wrote or declared but
+didn't Define so this
+Constructor is called so before we wrote
+this
+function a default Constructor was
+called and that default Constructor did
+nothing right but you have control you
+can actually write your own construction
+and you can then prescribe what should
+happen at that moment okay so that's uh
+something to remember we'll talk about
+Constructors much more later but that's
+something to remember that over here
+something important happens and if you
+were to actually write the Constructor
+and you would um put a print out
+statement of some sort sort in your
+Constructor here after this line it
+would print out whatever you put
+whatever you say so let's write these
+functions okay let's write them H where
+do oh wait sorry we need to
+also put the representation ofhere right
+with
+radius
+okay okay so now I'm going to write my
+functions so which as we're going to
+write let's write set radius and get
+diameter and we'll leave out we'll keep
+the default Constructor for now so I'm
+going to write this function
+avoid H
+sphere so you already know this scope
+resolution operator because otherwise
+the compiler will not know which set
+radius is it we need to actually say
+that this is the sphere set radius that
+we're going to define Double R so so far
+I wrote the signature of this
+function okay so this signature and
+let's uh go please actually
+yeah or sphere yeah it's outside yeah so
+very very good this is something that
+can be written in many ways and write it
+in one way but there's three ways to
+write definitions of the functions so
+I'm going to write it outside of the
+sphere class
+definition and now explain why in a bit
+but let's first try it so if it's
+outside then it's not clear if I would
+not write the sphere double column it
+wouldn't be clear which set radius it is
+because there may be balls with set
+radius and maybe some other things that
+will want to set the radius as well so
+it's very important out if you're
+outside of that class to Define which
+scope this radius belongs to and this is
+the signature of this function the
+return type the parameter type and the
+name and the scope right but now we'll
+actually write down what it should do so
+what should you do if you set the radius
+you just say Okay this private member
+radius is equal to
+R and remember private members can only
+be accessed by the
+members of the class itself so this is
+the m radius function is the member of
+the class so it can U access radius and
+change it that's good so this is where
+you could also put a state if statement
+like if radius is greater than zero so
+you could control how the client is
+going to set this radius and that it's
+proper okay and now let's write the
+function signature for get diameter so
+double
+scope scope resolution operator get
+diameter and now the actual
+implementation so curly braces or curly
+brackets and what do you want
+return two times radius again we can
+access the private member because this
+is the member function okay so now
+hopefully we should get some diameter to
+be printed
+out and hopefully there will be no
+compilation errors let's
+check no compilation errors we run the
+program zero why is
+that ah because of the Constructor The
+Constructor actually does nothing right
+we rely on default constructure so
+default constructure does nothing it
+doesn't assign any radius to the sphere
+let's write a
+Constructor do you want to write a
+Constructor I don't think I have that in
+my slides so this is a little bit
+of um so let's set radius
+to equals 10 that's my that's my
+construct it's really silly right it
+really doesn't do much nothing
+interesting or useful or even meaningful
+right but that's what it is so what do
+we expect
+now what's the
+output diameter 20 yay so do you see now
+that we defined and sorry in the in the
+slides I don't have definition of the
+Constructor but it's just another line
+for defining the in the same way with
+the function signature of the
+Constructor and what it has to
+do and now it's very clear for you guys
+right that in this main function here
+the Constructor is called and now it
+assigns radius to
+10 that's good and then we call get
+diameter actually I could even
+maybe set the diameter to something else
+now so I could say
+a or set radius set radius
+to
+five and let's do a double so that
+there's no I don't want to deal with
+cast yet we'll talk about it
+later and now what should be the
+output 10
+okay okay so we use all three
+functionalities of our
+class
+object because we Define them so well
+right so let's go back to our slides I
+think I had some questions so we can
+answer them
+um let's answer them and then I'll
+finish so can and should aliases for
+important functions be
+used this is let's let's not do this
+now
+because um we're jumping ahead so we
+we'll talk about this kind of syntax
+later when it's more appropriate
+right
+not to be altered by users
+directly oh I don't understand wasn't
+response to why theid should be private
+oh right right right yeah yeah do did I
+answer all okay or is there yeah
+okay sorry sometimes um it's difficult
+to follow the questions and so just ask
+again if I didn't answer it right okay
+so so I want to conclude because I think
+we're running out out of time so now
+I'll if you look at your slides I think
+it's not very clear at your printouts
+that there but it's clear that there are
+three cases three cases of writing these
+definitions of the functions one was
+just the way I just did uh in in my file
+so bringing the definitions of functions
+outside of the class you like
+it or does it feel like this is
+weird Okay let me show you the
+second the second case is actually doing
+the same thing so instead of these two
+lines here I brought whatever was in
+curly braces and put them right here
+after the Declaration so like putting
+the Declaration of the functionalities
+together with implementation right there
+inside the do you like it
+better yes yes is more
+common the most common is number three
+so the number three is
+this putl them in three files have your
+main function here put the definitions
+in what's called sphere
+CPP so that's the definitions of member
+functionalities and
+put your signatures only which is called
+an interface to the F in spere
+that's what we'll be using all along
+that's what everybody
+does do you like it like seems like the
+worst thing right but it's actually very
+important for encapsulation so let me
+just give you a hint why and then we'll
+start you this later so the thing is
+that you can hide your Genius code of
+implementation and sell just the
+interfaces to the client to
+use together with objects that you
+pre-compile using your smart code so you
+never actually Reveal Your codes but you
+can sell your product like that for
+people to use and that's called in
+capsulation so you really hide your proi
+and
+stuff uh unfortunately if you use
+templates you cannot do that so people
+love templates but then you canot hide
+stuff so but but if you don't use templ
+templates are really useful so they
+Implement polymorphism and all of that
+but
+um but this is a very common thing to do
+if you really want to write them your
+code here and sell only uh object and uh
+interfaces okay next time we'll start
+right there so we'll go through this
+again oh sorry Pa I have to check on
+Zoom I think I just clck the computer no
+Zoom is on let's see everything is
+on okay you guys all
+good okay we'll see
+you stop
+share and oh it's lab now so you guys
+all go to the lab
+and yeah can you repeat that stuff you
+said about the Q no and so on Boyers
+they gonna be now or no they're not
+gonna be in the lab but they on our
+slack let me see do I slack geez what am
+I saying Discord okay let me
+see there if you go on Discord y so we
+have our staff stuff these guys are
+CT don't me yeah that's
+wait a second I wonder if I'm
+a so go on announcement they should be
+here no I mean okay just I guess this is
+the
+the cute so you can tell them because
+they put like
+cute and yeah they're right there so go
+ahead and ask questions it's really
+exciting yeah yeah I'm I can't believe
+it's happening
+and the attend attendance is not
+mandatory not for lectures not for labs
+nothing yeah everything can be competed
+online if you want that's good have the
+lecture at the same
+stab that's why we don't have many
+students but like here physically but we
+want we want you to be able to
+completely do it online although we'll
+miss nice to have physical lectures too
+well thank you for the lecture you you
+okay hey I think there might be a
+problem with
+the I don't think they have the
+environments
+here they should use their
+laptops yeah oh right so they'll have to
+go through
+setup no we all have to go have to yeah
+because you'll they you'll need to log
+them in with your Ro password
+yeah yep at least I think that is
+necessary I think there will be see you
+sell anything there that ad
+maybe see if I can
+likeall yes maybe I can they like ited
+for
+today I know but hey I think it's going
+to be okay because you know the toughest
+Will Survive and they can do it on their
+laptops and if not like the rest will
+take it next year where we are more
+prepared because yeah I don't know what
+to expect like Steve is like why didn't
+you say last week that you want bigger
+lectures but last week you only had 100
+students and then this is almost fine
+right I I mean I I think it's going to
+be fine from like how like usually a
+small percentage of students actually
+attend
+way
+so you know what what really frustrates
+me the most it's 2hour lectures it's
+just like impossible to remember that
+much material this lectures were one
+hour at a time it's so much easier like
+one hour you can really remember the
+story two hours
+oh
+[Laughter]
+yeah

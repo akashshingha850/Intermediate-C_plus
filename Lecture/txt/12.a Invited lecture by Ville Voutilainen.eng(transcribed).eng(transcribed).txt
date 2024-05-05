@@ -1,0 +1,170 @@
+you don't
+need ah sorry so you don't you don't
+need to do any
+particular op in like in uh in C you
+need to inherit from a disposable
+interface to be able to use the scope
+cleanup
+mechanism
+so this is emphasiz by the
+actual supposed or like a
+the uh the uh syntax by which you
+actually invoke a Destructor is just a
+closing brace because that will invoke
+the destructors of of the local
+objects and it's it's gener and generic
+in the sense that this works for every
+kind of block so if you exit a function
+you get the destructors Run for the
+things that were created in that
+function if you exit a loop it works the
+same way if you have block statements in
+the branches of U conditional statements
+like if
+else or if you have a block statement in
+a in a case of a switch case you always
+exit a block and you get the destructors
+run you can also have BL plain block
+statements that are not attached to any
+Loop
+construct or a conditional so if you
+just write a pair of phases and code
+between that
+that does introduce a new
+scope and then when you exit that scope
+you get
+distructor run when when you do the
+exit so there's a some slideware
+examples of this so in this first
+example uh we create a unique pointer
+there and we just fall off the end of
+the
+function that will destroy the unit
+pointer and that leads into deallocating
+the memory stored for the actual object
+of Type
+X which will then of course invoke the
+destructor of that X object as
+well so the slightly different example
+there
+below is that we we have an explicit
+return
+statement and that just works the same
+way um of course in addition to this uh
+you can you can exit a function by
+throwing an exception that does exactly
+the same thing it runs the distractors
+of all all scope local
+objects if we look at various ways of
+exiting a loop it does exactly the same
+thing so we have there that conditional
+break if it so happens that uh the
+uh I equals
+the index that was passed as a
+parameter the break will exit the loop
+completely of course that will result in
+the uh unique pointer named V being
+destroyed and then continue of course
+jumps out of that block
+statement by jumping to its end it will
+exit that block
+statement and that will run the
+destructors again
+so all kinds of ways to to exit Loops
+will always uniformly run the uh scope
+local
+distructor uh it's it's mentioned in the
+in the slide slides bullet points that
+you could also go to out of this
+Loop uh whether that's recommended is of
+course a philosophical
+discussion but uh for the PO purposes of
+this exam explanation that we the same
+way if you go to out of a block
+statement it will still run the
+destructors for the object in in that
+block
+statement so yeah all forms of block
+exit work the same way you can fall off
+the end of of a block you can return out
+of it you can use break or continue you
+can throw an exception or call a
+function that throws an
+exception and you can go to out of it
+and in all of these cases is the cleanup
+world
+one I you perhaps mentioned for
+completeness sake that if you use a
+legacy C function called long jump that
+will not run your local destructors
+because
+it's it's not using facilities that are
+C++
+aware but uh if you use long jump in a
+C+ plus program where you have
+non-trivial cleanups in
+scope that is undefined Behavior
+so it is not statically determinable so
+the compiler can't always tell you that
+you're doing wrong
+things but um the standard specifies it
+as undefined Behavior which is a very
+strong license against doing
+that now then generally about Resource
+Management about scope Resource
+Management scope Resource Management
+types are types that release a resource
+in their
+Destructor they are used as local
+variables variables with automatic
+storage duration I mean objects of
+resource management
+types and what that does is that it
+binds a
+resource with a storage duration that is
+longer than automatic usually
+Dynamic to a scope to a block of code
+so when you have like a dynamic
+allocation you bind it to a particular
+scope and the distructor will handle it
+so that when the scope is exited the
+cleanup of the dynamic allocation
+happens as if it were were a
+uh a variable of automatic storage
+duration so it it ties the lifetimes of
+uh
+of automatic
+objects Resource Management types come
+in all kinds of fa flavors so they may
+or may not own a resource some do and
+some just find an
+existing resource to a
+scope so not all resource management is
+about
+lifetimes uh just because a particular
+resources release doesn't always mean
+the allocating memory
+it is relatively common that this kind
+of resource Handles in local Scopes are
+bound to a single scope so you can't
+even transfer them outside of a scope
+but sometimes you can and that's
+actually
+useful so the motivational bit of course
+is that why is this important
+well this was something that I
+pretty much uh dogmatically adopted as a
+programming technique and
+Stu 20ish years ago earlier in my career
+when you use this kind of resource
+management rappers consistently you'll
+never have a memory
+Le due
+[Music]
+to really
+[Music]
+okay are you observing the chat if
+there's
+question U there's two questions in the
+chat it but I'm scared
+okay

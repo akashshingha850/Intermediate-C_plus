@@ -1,0 +1,1704 @@
+this
+okay
+okay so let's see today um we're going
+to work on pointers we're going to
+figure out we're going to go through all
+of the cases of things that can go bad
+with pointers and with handling memory
+and we'll talk about the good practice
+of working with
+pointers um
+so that's the goal of this lecture and
+then as I said elmary will go through
+lab
+intro um and all of the um other stuff
+that we didn't ask you to work with that
+the structure of the code which might be
+useful for you in future assignments but
+the lecture is useful for your lab DB
+debug where you'll have to work with
+pointers Chase pointers and figure out
+where memory where where there is a bug
+with some with memory in some
+way so let's start with Let Me Go full
+screen
+here okay so we're going to go through
+definitions and this is just going to be
+a warmup so I'll ask you to use your
+phone and
+answer uh this simple warm-up quiz
+questions so we're going to go through
+all of these definitions when a variable
+is declared on stack on the stack on the
+Heap when variables get values when
+stack memory or heat memory is cleared
+or when a null pointer is deleted all of
+these are nice operations they don't
+cause any problem this is something that
+we'll have to write in our code so this
+is something that is welcome in the code
+and as a programmers we will be doing
+this all the time so let's go through
+this the first question is a variable is
+declared on the
+stack so pick all of the lines that
+correspond to
+that so we go through these exercises
+first and then we'll um just write down
+all of the answers in the
+end so pick all of the lines that
+declare a variable on the
+stack
+so declaration is we tell the system hey
+we're going to use this variable we
+didn't give a value to it yet we're just
+declaring it we're telling the system
+hey there's an intention that we have to
+use this variable and that's its name no
+value yet so which are the variables
+that are declared on the stack
+here so Z equals new int does not
+declare a variable on the stack
+okay that's incorrect because Z is
+already declared and new int will take a
+chunk of memory from the
+Heap
+okay now a variable is declared on the
+Heap which lines are the the ones that
+would declare a variable on the Heap
+so we tell the system yeah only this one
+we tell the system we are going to
+intent we we have an intent to use some
+memory on the Heap but we don't give it
+value
+yet xals 10 no this one is no this one
+is no this is already definition of the
+variable so those variables already
+declared before
+right so these are no but this is yes
+okay
+good um the next question is a variable
+gets a new value now this could be any
+variable Heap variable or or stack
+variable so pick all of the lines that
+correspond to the situation that a
+variable gets a new
+value yeah very good
+yeah yeah very good so all of
+this and this one very important that
+you got this one Z will get a new value
+Z will get the address of this
+initialized but declared variable on the
+Heap very good we'll draw a picture of
+that for
+that
+later okay so you P all of the good
+lines
+in all of those instances a variable
+will get a new value now a a stack
+variable gets a new value or stack
+memory has is changed what are the lines
+that correspond to that Lo a situation
+that a stack is changed a memory on the
+stack is changed or a variable that is
+declared on the stack gets a new
+value
+very
+good Delete p
+no delete Z so very good because we'll
+talk about this delete p and delete Z
+will not change the values of the
+pointers p and Z they will stay
+unchanged it'll only clear the Heap
+memory but the stack will not be changed
+with this and that's what opens the door
+to what's called dling pointers so this
+is very bad situation you will have to
+clean PMZ because delete pnz does not
+change the stack values but everything
+else so this is correct this is correct
+the stack value is going to change the
+stack uh memory is going to change
+integer p no that doesn't do that but
+this this is correct this is correct
+this is correct this is correct good
+we'll write the answers later so don't
+worry if you are not writing it yet a
+variable gets a new value on the
+Heap so when is the
+Heat
+changed when is the Heap changed yeah
+very good
+good the Heap will not get value here
+it'll reuse whatever is there
+so it's not a the the variable is
+declared but not get it doesn't get its
+value this is stack variable so no stack
+variable no so this is
+correct delete p and delete
+Z so it's kind of like yes the Heap
+values the Heap um will change here or
+may not it's kind of more undefined
+Behavior so I would say maybe maybe not
+but definitely I wouldn't say that it's
+guaranteed that the variable on the Heap
+gets um a new value so it's incorrect to
+say so however Heap might be changed
+upon that uh um upon that line so there
+are only three lines
+but this is the correct answer I jumped
+it jumped too bad fast so this is the
+correct answer everything else is
+incorrect everything else is incorrect
+but there's some discussion that can
+happen with deletes okay next question
+stack memory is cleared out by the
+system so what is the line where stack
+memory is going to be cleared out by the
+system the system will take that stack
+memory and say okay this these variables
+do not have control over it I will use
+it for some other variables I will use
+it for something else I I am taking the
+control back so what are the
+lines if you can see that I added line
+13 what
+is what is the correct answer no no no
+line 13 line 13 is is the only correct
+answer everything know the the stack is
+not
+touched the system does not take that
+memory back with
+this
+okay okay let's go back let's go to the
+next Slide the last question heat memory
+is cleared out is it the last question
+no pre last Heat memory is cleared out
+by the system so when is that the case
+so with Heap with persistent memory
+which is the
+Heap the we have to tell the system when
+to take the memory back right so we
+announce it the specific statements and
+what are those
+statements delete Z delete P that's when
+the system takes the Heap memory back
+when we assign null to pnz we are
+operating with the stack only right
+we're changing the value of p on the
+stack not on the Heap we are not
+changing the Heap memory there okay and
+one last and now pointer is deleted so
+where is that happening in this
+code the deleting a null pointer is a no
+op there's no problem with that so it
+happens here because Z is null so delete
+Z is deleting null pointer and the
+system just goes looks at the address
+started Z sees that it's a null space
+the space for null pointer so deleting
+it is a no op you don't have to delete a
+null pointer nothing happens so it's
+okay um and you can do that in your code
+nothing really happens okay so these are
+the
+answers but I want to populate the
+answer I want to draw the picture
+because there were some
+problems um that we en encountered right
+so let's see what happens let's go
+through this code line by line when I
+say integer main the moment I write let
+me start writing the moment I
+write this curly I open the curly
+bracket that's when the Heap for that
+function is initiated or the the stack
+for this function sorry stat stack stack
+for this function is initiated so all of
+the variables that are going to be
+declared in the scope of this curly
+brackets Will Go On The Stack for this
+function and when I close the curly
+bracket that's when all of those
+variables all of that memory within this
+function allocated for declared
+variables will be cleared taken back by
+the system or cleared out so let's see
+how it happens so let's go through then
+the lines of this function one by one
+first integer X so variable of type
+integer with the name X is declared on
+the stat so it's in some location let's
+say
+A1 no value yet type integer right so
+that's where a variable is declared on
+the
+stack so at line two right the next line
+is declaring two pointers p and Z they
+are stack
+variable
+so maybe at some location A2 a variable
+p is declared on the stack of type
+integer pointer and then at location A3
+variable Z is declared off type integer
+pointer there are no values there these
+are just declaration
+so this are just declarations I didn't
+assign any value therefore this values
+here maybe just whatever system re uses
+or maybe it puts some default values it
+will depend on your execution on your
+compiler on all of those things so you
+don't know you don't have control of it
+the system will have control of it and
+most likely it's just going to be reused
+values whatever was there because that's
+the most efficient thing to do now line
+four so there are two steps happening
+happen in here whatever is on the right
+hand side that's asking for Heap memory
+whenever you say new you ask the system
+to give you a new variable on the Heap
+which will never have the
+name it'll have location B one so this
+is Heap say B1 location no value you
+didn't ask for Value you didn't
+initialize you didn't Define this value
+you just declare you didn't Define this
+variable you just declared it and you
+said that the type of it is
+integer so this is a declaration of a
+new variable on the Heap here just line
+four and it's the right hand side of
+this expression that accomplishes
+it now the left hand side and and this
+assignment statement that's what
+initializes your variable
+Z which is on the stack because
+assigning this gives the value B1 to the
+pointer Z so now your pointer Z points
+to that memory location in the heat okay
+therefore line four also
+accomplishes this a variable gets a new
+value and a variable gets a new value on
+the step not on the Heap on the stack
+right so Z value Z variable gets a new
+value on the stack
+okay so the next line I think this was
+easier oh yeah this was easier so we do
+reference Z that is we ask for a
+variable at Z's value location right so
+we ask for this variable with no name we
+follow the pointer with an asterisk so
+we ask for that variable and we give it
+a new value one so line five is the only
+line which really accomplishes
+of changing the
+Heap uh memory right and giving a new
+value to a variable on the Heap that has
+no
+name okay now line six line seven and
+line eight essentially accomplish the
+same thing they take these variables on
+the stack and they give them new values
+so let's see what happens first we give
+x value 10 second we give P the address
+of X which is
+what so what will be the value of P
+after this
+operation what should I put
+here A1 A1 very good thank you because
+this EMP % will take will strip memory
+address off that variable s so it will
+be A1 okay and then the line 8 will
+assign value Q to Value P so what will
+become essentially I'm overwriting the
+value A1 now with
+what let me use different different
+color because we just assigned A1 to P
+but now we're saying no no no we want P
+to have a different value which is Q's
+value what is Q's
+value oh I don't have a Q probably I
+meant Z
+right all right right this is yeah what
+this would be a compilation Arrow okay
+let's try Z then of course maybe Q would
+be defined somewhere but what if it's
+C then B1 yeah so weting it with B1 and
+again we just working this is just
+stack stack operations stack variables
+right that get new new values so six
+seven and eight just stack variables
+getting new
+values now I'm going to say delete P hm
+delete p
+what does it
+mean what is p now p is B1 so it's
+pointing to the same location as Z right
+and if I say delete P the system will
+just take its value and clears out or
+takes back the memory located in that
+place in that address in that value so
+this VAR this memory is gone we not have
+access over it anymore the system will
+be using it for other pointers or for
+other uses
+right
+that's good that's a good thing we we
+should be doing it we should be clearing
+out Heap memory so now we have the
+pointer p and pointer Z pointing
+to the same location but that location
+is not ours anymore to use so it's a
+little bit diff difficulty or dangerous
+situation that we need to make sure we
+we clean kind of so we we need to use
+good practices because bad things can
+happen that we'll talk about on the next
+slide but what I'm doing here I'm just
+saying pnz equals to null uh right
+here but um let's go back to line nine
+so does line nine correspond to any of
+these questions yeah Heap memory is
+cleared out by the system so that's good
+good also Hep memory may be changed here
+maybe some other variables will in the
+meantime will get this memory and maybe
+the values there will be changed but I
+wouldn't say that it's guaranteed so you
+cannot really claim that that happens
+here
+okay so you cannot really say oh a
+variable will get new value if you say
+delete P because that's not incorrect it
+may or may not
+happen now uh line 10 P equals to null
+and line 11 Z equals to null so we are
+going
+to assign new values for variables on
+the stack and they're going to be
+zero addresses or n addresses of
+null which means that lines 10 and 11
+correspond to a variable getting a new
+value on the step
+right delete Z
+so now we're going to delete Z so we'll
+take the value of Z which is null and
+delete it it's a no op it's allowed by
+the system because there's nothing to
+free at
+0.0 so the system will
+allowed okay any questions about it
+anything weird so let's go uh the next
+slide
+is um questions any questions about it
+so this is a warmup we want went through
+the definitions that we learned last
+time now let's go what can go bad we
+didn't talk about it but it's
+exactly your lab
+debug and I'll show you how we will take
+good code but then remove a couple of
+lines from it and give it to you in lab
+love dag to find a bug because
+removing some important lines from good
+code will lead to some kind of bad
+behavior so let's look at all of the
+possible bad behaviors that can
+happen undefined Behavior have you met
+that yet when you were debugging your
+lab intro did you see that undefined
+Behavior can happen so what is undef
+undefined Behavior sometimes systems C
+the system May crash and sometimes it
+runs
+okay sometimes it may have some runtime
+errors like it's
+slow but others it just seemed to work
+fine so that's what's called undefined
+Behavior Insidious bug is related to
+undefined Behavior so it's when it's
+really difficult to find where exactly
+your program is not working so that's
+what insidious bug is keep corruption is
+another type so all of these I'm talking
+about runtime errors not compilation
+errors so the compiler is not on your
+side the compiler will compile your
+program and say everything is fine maybe
+there's a warning somewhere but maybe no
+not at all
+so these are all runtime errors so you
+compile your program and then you run it
+and then you see that something is
+happening and again once in a while
+you'll actually see that there's a SE
+fold message or some kind of message
+that the system says when upon the crush
+but it may be that your program doesn't
+even crash it just doesn't work properly
+so um undefined behavior is one such
+situation Insidious bug is another such
+situation Heap corruption that's when
+that's why in undefined Behavior may
+happen so if you're overriding a heap
+the Heap with something in a place that
+you are not
+authorized then undefined Behavior may
+happen because you're may be overriding
+the value of some other variable that
+you think you're not
+touching and that will lead to undefined
+Behavior un initialized pointer so
+that's when you declared your
+pointer and the pointer has some value
+which is may look like an address that
+you're not authorized to touch and then
+you der reference and put some value in
+that address on the Heap that may lead
+to undefined Behavior or the system May
+crash or it it may work properly dling
+pointer is when you delete a pointer but
+you don't assign null to it so bad in
+because then if you D reference it you
+will access unauthorized heat memory
+again a memory leak is when you don't
+delete a pointer at all so you just
+assign null to a pointer or some other
+value to a pointer some other memory
+location uh which means that your HEAP
+memory was not freed and if you do it
+sufficiently enough many
+times you will run out of heat memory
+and your system will just your your
+program will slow slow
+down double free so what if you delete
+your pointer twice so you say delete
+that location Twice first time is fine
+but second time this memory may belong
+to some other variable you attempt to
+free
+it it leads to un again undefined
+Behavior many strange things can happen
+can happen so the only good runtime
+error here is the reference in an all
+pointer because that's always a sec
+fault so that's kind of good so let's I
+give you next slide is I gave you a
+bunch of situations so do you have any
+questions if you don't have any
+questions let's go to the next
+slide so this is all of the bad things
+that can
+happen and once again we're going to go
+through each one of these codes and you
+tell me which of these runtime
+arrows that is that code is so we'll go
+through a b c d e f g and you'll have to
+pick all of the one through 10 which
+would correspond to that situation
+right okay so let's see number
+one I declare a v two variables and then
+I give that
+assignment what kind of error is
+that this is kind of a sentex question
+huh yeah why is that it's a compilation
+error correct why is
+that yeah so this is more an exercise of
+what does it mean when I say integer
+pointer P comma
+X and the the this asterisk belongs to P
+not to integer so this declaration
+declares a pointer P but just an integer
+X so if I wanted X to be a pointer to I
+would have to put sis to it here as well
+okay just a syntax question so once I
+know that P is an integer pointer but X
+is just an integer this assignment just
+does not make sense to the compiler
+because it's a mismatch of types so not
+good so it's just a compilation error
+there's no uh other problem here that's
+the easiest because the compiler will be
+on your side and it will just tell you
+exactly hey you cannot assign an integer
+value to a pointer right because the
+pointer will want an address not an
+integer
+value the next question is what if I
+declare an integer pointer and I give
+it the the location where it points to
+20 Val 20 what which one is this
+problem
+unfortunately it's not a compilation
+eror the compiler will say sure fine
+whatever undefined Behavior
+good uninitialized pointer so the main
+the the core problem here initialized
+uninitialized pointer your memory looks
+like
+p is on the stack and it has garbage
+value and you're trying to dreference
+that garbage value maybe it will lead
+you to some Heap memory maybe it'll
+crash great so it's undefined Behavior
+also as well uninitialized pointer leads
+to undefined Behavior but if it if that
+garbage makes sense to the system and it
+looks like a memory address on Heap
+it'll go to that memory it'll put 20
+there but that memory maybe Le to to
+some other fun other variable right so
+it's a very very bad practice to do
+something like this because you
+assessing unauthorized memory
+potentially and you're lucky if it's a
+SE
+fault okay so we would uh I have answers
+later you'll see all of the answers but
+I would say that the core here is UN
+initialized poter but it leads to
+undefined Behavior a runtime error
+that's definitely a runtime error there
+could be SE fault it could crash but it
+could all all of these undefined all of
+these are runtime errors right it's also
+an Insidious bug because you're actually
+manage you will manage to change that
+unauthorized heat memory then you will
+be chasing that bug for a long time
+because some other memory suddenly will
+be getting a different value 20 when you
+don't know which one I don't know is it
+me or not but who is oh yeah let me try
+to maybe okay
+here okay so very good we'll go through
+answers later now
+um I am declaring a pointer P here I'm
+asking for a for for memory on the Heap
+nicely and I'm putting a value three
+there right there so I'm essentially I
+decare two values there on Heap and on
+stack p and that unnamed variable and I
+gave values to both of
+them but then I say p equals to
+no yeah this is a
+dangling no it's not a dangling pointer
+so no because the pointer is not going
+to be dling it's going to get null value
+it's going to be fine but you just had
+poter P pointing to that nice allocated
+memory in the Heap with value three
+and then you assign it to point to null
+what happened to that memory do you have
+a handle of it if you don't if that's
+all your code has then it's lost so it's
+a Memory link so it's a runtime Arrow as
+well and it's a Memory Le it can cause
+all sorts of problems later on like um
+bad performance you you may run out of
+memory if you do that uh sufficiently
+many times and I'll show you an example
+later I have a code which runs out of
+memory e up all of the heat memory
+because I do it in a
+loop okay now um another code so I
+declared p as a pointer X as an integer
+I gave x a value it's on the stack so X
+has five value five
+p is a pointer on the stat but it also
+got the address the stack address right
+and then I delete P so then what
+happens
+[Music]
+yeah yeah I delete I tell the system
+look at that value of the pointer which
+in this case is the
+stack delete that please delete that
+what do you think will
+happen so actually in this case this is
+will be on your side and it will warn
+you hey you know you are trying to
+delete a stack memory and that's not
+allowed so uh you'll get a message here
+so thank goodness right because we will
+not mess up with the stack will be
+warned so it's going to be a uh
+um so it's going to be a compilation
+error in the comp in the compiler but
+it's it's really stressful because in on
+my compiler it's just a warning so the
+compilation gives you warning and then
+when you run it
+crashes so I don't know what's going to
+happen on every possible system you're
+welcome to run this code and see what
+happens but essentially make sure that
+you never delete stack memory because on
+my system the compiler is on my my uh my
+side but maybe it's not everywhere I
+don't know what happens in all possible
+situations but you're not allowed to to
+delete a stack memory so this is
+bad um I have this code somewhere but I
+don't try it at home and you see what
+happens in your
+case uh so this is not a dangling
+pointer in this case although it may be
+eventually deleting P without assigning
+to null is a bad practice but I think
+the program will crash before that
+because it will attempt to clear stack
+memory okay
+um now if you have a pointer P you got
+the nice memory on the Heap for it you
+initialized both you have three on the
+Heap you have the address of this
+variable on on the stack for p now you
+delete that
+memory
+twice what happens yeah you left ding
+pointer that's true you never actually
+REM you clear that memory but P still
+points to it right P still has that
+address unless you assign it to null or
+to something else so very good but you
+do it twice so double free leads to
+undefined
+Behavior you're clearing that memory
+that already belongs to this to the
+system so that's not good so essentially
+you can say it's actually danging point
+I guess because you deleted it you
+didn't reassign it to null you're trying
+to delete it you're assessing another
+heat memory which is
+unauthorized and you're dealing with it
+messing with the heat memory that you
+should not be
+doing okay very good now the is it the
+last no next to
+last so you again have this nice
+situation you deleted P so you clear
+that memory on the Hep but now you
+trying to access it and assign P to it
+that's the classic example of dangling
+pointer you deleted P but if you didn't
+reassign its value you're trying to
+access that memory again just like you
+did with delete so that's a classic
+example of dangling pointer which is a
+runtime error as well which may lead to
+undefined Behavior it it is an Insidious
+bug it is Heap corruption so corruption
+so all of those
+thingss and the last example so now it
+seems like you're doing everything fine
+you have p and three on the Heap p on
+the stat Del lead P you clear that
+memory you read you don't have a
+dangling pointer you put null into the p
+and then you're trying to
+access null memory and put three in
+there right so what happens
+here it's the reference in an N pointer
+it's always set F here at least it's
+very clear SE fault means you try to Der
+reference now pointer so there's no
+undefined fine behavior in this case it
+will always give you SE fault which is
+the best of all of the running runtime
+errors okay so here are all of the
+answers which is good so I have a
+question for you is anything here not
+clear should we go through any of these
+examples um and draw should we pick one
+so tell me which one and we'll draw a
+picture of what's going on
+so which one was the least clear to
+you A B C D E F or
+G anything or everything is
+clear pick one and tell
+me
+[Music]
+no should continue
+or or something was not clear so I put
+every all of the possible errors here
+right it's kind of like the last one is
+the
+actual example of what went wrong so
+eight is a memory Le but it's always a
+runtime error so eight a memory leak it
+is a runtime error or like here seven is
+dangling pointer but a d green pointer
+May is may lead to Heap corruption
+Insidious bug undefined behavior and
+runtime error right again uninitialized
+pointer where did we have uninitialized
+pointer this one I guess but it's also
+kind of a dangling
+pointer uh but it's also in shiz pointer
+so it has all of those right and double
+free which is this case double free
+that was because we had uninitialized
+pointer or angling pointer actually I
+should add seven here as well this PO is
+dangling there so we're trying to delete
+it if we put P equals to
+null then no bad problems would happen
+because deleting P would be a no off
+right
+so there should be seven should be there
+as well and then do reference in N
+pointer that's also a runtime error by
+the way which again put two there um but
+it's the easiest of all of the runtime
+errors because it's just SE
+false okay so all good right
+no we don't need to go through drawing
+this so now this brings us to the your
+next
+Lab in
+C++ you can do many bad things by by
+working with
+memory
+and just making some tiny mistakes like
+forgetting some lines forgetting some
+steps and you run into this runtime
+errors so I give you I give you here a
+nice order of working with pointers if I
+want to have a pointer p
+I first ask for heat memory for it right
+so let's draw what happens I initialize
+P I declare p and first it's a d green
+pointer so right after I need to
+initialize it otherwise I'll have not an
+initialized pointer so at line two I
+initialize it so I get some heat
+memory with no value yet but I
+initialized my pointer that's nice so
+this two steps should go
+together if you don't do it if you don't
+initialize pointer you have an
+uninitialized pointer that could lead to
+runtime error then you can do reference
+P you can work with P so you can put
+value three here uh that's great then at
+some when you're done with P you delete
+this memory you clear it out you give it
+back to the system but if you don't put
+this to step together if you immediately
+don't give some other value to P you'll
+have a dangling pointer which can again
+lead to sorts all sorts of problems
+therefore it's a good practice to assign
+it to null right away so give it that
+special area address value of null
+pointer okay so these two should be
+paired these two should be paired then
+it's one of the right orders or right
+one of the right ways or sequ of doing
+things so what we did in lab
+debug we just you know forgot some lines
+in our code inserted some bugs so what
+and this is going to be questions for
+you what happens if I just
+forget line
+two so I do that what if I just forget
+line four what if I swap lines four and
+five what if I swap lines five and two
+so I think we already in our Discord
+discussion you saw that we had swapped
+lines here so what does it mean what
+happens let's go these are exercises as
+well so I have this and you pick what
+happens I think again here you only can
+pick one but pick the worst like the the
+most the the biggest reason I guess uh
+for what will happen
+if you forget to write line two you have
+uninitialized pointer and then we know
+already from previous exercises what
+that leads to very
+good very good so that's an initialized
+pointer
+problem okay what happens if I forget
+line
+four
+I forget to
+delete yeah I memory right already saw
+that so you have your pointer and you
+just immediately assign n to it what
+happened to that heat memory it's there
+system cannot reuse it nobody can reuse
+it okay now what happens if both lines
+in
+two
+are removed again compiler will say it's
+fine program is fine you'll get a
+runtime
+arrow and uh which one is the worst I
+guess uninitialized or it's both
+essentially it's both memory leak and
+uninitialized
+pointer that you get yeah which one is
+worse I guess uninitialized pointer is
+worse than the memory Le but in any case
+it's a the runtime
+Arrow okay very
+good
+yeah and it's a runtime error obviously
+yes what happens if you swap lines four
+and
+five so you have your nicely initialized
+Heap and stack in
+Heap but you're Reign P to null before
+deleting
+it the biggest problem here is memory Le
+so it's as if you just forgot line four
+right because after that again compiler
+will not tell you
+anything but you'll try to delete null
+which is a no op but you lost that
+memory in the Heap so the biggest
+problem here is memory
+leak uh and
+number last last one is whopping five
+and
+two yeah the referencing L pointer so
+this is the nicest of all of the bad
+problems because you get SE fault that's
+easy to
+diagnose right so these are the answers
+I put them
+here
+and this is one of the good orders then
+so you'll have to find where we
+implanted a bug in that lab and fix
+it using this
+order um
+now this it's the same slide I just
+wanted to kind of point out that if we
+keep these two lines together so we have
+to remember that these two steps have to
+happen together in that order no
+swapping orders then
+once I'm done with this pointer I used
+it I cleaned it up what if I still want
+to reuse it so the question is where can
+I go from Step six can I repeat any of
+the lines so is line two okay to repeat
+is line three okay to repeat so let's
+see is it
+safe
+atline sets to start
+over where is it
+save I think you can only answer one lot
+but pick all if it's not picked yet pick
+all that
+apply so from Step say it's safe to
+delete the pointer it's good so line
+four is safe line
+three is not safe because you get SE
+fold right line two is safe right so
+that's cool so what I'm trying to get
+here is that when you write big big code
+so this is the answers very good when
+you write big code you might be using
+pointers and then maybe some other F
+functions will be reusing them so you
+want to clean your pointers in you want
+to leave your pointers in a clean state
+so that's why you follow this order and
+keep them always at all times you keep
+your pointers
+clean and this is a nice order because
+again once you're done with the
+pointer other users can start at line
+too but even a better order even another
+right order which might be even
+better is this so let's try erase this
+code so always keep line one and two
+together sorry I need to
+um charge
+my I lose it so you look at this code
+for a little bit and then we discuss it
+that's what's happening
+there Outlet some more clothes
+okay good okay
+so I initialize pointer to now but I
+could initialize I could declare an
+initialize pointer to something else I
+could also ask for p equals
+new whatever
+or just initialize it in any way I want
+assign it some other pointer that's
+just this is initialization step but the
+idea is that when you initialize your
+pointer always initialize it either to
+null or to some
+value now when you delete your pointer
+again initialize it to null then it's
+always safe for whoever uses this
+pointer net to return to line to step
+three and when they use this pointer
+they'll first check if it's null because
+it could be and if it's null then
+they'll initialize it to something valid
+but otherwise they'll use it and der
+reference it so that's kind of like good
+atate right that's how you handle your
+pointers to other software Engineers who
+write the code that's a good way so
+always at all times your pointer should
+be either null or proper properly in the
+properly
+defined
+okay so here this
+is good uh the rules of good software
+engineering with handling
+pointers any questions about
+that now I want to jump a little bit
+ahead we actually talking about arrays
+next lecture that damic
+arrays um there are many ways of holding
+array defining arrays in
+C++ there is this classical way of where
+you deal with Dynamic arrays on Heap
+memory but there's also standard Library
+arrays that you can use that are much
+safer because as you can see we're
+talking now about C style memory memory
+handling that is unsafe way of handling
+memory in C++ that was was inherited
+from C after that
+C++ became or adopted much safer
+structures that uh software Engineers
+can use however there's still a lot of
+code out there that has this unsafe
+practices um that's why we have to cover
+both and next time we'll talk about
+arrays more but now I just want to um if
+you jump ahead with your labs and start
+working with arrays I just want to point
+out that the same good rules apply to
+arrays and the syn of defining arrays is
+very similar so when you declare a
+pointer just a pointer like in our case
+to declare an array Dynamic array it's
+the same declaration it's going to be a
+pointer but then asking for memory here
+your pointer P will ask only for one
+integer variable on the he while here
+with this declaration new Square integer
+square bracket three you're asking for
+three values on the Heap so your in your
+pointer X here is p here's X will
+actually point to the beginning of a
+block of three integer variable on the
+Heap that's how arrays are you find
+stack Hep stack Hep and then you have to
+Loop them through those values over here
+by der referencing X and the syntax is
+really nice you can der reference X just
+by saying square bracket I so the zero
+element at s square bracket zero will be
+the
+first variable on the Heap then X1 will
+be second and S2 is going to be third in
+this case of array of size
+three so you do reference your ARR array
+or pointer to the array and work with it
+you first of course declared it and
+defined it and ask for memory for it
+then you do reference and initialize it
+and then you delete your array and the
+syntax again is similar to The Pointer
+except that you ask for three variables
+so you need to use the syntax that is
+for arrays that is you use square
+brackets there to say that delete all
+three not just
+s did I forget something now you know
+the rules of good behavior what did we
+forget I forgot one more
+line no yeah the same way so don't
+forget that you should also set X to no
+otherwise you have a ding pointer to
+this beginning of the array the same
+problem right fine what could be the
+bugs that we plant in there for
+you we could forget the square
+bracket what do I do then then I just
+delete the first
+element instead of the whole chunk right
+so that's one thing again we could swap
+the lines we could do all the same
+things because as you can see syntax is
+very similar for one pointer versus the
+whole array of pointers so again the
+same problems could happen if you swap
+the lines forget one line all of those
+things right just the sentence is
+slightly
+different so I hope this helps you with
+love lab
+debug uh debugging these things
+debugging
+pointers so that's good what else I
+wanted to say any questions from people
+online now I have
+just more a little more fun with
+pointers let me ask um el el mar how
+many minutes do you need because we
+still have half an hour do you need half
+an hour because I can leave this as a uh
+quiz questions for next
+time uh well you can you can still go if
+you want
+to let's see I hope they're not muted
+they're not muted so uh can you hear
+me okay let me write him a message
+El just let me know
+you are
+ready and we can stop
+anytime no I can't hear you
+yep oh yeah because I muted now what
+about
+now say it again hello yeah yeah I was I
+had my windows
+muted uh okay so I I can I can do my it
+so should be fine try talking again
+hello uh is he
+okay El is talking but we cannot hear
+him
+ah let me see what kind of output I have
+here wait
+here uhhuh yeah let's try this hello try
+speaking again
+hello
+output device is changed maybe now it's
+on
+the
+hello um let me check
+zoom zoom um sound settings
+if you see sound settings tell me where
+they
+are
+here speaker should be
+fine okay now it's really weird oh why
+is it muted again right try again hello
+yes okay somehow it got muted again
+okay so you think 30 minutes is good for
+you
+uh yeah it's fine I mean it's up to you
+uh if you want to stop here or like I
+can do with less or more time I think
+let's let's uh let's stop
+here I have some examples of functions
+but let's see if you run out of time
+then I'll show uh some cool uh examples
+of memory leak but otherwise let's go
+with lab intro I think that's quite
+important to go through that because
+there's some funny syntax things that we
+were discussing yesterday so let's
+um let's do that okay you guys hear well
+when he talks okay go ahead El and if
+you run out of time if you if you have
+extra time if you if we have extra time
+I'll have something to
+show uh yeah okay so so the audio is
+good in the classroom yep hear you
+you guys here
+yeah uh okay let me just uh share my
+entire screen here
+um okay you should be able to see can
+can you see the like screen clearly in
+class as well yes yes yes okay um so the
+first askas for lab intro is basically
+to Define this rgba pixel class so
+that's something we already talked about
+in the first lecture how to how to
+define
+these classes in in
+C++
+and uh we have these two files here or
+already in this lab we have the header
+file we have the uh CPP file and there
+already like this kind of um little
+framework or like yeah it's it's already
+the class is already defined here and we
+even have this uh the Double inclusion
+CS already uh set up here but what we're
+missing then of course are
+the
+um the the properties of the class so so
+first thing we we
+need the RGB and a values and we wanted
+them to be public in this case and what
+we wanted was the U in 8 so so what this
+means is unsigned integer 8
+bit so so it's a 8bit value so so that
+and it's unsigned so that means it
+doesn't get any negative values it goes
+from zero to 255 which is commonly used
+for uh describing rgba values
+uh okay so then we
+can do this definition
+for all of
+these uh right uh the alpha as
+well okay so then what what happens if
+we if we want to
+compile right
+now
+uh oh okay okay we actually run into
+that issue let's um let's define our
+Constructors first as well uh so we
+need right we we did this with in
+values so so we have the Constructor
+with no arguments and then we have the
+Constructor with the uh values that
+initialize the red green and blue
+channels
+already and we could name
+them like
+this uh okay so so right now now now we
+have already declared the constructors
+so so then
+it's yeah yeah oh nice I can actually
+make this bigger that's
+[Music]
+nice
+um okay so so nether declared that they
+don't actually we didn't actually Define
+what these Constructors do yet but but
+at least we can compile but now we also
+find this
+issue uh what is this
+8core T the compiler doesn't know but it
+has conveniently a suggestion here maybe
+you didn't uh
+include include this um
+Library uh so so we can include that
+cstd D
+in so so this Library basically includes
+this uh type that we like to
+use let's try
+again
+um okay now it's a little better but uh
+now we should
+also uh
+Define our actual Constructors so
+let's uh look at the CPP file
+then so then here you can see that uh we
+have just this line include RGB pixel. H
+so that you can essentially think that
+that's what like connects these two
+files uh to each other so that's already
+set up and then
+to uh Define these uh
+functions so so that's first we
+have this
+to uh
+Define like
+the what what what what are we talking
+about so so we're talking about like
+something that's inside this
+rgba uh pixel class and then uh then
+this is the name of the Constructor and
+of course Constructors don't have uh any
+return type so so it just looks like
+this no return tag but the same name as
+class uh okay so then
+for the default Constructor for
+us uh well if we didn't declare any like
+Constructor in in the first place then
+we would have some kind of default
+Constructor but like this is our
+Constructor of of no arguments and we
+want to Define what the
+default value should be so so this is
+the this is the kind of like simplest
+way to uh do things and to like
+understand there there is also the
+option of using
+initializer list which looks a little
+bit different but
+uh now that we're dealing with like some
+like trivial data types and not like
+other classes it's not really a big deal
+which way you do it and then of
+course but but sorry elmary I I actually
+forgot to mention in lecture that it's
+slightly more
+efficient to do it in the initialization
+line rather than within the function
+within the block of the function because
+then less stack is used and yeah and
+that's important to remember like if you
+really want to optimize everything then
+putting in a line is more efficient
+because then you don't have to put those
+variables on the stack within this curly
+bracket at all so much less stack is
+used and you can even show the code
+where it's signant slow if you do it
+many many
+times sorry I just forgot to mention it
+in lecture so I wanted to put it out
+there yeah uh so so it is more optimal
+the difference is significantly
+larger uh when you're dealing with like
+classes as as member uh variables like
+like if if all of these were like some
+kind of classes or like objects of like
+some user defined class for
+example uh then it would be much more
+efficient to like just directly
+initialize it here because otherwise you
+would need to like first call the
+default Constructor and then start
+changing the values uh so so in the CL
+in the case of like class objects it's
+it's much more important to use the
+initializer list but with with like this
+kind of trivial data types it's not
+really uh that big of a deal and
+sometimes you do need like some kind of
+logic to it like uh depending on some
+kind of
+factors um
+maybe like you you could have I if
+statements here
+like if uh if
+true uh well that's not really uh a good
+example but but that the point is that
+you have more control this way but but
+when you can do things with initializer
+list then then it's a good way to do
+things so I can actually just remove all
+of that and just keep
+these and that's
+a good
+Constructor okay let's define the other
+one as
+well the one where
+we initialize it with user given values
+and and this one you can actually also
+do uh the same way right
+yep uh so we're going to end up having
+like kind of a long line but I guess we
+can also split it into
+Parts see if the users are going to send
+800 instead of 225 you know then uh you
+don't check no Checker in the
+initialization line right you can yeah
+that's true if if we if we use like ins
+here yeah yeah then they they might have
+like U they might give us bad values um
+so I guess I could
+also it's fine for now it's okay we just
+we're explaining what can go
+wrong
+yeah
+um but that's example of where the
+outter grader right El in the outter
+grader you could check for good behavior
+like this if we were to ask that it
+should behave well so that's where they
+are when you when you sent your
+submissions through love La we actually
+going to run this code like wrap it
+around with in different test cases and
+that's where you could test whether your
+Constructors actually do the right thing
+right whether you use uh good you know
+good rules for writing
+code so if you compile and run your code
+and it all is fine on your side it
+doesn't mean that you run it on all test
+cases that we
+have but just be warned because
+sometimes you may still not pass out a
+greater for these kind of
+reasons okay yeah very cool yeah so so
+in C++ also it's good to note that we we
+can we can do line breaks without having
+to worry about anything because
+uh because because this is not Python
+and we always have like some kind of uh
+symbols to determine what part of the
+code we're dealing with so so if you end
+up getting like a really long line then
+then generally it's pretty easy to like
+split things into multiple
+lines uh okay so so now now it
+compiles
+um and now before even touching the
+main function we
+can um look at the result also if you're
+using the Linux
+subsystem and like you're kind of
+looking at the files directly here then
+it's not going to like automatically
+refresh at least it doesn't for me so
+then I'm I hitting F5 when I'm expecting
+like some new files to be here before I
+actually see
+them uh okay
+so the result is that that we're able to
+draw these cross here so so that's
+something where you need to have
+those uh need to have the rgba pixel
+class working with uh good Constructors
+but then
+there's some things in
+the oh go on then
+update uh it'll update before I have to
+use it again um okay
+so so in the main function
+then if we look at the structure
+here uh so so when we run the program
+this is where it's going to actually
+like first go in the main function start
+executing things so so we load the
+sample
+image
+um and Sample image is this that's kind
+of what we already saw except we had the
+crosshairs on top of
+it uh okay
+um and then then we have
+overlay which is this text on a black
+background and then the first thing we
+do is we brighten the
+overlay with this uh value
+128 okay so let's look at the brighten
+function uh so as arguments we have the
+original
+PNG and we have the amount to uh in
+increase the brightness by and you
+already have this Loop
+here so it's looping through all the
+pixels uh in the
+image and then we can kind of look uh as
+example the this function here how we
+can uh how we can kind of access these
+pixels so so we can see that this way uh
+that there's this
+um operator overload load for like using
+these brackets where where you can put
+the X and Y
+coordinates uh to access a pixel there
+so so in this case uh you're just kind
+of um in inserting
+these rgba
+pixel objects in into these uh different
+pixel coordinates but in this case we
+want to modify uh each Channel
+uh
+separately uh
+okay so if we take the original
+XI y i uh actually let me let me also
+like kind of show where this is coming
+from yeah where is the overload is yeah
+so if if you look at the
+you have all the files here so you can
+open the
+PNG uh PNG
+Doh and and here you start seeing this
+uh this operator keyword and then there
+always something I promise we'll go in
+lectures through operator overloads and
+we'll go in details but now is just like
+if you had a job in software engineering
+company you're just given this code and
+like you're surviving right and later
+we'll we'll have many Le to cover this
+but let's uh let's start now okay go
+ahead sorry
+El yes so we can find it from here uh so
+so this operator and then uh these
+arguments are are defined and then what
+it returns is pointer to rgba
+pixel uh and we don't really need to
+look at the definition here we can just
+look at the header file and see that
+okay this is what it does
+this is something that I can do uh I use
+this operator with this coordinates and
+and does some kind of comment here to
+describe uh what it does and and then I
+know what I'm going to get out of
+it
+uh okay so then this should
+be uh this should give us a
+pointer
+uh and
+then
+hopefully hopefully I'm doing doing this
+right now but uh so it should be like
+this right so so when it's a pointer and
+we want to
+access like um property of the object
+that the pointer is pointing to then we
+can actually use this operator uh so in
+this case uh this is used to D reference
+the pointer and like that's kind of an
+approach that that we can use but then
+this is kind of a a shortcut also a
+shortcut yes we didn't we didn't teach
+it yet yeah that's interesting I should
+put it earlier um I'm following what has
+been done at University of Illinois but
+yeah it's kind of like you have to
+figure it out yourself here and then
+teach it many things are like that
+unfortunately because you can't teach
+everything like in the first lecture
+there has to be some order but
+yeah yeah yeah you can also like do it
+by D referencing but uh I'll I'll show
+this anyway um but just to like test
+that yeah it compiles this way so this
+is like a valid way to do things so so
+this way we could just like Define
+values here but but we don't want to
+Define this we want to build our like
+brightening logic here so then we can
+kind
+of uh take this value again and then add
+the amount to
+it
+um okay so so some of you probably know
+that that there's going to be like a
+little problem with this and I'm going
+to show what the the problem looks like
+before I fix
+it uh
+okay it's going to only brighten the
+overlay and
+then yeah that's actually not going to
+show up but I'm going
+to brighten
+the I'm going to brighten the image
+instead so so you can see the uh effect
+uh hold
+on okay now I'm a little bit confused
+why nothing actually changed
+make yeah maybe I should do
+that
+it's still the same
+okay
+um maybe I'll just
+proceed further and I think the issue is
+going to come up in a moment anyway uh
+okay let's let's leave it like that for
+now and then do the uh
+Blend images
+function uh okay
+so we're going to have kind of a
+similar logic here where we Loop through
+all the pixels this time we
+have uh two different pngs as arguments
+and we the function is going to return
+the first image so that's going to be
+the output so so then we modify the
+first
+image okay so once
+again
+we can kind of start with this basis
+that we're going
+to uh modify all of these pixels
+individually
+so so so one one student uh brought it
+up before that like like isn't isn't
+this kind of complicated like like we
+have to do all of these separately um so
+so the thing is if you wanted to have a
+simpler way to do things your main
+function uh then you would need to edit
+your classes to add some kind of
+functionality
+like like in
+the in the rgba pixel class for example
+we could Define overloads
+for uh
+like addition for example like what does
+it mean if we have rgba pixel plus
+another one uh
+the uh comp piler C++ doesn't know
+automatically what that's supposed to do
+but you could Define it that okay what
+that means is that we uh add each of the
+like rgba
+channels uh like with each
+other and then you could kind of make it
+easier maybe in your in your main
+function so you're going to have to do
+everything yourself is the
+idea okay so quite simply we can uh do
+[Music]
+something like
+this uh add those two together and
+divide by two and something that was
+also brought
+up um before
+is I I've seen some students uh want to
+like cast these two different types or
+or round the
+result uh
+but it's not like the
+results might turn to like a decimal
+number here that that doesn't that
+doesn't happen it's going to uh stick to
+the same type I mean there can be like
+kind of type conversions happening
+between uh like our U ins and and ins
+for example or like
+if
+um like we're doing addition here for
+example so so if this was limited to uh
+255 then then we might have some trouble
+so so I think what's happening here is
+that it's actually like
+using uh like in or something to do this
+addition and then it's going to divide
+but then the end result is always going
+to be u in anyway and and you don't
+really have to worry about the uh type
+conversions at least in this case I mean
+some cases you of course have to
+but but it's going to be just fine it's
+going to be whole numbers all the way
+through let me
+call good
+all okay and let's remember to have the
+correct uh channel for each of these
+because that's a like a bug that can
+easily happen here where it's like you
+you forget this as like cred because you
+were copy pasting and then you're
+wondering what the result doesn't quite
+match
+uh okay so now te technically we've done
+everything so let's look at the output I
+think it wraps around with the B Spain
+you should check for yeah yeah yeah I
+wanted to show uh this problem
+here so so depending a little bit how
+how you do things uh you might get this
+issue where it's like like why why is
+this text so bad or maybe if you're
+trying to brighten the background image
+then uh you might get some like really
+funky colors in the in the sky or
+something and and the reason for that is
+because because we're using this
+uint uh that are 8 Bits
+And here what can happen is that if
+this value for example is the the value
+for Fred in one of the pixels is let's
+say 200 and then the amount by which
+we're adding is
+128 uh then that would be like
+328 and we're trying to put that number
+into this 8bit
+type so what's going to happen then like
+that's not going to fit so then what
+happens is is that it wraps around uh
+and then we start getting like uh low
+values all of a sudden so so that's kind
+of why the text is
+disappearing is
+because the text is supposed to be white
+but then it's wrapping around and then
+it's like
+actually just going to kind of
+disappear or or if we were applying this
+to the background
+image then you'll see funky colors
+because like everything's kind of going
+to be unbalanced because like some of
+the colors are going to wrap around and
+some are not and and it's going to get
+really
+weird but how we want this to
+behave is that at most this will
+increase the value to
+255 so again if if this is 200 and this
+is
+128 then we want the end result to be
+255
+mhm and the easiest way to do that is to
+use the Min function
+which in this case is already going to
+be included and we're already using the
+namespace
+STD uh it's included in the
+algorithm yeah library in the standard
+Library yeah uh so we can just
+use uh use this function
+now uh okay
+so if we do
+this then again if if if here we end up
+getting
+328 but
+then the other argument for the Min
+function is
+255 then the function is going to return
+255 because that's the smaller number
+out of these two so then you use the Min
+function actually to define the maximum
+that you want to get out of this
+operation uh it can feel a bit like
+reverse thinking maybe that I used the
+Min function to define a maximum but uh
+that's kind of how it ends up
+working so this way you can do all of
+this in just three lines you don't need
+any uh if statements you don't need
+to
+uh declare and Define any any other
+variables in
+between uh you can do everything in in
+just three
+lines okay and there we go that looks
+just about
+correct and then if we
+also run diff then it doesn't produce
+any output which means that the
+uh images match
+perfectly okay I guess uh
+any questions about the question in the
+chat there's a question in the
+chat yeah I saw that question and then I
+was thinking that
+honestly I don't think I can provide a
+good
+answer
+no me think that's a good question to
+ask on Discord and maybe one of the Cy
+guys can yeah I answer that
+one okay okay but we are out of time
+thank you El was this useful was this
+useful so I think it would be a good
+practice to do that every Monday for a
+lab so that at least we're all clear on
+what's going on in the labs
+right and it will help uh you have MPS
+that are individual so you have to work
+on that yourself but if we make sure
+that you follow Labs then you get a lot
+out of this class because lecture
+materials is much more basic it's
+important to cover basic stuff it's
+important to understand those
+definitions
+but um then we still cover the labs this
+was great El thank you so much okay so
+we'll see you um on
+Thursday thank you El bye all right see
+you bye

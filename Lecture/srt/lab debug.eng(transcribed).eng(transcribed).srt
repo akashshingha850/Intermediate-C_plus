@@ -1,0 +1,1052 @@
+﻿1
+00:00:02,000 --> 00:00:05,440
+okay so for lab debug you only have this
+
+2
+00:00:05,440 --> 00:00:08,760
+one file that you need to work with the
+
+3
+00:00:08,760 --> 00:00:10,599
+sketchy do
+
+4
+00:00:10,599 --> 00:00:13,880
+CPP and uh when you open it it looks
+
+5
+00:00:13,880 --> 00:00:15,879
+like this you you can see there's a
+
+6
+00:00:15,879 --> 00:00:18,920
+couple functions here but then uh the
+
+7
+00:00:18,920 --> 00:00:21,760
+sketchy function is is the main function
+
+8
+00:00:21,760 --> 00:00:24,279
+so there's the main CPP file but all it
+
+9
+00:00:24,279 --> 00:00:25,960
+does is call the
+
+10
+00:00:25,960 --> 00:00:29,439
+sketchy function so this is the
+
+11
+00:00:29,439 --> 00:00:32,960
+essentially the the main
+
+12
+00:00:32,960 --> 00:00:36,879
+program uh okay
+
+13
+00:00:36,879 --> 00:00:39,000
+so if
+
+14
+00:00:39,000 --> 00:00:42,640
+we TR the
+
+15
+00:00:43,120 --> 00:00:49,199
+program now then uh we get segmentation
+
+16
+00:00:49,199 --> 00:00:53,000
+fault um you might also get like a
+
+17
+00:00:53,000 --> 00:00:55,280
+different kind of error where where it
+
+18
+00:00:55,280 --> 00:00:56,320
+says
+
+19
+00:00:56,320 --> 00:00:58,680
+like
+
+20
+00:00:58,680 --> 00:01:02,399
+uh it some kind of like pointer error
+
+21
+00:01:02,399 --> 00:01:04,599
+and and it's basically because there
+
+22
+00:01:04,599 --> 00:01:06,520
+some kind of undefined Behavior going on
+
+23
+00:01:06,520 --> 00:01:09,920
+and uh the error you actually get might
+
+24
+00:01:09,920 --> 00:01:12,080
+might
+
+25
+00:01:12,080 --> 00:01:15,000
+vary so then that doesn't really give us
+
+26
+00:01:15,000 --> 00:01:18,479
+much information about uh where this
+
+27
+00:01:18,479 --> 00:01:21,520
+happened or or why
+
+28
+00:01:21,520 --> 00:01:24,640
+exactly uh
+
+29
+00:01:24,640 --> 00:01:29,400
+so what we can do with some like uh
+
+30
+00:01:29,400 --> 00:01:33,600
+basic debugging methods
+
+31
+00:01:33,600 --> 00:01:38,520
+is we can put some print statements
+
+32
+00:01:38,520 --> 00:01:41,520
+here
+
+33
+00:01:47,880 --> 00:01:51,759
+um so like this for example so so then
+
+34
+00:01:51,759 --> 00:01:54,560
+with this it's going to print the line
+
+35
+00:01:54,560 --> 00:01:58,439
+that uh we're currently
+
+36
+00:01:58,439 --> 00:02:00,719
+on uh
+
+37
+00:02:00,719 --> 00:02:02,600
+so let's let's put a couple of those
+
+38
+00:02:02,600 --> 00:02:05,200
+print statements
+
+39
+00:02:05,200 --> 00:02:07,759
+there um
+
+40
+00:02:07,759 --> 00:02:11,120
+oh there an extra white space
+
+41
+00:02:11,120 --> 00:02:13,520
+there okay so now we can see we reached
+
+42
+00:02:13,520 --> 00:02:16,360
+line 29 but we didn't reach
+
+43
+00:02:16,360 --> 00:02:18,599
+this so then we can tell that there's
+
+44
+00:02:18,599 --> 00:02:22,080
+something wrong here and see as we have
+
+45
+00:02:22,080 --> 00:02:25,200
+segmentation fall as like it must be
+
+46
+00:02:25,200 --> 00:02:29,640
+some kind of um uninitialized memory or
+
+47
+00:02:29,640 --> 00:02:31,160
+like trying to access something that
+
+48
+00:02:31,160 --> 00:02:33,280
+we're not supposed to access that's
+
+49
+00:02:33,280 --> 00:02:35,800
+generally what it means so then then
+
+50
+00:02:35,800 --> 00:02:37,400
+let's look at this what we're trying to
+
+51
+00:02:37,400 --> 00:02:42,120
+do is uh call the fre from file function
+
+52
+00:02:42,120 --> 00:02:44,599
+for this uh
+
+53
+00:02:44,599 --> 00:02:48,400
+PNG and and well we we can notice that
+
+54
+00:02:48,400 --> 00:02:50,599
+this PNG is
+
+55
+00:02:50,599 --> 00:02:53,720
+actually uh this is the thing that's
+
+56
+00:02:53,720 --> 00:02:55,760
+that's uninitialized in this case that
+
+57
+00:02:55,760 --> 00:02:58,840
+that's why we're getting this
+
+58
+00:02:58,840 --> 00:03:00,720
+problem
+
+59
+00:03:00,720 --> 00:03:06,599
+um so then let's let's initialize it
+
+60
+00:03:06,599 --> 00:03:08,840
+like
+
+61
+00:03:10,879 --> 00:03:14,680
+that uh okay okay now we got further but
+
+62
+00:03:14,680 --> 00:03:17,720
+what will notice that uh we don't
+
+63
+00:03:17,720 --> 00:03:20,519
+actually have that file to open and
+
+64
+00:03:20,519 --> 00:03:23,480
+that's because I forgot about
+
+65
+00:03:23,480 --> 00:03:26,879
+this initial
+
+66
+00:03:26,879 --> 00:03:30,360
+step so let's just uh in default
+
+67
+00:03:30,360 --> 00:03:33,360
+there's uh a
+
+68
+00:03:33,360 --> 00:03:35,920
+couple a couple
+
+69
+00:03:35,920 --> 00:03:39,120
+images and and you can choose like which
+
+70
+00:03:39,120 --> 00:03:44,959
+one you you copy as the ind. PNG for the
+
+71
+00:03:44,959 --> 00:03:46,599
+program
+
+72
+00:03:46,599 --> 00:03:49,239
+um you you can also just do the copying
+
+73
+00:03:49,239 --> 00:03:52,480
+and reaming in the Windows Explorer or
+
+74
+00:03:52,480 --> 00:03:54,680
+whatever you're
+
+75
+00:03:54,680 --> 00:03:59,159
+using uh anyway now if we run this you
+
+76
+00:03:59,159 --> 00:04:01,280
+can see that we we're getting further
+
+77
+00:04:01,280 --> 00:04:04,360
+now but then we're running into another
+
+78
+00:04:04,360 --> 00:04:07,120
+segmentation fault
+
+79
+00:04:07,120 --> 00:04:09,760
+somewhere
+
+80
+00:04:09,760 --> 00:04:13,239
+so let's try to see where it
+
+81
+00:04:13,239 --> 00:04:16,040
+is
+
+82
+00:04:16,040 --> 00:04:19,399
+um yeah we can get all the way over here
+
+83
+00:04:19,399 --> 00:04:21,478
+that's
+
+84
+00:04:21,478 --> 00:04:24,479
+fine
+
+85
+00:04:25,360 --> 00:04:28,720
+um TR
+
+86
+00:04:28,720 --> 00:04:31,720
+this
+
+87
+00:04:32,600 --> 00:04:36,120
+okay we we reached line 60 so this is in
+
+88
+00:04:36,120 --> 00:04:40,840
+this Loop so we made made it all the way
+
+89
+00:04:40,840 --> 00:04:43,919
+here uh on the first Loop somewhere here
+
+90
+00:04:43,919 --> 00:04:47,320
+it it must be crashing then uh so what
+
+91
+00:04:47,320 --> 00:04:50,320
+could be uninitialized here well well
+
+92
+00:04:50,320 --> 00:04:51,919
+this is fine because we're just like
+
+93
+00:04:51,919 --> 00:04:54,080
+putting something in there but and what
+
+94
+00:04:54,080 --> 00:04:57,120
+about this output well we'll notice that
+
+95
+00:04:57,120 --> 00:05:00,080
+okay it's actually the same issue uh
+
+96
+00:05:00,080 --> 00:05:03,400
+here that's just like uninitialized now
+
+97
+00:05:03,400 --> 00:05:06,680
+we are calling the setup output function
+
+98
+00:05:06,680 --> 00:05:09,880
+here uh so so let's see what that
+
+99
+00:05:09,880 --> 00:05:12,680
+function actually does well it turns a
+
+100
+00:05:12,680 --> 00:05:16,320
+pointer to an image it initializes a new
+
+101
+00:05:16,320 --> 00:05:19,840
+PNG and returns a pointer to it and then
+
+102
+00:05:19,840 --> 00:05:22,520
+returns it
+
+103
+00:05:22,520 --> 00:05:25,759
+um but we're not actually doing anything
+
+104
+00:05:25,759 --> 00:05:28,440
+with the pointer that's being
+
+105
+00:05:28,440 --> 00:05:31,160
+returned uh
+
+106
+00:05:31,160 --> 00:05:35,120
+so then output remains
+
+107
+00:05:35,280 --> 00:05:38,680
+uninitialized so then we could simply do
+
+108
+00:05:38,680 --> 00:05:42,160
+this so now we actually save the pointer
+
+109
+00:05:42,160 --> 00:05:44,840
+that's being returned so that should be
+
+110
+00:05:44,840 --> 00:05:46,600
+a lot better
+
+111
+00:05:46,600 --> 00:05:50,600
+now okay uh now it's not crashing but
+
+112
+00:05:50,600 --> 00:05:53,560
+it's trying to access some like crazy
+
+113
+00:05:53,560 --> 00:05:54,560
+high
+
+114
+00:05:54,560 --> 00:05:58,520
+pixels here and uh if if it like in if
+
+115
+00:05:58,520 --> 00:06:01,520
+it's uh infinitely looping then you can
+
+116
+00:06:01,520 --> 00:06:05,039
+press contrl C uh to put a stop to
+
+117
+00:06:05,039 --> 00:06:06,800
+that
+
+118
+00:06:06,800 --> 00:06:11,919
+um okay so seeing as it's like looping
+
+119
+00:06:11,919 --> 00:06:14,919
+way past what it's supposed to we should
+
+120
+00:06:14,919 --> 00:06:17,800
+probably look at the uh looping
+
+121
+00:06:17,800 --> 00:06:22,479
+conditions here so so we start with uh
+
+122
+00:06:22,479 --> 00:06:23,520
+value
+
+123
+00:06:23,520 --> 00:06:26,919
+one and then we increment it but then
+
+124
+00:06:26,919 --> 00:06:28,560
+then this is like the actual condition
+
+125
+00:06:28,560 --> 00:06:31,319
+so so what what's going on here that
+
+126
+00:06:31,319 --> 00:06:33,560
+this is this is
+
+127
+00:06:33,560 --> 00:06:36,880
+not like any kind of syntax that you're
+
+128
+00:06:36,880 --> 00:06:39,560
+supposed to use what actually happens
+
+129
+00:06:39,560 --> 00:06:42,880
+here is that it first checks if zero is
+
+130
+00:06:42,880 --> 00:06:45,520
+less than Y which it always
+
+131
+00:06:45,520 --> 00:06:48,560
+is so then it returns true which
+
+132
+00:06:48,560 --> 00:06:52,720
+corresponds to uh number one
+
+133
+00:06:52,720 --> 00:06:56,240
+basically and then it checks if if if
+
+134
+00:06:56,240 --> 00:07:00,240
+true or in other words one is less than
+
+135
+00:07:00,240 --> 00:07:03,160
+height and that's also always true so
+
+136
+00:07:03,160 --> 00:07:04,639
+then it's just infinitely
+
+137
+00:07:04,639 --> 00:07:08,319
+looping uh so all we want to do is see
+
+138
+00:07:08,319 --> 00:07:10,440
+if Y is less than
+
+139
+00:07:10,440 --> 00:07:13,000
+height that should be the condition for
+
+140
+00:07:13,000 --> 00:07:16,720
+Loop and the same for X
+
+141
+00:07:18,080 --> 00:07:21,840
+there uh okay now we're actually not
+
+142
+00:07:21,840 --> 00:07:26,159
+getting any any arrows
+
+143
+00:07:26,840 --> 00:07:28,520
+here
+
+144
+00:07:28,520 --> 00:07:30,160
+um
+
+145
+00:07:30,160 --> 00:07:32,240
+but
+
+146
+00:07:32,240 --> 00:07:36,199
+then if we go and look
+
+147
+00:07:36,199 --> 00:07:40,680
+at the output of our
+
+148
+00:07:43,319 --> 00:07:47,159
+program let me just
+
+149
+00:07:48,000 --> 00:07:51,120
+quickly add that Source in
+
+150
+00:07:51,120 --> 00:07:54,400
+here yeah there we go
+
+151
+00:07:54,400 --> 00:07:58,440
+um yeah we can we can see
+
+152
+00:07:58,440 --> 00:08:01,319
+that it's actually just blank so that's
+
+153
+00:08:01,319 --> 00:08:02,960
+not how it's supposed to
+
+154
+00:08:02,960 --> 00:08:04,960
+be
+
+155
+00:08:04,960 --> 00:08:10,479
+uh out 01 uh shows the uh intended
+
+156
+00:08:10,479 --> 00:08:14,319
+output for uh if you're using
+
+157
+00:08:14,319 --> 00:08:18,000
+in01 as the input
+
+158
+00:08:19,960 --> 00:08:24,440
+image okay so the result is wrong uh and
+
+159
+00:08:24,440 --> 00:08:28,599
+then uh why could that be so so we're
+
+160
+00:08:28,599 --> 00:08:31,320
+getting this
+
+161
+00:08:31,320 --> 00:08:34,880
+color and then we're putting that
+
+162
+00:08:34,880 --> 00:08:39,399
+color uh into this pixels uh now now I
+
+163
+00:08:39,399 --> 00:08:40,360
+can
+
+164
+00:08:40,360 --> 00:08:43,320
+already uh I'll just tell straight up
+
+165
+00:08:43,320 --> 00:08:46,240
+that that this is like a line we're
+
+166
+00:08:46,240 --> 00:08:49,160
+going to reach each so so all of this is
+
+167
+00:08:49,160 --> 00:08:53,320
+fine like like you could you
+
+168
+00:08:53,320 --> 00:08:56,320
+could
+
+169
+00:08:56,839 --> 00:08:58,440
+put
+
+170
+00:08:58,440 --> 00:09:01,160
+uh like a print statement
+
+171
+00:09:01,160 --> 00:09:05,040
+here uh in this way and find out that
+
+172
+00:09:05,040 --> 00:09:08,079
+okay yeah yeah we are getting here but
+
+173
+00:09:08,079 --> 00:09:12,399
+then why is why why is it not
+
+174
+00:09:12,399 --> 00:09:17,640
+changing the the pixel values
+
+175
+00:09:17,839 --> 00:09:22,800
+um but then maybe maybe first we should
+
+176
+00:09:22,800 --> 00:09:27,519
+check uh if the color we're getting
+
+177
+00:09:27,519 --> 00:09:29,560
+here if we're actually getting it
+
+178
+00:09:29,560 --> 00:09:33,079
+correctly so so let's see if
+
+179
+00:09:33,079 --> 00:09:36,640
+um let's replace this with
+
+180
+00:09:36,640 --> 00:09:40,160
+um my
+
+181
+00:09:40,519 --> 00:09:42,920
+pixel
+
+182
+00:09:42,920 --> 00:09:45,560
+um
+
+183
+00:09:45,560 --> 00:09:48,680
+blue and that should be
+
+184
+00:09:48,680 --> 00:09:51,399
+192 it should be equal to intensity
+
+185
+00:09:51,399 --> 00:09:54,800
+which is 192 here
+
+186
+00:09:54,800 --> 00:09:57,279
+uh now in this case yeah you need to
+
+187
+00:09:57,279 --> 00:10:00,959
+cast it to like int or or or something
+
+188
+00:10:00,959 --> 00:10:03,000
+uh for it to like actually display it as
+
+189
+00:10:03,000 --> 00:10:05,680
+a number otherwise it tries to display
+
+190
+00:10:05,680 --> 00:10:10,079
+it as like a asky
+
+191
+00:10:10,360 --> 00:10:13,640
+character okay so let's see what we
+
+192
+00:10:13,640 --> 00:10:17,800
+get uh well nowly we get segmentation
+
+193
+00:10:17,800 --> 00:10:18,839
+fault
+
+194
+00:10:18,839 --> 00:10:21,760
+here so clearly there's some kind of
+
+195
+00:10:21,760 --> 00:10:23,279
+problem here we can't actually access
+
+196
+00:10:23,279 --> 00:10:25,959
+this and we'll notice
+
+197
+00:10:25,959 --> 00:10:27,680
+that
+
+198
+00:10:27,680 --> 00:10:31,000
+uh the Freez for that is that we're
+
+199
+00:10:31,000 --> 00:10:32,680
+actually trying to return an address to
+
+200
+00:10:32,680 --> 00:10:34,360
+a local
+
+201
+00:10:34,360 --> 00:10:37,920
+variable uh of of this function and and
+
+202
+00:10:37,920 --> 00:10:42,079
+that's something we can't do
+
+203
+00:10:42,519 --> 00:10:47,240
+so what we can do instead for example
+
+204
+00:10:47,240 --> 00:10:50,240
+is
+
+205
+00:10:53,240 --> 00:10:56,760
+um create this rgba pixel in the Heap
+
+206
+00:10:56,760 --> 00:10:59,920
+and return a pointer to it uh
+
+207
+00:10:59,920 --> 00:11:02,360
+so we could also simplify this a little
+
+208
+00:11:02,360 --> 00:11:04,040
+bit by
+
+209
+00:11:04,040 --> 00:11:07,920
+um initializing it directly like
+
+210
+00:11:07,920 --> 00:11:12,199
+that and then just return the
+
+211
+00:11:12,399 --> 00:11:15,000
+pointer so that should be a lot better
+
+212
+00:11:15,000 --> 00:11:18,639
+okay we're getting the correct uh
+
+213
+00:11:18,639 --> 00:11:20,200
+correct values
+
+214
+00:11:20,200 --> 00:11:22,560
+here but we can see that the output is
+
+215
+00:11:22,560 --> 00:11:25,040
+still
+
+216
+00:11:26,560 --> 00:11:30,720
+blank um so what else could be the
+
+217
+00:11:30,720 --> 00:11:32,920
+problem
+
+218
+00:11:32,920 --> 00:11:36,720
+now so we're getting this
+
+219
+00:11:36,720 --> 00:11:39,959
+pointer to a pixel in the
+
+220
+00:11:39,959 --> 00:11:45,319
+PNG and then we're replacing the
+
+221
+00:11:45,639 --> 00:11:48,320
+pointer but the problem with this is
+
+222
+00:11:48,320 --> 00:11:52,600
+that uh now we're not actually
+
+223
+00:11:52,600 --> 00:11:57,440
+changing the the data of of of the
+
+224
+00:11:57,440 --> 00:12:01,240
+actual image
+
+225
+00:12:01,959 --> 00:12:05,680
+uh so so in in the PNG uh the the pixels
+
+226
+00:12:05,680 --> 00:12:07,880
+are
+
+227
+00:12:07,880 --> 00:12:11,519
+basically lined up in in in like one big
+
+228
+00:12:11,519 --> 00:12:13,639
+aray in the
+
+229
+00:12:13,639 --> 00:12:18,120
+Heap and and what we need to
+
+230
+00:12:18,120 --> 00:12:22,279
+do uh is is modify that data uh like
+
+231
+00:12:22,279 --> 00:12:25,440
+when we do this we we get a
+
+232
+00:12:25,440 --> 00:12:28,600
+pointer uh to a specific point in that
+
+233
+00:12:28,600 --> 00:12:31,800
+array but if we change this pointer it
+
+234
+00:12:31,800 --> 00:12:33,680
+doesn't actually change anything about
+
+235
+00:12:33,680 --> 00:12:37,000
+how this uh PNG works so so we need to
+
+236
+00:12:37,000 --> 00:12:40,720
+change the actual data uh of
+
+237
+00:12:40,720 --> 00:12:45,399
+it so then let's just dreference both of
+
+238
+00:12:45,399 --> 00:12:50,800
+these so then this way we access the
+
+239
+00:12:50,800 --> 00:12:54,000
+data that this pointer is pointing to
+
+240
+00:12:54,000 --> 00:12:58,120
+and then this way we
+
+241
+00:12:58,120 --> 00:13:02,519
+um access the the data of of of our
+
+242
+00:13:02,519 --> 00:13:04,000
+favorite
+
+243
+00:13:04,000 --> 00:13:07,279
+color like
+
+244
+00:13:08,519 --> 00:13:14,639
+this okay and now everything looks
+
+245
+00:13:14,639 --> 00:13:18,519
+good and we can just
+
+246
+00:13:21,480 --> 00:13:24,839
+verify yeah it it matches perfectly so
+
+247
+00:13:24,839 --> 00:13:26,760
+no
+
+248
+00:13:26,760 --> 00:13:29,880
+problem uh and we can also so make sure
+
+249
+00:13:29,880 --> 00:13:31,760
+that everything's getting deleted
+
+250
+00:13:31,760 --> 00:13:35,959
+correctly so yeah it looks fine uh so
+
+251
+00:13:35,959 --> 00:13:37,560
+there are also like different ways you
+
+252
+00:13:37,560 --> 00:13:39,600
+could do this like you don't necessarily
+
+253
+00:13:39,600 --> 00:13:41,279
+have to have all of these things in the
+
+254
+00:13:41,279 --> 00:13:44,440
+stack like like my pixel for example you
+
+255
+00:13:44,440 --> 00:13:47,519
+you could also just return it as as a
+
+256
+00:13:47,519 --> 00:13:50,240
+copy uh and in that case you would just
+
+257
+00:13:50,240 --> 00:13:54,519
+like get rid of uh this line
+
+258
+00:13:54,519 --> 00:13:57,120
+here um but
+
+259
+00:13:57,120 --> 00:14:00,000
+anyway uh that
+
+260
+00:14:00,000 --> 00:14:04,079
+is that is basically the the solution
+
+261
+00:14:04,079 --> 00:14:05,519
+but if you did it a little bit
+
+262
+00:14:05,519 --> 00:14:09,800
+differently then that's that's also
+
+263
+00:14:10,720 --> 00:14:13,720
+fine
+

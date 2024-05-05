@@ -1,0 +1,1607 @@
+cord okay okay so
+you're what do you see
+here
+okay and why did that happen okay fine
+so now I'm going to go to my
+drive and just start here
+okay so now everything should
+work let's see
+announcements
+we posted Labs that um for some reason
+one when one reason or another they were
+not part of the lectures on Tuesdays but
+uh El recorded them and they on YouTube
+so you're welcome to look at them
+invited lecture of course please come
+and um um hopefully we'll have a big
+audience for
+V we actually had a meeting with v and
+some other cute um C
+collaborators and had a great discussion
+about going forward with our
+course which um let let me just go over
+this and kind of let's reflect where are
+we we are now right here right this is
+the deadline so it seems like all of
+these assignments were not really a
+waste of your time other than raw
+pointers and raw
+arrays so uh what we're going to do in
+the
+future is uh to our plan will be to keep
+these assignments with minor changes or
+upgrad to uh take all of those R
+pointers move them to some unique or
+share depending on the situation and
+instead of arrays use whatever is
+appropriate again vors or whatever but
+they'll stay the same so this is kind of
+okay this is okay material moreover it's
+it's a great material because it does
+keep students engaged now starting here
+these two labs they are about I mean all
+of them are more related to data
+structures which is not relevant to our
+course however these two are still kind
+of okay because they teach you GDB tool
+which is important but on
+L and lab dictionary will teach you
+iterators and some um actually uh
+standard Library containers which is
+cool you implement some there which is
+again cool but again uh
+on on maybe actually lab D is fine so
+that's something we didn't discuss maybe
+that's as it is even fine but anyway
+these two Labs we could move GDB portion
+right here and maybe keep lab dictionary
+but these three otherwise would have to
+be upgraded it's something cool and we
+thinking using cute for
+animation and add some more features
+more fun features and teach future
+students not you about other things that
+are uh were the way C++ was upgraded
+later installations from uh C++ whatever
+11 at most that we see here which means
+that
+for for
+our uh lectures
+everything is kind of great except for
+this
+week where again I'm talking
+about a little irrelevant data
+structures to this
+course which is a little unfortunate
+however if I don't talk about it then
+it's harder to do that homework so I
+have to talk about how how do we arrange
+memory in link lists so and hash table
+so that it's easier for you to solve
+those problems and yet this will be
+nuked at some point and instead we'll
+have some other features of C++ more re
+recent features of C++ covering here so
+what Willer Will do is what we'll have
+to move eventually in the front of the
+course because he'll start with our role
+and shared so that's something that you
+move there all of the thir first part of
+the exercis will will be upgraded
+correspondingly so that students can
+complete them and this part of the
+course will need to be revised
+but overall what is really exciting is
+that this is
+not totally embarrassing what we are
+doing right
+now it's not and it's not totally
+relevant for you what you're learning
+it's not not at all so it's all good
+it's just not as good as it could have
+been but you know you have to start
+somewhere and this is not a bad not an
+embarrassing
+story yeah if you're saying that 9 and
+are not relevance noways will be
+included in the exam
+or I'll try to avoid that uh yeah I'll
+try to avoid that hash tables
+like they'll be included but maybe not
+link list memory I will not ask you to
+oh please create a double link list or
+triple link list that used to be
+questions on previous exams it's why why
+we instead we'll ask something about you
+know
+STL maybe and inators implemented
+interor
+something will you talk more about the
+exam on the last yes yes that's what I
+wanted to tell you that as you can see
+this is review which most likely we will
+may not have live lecture
+anymore because that's the week that I
+preparing undertaking to prepare them
+wouldn't love this um especially since
+it's going to be live it's going to be
+online only
+final exam so anybody you can take it
+from
+anywhere people will be fine home for
+that's fine uh on the airplane but the
+thing is that we really there is
+consideration coming into it you'll have
+two hours
+only because it's so Pro to TV we have
+to do something to compensate for the
+fact that it's online open book open GPT
+chat GPT anything you can use anything
+but how will we compensate going to be
+short and there's going to be a lot
+ofes so if you are
+not that's not the language that you
+really really feel now it'll be harder
+because you know feel have to all of
+those things it will take time so if you
+know it it'll be easier to answer all
+those questions so it's not unheard of
+in my other classes to have like 60
+questions on the
+exam okay so that that's how it's going
+to be because of that
+yeah
+yeah most of the
+people an interviews still uh cute
+doesn't
+use oh cute for example they don't use
+list on onor anymore but you're right
+there are many maybe questions on the
+interviews out there web that were
+concerned about list and in fact my
+mentor when she was teaching this she
+was like why are we doing this because
+of the interview questions like she
+would say that I don't think it's
+anymore the case um at least cute said
+that they don't do that and uh we had a
+couple of other
+industry colleagues I would say or
+whatever uh contacting us being upset
+with the fact that we teaching uh link
+list so it will have to
+go it's a very painful time it's like
+red flat for many people who care about
+C++ when
+we last memory it's really really
+triggers it really triggers some
+people so it has to go and the reason
+why is that C++ I think I talked about
+it C++ has this reputation of being
+maybe mishandling
+memory and uh easy to fall for unsafe
+practices so it's very important to
+teach the good practices from the start
+and you'll see what can go wrong with so
+I'll show you now and it's better just
+not to implement it and yet there will
+be always a counterargument and even in
+conversation with v yesterday it's not
+completely useless it's just a matter of
+how you balance so like when I'm going
+to spend the entire lecture on it maybe
+that's wrong balance but it may be that
+you it may as all be that you guys will
+have to implement list one day we just
+don't know so it's not a useless
+information don't think about it if we
+had all the time in our lives we would
+spend electron
+list you
+know uh it just
+like maybe just wrong proportion of of
+the
+material okay and maybe in some company
+they'll ask you questions because they
+have old interview
+questions okay so um so this is kind of
+a big picture of what's going on let's
+go let's start our
+lecture see
+what so overall let's start with a list
+an abstract data type so what is an
+abstract data type when you need some
+functionality so an abstract data type
+in general is something probably that
+you learned in um
+data structure scores how many of you
+have taken data structure scores by the
+way please read me taken you will you
+have to I think it's part of the program
+to take data structure
+okay information processing science I
+think teaches that
+first so when you take that but you
+don't have to know it it's fine we will
+not talk about this stuff that they talk
+in data structures it just like a little
+intersection right
+here say you need to implement your a
+software engineer you need to implement
+a brochure list or any kind of other
+list right then you'll be first
+concerned is what the functionality that
+you should Implement and C++ is great
+for describing functionality because you
+just give an interface to the class and
+that tells you what the list is supposed
+to do so what is it supposed to do
+you're supposed to create a list well in
+this particular interfaces you start
+with empty list and then you start
+adding elements at certain locations
+that's fine maybe you could add a
+functionality of Constructor from set of
+elements to create a list maybe or maybe
+you always just want to add elements one
+by one again a list it's a list right so
+what do you do with
+list just a collection of data that is
+in this right and you should be able to
+grab any index from any location or
+insert any any new data in at that index
+or whatever location and that's it there
+is no other functionality right so it's
+a very simple basic abstract data type
+the question is how would you implement
+plus plus even when you give this
+interface that describes functionality
+it doesn't really tell you how is
+implement the
+need and there are many ways to
+implement it so how would you store
+those documents uh those elements where
+would you lay it out in
+memory so one way is to not even bother
+and go to STD lists right list
+whatever then library has one you
+it see what's underneath how they
+implement it
+arrays not link
+memory however long time ago when there
+was not enough
+memory when you could actually run out
+of
+heat the way to implement it was linked
+memory and that's what I'll talk about
+today is this something you'll ever need
+to implement we don't know again nobody
+knows maybe but very unlikely most
+likely you'll just use STD list forever
+and you'll never need to bother with it
+if you even if you needed to implement
+this functionality probably you would
+still use arrays because again you are
+not likely to run out H memory
+any and yet here we are we'll go through
+linked memory implementation of a list
+so and the reason is homework mainly
+maybe interview questions maybe where
+did you get that information that they
+interview questions and
+linklist
+yeah so they still ask for that maybe
+they needed okay guys you know what I'm
+so glad that you said that because as I
+when I was asking around nobody ask
+questions about list anymore at cute
+they ask questions Implement payroll you
+know like something much more
+practical however I knew that 10 years
+ago Google Facebook anybody who would
+recruit our students at the University
+of Illinois they were asking this
+questions so yes some people still ask
+this questions on the interview so
+that's another motivation that I didn't
+know before this lecture good good to
+know okay so let's go it is tricky it is
+a tricky way to implement it and let's
+see how that would be implemented so we
+are talking about the new memory model
+so how is this data going to be arranged
+in memory and here is the deal we will
+have this struct that has well you know
+that struct is class public right
+everything is public there so that's
+okay so does it have data associated
+with it it's going to be one list note
+so one element on your list right so
+grocery list so it will be cabbage right
+or whatever so that's the data that
+you'll store with that element
+the pointer to the next one of the same
+kind so the linked
+item and a
+Constructor right so we would put data
+in here that's how it will be laid out
+data and a pointer sitting next to each
+other in this
+class part of for part of memory that is
+uh assigned for this class or this
+okay so what is going to be this
+declaration for example this declaration
+what is it going to
+do well you're okay with templates now
+right you're okay with templates and by
+the way I kind of brushed over it but
+what is this
+lit list item H so it's a
+template it's a temp completed Str so I
+need to just say uh like you should
+remember that it you always assume that
+it's going to be
+template type name or class lit right
+class
+lit or type name L the same thing so if
+I forget to say it like we are talking
+about templated stuff because we already
+know about templates and it's easier to
+do this so that means your list can be
+anything a list of strings list of pgs
+list of animation whatever you want to
+do fine so now I'm going to run this
+code I I have this line of code in uh
+somewhere maybe in my main I
+declare a new list
+node with I initialize it with new data
+which is an integer type so my list node
+is of integer type and it's just a
+declaration so where does n Ln live what
+does it live after
+this St
+or is an Ln is it on stack or on the
+heat stack we never ask for new stack so
+n Ln it lives on stack so these two
+things associated with the this class
+data and Nest live on stack what is the
+data for
+it five right what is the next
+pointer null or null pointer right null
+pointer that's the latest way to write
+it yes so null pointer so it's a null
+right that and it lives unstuck that's
+great okay so now let's write the code
+and I have the code here let's write the
+code to then arrange our memory like
+this instead of having it on the stack
+I'll have a little pointer on the stack
+that points to the list note on the Heap
+now so how would you ask for that let's
+call it h this it will be the head of
+our list so call it h so how do and it
+all lives on this the head the head of
+the pointer lives on the stack but the
+rest the actual
+memory the actual node lives on the how
+ask a H equals so what's its
+type yeah but for now
+integer but what do you write here
+because you have to declare and
+initialize this H and H seems to be a
+pointer to the list node right of so
+what's the type of it if it's a pointer
+to the list
+node it's a pointed to the list node
+it's this thing with an Estus
+so it's going to be list
+node
+integer
+asterisk okay and how do you ask for
+keep memory for
+that
+new and then
+what of this type so repeat
+that and then you want to initialize it
+with something so give some value
+of eight okay let's go to my code
+there let's see if that's what we're
+doing
+there is that
+good so I have a little printing
+function
+now so it will print eight if you start
+with eight my printing function is a
+recursive function that we'll talk about
+later but essentially Tak the the
+pointer that holds on to the list so far
+only one element so you can print
+everything that's attached but we have
+only one thing similarly that newless
+node on stack with five I could give an
+address of
+the of that blink no node and it would
+print the whole list starting is five so
+now I want you
+to tell me what will be the Declaration
+for
+this so I
+want and maybe the the same poter ahead
+to to now look like this so I'm going to
+just show you the code because we'll
+have an exercise later so in what I'm
+going to do I'm going to ask you have to
+ask for this memory with new someone so
+you have to have a new declaration and
+you'll have temporary T
+pointer asking for it so that's
+the Declaration for that for T it's
+going to be a pointer to the list node U
+oh in my code it's just node I'm
+sorry so just a pointer and we ask for a
+memory but now we have to connect them
+in that link list so here is the
+code initially this memory will have a
+null here so T's next will be null but
+you have to ask you have to resign it to
+be eight do you see
+that so that's what this line is
+for you have has to reassign it to be
+eight and at that point you
+have t next pointing to8 and H at that
+point still holds points to eight just
+like in this picture so the next step
+will be to Reign
+H
+2.26 which is
+what what points to set set that
+point T So H has to become t
+and then when you print it you get a
+link list six and
+E okay so now do you see what's the
+biggest problem with this things is to
+understanding what your point is forward
+and how to manage them because if you
+pre sign pointed to hold to something
+else you hope that that memory is not
+lost that you have some temporary folder
+to it or something so the biggest
+problem is to manage this handlers to
+dynamic memory because dynamic memory
+doesn't have a name you only hold it
+through stack
+pointers and you have to be careful so I
+have the next assignment and I want to
+reduce this drawing on slides instead
+I'll ask you to maybe you know draw or
+think about this question so now in my
+code I have this
+I guess I still have to kind of draw a
+little bit I have this
+nln go
+back I have this new list note on stack
+and I have the H pointer on stack as
+well everything else on
+Heap so H is this T still points here I
+guess you can use it if you want or not
+t also lives on the stack by the way so
+let's draw it better T is
+temporary pointer also pointing to six
+so that's your memory Arrangement what I
+want to
+have is I want to add five to this list
+so I want you to give me the code that
+would do this
+one so the head or age points to five
+and Five Points to six and six points
+to8 and you have an or like um
+ordered so which one of these a b c and
+d are
+the is the correct code to accomplish
+that and we can go here so you can try
+to figure it
+out
+this or this
+A or B or C or
+D I think there's other ways like you
+could say something else you could use T
+still I think with your temporary thing
+to to make
+reassignments C is
+winning
+H or
+a and that's how your understand
+questions will look so if you go through
+lectures and look at this slider that
+come questions that's the way we'll be
+doing this except there will be always
+at least six choices again so
+that so that it's harder to cheat harder
+to know harder to you know so that's
+less time
+to a or C A or C should we go to the
+compiler so tell me start telling me
+what is it I want to print eight and
+have five eight instead right so tell me
+what's the first
+line next equals to oh is it nln yeah NL
+nln of course I cannot do this because
+that will that's not a pointer so we
+have only dot next equals
+to8
+good equals
+to
+is it nln because it say A or B your
+compil will be your friend nln
+type is node integer H type is node
+pointer you can assign one to another
+how you have to take the address of
+nlm okay let's see 568 so that's uh is
+it A or
+B it's the a yeah a wins the team a wins
+good okay so now we have this
+interesting Arrangement right so what do
+we have let's draw this um stuff and in
+the meantime you tell me what's wrong
+with this code so we have the
+H here on the stack so everything this
+is stack this is Heap H points
+to this nln which still has the name and
+it still lives in stack right so the
+address of H the value of pointer h is
+the address on the stack that's fine
+which is five and then the next pointer
+the pointer uh that is the next element
+of that class node points to
+six and six points to eight and I think
+T still lives on stack and still points
+to six we can change that okay so that's
+your that's your Arrangement what's
+wrong with it what's wrong with this
+Arrangement and what's wrong with the
+code like what happens once the main
+code the main function stops its
+execution yeah
+memory what is it leak Le this we didn't
+give it back to he we have to explicitly
+say delete if we ask for new so we asked
+for new twice we didn't call delete so
+okay memory leak what else is
+wrong so now you have this link memory
+and some it is on the stack some of it
+is in the Heap what if you want to clear
+it all out as a function of your list
+how will that function once it takes
+this memory with the point pointing to
+the first element how does it know that
+that first element lives on the stack or
+maybe the third one will live on the
+step if you connect this L these nodes
+that some of them are on the Heap and
+some of them are on the stack this
+potentially opens the door for huge
+disaster
+because once you pass that list to some
+function there is no programmatic way in
+C++ to know if any variable is on the
+stack or on
+he so if that program clear list we want
+to clear all or delete all elements
+it'll try to delete something on the
+stack and that's a problem so it's a bad
+design choice to mix
+up uh
+stack nodes with Heap noes and attach
+them all in this
+Arrangement okay so that's one problem
+another one is memory leak right how
+could you find out that there's a memory
+leak oh let's see we would go to
+solution so what's good about God bolt
+is that you can put
+the you can put the flags for your
+compiler so F sanitize would say well
+you know you have this memory arange
+that's great but you leave memory so we
+know how to use
+sanitizer that's
+cool however if you started working with
+this list and passing it by AG and you
+have that one note on the stack to any
+other if any other function would try to
+delete that memory you would have
+another link or moment
+problem okay so don't do that we don't
+do that right we we will not ever link
+this kind of nodes in the list we'll
+only use
+pointers okay
+good oh yeah what's the big problem I
+was supposed to ask you but you already
+answered that there's a memory leak good
+now let's talk about clear function so
+now again we assume that this clear
+function will never ever ever
+take like this pointer will not have any
+your really no noes on the
+St that's a big
+assumption which one is correct so now
+in this clear function you get the head
+pointer and you want to clear all of the
+memory because we don't want to have a
+memory leak right so please
+pick what's the correct clear function
+and I can uh so sorry I'll I'll go
+to I guess I only have solution here
+hold on I'll go to
+solution why can't I go to okay and now
+I go back to so you can still keep
+answering B is the answer let's look
+what's the difference here do you see
+when I pass the head
+pointer I can pass it by reference or by
+value what is that passing a pointer by
+reference does that kind of like seems
+like oh my God what's happening there
+right so let's make it absolutely clear
+because it turns out it's
+crucial and that's why interview
+questions are so tricky because of that
+pass and those by reference sometimes it
+will work and sometimes it it will not
+and let's make sure we totally
+understand what's going on here so as
+you can see there's Choice by reference
+or by value of the head pointer and
+after that it's just a matter of when do
+you call the
+recursion again recursion is always
+tricky so so B seems to be the answer
+for we have four people who are trying
+to answer so B okay let's Trace B and
+see that we understand fine so here is
+the head pointer it's passed by
+reference what does it mean so when you
+call clear H and you pass H to that
+function and remember H is on stack
+everything else is on the
+Heap and you say okay head is the new
+name for that pointer so we don't keep
+it as a separate element we just say oh
+for this function that we are about to
+enter this clear function the stack of
+clear function let's draw it explicitly
+this is the stack of clear function
+there will be
+head but it will not be a separate
+element it will be actually the same
+name it's a different name for the same
+pointer but it just in the scope of that
+function that is still the same name
+that previous po
+okay which means that if we're going to
+change it h is going to change as
+well and are we G to is Our intention to
+change
+age is it or not what do we want let's
+ask our question what do you want to
+have after we St what is the result of
+this function what do you want H to
+hold how should H look like
+here where should it look where should
+it point
+to origin at the beginning before that
+line it points to the list after you
+clear it it should be null so you really
+really want to change H you want to
+change the memory address that it's
+holding in the beginning before calling
+the function to null therefore you have
+to pass it by reference because if you
+don't then
+then this variable will get the value
+null that you want to but you really
+want to change age so you want them to
+be the
+same that's why you pass it by
+reference okay and this will accomplish
+it so therefore this is just incorrect
+we know that that aftering this function
+H cannot be
+changed head will be changed but not H
+right so this this is not true now the
+question is how what's the order of it
+of course there's always possibility
+that I made a tricky question which is
+still fair I think that none of this is
+corre so the part of the exam there will
+be there will be answers e so um please
+make sure that you fully understand your
+answer um because it maybe that none of
+the answers none of the choices are
+correct so let's see what this function
+accomplished it says okay if head is
+still not a null pointer well it's not
+originally then call recursion which
+means that go recursively on the next
+element so take this pointer go
+recursively here that will be the next
+clear function so if this is clear one
+clear one this is clear two call
+right and then if they and this is now
+the head
+head the the different name for
+that uh variable that's on the Heap will
+be had in that in the scope of clear
+two so then we go inside of clear two
+and we check if head is null pointer
+it's not so then we go
+recursively in clear three function and
+head is different name for this pointer
+which is
+null and if it's null clear that does
+nothing so we return to the scope of the
+previous recursor call where had um was
+pointing to eight so what do we do after
+we exit the recursive call we delete we
+free this memory and assign it to
+null head to null and then we go back
+here we delete this memory and assign
+ahe to
+null and that's it
+so yes this is the correct function why
+is this not correct it first deletes
+whatever is the pointer and then goes
+recursively on what seems to be null
+which is SEC fault right away right so
+fortunately we can the reference null so
+this is a very easy mistake to to
+detect okay so where's our code
+hopefully that's what it does it says
+clear so after we clear
+h look what we are
+printing we are printing the H value
+that right
+there um let me just remove this so that
+clear function looks just like yours no
+Printing and then you can see that
+this print printing statement for the
+pointer H would result in zero which is
+null and just to make sure that if you
+didn't pass a
+by
+reference you would get this what is
+that please explain what is going on
+this what
+[Music]
+happened well you didn't pass it by
+reference which means that H never got
+to be the null value and you try to
+print it the print function do
+references memory that doesn't belong to
+you anymore more you have a dentling
+pointer right here you you thought you
+cleared AG which you did you freed all
+of the memory but H itself is a d point
+because you didn't passil so it's not
+null which means that you can try to
+print it you can try to reference it and
+go somewhere you're not supposed to
+hence the arrow right so that's why you
+can see how just that little thing ERS
+fites the
+whole uh problem okay so what's the
+correct code then B is correct a is
+not but for other reason see oh yeah
+sorry a is a is this one yeah exactly
+for that reason Okay cool so you can see
+how fun it is right it's all very tricky
+because there's recursion and there's
+passing pointers by reference so let's
+try to
+insert an element of this value so this
+is the data in instead of this element
+of the list so you give this function
+the element of the list and you want the
+new data coming to there and this guy
+shift essentially right so you want to
+insert an ele an
+element in the
+list so you can see that here I try to
+insert
+seven instead of H next what is h next
+if this is H and this is H nextest so
+instead of eight I want to insert seven
+here so I want the memory look like that
+afterwards after this line and I want to
+insert five and hopefully five is in all
+right right we don't have that on the
+stat five anymore I want to insert a new
+element five right here instead of H so
+H should be pointing now to
+five instead of six
+right so a since H points to six I wants
+to insert five instead of six and shift
+six forward so after these two lines my
+list should be 5 6 7
+8 what's the correct code for that and
+let me click on a solution so that we
+can look at it later
+but let me
+go give it to you what's the correct
+implementation of
+insert right I forgot to put answers ABC
+d right
+here
+D let's look at the
+differences again there
+is how do you pass your value the
+pointer to the current element is it by
+value or by
+reference and after that obviously you
+need to ask for new node right because
+you'll be inserting this node with data
+so that's okay that's always number
+one but then the order at which you will
+reassign
+thisle this
+pointers is going to be the problem da
+AA okay we have kind of the same split
+again so D or a d or a let's look at the
+code and you tell me
+is it D or
+a d right is that what's the difference
+between D or
+a just passing by
+reference so again just passing by
+reference so why is
+that why is it crucial that you pass by
+reference let's see what happens if you
+don't pass by
+reference it just doesn't insert it why
+is
+that let's see let's look at my code
+here
+back so when you pass
+H let's start with this it's easier
+because it's the head one the front
+one do you expect H to change after the
+call of this
+function do you expect H to change after
+the go where does H point to what's this
+H value
+H is a pointer so what's its
+value the address of
+six what do you want it to be
+afterwards the address of five it has to
+change so if you pass it it has to
+change which means that you have to pass
+it by
+reference otherwise this curve element
+whatever Curve will be this curve
+element will be completely different
+only in the scope of this function and
+that Cur will point to five and then to
+six but H will not be
+changed unless you say that c is the
+same name as
+H okay cool
+right fine fine fine fine very
+good again the same trick same trick py
+right but you would think that all all
+of the functions then have to pass
+things in L list by reference and that's
+not true
+either now let's print function let's
+write printing so I have I initialize
+this this H and say h is now still this
+list maybe I have now five and seven but
+maybe just this doesn't matter whatever
+H is I want to print
+it and you've seen that I printed it
+successfully so which one of these
+functions was the solution so let me go
+to the
+solution and uh let me open
+this what's the difference in this
+functions again
+passing the the head of the list by
+reference or by value that's okay second
+difference is is that this one these two
+functions are not recursive and these
+two are
+recursive so again recursive way of
+printing passing it by point or by value
+by Sorry by uh pointer by value or
+pointer by
+reference or nonrecursive
+equivalent like these are the same
+implementations but whether it's my
+value I see how this can be a Eno
+question if you want to test logic
+though not C++ see this is logic and and
+some companies will want to test both
+and then they'll say okay do you know
+C++ and how's your
+logic let's see what you guys
+answer
+A or B A or B nobody votes for except
+for all so there's people in all Camp
+they like them
+all it seems like when you
+print you don't care whether it's passed
+by value or passed by reference
+right do
+you okay here's the code so let's look
+at that I have two print functions print
+non-recursive and print recursive so I
+call them differently but that's the
+code inside remember the code was the
+same for recursive non-recursive look
+what I have I have passing by pointer by
+value in the non-recursive function and
+by reference in
+recursive so what if I
+remove in recursive function fun passing
+by reference fun nothing changes because
+you are within the function you're not
+changing that
+pointer you're just printing you're just
+looking up what's there what's the data
+and you print it out and then you call
+recursively the same function but again
+within that function there will be no
+change to which means it doesn't matter
+whether you pass that's all you save a
+little bit of uh time it's a little
+better to pass it by
+reference because then there's no copy
+Constructor
+called so
+fine copy Constructor a pointer is not a
+big deal so who
+cares well in nonrecursive
+function if I put
+reference look what it's doing it's a
+non- recursive function so it takes the
+head pointer it checks whether it's a
+null pointer or not and then it
+reassigns Head to Head nest what does it
+mean you're Lo if you passing it by
+reference you re you losing your
+data because suddenly head will look at
+him no you can't pass
+it there you go so what's the right
+answer then
+all but
+B
+okay so let's see what
+else remove front Okay so now what if I
+remove front so I want to H before this
+line looking like a list after this line
+it should look like a list with this
+memory hopefully free so hopefully there
+should be delete somewhere
+right and H should point to the H
+next so I have
+three possibilities so let me click on
+the solution right away and then go to
+your slides and you look at the code
+again passing the pointer by reference
+or by
+value and then some weird stuff
+happening there
+within the
+code like call this TMP either
+reference or
+value
+H so what should be this right solution
+C or
+a or okay c a c a so what did I do here
+let's go
+look no I mean let's go just to the
+solution we see and then we draw remove
+front so the the possibilities were
+of course you really know that head will
+have to change so you probably realize
+that if you pass it
+by value there will be some kind of
+problems
+because it will not be changed head will
+point to the same memory that you just
+freed if you don't change it so you
+really want to pass the pointer H where
+is the remove
+function um
+remove H like H should change it should
+point to something else so you need to
+pass it by value by reference and
+pointer by reference the another
+possibility was to call this temporary
+thing to be a reference to head again
+and work with that why would that be a
+problem well well let's see what happens
+there let's see let's look at the logic
+of the code what does it
+do what's the logic of the code once we
+are which one you said was it C this one
+right yeah yeah or B so this is the
+question mark so you
+have head being a different name but
+within the scope of this function for
+each that's cool so is had a pointer a n
+pointer no so we go side then we say TMP
+is going to be yet another name to the
+head it's the same
+pointer and then you say head equals to
+head Nest
+so and then you delete
+TMP you free it it's so disaster you
+lost H six sorry you lost six and you
+freed eight so no wonder compiler said
+something about
+it okay and since we have another logic
+here we're clearing H afterwards so
+there's a lot of problems who knows what
+exactly complaints which order of
+complaints it will have but there will
+be lots of
+complaints about because of it however
+if you were to say temporary node so
+let's remove all of this logic and we
+say head is the same name for age but
+temporary node is a different variable
+on the stack belonging to the scope of
+this function remove front that points
+to six that's great because
+now temporary the TMP holds six so you
+can say well let's reassign head to
+eight because you still have a handle on
+six you didn't lose it through TMP so
+now head really points to eight like you
+want to and TMP hold points to sit and
+you want to remove it you want to free
+that and then TMP goes out of the scope
+head goes out of the scope you're done
+with the function remove front and in
+the end of the day H points to eight
+which is great
+so that this is the correct
+logic okay
+cool
+now what we've done let's look what
+we've done so we implemented Inc front
+remove front kind of right we could have
+implemented remove any item but we
+Implement remove front we printed the
+list we printed in Reverse did we print
+in Reverse how did I skip through print
+print
+reverse
+[Music]
+somehow how did
+you yeah yeah yeah print function we
+just jumped over it because I thought
+let's do print in Reverse this is a
+really NE and we just jumped over it
+somehow yeah yeah yeah we jumped over it
+so right right because yeah print
+reverse is a really neat in
+logic so now I I just have the code
+right I want to print in
+reverse and oh yeah that's why we
+skipped because there was
+no just just look at it and then we'll
+jump
+to I forgot to include the picture for
+it and I don't know why I think I
+included it but then I didn't refresh my
+slides when I started the slideshow I
+pretty sure I did it
+H which
+one yeah I'm pretty sure I had all of it
+because it's it's a really neat answer
+too I think couple of them are
+[Music]
+correct okay so do you think you can
+answer which
+one no because it's hard to see right
+it's hard to see which one
+a
+okay H so what is print in
+Reverse you would think that you just
+take whatever function you had and just
+swap the recursive call with the
+printing and that would work and yes for
+the recursive call it does work so a is
+the correct answer and then C is the
+correct answer
+because it doesn't matter you're just
+you're not changing the pointers here
+you're just following them and printing
+so both A and C are equivalent so the
+question is whether this function where
+it's not
+recursive it passes the head
+by
+reference which means that this is just
+wrong right so this is a wrong
+function because you're going to change
+the head while you're printing the list
+you don't want to print
+so B should not be correct but a and C
+should be correct so let's look at my
+implementation print
+reverse yeah this is it and if you
+remove
+the the thing nothing changes everything
+is
+fine and why couldn't you do print
+reverse for for
+this what if you just swap
+cannot do
+that because then the logic is changed
+you
+cannot uh first go to the next element
+and try to access it it could be a null
+pointer so it's not that simple once you
+have a hold on the list and you try to
+print it in reverse without recursion
+the logic of this W Loop has to be
+completely changed and I didn't care to
+think about it maybe you can think about
+it but it's not a simple swap of the
+operations however with recursion with
+recursion it's really really neat that
+you can just um let's see you can just
+swap the recursive call with the print
+out and then
+um you get a
+recursive print
+out eight print
+list this is print reverse oh this is
+print recursion I'm sorry yeah yeah yeah
+see print recursion became swapped into
+the reverse order just because I swapped
+the order of the recursive call so let's
+do that recursive call and
+[Music]
+um and the print out so the question is
+do you you print the head and then go to
+the rest of the list or do you go first
+to the rest of the list and then print
+so in the end of the recursion you print
+out the first element as you go out and
+next and then so so it's really neat
+mathematical trick exercise in logic
+clearly and Okay so we've done
+everything now I let me see if Elmer is
+there because he wanted to cover your
+lab
+El Mar are you there yes oh cool so now
+I can make you a oh yeah I see you I can
+make you a co-host and the floor is
+yours is that okay yeah that's fine
+okay okay so that's cool you guys hear
+well here in the in this lecture hole
+I'll make it a little
+louder I think she'll be her
+well so you can start
+presenting um
+hello I it
+good yeah I just have to switch uh put
+the put the
+zoom
+screen
+here then everybody will see
+you because I'm sharing a different
+screen than where you guys were but now
+it's all good
+yep
+okay
+uh okay so so lab inheritance is kind of
+split into these five uh different parts
+that that very like kind of clearly tell
+you what you need to modify and and you
+also have this completely uh kind of
+separate
+programs that that you can compile and
+TR so I just start right away with the
+um with the first one so I can just type
+make test virtual if you're wondering
+like like how does this how does this
+work like that I can program like this
+different I can compile this different
+programs out of this project and uh was
+all defined in the make file but we're
+not going to
+get get like uh that deep into it but if
+you're curious then you can look from
+there
+um oh I do need
+to well actually we don't need to findun
+the ASA and version for this but compile
+anyway I guess um anyway the point is
+that when we first run this uh we have
+this problem and and we can kind of see
+uh uh what we are trying to do if we
+open the test virtual CPP so this is the
+main
+program that's being FR here so the
+situation is that we
+have
+um we have this
+rectangle uh that's we have a rectangle
+shaper uh
+pointer uh and we're allocating this new
+rectangle into it and then we also have
+the shape pointer
+and we're putting a rectangle there as
+well so then how it's supposed to work
+is that uh
+this uh Noti is that okay it's it's a
+rectangle type shape so let's use the
+rectangle
+functions uh but right now it doesn't it
+doesn't know how to do that at all so
+instead is calling the the uh shape uh
+function so if
+I
+[Music]
+um if I look
+here the shape area and perimeter it
+just returns zero so that's why we're
+getting zero here it's calling these
+functions and these
+are these are not
+good
+um instead we would wanted to to use the
+rectangle functions
+and yeah we can see here the rectangle
+has these defined but these are not
+getting called uh so the solution to
+this
+problem is to make these functions
+virtual so these are the ones that we're
+using
+so writing this virtual keyword here
+means that
+uh it's going to
+dynamically uh see what the right
+function to call is for these derived
+objects uh okay so
+let's let's make again okay and now you
+can see that everything's working
+correctly so even though one pointer is
+is a shape pointer and one is a
+rectangle pointer but both of them
+uh point to the same thing because of
+the virtual
+keyword
+okay uh then move on to the next
+part um so let's just make
+the test Destructor as a
+n because we're troubleshooting this
+memory issue here so we're seeing a new
+delay type
+mismatch uh so then this seems to again
+be a problem where uh the
+correct function is not getting called
+this
+time this time it's um Destructor but
+it's the same idea so so the
+triangle uh it has this Destructor here
+but this is not actually getting called
+right now
+um okay so we should look at shape
+and
+trable uh it says uh here on the
+exercise page which files you need to
+modify so it'll make it a little
+easier uh for you to find what the fix
+so so we also make the
+destructor um
+oh not that
+one yeah let's also make the destructor
+virtual so that's the same idea as the
+uh previous
+case
+where I'm sorry I can't really hear you
+from there El I just wanted to say that
+so far to fix this two problems we had
+to add the three words virtual in
+places yeah pretty much mentally it
+really changes the picture because it
+changes from static binding to Dynamic
+binding
+right yeah if you're doing inheritance
+then uh then virtual is a very uh a very
+important keyword and you need to use it
+most of the time when you're when you're
+using
+inheritance uh
+but but of course you always want to
+think about like like is this supposed
+to be virtual or not so so don't just
+like by default put it on
+everything
+um okay let's see what the next one is
+so if we compile
+this test
+Constructor uh
+then we can see that the C CES the the
+circle is not getting
+constructed uh correctly so so we should
+look at Circle CP it says
+here okay let's look at this Constructor
+and uh actually what what the problem
+here is we we can we can kind of see see
+clearly that it's taking us argument uh
+P Center and P
+color but they're not actually being
+used for anything so we need to figure
+out how how we can um
+initialize the circle
+correctly uh okay so if
+we if we look at Circle H we can notice
+that okay well actually the the center
+and color are are not defined
+here
+uh but then this inerts
+shape and and let's let's check
+this uh okay so here we are there's the
+center and there's color and there's
+also a Constructor for
+this so then what we can do is use that
+Constructor that's defined
+there
+in this in initialization
+list let's try this okay and everything
+is correct so so what happens here is
+that uh we initialize the properties of
+the of the base class in this
+Constructor and this has to happen in
+the
+initialization uh list because
+Constructors are only run during
+initialization that you can't like
+manually call them later so so we need
+to set up the properties of the base
+class
+first and then we set up the property of
+the of the circle class and that way we
+can handle this
+situation okay
+next
+let's compile pure virtual except that
+it does not compile it says abstract
+class type
+truck
+so so we're we're trying to we're trying
+to create a new truck but the compiler
+is saying that this class is abstract so
+we can't do
+that uh so then why why is it
+abstract so let's
+um oh that's not how I wanted this to
+work um
+okay all these files
+here so so let's see that so if if you
+remember from The Inheritance lecture uh
+we have that way of uh the declaring
+this uh pure
+virtual uh methods
+like like if if we do like equal zero
+like that but but we don't see any of
+that here and then if we look in the CPP
+file uh we can see that we have all
+these functions
+implemented uh but in this
+case
+um wait that's that's not the
+truck skip the corrected file okay that
+makes more sense
+uh yeah yeah we don't we don't we don't
+see any like pure virtual uh
+declarations here but
+um but the problem that we have here is
+that there's a function missing from
+here that's defined in the drawable
+class uh so let's look
+here virtual void draw so this is a p
+pure virtual function and and then we
+want truck to be something that we
+can uh we can actually create instances
+of of truck but it doesn't actually have
+the draw function here and and in the
+base class it's defined as pure virtual
+so so that also makes this class
+abstract and we need to fix that so
+essentially uh we just need to Define
+this entire
+thing okay so now it's
+there
+start uh um typing it
+here okay so let's try if we if we just
+try to compile it
+now uh that's this
+fine hold on did I do something
+wrong
+okay now I'm not really sure
+what what I did wrong why is this uh
+what is say not much what did it say not
+mat no declaration
+matches
+um I all the like draw functions for all
+the components inside this draw function
+that
+is so when I did it what I had to do is
+inside this draw I needed to basically F
+that the there um they have a l top of
+that so I need to add all the functions
+like all the components the engine the
+wheel oh no no it
+[Music]
+does yeah I did it like
+this why
+comp yeah yeah it should have it should
+have compiled I don't really understand
+what what I missed
+here problem so I don't understand
+it should compile
+without oh right
+maybe
+missing
+oh
+yeah good
+job
+okay that's that's what forgetting one
+word does to
+you that's true though but I'm sure that
+you can
+see oh sometimes it tells you which
+which are the candidates but not in
+this okay so let's let's look at the
+output for this one so we need to make
+sure that it's
+uh correct so
+test uh pure
+virtual and we have a truck like that
+and let's compare to the
+solution
+um yeah it looks like it's the same so
+uh you do need to make sure that the uh
+draw order is correct that that the
+wheels are drawn like after the other
+things and the window is drawn like
+after the
+part this is per I feel like it's a
+really good piece of exercise and make
+tutorial really nice
+exercise okay so so we managed to get
+that fixed so of course a very very
+integral part of the class was missing
+the the uh draw function and after that
+got defined then then it was no longer
+um abstract and I I'll
+just I'll just going to show now that uh
+even even if this function doesn't do
+anything uh it's still counts as like
+being this function being defined and
+and that way it's not abstract anymore
+[Music]
+yeah okay uh one
+more make test
+slicing okay I know I know some of you
+had like a problem
+where uh it wouldn't compile here and
+that might depend on uh
+what
+you did in the previous Parts but right
+now if we go look at
+the uh okay where's the inest sizing
+here so so what it tries to do here is
+create this drawable
+flower uh and then then just draw that
+and then if we look
+at
+uh the the flower class
+here then it has these uh
+shapes
+uh declared here and and the way these
+are declared is that the shape class
+needs to not be abstract for this to
+work because because here we're actually
+like creating new instances of of shape
+and if you if you made shape abstract
+which it could as well be that's that's
+not
+really at least here we're not like
+using shapes by
+themselves uh it's always like meant to
+be inherited so in that case it could be
+abstract but uh but then if it is
+abstract then the compiler would already
+tell you that we can't do this
+uh but right now we can uh
+however
+um yeah if we look at the output this
+doesn't look much like a
+flower uh at
+all uh and the problem is that's a
+problem we had to deal with uh before as
+well where we're creating these
+local copies
+uh in the
+stack and and then we're just like
+trying to save those but the way we need
+to make this work is by using pointers
+so we can actually uh retain everything
+in the
+Heap it's really this is a cool B you
+really need to understand
+and this way we can
+also also just kind of
+um hold
+on the stem
+is I think it should be like rectangle
+and then inside
+oh oh yeah it's a it's a new rectangle
+yeah yeah that's what it is um okay so
+stack variables will have to be
+statically the compiler will need to
+know which functions to call but if it's
+a dynamic if it's a heat variable then
+it okay so so that's going to be a
+rectangle and this going to be a
+circle
+uh
+and then a
+triangle Al so we don't we don't need
+to use those like temporary copies at
+all here we can just uh oh double
+semicolons here not that I caused any
+problems but um yeah we can just do this
+directly of course now we also need
+to change these to
+be
+um act act as pointers as well okay
+what's this everything no there's still
+pistal
+Center which is
+on
+over
+here let's see if this is fine
+now yeah that looks like a
+flower okay good so
+then that was all of them so I guess at
+this point uh if you have any questions
+about this assignment let me
+know so this is pretty cool thank you El
+really
+cool um yeah so all of this is
+essentially making sure that
+virtual um functions bind to proper he
+variables that's that's all this
+assignment is about
+right um okay so oh perfect timing thank
+you El what I wanted to finish it off oh
+yeah now you have everything you need to
+uh to finish lab GDB which is about link
+lists and GDB which is useful tool that
+you can use now for for the rest of the
+sence and MP lists you can finish all of
+them
+now next time we'll talk about hash
+table so that you can do la lab
+dictionary and lab
+hash and we'll be done and after that
+next week please remember it's mostly
+just about
+P okay I'll see you guys then on
+Thursday I hope I recorded did I record
+this lecture yeah it seems like you
+still have recording on yeah thank
+goodness I'm not thinking straight
+today okay I'll see you thank you El bye
+all right see you

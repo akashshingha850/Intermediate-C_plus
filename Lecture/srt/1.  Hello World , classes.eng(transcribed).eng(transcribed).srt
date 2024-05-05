@@ -1,0 +1,8404 @@
+﻿1
+00:00:00,599 --> 00:00:03,360
+okay so we started recording everything
+
+2
+00:00:03,360 --> 00:00:05,560
+is fine I
+
+3
+00:00:05,560 --> 00:00:07,080
+hope
+
+4
+00:00:07,080 --> 00:00:11,280
+chat no okay good so if there's any
+
+5
+00:00:11,280 --> 00:00:13,240
+problem you guys if you see in the chat
+
+6
+00:00:13,240 --> 00:00:16,199
+there's a problem just let me know okay
+
+7
+00:00:16,199 --> 00:00:18,880
+so now we're going to start our slides
+
+8
+00:00:18,880 --> 00:00:20,960
+oh why is that not working it just
+
+9
+00:00:20,960 --> 00:00:23,439
+worked
+
+10
+00:00:24,240 --> 00:00:26,720
+right
+
+11
+00:00:26,720 --> 00:00:28,960
+somehow what happened
+
+12
+00:00:28,960 --> 00:00:30,759
+there
+
+13
+00:00:30,759 --> 00:00:34,840
+I didn't do anything in work last time
+
+14
+00:00:46,920 --> 00:00:51,360
+so I didn't do anything special last
+
+15
+00:00:53,039 --> 00:00:58,440
+time check table and store this to
+
+16
+00:00:58,440 --> 00:01:01,919
+sleep that
+
+17
+00:01:03,600 --> 00:01:07,040
+hey all right it's
+
+18
+00:01:07,040 --> 00:01:09,720
+not same level
+
+19
+00:01:09,720 --> 00:01:13,039
+with2 that's
+
+20
+00:01:21,240 --> 00:01:24,280
+4.11 I'm sure the number have being
+
+21
+00:01:24,280 --> 00:01:27,079
+higher without the occasional presses in
+
+22
+00:01:27,079 --> 00:01:28,840
+the f
+
+23
+00:01:28,840 --> 00:01:30,360
+1.1.9
+
+24
+00:01:30,360 --> 00:01:33,920
+which was distributed on the delivery
+
+25
+00:01:33,920 --> 00:01:35,759
+start dat as well as small
+
+26
+00:01:35,759 --> 00:01:39,640
+non-waterproof batch from the
+
+27
+00:01:39,880 --> 00:01:42,880
+first
+
+28
+00:01:45,600 --> 00:01:49,479
+I I'm trying to who is talking this guy
+
+29
+00:01:49,479 --> 00:01:51,719
+let's
+
+30
+00:01:52,079 --> 00:01:55,880
+mute no size fits the majority of
+
+31
+00:01:55,880 --> 00:01:58,520
+respondents which is lifting the number
+
+32
+00:01:58,520 --> 00:02:00,719
+increased by 4.
+
+33
+00:02:00,719 --> 00:02:04,479
+8% hello somebody who's talking please
+
+34
+00:02:04,479 --> 00:02:08,360
+mute yourself I know that I can ask to M
+
+35
+00:02:08,360 --> 00:02:10,360
+oh see this guy I cannot
+
+36
+00:02:10,360 --> 00:02:13,080
+mute I cannot mute him there is no
+
+37
+00:02:13,080 --> 00:02:15,200
+option well I think that guy is not
+
+38
+00:02:15,200 --> 00:02:17,800
+connected to voice anyway oh that he is
+
+39
+00:02:17,800 --> 00:02:20,040
+connecting so somebody else is talking
+
+40
+00:02:20,040 --> 00:02:22,480
+okay I think they muted okay is it time
+
+41
+00:02:22,480 --> 00:02:24,959
+to start no not yet so let me hide this
+
+42
+00:02:24,959 --> 00:02:27,959
+thing it's too big I don't have much
+
+43
+00:02:27,959 --> 00:02:31,959
+space here just have extra windows and
+
+44
+00:02:31,959 --> 00:02:35,000
+let's start
+
+45
+00:02:35,160 --> 00:02:37,720
+with oh
+
+46
+00:02:37,720 --> 00:02:40,720
+that's that's in the
+
+47
+00:02:40,720 --> 00:02:44,280
+way so we'll start with
+
+48
+00:02:44,280 --> 00:02:47,920
+this and we're going to do slider.com
+
+49
+00:02:47,920 --> 00:02:51,000
+okay you remember to record I'm
+
+50
+00:02:51,000 --> 00:02:53,280
+recording already okay thank you that's
+
+51
+00:02:53,280 --> 00:02:54,519
+very
+
+52
+00:02:54,519 --> 00:02:56,440
+important and how many people do you
+
+53
+00:02:56,440 --> 00:02:59,879
+have online 20 and well hey it's not
+
+54
+00:02:59,879 --> 00:03:03,840
+full room so we're
+
+55
+00:03:09,640 --> 00:03:12,879
+good oh yeah I need annotation as
+
+56
+00:03:12,879 --> 00:03:15,920
+well I need
+
+57
+00:03:15,920 --> 00:03:18,680
+annotation and now I need to present
+
+58
+00:03:18,680 --> 00:03:23,760
+with speaker notes because
+
+59
+00:03:24,200 --> 00:03:27,599
+otherwise it gohost
+
+60
+00:03:27,599 --> 00:03:30,280
+okay I think it's there
+
+61
+00:03:30,280 --> 00:03:32,720
+there you
+
+62
+00:03:33,680 --> 00:03:38,200
+go where can I get the zoom
+
+63
+00:03:38,400 --> 00:03:42,120
+link I sent M
+
+64
+00:03:42,120 --> 00:03:44,640
+email it's the same one as I usually use
+
+65
+00:03:44,640 --> 00:03:46,439
+it's my personal can you find it
+
+66
+00:03:46,439 --> 00:03:48,560
+somewhere
+
+67
+00:03:48,560 --> 00:03:50,519
+else in some
+
+68
+00:03:50,519 --> 00:03:54,400
+chats this is a very
+
+69
+00:03:58,680 --> 00:04:01,680
+small
+
+70
+00:04:01,960 --> 00:04:03,360
+[Music]
+
+71
+00:04:03,360 --> 00:04:05,319
+okay okay
+
+72
+00:04:05,319 --> 00:04:09,159
+okay so I gave you this handouts this is
+
+73
+00:04:09,159 --> 00:04:11,079
+for the actual lecture so we'll start
+
+74
+00:04:11,079 --> 00:04:13,159
+with just introduction to the course
+
+75
+00:04:13,159 --> 00:04:16,639
+then we'll use this and I realized that
+
+76
+00:04:16,639 --> 00:04:19,478
+my version is so bad last night it felt
+
+77
+00:04:19,478 --> 00:04:21,399
+like I just don't see
+
+78
+00:04:21,399 --> 00:04:26,440
+because but now in bright I
+
+79
+00:04:28,479 --> 00:04:32,120
+see but the idea is that you'll pill out
+
+80
+00:04:32,120 --> 00:04:34,919
+whatever you can okay so we will have to
+
+81
+00:04:34,919 --> 00:04:36,400
+understand everything that slide and
+
+82
+00:04:36,400 --> 00:04:38,880
+it's first lecture that's our goal if
+
+83
+00:04:38,880 --> 00:04:40,840
+you don't see something and don't
+
+84
+00:04:40,840 --> 00:04:45,320
+understand what you're discussing just
+
+85
+00:04:45,600 --> 00:04:49,360
+ask and let me see
+
+86
+00:04:49,360 --> 00:04:52,240
+here okay so let's start we'll start
+
+87
+00:04:52,240 --> 00:04:54,400
+with some introductions so my name is
+
+88
+00:04:54,400 --> 00:04:57,240
+Anna laala I've seen many familiar faces
+
+89
+00:04:57,240 --> 00:04:59,039
+so many of you have taken course with me
+
+90
+00:04:59,039 --> 00:05:01,160
+before probably was virtual reality
+
+91
+00:05:01,160 --> 00:05:03,400
+course of some sort but this is
+
+92
+00:05:03,400 --> 00:05:06,320
+something new and yet old so I'm going
+
+93
+00:05:06,320 --> 00:05:10,400
+to be teaching this term the course and
+
+94
+00:05:10,400 --> 00:05:12,479
+um why I'm going to teach it so let's
+
+95
+00:05:12,479 --> 00:05:15,240
+see my background I got PhD in 2008 from
+
+96
+00:05:15,240 --> 00:05:19,800
+un of Illinois at champ and uh my PG
+
+97
+00:05:19,800 --> 00:05:22,520
+topics were in robotics motion training
+
+98
+00:05:22,520 --> 00:05:26,000
+and lat VR but I also taught for two
+
+99
+00:05:26,000 --> 00:05:30,520
+years this c+1 over there um and I had a
+
+100
+00:05:30,520 --> 00:05:32,400
+great mentor who developed this course
+
+101
+00:05:32,400 --> 00:05:36,440
+and helped me start there and um it was
+
+102
+00:05:36,440 --> 00:05:41,240
+a great it was a very good very popular
+
+103
+00:05:41,240 --> 00:05:44,160
+later on I also was a research stist at
+
+104
+00:05:44,160 --> 00:05:46,360
+Oculus VR so I had a chance to actually
+
+105
+00:05:46,360 --> 00:05:49,080
+write code in C++ so I would say
+
+106
+00:05:49,080 --> 00:05:51,360
+throughout my academic
+
+107
+00:05:51,360 --> 00:05:54,319
+years industry experience it was more
+
+108
+00:05:54,319 --> 00:05:57,600
+than a decade that I used C++ on daily
+
+109
+00:05:57,600 --> 00:06:01,840
+basis um since then then I
+
+110
+00:06:02,360 --> 00:06:05,680
+have um but nevertheless this is some
+
+111
+00:06:05,680 --> 00:06:09,319
+picture from my PD years I worked on um
+
+112
+00:06:09,319 --> 00:06:11,639
+uniform distributions of quan that was
+
+113
+00:06:11,639 --> 00:06:15,840
+useful for uh VR as well writing had
+
+114
+00:06:15,840 --> 00:06:18,280
+tracking code for virtual reality at
+
+115
+00:06:18,280 --> 00:06:22,160
+Oculus it was very useful in C++ so I
+
+116
+00:06:22,160 --> 00:06:24,639
+will not be doing it alone we will have
+
+117
+00:06:24,639 --> 00:06:28,000
+here El Ando helping they our teaching
+
+118
+00:06:28,000 --> 00:06:30,280
+assistants and uh I want you guys to
+
+119
+00:06:30,280 --> 00:06:32,639
+introduce yourself as well as usual the
+
+120
+00:06:32,639 --> 00:06:36,680
+same thing so what like why are you here
+
+121
+00:06:36,680 --> 00:06:39,919
+why do you want to
+
+122
+00:06:39,919 --> 00:06:45,560
+C++ uh yeah hey and uh yeah I'm I'm
+
+123
+00:06:45,560 --> 00:06:48,599
+working at the University teacher here I
+
+124
+00:06:48,599 --> 00:06:50,800
+I was teaching the mobile Computing
+
+125
+00:06:50,800 --> 00:06:53,720
+course last year and I've been working
+
+126
+00:06:53,720 --> 00:06:58,400
+on this C++ course as well developing
+
+127
+00:06:58,400 --> 00:07:02,240
+the like Auto graders for the exercises
+
+128
+00:07:02,240 --> 00:07:05,199
+uh you're going to be working on as well
+
+129
+00:07:05,199 --> 00:07:08,680
+as like developing like a new exercise
+
+130
+00:07:08,680 --> 00:07:13,360
+entirely and yeah I've always like liked
+
+131
+00:07:13,360 --> 00:07:16,160
+C++ I it was actually the first
+
+132
+00:07:16,160 --> 00:07:19,879
+programming language I started with
+
+133
+00:07:19,879 --> 00:07:22,360
+so yeah I'm looking forward
+
+134
+00:07:22,360 --> 00:07:25,759
+to working here on this course yeah so
+
+135
+00:07:25,759 --> 00:07:27,800
+these guys are uh going to be more help
+
+136
+00:07:27,800 --> 00:07:31,599
+for you with debugging your homework
+
+137
+00:07:31,599 --> 00:07:33,800
+because I'll be probably more
+
+138
+00:07:33,800 --> 00:07:35,879
+concentrated on preparing the lectures
+
+139
+00:07:35,879 --> 00:07:38,199
+each lecture is kind of a nice story and
+
+140
+00:07:38,199 --> 00:07:40,080
+it's very important to remember where to
+
+141
+00:07:40,080 --> 00:07:41,840
+turn otherwise it will the story will
+
+142
+00:07:41,840 --> 00:07:44,479
+break so that takes some time and I
+
+143
+00:07:44,479 --> 00:07:46,159
+really encourage you to come to lectures
+
+144
+00:07:46,159 --> 00:07:48,319
+because they are fun they they are these
+
+145
+00:07:48,319 --> 00:07:51,720
+nice stories um but then there is a lot
+
+146
+00:07:51,720 --> 00:07:53,759
+of work that you guys will have to do in
+
+147
+00:07:53,759 --> 00:07:56,039
+teams for your lab assignments and
+
+148
+00:07:56,039 --> 00:07:58,879
+individually for your machine problems
+
+149
+00:07:58,879 --> 00:08:01,240
+and uh we'll have a lot of support for
+
+150
+00:08:01,240 --> 00:08:05,159
+you with debugging and El Ando that's
+
+151
+00:08:05,159 --> 00:08:07,440
+their main job to help
+
+152
+00:08:07,440 --> 00:08:10,000
+you the t
+
+153
+00:08:10,000 --> 00:08:14,120
+is uh also going to be on board as our
+
+154
+00:08:14,120 --> 00:08:15,930
+TA
+
+155
+00:08:15,930 --> 00:08:19,040
+[Music]
+
+156
+00:08:19,520 --> 00:08:23,720
+so yeah hello everyone my name is I'm
+
+157
+00:08:23,720 --> 00:08:26,919
+Bachelor student here and I will be
+
+158
+00:08:26,919 --> 00:08:31,240
+helping you mainly during the lab
+
+159
+00:08:32,880 --> 00:08:37,479
+any questions you might have about
+
+160
+00:08:37,479 --> 00:08:39,000
+General
+
+161
+00:08:39,000 --> 00:08:44,279
+I I am part of CA because I helped with
+
+162
+00:08:44,279 --> 00:08:49,040
+debugging the exercise last fall and
+
+163
+00:08:49,040 --> 00:08:52,399
+otherwise I just and I just asked me to
+
+164
+00:08:52,399 --> 00:08:56,080
+be here so now yes so so these guys are
+
+165
+00:08:56,080 --> 00:08:57,360
+experienced
+
+166
+00:08:57,360 --> 00:09:00,680
+Tas and um they have been helping me
+
+167
+00:09:00,680 --> 00:09:05,360
+with other courses for many years now El
+
+168
+00:09:05,360 --> 00:09:07,399
+how many years has it been
+
+169
+00:09:07,399 --> 00:09:09,959
+five since
+
+170
+00:09:09,959 --> 00:09:14,279
+2019 and like two already two years yeah
+
+171
+00:09:14,279 --> 00:09:17,519
+so so they know what they're doing uh
+
+172
+00:09:17,519 --> 00:09:19,839
+but this is all new to all of us in some
+
+173
+00:09:19,839 --> 00:09:22,240
+way in some sense so let's see how it
+
+174
+00:09:22,240 --> 00:09:24,600
+goes this is supposed to be a pilot
+
+175
+00:09:24,600 --> 00:09:27,800
+course and I'll explain uh later in more
+
+176
+00:09:27,800 --> 00:09:30,399
+details why
+
+177
+00:09:30,399 --> 00:09:32,880
+now something exciting is
+
+178
+00:09:32,880 --> 00:09:35,279
+happening um this course seem to be
+
+179
+00:09:35,279 --> 00:09:37,160
+important not only because hey we
+
+180
+00:09:37,160 --> 00:09:39,399
+decided to teach it actually we didn't
+
+181
+00:09:39,399 --> 00:09:40,839
+decide to teach it we kind of were
+
+182
+00:09:40,839 --> 00:09:43,040
+pushed in some way because there's a big
+
+183
+00:09:43,040 --> 00:09:47,839
+need in loc in our community here for
+
+184
+00:09:47,839 --> 00:09:50,519
+you guys to learn sequence plus so these
+
+185
+00:09:50,519 --> 00:09:53,399
+companies were all over us for the last
+
+186
+00:09:53,399 --> 00:09:56,120
+year um kind of encouraging us to start
+
+187
+00:09:56,120 --> 00:09:58,640
+as course so we talking about fute
+
+188
+00:09:58,640 --> 00:10:02,360
+mainly but also C no and El so we are in
+
+189
+00:10:02,360 --> 00:10:05,000
+communication with them and even more
+
+190
+00:10:05,000 --> 00:10:08,240
+excitingly five members of cute will be
+
+191
+00:10:08,240 --> 00:10:10,880
+helping you guys on this score they're
+
+192
+00:10:10,880 --> 00:10:13,640
+already there with deing your homeworks
+
+193
+00:10:13,640 --> 00:10:16,279
+as well not only us but also those
+
+194
+00:10:16,279 --> 00:10:21,160
+person and moreover one person from
+
+195
+00:10:22,560 --> 00:10:27,040
+cute right did I say it right v l he is
+
+196
+00:10:27,040 --> 00:10:31,160
+largest Ser programmer um but he's also
+
+197
+00:10:31,160 --> 00:10:34,959
+a member of the C++ senate committee um
+
+198
+00:10:34,959 --> 00:10:38,519
+so he knows C++ in and out and you know
+
+199
+00:10:38,519 --> 00:10:40,639
+he goes to those meetings and decides
+
+200
+00:10:40,639 --> 00:10:43,320
+what should be the next um release of
+
+201
+00:10:43,320 --> 00:10:46,720
+C++ so he'll be there so that's really
+
+202
+00:10:46,720 --> 00:10:49,639
+exciting he also will come as an invited
+
+203
+00:10:49,639 --> 00:10:52,160
+lecturer for one of our lectures in
+
+204
+00:10:52,160 --> 00:10:54,320
+April sometime I already put it as an
+
+205
+00:10:54,320 --> 00:10:56,519
+enlighted lecture by him so please mark
+
+206
+00:10:56,519 --> 00:10:58,160
+the date and come because I think I'm
+
+207
+00:10:58,160 --> 00:11:00,519
+sure that will be very interesting so
+
+208
+00:11:00,519 --> 00:11:02,360
+here's full disclosure I think I already
+
+209
+00:11:02,360 --> 00:11:05,040
+mentioned that I cannot say that I'm an
+
+210
+00:11:05,040 --> 00:11:08,480
+expert on c i don't practice C++ every
+
+211
+00:11:08,480 --> 00:11:09,519
+day
+
+212
+00:11:09,519 --> 00:11:11,800
+anymore which means so what is the
+
+213
+00:11:11,800 --> 00:11:13,920
+implication for this course I may just
+
+214
+00:11:13,920 --> 00:11:16,639
+not know really and that's why it's so
+
+215
+00:11:16,639 --> 00:11:18,600
+important for us to have those guys
+
+216
+00:11:18,600 --> 00:11:20,120
+because if there's any question that you
+
+217
+00:11:20,120 --> 00:11:23,200
+can have that we can figure out we have
+
+218
+00:11:23,200 --> 00:11:25,800
+to have a list of questions for those
+
+219
+00:11:25,800 --> 00:11:27,880
+guys because I want to learn those
+
+220
+00:11:27,880 --> 00:11:30,600
+things too and most importantly we are
+
+221
+00:11:30,600 --> 00:11:32,880
+starting this course with core C++
+
+222
+00:11:32,880 --> 00:11:35,160
+Notions that are very important so all
+
+223
+00:11:35,160 --> 00:11:38,959
+of this material is important and um
+
+224
+00:11:38,959 --> 00:11:42,680
+secret some of it is going to be
+
+225
+00:11:42,680 --> 00:11:44,800
+pointers that need some stats that's
+
+226
+00:11:44,800 --> 00:11:48,519
+something that is on interviews at HUD
+
+227
+00:11:48,519 --> 00:11:51,120
+as well so we we'll start with pointers
+
+228
+00:11:51,120 --> 00:11:53,680
+already next Thursday it's important
+
+229
+00:11:53,680 --> 00:11:57,000
+it's core uh core C++ so we'll teach
+
+230
+00:11:57,000 --> 00:12:00,040
+that but some later things in C++ some
+
+231
+00:12:00,040 --> 00:12:02,120
+later editions is something that we
+
+232
+00:12:02,120 --> 00:12:04,720
+don't have in this course yet so in the
+
+233
+00:12:04,720 --> 00:12:07,680
+future installments we run this course
+
+234
+00:12:07,680 --> 00:12:09,959
+and see how it goes maybe the last
+
+235
+00:12:09,959 --> 00:12:12,000
+lectures would have to be changed
+
+236
+00:12:12,000 --> 00:12:14,600
+somewhere else according to the industry
+
+237
+00:12:14,600 --> 00:12:16,480
+needs
+
+238
+00:12:16,480 --> 00:12:19,839
+model that's the dis for that and
+
+239
+00:12:19,839 --> 00:12:22,560
+actually very exciting things um so
+
+240
+00:12:22,560 --> 00:12:24,880
+everybody is excited these guys from
+
+241
+00:12:24,880 --> 00:12:27,240
+those companies they want you to join
+
+242
+00:12:27,240 --> 00:12:29,160
+them and work there essentially there's
+
+243
+00:12:29,160 --> 00:12:31,399
+so much code that they have in C++ that
+
+244
+00:12:31,399 --> 00:12:33,600
+needs to be maintained and they just
+
+245
+00:12:33,600 --> 00:12:35,440
+don't have qualified people to maintain
+
+246
+00:12:35,440 --> 00:12:38,079
+it so you could be
+
+247
+00:12:38,079 --> 00:12:44,160
+them okay um so okay now U many of you
+
+248
+00:12:44,160 --> 00:12:45,959
+know the drill so you see the white
+
+249
+00:12:45,959 --> 00:12:47,920
+slide that all the slides are white so
+
+250
+00:12:47,920 --> 00:12:50,240
+when you see slider.com slide that's
+
+251
+00:12:50,240 --> 00:12:53,079
+where you take your phones you put that
+
+252
+00:12:53,079 --> 00:12:56,880
+number ins slide and you go
+
+253
+00:12:56,880 --> 00:12:59,760
+to um
+
+254
+00:12:59,760 --> 00:13:03,000
+you see that you can ask me
+
+255
+00:13:03,000 --> 00:13:06,399
+questions or I can ask you questions
+
+256
+00:13:06,399 --> 00:13:08,120
+well now I want to learn a little bit
+
+257
+00:13:08,120 --> 00:13:10,399
+about you let's do what done Exercise
+
+258
+00:13:10,399 --> 00:13:13,160
+with slide.com so if you there you put
+
+259
+00:13:13,160 --> 00:13:14,959
+the number let me go back so that you
+
+260
+00:13:14,959 --> 00:13:16,480
+know the number I don't know why it
+
+261
+00:13:16,480 --> 00:13:18,240
+doesn't show the number here it should
+
+262
+00:13:18,240 --> 00:13:22,399
+be it should always show the number
+
+263
+00:13:27,120 --> 00:13:30,760
+right I hope it works
+
+264
+00:13:31,079 --> 00:13:34,199
+sometimes like it was not
+
+265
+00:13:34,199 --> 00:13:38,760
+loading yeah it was us up so do you see
+
+266
+00:13:38,760 --> 00:13:39,920
+which country you're from is that
+
+267
+00:13:39,920 --> 00:13:45,680
+something that you can answer is it
+
+268
+00:13:47,240 --> 00:13:51,720
+answerable no no no no okay let me see
+
+269
+00:13:51,720 --> 00:13:54,800
+what's going on I'll have to exit the
+
+270
+00:13:54,800 --> 00:13:57,759
+slideshow and see what's going
+
+271
+00:13:57,759 --> 00:14:00,160
+on
+
+272
+00:14:00,160 --> 00:14:04,240
+yeah it should be fine
+
+273
+00:14:08,920 --> 00:14:13,160
+right ah there you go somehow it didn't
+
+274
+00:14:13,160 --> 00:14:15,160
+load properly
+
+275
+00:14:15,160 --> 00:14:17,120
+right okay
+
+276
+00:14:17,120 --> 00:14:20,440
+so so now what's very exciting about it
+
+277
+00:14:20,440 --> 00:14:24,199
+is that you guys they
+
+278
+00:14:24,600 --> 00:14:27,079
+online ah they asked me to be close to
+
+279
+00:14:27,079 --> 00:14:29,279
+the microphone okay I'll be
+
+280
+00:14:29,279 --> 00:14:31,320
+I'll try not to walk then
+
+281
+00:14:31,320 --> 00:14:33,800
+sorry do you know which microphone we're
+
+282
+00:14:33,800 --> 00:14:38,519
+using this one okay
+
+283
+00:14:38,920 --> 00:14:42,079
+oh I don't know I I believe I didn't
+
+284
+00:14:42,079 --> 00:14:46,439
+connect this one would this be the
+
+285
+00:14:47,839 --> 00:14:53,199
+connection is the camera could be the
+
+286
+00:14:53,600 --> 00:14:57,759
+microphone difficult yep I'll just try
+
+287
+00:14:57,759 --> 00:15:00,600
+to be here sorry sorry okay is this
+
+288
+00:15:00,600 --> 00:15:02,880
+better so you guys can now answer too
+
+289
+00:15:02,880 --> 00:15:04,880
+the guys who are online can also do the
+
+290
+00:15:04,880 --> 00:15:07,040
+same thing and they can
+
+291
+00:15:07,040 --> 00:15:09,079
+[Music]
+
+292
+00:15:09,079 --> 00:15:12,759
+um they can answer and we see where you
+
+293
+00:15:12,759 --> 00:15:16,440
+from Russia Finland Finland Finland
+
+294
+00:15:16,440 --> 00:15:20,120
+India Finland Sri Lanka Vietnam Libya
+
+295
+00:15:20,120 --> 00:15:22,839
+Egypt Iraq Iran Algeria all over the
+
+296
+00:15:22,839 --> 00:15:26,120
+world what is BD
+
+297
+00:15:26,120 --> 00:15:30,519
+Bangladesh yes okay
+
+298
+00:15:30,519 --> 00:15:33,519
+cool okay so that's kind of how we do it
+
+299
+00:15:33,519 --> 00:15:36,279
+so now I want to learn about you not
+
+300
+00:15:36,279 --> 00:15:38,440
+only where you from but where you from
+
+301
+00:15:38,440 --> 00:15:40,920
+in terms of you know professionally so
+
+302
+00:15:40,920 --> 00:15:43,240
+what programming languages are you
+
+303
+00:15:43,240 --> 00:15:47,959
+already comfortable with BB python C and
+
+304
+00:15:47,959 --> 00:15:51,199
+Java good I imagine that you will have
+
+305
+00:15:51,199 --> 00:15:52,800
+Java Python
+
+306
+00:15:52,800 --> 00:15:56,160
+and and C
+
+307
+00:15:56,160 --> 00:15:59,560
+mhm and not so much C++ do you see
+
+308
+00:15:59,560 --> 00:16:02,319
+that and mainly python because I know
+
+309
+00:16:02,319 --> 00:16:04,480
+that python is taught really well here
+
+310
+00:16:04,480 --> 00:16:08,440
+at University of Olo and Java too but we
+
+311
+00:16:08,440 --> 00:16:10,120
+are missing as you can see we are
+
+312
+00:16:10,120 --> 00:16:12,360
+missing C++ and it turns out there was
+
+313
+00:16:12,360 --> 00:16:14,639
+no C++ course here at University of Alla
+
+314
+00:16:14,639 --> 00:16:18,120
+for years now for some reason for some
+
+315
+00:16:18,120 --> 00:16:20,639
+unknown
+
+316
+00:16:21,279 --> 00:16:24,720
+reason so it's really good to start it
+
+317
+00:16:24,720 --> 00:16:27,880
+okay let's do it now how would you rate
+
+318
+00:16:27,880 --> 00:16:30,639
+your understanding of basic C++ Concepts
+
+319
+00:16:30,639 --> 00:16:34,720
+and already I see that probably one yeah
+
+320
+00:16:34,720 --> 00:16:38,040
+okay so two some
+
+321
+00:16:38,040 --> 00:16:42,399
+twos some fours that's good so those who
+
+322
+00:16:42,399 --> 00:16:46,639
+are at four level or three level you can
+
+323
+00:16:46,639 --> 00:16:49,360
+actually contribute a lot to this course
+
+324
+00:16:49,360 --> 00:16:51,279
+by going ahead and then helping
+
+325
+00:16:51,279 --> 00:16:53,240
+everybody debug in this course just like
+
+326
+00:16:53,240 --> 00:16:55,880
+you know just like the rest of us on the
+
+327
+00:16:55,880 --> 00:17:00,120
+staff I I hope to see a lot of Comm uh
+
+328
+00:17:00,120 --> 00:17:02,959
+communication going on on Discord okay
+
+329
+00:17:02,959 --> 00:17:05,000
+so what do you like in ter in terms of
+
+330
+00:17:05,000 --> 00:17:09,520
+software engineering so what do you what
+
+331
+00:17:09,520 --> 00:17:12,199
+are you passionate about mostly in terms
+
+332
+00:17:12,199 --> 00:17:14,400
+of
+
+333
+00:17:16,599 --> 00:17:19,640
+programming embedded systems
+
+334
+00:17:19,640 --> 00:17:21,760
+cool
+
+335
+00:17:21,760 --> 00:17:25,400
+web fast programs cool that's C right
+
+336
+00:17:25,400 --> 00:17:29,559
+then C++ can do that too full St testing
+
+337
+00:17:29,559 --> 00:17:32,720
+game development okay VR yeah we do VR
+
+338
+00:17:32,720 --> 00:17:35,240
+and game so so as you can see this is
+
+339
+00:17:35,240 --> 00:17:36,960
+something that's already been taught
+
+340
+00:17:36,960 --> 00:17:41,400
+here at University of Olo robotics cool
+
+341
+00:17:41,400 --> 00:17:43,320
+best so numerical methods or something
+
+342
+00:17:43,320 --> 00:17:46,600
+like that or financial say
+
+343
+00:17:46,600 --> 00:17:49,400
+um applications that's something that
+
+344
+00:17:49,400 --> 00:17:51,559
+needs then understanding how to make
+
+345
+00:17:51,559 --> 00:17:54,559
+your programs fast and that's what C++
+
+346
+00:17:54,559 --> 00:17:57,080
+is more about rather than Python and
+
+347
+00:17:57,080 --> 00:17:59,880
+Java that's why we need to do that to
+
+348
+00:17:59,880 --> 00:18:02,320
+learn it okay so now pick all the
+
+349
+00:18:02,320 --> 00:18:04,559
+programming languages Technologies you
+
+350
+00:18:04,559 --> 00:18:06,960
+already know so actually I wanted to
+
+351
+00:18:06,960 --> 00:18:09,760
+change I forgot which land is it and I
+
+352
+00:18:09,760 --> 00:18:11,840
+think I kind of know that okay so you're
+
+353
+00:18:11,840 --> 00:18:16,360
+coming from Python and c and Java in
+
+354
+00:18:16,360 --> 00:18:19,640
+that distribution good
+
+355
+00:18:19,640 --> 00:18:21,880
+good good to
+
+356
+00:18:21,880 --> 00:18:25,080
+know now what about the rest that's just
+
+357
+00:18:25,080 --> 00:18:27,000
+for fun like do you like any of those
+
+358
+00:18:27,000 --> 00:18:29,120
+and how much do you know
+
+359
+00:18:29,120 --> 00:18:31,200
+including python C and
+
+360
+00:18:31,200 --> 00:18:34,480
+Java but what about the other things
+
+361
+00:18:34,480 --> 00:18:37,919
+that you might have experienced
+
+362
+00:18:37,919 --> 00:18:41,159
+with and I know that you know game
+
+363
+00:18:41,159 --> 00:18:43,039
+development because we teach it you know
+
+364
+00:18:43,039 --> 00:18:44,720
+python because we teach it you know
+
+365
+00:18:44,720 --> 00:18:47,559
+mobile de web development and mobile
+
+366
+00:18:47,559 --> 00:18:50,559
+Computing because we teach a
+
+367
+00:18:50,559 --> 00:18:53,960
+train okay look at that c now is number
+
+368
+00:18:53,960 --> 00:18:56,760
+one and it used to be python hey what's
+
+369
+00:18:56,760 --> 00:18:59,120
+going on there
+
+370
+00:18:59,120 --> 00:19:01,840
+now see
+
+371
+00:19:01,840 --> 00:19:03,640
+maybe
+
+372
+00:19:03,640 --> 00:19:07,039
+H okay that's interesting so what's good
+
+373
+00:19:07,039 --> 00:19:09,320
+what's good about c.com is that I can go
+
+374
+00:19:09,320 --> 00:19:11,400
+back and look at all of the questions
+
+375
+00:19:11,400 --> 00:19:13,400
+and all of the answers so if there are
+
+376
+00:19:13,400 --> 00:19:16,039
+any questions that are left unanswered
+
+377
+00:19:16,039 --> 00:19:18,880
+in Q&A and you probably see that there's
+
+378
+00:19:18,880 --> 00:19:22,960
+a Q&A there on slider.com you can always
+
+379
+00:19:22,960 --> 00:19:24,799
+put your question there and you'll get
+
+380
+00:19:24,799 --> 00:19:25,559
+to
+
+381
+00:19:25,559 --> 00:19:29,960
+it like uh here see this is Q&A and I
+
+382
+00:19:29,960 --> 00:19:31,520
+think students just added something they
+
+383
+00:19:31,520 --> 00:19:34,120
+didn't have a chance to uh didn't have
+
+384
+00:19:34,120 --> 00:19:36,039
+time to answer but this is Q&A slide and
+
+385
+00:19:36,039 --> 00:19:39,200
+I have them this Q&A slides every two
+
+386
+00:19:39,200 --> 00:19:41,400
+slides so that if you have any questions
+
+387
+00:19:41,400 --> 00:19:44,600
+I make sure that we answer them but here
+
+388
+00:19:44,600 --> 00:19:47,039
+of course you are welcome
+
+389
+00:19:47,039 --> 00:19:50,960
+just ient for mon that's the way we do
+
+390
+00:19:50,960 --> 00:19:54,200
+it so what's the communication I know
+
+391
+00:19:54,200 --> 00:19:58,080
+that already on love L that's the main
+
+392
+00:19:58,080 --> 00:20:00,200
+um way for us to communicate what's the
+
+393
+00:20:00,200 --> 00:20:02,120
+materials right all the materials of the
+
+394
+00:20:02,120 --> 00:20:04,960
+course are there all of the homework oh
+
+395
+00:20:04,960 --> 00:20:07,280
+yeah all of the homework all of the
+
+396
+00:20:07,280 --> 00:20:09,960
+materials uh links to lectures all of
+
+397
+00:20:09,960 --> 00:20:13,600
+that stuff is there policies it Discord
+
+398
+00:20:13,600 --> 00:20:17,720
+is for us talk right so that's
+
+399
+00:20:17,720 --> 00:20:20,919
+um somebody please mute yourself because
+
+400
+00:20:20,919 --> 00:20:22,799
+I hear
+
+401
+00:20:22,799 --> 00:20:27,159
+feedback um okay so it Discord you're
+
+402
+00:20:27,159 --> 00:20:29,600
+there hopefully we don't see as many
+
+403
+00:20:29,600 --> 00:20:32,280
+people signed up to Discord as on Lovely
+
+404
+00:20:32,280 --> 00:20:34,720
+so please do that now it's very
+
+405
+00:20:34,720 --> 00:20:36,240
+important please do not send us
+
+406
+00:20:36,240 --> 00:20:39,080
+individual DMS or emails we will not be
+
+407
+00:20:39,080 --> 00:20:42,200
+able to process it so I said 230
+
+408
+00:20:42,200 --> 00:20:44,240
+students here now it's
+
+409
+00:20:44,240 --> 00:20:46,640
+270 I don't know today is still a day
+
+410
+00:20:46,640 --> 00:20:48,480
+where students register and there's no
+
+411
+00:20:48,480 --> 00:20:51,720
+way for me to put a cap on it so we
+
+412
+00:20:51,720 --> 00:20:54,320
+wanted to have 40 students in this
+
+413
+00:20:54,320 --> 00:20:56,760
+course and two weeks ago there was one
+
+414
+00:20:56,760 --> 00:20:59,320
+student registered so that's when I made
+
+415
+00:20:59,320 --> 00:21:04,080
+a mistake of sending an mass
+
+416
+00:21:04,200 --> 00:21:06,679
+email and then we have almost
+
+417
+00:21:06,679 --> 00:21:12,520
+300 so let's see how it goes um actually
+
+418
+00:21:12,520 --> 00:21:16,880
+no DMS no uh direct messages it's it uh
+
+419
+00:21:16,880 --> 00:21:20,760
+wide Discord policy so I I think I was
+
+420
+00:21:20,760 --> 00:21:23,200
+answering DMS until I learned from the
+
+421
+00:21:23,200 --> 00:21:25,240
+administrators that it's actually no
+
+422
+00:21:25,240 --> 00:21:26,840
+really frowned upon like that's the
+
+423
+00:21:26,840 --> 00:21:29,440
+policy no DMs if you absolutely have to
+
+424
+00:21:29,440 --> 00:21:31,200
+do something it's something personal
+
+425
+00:21:31,200 --> 00:21:33,360
+then it's the email because that's the
+
+426
+00:21:33,360 --> 00:21:36,840
+policy for for Discord but please other
+
+427
+00:21:36,840 --> 00:21:38,120
+than that if you have a question about
+
+428
+00:21:38,120 --> 00:21:40,159
+homework just ask everybody because I'm
+
+429
+00:21:40,159 --> 00:21:42,240
+sure there will be somebody else or
+
+430
+00:21:42,240 --> 00:21:44,320
+maybe 10 students or maybe even 50 who
+
+431
+00:21:44,320 --> 00:21:47,080
+have the same
+
+432
+00:21:47,520 --> 00:21:50,240
+question now course resources so let's
+
+433
+00:21:50,240 --> 00:21:51,799
+list what's
+
+434
+00:21:51,799 --> 00:21:54,640
+there this point sign up info oh it's
+
+435
+00:21:54,640 --> 00:21:57,320
+not actually on the no no no no no it's
+
+436
+00:21:57,320 --> 00:21:58,880
+not on Lovely because we don't want to
+
+437
+00:21:58,880 --> 00:22:02,480
+have Bots there so I sent you it's it's
+
+438
+00:22:02,480 --> 00:22:05,000
+here it's on on this slides right so if
+
+439
+00:22:05,000 --> 00:22:06,760
+you have yeah on slides you'll have this
+
+440
+00:22:06,760 --> 00:22:10,240
+link that's it there you go that's your
+
+441
+00:22:10,240 --> 00:22:12,960
+sign up inform schedule homework exam
+
+442
+00:22:12,960 --> 00:22:16,320
+materials grading lecture slides YouTube
+
+443
+00:22:16,320 --> 00:22:20,320
+channel Zoom link I also sent you in
+
+444
+00:22:20,320 --> 00:22:22,840
+mass email so if you don't have a zoom
+
+445
+00:22:22,840 --> 00:22:25,360
+link I guess everybody on Zoom has a
+
+446
+00:22:25,360 --> 00:22:27,080
+zoom link but if you don't have a zoom
+
+447
+00:22:27,080 --> 00:22:30,080
+link then put on Discord question we'll
+
+448
+00:22:30,080 --> 00:22:31,039
+put it
+
+449
+00:22:31,039 --> 00:22:34,880
+there um I think I did maybe now
+
+450
+00:22:34,880 --> 00:22:38,000
+computer lab is going to be
+
+451
+00:22:38,000 --> 00:22:41,400
+ts35 so the first lab is going to be
+
+452
+00:22:41,400 --> 00:22:44,279
+today right after the SE 12 there's only
+
+453
+00:22:44,279 --> 00:22:46,760
+20 stations there how many people do you
+
+454
+00:22:46,760 --> 00:22:48,440
+have you might actually fit because if
+
+455
+00:22:48,440 --> 00:22:52,279
+you make a te then you'll be fine Prett
+
+456
+00:22:52,279 --> 00:22:55,559
+good surprisingly how how did it work
+
+457
+00:22:55,559 --> 00:23:00,679
+out have 270 students we have only 4ish
+
+458
+00:23:00,679 --> 00:23:03,919
+here so no problem no stress I was
+
+459
+00:23:03,919 --> 00:23:06,080
+really stressed about the situation but
+
+460
+00:23:06,080 --> 00:23:08,559
+seems like maybe it'll sort of resolve
+
+461
+00:23:08,559 --> 00:23:10,120
+itself
+
+462
+00:23:10,120 --> 00:23:12,559
+somehow hello world I have not been
+
+463
+00:23:12,559 --> 00:23:15,200
+accepted to the course Pepe uh that's
+
+464
+00:23:15,200 --> 00:23:18,360
+okay so please
+
+465
+00:23:20,600 --> 00:23:23,919
+send that's a personal question so send
+
+466
+00:23:23,919 --> 00:23:26,960
+an email I'll get you on Pepe okay
+
+467
+00:23:26,960 --> 00:23:28,279
+that's an email question see that's
+
+468
+00:23:28,279 --> 00:23:29,400
+personal because that's personal
+
+469
+00:23:29,400 --> 00:23:30,880
+information everything else about the
+
+470
+00:23:30,880 --> 00:23:34,080
+course no personal uh
+
+471
+00:23:34,080 --> 00:23:36,480
+emails okay course at a glance let's
+
+472
+00:23:36,480 --> 00:23:39,000
+look at the course schedule so that's
+
+473
+00:23:39,000 --> 00:23:41,960
+your main page maybe where I really want
+
+474
+00:23:41,960 --> 00:23:46,919
+you to be familiar with so we'll go
+
+475
+00:23:47,679 --> 00:23:50,919
+there okay how do you like
+
+476
+00:23:50,919 --> 00:23:53,880
+it course and deadlines at a glance do
+
+477
+00:23:53,880 --> 00:23:56,640
+you see this thing is in the way I don't
+
+478
+00:23:56,640 --> 00:23:58,640
+know how to minimize it it's going to be
+
+479
+00:23:58,640 --> 00:24:01,799
+in the way and I want to exit this so
+
+480
+00:24:01,799 --> 00:24:03,760
+that I have control of my windows and
+
+481
+00:24:03,760 --> 00:24:07,279
+this thing is in the way okay so let's
+
+482
+00:24:07,279 --> 00:24:11,840
+look at our course here if you go to C++
+
+483
+00:24:11,840 --> 00:24:14,720
+programming this course schedule at a at
+
+484
+00:24:14,720 --> 00:24:17,840
+a glance link is your uh very important
+
+485
+00:24:17,840 --> 00:24:20,520
+link so a goto link that's the schedule
+
+486
+00:24:20,520 --> 00:24:24,000
+of our lectures schedule of our labs and
+
+487
+00:24:24,000 --> 00:24:27,480
+also schedule and deadlines for our
+
+488
+00:24:27,480 --> 00:24:30,320
+homework work so you will have to get
+
+489
+00:24:30,320 --> 00:24:32,200
+started with setting up your laptop so
+
+490
+00:24:32,200 --> 00:24:36,039
+start with that wherever you are in the
+
+491
+00:24:36,039 --> 00:24:38,200
+lab if you have a laptop if you're
+
+492
+00:24:38,200 --> 00:24:40,640
+planning to work on machines in the lab
+
+493
+00:24:40,640 --> 00:24:42,480
+go through that process
+
+494
+00:24:42,480 --> 00:24:47,360
+there um but I think it's preferable
+
+495
+00:24:47,360 --> 00:24:49,559
+that you'll be working on your laptops
+
+496
+00:24:49,559 --> 00:24:52,880
+even my little tablet here can run the
+
+497
+00:24:52,880 --> 00:24:55,080
+virtual machine so that's what we will
+
+498
+00:24:55,080 --> 00:24:57,799
+guide you through doing and um you can
+
+499
+00:24:57,799 --> 00:25:00,000
+complete your exercises even on very
+
+500
+00:25:00,000 --> 00:25:03,559
+small kind of laptop tablet
+
+501
+00:25:03,559 --> 00:25:06,159
+whatever um however we still have the
+
+502
+00:25:06,159 --> 00:25:08,120
+machines there so you're welcome to work
+
+503
+00:25:08,120 --> 00:25:11,520
+there as well uh look how many Labs we
+
+504
+00:25:11,520 --> 00:25:15,600
+have seven right and we have four MPS I
+
+505
+00:25:15,600 --> 00:25:18,720
+would say on average for me completing
+
+506
+00:25:18,720 --> 00:25:22,200
+this exercises was 1.5 hours or two
+
+507
+00:25:22,200 --> 00:25:25,200
+hours yeah some of them I compl in one
+
+508
+00:25:25,200 --> 00:25:27,760
+hour when I was repeating and even
+
+509
+00:25:27,760 --> 00:25:29,720
+second time and the reason is just
+
+510
+00:25:29,720 --> 00:25:32,360
+because they're long you have to go
+
+511
+00:25:32,360 --> 00:25:34,720
+through it and read it and understand
+
+512
+00:25:34,720 --> 00:25:37,039
+what it is that is asking and there are
+
+513
+00:25:37,039 --> 00:25:39,840
+puzzles there so that means if you don't
+
+514
+00:25:39,840 --> 00:25:42,000
+know how to resolve the puzzle it may it
+
+515
+00:25:42,000 --> 00:25:44,799
+longer one I think setting up your
+
+516
+00:25:44,799 --> 00:25:47,679
+laptop to 5 hours one of the tablets for
+
+517
+00:25:47,679 --> 00:25:49,399
+no reason that I don't remember but it
+
+518
+00:25:49,399 --> 00:25:51,480
+took me five hours something didn't work
+
+519
+00:25:51,480 --> 00:25:55,360
+I don't all of that is which means that
+
+520
+00:25:55,360 --> 00:25:58,399
+don't leave it until the last
+
+521
+00:25:58,399 --> 00:26:01,240
+and think of this course as a boot point
+
+522
+00:26:01,240 --> 00:26:04,279
+this is serious stuff this is how univ
+
+523
+00:26:04,279 --> 00:26:06,919
+of Illinois like you will spend time
+
+524
+00:26:06,919 --> 00:26:09,120
+learning this language you cannot learn
+
+525
+00:26:09,120 --> 00:26:10,960
+a language you cannot use language you
+
+526
+00:26:10,960 --> 00:26:12,559
+canot communicate in language if you
+
+527
+00:26:12,559 --> 00:26:14,520
+don't practice it every day so that's
+
+528
+00:26:14,520 --> 00:26:16,679
+kind of a goal you'll be practicing
+
+529
+00:26:16,679 --> 00:26:19,600
+every day if you leave it until the last
+
+530
+00:26:19,600 --> 00:26:22,039
+hours before the deadline you may not be
+
+531
+00:26:22,039 --> 00:26:24,559
+able to complete it sorry I left my
+
+532
+00:26:24,559 --> 00:26:26,480
+station here so you will not be able to
+
+533
+00:26:26,480 --> 00:26:28,399
+complete it right just because you know
+
+534
+00:26:28,399 --> 00:26:30,080
+your your system will decide to update
+
+535
+00:26:30,080 --> 00:26:31,760
+and it takes hours
+
+536
+00:26:31,760 --> 00:26:34,760
+right um so so those things like just
+
+537
+00:26:34,760 --> 00:26:37,360
+start now just do it okay and I've
+
+538
+00:26:37,360 --> 00:26:39,679
+noticed that some of you have there's
+
+539
+00:26:39,679 --> 00:26:42,880
+one student who completed everything
+
+540
+00:26:42,880 --> 00:26:45,360
+already and we want to talk to you
+
+541
+00:26:45,360 --> 00:26:48,520
+whoever that is like really really you
+
+542
+00:26:48,520 --> 00:26:51,520
+can help us help
+
+543
+00:26:51,520 --> 00:26:55,240
+us okay so that's really cool so which
+
+544
+00:26:55,240 --> 00:26:57,279
+means that you know you can like you can
+
+545
+00:26:57,279 --> 00:27:01,039
+if you just do it it's not unheard of to
+
+546
+00:27:01,039 --> 00:27:04,919
+spend 20 hours a week on the
+
+547
+00:27:05,080 --> 00:27:07,960
+course how it is and you know what since
+
+548
+00:27:07,960 --> 00:27:09,919
+it's a pilot we'll run it the way it was
+
+549
+00:27:09,919 --> 00:27:11,880
+at the University of Illinois why not
+
+550
+00:27:11,880 --> 00:27:14,600
+that's that course was a legend we want
+
+551
+00:27:14,600 --> 00:27:17,559
+to repeat the same experience because it
+
+552
+00:27:17,559 --> 00:27:19,520
+was also known that if you go through
+
+553
+00:27:19,520 --> 00:27:21,880
+this you get a job if if you go through
+
+554
+00:27:21,880 --> 00:27:26,000
+it successfully you get a job so full
+
+555
+00:27:26,000 --> 00:27:30,000
+stop okay um some MPS take longer on
+
+556
+00:27:30,000 --> 00:27:31,559
+average because that's individual
+
+557
+00:27:31,559 --> 00:27:33,919
+assignment and it it is kind of
+
+558
+00:27:33,919 --> 00:27:36,760
+scheduled to take two weeks versus one
+
+559
+00:27:36,760 --> 00:27:40,799
+week um you should do this individually
+
+560
+00:27:40,799 --> 00:27:44,000
+you should do this in a group
+
+561
+00:27:44,000 --> 00:27:46,919
+of you know what is it three people can
+
+562
+00:27:46,919 --> 00:27:47,760
+I
+
+563
+00:27:47,760 --> 00:27:51,519
+look I forgot what I said oh no groups
+
+564
+00:27:51,519 --> 00:27:54,480
+yet okay I think it's three
+
+565
+00:27:54,480 --> 00:27:58,200
+people I wasn't sure I was
+
+566
+00:27:58,200 --> 00:27:59,919
+yeah I think it's three whatever it says
+
+567
+00:27:59,919 --> 00:28:04,200
+here actually Let's see we have forming
+
+568
+00:28:05,200 --> 00:28:08,519
+groups didn't say it there okay let's
+
+569
+00:28:08,519 --> 00:28:09,720
+let's figure it out because you'll be
+
+570
+00:28:09,720 --> 00:28:12,000
+forming groups right now and I know that
+
+571
+00:28:12,000 --> 00:28:15,919
+it's this information is right
+
+572
+00:28:16,720 --> 00:28:21,279
+here three people so okay very helpful
+
+573
+00:28:21,279 --> 00:28:23,120
+because then you can interact and solve
+
+574
+00:28:23,120 --> 00:28:26,440
+those problems so three people per
+
+575
+00:28:26,440 --> 00:28:28,279
+group
+
+576
+00:28:28,279 --> 00:28:31,399
+okay let's go back to our slides let's
+
+577
+00:28:31,399 --> 00:28:33,840
+see what else I wanted to say here so
+
+578
+00:28:33,840 --> 00:28:36,799
+course schedule is is is
+
+579
+00:28:36,799 --> 00:28:38,919
+tough now how do you complete your
+
+580
+00:28:38,919 --> 00:28:41,000
+homework your own laptop as I said is
+
+581
+00:28:41,000 --> 00:28:44,440
+preferable there's PCS in ts1 35 which
+
+582
+00:28:44,440 --> 00:28:47,440
+is fine but they just not many of them
+
+583
+00:28:47,440 --> 00:28:50,640
+and however if you have to use them the
+
+584
+00:28:50,640 --> 00:28:53,000
+good news is that after 400 p.m. and on
+
+585
+00:28:53,000 --> 00:28:55,840
+weekends they yours for you so you just
+
+586
+00:28:55,840 --> 00:28:58,919
+do it um but the first option is
+
+587
+00:28:58,919 --> 00:29:01,919
+preferable because um because of the
+
+588
+00:29:01,919 --> 00:29:04,159
+size of the class okay let's go through
+
+589
+00:29:04,159 --> 00:29:06,159
+the questions I have not been accepted
+
+590
+00:29:06,159 --> 00:29:08,360
+to the course in Pepe many other people
+
+591
+00:29:08,360 --> 00:29:10,840
+have this problem also I noticed that
+
+592
+00:29:10,840 --> 00:29:14,960
+because we have 270 on Lovel
+
+593
+00:29:14,960 --> 00:29:19,240
+and 230 on pepy so I think there's 30
+
+594
+00:29:19,240 --> 00:29:21,039
+people that are missing somewhere I
+
+595
+00:29:21,039 --> 00:29:22,840
+wanted I even have a slide about it like
+
+596
+00:29:22,840 --> 00:29:25,080
+where are you people why are you not on
+
+597
+00:29:25,080 --> 00:29:27,840
+pey okay that means I'll get 30 idual
+
+598
+00:29:27,840 --> 00:29:29,919
+emails and that's fine because I'll get
+
+599
+00:29:29,919 --> 00:29:33,760
+you in then that's important hello
+
+600
+00:29:33,760 --> 00:29:36,159
+world we do we need to register both in
+
+601
+00:29:36,159 --> 00:29:37,880
+love less and tudo I don't know what
+
+602
+00:29:37,880 --> 00:29:40,679
+tudo is instructors don't have tudo I
+
+603
+00:29:40,679 --> 00:29:44,200
+have no idea maybe who are more close to
+
+604
+00:29:44,200 --> 00:29:46,120
+you guys in terms of like they I think
+
+605
+00:29:46,120 --> 00:29:48,559
+by T they mean py then yeah once you're
+
+606
+00:29:48,559 --> 00:29:51,279
+in py you'll get your tudo schedule
+
+607
+00:29:51,279 --> 00:29:52,480
+right it's for
+
+608
+00:29:52,480 --> 00:29:54,760
+schedules what is recommended group size
+
+609
+00:29:54,760 --> 00:29:56,799
+three you can do it alone by the way
+
+610
+00:29:56,799 --> 00:29:58,640
+you're welcome to do all of the labs
+
+611
+00:29:58,640 --> 00:30:01,279
+alone or two people that's fine but you
+
+612
+00:30:01,279 --> 00:30:03,519
+can have up to three and the system will
+
+613
+00:30:03,519 --> 00:30:07,080
+not let you have more so that's um is it
+
+614
+00:30:07,080 --> 00:30:08,799
+possible no it's not possible because
+
+615
+00:30:08,799 --> 00:30:10,960
+it's set up to three we don't want four
+
+616
+00:30:10,960 --> 00:30:13,080
+people four people groups are known to
+
+617
+00:30:13,080 --> 00:30:14,840
+be
+
+618
+00:30:14,840 --> 00:30:19,360
+less less use less they don't work out
+
+619
+00:30:19,360 --> 00:30:22,799
+as well as three or two two are not as
+
+620
+00:30:22,799 --> 00:30:24,679
+well three is a really good size for
+
+621
+00:30:24,679 --> 00:30:28,120
+groups in terms of who does what work
+
+622
+00:30:28,120 --> 00:30:29,600
+okay is it possible to do lab
+
+623
+00:30:29,600 --> 00:30:33,200
+assignments alone yes yes yes yes okay
+
+624
+00:30:33,200 --> 00:30:35,640
+so that's how the Q&A works so very
+
+625
+00:30:35,640 --> 00:30:40,320
+useful do you guys have any questions so
+
+626
+00:30:40,480 --> 00:30:43,440
+far just raise your hand do you get
+
+627
+00:30:43,440 --> 00:30:45,519
+feedback even if you get full marks and
+
+628
+00:30:45,519 --> 00:30:48,679
+levels maybe the solution is not
+
+629
+00:30:48,679 --> 00:30:51,279
+perfect
+
+630
+00:30:51,279 --> 00:30:54,799
+um that's where I think I really expect
+
+631
+00:30:54,799 --> 00:30:57,240
+you to go to ask these questions on this
+
+632
+00:30:57,240 --> 00:30:59,440
+Discord and we'll discuss your solution
+
+633
+00:30:59,440 --> 00:31:01,039
+whether it's perfect or not whether it's
+
+634
+00:31:01,039 --> 00:31:02,880
+elegant or not whether it's good writing
+
+635
+00:31:02,880 --> 00:31:06,360
+style or not coding style or not so
+
+636
+00:31:06,360 --> 00:31:08,600
+that's that's a perfect question and
+
+637
+00:31:08,600 --> 00:31:11,639
+please ask these kind of questions on um
+
+638
+00:31:11,639 --> 00:31:13,000
+on
+
+639
+00:31:13,000 --> 00:31:15,360
+Discord I cannot guarantee that we'll
+
+640
+00:31:15,360 --> 00:31:17,960
+answer all of them depending on the size
+
+641
+00:31:17,960 --> 00:31:19,840
+but we'll try that that's what we really
+
+642
+00:31:19,840 --> 00:31:23,279
+want to do guide you through this yeah
+
+643
+00:31:23,279 --> 00:31:25,559
+so how do we ask this kind of question I
+
+644
+00:31:25,559 --> 00:31:29,880
+mean we are not uh we shouldn't reveal
+
+645
+00:31:29,880 --> 00:31:32,880
+our code yeah be careful of
+
+646
+00:31:32,880 --> 00:31:35,480
+course
+
+647
+00:31:35,480 --> 00:31:38,120
+um first of all after the deadline you
+
+648
+00:31:38,120 --> 00:31:41,159
+could so this is a if it's a coding
+
+649
+00:31:41,159 --> 00:31:43,559
+style question then after afterwards
+
+650
+00:31:43,559 --> 00:31:47,080
+it's fine um although some students may
+
+651
+00:31:47,080 --> 00:31:48,840
+be still submitting later so I'll talk
+
+652
+00:31:48,840 --> 00:31:51,519
+about late submission policy we do have
+
+653
+00:31:51,519 --> 00:31:53,720
+late submission policy but I think it's
+
+654
+00:31:53,720 --> 00:31:58,039
+fair game to to do that you be able to
+
+655
+00:31:58,039 --> 00:32:03,000
+like link answer to the submission on so
+
+656
+00:32:03,000 --> 00:32:05,120
+us can that's true that's another that's
+
+657
+00:32:05,120 --> 00:32:06,600
+an elegant
+
+658
+00:32:06,600 --> 00:32:09,000
+solution you can say hey can you look up
+
+659
+00:32:09,000 --> 00:32:12,240
+at my yeah that's a that's a better
+
+660
+00:32:12,240 --> 00:32:14,519
+solution I'm not sure cute guys will
+
+661
+00:32:14,519 --> 00:32:17,519
+have access to that yeah I guess we're
+
+662
+00:32:17,519 --> 00:32:18,919
+gonna talk
+
+663
+00:32:18,919 --> 00:32:22,000
+with yeah we can add them Grant
+
+664
+00:32:22,000 --> 00:32:24,039
+MTA
+
+665
+00:32:24,039 --> 00:32:28,880
+l so yeah yeah little for m
+
+666
+00:32:28,880 --> 00:32:30,880
+is there many no there's no restriction
+
+667
+00:32:30,880 --> 00:32:32,519
+how many times you can try to submit on
+
+668
+00:32:32,519 --> 00:32:34,639
+love La so love La is essentially a web
+
+669
+00:32:34,639 --> 00:32:36,960
+compiler so you submit your solution you
+
+670
+00:32:36,960 --> 00:32:38,919
+submit your files it'll compile it spit
+
+671
+00:32:38,919 --> 00:32:41,799
+out whatever it is if it doesn't compile
+
+672
+00:32:41,799 --> 00:32:43,320
+it will tell you
+
+673
+00:32:43,320 --> 00:32:46,080
+why and if it doesn't run if there's
+
+674
+00:32:46,080 --> 00:32:48,600
+memory it will tell you that as well so
+
+675
+00:32:48,600 --> 00:32:50,120
+you'll have feedback and you can
+
+676
+00:32:50,120 --> 00:32:51,559
+continue submitting
+
+677
+00:32:51,559 --> 00:32:55,240
+it um as long as many as many times as
+
+678
+00:32:55,240 --> 00:32:58,200
+you want do we get feedback even if we
+
+679
+00:32:58,200 --> 00:33:03,840
+get oh yeah yes I answered that okay
+
+680
+00:33:04,000 --> 00:33:06,880
+cool grading so let's look at the
+
+681
+00:33:06,880 --> 00:33:09,000
+distribution for individual assignments
+
+682
+00:33:09,000 --> 00:33:12,760
+there are four of them 40 points Labs 37
+
+683
+00:33:12,760 --> 00:33:15,120
+points because one of them is a little
+
+684
+00:33:15,120 --> 00:33:18,000
+longer seven points every other lab is
+
+685
+00:33:18,000 --> 00:33:18,840
+Five
+
+686
+00:33:18,840 --> 00:33:21,480
+Points exam will be 30 points so it'll
+
+687
+00:33:21,480 --> 00:33:24,039
+take a big chunk of your grade because
+
+688
+00:33:24,039 --> 00:33:26,600
+well it's important then will be
+
+689
+00:33:26,600 --> 00:33:28,360
+something unpredictable unknown
+
+690
+00:33:28,360 --> 00:33:30,720
+something that's harder to find on web
+
+691
+00:33:30,720 --> 00:33:33,000
+uh MPS and Labs you may find some
+
+692
+00:33:33,000 --> 00:33:35,480
+similar solution somewhere and I'll have
+
+693
+00:33:35,480 --> 00:33:38,480
+the the slide about academic
+
+694
+00:33:38,480 --> 00:33:41,799
+Integrity um but you know just or you
+
+695
+00:33:41,799 --> 00:33:43,559
+may ask your friend you know we we just
+
+696
+00:33:43,559 --> 00:33:46,480
+really want to make sure that exam will
+
+697
+00:33:46,480 --> 00:33:50,440
+correct for that that will be just you
+
+698
+00:33:50,440 --> 00:33:52,360
+having an enormous amount of work to do
+
+699
+00:33:52,360 --> 00:33:54,120
+in two
+
+700
+00:33:54,120 --> 00:33:56,279
+hours that is really hard to find
+
+701
+00:33:56,279 --> 00:33:59,159
+Solutions any anywhere or ask CH GPT you
+
+702
+00:33:59,159 --> 00:34:02,480
+know those kind of things so exam will
+
+703
+00:34:02,480 --> 00:34:04,840
+correct for any kind of problems like
+
+704
+00:34:04,840 --> 00:34:06,360
+that we'll really want to make sure you
+
+705
+00:34:06,360 --> 00:34:08,639
+you know what you're talking about there
+
+706
+00:34:08,639 --> 00:34:10,480
+so total points you can see that they
+
+707
+00:34:10,480 --> 00:34:13,599
+add up more to to more than 100 which
+
+708
+00:34:13,599 --> 00:34:15,560
+means that there's extra credit right so
+
+709
+00:34:15,560 --> 00:34:17,879
+if you miss one assignment you may still
+
+710
+00:34:17,879 --> 00:34:21,000
+compensate later and you pass if it's
+
+711
+00:34:21,000 --> 00:34:23,040
+more than 65 points so you need to do
+
+712
+00:34:23,040 --> 00:34:25,199
+all of the homework if you want to pass
+
+713
+00:34:25,199 --> 00:34:28,719
+right uh at least
+
+714
+00:34:28,719 --> 00:34:30,719
+and that's that's a good thing and this
+
+715
+00:34:30,719 --> 00:34:32,719
+is the grade distribution so you get a
+
+716
+00:34:32,719 --> 00:34:36,079
+five if you are really fluent in C++
+
+717
+00:34:36,079 --> 00:34:37,719
+which is more than
+
+718
+00:34:37,719 --> 00:34:40,879
+95 but remember there's extra credit
+
+719
+00:34:40,879 --> 00:34:43,280
+right okay there's chat
+
+720
+00:34:43,280 --> 00:34:47,119
+question oh yeah please ask on on um
+
+721
+00:34:47,119 --> 00:34:48,839
+these kind of questions now on
+
+722
+00:34:48,839 --> 00:34:51,560
+slider.com
+
+723
+00:34:52,119 --> 00:34:55,199
+okay so now late submission policy so if
+
+724
+00:34:55,199 --> 00:34:56,520
+you submit after the deadline you get
+
+725
+00:34:56,520 --> 00:34:59,760
+80% % for assignment no
+
+726
+00:34:59,760 --> 00:35:02,359
+exceptions oh if you have an official
+
+727
+00:35:02,359 --> 00:35:04,839
+document yeah yes sure but but it's a
+
+728
+00:35:04,839 --> 00:35:07,200
+small
+
+729
+00:35:08,119 --> 00:35:12,400
+enough it's a small enough
+
+730
+00:35:12,400 --> 00:35:15,040
+um what's the right
+
+731
+00:35:15,040 --> 00:35:18,880
+word penalty penalty yeah that's small
+
+732
+00:35:18,880 --> 00:35:23,200
+enough penalty so no problem right um
+
+733
+00:35:23,200 --> 00:35:25,599
+take your time with it but we just don't
+
+734
+00:35:25,599 --> 00:35:28,079
+we don't encourage it
+
+735
+00:35:28,079 --> 00:35:29,839
+because if
+
+736
+00:35:29,839 --> 00:35:32,160
+you if you start being late with your
+
+737
+00:35:32,160 --> 00:35:34,440
+submissions then what you'll be late
+
+738
+00:35:34,440 --> 00:35:37,200
+right okay and so so this means that
+
+739
+00:35:37,200 --> 00:35:38,839
+roughly you lose one or two points per
+
+740
+00:35:38,839 --> 00:35:40,480
+late submission and there are many
+
+741
+00:35:40,480 --> 00:35:42,960
+submissions are seven labs and four and
+
+742
+00:35:42,960 --> 00:35:44,680
+P so you can lose a lot of points if you
+
+743
+00:35:44,680 --> 00:35:48,280
+do it late so what's the point
+
+744
+00:35:48,280 --> 00:35:50,440
+right don't do it late it's very
+
+745
+00:35:50,440 --> 00:35:52,480
+important to keep deadlines so some St
+
+746
+00:35:52,480 --> 00:35:53,800
+people are much more productive if
+
+747
+00:35:53,800 --> 00:35:55,800
+there's a deadline so that's why we have
+
+748
+00:35:55,800 --> 00:35:57,640
+very straight deadlines but the penalty
+
+749
+00:35:57,640 --> 00:35:59,839
+is not so
+
+750
+00:35:59,839 --> 00:36:02,240
+bad now a little bit about the history
+
+751
+00:36:02,240 --> 00:36:04,079
+of the course so it's modeled after the
+
+752
+00:36:04,079 --> 00:36:07,480
+C++ course at U as I said and I taught
+
+753
+00:36:07,480 --> 00:36:09,720
+it personally for two years there were
+
+754
+00:36:09,720 --> 00:36:12,599
+700 more than 700 students there so we
+
+755
+00:36:12,599 --> 00:36:14,800
+are prepared this course is the
+
+756
+00:36:14,800 --> 00:36:16,920
+infrastructure is ready to take a lot of
+
+757
+00:36:16,920 --> 00:36:19,359
+students it's just that we didn't want
+
+758
+00:36:19,359 --> 00:36:22,079
+to do it in the pilot run here so we
+
+759
+00:36:22,079 --> 00:36:23,839
+don't have physical space so the
+
+760
+00:36:23,839 --> 00:36:26,079
+physical space is the bottleneck but hey
+
+761
+00:36:26,079 --> 00:36:28,720
+maybe it's not
+
+762
+00:36:28,760 --> 00:36:31,960
+so we'll see and um yeah as I said be
+
+763
+00:36:31,960 --> 00:36:35,079
+prepared to work really hard and um
+
+764
+00:36:35,079 --> 00:36:37,640
+maybe spend 20 hours of work of work a
+
+765
+00:36:37,640 --> 00:36:40,800
+week but in the end of the day
+
+766
+00:36:40,800 --> 00:36:43,359
+hopefully you know you you Le a job if
+
+767
+00:36:43,359 --> 00:36:46,480
+you do really well and that's our goal
+
+768
+00:36:46,480 --> 00:36:48,560
+our goal is to connect you with the
+
+769
+00:36:48,560 --> 00:36:50,839
+local industry needs so what the scores
+
+770
+00:36:50,839 --> 00:36:51,880
+is
+
+771
+00:36:51,880 --> 00:36:54,880
+like for some of you it may feel like
+
+772
+00:36:54,880 --> 00:36:57,640
+you're a surfer and there's big wave and
+
+773
+00:36:57,640 --> 00:36:59,760
+there may be weeks where the wave is
+
+774
+00:36:59,760 --> 00:37:03,359
+just you feel like that's it and that's
+
+775
+00:37:03,359 --> 00:37:05,200
+when you go on Discord and ask us
+
+776
+00:37:05,200 --> 00:37:07,400
+questions okay there may be sharks there
+
+777
+00:37:07,400 --> 00:37:09,839
+not just friendly Dolphins maybe really
+
+778
+00:37:09,839 --> 00:37:11,480
+really bad stuff you know maybe it will
+
+779
+00:37:11,480 --> 00:37:13,040
+feel
+
+780
+00:37:13,040 --> 00:37:15,560
+overwhelming and you have to work hard
+
+781
+00:37:15,560 --> 00:37:18,119
+and keep going right so that's that's
+
+782
+00:37:18,119 --> 00:37:19,599
+the goal that's kind of the idea that's
+
+783
+00:37:19,599 --> 00:37:22,000
+the metaphor here that's the what the
+
+784
+00:37:22,000 --> 00:37:24,119
+course is
+
+785
+00:37:24,119 --> 00:37:27,400
+like guys can you please mute
+
+786
+00:37:27,400 --> 00:37:31,400
+again because I I hear myself if you're
+
+787
+00:37:31,400 --> 00:37:34,880
+stuck Discord just Discord please ask we
+
+788
+00:37:34,880 --> 00:37:36,400
+really want to
+
+789
+00:37:36,400 --> 00:37:39,160
+help and uh don't wait until the last
+
+790
+00:37:39,160 --> 00:37:41,280
+minute I think I went through this again
+
+791
+00:37:41,280 --> 00:37:43,119
+because there may be so many problems
+
+792
+00:37:43,119 --> 00:37:46,160
+that unpredictable things that will take
+
+793
+00:37:46,160 --> 00:37:49,720
+time and you lose your points academic
+
+794
+00:37:49,720 --> 00:37:51,720
+Integrity don't
+
+795
+00:37:51,720 --> 00:37:55,200
+plagiarize don't just don't uh it's
+
+796
+00:37:55,200 --> 00:37:58,160
+disservice right it's disservice like if
+
+797
+00:37:58,160 --> 00:38:00,760
+I ask Google translate I don't learn the
+
+798
+00:38:00,760 --> 00:38:04,880
+language so if you ask chat GPT maybe I
+
+799
+00:38:04,880 --> 00:38:06,960
+try to run all of the assignments chat
+
+800
+00:38:06,960 --> 00:38:09,560
+GPT uh I think you really need to know
+
+801
+00:38:09,560 --> 00:38:13,920
+C++ in order to use the answers so so I
+
+802
+00:38:13,920 --> 00:38:16,839
+think it may slow you down significantly
+
+803
+00:38:16,839 --> 00:38:19,119
+on some assignments and introduce bugs
+
+804
+00:38:19,119 --> 00:38:21,079
+that you'll be like you know it's longer
+
+805
+00:38:21,079 --> 00:38:23,040
+to solve them then just write it
+
+806
+00:38:23,040 --> 00:38:25,440
+yourself so so just don't do it it's a
+
+807
+00:38:25,440 --> 00:38:27,760
+disservice to yourself right it is it
+
+808
+00:38:27,760 --> 00:38:30,720
+just robbing you off uh from this
+
+809
+00:38:30,720 --> 00:38:32,920
+experience of understanding things there
+
+810
+00:38:32,920 --> 00:38:35,680
+are really nice puzzles there that if
+
+811
+00:38:35,680 --> 00:38:37,800
+you do it you'll have a good feeling
+
+812
+00:38:37,800 --> 00:38:41,079
+about yourself so just do it that way
+
+813
+00:38:41,079 --> 00:38:43,839
+however we will run the plagerism check
+
+814
+00:38:43,839 --> 00:38:46,240
+in the end so if you find
+
+815
+00:38:46,240 --> 00:38:49,359
+you similar code with your friends on
+
+816
+00:38:49,359 --> 00:38:51,839
+individual assignments you know we'll
+
+817
+00:38:51,839 --> 00:38:53,880
+will follow whatever the GU guidelines
+
+818
+00:38:53,880 --> 00:38:55,960
+for that so just don't do it it's not
+
+819
+00:38:55,960 --> 00:38:57,800
+worth it
+
+820
+00:38:57,800 --> 00:38:59,599
+and also the exams are tough so if you
+
+821
+00:38:59,599 --> 00:39:02,680
+don't do the work yourself um then it
+
+822
+00:39:02,680 --> 00:39:04,480
+will be really really hard to do it
+
+823
+00:39:04,480 --> 00:39:06,040
+quickly on the
+
+824
+00:39:06,040 --> 00:39:09,680
+exam oh I forgot to mention that you can
+
+825
+00:39:09,680 --> 00:39:12,160
+complete any work from anywhere not only
+
+826
+00:39:12,160 --> 00:39:14,720
+from home from airplane anywhere I've
+
+827
+00:39:14,720 --> 00:39:17,040
+had students who are flying back home
+
+828
+00:39:17,040 --> 00:39:19,760
+and were submitting uh exams on from
+
+829
+00:39:19,760 --> 00:39:21,240
+airplane as long as you have a good
+
+830
+00:39:21,240 --> 00:39:23,920
+connection and you have your laptop it
+
+831
+00:39:23,920 --> 00:39:26,680
+just works you can do it from anywhere
+
+832
+00:39:26,680 --> 00:39:28,920
+so we really excited actually about uh
+
+833
+00:39:28,920 --> 00:39:31,800
+lovely and US putting our courses there
+
+834
+00:39:31,800 --> 00:39:36,680
+because you can be anywhere that's cool
+
+835
+00:39:36,680 --> 00:39:39,599
+so this is the numbers again uh oh okay
+
+836
+00:39:39,599 --> 00:39:41,440
+so there's
+
+837
+00:39:41,440 --> 00:39:44,880
+274 students and Lovel and only 240
+
+838
+00:39:44,880 --> 00:39:47,960
+students and Peppe I already hear you
+
+839
+00:39:47,960 --> 00:39:50,599
+that you guys could not get on Pepe I'll
+
+840
+00:39:50,599 --> 00:39:53,680
+help you with that but there's some
+
+841
+00:39:53,680 --> 00:39:56,960
+students who are registered in love not
+
+842
+00:39:56,960 --> 00:39:58,760
+with University email so here's the
+
+843
+00:39:58,760 --> 00:40:01,000
+trick if you didn't use your University
+
+844
+00:40:01,000 --> 00:40:02,359
+email please raise your hand if you
+
+845
+00:40:02,359 --> 00:40:04,440
+didn't use your University email anybody
+
+846
+00:40:04,440 --> 00:40:08,960
+here so if it's not all P the fee on uh
+
+847
+00:40:08,960 --> 00:40:11,720
+love L you do not get a credit for the
+
+848
+00:40:11,720 --> 00:40:13,880
+course because I we just for for all we
+
+849
+00:40:13,880 --> 00:40:15,599
+know we don't know who you are we don't
+
+850
+00:40:15,599 --> 00:40:18,280
+know how to locate you in our system
+
+851
+00:40:18,280 --> 00:40:21,280
+some students are here from om and
+
+852
+00:40:21,280 --> 00:40:23,319
+you're welcome you just cannot get a
+
+853
+00:40:23,319 --> 00:40:25,640
+grade if you're not registered through
+
+854
+00:40:25,640 --> 00:40:27,720
+University email and if you're not on
+
+855
+00:40:27,720 --> 00:40:29,520
+Pepe so there are some students who want
+
+856
+00:40:29,520 --> 00:40:31,960
+to take this course just because just
+
+857
+00:40:31,960 --> 00:40:34,480
+because it is a needed course right and
+
+858
+00:40:34,480 --> 00:40:36,200
+you're welcome I'm just saying that if
+
+859
+00:40:36,200 --> 00:40:38,319
+you want a grade you have to be enrolled
+
+860
+00:40:38,319 --> 00:40:41,160
+on Pepe with University email and I've
+
+861
+00:40:41,160 --> 00:40:43,560
+seen I think at least 10 people not with
+
+862
+00:40:43,560 --> 00:40:45,560
+University email you don't get a grade
+
+863
+00:40:45,560 --> 00:40:47,880
+if you don't do if you don't change
+
+864
+00:40:47,880 --> 00:40:49,560
+it
+
+865
+00:40:49,560 --> 00:40:53,880
+okay can I ask yes
+
+866
+00:40:53,880 --> 00:40:57,040
+so so if I have enrolled with the
+
+867
+00:40:57,040 --> 00:40:58,920
+University email but I have not been
+
+868
+00:40:58,920 --> 00:41:03,880
+able to find this course so on yeah so
+
+869
+00:41:03,880 --> 00:41:07,040
+I'm just wondering like how it happens
+
+870
+00:41:07,040 --> 00:41:10,000
+you send me an email and I'll enoll you
+
+871
+00:41:10,000 --> 00:41:14,280
+on but there four cases when I did that
+
+872
+00:41:14,280 --> 00:41:17,319
+for students in the past and still their
+
+873
+00:41:17,319 --> 00:41:19,440
+program managers complain that they
+
+874
+00:41:19,440 --> 00:41:22,839
+didn't go through them like maybe
+
+875
+00:41:22,839 --> 00:41:24,599
+depending where you are maybe you have
+
+876
+00:41:24,599 --> 00:41:28,599
+to make sure that they'll let you sign
+
+877
+00:41:28,599 --> 00:41:30,599
+up on
+
+878
+00:41:30,599 --> 00:41:33,760
+pep and that's only for getting credit
+
+879
+00:41:33,760 --> 00:41:35,520
+again you're welcome to just go through
+
+880
+00:41:35,520 --> 00:41:37,480
+assignments and do it yourself but if
+
+881
+00:41:37,480 --> 00:41:41,160
+you need credit for it then you I may
+
+882
+00:41:41,160 --> 00:41:43,520
+help you get an Pepe but it may not be
+
+883
+00:41:43,520 --> 00:41:46,520
+enough your program might
+
+884
+00:41:46,520 --> 00:41:49,480
+complain okay does that make
+
+885
+00:41:49,480 --> 00:41:52,440
+sense uh yes I will check so it's just
+
+886
+00:41:52,440 --> 00:41:54,160
+good to know that this class should be
+
+887
+00:41:54,160 --> 00:41:57,560
+in pep so it should be
+
+888
+00:41:57,560 --> 00:42:00,960
+yeah okay okay but send me an email
+
+889
+00:42:00,960 --> 00:42:02,960
+then okay so those are the only
+
+890
+00:42:02,960 --> 00:42:07,560
+individual emails about uh getting
+
+891
+00:42:07,760 --> 00:42:10,359
+on are the exercise sessions so that we
+
+892
+00:42:10,359 --> 00:42:12,520
+can only ask help for exercises or is
+
+893
+00:42:12,520 --> 00:42:14,319
+there like extra info that we need in
+
+894
+00:42:14,319 --> 00:42:16,920
+order to complete the exercises I think
+
+895
+00:42:16,920 --> 00:42:19,760
+we'll see how it goes what what do you
+
+896
+00:42:19,760 --> 00:42:22,440
+think guys will there be extra
+
+897
+00:42:22,440 --> 00:42:25,160
+information or will it be just ask
+
+898
+00:42:25,160 --> 00:42:28,160
+questions
+
+899
+00:42:28,280 --> 00:42:30,760
+probably just questions just questions
+
+900
+00:42:30,760 --> 00:42:33,400
+yeah unless it seems like there like a
+
+901
+00:42:33,400 --> 00:42:35,720
+big problem that everyone is if
+
+902
+00:42:35,720 --> 00:42:38,440
+everybody has the same problem then we
+
+903
+00:42:38,440 --> 00:42:42,559
+will then Tas during the El Maran during
+
+904
+00:42:42,559 --> 00:42:45,760
+the lab sessions they'll explain things
+
+905
+00:42:45,760 --> 00:42:47,400
+but then we'll make sure that we repeat
+
+906
+00:42:47,400 --> 00:42:51,280
+the same explanation say on Discord
+
+907
+00:42:51,280 --> 00:42:53,720
+right so if there was if there will be
+
+908
+00:42:53,720 --> 00:42:55,599
+the same question over and over then
+
+909
+00:42:55,599 --> 00:42:58,720
+we'll just posted on Discord that
+
+910
+00:42:58,720 --> 00:43:01,200
+discussion okay what is the email to
+
+911
+00:43:01,200 --> 00:43:06,400
+send to the Pepe query uh on
+
+912
+00:43:06,400 --> 00:43:09,119
+laal so like everybody has first name
+
+913
+00:43:09,119 --> 00:43:12,280
+last name first name. last name
+
+914
+00:43:12,280 --> 00:43:16,880
+at what is the course go I don't know
+
+915
+00:43:17,680 --> 00:43:20,680
+sorry
+
+916
+00:43:20,720 --> 00:43:23,920
+okay um but again please send me the
+
+917
+00:43:23,920 --> 00:43:26,960
+email about that and we'll I'll find
+
+918
+00:43:26,960 --> 00:43:30,280
+that number I just don't know it off the
+
+919
+00:43:30,280 --> 00:43:32,400
+top of my head and pep is way too slow
+
+920
+00:43:32,400 --> 00:43:34,520
+for me to load it now if you have the
+
+921
+00:43:34,520 --> 00:43:36,000
+answer to that question please post it
+
+922
+00:43:36,000 --> 00:43:37,920
+by the way if you if you can find the
+
+923
+00:43:37,920 --> 00:43:41,559
+number on Pepe for other students okay
+
+924
+00:43:41,559 --> 00:43:43,880
+or post it on Discord that
+
+925
+00:43:43,880 --> 00:43:46,680
+you now to-do list for today so go to
+
+926
+00:43:46,680 --> 00:43:49,880
+the lab and now the exercises so you
+
+927
+00:43:49,880 --> 00:43:51,800
+should start on this three exercises
+
+928
+00:43:51,800 --> 00:43:53,760
+today laptop set up instructions right
+
+929
+00:43:53,760 --> 00:43:57,040
+away lab GDB and make file tutorial
+
+930
+00:43:57,040 --> 00:43:58,400
+because the deadlines for these two
+
+931
+00:43:58,400 --> 00:44:00,559
+assignments is in one week so you
+
+932
+00:44:00,559 --> 00:44:02,280
+probably feel like okay let's get to
+
+933
+00:44:02,280 --> 00:44:05,040
+work let's get to work I think I'm done
+
+934
+00:44:05,040 --> 00:44:07,960
+with all of the infrastructure questions
+
+935
+00:44:07,960 --> 00:44:11,400
+we'll get to work okay everybody on
+
+936
+00:44:11,400 --> 00:44:15,520
+board we'll get to work inro that's in
+
+937
+00:44:15,520 --> 00:44:17,800
+one
+
+938
+00:44:18,559 --> 00:44:24,599
+week oh did I say l GB ha yeah it's
+
+939
+00:44:24,880 --> 00:44:29,640
+l yeah sorry well it's on yeah okay good
+
+940
+00:44:29,640 --> 00:44:32,480
+correction okay I see more
+
+941
+00:44:32,480 --> 00:44:36,000
+questions are
+
+942
+00:44:36,200 --> 00:44:38,359
+questions will this year's lectures yes
+
+943
+00:44:38,359 --> 00:44:39,839
+I'm recording the lectur so all lectures
+
+944
+00:44:39,839 --> 00:44:41,920
+I'll be recorded this is the number on
+
+945
+00:44:41,920 --> 00:44:46,040
+py so I hope it's useful you can see it
+
+946
+00:44:46,040 --> 00:44:47,800
+take a screenshot because I'm going to
+
+947
+00:44:47,800 --> 00:44:52,280
+switch to our work so let's start
+
+948
+00:44:52,640 --> 00:44:56,359
+on keep annotations okay let's start on
+
+949
+00:44:56,359 --> 00:44:57,520
+our
+
+950
+00:44:57,520 --> 00:44:59,240
+next
+
+951
+00:44:59,240 --> 00:45:02,319
+lecture and I'm going to start slideshow
+
+952
+00:45:02,319 --> 00:45:04,160
+with presenter view
+
+953
+00:45:04,160 --> 00:45:07,559
+because otherwise it'll kick me out from
+
+954
+00:45:07,559 --> 00:45:12,359
+this mode okay cool let's put this here
+
+955
+00:45:12,359 --> 00:45:16,040
+let's put this here out of the way we're
+
+956
+00:45:16,040 --> 00:45:18,359
+going to start talking about Hello World
+
+957
+00:45:18,359 --> 00:45:21,040
+classes and a little bit about
+
+958
+00:45:21,040 --> 00:45:24,599
+encapsulation if you notice why slider
+
+959
+00:45:24,599 --> 00:45:27,000
+it's it's doing it again right is it
+
+960
+00:45:27,000 --> 00:45:28,079
+doing it
+
+961
+00:45:28,079 --> 00:45:30,480
+again there is no
+
+962
+00:45:30,480 --> 00:45:34,720
+number how did I just try again right
+
+963
+00:45:34,720 --> 00:45:38,480
+try again yep maybe I should start with
+
+964
+00:45:38,480 --> 00:45:42,000
+slide though yeah exit slideshow maybe I
+
+965
+00:45:42,000 --> 00:45:45,960
+should re before it wasn't like this ah
+
+966
+00:45:45,960 --> 00:45:49,200
+yeah okay sorry slider is changing it's
+
+967
+00:45:49,200 --> 00:45:51,119
+a very useful thing to have because I
+
+968
+00:45:51,119 --> 00:45:54,640
+can have feedback like this
+
+969
+00:45:54,640 --> 00:45:57,520
+but they constantly update and I have to
+
+970
+00:45:57,520 --> 00:46:00,800
+get used to like the new
+
+971
+00:46:03,359 --> 00:46:05,520
+things and it's
+
+972
+00:46:05,520 --> 00:46:10,240
+slow okay so we are switching to another
+
+973
+00:46:10,240 --> 00:46:12,520
+presentation and it's another slide.
+
+974
+00:46:12,520 --> 00:46:15,720
+come because of that here so if you have
+
+975
+00:46:15,720 --> 00:46:19,280
+any questions put it there now we'll
+
+976
+00:46:19,280 --> 00:46:22,160
+have to do this so let's follow your
+
+977
+00:46:22,160 --> 00:46:25,920
+print out and you know some people
+
+978
+00:46:25,920 --> 00:46:28,119
+really learn well if they write so
+
+979
+00:46:28,119 --> 00:46:31,000
+you're welcome to do that please raise
+
+980
+00:46:31,000 --> 00:46:33,520
+your hand if
+
+981
+00:46:42,880 --> 00:46:48,280
+you um please your hand if you learn by
+
+982
+00:46:54,800 --> 00:46:57,800
+writing
+
+983
+00:46:58,750 --> 00:47:00,480
+[Music]
+
+984
+00:47:00,480 --> 00:47:05,040
+always upload slides on Google Drive and
+
+985
+00:47:05,040 --> 00:47:07,880
+work on your computer write over those
+
+986
+00:47:07,880 --> 00:47:10,960
+slides online and many of you I see have
+
+987
+00:47:10,960 --> 00:47:15,119
+tablets do that but if you appreciate
+
+988
+00:47:15,119 --> 00:47:17,200
+this just give me feedback if you
+
+989
+00:47:17,200 --> 00:47:19,839
+appreciate this slide print outs then
+
+990
+00:47:19,839 --> 00:47:22,960
+we'll keep going with
+
+991
+00:47:24,720 --> 00:47:27,720
+those
+
+992
+00:47:31,040 --> 00:47:34,240
+okay or Nina raised hand
+
+993
+00:47:34,240 --> 00:47:36,240
+you
+
+994
+00:47:36,240 --> 00:47:41,279
+uh I don't know what it means
+
+995
+00:47:41,880 --> 00:47:45,200
+okay so this is our first
+
+996
+00:47:45,200 --> 00:47:47,559
+slide we can do anything without
+
+997
+00:47:47,559 --> 00:47:49,520
+variables so many of you probably know
+
+998
+00:47:49,520 --> 00:47:52,800
+about variables in C++ already but let's
+
+999
+00:47:52,800 --> 00:47:55,520
+just go through it let's see what we
+
+1000
+00:47:55,520 --> 00:47:56,240
+have
+
+1001
+00:47:56,240 --> 00:47:59,319
+to do what what what is the deal with
+
+1002
+00:47:59,319 --> 00:48:03,280
+variables in C++ so every variable will
+
+1003
+00:48:03,280 --> 00:48:06,520
+have a
+
+1004
+00:48:06,599 --> 00:48:09,920
+name a
+
+1005
+00:48:10,240 --> 00:48:12,200
+type
+
+1006
+00:48:12,200 --> 00:48:16,599
+value and location in memory okay so
+
+1007
+00:48:16,599 --> 00:48:20,160
+here's one variable I'm going to declare
+
+1008
+00:48:20,160 --> 00:48:21,920
+and this is going to be my declaration
+
+1009
+00:48:21,920 --> 00:48:24,920
+so I'm going to declare a variable in
+
+1010
+00:48:24,920 --> 00:48:26,960
+C++ so it's going to be
+
+1011
+00:48:26,960 --> 00:48:29,880
+declaration I'm going to say
+
+1012
+00:48:29,880 --> 00:48:34,559
+buan is here and let's see if it has all
+
+1013
+00:48:34,559 --> 00:48:40,559
+four so what's the name is here type
+
+1014
+00:48:40,559 --> 00:48:43,960
+bullan what's the
+
+1015
+00:48:45,960 --> 00:48:49,760
+location it's implicit
+
+1016
+00:48:49,760 --> 00:48:52,839
+yeah some address right some address but
+
+1017
+00:48:52,839 --> 00:48:54,200
+you don't know it it's implicit the
+
+1018
+00:48:54,200 --> 00:48:57,040
+system will give it will provide that
+
+1019
+00:48:57,040 --> 00:48:59,480
+location for that variable and what's
+
+1020
+00:48:59,480 --> 00:49:01,680
+the
+
+1021
+00:49:03,119 --> 00:49:05,839
+value the system will most likely just
+
+1022
+00:49:05,839 --> 00:49:07,920
+recycle whatever was at that location
+
+1023
+00:49:07,920 --> 00:49:11,440
+because you didn't provide any value you
+
+1024
+00:49:11,440 --> 00:49:14,040
+just declared a variable so we call it
+
+1025
+00:49:14,040 --> 00:49:17,599
+garbage so let's draw garbage bin here
+
+1026
+00:49:17,599 --> 00:49:20,760
+we call it a garbage because it's
+
+1027
+00:49:20,760 --> 00:49:25,240
+recycled stuff cool now this there's a
+
+1028
+00:49:25,240 --> 00:49:28,040
+so we covered this there's another
+
+1029
+00:49:28,040 --> 00:49:29,680
+variable
+
+1030
+00:49:29,680 --> 00:49:31,920
+declaration so these are going to be
+
+1031
+00:49:31,920 --> 00:49:35,400
+declarations my favorite int has name my
+
+1032
+00:49:35,400 --> 00:49:38,079
+favorite int type
+
+1033
+00:49:38,079 --> 00:49:41,000
+integer location implicitly provided by
+
+1034
+00:49:41,000 --> 00:49:45,960
+the system value garbage okay so I could
+
+1035
+00:49:45,960 --> 00:49:47,319
+actually
+
+1036
+00:49:47,319 --> 00:49:50,640
+Define can you mute please because I
+
+1037
+00:49:50,640 --> 00:49:53,359
+hear myself again I could actually have
+
+1038
+00:49:53,359 --> 00:49:57,319
+definition definitions
+
+1039
+00:49:57,319 --> 00:50:00,720
+here and I could actually Define or
+
+1040
+00:50:00,720 --> 00:50:03,480
+prescribe the value that I want to be
+
+1041
+00:50:03,480 --> 00:50:06,480
+stored in that location for is sphere
+
+1042
+00:50:06,480 --> 00:50:10,920
+and I say true and I put
+
+1043
+00:50:11,520 --> 00:50:14,480
+semicolon because in C++ it will not
+
+1044
+00:50:14,480 --> 00:50:15,599
+understand that it's the end of the
+
+1045
+00:50:15,599 --> 00:50:17,839
+statement unless you put semicolon so
+
+1046
+00:50:17,839 --> 00:50:20,920
+that's a delimeter of
+
+1047
+00:50:20,920 --> 00:50:24,359
+statements and um and then I put that
+
+1048
+00:50:24,359 --> 00:50:26,880
+value true
+
+1049
+00:50:26,880 --> 00:50:29,880
+in that location okay and in C++ there
+
+1050
+00:50:29,880 --> 00:50:31,520
+will be a way to
+
+1051
+00:50:31,520 --> 00:50:34,119
+control which location for the variable
+
+1052
+00:50:34,119 --> 00:50:36,799
+will be assigned by the system or
+
+1053
+00:50:36,799 --> 00:50:39,119
+sometimes you can just allow the system
+
+1054
+00:50:39,119 --> 00:50:43,319
+to pick yourself for itself so you can
+
+1055
+00:50:43,319 --> 00:50:46,440
+combine declaration and definition in
+
+1056
+00:50:46,440 --> 00:50:50,440
+one line like this so for this um type
+
+1057
+00:50:50,440 --> 00:50:54,200
+character CH rating name rating you can
+
+1058
+00:50:54,200 --> 00:50:56,000
+give value e
+
+1059
+00:50:56,000 --> 00:51:00,400
+to be in that implicit location and
+
+1060
+00:51:00,400 --> 00:51:02,799
+W uh half
+
+1061
+00:51:02,799 --> 00:51:05,760
+37.0 value okay so these are both
+
+1062
+00:51:05,760 --> 00:51:08,920
+declarations and definitions so what's
+
+1063
+00:51:08,920 --> 00:51:11,880
+interesting about it is that these are
+
+1064
+00:51:11,880 --> 00:51:15,160
+primitive types right and you can Google
+
+1065
+00:51:15,160 --> 00:51:17,440
+C++ has lots of primitive types but
+
+1066
+00:51:17,440 --> 00:51:18,720
+they're not very interesting right
+
+1067
+00:51:18,720 --> 00:51:21,000
+they're primitive so what's really good
+
+1068
+00:51:21,000 --> 00:51:23,640
+about C++ is that it allows you to
+
+1069
+00:51:23,640 --> 00:51:26,000
+Define your own types and the user
+
+1070
+00:51:26,000 --> 00:51:28,839
+defined types are called classes you
+
+1071
+00:51:28,839 --> 00:51:32,200
+probably heard the word class from java
+
+1072
+00:51:32,200 --> 00:51:34,720
+but this is slightly different here
+
+1073
+00:51:34,720 --> 00:51:39,240
+because in C++ classes or user defined
+
+1074
+00:51:39,240 --> 00:51:43,400
+types are meant to be treated exactly as
+
+1075
+00:51:43,400 --> 00:51:45,160
+if they were primitive types so the
+
+1076
+00:51:45,160 --> 00:51:47,599
+syntax is going to be the same so here
+
+1077
+00:51:47,599 --> 00:51:49,240
+is a
+
+1078
+00:51:49,240 --> 00:51:52,680
+declaration of a variable with the name
+
+1079
+00:51:52,680 --> 00:51:56,640
+my favorite sphere type sphere and that
+
+1080
+00:51:56,640 --> 00:52:00,000
+is a user defined type a class class
+
+1081
+00:52:00,000 --> 00:52:02,400
+sphere which you know will spend some
+
+1082
+00:52:02,400 --> 00:52:05,240
+lectures defining in many different ways
+
+1083
+00:52:05,240 --> 00:52:07,440
+including today how we would Define this
+
+1084
+00:52:07,440 --> 00:52:10,119
+class sphere but so far we declare a
+
+1085
+00:52:10,119 --> 00:52:15,280
+variable of that type right and what its
+
+1086
+00:52:15,280 --> 00:52:17,640
+location again just like with primitive
+
+1087
+00:52:17,640 --> 00:52:20,520
+types it's whatever system will choose
+
+1088
+00:52:20,520 --> 00:52:22,720
+and the value is garbage so far because
+
+1089
+00:52:22,720 --> 00:52:25,559
+we didn't Define it right so to
+
+1090
+00:52:25,559 --> 00:52:29,000
+summarize let's write down what a class
+
+1091
+00:52:29,000 --> 00:52:31,280
+is so
+
+1092
+00:52:31,280 --> 00:52:33,240
+definition a
+
+1093
+00:52:33,240 --> 00:52:37,200
+class is a group
+
+1094
+00:52:37,200 --> 00:52:40,799
+of so here's what what is that do you
+
+1095
+00:52:40,799 --> 00:52:44,359
+know primitive types
+
+1096
+00:52:44,359 --> 00:52:48,440
+yeah or a group of we call it variables
+
+1097
+00:52:48,440 --> 00:52:50,440
+variables yeah
+
+1098
+00:52:50,440 --> 00:52:54,119
+variables very good a group of variables
+
+1099
+00:52:54,119 --> 00:52:56,480
+so you can think of dat data associated
+
+1100
+00:52:56,480 --> 00:52:57,480
+with
+
+1101
+00:52:57,480 --> 00:53:02,559
+that user type and
+
+1102
+00:53:03,559 --> 00:53:07,280
+functionalities the functions
+
+1103
+00:53:07,280 --> 00:53:10,040
+functions because let's think about what
+
+1104
+00:53:10,040 --> 00:53:13,720
+this instance of a sphere should be it
+
+1105
+00:53:13,720 --> 00:53:15,200
+should be something we want to do with
+
+1106
+00:53:15,200 --> 00:53:17,799
+spheres right and something that it
+
+1107
+00:53:17,799 --> 00:53:21,359
+stores so um the the way we'll decide
+
+1108
+00:53:21,359 --> 00:53:24,680
+design the class will be defining this
+
+1109
+00:53:24,680 --> 00:53:26,920
+group of variables and functions of what
+
+1110
+00:53:26,920 --> 00:53:29,920
+can be done and what these spheres are
+
+1111
+00:53:29,920 --> 00:53:31,680
+and let's look at the next slide to
+
+1112
+00:53:31,680 --> 00:53:34,880
+start doing exactly
+
+1113
+00:53:34,880 --> 00:53:37,799
+that the C++ variables doesn't have any
+
+1114
+00:53:37,799 --> 00:53:41,000
+default values yeah yeah some sometimes
+
+1115
+00:53:41,000 --> 00:53:42,559
+it'll have the it depends on the
+
+1116
+00:53:42,559 --> 00:53:45,240
+compiler so you should never let the
+
+1117
+00:53:45,240 --> 00:53:47,319
+rely on default
+
+1118
+00:53:47,319 --> 00:53:50,400
+values that's good practice to have full
+
+1119
+00:53:50,400 --> 00:53:53,640
+control of what is initialized if you
+
+1120
+00:53:53,640 --> 00:53:56,000
+leave it up to the system it could be
+
+1121
+00:53:56,000 --> 00:53:57,799
+some default vales or it could be really
+
+1122
+00:53:57,799 --> 00:53:59,280
+truly
+
+1123
+00:53:59,280 --> 00:54:01,599
+garbage depending on the
+
+1124
+00:54:01,599 --> 00:54:05,280
+compiler uh what if we compare variables
+
+1125
+00:54:05,280 --> 00:54:07,760
+to Define value yeah yeah I think I
+
+1126
+00:54:07,760 --> 00:54:10,640
+answered the question
+
+1127
+00:54:11,359 --> 00:54:15,000
+right okay so now let's start designing
+
+1128
+00:54:15,000 --> 00:54:17,880
+the class and on your printouts I
+
+1129
+00:54:17,880 --> 00:54:21,960
+realize that the cop here didn't see
+
+1130
+00:54:21,960 --> 00:54:24,720
+those colors but you can draw on top
+
+1131
+00:54:24,720 --> 00:54:27,119
+that we have this oh that one shows it
+
+1132
+00:54:27,119 --> 00:54:28,720
+okay sometimes projectors don't show
+
+1133
+00:54:28,720 --> 00:54:31,200
+Colors either so let's look at this
+
+1134
+00:54:31,200 --> 00:54:33,359
+possible spheres and see what kind of
+
+1135
+00:54:33,359 --> 00:54:35,839
+variables do we want to have associated
+
+1136
+00:54:35,839 --> 00:54:37,160
+with this class and what kind of
+
+1137
+00:54:37,160 --> 00:54:39,280
+functionalities so what would you want
+
+1138
+00:54:39,280 --> 00:54:41,559
+the Spheres be or how would you want
+
+1139
+00:54:41,559 --> 00:54:44,400
+them to be different right so what could
+
+1140
+00:54:44,400 --> 00:54:47,799
+be the data associated with the sphere
+
+1141
+00:54:47,799 --> 00:54:50,520
+or representing the sphere what would be
+
+1142
+00:54:50,520 --> 00:54:53,000
+the variables
+
+1143
+00:54:53,000 --> 00:54:56,359
+representing radius yeah very good so
+
+1144
+00:54:56,359 --> 00:54:59,920
+let's see so data or variables
+
+1145
+00:54:59,920 --> 00:55:03,920
+variables could be radius very
+
+1146
+00:55:03,920 --> 00:55:07,160
+good but then this purple sphere or
+
+1147
+00:55:07,160 --> 00:55:09,599
+magenta sphere and this green sphere
+
+1148
+00:55:09,599 --> 00:55:12,160
+they are like twins right they're not
+
+1149
+00:55:12,160 --> 00:55:14,559
+different if that's your design so this
+
+1150
+00:55:14,559 --> 00:55:16,119
+is a design Choice as a software
+
+1151
+00:55:16,119 --> 00:55:17,480
+engineer you'll always have these
+
+1152
+00:55:17,480 --> 00:55:20,839
+choices what do I want to uh the sphere
+
+1153
+00:55:20,839 --> 00:55:23,240
+class or user defined class to represent
+
+1154
+00:55:23,240 --> 00:55:25,319
+and um you want maybe you want the
+
+1155
+00:55:25,319 --> 00:55:28,200
+Spheres to be twins but maybe not and
+
+1156
+00:55:28,200 --> 00:55:30,039
+then you would pick another variable say
+
+1157
+00:55:30,039 --> 00:55:32,280
+color
+
+1158
+00:55:32,280 --> 00:55:36,400
+right and then based on color these
+
+1159
+00:55:36,400 --> 00:55:39,599
+little guys here they're all tuplets
+
+1160
+00:55:39,599 --> 00:55:42,480
+right eight identical spheres because
+
+1161
+00:55:42,480 --> 00:55:44,760
+they have the same radius and the same
+
+1162
+00:55:44,760 --> 00:55:46,920
+color and if you want them to be
+
+1163
+00:55:46,920 --> 00:55:48,400
+different you would maybe introduce
+
+1164
+00:55:48,400 --> 00:55:49,880
+something else
+
+1165
+00:55:49,880 --> 00:55:53,440
+right like U what
+
+1166
+00:55:53,440 --> 00:55:56,039
+Center coordinate
+
+1167
+00:55:56,039 --> 00:56:00,079
+the center right so
+
+1168
+00:56:00,079 --> 00:56:03,680
+location then then it would make all of
+
+1169
+00:56:03,680 --> 00:56:05,039
+and if that's what you want that's what
+
+1170
+00:56:05,039 --> 00:56:07,400
+you do now functionalities what would
+
+1171
+00:56:07,400 --> 00:56:11,480
+you want the Spheres to
+
+1172
+00:56:11,480 --> 00:56:15,000
+do I don't know we don't know yet right
+
+1173
+00:56:15,000 --> 00:56:18,799
+we don't have any code in mind but I
+
+1174
+00:56:18,799 --> 00:56:22,200
+want to write my first class and I have
+
+1175
+00:56:22,200 --> 00:56:23,920
+my
+
+1176
+00:56:23,920 --> 00:56:25,480
+uh
+
+1177
+00:56:25,480 --> 00:56:28,599
+um yes I have my Ubuntu here so I can
+
+1178
+00:56:28,599 --> 00:56:31,680
+actually go to lectures and I want to
+
+1179
+00:56:31,680 --> 00:56:38,160
+start writing let me remove my program
+
+1180
+00:56:38,400 --> 00:56:42,839
+CPP and remove okay maybe out okay so I
+
+1181
+00:56:42,839 --> 00:56:45,400
+want to start writing my first program
+
+1182
+00:56:45,400 --> 00:56:48,240
+so I'm going to say program
+
+1183
+00:56:48,240 --> 00:56:52,480
+CPP and we are going to write this
+
+1184
+00:56:52,480 --> 00:56:56,880
+class and I think you have it
+
+1185
+00:56:57,280 --> 00:57:00,359
+on but I'm going to start with the
+
+1186
+00:57:00,359 --> 00:57:05,000
+keyword class so this keyword says that
+
+1187
+00:57:05,000 --> 00:57:06,520
+it's going to be the definition of the
+
+1188
+00:57:06,520 --> 00:57:09,359
+user type with the name whatever follows
+
+1189
+00:57:09,359 --> 00:57:13,640
+after the keyword class
+
+1190
+00:57:13,640 --> 00:57:16,720
+sphere and then I put curly brackets
+
+1191
+00:57:16,720 --> 00:57:20,000
+here and put semicolon right there for
+
+1192
+00:57:20,000 --> 00:57:22,119
+the compiler to know that that's the end
+
+1193
+00:57:22,119 --> 00:57:26,079
+of my user find user type
+
+1194
+00:57:26,079 --> 00:57:29,119
+definition hey that's it I wrote my
+
+1195
+00:57:29,119 --> 00:57:32,640
+first program I wrote my first
+
+1196
+00:57:32,640 --> 00:57:35,680
+class now I can show you how to compile
+
+1197
+00:57:35,680 --> 00:57:38,599
+this little program so we call the G the
+
+1198
+00:57:38,599 --> 00:57:41,319
+C++ compiler we will use
+
+1199
+00:57:41,319 --> 00:57:43,880
+g++ there may be better compilers out
+
+1200
+00:57:43,880 --> 00:57:46,640
+there but that's what we use for now
+
+1201
+00:57:46,640 --> 00:57:48,359
+maybe in the future itations will change
+
+1202
+00:57:48,359 --> 00:57:51,240
+depending on how it goes but all you do
+
+1203
+00:57:51,240 --> 00:57:55,520
+is you compile this program CPP
+
+1204
+00:57:55,520 --> 00:57:57,559
+and what the compiler will do it will
+
+1205
+00:57:57,559 --> 00:57:59,920
+first check the syntax if everything is
+
+1206
+00:57:59,920 --> 00:58:03,760
+correct and second it will create an
+
+1207
+00:58:03,760 --> 00:58:07,039
+executable to run the code so first
+
+1208
+00:58:07,039 --> 00:58:09,680
+check the syntax then create this
+
+1209
+00:58:09,680 --> 00:58:13,079
+machine code into the
+
+1210
+00:58:13,079 --> 00:58:15,720
+executable and then so that you can run
+
+1211
+00:58:15,720 --> 00:58:19,079
+it and in fact make pile tutorial walks
+
+1212
+00:58:19,079 --> 00:58:21,119
+you through the process very well it's a
+
+1213
+00:58:21,119 --> 00:58:23,839
+very well written tutorial about how to
+
+1214
+00:58:23,839 --> 00:58:26,359
+compile many files together and how then
+
+1215
+00:58:26,359 --> 00:58:28,200
+these uh build-in blocks for machine
+
+1216
+00:58:28,200 --> 00:58:31,520
+code are linked together but this is
+
+1217
+00:58:31,520 --> 00:58:34,400
+just one file so there's no linking much
+
+1218
+00:58:34,400 --> 00:58:41,000
+so let's see what they what it does H it
+
+1219
+00:58:41,000 --> 00:58:44,039
+bared so
+
+1220
+00:58:44,039 --> 00:58:47,079
+so and this means that something went
+
+1221
+00:58:47,079 --> 00:58:50,119
+wrong either with syntax or with the
+
+1222
+00:58:50,119 --> 00:58:53,720
+building so in this
+
+1223
+00:58:53,720 --> 00:58:56,319
+case and kind of guess what's going
+
+1224
+00:58:56,319 --> 00:58:59,520
+wrong so I don't know if you can
+
+1225
+00:59:04,480 --> 00:59:08,160
+look hey guys please mute yourself um
+
+1226
+00:59:08,160 --> 00:59:10,119
+the sentence says something complaining
+
+1227
+00:59:10,119 --> 00:59:12,240
+about main so do you know what went
+
+1228
+00:59:12,240 --> 00:59:14,359
+wrong I have a question here maybe some
+
+1229
+00:59:14,359 --> 00:59:18,799
+of you already know why doesn't it
+
+1230
+00:59:22,520 --> 00:59:26,640
+compile huh
+
+1231
+00:59:27,720 --> 00:59:28,920
+you can
+
+1232
+00:59:28,920 --> 00:59:32,599
+answer you can answer on
+
+1233
+00:59:33,400 --> 00:59:35,839
+slider need the main function that's
+
+1234
+00:59:35,839 --> 00:59:38,880
+true okay so it will never if you don't
+
+1235
+00:59:38,880 --> 00:59:41,160
+have a main function so main function is
+
+1236
+00:59:41,160 --> 00:59:43,880
+this magical control station that's
+
+1237
+00:59:43,880 --> 00:59:46,839
+where everything starts it's really nice
+
+1238
+00:59:46,839 --> 00:59:50,359
+to know that you know you can always
+
+1239
+00:59:53,640 --> 00:59:55,160
+untangle
+
+1240
+00:59:55,160 --> 00:59:58,000
+starting with the main function I wish I
+
+1241
+00:59:58,000 --> 01:00:01,680
+could mute you know my
+
+1242
+01:00:01,680 --> 01:00:04,839
+whole you should be able to but it's
+
+1243
+01:00:04,839 --> 01:00:07,200
+mute do you see that like it's somewhere
+
+1244
+01:00:07,200 --> 01:00:10,520
+in Zoom where I should mute participants
+
+1245
+01:00:10,520 --> 01:00:14,359
+and if I mute myself yeah oh
+
+1246
+01:00:14,359 --> 01:00:16,400
+participants yeah like open the
+
+1247
+01:00:16,400 --> 01:00:19,319
+participants and
+
+1248
+01:00:23,559 --> 01:00:26,559
+then
+
+1249
+01:00:26,760 --> 01:00:30,119
+no no please guys
+
+1250
+01:00:30,119 --> 01:00:32,960
+ask please ask on
+
+1251
+01:00:32,960 --> 01:00:36,079
+slidec sorry they're like it's so mean
+
+1252
+01:00:36,079 --> 01:00:39,680
+to make fun of them you know they online
+
+1253
+01:00:39,680 --> 01:00:42,480
+really sorry that's how it goes you guys
+
+1254
+01:00:42,480 --> 01:00:45,359
+you don't have physical self to to stand
+
+1255
+01:00:45,359 --> 01:00:48,680
+by yourself okay so need the main right
+
+1256
+01:00:48,680 --> 01:00:51,480
+so the main function is the control and
+
+1257
+01:00:51,480 --> 01:00:54,000
+you can untangle the whole logic of your
+
+1258
+01:00:54,000 --> 01:00:55,960
+program just looking at what main does
+
+1259
+01:00:55,960 --> 01:00:59,920
+and then going inside see what they do
+
+1260
+01:00:59,920 --> 01:01:02,240
+so there's no main program program it
+
+1261
+01:01:02,240 --> 01:01:06,680
+will not uh compile it it actually in
+
+1262
+01:01:06,680 --> 01:01:09,119
+terms of syntax it's it's okay it just
+
+1263
+01:01:09,119 --> 01:01:10,799
+doesn't want to build an executable
+
+1264
+01:01:10,799 --> 01:01:12,319
+because there's no main function there's
+
+1265
+01:01:12,319 --> 01:01:15,079
+nothing to build so let's fix it I'm
+
+1266
+01:01:15,079 --> 01:01:17,000
+going to do the bare minimum and that
+
+1267
+01:01:17,000 --> 01:01:19,319
+will be your next slide already so I'm
+
+1268
+01:01:19,319 --> 01:01:21,640
+going to say okay you need a main
+
+1269
+01:01:21,640 --> 01:01:24,000
+function let's write a main function so
+
+1270
+01:01:24,000 --> 01:01:27,000
+I'm going to say int main it's a
+
+1271
+01:01:27,000 --> 01:01:29,760
+function so
+
+1272
+01:01:29,760 --> 01:01:32,240
+um so it will have it may have some
+
+1273
+01:01:32,240 --> 01:01:34,520
+parameters but in this case it's a bare
+
+1274
+01:01:34,520 --> 01:01:37,640
+minimum and I don't put a semicolon here
+
+1275
+01:01:37,640 --> 01:01:39,720
+don't ask me why I forget I always
+
+1276
+01:01:39,720 --> 01:01:41,520
+prepare and I forget and this time I
+
+1277
+01:01:41,520 --> 01:01:43,680
+even forgot to prepare like I don't know
+
+1278
+01:01:43,680 --> 01:01:46,039
+why there's no semicolon here but it's
+
+1279
+01:01:46,039 --> 01:01:47,720
+important for the syntax to have
+
+1280
+01:01:47,720 --> 01:01:50,720
+semicolon your classes anyway if it
+
+1281
+01:01:50,720 --> 01:01:52,720
+doesn't compile try a semicolon
+
+1282
+01:01:52,720 --> 01:01:55,599
+sometimes and it will one of this deals
+
+1283
+01:01:55,599 --> 01:01:56,880
+but I'm sure there is a more
+
+1284
+01:01:56,880 --> 01:02:00,039
+sophisticated explanation that we
+
+1285
+01:02:00,039 --> 01:02:03,160
+should uh we should send it to
+
+1286
+01:02:03,160 --> 01:02:06,720
+V okay
+
+1287
+01:02:07,920 --> 01:02:10,920
+so is it good now any questions any
+
+1288
+01:02:10,920 --> 01:02:12,960
+surprises
+
+1289
+01:02:12,960 --> 01:02:16,079
+here yeah question related to my
+
+1290
+01:02:16,079 --> 01:02:18,480
+previous question that I asked that so
+
+1291
+01:02:18,480 --> 01:02:22,119
+you said that the compiler defines the
+
+1292
+01:02:22,119 --> 01:02:24,920
+uh default values for the very
+
+1293
+01:02:24,920 --> 01:02:27,599
+right so if we use some kind of
+
+1294
+01:02:27,599 --> 01:02:29,880
+comparison operation that will not
+
+1295
+01:02:29,880 --> 01:02:32,920
+return an error right it will just maybe
+
+1296
+01:02:32,920 --> 01:02:35,359
+return some garbage because yeah and
+
+1297
+01:02:35,359 --> 01:02:37,400
+different garbage
+
+1298
+01:02:37,400 --> 01:02:41,000
+depending no error always need oh no no
+
+1299
+01:02:41,000 --> 01:02:43,359
+no right right it will be runtime error
+
+1300
+01:02:43,359 --> 01:02:46,039
+versus compile error yeah if if if
+
+1301
+01:02:46,039 --> 01:02:48,400
+you're relying oh the if you're relying
+
+1302
+01:02:48,400 --> 01:02:50,920
+on some default behavior of the system
+
+1303
+01:02:50,920 --> 01:02:53,760
+sometimes it can be Insidious bugs
+
+1304
+01:02:53,760 --> 01:02:56,160
+errors those are really really hard to
+
+1305
+01:02:56,160 --> 01:02:58,000
+find and that's why the good practice is
+
+1306
+01:02:58,000 --> 01:02:59,720
+to never rely on
+
+1307
+01:02:59,720 --> 01:03:02,680
+this
+
+1308
+01:03:02,680 --> 01:03:06,520
+stuff one question about that so I
+
+1309
+01:03:06,520 --> 01:03:08,640
+remember there was something related to
+
+1310
+01:03:08,640 --> 01:03:11,440
+this like when you define main they
+
+1311
+01:03:11,440 --> 01:03:13,480
+always use this
+
+1312
+01:03:13,480 --> 01:03:18,039
+void void that's C right so here in C++
+
+1313
+01:03:18,039 --> 01:03:20,359
+it has to be integer so that's the
+
+1314
+01:03:20,359 --> 01:03:22,720
+convention it has to be integer so you
+
+1315
+01:03:22,720 --> 01:03:25,079
+have to return some integer and this is
+
+1316
+01:03:25,079 --> 01:03:27,440
+also controlled for you so you can say I
+
+1317
+01:03:27,440 --> 01:03:30,240
+I return zero and then I'll know that if
+
+1318
+01:03:30,240 --> 01:03:33,319
+the return value is zero then the
+
+1319
+01:03:33,319 --> 01:03:35,880
+function executed to that line so you
+
+1320
+01:03:35,880 --> 01:03:37,480
+can put something like control blocks
+
+1321
+01:03:37,480 --> 01:03:39,039
+and depending on what's returned you'll
+
+1322
+01:03:39,039 --> 01:03:41,480
+know where it's sto and didn't work but
+
+1323
+01:03:41,480 --> 01:03:43,359
+that's the convention so you might want
+
+1324
+01:03:43,359 --> 01:03:46,799
+to put void here you might and then some
+
+1325
+01:03:46,799 --> 01:03:49,000
+compilers will complain I mean the
+
+1326
+01:03:49,000 --> 01:03:50,319
+compiler will have to figure out what
+
+1327
+01:03:50,319 --> 01:03:51,960
+did you mean and some of them will
+
+1328
+01:03:51,960 --> 01:03:53,760
+figure it out and some of them will not
+
+1329
+01:03:53,760 --> 01:03:56,520
+I know C++ it will not it will just not
+
+1330
+01:03:56,520 --> 01:03:59,359
+compile it'll say Hey you have to return
+
+1331
+01:03:59,359 --> 01:04:02,599
+an integer value for me but you can uh
+
+1332
+01:04:02,599 --> 01:04:04,400
+try it on different compil and see how
+
+1333
+01:04:04,400 --> 01:04:08,760
+it works okay are we are we what's the
+
+1334
+01:04:08,760 --> 01:04:10,319
+time
+
+1335
+01:04:10,319 --> 01:04:14,200
+11 oh so we still have half an hour yes
+
+1336
+01:04:14,200 --> 01:04:18,440
+okay good okay so so far so good
+
+1337
+01:04:18,440 --> 01:04:21,319
+right so the logic it's very important
+
+1338
+01:04:21,319 --> 01:04:23,480
+for me to follow what what is the story
+
+1339
+01:04:23,480 --> 01:04:26,920
+so we're building this little program
+
+1340
+01:04:26,920 --> 01:04:29,400
+from bare minimum our main function is
+
+1341
+01:04:29,400 --> 01:04:31,559
+now very boring and the class is boring
+
+1342
+01:04:31,559 --> 01:04:33,960
+does nothing but I hope it'll compile
+
+1343
+01:04:33,960 --> 01:04:36,359
+now what do you think
+
+1344
+01:04:36,359 --> 01:04:41,880
+yay all clean no complaining and what is
+
+1345
+01:04:41,880 --> 01:04:43,960
+going to happen do you see what happened
+
+1346
+01:04:43,960 --> 01:04:45,880
+in my directory I'm listing all of the
+
+1347
+01:04:45,880 --> 01:04:48,839
+files so this is my program CPP and new
+
+1348
+01:04:48,839 --> 01:04:51,279
+green file an executable has been
+
+1349
+01:04:51,279 --> 01:04:54,000
+created and by default an executable is
+
+1350
+01:04:54,000 --> 01:04:56,720
+called called a out sometimes it's a as
+
+1351
+01:04:56,720 --> 01:04:59,599
+utable but and you can change that so
+
+1352
+01:04:59,599 --> 01:05:02,559
+main file tutorial will will help you
+
+1353
+01:05:02,559 --> 01:05:04,839
+with that so you can I can say that okay
+
+1354
+01:05:04,839 --> 01:05:08,079
+I want it to be called program as aable
+
+1355
+01:05:08,079 --> 01:05:11,119
+you know like that and then I list the
+
+1356
+01:05:11,119 --> 01:05:14,119
+program the files and I have programable
+
+1357
+01:05:14,119 --> 01:05:16,000
+so you can direct the compiler to do
+
+1358
+01:05:16,000 --> 01:05:19,240
+many things to name files and in fact
+
+1359
+01:05:19,240 --> 01:05:21,880
+you can write a make file script that
+
+1360
+01:05:21,880 --> 01:05:23,680
+will direct the compiler to do things in
+
+1361
+01:05:23,680 --> 01:05:25,480
+different steps and that's what m file
+
+1362
+01:05:25,480 --> 01:05:28,200
+tutorial is about how to write those m
+
+1363
+01:05:28,200 --> 01:05:31,039
+files that will follow the steps of
+
+1364
+01:05:31,039 --> 01:05:32,920
+compilation of different files into the
+
+1365
+01:05:32,920 --> 01:05:36,000
+Final Exit or into several exit if you
+
+1366
+01:05:36,000 --> 01:05:40,599
+want so that's cool but by default so
+
+1367
+01:05:40,599 --> 01:05:42,839
+let's go back to our slide and fill out
+
+1368
+01:05:42,839 --> 01:05:44,559
+this
+
+1369
+01:05:44,559 --> 01:05:47,960
+things um I'll come back so let's let's
+
+1370
+01:05:47,960 --> 01:05:49,760
+not forget to come back back to this
+
+1371
+01:05:49,760 --> 01:05:52,119
+questions but let me just finish this
+
+1372
+01:05:52,119 --> 01:05:55,760
+for for this little simple program
+
+1373
+01:05:55,760 --> 01:05:58,440
+CPP I compile it with this
+
+1374
+01:05:58,440 --> 01:06:01,559
+command I compile a chat synx I created
+
+1375
+01:06:01,559 --> 01:06:05,480
+as a uable a out by default sometimes a
+
+1376
+01:06:05,480 --> 01:06:08,680
+as eable and to run you have to put dot
+
+1377
+01:06:08,680 --> 01:06:11,760
+slash so to running aable from the Comm
+
+1378
+01:06:11,760 --> 01:06:15,960
+from the terminal you put a uh dot slash
+
+1379
+01:06:15,960 --> 01:06:19,119
+a out the name of your utable and then
+
+1380
+01:06:19,119 --> 01:06:22,000
+the output was did we run it we didn't
+
+1381
+01:06:22,000 --> 01:06:24,960
+run it yet so do slash out what do you
+
+1382
+01:06:24,960 --> 01:06:26,440
+think will be the
+
+1383
+01:06:26,440 --> 01:06:29,440
+output nothing nothing it does nothing
+
+1384
+01:06:29,440 --> 01:06:33,160
+it's a very Bor boring program Okay cool
+
+1385
+01:06:33,160 --> 01:06:36,279
+so let's go back to the
+
+1386
+01:06:37,760 --> 01:06:40,599
+questions yeah we I answered this
+
+1387
+01:06:40,599 --> 01:06:45,160
+one we can use signed main instead uh
+
+1388
+01:06:45,160 --> 01:06:48,960
+yeah uh what's the difference we can use
+
+1389
+01:06:48,960 --> 01:06:53,200
+signed main instead of original yeah I
+
+1390
+01:06:53,200 --> 01:06:55,520
+think so signed
+
+1391
+01:06:55,520 --> 01:06:59,440
+integer versus I've never uh tried it so
+
+1392
+01:06:59,440 --> 01:07:01,440
+that's this is an example of a question
+
+1393
+01:07:01,440 --> 01:07:03,559
+that if you really want to know I think
+
+1394
+01:07:03,559 --> 01:07:06,440
+most of our uh Labs will have integer
+
+1395
+01:07:06,440 --> 01:07:09,039
+maybe you can use sign maybe not I could
+
+1396
+01:07:09,039 --> 01:07:10,680
+try to run it like if you had your
+
+1397
+01:07:10,680 --> 01:07:12,200
+laptop you could take that program and
+
+1398
+01:07:12,200 --> 01:07:14,319
+see if it compiles I don't know that's
+
+1399
+01:07:14,319 --> 01:07:16,079
+the question that is a little bit
+
+1400
+01:07:16,079 --> 01:07:19,799
+nuanced and I don't I don't know sorry
+
+1401
+01:07:19,799 --> 01:07:21,599
+but this is the example of a question
+
+1402
+01:07:21,599 --> 01:07:24,200
+that we should keep and maybe like keep
+
+1403
+01:07:24,200 --> 01:07:27,200
+a list for like if if uh our cute guys
+
+1404
+01:07:27,200 --> 01:07:30,640
+would want to answer those or
+
+1405
+01:07:32,079 --> 01:07:34,440
+not please repeat that question I just
+
+1406
+01:07:34,440 --> 01:07:37,920
+deleted the one that was there sorry
+
+1407
+01:07:37,920 --> 01:07:40,480
+sorry didn't mean to I remember it was
+
+1408
+01:07:40,480 --> 01:07:43,279
+like what's the best way to learn C++
+
+1409
+01:07:43,279 --> 01:07:45,680
+this feels difficult this seems
+
+1410
+01:07:45,680 --> 01:07:48,279
+difficult
+
+1411
+01:07:48,279 --> 01:07:51,279
+no
+
+1412
+01:07:51,279 --> 01:07:55,319
+no I don't know
+
+1413
+01:07:55,319 --> 01:07:58,279
+I'm sorry this a yes it's a language you
+
+1414
+01:07:58,279 --> 01:08:01,039
+know Finnish language is difficult d++
+
+1415
+01:08:01,039 --> 01:08:03,160
+is not like I have to tell
+
+1416
+01:08:03,160 --> 01:08:07,960
+you if you speak Finnish then you can do
+
+1417
+01:08:07,960 --> 01:08:10,640
+it if you don't speak finish I you still
+
+1418
+01:08:10,640 --> 01:08:13,920
+can do it because finish is hard C++ it
+
+1419
+01:08:13,920 --> 01:08:15,440
+just practice okay you'll write this
+
+1420
+01:08:15,440 --> 01:08:17,198
+program many times you'll be able to
+
+1421
+01:08:17,198 --> 01:08:19,759
+write a simple hello world problem but
+
+1422
+01:08:19,759 --> 01:08:21,198
+then what is really cool about our
+
+1423
+01:08:21,198 --> 01:08:22,679
+assignments is that we'll never ask you
+
+1424
+01:08:22,679 --> 01:08:24,319
+to write anything from scratch instead
+
+1425
+01:08:24,319 --> 01:08:26,120
+we'll give you a bunch of code and
+
+1426
+01:08:26,120 --> 01:08:27,520
+you'll look at it and it's a
+
+1427
+01:08:27,520 --> 01:08:29,839
+well-written code and you'll have to
+
+1428
+01:08:29,839 --> 01:08:32,359
+just figure some bugs that we planted
+
+1429
+01:08:32,359 --> 01:08:35,040
+okay so the first uh lab it's like only
+
+1430
+01:08:35,040 --> 01:08:37,158
+maybe a couple of lines that you really
+
+1431
+01:08:37,158 --> 01:08:38,399
+will have to
+
+1432
+01:08:38,399 --> 01:08:40,920
+write and those lines can we figure out
+
+1433
+01:08:40,920 --> 01:08:44,520
+from this uh contest here you know and
+
+1434
+01:08:44,520 --> 01:08:46,839
+ask us so like don't be worried it's
+
+1435
+01:08:46,839 --> 01:08:49,439
+it's a language it's a language so it's
+
+1436
+01:08:49,439 --> 01:08:52,839
+new and I get it it's hard but we're
+
+1437
+01:08:52,839 --> 01:08:54,640
+going to write more so now we're going
+
+1438
+01:08:54,640 --> 01:08:58,158
+to write more in our main
+
+1439
+01:08:58,158 --> 01:09:00,359
+function we're going to create a Holo
+
+1440
+01:09:00,359 --> 01:09:02,238
+World okay so I'm going to start writing
+
+1441
+01:09:02,238 --> 01:09:04,880
+it and you guys tell me what's
+
+1442
+01:09:04,880 --> 01:09:08,159
+surprising about
+
+1443
+01:09:09,120 --> 01:09:12,439
+it okay now if you freaked out before
+
+1444
+01:09:12,439 --> 01:09:14,920
+now probably it's time to freak out
+
+1445
+01:09:14,920 --> 01:09:16,799
+what's okay this is um yeah different
+
+1446
+01:09:16,799 --> 01:09:19,719
+keybord okay so I want to say hello
+
+1447
+01:09:19,719 --> 01:09:22,158
+world good
+
+1448
+01:09:22,158 --> 01:09:27,359
+and and S CD blah blah and line
+
+1449
+01:09:27,359 --> 01:09:29,520
+character two lines that I'm going to
+
+1450
+01:09:29,520 --> 01:09:31,960
+add which like look probably very
+
+1451
+01:09:31,960 --> 01:09:34,359
+foreign so I'm going to say hash let me
+
+1452
+01:09:34,359 --> 01:09:36,359
+figure out which one is Hash here hash
+
+1453
+01:09:36,359 --> 01:09:41,319
+or pound include angle bracket I
+
+1454
+01:09:41,319 --> 01:09:43,880
+stream and go
+
+1455
+01:09:43,880 --> 01:09:48,759
+bracket okay oh thank you yeah stream
+
+1456
+01:09:48,759 --> 01:09:55,000
+yep that one work okay so any surprises
+
+1457
+01:09:55,000 --> 01:09:57,880
+pound include what does that
+
+1458
+01:09:57,880 --> 01:10:00,440
+mean well I want to print something
+
+1459
+01:10:00,440 --> 01:10:02,800
+right so
+
+1460
+01:10:02,800 --> 01:10:05,840
+just uh proper C++ has very little
+
+1461
+01:10:05,840 --> 01:10:07,960
+functionality so over time a lot of
+
+1462
+01:10:07,960 --> 01:10:10,239
+developers put together the code that
+
+1463
+01:10:10,239 --> 01:10:13,360
+was useful for their projects for many
+
+1464
+01:10:13,360 --> 01:10:15,120
+many projects and they put it into
+
+1465
+01:10:15,120 --> 01:10:17,560
+libraries and that's the point of the
+
+1466
+01:10:17,560 --> 01:10:20,880
+C++ standards committee they meet very
+
+1467
+01:10:20,880 --> 01:10:24,719
+so often and they release new updates to
+
+1468
+01:10:24,719 --> 01:10:27,320
+this libraries every four years or so
+
+1469
+01:10:27,320 --> 01:10:30,600
+and uh printing is useful so we'll
+
+1470
+01:10:30,600 --> 01:10:33,320
+probably use that pound include I stream
+
+1471
+01:10:33,320 --> 01:10:35,320
+in every assignment because we will
+
+1472
+01:10:35,320 --> 01:10:37,400
+print stuff and that's a bunch of
+
+1473
+01:10:37,400 --> 01:10:40,159
+functions so I stream is input out
+
+1474
+01:10:40,159 --> 01:10:42,960
+Stream So related to printing why do I
+
+1475
+01:10:42,960 --> 01:10:45,440
+use this angle
+
+1476
+01:10:45,440 --> 01:10:48,400
+brackets that says that it's standard
+
+1477
+01:10:48,400 --> 01:10:51,159
+Library so I could use quotes and that
+
+1478
+01:10:51,159 --> 01:10:53,640
+would be my own stuff to include in my
+
+1479
+01:10:53,640 --> 01:10:56,159
+my own local directory but if it's
+
+1480
+01:10:56,159 --> 01:10:58,000
+standard library then the compiler will
+
+1481
+01:10:58,000 --> 01:11:01,040
+know that it's from angle brackets so
+
+1482
+01:11:01,040 --> 01:11:02,760
+that means that whenever the compiler
+
+1483
+01:11:02,760 --> 01:11:05,719
+sees some unusual things like this C out
+
+1484
+01:11:05,719 --> 01:11:09,719
+or end line it look in included stuff in
+
+1485
+01:11:09,719 --> 01:11:12,080
+this case in our stream and we'll try to
+
+1486
+01:11:12,080 --> 01:11:16,159
+find what is this function C out which
+
+1487
+01:11:16,159 --> 01:11:18,000
+is standard
+
+1488
+01:11:18,000 --> 01:11:21,080
+output so to read this line you take
+
+1489
+01:11:21,080 --> 01:11:23,679
+this strain hello world and redirect it
+
+1490
+01:11:23,679 --> 01:11:27,840
+with this operator which is double less
+
+1491
+01:11:27,840 --> 01:11:30,600
+than redirected
+
+1492
+01:11:30,600 --> 01:11:34,560
+to standard out and then you also put
+
+1493
+01:11:34,560 --> 01:11:37,360
+the end of line character and also send
+
+1494
+01:11:37,360 --> 01:11:39,880
+it to standard out standard out is the
+
+1495
+01:11:39,880 --> 01:11:42,000
+line on the ter terminal right so that's
+
+1496
+01:11:42,000 --> 01:11:45,639
+the center output so there you
+
+1497
+01:11:45,639 --> 01:11:50,560
+go that's the sent so what's with this
+
+1498
+01:11:50,560 --> 01:11:54,679
+STD double column so there's a thing
+
+1499
+01:11:54,679 --> 01:11:59,639
+that is a very very bad yeah so is C++
+
+1500
+01:11:59,639 --> 01:12:04,840
+sensitive to SPAC system upad so or did
+
+1501
+01:12:04,840 --> 01:12:08,120
+you no like it's not it's not it's not
+
+1502
+01:12:08,120 --> 01:12:11,639
+you only put that for cl yeah
+
+1503
+01:12:11,639 --> 01:12:14,440
+yeah um so I could put like this I don't
+
+1504
+01:12:14,440 --> 01:12:17,000
+care I could put like this I don't oh it
+
+1505
+01:12:17,000 --> 01:12:20,120
+doesn't let you because it's a you Ed
+
+1506
+01:12:20,120 --> 01:12:22,199
+but example
+
+1507
+01:12:22,199 --> 01:12:26,960
+thisd yeah put here don't put uh a space
+
+1508
+01:12:26,960 --> 01:12:29,040
+between this because it's an operator
+
+1509
+01:12:29,040 --> 01:12:32,120
+yeah but over there it doesn't matter
+
+1510
+01:12:32,120 --> 01:12:35,360
+yep so don't put it between semicolon so
+
+1511
+01:12:35,360 --> 01:12:37,679
+some of them are so say this is the
+
+1512
+01:12:37,679 --> 01:12:40,159
+resolution scope operator so it's
+
+1513
+01:12:40,159 --> 01:12:43,360
+important to not put then um it'll look
+
+1514
+01:12:43,360 --> 01:12:44,960
+directly to the left directly to the
+
+1515
+01:12:44,960 --> 01:12:48,280
+right uh but let me talk about this
+
+1516
+01:12:48,280 --> 01:12:52,440
+SD double colon thing so I could say
+
+1517
+01:12:52,440 --> 01:12:56,239
+using name
+
+1518
+01:12:56,440 --> 01:12:59,440
+space
+
+1519
+01:12:59,800 --> 01:13:03,800
+STD and I would say hey compiler look at
+
+1520
+01:13:03,800 --> 01:13:06,800
+that in standard library look at the Nam
+
+1521
+01:13:06,800 --> 01:13:08,639
+space so standard library has many Nam
+
+1522
+01:13:08,639 --> 01:13:11,000
+spaces many regions associated with
+
+1523
+01:13:11,000 --> 01:13:13,199
+different functionalities so take this
+
+1524
+01:13:13,199 --> 01:13:16,120
+STD and bring all of the functions for
+
+1525
+01:13:16,120 --> 01:13:19,159
+use as if I were to write them myself
+
+1526
+01:13:19,159 --> 01:13:24,080
+that's pretty bad because then the is a
+
+1527
+01:13:24,080 --> 01:13:27,440
+potential for collisions right what if I
+
+1528
+01:13:27,440 --> 01:13:30,040
+what if somebody else will write C out
+
+1529
+01:13:30,040 --> 01:13:33,320
+for I don't know for some other purposes
+
+1530
+01:13:33,320 --> 01:13:34,880
+like this is standard this is standard
+
+1531
+01:13:34,880 --> 01:13:37,159
+output what if I want to use it for some
+
+1532
+01:13:37,159 --> 01:13:40,480
+something else right so there's a a a
+
+1533
+01:13:40,480 --> 01:13:42,320
+possibility for collisions and that's
+
+1534
+01:13:42,320 --> 01:13:44,840
+why this is a bad practice to bring all
+
+1535
+01:13:44,840 --> 01:13:47,679
+of the STD there but if you work then
+
+1536
+01:13:47,679 --> 01:13:50,960
+you could simplify your syntax like this
+
+1537
+01:13:50,960 --> 01:13:54,120
+because then see out and n End of Line
+
+1538
+01:13:54,120 --> 01:13:56,719
+character would be in your scope
+
+1539
+01:13:56,719 --> 01:14:00,360
+immediately from standard Library so
+
+1540
+01:14:00,360 --> 01:14:02,560
+double column is scope resolution
+
+1541
+01:14:02,560 --> 01:14:05,960
+operator and if you need to look at some
+
+1542
+01:14:05,960 --> 01:14:09,000
+user defined Scopes you use it but you
+
+1543
+01:14:09,000 --> 01:14:11,800
+can also using name spaces you can bring
+
+1544
+01:14:11,800 --> 01:14:13,920
+all of those in your
+
+1545
+01:14:13,920 --> 01:14:15,760
+local uh
+
+1546
+01:14:15,760 --> 01:14:20,760
+environment local scope is this clear so
+
+1547
+01:14:20,760 --> 01:14:23,040
+uh let me clean up clean up this things
+
+1548
+01:14:23,040 --> 01:14:26,679
+it just looks bad but okay so let me try
+
+1549
+01:14:26,679 --> 01:14:29,080
+to compile let's
+
+1550
+01:14:29,080 --> 01:14:32,639
+see you have this code by the
+
+1551
+01:14:32,639 --> 01:14:36,159
+way uh in the in
+
+1552
+01:14:36,159 --> 01:14:38,600
+your oh yeah this is where it's really
+
+1553
+01:14:38,600 --> 01:14:40,000
+hard to read
+
+1554
+01:14:40,000 --> 01:14:43,800
+right so but you have your hello world
+
+1555
+01:14:43,800 --> 01:14:49,080
+here yes no typos so I can run it and we
+
+1556
+01:14:49,080 --> 01:14:52,400
+hope to see Hello World right so it does
+
+1557
+01:14:52,400 --> 01:14:55,440
+what we expected it prints hello world
+
+1558
+01:14:55,440 --> 01:14:58,199
+two standard
+
+1559
+01:14:59,040 --> 01:15:03,800
+output okay so we're done with this
+
+1560
+01:15:03,800 --> 01:15:06,800
+right we wrote all of this except that
+
+1561
+01:15:06,800 --> 01:15:09,679
+please don't use like there's entire
+
+1562
+01:15:09,679 --> 01:15:13,280
+threads on Reddit and core core and
+
+1563
+01:15:13,280 --> 01:15:17,120
+stuff like that where um or stack
+
+1564
+01:15:17,120 --> 01:15:19,360
+Overflow where people argue why you
+
+1565
+01:15:19,360 --> 01:15:22,000
+should never use name spaces however if
+
+1566
+01:15:22,000 --> 01:15:23,719
+you know what you're doing it's fine
+
+1567
+01:15:23,719 --> 01:15:26,400
+it just be careful because then you
+
+1568
+01:15:26,400 --> 01:15:27,960
+sometimes there could be even things
+
+1569
+01:15:27,960 --> 01:15:30,120
+where a wrong function is called because
+
+1570
+01:15:30,120 --> 01:15:31,920
+of usern name spaces because of the
+
+1571
+01:15:31,920 --> 01:15:35,159
+collisions and you'll never find out so
+
+1572
+01:15:35,159 --> 01:15:40,440
+so it's better to do STD do semi colum
+
+1573
+01:15:40,440 --> 01:15:43,799
+colum any
+
+1574
+01:15:44,000 --> 01:15:47,840
+questions okay well I think this see out
+
+1575
+01:15:47,840 --> 01:15:49,880
+is
+
+1576
+01:15:49,880 --> 01:15:52,320
+really creepy because after that I think
+
+1577
+01:15:52,320 --> 01:15:53,920
+it'll be easier so if if you if you're
+
+1578
+01:15:53,920 --> 01:15:55,840
+fine with this it'll it'll get easier
+
+1579
+01:15:55,840 --> 01:15:58,320
+now more logical so finish is difficult
+
+1580
+01:15:58,320 --> 01:16:00,840
+I still can do not do it so will this be
+
+1581
+01:16:00,840 --> 01:16:03,040
+hard yes I told you it's a boot camp it
+
+1582
+01:16:03,040 --> 01:16:05,159
+is going to be really really hard but
+
+1583
+01:16:05,159 --> 01:16:06,760
+you'll love
+
+1584
+01:16:06,760 --> 01:16:09,960
+it could you also use using names space
+
+1585
+01:16:09,960 --> 01:16:12,800
+stdc out yes so that's a better practice
+
+1586
+01:16:12,800 --> 01:16:16,800
+bring only what you need to
+
+1587
+01:16:16,800 --> 01:16:20,760
+survive if you know that line uh from
+
+1588
+01:16:20,760 --> 01:16:23,639
+Space Balls Okay so
+
+1589
+01:16:23,639 --> 01:16:26,480
+um see out and then you would also have
+
+1590
+01:16:26,480 --> 01:16:29,960
+to include STD Colin colon and line and
+
+1591
+01:16:29,960 --> 01:16:32,840
+then you're fine you can use those so so
+
+1592
+01:16:32,840 --> 01:16:34,880
+you just Brint only the functions that
+
+1593
+01:16:34,880 --> 01:16:37,440
+you want I understand that stream has
+
+1594
+01:16:37,440 --> 01:16:40,360
+all functions as CNC out yes but why
+
+1595
+01:16:40,360 --> 01:16:43,440
+would they put them inside STD and make
+
+1596
+01:16:43,440 --> 01:16:46,520
+us use the resolution scope I don't know
+
+1597
+01:16:46,520 --> 01:16:49,400
+oh ask V he knows he's part of the guys
+
+1598
+01:16:49,400 --> 01:16:52,719
+who did it so we can ask them so does
+
+1599
+01:16:52,719 --> 01:16:54,760
+STD see out mean that you call a
+
+1600
+01:16:54,760 --> 01:16:56,239
+function called C out from Center
+
+1601
+01:16:56,239 --> 01:16:59,679
+Library class yes yes yes yes yes
+
+1602
+01:16:59,679 --> 01:17:02,719
+yes yes that's a function and then
+
+1603
+01:17:02,719 --> 01:17:04,880
+there's operators that you know just
+
+1604
+01:17:04,880 --> 01:17:07,880
+like bra all sorts of uh brackets that
+
+1605
+01:17:07,880 --> 01:17:10,199
+you could use you could redefine uh
+
+1606
+01:17:10,199 --> 01:17:12,080
+those operators and to do whatever you
+
+1607
+01:17:12,080 --> 01:17:14,880
+want in C++ which is really really
+
+1608
+01:17:14,880 --> 01:17:18,320
+cool okay and we'll show you how to do
+
+1609
+01:17:18,320 --> 01:17:22,520
+that now I'm going to build even more do
+
+1610
+01:17:22,520 --> 01:17:24,480
+you remember that useless class that we
+
+1611
+01:17:24,480 --> 01:17:29,639
+did in my program well it's there it
+
+1612
+01:17:29,639 --> 01:17:34,080
+compiles so it's a type it acts just
+
+1613
+01:17:34,080 --> 01:17:37,080
+like a type so maybe I can declare a
+
+1614
+01:17:37,080 --> 01:17:40,000
+variable of that type right with the
+
+1615
+01:17:40,000 --> 01:17:44,000
+value with the name a type sphere some
+
+1616
+01:17:44,000 --> 01:17:47,679
+location and garbage value right so
+
+1617
+01:17:47,679 --> 01:17:50,280
+let's see should it compile
+
+1618
+01:17:50,280 --> 01:17:52,880
+now let me write a little more according
+
+1619
+01:17:52,880 --> 01:17:56,440
+to to what we have on your um notes here
+
+1620
+01:17:56,440 --> 01:18:00,520
+we'll also write this we'll put
+
+1621
+01:18:00,520 --> 01:18:05,400
+public so we'll Define regions in the
+
+1622
+01:18:05,400 --> 01:18:08,679
+class that will do different things so
+
+1623
+01:18:08,679 --> 01:18:11,120
+each class
+
+1624
+01:18:11,120 --> 01:18:15,400
+in um in C++ can have three regions and
+
+1625
+01:18:15,400 --> 01:18:17,639
+let's talk just about two now public and
+
+1626
+01:18:17,639 --> 01:18:19,840
+private so if you don't do it everything
+
+1627
+01:18:19,840 --> 01:18:21,560
+will be private so if you don't write it
+
+1628
+01:18:21,560 --> 01:18:24,000
+by default it will be private
+
+1629
+01:18:24,000 --> 01:18:26,159
+which means that so if everything is
+
+1630
+01:18:26,159 --> 01:18:28,800
+private that means that only functions
+
+1631
+01:18:28,800 --> 01:18:31,600
+or members of the class can use anything
+
+1632
+01:18:31,600 --> 01:18:35,440
+that's private to that class so no
+
+1633
+01:18:35,440 --> 01:18:37,199
+other
+
+1634
+01:18:37,199 --> 01:18:41,280
+things can access it so for example this
+
+1635
+01:18:41,280 --> 01:18:44,840
+a sphere and therefore main function
+
+1636
+01:18:44,840 --> 01:18:47,600
+cannot have access to private variables
+
+1637
+01:18:47,600 --> 01:18:48,400
+or
+
+1638
+01:18:48,400 --> 01:18:50,760
+functions therefore it's very important
+
+1639
+01:18:50,760 --> 01:18:53,920
+to have control and explicitly design
+
+1640
+01:18:53,920 --> 01:18:56,040
+your class so that you have public
+
+1641
+01:18:56,040 --> 01:18:57,480
+functionalities and private
+
+1642
+01:18:57,480 --> 01:18:59,480
+functionalities private functionalities
+
+1643
+01:18:59,480 --> 01:19:02,199
+are only visible inside of the class to
+
+1644
+01:19:02,199 --> 01:19:05,280
+the members themselves but then public
+
+1645
+01:19:05,280 --> 01:19:07,719
+functionalities can be used by what we
+
+1646
+01:19:07,719 --> 01:19:11,080
+called a client code that is this main
+
+1647
+01:19:11,080 --> 01:19:13,320
+function is in this
+
+1648
+01:19:13,320 --> 01:19:18,280
+case so is this clear let's see is this
+
+1649
+01:19:18,280 --> 01:19:21,560
+surprising let's see what I wanted to uh
+
+1650
+01:19:21,560 --> 01:19:23,960
+to say here on my slide
+
+1651
+01:19:23,960 --> 01:19:26,960
+yeah so we declared uh
+
+1652
+01:19:26,960 --> 01:19:30,239
+sphere a of type sphere and we defined
+
+1653
+01:19:30,239 --> 01:19:32,280
+two regions we didn't put anything there
+
+1654
+01:19:32,280 --> 01:19:34,639
+yet and that's the goal of the next
+
+1655
+01:19:34,639 --> 01:19:38,320
+slide and we are on the next
+
+1656
+01:19:38,320 --> 01:19:42,759
+page so now it's the design
+
+1657
+01:19:43,760 --> 01:19:46,880
+question what do you want this sphere to
+
+1658
+01:19:46,880 --> 01:19:49,600
+be so what will be the representation
+
+1659
+01:19:49,600 --> 01:19:52,400
+that is variable variables associated
+
+1660
+01:19:52,400 --> 01:19:54,199
+with this class
+
+1661
+01:19:54,199 --> 01:19:56,320
+and what should be the functionality do
+
+1662
+01:19:56,320 --> 01:19:58,760
+you remember we had radius as
+
+1663
+01:19:58,760 --> 01:20:02,080
+representations and color and location
+
+1664
+01:20:02,080 --> 01:20:04,600
+right so let's keep radius as
+
+1665
+01:20:04,600 --> 01:20:06,639
+representation and this is the Syntax
+
+1666
+01:20:06,639 --> 01:20:10,360
+for that and we put it in
+
+1667
+01:20:10,360 --> 01:20:12,800
+private and I have a question for you
+
+1668
+01:20:12,800 --> 01:20:16,320
+why do you think radius should be
+
+1669
+01:20:18,520 --> 01:20:21,560
+private so this means that from main
+
+1670
+01:20:21,560 --> 01:20:23,760
+function we can never access radius we
+
+1671
+01:20:23,760 --> 01:20:26,520
+can never change it is that a good
+
+1672
+01:20:26,520 --> 01:20:30,960
+choice let's think about it so what if I
+
+1673
+01:20:30,960 --> 01:20:32,880
+I still want to change radius somehow
+
+1674
+01:20:32,880 --> 01:20:35,440
+maybe right I want to have control but I
+
+1675
+01:20:35,440 --> 01:20:37,520
+want to completely control what the
+
+1676
+01:20:37,520 --> 01:20:39,639
+client will be able to do with my sphere
+
+1677
+01:20:39,639 --> 01:20:41,760
+so maybe if they change radius I will
+
+1678
+01:20:41,760 --> 01:20:43,920
+ask like oh what if it's negative then I
+
+1679
+01:20:43,920 --> 01:20:45,800
+will not let them do that right so I
+
+1680
+01:20:45,800 --> 01:20:49,280
+don't want the client code here directly
+
+1681
+01:20:49,280 --> 01:20:51,560
+access this radi because they may change
+
+1682
+01:20:51,560 --> 01:20:54,000
+it to something that I don't want so I
+
+1683
+01:20:54,000 --> 01:20:57,159
+want instead to provide maybe the
+
+1684
+01:20:57,159 --> 01:20:59,760
+functionality see how I wrot it
+
+1685
+01:20:59,760 --> 01:21:01,920
+here maybe I want to provide the
+
+1686
+01:21:01,920 --> 01:21:04,360
+functionality
+
+1687
+01:21:04,360 --> 01:21:08,159
+instead for doing that oh
+
+1688
+01:21:08,159 --> 01:21:09,840
+yeah
+
+1689
+01:21:09,840 --> 01:21:13,239
+so maybe
+
+1690
+01:21:13,239 --> 01:21:16,560
+instead one of my
+
+1691
+01:21:16,560 --> 01:21:20,520
+functionalities should be being able to
+
+1692
+01:21:20,520 --> 01:21:23,639
+change the sphere
+
+1693
+01:21:23,639 --> 01:21:26,719
+in some way including radius right and
+
+1694
+01:21:26,719 --> 01:21:28,920
+then it's control behavior and that
+
+1695
+01:21:28,920 --> 01:21:30,760
+should go in
+
+1696
+01:21:30,760 --> 01:21:34,199
+public something that clients can do but
+
+1697
+01:21:34,199 --> 01:21:37,800
+my sphere representation or data will be
+
+1698
+01:21:37,800 --> 01:21:40,679
+something that I protect with private
+
+1699
+01:21:40,679 --> 01:21:43,239
+region so that nobody can access it and
+
+1700
+01:21:43,239 --> 01:21:45,880
+change it in unwanted manner right so
+
+1701
+01:21:45,880 --> 01:21:47,480
+what other functionalities do we want
+
+1702
+01:21:47,480 --> 01:21:49,639
+with spheres what would you want to know
+
+1703
+01:21:49,639 --> 01:21:51,639
+about the sphere
+
+1704
+01:21:51,639 --> 01:21:54,639
+Maybe
+
+1705
+01:21:55,360 --> 01:21:56,920
+do you want to know the radius or
+
+1706
+01:21:56,920 --> 01:21:58,600
+something else right maybe you want to
+
+1707
+01:21:58,600 --> 01:22:01,520
+know like volume or something so like
+
+1708
+01:22:01,520 --> 01:22:05,360
+get information about it get
+
+1709
+01:22:05,360 --> 01:22:08,360
+information about the sphere and here we
+
+1710
+01:22:08,360 --> 01:22:12,080
+have this um sample function get
+
+1711
+01:22:12,080 --> 01:22:13,639
+diameter for
+
+1712
+01:22:13,639 --> 01:22:16,280
+example so maybe we want to change this
+
+1713
+01:22:16,280 --> 01:22:20,480
+sphere and that will be the function set
+
+1714
+01:22:20,480 --> 01:22:23,080
+radius we might want just to create cre
+
+1715
+01:22:23,080 --> 01:22:25,520
+here as well so there's many more things
+
+1716
+01:22:25,520 --> 01:22:28,600
+that you might want to do create
+
+1717
+01:22:28,600 --> 01:22:30,880
+sphere many things that you might might
+
+1718
+01:22:30,880 --> 01:22:33,320
+want maybe you want to add spheres maybe
+
+1719
+01:22:33,320 --> 01:22:36,400
+you want to divide them in some way
+
+1720
+01:22:36,400 --> 01:22:39,760
+maybe what color them draw them print
+
+1721
+01:22:39,760 --> 01:22:43,120
+them you know many things that you might
+
+1722
+01:22:43,120 --> 01:22:45,360
+want to do but this is just for
+
+1723
+01:22:45,360 --> 01:22:47,679
+Simplicity let's start with this so I'm
+
+1724
+01:22:47,679 --> 01:22:51,560
+going to go to my code and please now
+
+1725
+01:22:51,560 --> 01:22:54,960
+see maybe I'll make some mistakes so
+
+1726
+01:22:54,960 --> 01:22:58,360
+here's functionality for
+
+1727
+01:22:58,600 --> 01:23:00,760
+creating and this is called a
+
+1728
+01:23:00,760 --> 01:23:03,600
+Constructor so this is going to create
+
+1729
+01:23:03,600 --> 01:23:07,080
+sphere so why do you know and compiler
+
+1730
+01:23:07,080 --> 01:23:09,120
+knows that it's a Constructor well it's
+
+1731
+01:23:09,120 --> 01:23:10,239
+a
+
+1732
+01:23:10,239 --> 01:23:13,199
+function with no return type you see it
+
+1733
+01:23:13,199 --> 01:23:15,840
+doesn't return anything and the name of
+
+1734
+01:23:15,840 --> 01:23:18,560
+the function is the same as the class so
+
+1735
+01:23:18,560 --> 01:23:20,960
+that's how the compiler will know that
+
+1736
+01:23:20,960 --> 01:23:22,880
+it's the Constructor that's something
+
+1737
+01:23:22,880 --> 01:23:27,280
+that will build the object um
+
+1738
+01:23:27,280 --> 01:23:30,360
+okay the object of this type now the
+
+1739
+01:23:30,360 --> 01:23:34,080
+second one was void set radius because
+
+1740
+01:23:34,080 --> 01:23:36,199
+it doesn't have to return anything we're
+
+1741
+01:23:36,199 --> 01:23:40,199
+just going to change the radius
+
+1742
+01:23:40,199 --> 01:23:43,120
+radius and we want to give a parameter
+
+1743
+01:23:43,120 --> 01:23:46,400
+or Double R
+
+1744
+01:23:46,400 --> 01:23:51,199
+right and um the last one was we want to
+
+1745
+01:23:51,199 --> 01:23:53,880
+get the diameter so we want to return
+
+1746
+01:23:53,880 --> 01:23:58,239
+type double and we want to get a
+
+1747
+01:23:58,239 --> 01:23:59,920
+diameter
+
+1748
+01:23:59,920 --> 01:24:03,400
+okay so what do we want to do with this
+
+1749
+01:24:03,400 --> 01:24:06,480
+functions maybe we want to print out get
+
+1750
+01:24:06,480 --> 01:24:08,120
+diameter
+
+1751
+01:24:08,120 --> 01:24:11,320
+instead so how do we do that we created
+
+1752
+01:24:11,320 --> 01:24:15,840
+an object of type sphere a in order to
+
+1753
+01:24:15,840 --> 01:24:19,600
+access its functionalities you put a dot
+
+1754
+01:24:19,600 --> 01:24:21,840
+so it's kind of like scope resolution
+
+1755
+01:24:21,840 --> 01:24:24,639
+operating for types but for objects of
+
+1756
+01:24:24,639 --> 01:24:26,679
+that type in order to access the
+
+1757
+01:24:26,679 --> 01:24:29,719
+functions you need to put dot for types
+
+1758
+01:24:29,719 --> 01:24:31,920
+themselves like spere you need to put
+
+1759
+01:24:31,920 --> 01:24:35,360
+scope resolution double column to access
+
+1760
+01:24:35,360 --> 01:24:37,600
+uh the members but for the objects of
+
+1761
+01:24:37,600 --> 01:24:39,600
+that type you put a dot to access the
+
+1762
+01:24:39,600 --> 01:24:42,080
+members so I can say get diameter and
+
+1763
+01:24:42,080 --> 01:24:44,679
+that way I will print
+
+1764
+01:24:44,679 --> 01:24:49,080
+out the diameter of the
+
+1765
+01:24:49,080 --> 01:24:52,360
+sphere does this look good so we created
+
+1766
+01:24:52,360 --> 01:24:54,199
+functionalities creating a
+
+1767
+01:24:54,199 --> 01:25:00,480
+sphere change sphere change it and get
+
+1768
+01:25:00,520 --> 01:25:02,880
+information get
+
+1769
+01:25:02,880 --> 01:25:06,199
+information about
+
+1770
+01:25:08,719 --> 01:25:13,159
+it so I'm going to compile
+
+1771
+01:25:15,620 --> 01:25:18,920
+[Music]
+
+1772
+01:25:19,760 --> 01:25:22,760
+it doesn't like it I have a question for
+
+1773
+01:25:22,760 --> 01:25:25,280
+you I'm going to this is
+
+1774
+01:25:25,280 --> 01:25:29,000
+the moment for you to answer why does
+
+1775
+01:25:29,000 --> 01:25:30,760
+that H why did that
+
+1776
+01:25:30,760 --> 01:25:34,600
+happen why doesn't it compile yeah we
+
+1777
+01:25:34,600 --> 01:25:37,600
+didn't Define the function for we
+
+1778
+01:25:37,600 --> 01:25:39,639
+actually didn't give the code to run
+
+1779
+01:25:39,639 --> 01:25:41,960
+those functions right we only declared
+
+1780
+01:25:41,960 --> 01:25:43,920
+them right we only declared the
+
+1781
+01:25:43,920 --> 01:25:45,639
+functionalities we didn't give the
+
+1782
+01:25:45,639 --> 01:25:48,679
+provide the code to build that is it
+
+1783
+01:25:48,679 --> 01:25:51,440
+unable yeah that's why it's complain yep
+
+1784
+01:25:51,440 --> 01:25:53,600
+I honestly did not no it only has
+
+1785
+01:25:53,600 --> 01:25:54,920
+functions declarations not
+
+1786
+01:25:54,920 --> 01:25:57,159
+implementation do you see that we
+
+1787
+01:25:57,159 --> 01:26:01,199
+prescribed to set radius of this value
+
+1788
+01:26:01,199 --> 01:26:04,520
+but we didn't tell how there's no code
+
+1789
+01:26:04,520 --> 01:26:08,760
+right H okay good good good good so we
+
+1790
+01:26:08,760 --> 01:26:13,080
+have to write the code right but um
+
+1791
+01:26:13,080 --> 01:26:15,520
+let's do it but I think I want to say
+
+1792
+01:26:15,520 --> 01:26:19,480
+something about this line
+
+1793
+01:26:21,199 --> 01:26:24,280
+though do so so what what does it do
+
+1794
+01:26:24,280 --> 01:26:25,679
+when I
+
+1795
+01:26:25,679 --> 01:26:30,320
+declare a variable of T sphere what is
+
+1796
+01:26:30,320 --> 01:26:34,280
+this here what is the value of it then
+
+1797
+01:26:34,280 --> 01:26:37,840
+we know that it's garbage right but
+
+1798
+01:26:37,840 --> 01:26:39,600
+what's the location how does the
+
+1799
+01:26:39,600 --> 01:26:44,040
+compiler know what to even do do you
+
+1800
+01:26:44,040 --> 01:26:46,760
+have does anybody
+
+1801
+01:26:46,760 --> 01:26:50,760
+know or can take
+
+1802
+01:26:51,199 --> 01:26:53,239
+guess
+
+1803
+01:26:53,239 --> 01:26:55,679
+so we actually have control some control
+
+1804
+01:26:55,679 --> 01:26:57,159
+of what's going to happen upon
+
+1805
+01:26:57,159 --> 01:26:59,840
+Declaration of that sphere and this is
+
+1806
+01:26:59,840 --> 01:27:02,800
+the line when you declare this sphere
+
+1807
+01:27:02,800 --> 01:27:06,080
+here this is where a
+
+1808
+01:27:06,320 --> 01:27:10,080
+Constructor is called so this function
+
+1809
+01:27:10,080 --> 01:27:12,679
+that we just wrote or declared but
+
+1810
+01:27:12,679 --> 01:27:15,960
+didn't Define so this
+
+1811
+01:27:16,199 --> 01:27:20,400
+Constructor is called so before we wrote
+
+1812
+01:27:20,400 --> 01:27:21,119
+this
+
+1813
+01:27:21,119 --> 01:27:23,960
+function a default Constructor was
+
+1814
+01:27:23,960 --> 01:27:26,520
+called and that default Constructor did
+
+1815
+01:27:26,520 --> 01:27:29,400
+nothing right but you have control you
+
+1816
+01:27:29,400 --> 01:27:31,000
+can actually write your own construction
+
+1817
+01:27:31,000 --> 01:27:33,440
+and you can then prescribe what should
+
+1818
+01:27:33,440 --> 01:27:37,199
+happen at that moment okay so that's uh
+
+1819
+01:27:37,199 --> 01:27:38,719
+something to remember we'll talk about
+
+1820
+01:27:38,719 --> 01:27:41,239
+Constructors much more later but that's
+
+1821
+01:27:41,239 --> 01:27:43,119
+something to remember that over here
+
+1822
+01:27:43,119 --> 01:27:45,360
+something important happens and if you
+
+1823
+01:27:45,360 --> 01:27:47,520
+were to actually write the Constructor
+
+1824
+01:27:47,520 --> 01:27:51,159
+and you would um put a print out
+
+1825
+01:27:51,159 --> 01:27:52,679
+statement of some sort sort in your
+
+1826
+01:27:52,679 --> 01:27:55,840
+Constructor here after this line it
+
+1827
+01:27:55,840 --> 01:27:58,159
+would print out whatever you put
+
+1828
+01:27:58,159 --> 01:28:01,320
+whatever you say so let's write these
+
+1829
+01:28:01,320 --> 01:28:05,040
+functions okay let's write them H where
+
+1830
+01:28:05,040 --> 01:28:07,639
+do oh wait sorry we need to
+
+1831
+01:28:07,639 --> 01:28:10,880
+also put the representation ofhere right
+
+1832
+01:28:10,880 --> 01:28:12,119
+with
+
+1833
+01:28:12,119 --> 01:28:15,119
+radius
+
+1834
+01:28:16,320 --> 01:28:20,679
+okay okay so now I'm going to write my
+
+1835
+01:28:20,679 --> 01:28:22,719
+functions so which as we're going to
+
+1836
+01:28:22,719 --> 01:28:24,840
+write let's write set radius and get
+
+1837
+01:28:24,840 --> 01:28:27,639
+diameter and we'll leave out we'll keep
+
+1838
+01:28:27,639 --> 01:28:30,480
+the default Constructor for now so I'm
+
+1839
+01:28:30,480 --> 01:28:33,440
+going to write this function
+
+1840
+01:28:33,440 --> 01:28:36,520
+avoid H
+
+1841
+01:28:36,520 --> 01:28:39,880
+sphere so you already know this scope
+
+1842
+01:28:39,880 --> 01:28:41,840
+resolution operator because otherwise
+
+1843
+01:28:41,840 --> 01:28:43,719
+the compiler will not know which set
+
+1844
+01:28:43,719 --> 01:28:46,400
+radius is it we need to actually say
+
+1845
+01:28:46,400 --> 01:28:48,360
+that this is the sphere set radius that
+
+1846
+01:28:48,360 --> 01:28:52,239
+we're going to define Double R so so far
+
+1847
+01:28:52,239 --> 01:28:56,440
+I wrote the signature of this
+
+1848
+01:28:56,440 --> 01:28:59,960
+function okay so this signature and
+
+1849
+01:28:59,960 --> 01:29:05,719
+let's uh go please actually
+
+1850
+01:29:08,960 --> 01:29:14,639
+yeah or sphere yeah it's outside yeah so
+
+1851
+01:29:14,639 --> 01:29:17,360
+very very good this is something that
+
+1852
+01:29:17,360 --> 01:29:19,320
+can be written in many ways and write it
+
+1853
+01:29:19,320 --> 01:29:21,360
+in one way but there's three ways to
+
+1854
+01:29:21,360 --> 01:29:23,920
+write definitions of the functions so
+
+1855
+01:29:23,920 --> 01:29:26,360
+I'm going to write it outside of the
+
+1856
+01:29:26,360 --> 01:29:28,520
+sphere class
+
+1857
+01:29:28,520 --> 01:29:31,520
+definition and now explain why in a bit
+
+1858
+01:29:31,520 --> 01:29:33,360
+but let's first try it so if it's
+
+1859
+01:29:33,360 --> 01:29:35,440
+outside then it's not clear if I would
+
+1860
+01:29:35,440 --> 01:29:38,440
+not write the sphere double column it
+
+1861
+01:29:38,440 --> 01:29:40,560
+wouldn't be clear which set radius it is
+
+1862
+01:29:40,560 --> 01:29:42,320
+because there may be balls with set
+
+1863
+01:29:42,320 --> 01:29:44,080
+radius and maybe some other things that
+
+1864
+01:29:44,080 --> 01:29:46,280
+will want to set the radius as well so
+
+1865
+01:29:46,280 --> 01:29:47,920
+it's very important out if you're
+
+1866
+01:29:47,920 --> 01:29:50,480
+outside of that class to Define which
+
+1867
+01:29:50,480 --> 01:29:54,400
+scope this radius belongs to and this is
+
+1868
+01:29:54,400 --> 01:29:57,480
+the signature of this function the
+
+1869
+01:29:57,480 --> 01:30:00,719
+return type the parameter type and the
+
+1870
+01:30:00,719 --> 01:30:03,440
+name and the scope right but now we'll
+
+1871
+01:30:03,440 --> 01:30:05,960
+actually write down what it should do so
+
+1872
+01:30:05,960 --> 01:30:07,960
+what should you do if you set the radius
+
+1873
+01:30:07,960 --> 01:30:11,920
+you just say Okay this private member
+
+1874
+01:30:11,920 --> 01:30:14,800
+radius is equal to
+
+1875
+01:30:14,800 --> 01:30:18,840
+R and remember private members can only
+
+1876
+01:30:18,840 --> 01:30:22,560
+be accessed by the
+
+1877
+01:30:22,560 --> 01:30:24,639
+members of the class itself so this is
+
+1878
+01:30:24,639 --> 01:30:26,639
+the m radius function is the member of
+
+1879
+01:30:26,639 --> 01:30:29,960
+the class so it can U access radius and
+
+1880
+01:30:29,960 --> 01:30:33,520
+change it that's good so this is where
+
+1881
+01:30:33,520 --> 01:30:36,239
+you could also put a state if statement
+
+1882
+01:30:36,239 --> 01:30:38,440
+like if radius is greater than zero so
+
+1883
+01:30:38,440 --> 01:30:41,080
+you could control how the client is
+
+1884
+01:30:41,080 --> 01:30:43,760
+going to set this radius and that it's
+
+1885
+01:30:43,760 --> 01:30:47,600
+proper okay and now let's write the
+
+1886
+01:30:47,600 --> 01:30:50,840
+function signature for get diameter so
+
+1887
+01:30:50,840 --> 01:30:53,400
+double
+
+1888
+01:30:53,400 --> 01:30:58,600
+scope scope resolution operator get
+
+1889
+01:30:58,600 --> 01:31:00,760
+diameter and now the actual
+
+1890
+01:31:00,760 --> 01:31:04,480
+implementation so curly braces or curly
+
+1891
+01:31:04,480 --> 01:31:08,840
+brackets and what do you want
+
+1892
+01:31:08,840 --> 01:31:12,480
+return two times radius again we can
+
+1893
+01:31:12,480 --> 01:31:15,880
+access the private member because this
+
+1894
+01:31:15,880 --> 01:31:20,040
+is the member function okay so now
+
+1895
+01:31:20,040 --> 01:31:22,520
+hopefully we should get some diameter to
+
+1896
+01:31:22,520 --> 01:31:23,600
+be printed
+
+1897
+01:31:23,600 --> 01:31:26,520
+out and hopefully there will be no
+
+1898
+01:31:26,520 --> 01:31:30,400
+compilation errors let's
+
+1899
+01:31:30,400 --> 01:31:34,760
+check no compilation errors we run the
+
+1900
+01:31:34,760 --> 01:31:38,920
+program zero why is
+
+1901
+01:31:39,080 --> 01:31:41,880
+that ah because of the Constructor The
+
+1902
+01:31:41,880 --> 01:31:44,119
+Constructor actually does nothing right
+
+1903
+01:31:44,119 --> 01:31:46,840
+we rely on default constructure so
+
+1904
+01:31:46,840 --> 01:31:48,280
+default constructure does nothing it
+
+1905
+01:31:48,280 --> 01:31:51,320
+doesn't assign any radius to the sphere
+
+1906
+01:31:51,320 --> 01:31:53,920
+let's write a
+
+1907
+01:31:54,199 --> 01:31:56,280
+Constructor do you want to write a
+
+1908
+01:31:56,280 --> 01:31:58,560
+Constructor I don't think I have that in
+
+1909
+01:31:58,560 --> 01:32:02,239
+my slides so this is a little bit
+
+1910
+01:32:03,480 --> 01:32:08,480
+of um so let's set radius
+
+1911
+01:32:08,480 --> 01:32:12,520
+to equals 10 that's my that's my
+
+1912
+01:32:12,520 --> 01:32:15,360
+construct it's really silly right it
+
+1913
+01:32:15,360 --> 01:32:17,400
+really doesn't do much nothing
+
+1914
+01:32:17,400 --> 01:32:20,719
+interesting or useful or even meaningful
+
+1915
+01:32:20,719 --> 01:32:22,760
+right but that's what it is so what do
+
+1916
+01:32:22,760 --> 01:32:25,480
+we expect
+
+1917
+01:32:25,920 --> 01:32:29,040
+now what's the
+
+1918
+01:32:29,040 --> 01:32:33,800
+output diameter 20 yay so do you see now
+
+1919
+01:32:33,800 --> 01:32:36,480
+that we defined and sorry in the in the
+
+1920
+01:32:36,480 --> 01:32:38,400
+slides I don't have definition of the
+
+1921
+01:32:38,400 --> 01:32:39,920
+Constructor but it's just another line
+
+1922
+01:32:39,920 --> 01:32:42,880
+for defining the in the same way with
+
+1923
+01:32:42,880 --> 01:32:44,440
+the function signature of the
+
+1924
+01:32:44,440 --> 01:32:47,679
+Constructor and what it has to
+
+1925
+01:32:47,679 --> 01:32:50,639
+do and now it's very clear for you guys
+
+1926
+01:32:50,639 --> 01:32:53,440
+right that in this main function here
+
+1927
+01:32:53,440 --> 01:32:55,520
+the Constructor is called and now it
+
+1928
+01:32:55,520 --> 01:32:57,560
+assigns radius to
+
+1929
+01:32:57,560 --> 01:33:02,159
+10 that's good and then we call get
+
+1930
+01:33:02,159 --> 01:33:05,080
+diameter actually I could even
+
+1931
+01:33:05,080 --> 01:33:08,480
+maybe set the diameter to something else
+
+1932
+01:33:08,480 --> 01:33:10,360
+now so I could say
+
+1933
+01:33:10,360 --> 01:33:14,760
+a or set radius set radius
+
+1934
+01:33:14,760 --> 01:33:17,000
+to
+
+1935
+01:33:17,000 --> 01:33:19,560
+five and let's do a double so that
+
+1936
+01:33:19,560 --> 01:33:21,239
+there's no I don't want to deal with
+
+1937
+01:33:21,239 --> 01:33:25,119
+cast yet we'll talk about it
+
+1938
+01:33:26,280 --> 01:33:29,400
+later and now what should be the
+
+1939
+01:33:29,400 --> 01:33:33,599
+output 10
+
+1940
+01:33:33,639 --> 01:33:36,440
+okay okay so we use all three
+
+1941
+01:33:36,440 --> 01:33:38,360
+functionalities of our
+
+1942
+01:33:38,360 --> 01:33:40,440
+class
+
+1943
+01:33:40,440 --> 01:33:43,080
+object because we Define them so well
+
+1944
+01:33:43,080 --> 01:33:46,440
+right so let's go back to our slides I
+
+1945
+01:33:46,440 --> 01:33:49,520
+think I had some questions so we can
+
+1946
+01:33:49,520 --> 01:33:53,560
+answer them
+
+1947
+01:33:54,560 --> 01:33:57,440
+um let's answer them and then I'll
+
+1948
+01:33:57,440 --> 01:34:00,600
+finish so can and should aliases for
+
+1949
+01:34:00,600 --> 01:34:04,000
+important functions be
+
+1950
+01:34:04,760 --> 01:34:08,520
+used this is let's let's not do this
+
+1951
+01:34:08,520 --> 01:34:10,880
+now
+
+1952
+01:34:10,880 --> 01:34:14,639
+because um we're jumping ahead so we
+
+1953
+01:34:14,639 --> 01:34:16,719
+we'll talk about this kind of syntax
+
+1954
+01:34:16,719 --> 01:34:20,480
+later when it's more appropriate
+
+1955
+01:34:20,480 --> 01:34:23,480
+right
+
+1956
+01:34:23,600 --> 01:34:27,560
+not to be altered by users
+
+1957
+01:34:27,600 --> 01:34:30,440
+directly oh I don't understand wasn't
+
+1958
+01:34:30,440 --> 01:34:33,760
+response to why theid should be private
+
+1959
+01:34:33,760 --> 01:34:37,080
+oh right right right yeah yeah do did I
+
+1960
+01:34:37,080 --> 01:34:40,880
+answer all okay or is there yeah
+
+1961
+01:34:40,880 --> 01:34:44,400
+okay sorry sometimes um it's difficult
+
+1962
+01:34:44,400 --> 01:34:47,400
+to follow the questions and so just ask
+
+1963
+01:34:47,400 --> 01:34:50,679
+again if I didn't answer it right okay
+
+1964
+01:34:50,679 --> 01:34:53,159
+so so I want to conclude because I think
+
+1965
+01:34:53,159 --> 01:34:55,679
+we're running out out of time so now
+
+1966
+01:34:55,679 --> 01:34:57,880
+I'll if you look at your slides I think
+
+1967
+01:34:57,880 --> 01:35:01,199
+it's not very clear at your printouts
+
+1968
+01:35:01,199 --> 01:35:02,719
+that there but it's clear that there are
+
+1969
+01:35:02,719 --> 01:35:05,560
+three cases three cases of writing these
+
+1970
+01:35:05,560 --> 01:35:08,520
+definitions of the functions one was
+
+1971
+01:35:08,520 --> 01:35:13,199
+just the way I just did uh in in my file
+
+1972
+01:35:13,199 --> 01:35:15,560
+so bringing the definitions of functions
+
+1973
+01:35:15,560 --> 01:35:19,560
+outside of the class you like
+
+1974
+01:35:19,560 --> 01:35:24,679
+it or does it feel like this is
+
+1975
+01:35:24,679 --> 01:35:27,199
+weird Okay let me show you the
+
+1976
+01:35:27,199 --> 01:35:30,199
+second the second case is actually doing
+
+1977
+01:35:30,199 --> 01:35:32,280
+the same thing so instead of these two
+
+1978
+01:35:32,280 --> 01:35:35,199
+lines here I brought whatever was in
+
+1979
+01:35:35,199 --> 01:35:37,880
+curly braces and put them right here
+
+1980
+01:35:37,880 --> 01:35:40,000
+after the Declaration so like putting
+
+1981
+01:35:40,000 --> 01:35:42,719
+the Declaration of the functionalities
+
+1982
+01:35:42,719 --> 01:35:44,960
+together with implementation right there
+
+1983
+01:35:44,960 --> 01:35:49,080
+inside the do you like it
+
+1984
+01:35:49,080 --> 01:35:52,679
+better yes yes is more
+
+1985
+01:35:52,679 --> 01:35:56,119
+common the most common is number three
+
+1986
+01:35:56,119 --> 01:35:59,119
+so the number three is
+
+1987
+01:35:59,119 --> 01:36:02,639
+this putl them in three files have your
+
+1988
+01:36:02,639 --> 01:36:06,360
+main function here put the definitions
+
+1989
+01:36:06,360 --> 01:36:09,080
+in what's called sphere
+
+1990
+01:36:09,080 --> 01:36:12,159
+CPP so that's the definitions of member
+
+1991
+01:36:12,159 --> 01:36:14,000
+functionalities and
+
+1992
+01:36:14,000 --> 01:36:18,080
+put your signatures only which is called
+
+1993
+01:36:18,080 --> 01:36:22,199
+an interface to the F in spere
+
+1994
+01:36:22,199 --> 01:36:23,719
+that's what we'll be using all along
+
+1995
+01:36:23,719 --> 01:36:25,280
+that's what everybody
+
+1996
+01:36:25,280 --> 01:36:28,360
+does do you like it like seems like the
+
+1997
+01:36:28,360 --> 01:36:31,440
+worst thing right but it's actually very
+
+1998
+01:36:31,440 --> 01:36:33,719
+important for encapsulation so let me
+
+1999
+01:36:33,719 --> 01:36:35,480
+just give you a hint why and then we'll
+
+2000
+01:36:35,480 --> 01:36:37,840
+start you this later so the thing is
+
+2001
+01:36:37,840 --> 01:36:42,560
+that you can hide your Genius code of
+
+2002
+01:36:42,560 --> 01:36:46,080
+implementation and sell just the
+
+2003
+01:36:46,080 --> 01:36:49,000
+interfaces to the client to
+
+2004
+01:36:49,000 --> 01:36:51,760
+use together with objects that you
+
+2005
+01:36:51,760 --> 01:36:55,320
+pre-compile using your smart code so you
+
+2006
+01:36:55,320 --> 01:36:58,280
+never actually Reveal Your codes but you
+
+2007
+01:36:58,280 --> 01:37:00,520
+can sell your product like that for
+
+2008
+01:37:00,520 --> 01:37:03,119
+people to use and that's called in
+
+2009
+01:37:03,119 --> 01:37:05,760
+capsulation so you really hide your proi
+
+2010
+01:37:05,760 --> 01:37:07,639
+and
+
+2011
+01:37:07,639 --> 01:37:09,679
+stuff uh unfortunately if you use
+
+2012
+01:37:09,679 --> 01:37:11,920
+templates you cannot do that so people
+
+2013
+01:37:11,920 --> 01:37:14,000
+love templates but then you canot hide
+
+2014
+01:37:14,000 --> 01:37:16,800
+stuff so but but if you don't use templ
+
+2015
+01:37:16,800 --> 01:37:19,000
+templates are really useful so they
+
+2016
+01:37:19,000 --> 01:37:20,880
+Implement polymorphism and all of that
+
+2017
+01:37:20,880 --> 01:37:21,840
+but
+
+2018
+01:37:21,840 --> 01:37:25,159
+um but this is a very common thing to do
+
+2019
+01:37:25,159 --> 01:37:27,679
+if you really want to write them your
+
+2020
+01:37:27,679 --> 01:37:34,159
+code here and sell only uh object and uh
+
+2021
+01:37:34,159 --> 01:37:36,760
+interfaces okay next time we'll start
+
+2022
+01:37:36,760 --> 01:37:40,360
+right there so we'll go through this
+
+2023
+01:37:46,000 --> 01:37:50,000
+again oh sorry Pa I have to check on
+
+2024
+01:37:50,000 --> 01:37:53,599
+Zoom I think I just clck the computer no
+
+2025
+01:37:53,599 --> 01:37:57,360
+Zoom is on let's see everything is
+
+2026
+01:37:57,360 --> 01:38:02,559
+on okay you guys all
+
+2027
+01:38:05,199 --> 01:38:09,040
+good okay we'll see
+
+2028
+01:38:11,239 --> 01:38:14,678
+you stop
+
+2029
+01:38:17,480 --> 01:38:20,719
+share and oh it's lab now so you guys
+
+2030
+01:38:20,719 --> 01:38:23,360
+all go to the lab
+
+2031
+01:38:23,360 --> 01:38:26,119
+and yeah can you repeat that stuff you
+
+2032
+01:38:26,119 --> 01:38:30,080
+said about the Q no and so on Boyers
+
+2033
+01:38:30,080 --> 01:38:32,520
+they gonna be now or no they're not
+
+2034
+01:38:32,520 --> 01:38:34,440
+gonna be in the lab but they on our
+
+2035
+01:38:34,440 --> 01:38:37,599
+slack let me see do I slack geez what am
+
+2036
+01:38:37,599 --> 01:38:40,960
+I saying Discord okay let me
+
+2037
+01:38:40,960 --> 01:38:45,320
+see there if you go on Discord y so we
+
+2038
+01:38:45,320 --> 01:38:48,080
+have our staff stuff these guys are
+
+2039
+01:38:48,080 --> 01:38:52,840
+CT don't me yeah that's
+
+2040
+01:38:52,840 --> 01:38:57,360
+wait a second I wonder if I'm
+
+2041
+01:38:57,560 --> 01:39:00,280
+a so go on announcement they should be
+
+2042
+01:39:00,280 --> 01:39:04,040
+here no I mean okay just I guess this is
+
+2043
+01:39:04,040 --> 01:39:06,199
+the
+
+2044
+01:39:06,199 --> 01:39:09,239
+the cute so you can tell them because
+
+2045
+01:39:09,239 --> 01:39:10,719
+they put like
+
+2046
+01:39:10,719 --> 01:39:13,880
+cute and yeah they're right there so go
+
+2047
+01:39:13,880 --> 01:39:17,040
+ahead and ask questions it's really
+
+2048
+01:39:17,040 --> 01:39:19,960
+exciting yeah yeah I'm I can't believe
+
+2049
+01:39:19,960 --> 01:39:22,440
+it's happening
+
+2050
+01:39:22,440 --> 01:39:25,800
+and the attend attendance is not
+
+2051
+01:39:25,800 --> 01:39:28,080
+mandatory not for lectures not for labs
+
+2052
+01:39:28,080 --> 01:39:29,800
+nothing yeah everything can be competed
+
+2053
+01:39:29,800 --> 01:39:32,679
+online if you want that's good have the
+
+2054
+01:39:32,679 --> 01:39:34,560
+lecture at the same
+
+2055
+01:39:34,560 --> 01:39:36,560
+stab that's why we don't have many
+
+2056
+01:39:36,560 --> 01:39:39,560
+students but like here physically but we
+
+2057
+01:39:39,560 --> 01:39:41,480
+want we want you to be able to
+
+2058
+01:39:41,480 --> 01:39:44,000
+completely do it online although we'll
+
+2059
+01:39:44,000 --> 01:39:48,520
+miss nice to have physical lectures too
+
+2060
+01:39:48,520 --> 01:39:52,159
+well thank you for the lecture you you
+
+2061
+01:39:52,159 --> 01:39:56,400
+okay hey I think there might be a
+
+2062
+01:39:56,400 --> 01:39:58,239
+problem with
+
+2063
+01:39:58,239 --> 01:40:01,400
+the I don't think they have the
+
+2064
+01:40:01,400 --> 01:40:04,159
+environments
+
+2065
+01:40:04,840 --> 01:40:08,599
+here they should use their
+
+2066
+01:40:09,159 --> 01:40:11,719
+laptops yeah oh right so they'll have to
+
+2067
+01:40:11,719 --> 01:40:13,840
+go through
+
+2068
+01:40:13,840 --> 01:40:19,760
+setup no we all have to go have to yeah
+
+2069
+01:40:19,760 --> 01:40:22,760
+because you'll they you'll need to log
+
+2070
+01:40:22,760 --> 01:40:26,719
+them in with your Ro password
+
+2071
+01:40:26,719 --> 01:40:31,360
+yeah yep at least I think that is
+
+2072
+01:40:31,360 --> 01:40:35,280
+necessary I think there will be see you
+
+2073
+01:40:35,280 --> 01:40:39,400
+sell anything there that ad
+
+2074
+01:40:39,400 --> 01:40:43,239
+maybe see if I can
+
+2075
+01:40:43,320 --> 01:40:46,920
+likeall yes maybe I can they like ited
+
+2076
+01:40:46,920 --> 01:40:48,520
+for
+
+2077
+01:40:48,520 --> 01:40:51,639
+today I know but hey I think it's going
+
+2078
+01:40:51,639 --> 01:40:55,000
+to be okay because you know the toughest
+
+2079
+01:40:55,000 --> 01:40:57,480
+Will Survive and they can do it on their
+
+2080
+01:40:57,480 --> 01:40:59,920
+laptops and if not like the rest will
+
+2081
+01:40:59,920 --> 01:41:01,639
+take it next year where we are more
+
+2082
+01:41:01,639 --> 01:41:03,360
+prepared because yeah I don't know what
+
+2083
+01:41:03,360 --> 01:41:05,159
+to expect like Steve is like why didn't
+
+2084
+01:41:05,159 --> 01:41:07,599
+you say last week that you want bigger
+
+2085
+01:41:07,599 --> 01:41:09,800
+lectures but last week you only had 100
+
+2086
+01:41:09,800 --> 01:41:12,400
+students and then this is almost fine
+
+2087
+01:41:12,400 --> 01:41:14,679
+right I I mean I I think it's going to
+
+2088
+01:41:14,679 --> 01:41:17,320
+be fine from like how like usually a
+
+2089
+01:41:17,320 --> 01:41:20,480
+small percentage of students actually
+
+2090
+01:41:20,480 --> 01:41:22,040
+attend
+
+2091
+01:41:22,040 --> 01:41:23,800
+way
+
+2092
+01:41:23,800 --> 01:41:26,639
+so you know what what really frustrates
+
+2093
+01:41:26,639 --> 01:41:30,199
+me the most it's 2hour lectures it's
+
+2094
+01:41:30,199 --> 01:41:32,360
+just like impossible to remember that
+
+2095
+01:41:32,360 --> 01:41:34,400
+much material this lectures were one
+
+2096
+01:41:34,400 --> 01:41:36,000
+hour at a time it's so much easier like
+
+2097
+01:41:36,000 --> 01:41:37,599
+one hour you can really remember the
+
+2098
+01:41:37,599 --> 01:41:41,960
+story two hours
+
+2099
+01:41:49,840 --> 01:41:52,840
+oh
+
+2100
+01:42:02,730 --> 01:42:06,500
+[Laughter]
+
+2101
+01:42:14,080 --> 01:42:17,080
+yeah
+

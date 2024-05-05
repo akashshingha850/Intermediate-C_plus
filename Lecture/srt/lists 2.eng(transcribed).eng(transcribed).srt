@@ -1,0 +1,868 @@
+﻿1
+00:00:02,040 --> 00:00:06,279
+and for part two we have this uh reverse
+
+2
+00:00:06,279 --> 00:00:10,440
+function uh so this is kind of
+
+3
+00:00:10,599 --> 00:00:13,719
+a a helper function that takes a start
+
+4
+00:00:13,719 --> 00:00:15,160
+point and an end point so it doesn't
+
+5
+00:00:15,160 --> 00:00:18,160
+necessarily reverse the entire list so
+
+6
+00:00:18,160 --> 00:00:20,320
+it's a similar situation as the triple
+
+7
+00:00:20,320 --> 00:00:22,720
+rotate in a
+
+8
+00:00:22,720 --> 00:00:25,279
+way uh especially when we consider the
+
+9
+00:00:25,279 --> 00:00:26,480
+riverse
+
+10
+00:00:26,480 --> 00:00:30,599
+N uh function
+
+11
+00:00:30,599 --> 00:00:33,879
+um okay now the way I do it is basically
+
+12
+00:00:33,879 --> 00:00:37,079
+uh first by handling the connections of
+
+13
+00:00:37,079 --> 00:00:39,920
+the start point which will be like
+
+14
+00:00:39,920 --> 00:00:43,440
+changed to the to be at the end and
+
+15
+00:00:43,440 --> 00:00:46,600
+after that just just kind of start going
+
+16
+00:00:46,600 --> 00:00:50,199
+through all the uh nodes in the middle
+
+17
+00:00:50,199 --> 00:00:53,079
+and like these two lines are the
+
+18
+00:00:53,079 --> 00:00:55,719
+like where things are actually changing
+
+19
+00:00:55,719 --> 00:00:59,600
+so we for each Noe we change the next
+
+20
+00:00:59,600 --> 00:01:01,600
+one would be the previous and the
+
+21
+00:01:01,600 --> 00:01:04,599
+previous should be the next one and then
+
+22
+00:01:04,599 --> 00:01:06,360
+in this case we need to kind of store
+
+23
+00:01:06,360 --> 00:01:08,360
+this next as a temporary
+
+24
+00:01:08,360 --> 00:01:10,560
+variable uh because we wouldn't be able
+
+25
+00:01:10,560 --> 00:01:11,840
+to use this
+
+26
+00:01:11,840 --> 00:01:15,759
+anymore uh by the time we get here and
+
+27
+00:01:15,759 --> 00:01:19,040
+then we're just going of keep advancing
+
+28
+00:01:19,040 --> 00:01:22,880
+and then we also make sure to uh connect
+
+29
+00:01:22,880 --> 00:01:28,079
+the uh end points and then if we're if
+
+30
+00:01:28,079 --> 00:01:30,159
+the start point is not at the head then
+
+31
+00:01:30,159 --> 00:01:33,159
+the
+
+32
+00:01:33,159 --> 00:01:36,600
+previous uh the next of the previous of
+
+33
+00:01:36,600 --> 00:01:38,000
+the start point should point to the
+
+34
+00:01:38,000 --> 00:01:39,119
+current
+
+35
+00:01:39,119 --> 00:01:41,479
+one and then if we're not at the end
+
+36
+00:01:41,479 --> 00:01:45,479
+then the uh next of the start point or
+
+37
+00:01:45,479 --> 00:01:48,520
+previous of the next of the start point
+
+38
+00:01:48,520 --> 00:01:51,920
+I should point at the start
+
+39
+00:01:51,920 --> 00:01:55,520
+Point okay so
+
+40
+00:01:55,520 --> 00:01:58,960
+uh it's kind of similar idea so so I
+
+41
+00:01:58,960 --> 00:02:02,960
+won't go into kind of more uh details
+
+42
+00:02:02,960 --> 00:02:06,200
+here um yeah these are all the things
+
+43
+00:02:06,200 --> 00:02:09,720
+you have to consider for this
+
+44
+00:02:09,720 --> 00:02:13,599
+one uh then for reverse
+
+45
+00:02:13,599 --> 00:02:16,480
+ends at least the way I handle it so so
+
+46
+00:02:16,480 --> 00:02:17,760
+there's certain only different ways you
+
+47
+00:02:17,760 --> 00:02:20,599
+could do it uh so so since this function
+
+48
+00:02:20,599 --> 00:02:24,040
+is taking uh references to
+
+49
+00:02:24,040 --> 00:02:27,200
+pointers what I do is
+
+50
+00:02:27,200 --> 00:02:30,840
+I either pass the head
+
+51
+00:02:30,840 --> 00:02:35,080
+and the and the tail depending on uh
+
+52
+00:02:35,080 --> 00:02:37,879
+if we're actually at the head or or the
+
+53
+00:02:37,879 --> 00:02:39,599
+tail on
+
+54
+00:02:39,599 --> 00:02:44,519
+like uh on on the start or end point so
+
+55
+00:02:44,519 --> 00:02:47,200
+so what this matters is that if we
+
+56
+00:02:47,200 --> 00:02:52,159
+actually pass the head reference to the
+
+57
+00:02:52,159 --> 00:02:54,920
+Head uh as an
+
+58
+00:02:54,920 --> 00:02:58,560
+argument then that head is going to
+
+59
+00:02:58,560 --> 00:03:03,000
+also uh change so so then we can kind of
+
+60
+00:03:03,000 --> 00:03:06,560
+um manipulate it
+
+61
+00:03:06,560 --> 00:03:09,760
+here now yeah you could probably do it
+
+62
+00:03:09,760 --> 00:03:11,519
+another way as well
+
+63
+00:03:11,519 --> 00:03:14,879
+but uh that's the way I do
+
+64
+00:03:14,879 --> 00:03:17,959
+it uh and then temp two which serves as
+
+65
+00:03:17,959 --> 00:03:19,480
+the like start
+
+66
+00:03:19,480 --> 00:03:25,679
+Point uh so by the end of this the
+
+67
+00:03:26,120 --> 00:03:28,959
+um the the next of of temp is going to
+
+68
+00:03:28,959 --> 00:03:32,360
+be the start of the next section and
+
+69
+00:03:32,360 --> 00:03:35,560
+then we can kind of uh the temp which is
+
+70
+00:03:35,560 --> 00:03:38,920
+used as the end point here uh we can
+
+71
+00:03:38,920 --> 00:03:41,840
+make that the same as temp two but then
+
+72
+00:03:41,840 --> 00:03:44,040
+uh kind of increment
+
+73
+00:03:44,040 --> 00:03:47,159
+it whenever we're not at at a point
+
+74
+00:03:47,159 --> 00:03:49,560
+where we want to start
+
+75
+00:03:49,560 --> 00:03:51,840
+reversing that way we can go through the
+
+76
+00:03:51,840 --> 00:03:54,319
+ential
+
+77
+00:03:55,159 --> 00:03:58,360
+list um okay it's probably enough about
+
+78
+00:03:58,360 --> 00:04:01,200
+the reverse
+
+79
+00:04:01,200 --> 00:04:05,000
+um okay then for merge the idea is to
+
+80
+00:04:05,000 --> 00:04:06,640
+merge two
+
+81
+00:04:06,640 --> 00:04:09,319
+different uh
+
+82
+00:04:09,319 --> 00:04:13,159
+lists uh in in order and we we can
+
+83
+00:04:13,159 --> 00:04:16,959
+assume that the lists themselves are are
+
+84
+00:04:16,959 --> 00:04:19,199
+sorted we could have a list that's like
+
+85
+00:04:19,199 --> 00:04:24,840
+1 3 5 7 and then we have 2 4 6 8 so so
+
+86
+00:04:24,840 --> 00:04:27,120
+they're they're in order but then when
+
+87
+00:04:27,120 --> 00:04:29,280
+we want to merge them and and keep
+
+88
+00:04:29,280 --> 00:04:30,560
+everything in in
+
+89
+00:04:30,560 --> 00:04:34,840
+order uh then we kind of need to
+
+90
+00:04:34,840 --> 00:04:39,120
+like weave these together in a
+
+91
+00:04:39,120 --> 00:04:43,639
+way uh so the first step is to
+
+92
+00:04:43,639 --> 00:04:46,400
+uh so since they're both sorted we know
+
+93
+00:04:46,400 --> 00:04:49,400
+that the starting point for this new uh
+
+94
+00:04:49,400 --> 00:04:52,600
+sorted list will
+
+95
+00:04:52,600 --> 00:04:57,360
+be uh the node that's the like between
+
+96
+00:04:57,360 --> 00:05:00,919
+the first nodes of these two
+
+97
+00:05:00,919 --> 00:05:03,880
+uh the the smaller one so that's in
+
+98
+00:05:03,880 --> 00:05:06,800
+total like the smallest number in the
+
+99
+00:05:06,800 --> 00:05:08,440
+two
+
+100
+00:05:08,440 --> 00:05:12,199
+lists we have the smallest then and then
+
+101
+00:05:12,199 --> 00:05:13,840
+uh we can kind of make these two
+
+102
+00:05:13,840 --> 00:05:16,320
+different variables that itate through
+
+103
+00:05:16,320 --> 00:05:19,280
+the two different
+
+104
+00:05:19,319 --> 00:05:25,160
+lists and then indicates that
+
+105
+00:05:25,280 --> 00:05:27,440
+um that
+
+106
+00:05:27,440 --> 00:05:31,600
+the First Data is is the smaller
+
+107
+00:05:31,600 --> 00:05:35,639
+one then we can kind of uh Advance this
+
+108
+00:05:35,639 --> 00:05:37,160
+one
+
+109
+00:05:37,160 --> 00:05:39,199
+already and
+
+110
+00:05:39,199 --> 00:05:43,120
+then uh if it's not the first then we
+
+111
+00:05:43,120 --> 00:05:45,880
+keep it there and then for them to the
+
+112
+00:05:45,880 --> 00:05:47,039
+the
+
+113
+00:05:47,039 --> 00:05:49,960
+opposite um so now we're going to
+
+114
+00:05:49,960 --> 00:05:51,840
+setting this up in a way
+
+115
+00:05:51,840 --> 00:05:56,360
+where uh we already can like then
+
+116
+00:05:56,360 --> 00:05:59,400
+compare whatever these are pointing at I
+
+117
+00:05:59,400 --> 00:06:02,360
+I okay which one of these is
+
+118
+00:06:02,360 --> 00:06:06,160
+smaller um okay and then what
+
+119
+00:06:06,160 --> 00:06:09,000
+happens I check
+
+120
+00:06:09,000 --> 00:06:14,720
+if uh temp one uh which
+
+121
+00:06:14,759 --> 00:06:17,000
+is
+
+122
+00:06:17,000 --> 00:06:20,360
+um which is related to the the first
+
+123
+00:06:20,360 --> 00:06:23,319
+list if that data is smaller than than
+
+124
+00:06:23,319 --> 00:06:25,560
+temp
+
+125
+00:06:25,560 --> 00:06:29,800
+two uh then
+
+126
+00:06:31,240 --> 00:06:33,080
+that then we can set this temp to be be
+
+127
+00:06:33,080 --> 00:06:35,199
+temp one okay these names are probably
+
+128
+00:06:35,199 --> 00:06:38,840
+not not very useful uh so so basically
+
+129
+00:06:38,840 --> 00:06:42,639
+the idea is that uh in this case we kind
+
+130
+00:06:42,639 --> 00:06:47,919
+of take the next note from the list one
+
+131
+00:06:47,919 --> 00:06:51,240
+and then we advance the the pointer that
+
+132
+00:06:51,240 --> 00:06:54,800
+we have for the list one and then
+
+133
+00:06:54,800 --> 00:06:56,520
+otherwise
+
+134
+00:06:56,520 --> 00:07:00,160
+we take the next node from list two
+
+135
+00:07:00,160 --> 00:07:04,520
+and Advance the pointer for list
+
+136
+00:07:04,520 --> 00:07:10,319
+two okay and then the uh we have the
+
+137
+00:07:10,319 --> 00:07:13,319
+smaller
+
+138
+00:07:14,639 --> 00:07:18,080
+um so we going of store this smallest as
+
+139
+00:07:18,080 --> 00:07:20,919
+the starting point and then smaller at
+
+140
+00:07:20,919 --> 00:07:21,800
+the
+
+141
+00:07:21,800 --> 00:07:29,879
+start uh is the smallest and uh then
+
+142
+00:07:29,879 --> 00:07:31,960
+the next small number is going to be the
+
+143
+00:07:31,960 --> 00:07:34,440
+temp so so it's going to be the smaller
+
+144
+00:07:34,440 --> 00:07:37,479
+one out of the like next node in list
+
+145
+00:07:37,479 --> 00:07:39,479
+one or
+
+146
+00:07:39,479 --> 00:07:44,159
+two um and then also connect the
+
+147
+00:07:44,159 --> 00:07:47,840
+previews of this one to be on
+
+148
+00:07:47,840 --> 00:07:52,080
+the uh one we were currently looking
+
+149
+00:07:52,080 --> 00:07:54,120
+at um
+
+150
+00:07:54,120 --> 00:07:56,560
+okay yeah these variable names are maybe
+
+151
+00:07:56,560 --> 00:07:58,639
+a little bit confusing but hopefully you
+
+152
+00:07:58,639 --> 00:08:02,120
+get the idea so we going to uh alternate
+
+153
+00:08:02,120 --> 00:08:04,560
+between iterating list one and two
+
+154
+00:08:04,560 --> 00:08:07,280
+depending on which one is currently
+
+155
+00:08:07,280 --> 00:08:09,759
+which one currently has the smaller
+
+156
+00:08:09,759 --> 00:08:12,080
+number and that way we just keep adding
+
+157
+00:08:12,080 --> 00:08:15,120
+the smallest number um between those two
+
+158
+00:08:15,120 --> 00:08:17,199
+lists and since we can assume that
+
+159
+00:08:17,199 --> 00:08:21,560
+they're in order or those two lists on
+
+160
+00:08:21,560 --> 00:08:24,360
+their own are are sorted uh then we
+
+161
+00:08:24,360 --> 00:08:27,360
+always keep getting the getting the
+
+162
+00:08:27,360 --> 00:08:30,159
+numbers in
+
+163
+00:08:30,159 --> 00:08:32,958
+like in the correct order and adding
+
+164
+00:08:32,958 --> 00:08:35,799
+them to this like new new chain here
+
+165
+00:08:35,799 --> 00:08:37,159
+starting from the
+
+166
+00:08:37,159 --> 00:08:41,880
+smallest okay hopefully that makes
+
+167
+00:08:44,760 --> 00:08:47,880
+sense okay so then with
+
+168
+00:08:47,880 --> 00:08:50,360
+the um
+
+169
+00:08:50,360 --> 00:08:55,399
+merge sort uh this is kind of a
+
+170
+00:08:55,399 --> 00:09:01,440
+very clever um thing where we can
+
+171
+00:09:02,800 --> 00:09:06,479
+uh we we can kind
+
+172
+00:09:07,519 --> 00:09:12,040
+of split these
+
+173
+00:09:12,040 --> 00:09:15,959
+um lists in
+
+174
+00:09:16,560 --> 00:09:19,839
+two and and then we can call the
+
+175
+00:09:19,839 --> 00:09:22,279
+recursively call the mer sort function
+
+176
+00:09:22,279 --> 00:09:25,680
+on on both of
+
+177
+00:09:25,680 --> 00:09:28,760
+them so so then eventually this is kind
+
+178
+00:09:28,760 --> 00:09:29,920
+of
+
+179
+00:09:29,920 --> 00:09:34,399
+are going to go down to just like single
+
+180
+00:09:35,360 --> 00:09:37,320
+numbers and
+
+181
+00:09:37,320 --> 00:09:41,720
+then then that's going to be easy to
+
+182
+00:09:41,720 --> 00:09:45,040
+uh like it just kind of Goes Down single
+
+183
+00:09:45,040 --> 00:09:48,959
+numbers and then starts uh merging them
+
+184
+00:09:48,959 --> 00:09:52,880
+back together right so
+
+185
+00:09:52,880 --> 00:09:56,200
+um so
+
+186
+00:09:57,839 --> 00:09:59,880
+every every time
+
+187
+00:09:59,880 --> 00:10:04,240
+we we get here we we make another
+
+188
+00:10:04,240 --> 00:10:08,959
+split and then we call merge sord on the
+
+189
+00:10:08,959 --> 00:10:12,240
+uh first part and merge sort on the
+
+190
+00:10:12,240 --> 00:10:13,519
+second
+
+191
+00:10:13,519 --> 00:10:16,200
+part and
+
+192
+00:10:16,200 --> 00:10:18,920
+then and then merge those together and
+
+193
+00:10:18,920 --> 00:10:20,560
+and we can assume that by the time we're
+
+194
+00:10:20,560 --> 00:10:24,120
+calling this uh everything's kind
+
+195
+00:10:24,120 --> 00:10:27,040
+of sorted
+
+196
+00:10:27,040 --> 00:10:30,720
+already uh if if that makes sense and
+
+197
+00:10:30,720 --> 00:10:33,440
+and then here we see like like basically
+
+198
+00:10:33,440 --> 00:10:37,320
+if we're down to like a single number so
+
+199
+00:10:37,320 --> 00:10:40,360
+start next doesn't point to anything
+
+200
+00:10:40,360 --> 00:10:46,000
+anymore then we can just uh return that
+
+201
+00:10:46,000 --> 00:10:48,519
+and if we're calling this with single
+
+202
+00:10:48,519 --> 00:10:52,639
+numbers then of course the are sorted if
+
+203
+00:10:52,639 --> 00:10:54,160
+it's just a single number then
+
+204
+00:10:54,160 --> 00:10:57,440
+technically it's sorted so then uh it
+
+205
+00:10:57,440 --> 00:10:59,959
+ends up working
+
+206
+00:10:59,959 --> 00:11:02,599
+and just
+
+207
+00:11:02,920 --> 00:11:07,600
+fine okay well that's a lot of like uh
+
+208
+00:11:07,600 --> 00:11:10,560
+algorithms uh like we've talked about
+
+209
+00:11:10,560 --> 00:11:11,720
+before is
+
+210
+00:11:11,720 --> 00:11:14,600
+maybe
+
+211
+00:11:14,600 --> 00:11:16,760
+um
+
+212
+00:11:16,760 --> 00:11:20,920
+maybe we we want to move like kind
+
+213
+00:11:20,920 --> 00:11:24,200
+of away from algorithms and more into
+
+214
+00:11:24,200 --> 00:11:30,200
+like like very core of C++ but uh
+
+215
+00:11:30,200 --> 00:11:34,639
+in any case hopefully hopefully this
+
+216
+00:11:34,639 --> 00:11:38,440
+challenging exercise helped you get more
+
+217
+00:11:38,440 --> 00:11:43,000
+familiar with C++ as well
+

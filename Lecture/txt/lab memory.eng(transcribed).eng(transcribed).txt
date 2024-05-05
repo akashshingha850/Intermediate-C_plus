@@ -1,0 +1,292 @@
+okay now for lab memory uh we have four
+different files that we may may or may
+not have to
+edit and and then we also have some
+other files in the project that that you
+you probably want to want to look at but
+um let's let's start
+by compiling and and running uh and
+seeing
+uh where that gets us
+so if we front this
+then then it's like okay this looks
+pretty bad
+um so then let's
+run with as and and look uh what kind of
+problems are we actually getting
+here so
+requested allocation
+size exceeds maximum supported size uh
+so let's see what's going on
+allocator
+uh
+58 seems to be doing
+something something
+wrong so it's it's pointing to this that
+that something is going wrong
+here exceeds maximum supported size so
+so then I suppose PR count must be some
+incredibly high value
+now the thing that's going on here is
+that
+um if you look around you'll see that
+room count is not actually getting
+initialized
+anywhere it's it's part of the uh uh
+allocator uh
+class but nothing is actually ini izing
+it right now so that means that this is
+some kind of undefined
+value now it's very likely that it's
+going to be
+zero but also in this case it seems like
+it's some incredibly high value instead
+but uh either way the problem is that
+it's undefined and we need to Define it
+somehow
+um so then we can see that we're using
+this file
+class some kind of static function in
+that in that
+class uh well
+actually rather than a class it's more
+like just a name space where where we uh
+Define some
+functions okay so we're using the load
+rooms but of course this doesn't do
+anything to actually it doesn't return
+anything but in order to get the number
+of rooms well we'll see that there is
+actually a function for that so so let's
+just uh grab this we don't really need
+to worry about the implementation well
+we'll see from the header file that
+that's what the function does and uh
+we'll just grab that from there we we
+can trust that this is
+a a well defined uh
+function okay so so we get the room
+count now so this part should be
+fine uh oh of course it's part of the
+file IO name
+space there okay now we run into
+something else aloc d aloc
+mismatch operator new brackets versus
+operator delete so so that implies that
+uh we are allocating like an array and
+then by the time we're deleting it uh we
+don't see it as an array anymore or I
+should say the program doesn't see it
+that
+way uh so we can see that we run into
+this error in the in the clear function
+well that makes sense like because it
+was about the point where we are trying
+to delete it that it it's not working
+as it should but that doesn't really
+help us find the issue like why why was
+it not correct there instead we should
+look here where it says where that
+memory was
+allocated uh
+room
+19
+uh okay so so it's saying that it's it's
+creating these these letters
+well okay so so then if we also check
+room uh 86 yeah yeah we see
+that this is about deleting those
+letters
+um now actually actually in this case in
+this case it was good to look at the
+delete because it actually was uh oh not
+that way this way the time this issue
+was actually here uh so okay uh but now
+that's
+sorted but of course it was good to look
+at the allocation as well so we have a
+full picture of what's going on um okay
+so what next so we still have an issue
+with
+the point when we're trying to delete
+keep buffer
+overflow
+uh so
+then
+that then there's something else that's
+that's going wrong here so so this is
+actually more more so the situation that
+that I explained earlier where uh it's
+like what it's trying to delete doesn't
+really match what it was what it was
+created and that's why that's why it's
+crashing here uh okay so now yeah I was
+a little ahead of myself so now let's
+look at the so so allocator
+59 kind of okay okay that's where we
+create these
+rooms
+um okay okay what else can
+we find
+here
+um okay okay in this
+case in in this case we can really
+directly from here it's it's it's not
+really showing
+us quite where where the problem
+is so we can see that that when we're
+trying to delete like like something's
+going wrong we're allocating the memory
+here and by the time we're deleting it
+something's going wrong so so somewhere
+in between things are going wrong that
+that's all the information we can truly
+get uh at this
+point so so then let's just see what
+happens here next so so this is where we
+are kind of actually putting the data uh
+in here
+and what we can notice is
+that we're actually incrementing I
+before we're even putting anything there
+so so then zero ends up being empty and
+then by the time we get to the end we're
+going to actually be out of bounds so uh
+see hold on let let's let's get that
+sorted out uh now let's see if that
+actually solved the
+issue
+or if there are more problems to deal
+with it seems like there's
+still more
+problems
+now we're kind of seeing that this is
+specifically about like
+uh the the
+letters something's wrong where with
+with the letters here
+uh okay let's
+uh let's see
+so here we're we're
+copying uh the shroom that we're getting
+from file
+IO uh so we can
+also look here and uh next
+room yeah yeah it's returning a copy of
+a
+room and putting it
+there so then let's see let see what the
+copying looks like
+here uh
+so
+then we can notice the letters is
+actually it's it's supposed to be uh
+like a pointer pointer to an array in
+the
+Heap so now we're just copying the the
+pointer
+here so we're copying the pointer
+to uh this like local copy that we're
+creating
+here which then gets uh
+destroyed at the end so so then we end
+up not having the the
+memory anymore so so that's a problem so
+so we don't actually we don't actually
+want to do that we we want to instead
+allocate some new memory and copy the
+actual data here
+um let's see we can we can kind
+of we kind of copy from here if we want
+to
+um max letter so so max letter should
+still
+be uh the the
+same
+um so let's make sure that the previous
+data is getting cleared first
+so
+uh yeah yeah when we're doing this that
+then we're
+calling uh clear first and then
+copying okay so so then uh then it
+should be fine and and the where we are
+copying
+to
+uh that that should anyway like be
+initialized as as empty so uh okay then
+let's just fill fill in the data
+here um
+letter
+count something like this right would
+that be good
+okay now we're actually getting forward
+the only problem we we have anymore some
+kind of memory
+leak and and when you're running into
+into memory leaks then uh of
+course first the first step is to look
+at the destructors that we
+have uh
+so let's see
+here Destructor
+Destructor uh I don't I don't see any
+Destructor
+here what about the room okay there
+there a Destructor for the
+room uh yeah yeah the destructor for
+this room here is it's calling clear but
+for
+allocator uh I don't I don't see any
+disruptor that would be a b big
+problem let's
+get let's get to work with with fixing
+that so let's first uh Define it in the
+in the header
+file then uh let's see there's the
+Constructor
+let's um
+let's put the
+uh Destructor next to
+it okay so what do we need to delete
+here well well we need to delete
+everything that we are allocating so so
+Alpha seems to be uh an
+array of of
+letters so let's delete it as an
+array and then rooms is an array of
+rooms so let's
+also delete
+that okay so it seems like everything
+that we're initializing now we should
+also be
+deleting let's see if that
+works yeah that actually fixed all all
+of it so we actually
+we didn't really have to worry too much
+about okay what what is this actually
+pointing to in this case we just uh
+needed
+to needed to look at the destructors and
+notice that there wasn't any and then uh
+get get that sorted out and uh okay if
+we
+now
+um all
+right we can
+we
+can forward this output
+to
+there compare the outputs and we'll see
+that it matches so so everything's
+fine uh okay in this case it should
+probably
+look uh Your solution should probably
+look like pretty much the
+same uh as what I did that there's like
+some things you could do a a little bit
+differently
+but
+um yeah that this should pretty much be
+the the the way you want to want to fix
+this

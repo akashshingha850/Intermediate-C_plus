@@ -1,0 +1,1643 @@
+e e
+sh e
+sh
+e e
+you have
+your you put your slides in the same
+direction so I can just show the yeah
+okay I think now maybe it's time to
+start uh so yeah today uh now now like
+uh lecture slides uh
+instead uh we kind of put together some
+sample exam
+questions uh so this is covering like
+basically all the topics that we've had
+during this
+course uh this doesn't necessarily mean
+that this is
+like uh covers like everything like
+obvious obviously there's going to be
+more questions in the exam than uh we
+have here but uh that should give you a
+pretty good idea of
+um what what kind of questions you might
+expect and what what kind of things you
+you should like know for the
+exam are you recording this yeah
+yes
+um okay so I'm I'm wondering I have like
+this m multiple choice questions here
+like the
+example I have I think with this amount
+of people
+maybe
+uh maybe maybe maybe you can just kind
+of
+um maybe we can kind of just talk about
+the uh options and I'm not going to set
+up like a voting thing for
+this yeah like like with all these
+topics please ask if you have like um
+any any
+questions uh okay let's let's look at
+the first
+one uh so Psy
+about uh kind of at this start of the
+course classes struct and
+Constructors uh as as a topic so uh we
+have this kind of
+um class with with this data member X
+and the question is how can
+you how can you initialize X and and
+here's uh three different options
+then you can also choose that that two
+of these are correct or all of these are
+correct so any anyone want to say uh
+what they think is the right
+answer that's the same Clear
+or yeah that's that's
+right uh yeah I'm not completely sure
+like like we haven't talked that much
+about like this option actually I I feel
+like we talked more
+about uh these but yes all of these
+are
+correct but it's in line 17 right yeah
+you can do that yeah they in functions
+like initi that like especially inherit
+right pure virtual
+function
+yeah but not
+it's any this a very very kind of basic
+question about Constructors so I think
+what's interesting about this setup is
+that
+the
+um the exam is going to be online so in
+the worst case you can always test it
+right like you have your laptop you can
+test it right but the question is how
+many of these you'll we actually have to
+implement the tesed because we will not
+provide you a
+copyable
+test yeah yeah a lot of the time it's
+going to be kind of like this where
+maybe it's like a like an image yes it
+be really hard to to test all of them in
+the given time so hopefully you have
+enough fluen
+to to know but still in in some extreme
+cases you can always test it yeah I
+think for some of these it's definitely
+like uh you'll you'll probably end up
+like
+testing and
+especially like maybe you've already
+answered once to every question and then
+you're thinking yeah I have some time
+I'll make sure that these are
+correct maybe something like that uh
+okay let's
+um move to the next one I can to zoom
+out so then this is about um like CPP
+and and uh header files and capsulation
+so there's some kind of problem with
+this class what line should you change
+to fix it and
+somebody spot where the problem
+is also online you can you can post in
+chat that's a very very uh kind of
+critical
+problem here but it might be a little
+bit difficult to
+spot well let's see so so line line 14
+is the Constructor so that that one's
+not doing anything but it doesn't have
+to because because is initialized here
+15 is a avoid display we we' defined
+that declared and Define some kind of
+display function it seems
+fine uh
+16 U we've declared this calculate
+function void calculate with an INT
+argument yeah that's correct
+declaration uh 18 yeah as we established
+we can um
+initialize
+uh data members this way it's
+fine but then the problem is uh on line
+21 so so what is the problem here
+yeah that's right so if you do something
+like this
+then yeah yeah then the compiler is
+going to be confused like what what is
+this thing without a type and like this
+calculate function doesn't actually have
+a
+definition
+uh it's it's going to be
+confused it's a it's a strange
+because it's so easy to it
+the
+yeah was trying to do yeah it's a
+difficult problem it's like a tricky a
+little bit of tricky question yeah think
+uh for for the
+sample questions it's like
+uh I I didn't really mind if they ended
+up being like a little bit of like trick
+question
+we like that's why we decided that El
+comes up with good questions is the good
+questions but then I'll be the we'll
+together decide what's fair and what's
+string maybe this would be a little too
+I'll make it a little I would give him H
+answers because it's so easy to fix with
+the compiler
+so well it's a good question but maybe
+in the way it is B it is a little too
+tricky but then there's a way to F it a
+little trick still test this yeah yeah
+the point today is to kind of uh just
+cover the topics and and uh point us to
+scare yeah maybe find some like gotas
+here and
+there okay uh let's let's look at make
+files a little bit so although once we
+give this problem now I made it Al to
+Fair because we covered it like look
+there there's going to be a test
+question question now actually now after
+El this problem maybe it's not so tricky
+because we warned you like okay just
+check the
+types especially those who are here and
+who listen to the question to the review
+session but but still still you know
+like I I see that some students will be
+may get really mad because it's not
+really testing it's testing attention
+rather than the knowledge right but but
+still well I mean I mean even then it's
+like you can kind of like eliminate
+these options like okay well there's no
+no problem with any of these see there's
+no problem yeah and there is no like
+none of the
+above okay let's go this is okay uh then
+about make files there's probably not
+going to be like many questions about
+make files but but they should like if
+you can answer this then then I I think
+you'll be fine
+uh so we have this kind of make
+file uh there's some kind of build
+command that's not specified but but we
+assume that it's
+fine uh and then we have three different
+statements Al so let's kind of uh go
+through this one by one
+so if the
+dependency Shaggy for does not exist in
+the directory executing make will
+fail is this
+true it's being used uh here and and
+there uh and
+there there I don't know if you guys
+remember make files but uh can you tell
+based on this uh what will happen if if
+if Shaggy for does not exist in the
+directory ex executive make means just
+running make without any
+[Music]
+arguments how can you repat that uh
+executing make
+what does it mean is just running make
+without any arguments like just make
+uh what what is going to basically Randy
+make
+all
+okay what what will happen after Ty
+right in a
+terminal question
+okay so has probably been a while since
+you actually used okay it should not
+fail uh oh okay yeah yeah that's that's
+right uh yeah that that in itself is not
+a problem so so if you if you've kind of
+forgotten how
+um make fils
+work
+uh
+basically basically this is something on
+the left side side is like what what's
+being uh built and then uh on the right
+side is is what's being required and and
+makefile will will first check if it's
+already in the directory and if it's not
+then it's going to uh build it based on
+the uh
+requirements uh okay well if the
+dependency carting does not exist in the
+directory executing May quot Fail what
+about this is this
+[Music]
+okay maybe actually if
+ISS
+[Music]
+because I I think a
+fails yeah yeah yeah that's correct so
+and the reason it fails is that there's
+no rule to build Cara in here so if it
+doesn't exist in the directory then
+there's nothing it can do
+uh but in the case of Shaggy fur it can
+see like okay well as long as we have
+keratin we can we can make
+it but in the case of Kera that's not
+the
+case yeah will also fail uh well well in
+the case that keratin doesn't exist then
+then in the end a will fail but by in
+itself
+uh this is not a problem if shager
+doesn't exist the problem is if the
+Keratin doesn't
+exist uh no problem is the Llama right
+the
+Llama so all depends on angulate
+assembly it depends on
+angulate angul angul is mountain goat
+Lama so Lama depends on Shag
+okay yeah well like with these questions
+you can kind of assume that everything
+else like exists and and is okay uh but
+then the question is if if something is
+missing then then what
+happens but in any case the the
+important thing is to understand the
+like basics of of how make files work so
+okay so we phras it like this if all of
+the dependencies except sh
+exist yeah yeah sure all
+needed right so that would clarify would
+that clarify all the questions they say
+if all
+dependencies except
+sh would make some then it would clarify
+and then the second one if
+all if all
+dependencies except character exist then
+still you can do because character
+needs there
+is would that
+clarify it would not change the question
+but maybe
+clarify yeah yeah maybe maybe just
+uh
+um write more more about like like what
+you can
+assume but anyway that's enough
+of so essentially just understand that
+you need
+toet okay let's have a question about
+pointers so we have code like
+this uh so so what is the result of this
+and and now we we can with this kind of
+questions you you can always assume that
+it's not going to be about like oh
+there's a library missing so I was not
+going to try now now was like unless
+it's like a question about libraries and
+it like writes all the libraries uh in
+the
+example if it doesn't do that then you
+can just assume that all of that is like
+fine and that's not the problem with the
+code um
+okay
+so what's going to
+happen what is it going to send or or is
+it going to have some kind of an error
+I think I have code for this so I
+can and show it in action or actually I
+can just copy
+this what from here
+[Music]
+if anyone wants to say what the what
+they think the answer is let
+me B please say
+uh so you're saying that b will be
+pointing to
+a value of a value pointing to value of
+a
+or get it will get the value of a uh
+yeah
+okay okay but B is a pointer so so how
+is the pointer going to get the value
+well here
+so so we did reference a and we try to
+put it in this in
+pointer
+yeah very it's not a if you put
+a uh I'm just from
+the code in any case well we only need
+like two of these
+lines
+um invalid conversion uh says the
+compiler okay so compiler eror it
+is um
+yeah generally if there's like some kind
+of in incompatible types then it's a
+compiler
+error and that's also in the case of
+pointers yeah there should be like
+uh this kind of question should be
+really clear like like okay this is
+definitely not something you can
+do uh and and then if you're maybe
+unsure if it's compiler or front time
+error then
+you could quickly write this code and
+try it
+out uh okay more
+pointers uh so which of the following
+should replace line one here so that the
+code compiles and TRS with no warnings
+and with five sent to standard
+out the five is here in the in the X but
+then for for for C out we're we're we're
+putting
+this uh double asterisk y
+here so what do we need to do to make
+that work we need to define y in some
+way WR this code at the same
+[Music]
+time yeah let let me let me know
+what we must do as I write this
+code so we should definitely give y
+something okay well what should we give
+why we we have this option
+maybe
+D uh
+D
+yes yeah that that looks correct so we
+give the address of p and p is another
+pointer so then it's going to be a
+pointer to a pointer which is basically
+what what Y is so let's
+um oh
+my fingers are off by
+one so like
+that there we have
+it so this isn't maybe like the kind of
+code you would expect to see
+somewhere but uh this will kind of test
+your understanding of um pointers and uh
+getting the address of something and and
+the
+referencing um okay um well we had this
+category but it's kind of the
+same yeah see
+sty um yeah well well there is actually
+yeah there there is this question
+about
+uh arrays I think I'll put maybe one to
+salary question and May two
+STL question yeah I I have four
+different STL questions at the
+end yeah I mean it's kind of like like
+we were talking with pointers with v
+like you probably need to like know them
+to like survive in the
+wild but we don't want to like
+concentrate just on that we need
+to but still it's it's important
+because of the Legacy
+code um okay this also maybe maybe I was
+having a little trouble like phrasing
+these options in a in a clear way but
+but let's let's talk about in either way
+so so we declare some kind of C style
+array uh like this uh but then later we
+want a bigger array so so what is
+something that
+that we can do to achieve that uh okay
+so so is is something like this possible
+is there some going to resize function
+that we can use no uh okay can we just
+like kind of append another array like
+this
+no uh okay can
+we if if we replace is this um static
+array with this Dynamic array can we
+just freely resize
+it no no we can't do that either
+uh yeah yeah we're kind of end up here
+so the data needs to be copy to a new
+array in in either case that this
+doesn't maybe like specify like
+U much much details here but in any case
+if you if you have a fixed
+size array or or even even if you have a
+dynamic array in either case if you then
+want it to be bigger then you need to
+copy it even with the case of
+um like STD Vector it does that
+internally but then uh kind
+of yeah you can just keep adding things
+to it and it's
+fine yes
+because of that they have like really
+good performance growing up nicely but
+then at some point when it needs to
+double it'll be drop in performance
+because it does affect that so so if
+there was a question about Dynamic D
+style then instead of just copying you
+would have to first free the memory for
+the original one and then copy yeah it
+was a really cool
+question
+conceptually yeah
+uh okay and one question about Asam
+slash
+backround uh so if we have a program
+like this where where we have this kind
+of obvious problem we we delete X and
+then we try to dreference it and print
+it uh what is something that ASA
+and SLB grind can tell us about this
+kind of
+program uh so there's three different
+statements and then you can say that
+either two or all of them are
+correct
+um so there's a use after free type
+error well well this is kind of clear
+like like yeah yeah it's going to say
+something like that but you're trying to
+access something that that's already
+been
+freed uh then what about B is is it able
+to tell which line caused the error do
+know
+yes uh okay is it able to tell where the
+memory was allocated and where it was
+freed yes that's also yes so all of the
+above statements are
+correct so I think this is like as long
+as you like use D or or Val then I think
+this should be clear that this is the
+case also for a short test like this you
+could
+easily just write it yourself and test
+it uh I guess
+um maybe it would
+be good just to kind of show exactly
+what the output is
+for case like
+this um
+okay so let's do I um do I have
+the there we have
+it okay we got a lot of information
+uh here so so then we can see read of
+size four so we tried to read four
+bytes uh and we ran into a problem and
+then it tells us okay it was
+freed uh over
+here you can see the the code line here
+and then you can also see where it was
+previously
+allocated right there
+uh this is something that we haven't
+really like talked about that much these
+shadow B and buggy address these are the
+most kind of important things for your
+debugging purposes I
+think
+um and then
+uh I'll I'll
+also show the
+valr version of this so valr gives a
+little bit less information but it still
+says invalid read of size four says uh
+yeah it was freed somewhere over there
+uh and since we included the debug
+symbols wouldn't be
+uh Das G then it can tell us the exact
+line numbers as well
+okay okay now now this is maybe maybe a
+little
+bit a little bit tricky I I I think the
+the const keyword is like something
+that's uh maybe difficult to understand
+completely
+and con can be used in multiple
+different ways so so then we have this
+example uh where we have
+const at the end of this function
+declaration so so what does the const
+keyword do
+here yeah that's correct data members of
+the class can't be
+modified uh
+so then if if this function is called
+then then this function can't change the
+values of X and Y for
+example um the the
+other yeah these are also like like you
+can make the return type uh const
+although that's not nearly as common as
+the other options you can especially for
+like passing by preference then you can
+you can make it so that they can't be
+modified yeah we'll test this because
+it's
+Constructor so con used quite bit an
+operator okay
+um well looks like you you knew the
+answer to that one easly uh okay
+then what is the result of executing
+this program so so we're kind of uh
+passing by by value by pointer and by
+reference uh here we're doing all of
+these
+things we start with this x equals z and
+then we're going to do a bunch of
+processing for it so so what is the
+final outcome of this what is it going
+to print
+here or is there some kind of problem
+maybe it doesn't TR
+anyone got the
+answer
+maybe what do you say maybe is there
+something uncertain
+maybe
+D uh okay so let's see so first is is
+the fun one so this is passing by by
+value so it's kind of making this uh
+copy of X here and then the function is
+changing the value of this copy and it's
+not returning anything so so X that
+doesn't change
+uh okay then with fun two it's going
+to uh pass the address of of X
+here uh and and that's correct is is is
+taking the address and then this is a
+pointer type and then here is D
+referencing X and and adding to to its
+value so okay at this point it's
+two then F four so so this means passing
+by
+reference and when it's uh declared this
+way you can you can simply pass the
+argument as it is and it's it's going to
+um it's going to get passed by by
+reference and and then then you can just
+change it change the value like that so
+yeah the the answer is
+six if you put const in that F four then
+compile
+it yeah yeah if if
+you define the argument as as
+const that's
+right
+okay um okay which of the following is a
+correct function signature for the
+overloaded addition operator for the
+sphere class if we want the operator to
+return the sphere whose radius is the
+sum of the uh radi of the object and
+this
+parameter uh so so basically we're
+talking about
+like we
+have sphere a
+sphere
+um B and then sphere C could be I a plus
+b for
+example so so what are the
+options
+three different options so so either we
+take one argument no arguments or two
+different
+arguments which of these
+seems like the correct way
+a
+a yeah yeah that's a uh so of course um
+we're only going to need one argument
+for this because then the other other
+one is like the the
+sphere uh
+which of which the like
+member function is like operator
+overloads are basically just member
+functions that are called in like a
+certain
+way with one of the operators so then
+that's one of the Spears and then the
+other is the
+um the other one and and this case also
+is going to return a new
+sphere which then we can we can put here
+like
+this I think this this is Maybe
+maybe maybe the opposite of tricky this
+is kind of like okay what these are kind
+of like clearly well this is maybe like
+maybe you could see how how
+this could be uh correct but this one is
+like okay how would that even
+work so I have a question actually when
+I was thinking about these questions I
+was thinking of going through the lab
+and see if this FAL signature for plus
+is ever used it or through all of our
+labs and if they are are they the same
+because you know if you remove const in
+the end it still will work it just does
+something weird which we show really
+fast but um do you guys remember there
+was a plus operator overloaded in the
+last and if it work and what because I
+will go before the exam and I will look
+and then maybe ask a question about that
+as well like what's the difference
+between different ones because if you
+remove move that
+constant then you can do weird things
+that are not necessarily bad but you can
+assign a plus b equals to C right you
+can do something with this
+train but just a warning that you know I
+might I of do that and if there was a
+lab somewhere with overloaded assignment
+I will then ask for for that why
+different
+the same for operator equal very
+different function signatures in the lab
+versus
+lecture yeah and operator overloads are
+are pretty important thing to understand
+so uh it's definitely good to kind of
+look into this a little bit deeper like
+like
+maybe maybe just to try it out like try
+your own operator overload for some
+something
+or or maybe like look at the look at the
+ones that exist in the in the
+assignments it's a an important
+topic uh we do have another questions
+related to this so so we have some kind
+of PNG class it's not necessarily
+exactly the one that we
+used uh in the in the assignments and
+then we do something like this where
+where pnga we can assume that it's
+getting a constructed is going to have
+some kind of data that it treats from a
+file and then pngb we we try to just uh
+make it equal to
+a uh so then then what's going to happen
+in this case so uh if no copy
+Constructor is
+written uh is the program going to work
+or or or is there going to be some kind
+of error here
+yes that that's right so so there is uh
+a default copy
+Constructor uh okay well then the next
+question is uh what what is that default
+copy const Constructor going to do is it
+going to copy data members by value or
+or by reference so what is it going to
+do yeah that's right
+[Music]
+um so so
+then if if you have if you have for
+example pointers that then it's going to
+copy the value of the pointer not not
+the not the like the reference value but
+but the pointer itself
+uh so then it's not going to
+actually
+um kind of make a deep copy uh so to say
+U and if you if you write your own copy
+Constructor that then you can do
+anything but of course
+uh it's not any kind of like requirement
+that that then it must copy all the data
+technically you could try that copy
+Constructor that doesn't copy anything
+at all and it's just like falling
+around uh you can you can do
+that but yeah if you want to do
+something other than copy just by value
+then then you should write your own copy
+Constructor
+okay uh let's talk about inheritance and
+related things there actually three
+questions about this because it's pretty
+big
+topic with many things related to
+it okay that this this is a pretty big
+question uh
+or yeah yeah must keep it at this size
+but don't be actually I will put
+question this where there's a lot of
+code and you need to read
+it yeah that's totally okay
+like I so there there's a few options
+here either there's no bug at all
+there's some kind of type
+mismatch uh maybe we're trying to
+declare an abstract type or maybe the
+there's a memory leak or or there's
+actually two
+bugs uh two of these
+bugs in the code so what is the what is
+the answer
+yeah well well let's see is there some
+kind of type mismatch here so so I guess
+for this we would look at the main
+functions right
+so uh okay we just have some image I
+draw b d yeah that's fine
+uh in in this regard then we have point
+or two image where we create a new image
+in the he spine drawable he has same
+thing uh then we have this drawable
+pointer that's pointing to this
+image in the in the Heap so is this okay
+uh no it's it's it's not going
+to like slice anything in in in this
+situation
+yeah so there's like two two rules right
+Constructor should not be virtual but
+the structors should and must can and
+must
+yeah
+other so the whole point of inheritance
+is to be able to do that typ Mis match
+kind of thing because we want to have
+pointers to
+base
+differ what they actually are
+Dy yeah
+no but
+delion has to be
+good question okay so let me just before
+I forget because I forget I think St of
+like I think this is a good level of
+difficulty of questions because there a
+basic question just accept many of them
+because we want to just make sure that
+you like you really prepared and those
+students who didn't spend as much time
+it will be harder for them because
+they're not GL but the there will be no
+harder questions than this like the
+level that our aim I like this
+questions my goal will be just to make
+sure that there's no like oh I didn't
+understand that it will be Crystal Clear
+that's hard but we'll you know if and
+usually what happens if I still don't
+formulate the question well then we'll
+just remove that question from your
+tempor about so complain if you don't
+like formulation it's not clear what is
+asked but these questions are pretty
+clear so I think M file maybe was not
+really clear but that's an example of
+what
+um that's why I have some we have two
+weeks to to
+the there no question but the difficulty
+is really good I think that's the level
+of
+difficulty okay so the the
+answer uh yeah answer is D the problem
+is uh basically in
+the in the Declaration of the destructor
+of the drawable which should be virtual
+so that
+way that way it would
+correctly use the destructor for the
+image over
+here question forew IET forgot to ask
+why isn't it that if you make
+inheritance why don't you just make C++
+by default create those structure as
+virtual why it's such an obvious
+andap Happ why not just assume that
+virtual if there's any kind
+of but I forgot to ask we'll ask him
+okay we should ask him on on this well
+maybe it's just gonna talk about how the
+structors are obsolet by like smart
+pointers
+that's iess doesn't matter
+anyway uh okay another inheritance
+question so
+so we have these kind of classes we we
+have holiday class and then then we have
+wapu class that that
+inherits uh
+holiday uh
+and we we would like to do this
+assignment where where we add this
+change in into fullness
+Factor
+um so so where would
+be where would we be able to do that B
+so can we do it in in the eat function
+can we do it in the uh drink
+function really nice I should
+this I mean
+nice
+inheritance uh
+so it can make the
+assignment
+uh
+okay how how did you how did you end up
+with
+this
+right uh okay but I think there's a
+problem with this as
+well yeah
+the the problem then is that the
+fullness factor is is only in the in the
+wapu class so if we if we just have the
+it
+function uh so this is not going to be
+aware of this right oh so the answer
+cannot be determined
+in the in the in the Base Class you you
+can't make it referred to some kind of
+variable that would be part of derived
+class
+Implement and it's not implemented so
+what's going to happen because it's not
+implemented shouldn't it be implemented
+but it's there's no function yeah yeah I
+guess maybe
+but if it's not
+like
+abct
+then in this case the the function
+declarations are here and these are
+complete Declarations of these so then
+you can tell that
+the uh
+yeah yeah if if W actually uh defined e
+function it also have to be declared
+here
+yeah so so then we know that there can't
+be some kind of like hidden it
+function yeah in this case uh neither of
+these can actually do it
+so e is not correct either
+right no because yeah we we can actually
+tell from this that it's it's not
+possible they can't yeah they can't tell
+that it's
+not would it even
+compile
+um well well I mean it would require the
+function definitions to be able to
+compile so if you just copied this it
+wouldn't compile
+but uh but but if we had like any kind
+of definitions for for these functions
+then it would be
+fine okay
+uh well in this case I
+um it's kind of understanding the class
+structure and also noticing the B const
+here uh kind kind of
+tricky okay one more question about
+inheritance so we have a class called
+disaster which has
+one uh function which is like
+this and
+then we have a tornado which is a public
+disaster it inherits
+disaster
+publicly uh and it implements
+destruction so which of the following
+statements will certainly result in a
+compiler
+error so then can
+we uh make this pointer to a
+tornado or this tornado pointer uh point
+to a new
+disaster
+one yeah yeah we we can do this this
+going like the the the wrong way you you
+you can't make it arrive class point to
+uh
+base
+class at least at least not this
+way um okay the tornado points to a
+tornado and uh yeah tornado implements
+the the the function so it's
+fine uh okay then disaster is is a
+disaster uh can we do
+this oh it's it can it's p
+yeah we can we can't do this
+because it's not actually defined here
+so it's as an abstract
+class
+uh yeah yeah that one is also you can
+do so that that's kind of the the point
+of inheritance almost to do this so it's
+fine
+um
+okay
+yeah okay then a little question about
+GDB so we had a program crash and now
+we're using GDB to figure it out so Al
+so we R the program with GDB it got to
+the point where it um
+crashed was a segment a fault so which
+function called the function where the
+segmentation fault
+occurred and and you can see this back
+Trace command here so we have main
+function we have stuff one stuff two
+stuff three Stu four so which function
+called the function where the
+segmentation fold occurred
+yeah that's
+right yeah so so with the back Trace you
+can basically see uh
+zero is the function where we're
+currently in and you can also see that
+stuff three and you can see that okay
+stuff three is where the segmentation
+fault happened and then you can see that
+before stuff three was stuff
+four so then it must have been the stuff
+four
+called Stuff
+three so it goes in order from like
+bottom to top we start from Main then we
+went to one two four and then
+three oh another really good so I want
+to just before I forget so uh El he is
+going by topics so you can see on the
+left side if you go to the document
+there's all the topics and we were
+thinking that there is like 14 topics
+L let turn
+not we will not do like lot we will not
+test you on data structure so just like
+the language
+itself um the in so all those 14 topics
+we'll try to do two to three to four
+exercises depending on like how
+important it is so expect like
+around a lot of work for for us to
+create but but
+that's two hours so just prepare so that
+you really you'll be really sharp at
+this I think I think it's good that's
+the whole
+point the whole point of M language is
+to be as sharp as the wake up in the
+middle of the night and nowh
+con and why okay and what is it du to
+the
+register let's look at look at
+templates um so we have some kind
+of uh
+template
+function uh where there's
+two different
+types that it can take
+uh and then it's going to add them
+together and
+return uh the the
+result so then uh we have some options
+that that we're doing so so let's see if
+uh if these options are are okay it's
+casting power right what can cast into
+water yeah I guess in the end it's it's
+kind of like that
+so okay we we try to call this function
+with in and
+string is this
+okay no think by default you can cast a
+Str yeah I mean I guess you
+could Define some kind of conversions
+for for that you would have to
+custom
+um okay what what int and in um
+sure in and double can we do this yeah
+we we can do that too uh so so it's
+really just uh yeah you can do that um
+maybe this doesn't really test your
+knowledge about templates that
+much but it's a return it's return oh
+okay
+cast return into F from
+e but I think these should be two of
+these not
+be
+okay result comp warning
+well well let's
+see is it by
+default I guess
+then oh so then just wait what's what
+really happen because you have like
+integer and and they are like all
+e like arguments arguments
+arep e so they don't have
+to1 but I think at least
+give
+[Music]
+yeah does it just pick the
+first type given as argument
+as how how it selects which one of the
+types is the e
+oh it just what so how the compiler will
+say the compiler will say e is integer
+so the the comp function is integer a
+integer B but you send four and 4.1 to
+it but
+but this Square uh brackets in double
+will just Define that e is integer and F
+is
+double that's the comp
+function so what if we do it the other
+way yeah which one yeah which one is
+which
+yeah so no warnings
+forting no that's
+fine so then there's no correct answer
+though right from the options
+because two of these will be
+okay they will not
+result uh no just one of these uh as as
+an error which is this so that's the
+correct
+answer an
+arrow okay
+yeah well we'll probably have to think
+about like different kinds of questions
+about yeah yeah temp all of them are
+essenti I mean templates are easy
+because the compiler will just one by
+one
+subtitute um okay very straightforward
+do I have this question is it's not
+really
+like really about
+list but but I don't know if this is
+like well we can I said I will not be
+asking those questions but you're not
+asking any kind of questions you're
+asking more like how to define thing a
+template yeah actually maybe maybe this
+is more about it's more
+template well well in any case let's
+let's see what this looks like
+um so which of the following should
+replace um
+line one for the code to compile and
+front with data where with
+[Music]
+um data 225 standard
+out so we have some kind of a
+new
+node uh new node node in in no in
+25 uh okay so so
+what's what's going on here T is
+not I would move this question to
+oh there's two it's like recursion entr
+it's
+broke make it work if I Cy
+this may
+[Music]
+d uh D so so so
+n points
+to data or like d reference the data
+from the n and then get the data of the
+data
+okay uh let's let's try it
+out so and yeah and is defin def itely
+pointing to something so so that that's
+clear and and then it's pointing to this
+node which which has
+data this is really cool because how
+would the compiler write it out because
+there's two t would be defined twice
+right no like where with the templates
+uh you you can you can give it any kind
+of
+like even if it's some like kind of BU
+built from a
+template because it's a
+nest it's t t is not integer
+type T is
+not but the node integer has to be is
+also templated
+uh no like the outer node is
+OU node of no integer
+type because it's it's nested there are
+nested brackets angular
+brackets uh there are two node types
+here node integer type and node of node
+integer type like
+you could you could not
+to you should not see it as nested it's
+like two node types one is a node of
+integer types one is another note Tye
+which can
+take another note so that's
+the uh one is a recursive type like you
+said one is a simple node of integer
+types so if we could write it three
+times three missed so the compiler would
+it actually have three classes of
+different or would
+it that's that's an interesting question
+I have to think of okay this is a this
+is a b question to think about
+it yeah I guess for this question you
+don't really need to you need don't need
+to understand it because yeah like first
+it's clear that you you did reference in
+and and then it's clear that there's
+like another layer and it's just the
+question of like is it is it going to be
+another D reference or not but then here
+we can see that as
+like this is not a pointer type yeah the
+question is much simpler than the
+structure of the code
+itself
+cool
+okay then let's talk about the standard
+Library um
+okay we have
+a little code like this we have this
+kind of vector one two 3 four in it then
+we'll get the address of of the uh
+element at index three and then we
+insert to the beginning of the
+vector then we print uh we D reference
+that number that we store from later uh
+from earlier and then we
+also uh print
+the index B from this Vector so so what
+is the output
+how is
+that question yeah maybe
+eight um okay let's look at this so um
+see yeah to be clear this is standard
+Library
+Vector
+um uh
+yeah so so like if if you run into this
+and you're like okay I don't know how
+Vector works then you you could start
+looking at the like documentation for it
+let's look at how
+this um goes so so we have 1 two 3 four
+then uh so index three is the last
+element so it's four so this is pointing
+at
+four uh then we insert at the um
+beginning and in the case of vector what
+that means is that it's going to have to
+like move all the
+elements because with Vector you you
+can't just like just put it in in the
+beginning it has to move
+everything so then that means that this
+uh address that we picked up is is not
+actually valid anymore
+so then in the end the answer is
+undefined so so we're probably going to
+get some kind of garbage here and then
+we're going to
+get uh
+three because then it's going to be 0 1
+2 3 4 and index three is going
+to uh be number three but then this
+favorite number is just going to point
+at some garbage because the whole thing
+is moved
+well it might still print it might it
+might print four but but it's it's
+undefined so can you run it I'm curious
+what it will
+do yeah I think with this question since
+I don't think we covered in our lectures
+how the vectors are Implement so we
+would have to be fair about what you
+know this is a whole question if you
+slightly modified to be a little
+yeah I mean maybe maybe we can give some
+like background yeah
+back
+because haven't played that much with
+the
+[Music]
+structure and you need to know how
+it
+yeah but I'm really curious to see
+actually because I would think that the
+way it's
+implemented certain front yeah you
+completely get rid of the old structure
+and get a new but it's essentially
+Vector is mostly like a dynamic
+ARR so the dynamic array would get rid
+of all of
+this
+and
+CH FR it's a very
+operation then that's why you get
+garbage
+it would be completely fair question if
+we instead of
+actually
+but questions about they're so bad and
+more but if we just say okay it is a d
+right underneath it all so what Happ
+well I
+mean I think I covered these topics in
+my lecture pretty well I I do need to
+upload
+the okay
+if you covered that it's just like
+array video yeah yeah actually it seem
+that I forgot to upload it uh earlier so
+slides okay so it is a fair question
+because you covered it because you said
+it
+then yeah yeah yeah I talked a lot about
+like vectors and and different types and
+and also like how how DQ is like uh a
+container where you can insert at the at
+the start then it's
+fair this is a good question because
+you're supposed to know that that's what
+happens but don't insert if you think
+youer in front and it's an efficient
+operation just
+don't yeah yeah it's like kind of for a
+reason that the vector has the push back
+function like it does have the insert
+function where you can put it anywhere
+but then it has to do all this copying
+so so then the push back is the one you
+want to use whenever
+it's
+okay so with this questions about
+lectures I consult you what's there and
+what's not because I also must get
+lecture yeah just to make sure
+that that's something it is a reasonable
+thing to
+know okay this a little bit about
+iterators
+[Music]
+um
+so what should we replace this print
+two uh
+with for this to Output two so the list
+is one two three four so we want to uh
+so we're using this iterator for this
+and we want to print number
+two and we have these kinds of
+options number
+D yeah that's
+correct uh so what happens here is that
+uh with iterators you can increment this
+and this is uh this the
+uh
+pre pre-increment so we increment it and
+then then return the incremented iter
+iterator and then the reference that so
+we start at the the beginning so then
+this is going to give us
+the the second element
+the it's cool that we had to implement
+like that you get to implement about
+that one should you
+implement
+the the list and iterator to be
+decrement
+yeah because
+I'm start it was a bit pain
+in was it was it a double link list in
+that
+ass yeah yeah if it is double link then
+then it would be expected that that it
+can be
+decremented uh
+I don't remember right now if it was
+like it's undef undefined behavior when
+it'ser but still can
+be is is NP list
+yes it doesn't mention that at all but
+when I was
+the glass
+I best
+for
+yeah yeah I
+don't but it's not in it's in list
+itself like
+[Music]
+okay yeah it should
+be I'm looking at my
+solution so the the interesting thing
+about it that I don't
+understand
+[Music]
+not well what vill didn't TR say
+deprecated it's just that uh ranges are
+going to like mostly replace
+them starting with what
+2024 well it's in
+C++ 20
+already but but C++ 20 isn't like
+implemented everywhere very I always
+give conf like it's already released but
+it's not
+like yeah I think uh not Implement
+everywhere which I don't understand what
+does it mean but
+eventually are going to be gone I think
+this is what is about C++ 20
+Tres so yeah we have the same kind of
+things uh that with iterators like begin
+and uh but anyway this is not really for
+this course
+now so at some point we shouldn't be
+teaching anymore because be well I think
+we'll still need to
+like yeah any Let's uh let's get through
+the rest of the
+questions um okay so so we have an
+unordered
+map this is actually actually an example
+from the lecture kind of directly uh so
+we have unordered map uh
+we put some kind of value with this
+key uh but then we try to like access
+some
+other
+um value with with another key so what's
+the output of this
+[Music]
+yeah that's right
+uh so so what happens here is um I I can
+actually so so if I I now go
+here uh unordered map or or regular map
+it's all the all the same in this sense
+so we're using this operator right and
+then here we can kind of see like like
+okay what what it does it
+uh insert if such key does not already
+exist so so that doesn't mean that you
+need to like assign some value for it to
+insert it's going to uh insert
+regardless and and then it also says
+that it gets value
+initialized and in the case of in that
+that means it's going to be zero
+initialized uh yeah that's an example
+directly from my lecture yeah so it
+would be fair question if it was not
+integer but something else what would be
+kind of testing what is that zero
+initial that value
+initialization
+dou because it just do that yeah
+but this this kind of tricky because
+like if You' used other languages and
+like dictionaries in other languages
+then you might expect this to be like
+some kind of exception or or maybe if
+you're thinking like okay what with C++
+if we try to access something that we
+shouldn't then it's like random garbage
+well data search point of view if
+there's a search on some ke it actually
+does insert a default value also from
+data structure that's how yeah yeah I
+guess sense it makes sense it
+sense
+okay and this would be the last question
+now so which of the following statements
+regarding standard Library data
+containers is
+false we have four statements or or none
+of the above are false so it's most
+efficient to insert elements to the end
+of a vector well we kind of talked about
+that so yeah that the specific that push
+back uh so then they can just keep
+adding things so that's
+fine uh inserting to and removing from a
+list is constant time complexity is this
+true
+yes yes yes this is also
+SD list is a container that supports
+constant time insertion and removal of
+elements from anywhere in the
+container yeah that's kind of uh B we
+talk talked about in my lecture as
+well uh yeah so Al also not is that this
+constant time doesn't necessarily mean
+that's super fast because like espe in
+case double link it's going to have to
+like attach it in in in both ways so it
+has to do some amount of
+operations uh so it's much faster to for
+example insert at the end of the
+vector
+okay uh conu of data is one advantage of
+vectors is this
+true this this a maybe maybe a term
+that's not familiar to you if you if you
+don't remember it from the
+lecture so so what that
+means is that the data in the container
+is like together in in
+memory the addresses you can add them by
+one the are
+allocated
+yeah yeah it's essentially
+yeah so so then is this true for vectors
+yes
+yes you can iterate through a map a
+standard Library map can you do
+that
+yes that's correct so actually
+um oh yeah actually I I kind of phrased
+this question wrong because now there's
+no correct answer no no wait no no this
+is false oh yeah yeah yeah no it is yeah
+yeah e is correct yeah yes okay for a
+moment I saw I like messed this up but
+no that's
+correct um
+okay but yeah yeah you should
+um but this kind of question that there
+like
+can you go to the plus
+operator
+is
+asking
+no like that we will not do that it was
+like the only way I could PR this
+question in a way where only one option
+is correct uh because like that's how
+it's going to be on love where where
+it's like it's always one
+option can you go to the plus operator
+uh question oh
+okay I that
+[Music]
+so what about this so here A and C both
+correct
+right no I don't I don't think so so so
+I was talking uh before how was like the
+um operator
+overloads uh you
+already have access to like the the left
+sphere by itself because that's like the
+objects
+that's calling the the
+function so then as argument only only
+one
+is pass and and that's like the two
+spheres that are being added and then
+return is
+the so like I I I think if you use two
+spares to with class operator uh but if
+you define the C1 outside the class like
+I think there's one mistake
+maybe it it's uh the C1 can be written
+as Spar without class uh name space as a
+plus
+operator So like um like if if you
+define the plus oper outside of the
+class it can still work oh right but it
+doesn't have this operat because it's
+not part of the sphere like you cannot
+have the name
+space yeah then then it would be uh then
+it would be just a separate function
+that adds two spheres together that then
+you would pass two different spheres as
+argument but if you do it by operator
+overload then there's only one argument
+like
+this uh
+it's a binary operator plus it's a
+binary with two
+arum not one because it's like a plus
+operat so you're acting on a a is what
+you want
+to you're on
+a A plus b is synta equivalent to a
+doer all right yeah I
+guess I I didn't think that like if
+there is a way to define the plus
+operator outside of the class but but in
+this case it is in the class so then
+then this doesn't make sense if there is
+a way to like Define out of the class
+then something like this could make
+sense a is the same as a
+operator but but I'm not sure if it is
+considered as overload because when
+overloading is I agree this operator is
+available because
+to so this is equal to this
+I I guess I guess you can but should
+you can you do it like put a and b
+inside of the
+arguments I don't don't I I send the
+code in the chat so it works but uh I'm
+not sure if it can be considered as
+overloading the plus operat so yeah it
+plus
+is and it is is it anymore like
+finding operator plus right I think it's
+not anym like
+operator yeah yeah yeah yeah yeah this
+is not operator plus overload it's
+something else it's not an overload it's
+something else like C is not an operator
+plus overload because operator plus
+overload takes one
+argument and add we I talking the
+different different you are oh
+yeah yeah did you look at
+this oh yeah what's that oh yeah
+apparently this does work which I find a
+little bit
+confusing it
+works so so I I get I I think the when
+you when the compiler sees a plus
+operator it looks okay is there a way to
+make make them plus operate is there
+Define plus operator for these classes
+so it can find that operator if you
+define it outside but it's not I'm not
+sure whether we can put it over or
+not does it use that operator yes yes it
+it's yes it's because we had defined a
+plus operator for these two expression
+like S1 plus S2 we it's
+defined but it's not overloading the
+classes on as
+operator it's something else oh oh right
+okay I think I see you see in the C you
+have name space like spare colon col but
+you cannot add it here because it's not
+inside the class it's doesn't belong to
+a class yeah it doesn't belong to that
+makes sense yeah it's not an operate
+it's not an operator
+overload it's it's a different
+yeah yeah okay so so then then in the in
+the end this is still the the
+like because this is written as being
+like in the sphere class so so then then
+it doesn't work like
+this but here so you you didn't have
+that
+allow also it would allow this modifying
+of
+the yeah which would modify this like a
+un which is just not the syntax that
+is maybe it does something but it just
+so know and
+that it's just from the style of math
+like you want to keep math consistent
+with what people
+so if you would if you would like have
+some access for method and you would
+return
+uh you you won return
+like it just don't want to modify the
+underline class on which is
+modify a after this after you add a you
+don't want I about
+different all I have this example here
+where it's like adding this one
+two so but anyway I think this is great

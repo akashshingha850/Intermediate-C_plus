@@ -1,0 +1,1332 @@
+by the way we decided that we will hold
+live lectures even if we have very few
+of you because those who come they you
+guys really want to be here so we will
+do
+that to keep the live education
+in person in person
+education is this my
+slide okay so let's
+start let's start that to respond today
+so
+I I was very distracted over the
+weekend and
+therefore please keep an eye on
+everything that I do here so because we
+are doing some complex things and um I
+mean they're simple but uh there's some
+syntax things so just just keep an eye
+on what I'm
+doing um it's a good exercise for you
+but let's start with the announcements
+sea style array so last lecture we spent
+about half an hour talking about the
+Syntax for sea style arrays where we had
+this par um asteris right and then
+square brackets and
+um we I have to make an announcement
+that although we did spend half an hour
+it seems like it's not too much of a
+waste although they are largely
+abandoned by industry at this point so
+it's not a good practice to use them
+nevertheless um it seems like our at
+least industry collaborators say that
+it's not too bad to spend some time
+maybe not half an hour if you want to
+really upgrade our course to the latest
+kind of C++ standards but still some
+time spending explaining that they exist
+because you can write them it's not like
+C++ prohibited them right they're still
+allowed you still can write that code
+you just uh but considered bad style and
+why is it because it is pretty ugly
+unreadable syntax it creates those
+remember like you have to put
+parentheses if you want to pick first
+the rows or columns or whatever so the
+the syntax was not really friendly and
+that's why for static arrays and STD
+arrays are usually used now um and
+welcome to use this for static arrays
+and STD vectors for dynamic arrays so in
+the future iterations of the course we
+will we would spend less time showing
+the
+syntax but also all of our code has
+those arrays if you noticed so we would
+have to uh you know roll up our sleeves
+and actually go through all of those
+exercises and upgrade them as
+well which um which is going to be a fun
+exercise and a lot of work
+right so um but that's what's probably
+going to happen in the next Generation
+uh we are really grateful of course to
+our um industry collaborators because
+they're helping us to upgrade the course
+to to what should really happen Okay so
+please do not miss the invited lectal
+I'm going to be pointing this out every
+lecture 1804 a very big day we want to
+have a big crowd here for whe but now
+let's start with
+our um
+with our lecture so today we're going to
+be talking about passing parameter
+passing so let's look at the setup so I
+have this structure struct student and
+for those of you who know C++ who taught
+C++ you know that struts are kind of
+like classes but they don't allow
+functions but C++ we'll just read it as
+if you were to
+write what what was that we already
+talked about class what
+so this is equivalent to declaring a
+class with everything public sorry
+public so all of the fields are just
+public so it's a it's the same class you
+can put functions there you can put
+Constructors there as we will learn next
+lecture but just everything is public
+you cannot use we have private private
+field so what do we have in this class
+we have the name of the student the face
+and the age so that's that's all good
+the string type PNG type user defined
+type and an integer age so now let's
+look at the flow of our main function we
+will declare student a then we will
+initialize it and then we'll make we'll
+have this assignment statement where on
+the right hand side we call a function
+and pass a as a
+parameter so this function birthday will
+get a as an input
+so a will be effectively and I'll give
+you the me so we'll just we'll talk
+about the mechanisms how it's done and
+then there are three different
+mechanisms in
+c+++ to pass the parameter so
+effectively this a
+will will be used for creating this s in
+some way in three different ways and
+we'll talk about it so this a will be
+passed as s in some way then the
+function will execute then it will
+return or form the return uh
+value in this case it's an integer value
+and it will then close the stack you
+remember all of the local variables will
+disappear the system will take that back
+and return this as a right hand side so
+the return
+value will be taken as a right hand side
+of this
+expression okay of this assignment
+statement and then then we do something
+else okay so let's look at three
+different ways then we can pass this
+parameter so the first one if you don't
+have any questions the first one will be
+parameter passing by value so this is
+the default one in C+ plus if you pass
+the parameter it will be passed by value
+so all you have to do in your birthday
+function is
+just do nothing just say student s
+that's what we'll be doing p in by value
+so let's look let's draw the stats of
+these two functions Main and birthday
+and see what happens behind the scenes
+on the memory level so I'm declaring
+student a that means a is on the
+stack right and then I initialize it so
+all of the fields or members public
+members in this case only all of the
+members of this class student will be
+initialized in some way so let's let's
+find a name starting with
+a I guess um if that's okay I don't is
+there is there anybody else here with
+name starting with a anybody I'm the
+only
+one okay well it's a finished name so
+that's good so I'm happy the face it's a
+PNG right pixel by pixel initialization
+and age
+huh
+okay let's do
+35 that's a lie but at least okay sorry
+bad jokes here could be okay so I
+initialized um a student named
+Anna yeah this happens I'm all red right
+and
+whatever and it's all recorded makes me
+feel bad whatever anyway so then a is
+passed here or we have to evaluate the
+right hand side this is the next line so
+the right hand side has to be evaluated
+first and for that birthday needs to be
+called with a being passed to it so if
+you pass it by value that means that s
+is going to be a variable that is going
+to be copied memberwise from a so that's
+what the C++ will do by default it's as
+if you declared student s like this
+student s and initialize it with all of
+the variables from a so s is going to be
+a variable on the stack for function
+birthday and all of the members are
+going to be copied from a one by one so
+strings know how to copy themselves it
+could be a long string right it could be
+the entire shap
+sphere so it's it could be long here and
+pngs hopefully know how to copy
+themselves because use in this class and
+how they copy themselves it's something
+we'll talk about later that's what copy
+con structures are for the next lecture
+so we didn't talk about it but we assume
+they know how to do that at this point
+so the entire PNG pixel by pixel will be
+copied and the age will be copied okay
+so you like it so
+far okay so we copied all of this s uh
+variable on the stat for birthday
+function for what reason right so let's
+see what we're going to do with it we're
+going to so next we're going to execute
+this line so age is going to be
+increased by one then we're going to
+print out
+birthday to standard out then we're
+going to form the return uh value which
+is age and that's the new age
+36 and then the ending of the early
+brace which means all of the local
+variables are going out of the stack so
+system takes them back system says oh s
+is local great I'm going to take it back
+and I'm going to resign it for something
+else that's needed okay and then
+this this is returned as the right hand
+side value
+36 the new age is 36 and we are printing
+out A's age so what's going to be
+printed out
+here so a is still on the stat for this
+function main we didn't touch it we were
+working with s that went out of
+scope 35 yeah so all of that work which
+maybe is fine we maybe we didn't want to
+really um affect the data of this class
+we were doing something else maybe I
+don't know what's the design
+but do you like it so that's the end of
+it right then return zero then this will
+delete a because we will be done with
+main but by then we're done with me so
+that's okay so I have a question for you
+do you like this what are the advantages
+of or disadvantages so in this case the
+question so pick the disadvantages don't
+pick the advantages of parameter passing
+by value so what was bad about
+it hold
+on
+twice
+so could it be
+slow yeah those pngs could be still
+copying themselves right although we're
+already done with birthday but who knows
+how long that copy would have taken
+right it could be a terabyte of data I
+don't know we passed the entire object
+student all of its data to the function
+just to do something very silly be done
+with it so why all of that copy right it
+could be slow so there's no pointers so
+this is not a disadvantage that's
+actually good there we don't deal with
+pointers by when we pass by value like
+this we don't is there something else so
+if people said something else I want to
+hear what that is so you can put it here
+so what else you don't like about
+it I mean the whole point is kind of
+weird right why did we do all of that
+copying but that's again kind of you
+here could be slow but still the
+question is why did we do all that
+copying we could have done it in some
+much more efficient way so let me tell
+you how could we have done it and that's
+our second way of passing the parameter
+so we could have passed it by pointer so
+for that the whole different flow needs
+to be arranged though we initialize
+student we declare student pointer B so
+B is going to be a student pointer now
+which means that all we have to
+initialize it with is to give it some
+kind of address right which will contain
+a student so that's where we initialize
+B and let's put initialize Asus B
+because we really want to give it some
+kind of value so let's assume that we
+say uh somewhere new student and we
+initialize that new student with the
+name starting with b okay what did we do
+last last time finish name starting with
+b
+b BT that's not finish name Bert okay so
+that's Bert happy and age is saying
+19 so he is a student and we initialize
+the pointer and it's where the point to
+B is that good okay so we done with line
+two now we have a pointer B pointing to
+some students on Heap but B itself is on
+the
+stack then we need to work on this
+assignment statement so the right hand
+side is going to be validated first
+therefore we're going to pass b as a
+parameter to this function but there is
+clearly a type mismatch B is a pointer
+he Tes soon so we really need to update
+that the fact the signature of this
+function to the fact that we are
+parameter passing by point
+okay which means that s
+now is given the same value that as B
+right so we are going to pass b as a
+pointer so the Val as if we declared the
+pointer s and assigned B's value to it
+right okay so what does it mean where
+does s point to Now app point this
+parameter
+passing it got the same value as b b's
+value is the address of bird so s's
+value after this is the address of bird
+so it points to the same place is that
+clear that's what happened after we pass
+this
+parameter the pointer s got the same
+value as whatever was passed to it that
+means it's the same address however this
+pointer lives on the stack of birthday
+function it's a local variable okay so
+let's remember that then then we need to
+advance s age but there's again a
+problem s is not a student anymore it's
+a it's a pointer so we need to De
+reference S right or say s Arrow eight
+Advanced then we celebrate birthday on
+Terminal and then we have to form the
+return which again we have to update put
+all the asies and I'm putting those
+asies on purpose just to show show that
+there's some work that needs to be done
+from the syntax point of view when you
+pass by poter you need to direct those
+pointers you need to work those pointers
+okay fine so now I'm forming my the
+return value which is
+what 20 and then I am done with birthday
+which means all of the local variables
+go out of scope and taken by the system
+back so s is taken
+back not the point t s the pointer which
+is fine right in this case it's just
+just totally fine and 20 is given as the
+right hand side value of this expression
+so new age
+is 20 good and then we're going to
+remember that b is a pointer so we're
+going to print B's Ag and what is
+it 20 right I forget to to draw on the
+picture that once we updated H here of
+s that's what
+happened the point T of s increased its
+Ag and it's the same point t as B's
+right so even when s went out of scope B
+still has the holder on that point
+T okay so when we print out B's age we
+print out
+20 okay so there's you should have a lot
+of questions about
+it so hopefully this will kind
+of come
+on so what are the disadvantages that we
+see here
+already there should be a lot more so
+something else should also take some
+votes is it fast
+now yeah we just copied a pointer we
+just cop copied one memory address one
+HEX number right that's it so that's
+fast that's not a
+disadvantage yes one no do you pick the
+right one whose job is to figure out and
+I showed you the code here I copied
+without aists but you have to imagine
+all of these asteris which means that it
+can be a pointer it can be an all whose
+job is it
+to
+function or
+the function as being C somebody has to
+a that increases
+water the complexity of the program that
+means there is more debugging time so
+it's and less readability you have to
+read all of that plus all of the asteris
+all over also makes it worse with
+reability okay it's uglier s it so all
+of those are yes yes yes except that oh
+now it's fast that's great right but do
+we really want to take the risk of the
+program just crashing if we didn't check
+for no
+right okay
+so unless you have oh I have a question
+for
+you I guess yeah how could we fix it and
+I'm going to actually no I I'm not going
+to ask you I'm going to just present you
+with a solution that C++ provides for
+you and that's the third type of
+parameter passing by
+reference okay so by refence let me just
+make sure
+that
+yeah all right yes there is one more
+thing that I wanted to point back to
+pointers that was in something else and
+I want to stress it here so the bad
+thing about it is that by passing B to
+this function we
+changing is that good practice at all
+did you like it then okay you pass your
+data the holder to your data to some
+function that change the data is it
+really a good thing maybe may but
+probably not you have to be careful of
+these things because then whoever writes
+the client code should remember or know
+somehow what your code will do and that
+it will change the data so maybe not a
+good idea so that's another thing that I
+wanted to mention so now to solve all
+this problem with
+complexity we're going
+to introduce the new way of parameter
+passing by reference so there will be no
+pointers inside here no
+asist okay and there will be no C coping
+as you can see I have only one student
+here that I'll work with so let's see
+I'm declaring student B and I'll
+initialize him to
+Bert happy and uh age 19 so that's all
+good it's on stack for Main and now I'm
+going to evaluate this statement so the
+right hand side needs to be evaluated
+first I'm passing B by reference so I
+have to put an ENT there in the
+parameter and this ENT does not mean
+that we are passing the address of s so
+here is a moment where you might feel
+strongly that is a
+typ passing a student as if we taking in
+an address but it's not it's a flag in
+the St so it's very different than
+passing an address of B so when you put
+an m per to a variable that's its
+address but when you put it to a type
+that means it's by
+reference something to learn so there
+will be different examples I'll show you
+when to know which one it was but in
+this case
+just
+system by reference which means that the
+system will say oh I know what you mean
+that means s is just a local name for
+b a local name for B under the hood yes
+there is
+pointers but the syntax is very nice so
+this is where the synx is on on your
+side in C++ when you pass by reference
+so it's a local name for B fine so what
+are we going to do no the referencing we
+just say S8 is increased by one so it
+becomes
+20 then we celebrate the birthday then
+we form the return statement which is 20
+we close the parentheses which means or
+uh braces which means that local
+variables go out of scope s is going out
+of scope B is fine so s is just another
+name and then we return 20 as the right
+hand side and then we print the age of B
+and it's
+20 okay so do you like
+it what is wrong about it or what's
+right about it so let's here I'm asking
+you need to pick up all of the
+advantages is it
+fast oh
+I okay yeah I copy it from pointers here
+but it's actually you should think that
+it's Nam so ignore this two little guys
+there are no pointers it just one
+variable on stack that we work with
+right and there will be the %
+here so do you like this way of doing
+things clean synex yep is it fast yes
+increase treatability it's easy to
+understand what's going on now no der
+reference of null no se faults in the
+worst case right is there something else
+that's bugging you
+though how about
+changing the
+data variable but maybe you know that if
+it's passing by reference you'll see
+this function signature you'll know that
+the data might be changed right so you
+you you'll just you already will know
+that okay maybe it will change so it's
+very CLE very nice solution to use and
+you'll see that there's a lot of ents in
+the function signatures all over our
+code for this reason because this is a
+good solution for passing variables now
+let's play with this
+code so I have a question for you let
+look at this
+code and tell me what's going to be the
+output and you can see see here that
+this m% belongs to the type it's not an
+address you can do it not only by
+passing a a parameter to function you
+can just declare another
+name so that's what it does that's what
+that's what I'm doing right here I'm
+just declaring it B is just another name
+for a because this % belongs to
+student it's very different if I would
+say student b equals address of a right
+so that would be then the
+um the
+operation okay so let's guess the value
+so what's going to happen here trace
+this function
+and
+okay so the correct ones are just the
+top two the other answers are not
+correct so the correct ones are only
+these
+two the other ones are not correct so I
+have this code for you let's look at it
+and let's trace it I declare student
+a uh on this slide I have it actually
+here so let's trace it and with a
+annotation and then we can so I declare
+student a the same thing on the stack
+there is a and a has a name it has a
+face actually in this case there's no
+face just age 19 okay I wanted to make
+it simpler so that I don't initialize
+pngs okay so a a A's age is 19 then I
+say oh B is just another name for a okay
+now I want to print out B's age it's 19
+now what is this that I want to print
+out the address of B so some hats
+number what is this that I want to print
+out the address Sur a which is the same
+because A and B are just two different
+names of the same memory location so
+it's the same you want to run it just to
+know yes why do you always have this
+extra box below the
+AG because when you
+were
+memory
+extra nothing yeah yeah yeah why do I
+put end of line here no no no no no not
+oh sorry which
+one oh why do I have an extra box right
+you know what I wanted to go over it in
+my head but then yeah I
+don't no good reason it just
+demonstrates that student could have
+many more Fields but they're
+empty and maybe 20 years ago when these
+slides were first originated maybe they
+work different F and I wanted to go over
+it like there's no reason for this extra
+box yeah thank you for bringing it up
+yeah why did I even well here clearly I
+want I thought there will be face and I
+remember that there was not so I
+prepared
+three good point no good
+reason okay so do you want to just run
+and see that there's no compilation
+error here where's
+my okay so what if this is my file right
+that so we just doing g++ 0
+0 and we running it and there you go the
+two two
+addresses they are the same and it's 19
+anything you want to play with this
+this code like what if I said b equals a
+address of a what would
+happen tyer compilation right let's
+check so that's when the compilation
+would
+happen it says okay students address is
+assigned to student it's like a hat
+number to all of those fields how do you
+do that it's a t match we can do that
+assignment okay
+cool um okay so that's pretty good what
+if we did
+this we would copy all of the fields
+remember by value to
+B
+so do you know what would be B's
+age yeah let's
+see because it's nice because it's an
+integer so it would know how to copy but
+in other cases it wouldn't know but the
+addresses are different here because B
+is now a different instance I'll top it
+over yeah very good okay so so you can
+think of the this is very similar to
+what happens when you pass the parameter
+except that actually it's different
+under the code when you pass the
+parameter there is no assignment
+statement instead what's called is copy
+Constructor so I'm jumping ahead a
+little bit will talk about it next time
+but when you pass that by parameter it's
+not the same as doing the assignment
+it's something else but it's still does
+copying uh member Wise by value okay but
+let's not jump ahead I'll talk about it
+slightly different any questions no okay
+so as you can guess now we'll be talking
+about what happens on the other side so
+we pass the parameter
+here but then we need to pass the return
+back and you can turn it turns out that
+you can return things by a
+value or by
+pointer or or bu reference the same way
+which means you just have to reflect it
+in what's returned the return type in
+this case it's by value integer but you
+could put a
+student then it would be by value you
+could put a student pointer then it
+would be by pointer or you could put the
+flag and then it would be by reference
+but then let's look how you could
+implement it and what are good or bad
+ways of implementing it that we will go
+through so let's start with let's not do
+return by value because you can imagine
+that if I didn't have this Asis scare
+you just make that extra copy from local
+variable to the right hand side a lot of
+copies would be made and we'll look at
+it after words but now let's return by
+pointer first by pointer so I prepared
+some things and that's where you know
+I'll be working through this and just
+watch me because maybe I didn't prepare
+enough boxes or too many so let's see
+the time wasn't on my side over this
+weekend to prepare okay to go through
+this many times to make sure it's all
+right so let's declare student a that's
+a it's on stack it has some name say
+Anna the age is 19 and a lot of extra
+boxes because we don't need them
+No Good Reason okay so no nothing really
+here we don't use that stack we only use
+this to um
+address parts of memory for those member
+variables so then age is 19 here sorry
+upon this declaration there's no values
+yet we initialize it right so we
+initialize it with ag we actually don't
+even put Anna there so clearly there's
+garbage here instead of the name so
+that's good we know that
+so I went through this too fast upon
+declaration there's garbage then upon
+this line we updated to 19 and then I
+say well let's declare a pointer B which
+means that upon declaration the value is
+garbage the value value of this address
+is garbage it points to some garbage but
+we will initialize it with this right
+hand side which is a function call so
+let's pass the parameter a by value I'm
+doing it on purpose so I'm going to
+create a copy of a a local copy of a
+into s upon this function call and
+parameter passing so all of the values
+the garbage for
+name and 19 is going to be copied from a
+to
+S fine then look what I do it's very
+stupid so I'm there's the reason for
+this you'll see why but it's very stupid
+I'm going to create another local
+variable X and I'm going to assign s to
+it so what's going to
+happen upon this declaration and
+initialization at the same
+time all of the members are going to be
+copied one again so this garbage value
+for name and 19 are going to be copied
+into s lots of copying if there was a p&
+there you can see lots of extra coping
+then I Advance X's age to
+20 and then I return the address of X
+because I'm returning a pointer so it
+expects an address so here's the address
+this
+address this address is returned as the
+right hand side will be returned as the
+right hand side but first we need to go
+to this line and close the braces which
+means all of the local variables go out
+of scope the system will take back this
+memory for S and this
+memory but they'll return this address
+this address as the right hand side to
+[Music]
+B
+huh not a n pointer it points to that
+address that's addresses we can we could
+even print it out like here what's the
+address of beat would be some he
+number on this
+St oh yeah the system will take over it
+it will be some kind of undefined
+Behavior it could be that it points
+still to X but maybe not so then the
+question is what happens if I print out
+A's
+age and B's age so this is 19 and this
+is
+undefined very good so let's let's make
+sure that
+everybody's oh yeah but will it compile
+so please answer I I know maybe you
+already see it very clearly but just for
+the record let's answer this
+quiz so would it
+compile
+yeah will there be runtime
+errors
+could we do F sanitize and see that
+runtime error
+possibly no yeah yeah so there will be
+runtime
+errors and then it prints out for AG 19
+and here you know it may or may not
+print 20 and I'll show you some example
+so this is something actually that I was
+scratching my head over
+yesterday because
+you know it's really strange when and
+when it doesn't print 20 or B so let's
+see if we can get it on this machine
+again to do what I did last time so
+first of all I'm going to say the
+compile it and look this compiler is AC
+on your side you'll say oh address on
+lock out variable is returned it'll warn
+you that you're doing something wrong
+it'll warn you but it will stay still
+cre cre an executable right so we can
+still run a out to
+see hey it's kind of on your side it
+crashes with
+SE it's easy it's not like print
+something and you are not even aware
+that there's a problem it's crashes so
+you can actually you could possibly
+first of all there's a warning here that
+tells you where the problem is but if
+there was no warning you could compile
+with sanitizer so F sanitize
+equals
+address it's still the compilation Arrow
+but also look at that it
+says oh it doesn't say that
+they
+which doesn't say it's the stack though
+wow unknown address okay let's still
+probably you could find some like help
+here with this messages and and now I'm
+going to do something really weird I'm
+going to put an and person there so what
+does that do you remember the the
+picture of
+this H so instead
+of creating a copy of s I just call it
+an s i call S with an S so let's copy
+nicer but still I'm going to be
+returning the address of X that will go
+out of school so very similar just one
+step away from just plainly returning
+the address to local variable let's see
+if the compiler will be on your side
+now oh now it's
+fine green
+lights let's run it aha sanitizer says
+stack access that is not yours anymore
+okay what if I didn't think that need
+there is a need to just I would compile
+it without thinking about memory like
+everything is fine no compilation errors
+and I run it
+1920 you could be even unaware there's
+something wrong but you should always
+remember so the the story here and I'll
+show you an example where even sanitizer
+will not find anything else on some
+other bad behavior bad practices or
+wrong practices where there's something
+clearly I'm doing wrong and no compiler
+no sanitizer no output will be on your
+side you'll just have undefined Behavior
+at its best where just working as if
+everything is okay so let's because it's
+so
+serious let oh sorry where is my
+here let's go back
+to this lesson and say never like really
+really in red
+never what never what do what
+return local variable
+by local variable local
+variable by
+pointer
+okay or never return a pointer to a
+local variable or an address of a local
+variable because it go goes out of scope
+and who knows what happens
+there okay
+cool
+okay we done this right yeah we done
+this what's an easy way to fix this code
+then
+it
+huh
+what yeah inside of the birthday
+function yeah let's fix it let's return
+a pointer but not to a local variable
+anymore but to
+what to Heap variable is that okay so
+you would have to do do I have a slide
+where I fix it or not oh yeah what is an
+easy way to fix so if anybody has an
+idea yeah there was the same bug in love
+debug yep I've moved the local variable
+to Global so the very well thank you I I
+would have forgotten to mention that
+that's what you have to do in lab debug
+debug
+essentially that's the way to fix it
+instead of x
+equals well instead
+of even if you pass by value which is a
+bad practice but let's create instead of
+s on the stat let's create a pointer to
+a
+student um to a student on the keep so
+new student and let's say s there okay
+so it will do what it'll copy all to the
+Heap variable all members of s then we
+reference S increase the age and then we
+return instead of the address of X what
+do we have to return the value of x
+because it's already a pointer what will
+happen on the right hand side what
+exactly happens X is still local
+variable it'll go out of scope but it
+will form that address that points to
+the Heap and puts it that address as the
+right hand side value because X still is
+gone but the pointer value will be
+returned so that address will be
+returned and given to B okay so do you
+think this will of course now you you
+shouldn't trust anything because
+sometimes nobody
+uh yeah yeah yeah or or let's do like
+the nicer way so that they senten is
+just
+clear otherwise Asis do lots of problems
+so everything is fine you've done the
+right thing the main you didn't clear
+that any so if you actually run the
+sanitizer what happened you called for
+new you never deleted that he so that
+will catch it
+right that new is not matched with
+delete so that's good who responsibility
+to delete that probably main because it
+did initialize it with some function so
+it knows that it got some but what's the
+best best practice in this case is not
+the point of this course okay because
+maybe the best practice is just to
+attach this birthday function to a class
+itself then it will be easier to deal
+with what's going on uh so please let's
+not discuss what's the best way to write
+the birthday function we discussing
+different ways and most of them are
+bad but we don't really say uh how to
+fix the code in the sense of writing the
+best birthday function but look at least
+we fit some bugs like
+no mebe it's still not the best
+structure of the code button fits the
+Bess
+variable by poter so yes you're right
+that it's just like lab
+debug okay now another way of returning
+the last one of returning it is by
+reference so in the case of passing
+parameters by reference that fits
+everything in this case of return will
+it really be a good idea to return
+something by reference well it depends
+so you can already see that there's a
+lot of bad things going on here because
+I have so many copies here but let's see
+let's see what's going on so I create
+here I initialize student a everything
+is garbage but I give age uh 19 and we
+don't use this so just ignore them
+student B is also initialized uh
+declared on the stack so everything is
+garbage initially but we want to assign
+values to it so initially everything is
+garbage we want to assign a value to it
+by calling this function B so we make a
+copy of
+a so we pass it by value so s is a local
+now variable on the stack and everything
+from a is copied member wise so it's
+garbage and 19 now I do the same stupid
+thing for the reason of showing you how
+the compiler will not be on your side
+the same thing so that's why I do that
+so X is copied from s member y so again
+it's
+garbage and
+19 after this now s's age is increased
+to 20 we return X by reference what does
+it
+mean which means the right hand side is
+created and the right hand side will
+have the same name
+as
+X but then first this phrases need to be
+closed so the local memory is taken back
+by the
+system and then B the right hand side is
+evaluated to that it's the name of that
+memory now it's it's a local name of
+that memory that memory is gone it's
+taken by the system the system will work
+over it and yet you're holding the name
+of
+it not good and you assign B to
+that which means that b is going to get
+copied all of those
+things if it can so it might what crash
+right there right then right or not or
+copy so the question is what's going to
+be the output of A's age and B's
+age so here 19 here 20 or crash or when
+does it crash let's look
+so so let me just double check that it's
+03 or 02 02 by reference yeah we're
+returning by reference
+see everything no pointers so that's
+nice but what does it all mean
+02 oh compiler is on your side again
+because they made that extra copy of
+us warning refence to local variable so
+it warns you if you return a pointer to
+local variable or reference because
+Underneath It All it's also kind of a
+pointer so it knows something is bad but
+it's still created an
+executable it crashes right one copy
+right so now you know what I'm going to
+do next right I'm going to go to my code
+I'm going to grab it I'm going to get
+the this trick
+of just calling x with an
+X which means that what what does it
+mean instead of
+copying I just call S with an S so upon
+return this will be right hand side same
+thing right but let's look if the
+compiler will be happy with
+that yeah no return by reference to
+local
+variable no crash
+either what about sanitizer do you think
+it'll report remember last time
+sanitizer was still on your side because
+there were pointers something was wrong
+but um so what does itan is f sanitize
+people
+address no
+quiet this is the
+best
+that's therefore we're going to write in
+big letters here never
+ever never
+what
+return a a local variable by reference
+either
+there variable by reference this is just
+bad bad
+stuff
+never how could I fix it so I think I
+have
+that oh yeah sorry I I was going to ask
+you but we already we were we were
+tracing it but but let's let's do let's
+let's so so please tell me what's the
+right answer what you what you you
+what if you had that as the question on
+the exam so what are the right
+answers it
+compiles it compiles but has runtime
+error
+yes it may not even get to that right so
+you shouldn't say that that's the right
+thing it may not even get to printing
+out 19 because it'll crash here copying
+that memory member wise with pointer it
+wasn't the case it was just getting
+memory address there's no problem
+copying but here it has to copy to get
+that me that me memory and copy it
+memory wise and it's not it's to take so
+you cannot claim that it's going to
+print out
+19 it does even if I put s m% here still
+yes it does for me but but I think uh
+last night we were figuring it out with
+Elmer and Elmer ran clan on this code
+right and that one warned you even in
+the case of an m% here so Clan which it
+which means that first of all we do that
+long ago but Clan is that comp it's up
+more especially there's like some Flags
+or extensions that you can use that will
+warn you about bad C++ practices we
+could not install Clank on the server
+for love l because it would require a
+major update for the server that's why
+we are running
+g++
+GCC okay that's reason actually even 10
+years ago we already were working with
+cl
+in so Clan is a better compiler if you
+can use clan for your homework it'll be
+more on your side than g++
+GCC okay so so we know that but uh so
+Clan would worry warn you even if like
+in that
+case okay we already answered this very
+good
+um now I want to tell you something so
+we're going to go back to this case
+where I'm going to
+pass the variable by here is by ref so
+one way to fix the
+references I is to pass that variable by
+reference and then return it by
+reference then you're not passing local
+then you're passing the local variable
+M that's fine so that's one way to to to
+fix it so let's go to my
+code here so what I could do I could
+just put a 9% right here right can you
+quickly tell me what's going to be the
+output
+then 2020 yeah because you taking a oh
+wait wait wait wait wait hold on that's
+very good good point let's see so you're
+taking a you're passing by reference so
+this is a local name of a you increment
+the A's age so a becomes 20 and then you
+copy it member wise so 2020 let's so
+just double check of
+course right
+2020 but that's one of the way to fix it
+in the sense that now you're not
+returning a local variable by reference
+it's not a local
+variable and U that's fine but then you
+changing the data of or the data of the
+past parameter which is fine because
+it's clear on the signature that you
+might as well so maybe that's the way to
+fix it if that's what you want your
+function to do wor
+thing maybe because it's a birth of a so
+a is changed maybe it's okay you know
+but maybe you want to create a
+completely different object like it's a
+new person who is like increase age and
+the old person St old student stays with
+the old age then this is not the right
+solution nevertheless what I want to
+look I want to look at this code now and
+it's here on your
+slide and I want to ask you about
+Constructors remember we talked about
+Constructors a little bit and I was
+telling you it's not up to you to say oh
+let's code Constructor the system will
+will call it when
+appropriate so here I made a little
+trick I put the constructors in this in
+the student code which means that once
+we wrote One
+Constructor you have to write all of
+them and the system will use your
+written ones right so it will not call
+the default constructions of its own it
+will use what you wrot and I wrote
+it so now I the whole point of my
+Constructor is not really assign
+anything but just report that a
+Constructor was called so here then we
+can trace how many times an instructure
+is called in this code and I want you to
+guess I want you to guess how many a
+default Constructor is called in this
+main
+function and um the next thing we'll
+talk about is how we have a constru so
+far let's just start with a default
+construct so try to think about it and
+we'll go through the code but while
+you're thinking about it I will get that
+code up to my
+page so
+Z3 so this is the code right so it'll
+run and oh I can do it like this so you
+answer and this is the
+code two times where are they if if you
+know if you know where are this two
+times or three times where upon which
+declaration you can type it
+there oh sorry sorry yeah now you're
+saying three because I didn't update my
+code let me update my code now it's okay
+now now it's better right no no no no no
+let's update the code to what you have
+in your SL there right all we're not
+making any others because that's what
+maybe but no just all everything is by
+reference we just changing name to the
+that function so the only place yes very
+good so
+upon upon declaring student a the system
+will actually call The Constructor
+default Constructor
+default and
+structure and here default Constructor
+is called by the system what is default
+Constructor it's a no parameter
+Constructor right you didn't pass any
+parameters so there's nothing to
+initialize and that's why the way it
+looks like if you were to write for the
+system the default Constructor it would
+look like there's no arguments in it so
+you initialize your student with but you
+don't get Arguments for initialization
+right you can put some values s for your
+instead of garbage you could but the
+system they want they want provis for
+you just
+nothing so do you want to verify that
+it's only two default
+Constructors if you want to do that you
+compile your
+code and you run
+it and you see that two times a default
+Constructor was called now hm H what if
+I don't pass by reference anymore so
+instead I create a copy and remember I
+said it's not an assignment statement
+actually that's the case the place where
+a Constructor will be called but not a
+default Constructor it will be a copy
+Constructor because you have passing
+values that you want to copy from that's
+why I created a copy Constructor here as
+well a mock copy Constructor it doesn't
+really copy a into this
+student it just says a copy Constructor
+is called so now let's see please answer
+in this code now in this code so looking
+at
+my looking at this new code how many
+times a default Constructor is called
+and how many
+times a copy Constructor is
+called
+let's look at your
+answers so what do you
+think
+yeah student s so um two
+times a default Constructor will be
+called but upon here oh sorry upon
+here a copy
+Constructor
+will be invoked by the system to copy a
+into
+s so not a default but a copy that Str
+let's do that
+again right so you can do play with this
+kind of things with in your code oh by
+the way see the undefined Behavior now
+is one instead of
+20 so that's
+interesting um so you can do we we will
+this is just jumping ahead kind of like
+okay you can put this little
+construction and see how many times
+maybe but we will learn more formally
+what is it to write a Constructor when
+do you need write Constructors which
+circum sens will they be called and what
+are other Constructors that we could
+write and of course we'll also talk
+about the structures because you need to
+if you creating some memory on the Heap
+then you'll actually need to clean it up
+in any of these Constructors if you use
+any heat memory you'll need to clean it
+up properly as well so that's next
+lecture but now we have half an hour for
+elmary because El Mar wants to talk
+about every mon every Tuesday we'll talk
+about the past
+lab I think that's really great idea
+what do you guys think go through your
+solutions kind of and also help students
+who are struggling to catch up it's very
+important by way about that so is it
+possible to have like blade submissions
+and if it's Cas then what's the point in
+you know G the
+solution uh the point is we don't to
+lose students so we will know that theym
+by okay but we don't really want to
+crush anybody we want to keep going MPS
+are hard enough and they're individual
+and we don't go through the solutions
+although for MPS will go through the
+Solutions in the last review session so
+we already decided that this um
+everything we want to cover at this
+iteration of class will run out kind of
+fast right here so these reviews will be
+for MPS and that will be preparing you
+for the exam yeah and another question
+is can we send feedback after the
+deadline yeah yeah anytime and you can
+submit as many times as you want you can
+res submit your Solution by okay but uh
+will it like appear in the system if you
+send feedback later that you submit it
+like the whole thing later or feedback
+we only see feedback is completely
+Anonymous so if you go to a feedback
+page we only see where is the best one
+lab intro here so what we see is the
+time it was submitted oh by the way this
+was cool lab intro so um this was a good
+lab
+see I think many students left favorable
+it's so what well
+organized um oh yeah there was a little
+bit like oh you're still covering very
+basic stuff but this is jumping into the
+mud and yes it is that's how we want it
+that's actually by Design because that's
+the experience you'll get at your job
+guaranteed so we preparing you for that
+um there's no go good way to start with
+large
+code you just start right so anyway um
+yes but there was one question I thought
+that there was one question here can you
+change variables using void functions
+and would that be a good practice yes
+you can you can
+but is it a good I think a lot of
+functions a lot
+of in the code that I had experiences
+that's how we would do that through void
+functions we wouldn't return any
+parameters um but you'll see that for
+example for assignment operator some way
+in some sometimes in especially in next
+lecture you'll see that there will be no
+way but you have to return a variable
+and that's one these best practices will
+help you the assignment operator you
+have to
+return have to figure out Val parameter
+by what
+parameter so yes but this is good
+practice void functions at least in my
+limited experience maybe this is a good
+also question on Discord
+like if you don't have to return like
+don't absolutely have to
+return then is it always a bad practice
+to just resort to void
+functions okay good good question for
+Discord and now El but please ask
+questions if you have um if you have
+them so you just want to switch
+right yeah I guess we do that that way
+yeah I still keep my room I think oh oh
+that was my cof I have
+some
+have oh there's
+let
